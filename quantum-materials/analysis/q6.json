@@ -1,0 +1,5369 @@
+{
+ "generated": "2026-09-23",
+ "windows": {
+  "trailing": [
+   "2025-09-24",
+   "2026-09-23"
+  ],
+  "preceding": [
+   "2024-09-24",
+   "2025-09-23"
+  ]
+ },
+ "filter_definition": {
+  "threshold": "noisy if score >= 3",
+  "F1": "+2 no independent-group supportive experiment in corpus",
+  "F2": "+1 per in-window Comment/Reply/Response or null-result experiment, max +2",
+  "F3": "+3 original or supportive record withdrawn/retracted (arXiv comment)",
+  "F4": "+1 single-sample / filamentary / onset-only / small-fraction language in original abstract",
+  "F5": "+1 original lacks DOI/journal-ref/'accepted' note > 12 months after posting; -1 if linked to a peer-reviewed venue",
+  "F6": "+1 positive follow-ups exist and all share an author with the original group",
+  "F7": "+1 in-window critical records outnumber supportive ones (added this iteration)",
+  "same_group": "shares >= 1 author (first initial + surname) with original_group",
+  "distinct_groups": "distinct last authors; original-group papers merged into one"
+ },
+ "q6_selection": [
+  "lk99_apatite",
+  "msft_tgp_majorana",
+  "lasc2h24_room_temperature_sc",
+  "graphite_room_temperature_sc",
+  "ruo2_bulk_altermagnet",
+  "ute2_chiral_sc",
+  "hg1223_pressure_quench",
+  "av3sb5_trsb_loop_current",
+  "la3ni2o7_pressure_bulk",
+  "rucl3_half_quantized_thermal_hall"
+ ],
+ "claims": [
+  {
+   "key": "ruo2_bulk_altermagnet",
+   "name": "RuO2 as a bulk room-temperature altermagnet",
+   "claim": "Bulk rutile RuO2 is a collinear (d-wave) altermagnet with room-temperature Neel order and non-relativistic spin-split bands (crystal Hall effect).",
+   "material": "RuO2 single crystals",
+   "status": "refuted",
+   "status_note": "Every in-window bulk-crystal measurement (neutron, muSR-era follow-ups, NMR, quantum oscillations, ARPES, Mossbauer, resonant diffraction) is null; the surviving debate is about strained thin films (next claim).",
+   "noise_score": 4,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "12 Comment/Reply/null records, e.g. arXiv:2410.05850, arXiv:2412.12258, arXiv:2501.10649, arXiv:2503.20621, arXiv:2504.21138"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:1901.00445"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "no positive follow-ups at all"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 1,
+     "evidence": "critical 14 > supportive 0 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 14,
+     "experiments": 11,
+     "trailing": 5,
+     "preceding": 9,
+     "distinct_groups": 13
+    },
+    "neutral": {
+     "all": 4,
+     "experiments": 0,
+     "trailing": 4,
+     "preceding": 0,
+     "distinct_groups": 3
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "RuO2",
+     "altermagn|antiferromag|magnetic order|nonmagnetic|non-magnetic|paramagne"
+    ],
+    "trailing": 55,
+    "preceding": 49,
+    "labelled_share": "18 labelled of 104 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:1901.00445",
+     "date": "2019-01-02",
+     "window": null,
+     "title": "Crystal Hall effect in Collinear Antiferromagnets",
+     "last_author": "Jairo Sinova"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2410.05850",
+     "date": "2024-10-08",
+     "window": "preceding",
+     "title": "Crystal structure and absence of magnetic order in single crystalline RuO2",
+     "last_author": "Markus Braden",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "polarized neutron diffraction excludes AFM order > 0.01 muB in crystals"
+    },
+    {
+     "id": "arXiv:2412.12258",
+     "date": "2024-12-16",
+     "window": "preceding",
+     "title": "Universal Scaling Behavior of Transport Properties in Non-Magnetic RuO2",
+     "last_author": "Minghu Fang",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "RRR=152 crystal: no crystal Hall effect, 'typical semimetal rather than an altermagnet'"
+    },
+    {
+     "id": "arXiv:2501.10649",
+     "date": "2025-01-18",
+     "window": "preceding",
+     "title": "Spin-degenerate bulk bands and topological surface states associated with Dirac nodal lines in RuO2",
+     "last_author": "T. Sato",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "micro-ARPES: spin-degenerate bulk bands"
+    },
+    {
+     "id": "arXiv:2503.20621",
+     "date": "2025-03-26",
+     "window": "preceding",
+     "title": "The Fermi surface of RuO2 measured by quantum oscillations",
+     "last_author": "Alexander G. Eaton",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "quantum oscillations match the nonmagnetic scenario"
+    },
+    {
+     "id": "arXiv:2504.21138",
+     "date": "2025-04-29",
+     "window": "preceding",
+     "title": "Determining the Nature of Magnetism in Altermagnetic Candidate RuO2",
+     "last_author": "Christopher A. Mizzi",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "no detectable long-range order in high-quality crystals"
+    },
+    {
+     "id": "arXiv:2505.03250",
+     "date": "2025-05-06",
+     "window": "preceding",
+     "title": "Constraints on magnetism and correlations in RuO2 from lattice dynamics and Mössbauer spectroscopy",
+     "last_author": "Raphaël P. Hermann",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Mossbauer / NFS: no magnetic moment in bulk"
+    },
+    {
+     "id": "arXiv:2505.07201",
+     "date": "2025-05-12",
+     "window": "preceding",
+     "title": "Growth of ultra-clean single crystals of RuO2",
+     "last_author": "Yoshiteru Maeno",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "ultra-clean crystals show no sign of magnetic order"
+    },
+    {
+     "id": "arXiv:2510.13767",
+     "date": "2025-10-15",
+     "window": "trailing",
+     "title": "Structural origin of resonant diffraction in RuO2",
+     "last_author": "Jonathan Pelliciari",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "resonant diffraction is structural; k=0 AFM order unlikely (crystal + film)"
+    },
+    {
+     "id": "arXiv:2511.00399",
+     "date": "2025-11-01",
+     "window": "trailing",
+     "title": "Absence of magnetic order and magnetic fluctuations in RuO2",
+     "last_author": "Zheng Li",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NMR: neither static nor fluctuating Ru moments"
+    },
+    {
+     "id": "arXiv:2512.03108",
+     "date": "2025-12-02",
+     "window": "trailing",
+     "title": "Fermi-liquid behavior and characteristic temperature-dependent susceptibility in clean RuO2 crystal",
+     "last_author": "Yoshiteru Maeno",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "clean crystal is a weakly correlated Fermi liquid, paramagnetic"
+    },
+    {
+     "id": "arXiv:2604.10659",
+     "date": "2026-04-12",
+     "window": "trailing",
+     "title": "Surface ferrimagnetic order in RuO2 film",
+     "last_author": "Xuezhong Ruan",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "bulk non-magnetic; only a surface ferrimagnetic state"
+    },
+    {
+     "id": "arXiv:2411.02507",
+     "date": "2024-11-04",
+     "window": "preceding",
+     "title": "Origin of Anomalous Hall effect in Cr-doped RuO2",
+     "last_author": "Igor I. Mazin",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": true,
+     "note": "AHE in Cr-doped RuO2 comes from Cr, Ru bands stay nonmagnetic"
+    },
+    {
+     "id": "arXiv:2502.03751",
+     "date": "2025-02-06",
+     "window": "preceding",
+     "title": "Symmetry-breaking induced surface magnetization in non-magnetic RuO2",
+     "last_author": "Anderson Janotti",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": false,
+     "note": "surface magnetization on non-magnetic bulk"
+    },
+    {
+     "id": "arXiv:2603.16125",
+     "date": "2026-03-17",
+     "window": "trailing",
+     "title": "Nonmagnetic Ground State of Rutile RuO2 from Diffusion Quantum Monte Carlo",
+     "last_author": "Jaron T. Krogel",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": false,
+     "note": "DMC: stoichiometric bulk RuO2 is nonmagnetic"
+    },
+    {
+     "id": "arXiv:2604.10105",
+     "date": "2026-04-11",
+     "window": "trailing",
+     "title": "Comment on arXiv:2510.13767; Structural origin of resonant diffraction in RuO2 (DOI: 10.1103/yr5q-1v1s)",
+     "last_author": "Stephen W. Lovesey",
+     "stance": "neutral",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Comment on 2510.13767: says its scattering amplitudes are wrong (attacks a null result, does not claim magnetism)"
+    },
+    {
+     "id": "arXiv:2512.04995",
+     "date": "2025-12-04",
+     "window": "trailing",
+     "title": "A meta-GGA perspective on the altermagnetism of RuO2",
+     "last_author": "Markus Meinert",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "meta-GGA: bulk nonmagnetic, altermagnetism under strain/doping"
+    },
+    {
+     "id": "arXiv:2602.15606",
+     "date": "2026-02-17",
+     "window": "trailing",
+     "title": "Neel temperature and helical spin order of altermagnetic RuO2",
+     "last_author": "Markus Meinert",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "Neel temperature of the hypothetical DFT+U altermagnetic state"
+    },
+    {
+     "id": "arXiv:2509.19932",
+     "date": "2025-09-24",
+     "window": "trailing",
+     "title": "Exploration of Altermagnetism in RuO2",
+     "last_author": "Hai-Zhou Lu",
+     "stance": "neutral",
+     "kind": "review",
+     "same_group": false,
+     "note": "review of the debate"
+    },
+    {
+     "id": "arXiv:2403.10028",
+     "date": "2024-03-15",
+     "window": null,
+     "title": "Nonmagnetic Ground State in RuO2 Revealed by Muon Spin Rotation",
+     "last_author": "Z. Hiroi",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "(pre-window) muSR: nonmagnetic ground state"
+    },
+    {
+     "id": "arXiv:2409.13504",
+     "date": "2024-09-20",
+     "window": null,
+     "title": "Absence of altermagnetic spin splitting character in rutile oxide RuO2",
+     "last_author": "Dawei Shen",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "(2024-09-20, 4 days before the window) spin-ARPES on film + crystal: no spin splitting"
+    }
+   ]
+  },
+  {
+   "key": "ruo2_film_altermagnet",
+   "name": "Altermagnetic order in RuO2 thin films",
+   "claim": "Epitaxial (strained) RuO2 films carry altermagnetic Neel order and spin-splitting transport effects (spin-splitting torque/MR, TMR, AHE).",
+   "material": "RuO2 epitaxial films on TiO2 and other substrates",
+   "status": "contested",
+   "status_note": "Many independent positive transport reports and many independent nulls; the positive side increasingly attributes the signal to strain or surfaces.",
+   "noise_score": 1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2412.17013, arXiv:2412.17016, arXiv:2412.18220, arXiv:2412.18937, arXiv:2501.11204, arXiv:2501.12593"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "12 Comment/Reply/null records, e.g. arXiv:2412.11240, arXiv:2503.07985, arXiv:2507.05047, arXiv:2508.11481, arXiv:2508.15004"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:1901.00445"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "15 of 15 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 11 <= supportive 15 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 15,
+     "experiments": 15,
+     "trailing": 6,
+     "preceding": 9,
+     "distinct_groups": 11,
+     "independent_experiments": 15
+    },
+    "critical": {
+     "all": 11,
+     "experiments": 11,
+     "trailing": 6,
+     "preceding": 5,
+     "distinct_groups": 9
+    },
+    "neutral": {
+     "all": 4,
+     "experiments": 1,
+     "trailing": 4,
+     "preceding": 0,
+     "distinct_groups": 3
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "RuO2",
+     "film|heterostructure|bilayer|epitax",
+     "altermagn|antiferromag|magnetic order|spin[- ]split|anomalous hall"
+    ],
+    "trailing": 34,
+    "preceding": 21,
+    "labelled_share": "28 labelled of 55 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:1901.00445",
+     "date": "2019-01-02",
+     "window": null,
+     "title": "Crystal Hall effect in Collinear Antiferromagnets",
+     "last_author": "Jairo Sinova"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2412.17013",
+     "date": "2024-12-22",
+     "window": "preceding",
+     "title": "Electrical Manipulation of Spin Splitting Torque in Altermagnetic RuO2",
+     "last_author": "Cheng Song",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "electrical manipulation of spin-splitting torque"
+    },
+    {
+     "id": "arXiv:2412.17016",
+     "date": "2024-12-22",
+     "window": "preceding",
+     "title": "Probing the Néel order in altermagnetic RuO2 films by X-ray magnetic linear dichroism",
+     "last_author": "Cheng Song",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "XMLD 'unambiguously demonstrates' AFM in films"
+    },
+    {
+     "id": "arXiv:2412.18220",
+     "date": "2024-12-24",
+     "window": "preceding",
+     "title": "Spin-Splitting Magnetoresistance in Altermagnetic RuO2 Thin Films",
+     "last_author": "Zhiqi Liu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "spin-splitting magnetoresistance, Neel vector along [001]"
+    },
+    {
+     "id": "arXiv:2412.18937",
+     "date": "2024-12-25",
+     "window": "preceding",
+     "title": "Unveiling the nonrelativistic spin current polarization in an altermagnet",
+     "last_author": "Xuepeng Qiu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "non-relativistic spin current polarization follows the Neel vector"
+    },
+    {
+     "id": "arXiv:2501.11204",
+     "date": "2025-01-20",
+     "window": "preceding",
+     "title": "Metallicity and Anomalous Hall Effect in Epitaxially-Strained, Atomically-thin RuO2 Films",
+     "last_author": "Bharat Jalan",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "AHE in strained ultrathin films"
+    },
+    {
+     "id": "arXiv:2501.12593",
+     "date": "2025-01-22",
+     "window": "preceding",
+     "title": "Magnetic Orbital Hall Effect in Altermagnet RuO2",
+     "last_author": "S. N. Piramanayagam",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "magnetic orbital Hall effect"
+    },
+    {
+     "id": "arXiv:2502.13599",
+     "date": "2025-02-19",
+     "window": "preceding",
+     "title": "Tunneling magnetoresistance in altermagnetic RuO2-based magnetic tunnel junctions",
+     "last_author": "Jung-Woo Yoo",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "TMR set by the Neel vector"
+    },
+    {
+     "id": "arXiv:2508.13720",
+     "date": "2025-08-19",
+     "window": "preceding",
+     "title": "Evidence for single variant in altermagnetic RuO2(101) thin films",
+     "last_author": "Seiji Mitani",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "single-variant altermagnetic RuO2(101) films"
+    },
+    {
+     "id": "arXiv:2509.16361",
+     "date": "2025-09-19",
+     "window": "preceding",
+     "title": "Observation of mirror-odd and mirror-even spin texture in ultrathin epitaxially strained RuO2 films",
+     "last_author": "Ming Yi",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "strain-enabled spin texture in ultrathin films (bulk/thick films non-magnetic)"
+    },
+    {
+     "id": "arXiv:2601.10518",
+     "date": "2026-01-15",
+     "window": "trailing",
+     "title": "Emergence of unconventional magnetic order in strain-engineered RuO2/TiO2 superlattices",
+     "last_author": "Bharat Jalan",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "unconventional magnetism in strained RuO2/TiO2 superlattices"
+    },
+    {
+     "id": "arXiv:2601.19052",
+     "date": "2026-01-27",
+     "window": "trailing",
+     "title": "Transport spin polarization in RuO2 films",
+     "last_author": "Nathan Satchell",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "spin polarization consistent with altermagnetism, confined near surface"
+    },
+    {
+     "id": "arXiv:2604.13893",
+     "date": "2026-04-15",
+     "window": "trailing",
+     "title": "Giant Room-Temperature Third-Order Electrical Transport in a Thin-Film Altermagnet Candidate",
+     "last_author": "Zhiqi Liu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "third-order transport tied to altermagnetic order in 8 nm films"
+    },
+    {
+     "id": "arXiv:2605.27830",
+     "date": "2026-05-27",
+     "window": "trailing",
+     "title": "Magneto-Optical Detection of Anisotropic Spin Currents in Altermagnetic RuO2",
+     "last_author": "Hong-Gyu Park",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "magneto-optical anisotropic spin currents (residual strain)"
+    },
+    {
+     "id": "arXiv:2606.26023",
+     "date": "2026-06-24",
+     "window": "trailing",
+     "title": "Epitaxial Strain Activates Altermagnetic Spin-Splitting Torques in RuO2(100)",
+     "last_author": "Jian-Ping Wang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "strain-stabilized altermagnetic spin-splitting torques"
+    },
+    {
+     "id": "arXiv:2609.18059",
+     "date": "2026-09-16",
+     "window": "trailing",
+     "title": "Disentangling Strain and Ti3+ Contributions to the Anomalous Hall Effect in Epitaxial RuO2 Films",
+     "last_author": "B. Jalan",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "strain (not Ti3+) controls the AHE state"
+    },
+    {
+     "id": "arXiv:2412.11240",
+     "date": "2024-12-15",
+     "window": "preceding",
+     "title": "Revisiting altermagnetism in RuO2: a study of laser-pulse induced charge dynamics by time-domain terahertz spectroscopy",
+     "last_author": "John Q. Xiao",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "THz: 'casting further doubt on the existence of altermagnetism'"
+    },
+    {
+     "id": "arXiv:2503.07985",
+     "date": "2025-03-11",
+     "window": "preceding",
+     "title": "Absence of transport altermagnetic spin-splitting effect in RuO2",
+     "last_author": "Danru Qu",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "no altermagnetic spin-splitting effect in films from 3 growth methods"
+    },
+    {
+     "id": "arXiv:2507.05047",
+     "date": "2025-07-07",
+     "window": "preceding",
+     "title": "Moiré-resonant surface state in ultrathin RuO2",
+     "last_author": "Simon Moser",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "spin-polarized STM: no magnetic order on ultrathin RuO2(110)"
+    },
+    {
+     "id": "arXiv:2508.11481",
+     "date": "2025-08-15",
+     "window": "preceding",
+     "title": "Spin-to-charge-current conversion in altermagnetic candidate RuO2 probed by terahertz emission spectroscopy",
+     "last_author": "L. Nádvorník",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": true,
+     "note": "THz emission: altermagnetic contribution only ~2-4e-4"
+    },
+    {
+     "id": "arXiv:2508.15004",
+     "date": "2025-08-20",
+     "window": "preceding",
+     "title": "Probing Magnetic Properties of RuO2 Heterostructures Through the Ferromagnetic Layer",
+     "last_author": "Steven P. Bennett",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "no intrinsic magnon modes; interface effects mimic AFM"
+    },
+    {
+     "id": "arXiv:2509.22866",
+     "date": "2025-09-26",
+     "window": "trailing",
+     "title": "Non-Altermagnetic Origin of Exchange Bias Behaviors in Incoherent RuO2/Fe Bilayer Heterostructures",
+     "last_author": "Steven P. Bennett",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "exchange bias has a non-altermagnetic origin"
+    },
+    {
+     "id": "arXiv:2510.08064",
+     "date": "2025-10-09",
+     "window": "trailing",
+     "title": "Surface-Localized Magnetic Order in RuO2 Thin Films Revealed by Low-Energy Muon Probes",
+     "last_author": "Mathias Kläui",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "LE-muSR: only surface-confined inhomogeneous order"
+    },
+    {
+     "id": "arXiv:2510.13781",
+     "date": "2025-10-15",
+     "window": "trailing",
+     "title": "Resonant diffraction and photoemission inconsistent with altermagnetism in epitaxial RuO2 films",
+     "last_author": "Andrej Singer",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "resonant diffraction + ARPES + AMR inconsistent with altermagnetism"
+    },
+    {
+     "id": "arXiv:2601.06791",
+     "date": "2026-01-11",
+     "window": "trailing",
+     "title": "Absence of magnetic order in epitaxial RuO2 revealed by X-ray linear dichroism",
+     "last_author": "Qian Li",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "XLD: absence of magnetic order in epitaxial films"
+    },
+    {
+     "id": "arXiv:2607.20298",
+     "date": "2026-07-22",
+     "window": "trailing",
+     "title": "Competing ferromagnetic and antiferromagnetic interactions in non-altermagnetic Ru1-xCrxO2",
+     "last_author": "John Q. Xiao",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Cr alloying does not induce altermagnetism"
+    },
+    {
+     "id": "arXiv:2510.13767",
+     "date": "2025-10-15",
+     "window": "trailing",
+     "title": "Structural origin of resonant diffraction in RuO2",
+     "last_author": "Jonathan Pelliciari",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "resonant diffraction structural (crystal + (001) film)"
+    },
+    {
+     "id": "arXiv:2604.10105",
+     "date": "2026-04-11",
+     "window": "trailing",
+     "title": "Comment on arXiv:2510.13767; Structural origin of resonant diffraction in RuO2 (DOI: 10.1103/yr5q-1v1s)",
+     "last_author": "Stephen W. Lovesey",
+     "stance": "neutral",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Comment on the null paper 2510.13767"
+    },
+    {
+     "id": "arXiv:2602.11602",
+     "date": "2026-02-12",
+     "window": "trailing",
+     "title": "Strain-Driven Altermagnetic Spin Splitting Effect in RuO2",
+     "last_author": "Tony Low",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "(001) films nonmagnetic, (100)/(110) strain-induced splitting"
+    },
+    {
+     "id": "arXiv:2510.26581",
+     "date": "2025-10-30",
+     "window": "trailing",
+     "title": "Strain Engineering of Altermagnetic Symmetry in Epitaxial RuO2 Films",
+     "last_author": "Tony Low",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "DFT: compressive strain stabilizes altermagnetism"
+    },
+    {
+     "id": "arXiv:2606.20262",
+     "date": "2026-06-18",
+     "window": "trailing",
+     "title": "Anomalous magneto-optical response at RuO2 / WSe2 van der Waals interface",
+     "last_author": "Chitraleema Chakraborty",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "weak interfacial magnetism probed via WSe2 proximity"
+    }
+   ]
+  },
+  {
+   "key": "msft_tgp_majorana",
+   "name": "Microsoft topological gap protocol / Majorana parity readout",
+   "claim": "InAs-Al gate-defined nanowires pass the topological gap protocol (TGP), i.e. host Majorana zero modes, and support interferometric parity readout / tetron qubits.",
+   "material": "InAs/Al (and InAs/Pb) hybrid nanowires",
+   "status": "contested",
+   "status_note": "All positive in-window results come from the Microsoft consortium; the critique is two Comments plus theory; no independent device replication.",
+   "noise_score": 5,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "3 Comment/Reply/null records, e.g. arXiv:2504.13240, arXiv:2502.19560, arXiv:2503.08944"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2207.02472, arXiv:2401.09549"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 1,
+     "evidence": "all 3 positive follow-ups share the original group: arXiv:2504.13240, arXiv:2507.08795, arXiv:2606.03884"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 1,
+     "evidence": "critical 5 > supportive 3 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 3,
+     "experiments": 2,
+     "trailing": 1,
+     "preceding": 2,
+     "distinct_groups": 1,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 5,
+     "experiments": 0,
+     "trailing": 1,
+     "preceding": 4,
+     "distinct_groups": 3
+    },
+    "neutral": {
+     "all": 2,
+     "experiments": 1,
+     "trailing": 0,
+     "preceding": 2,
+     "distinct_groups": 2
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "topological gap protocol|tetron|parity (?:readout|measurement)|InAs-Al"
+    ],
+    "trailing": 13,
+    "preceding": 18,
+    "labelled_share": "10 labelled of 31 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2207.02472",
+     "date": "2022-07-06",
+     "window": null,
+     "title": "InAs-Al Hybrid Devices Passing the Topological Gap Protocol",
+     "last_author": "Ruichen Zhao"
+    },
+    {
+     "id": "arXiv:2401.09549",
+     "date": "2024-01-17",
+     "window": null,
+     "title": "Interferometric Single-Shot Parity Measurement in an InAs-Al Hybrid Device",
+     "last_author": "Justin Zilke"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2504.13240",
+     "date": "2025-04-17",
+     "window": "preceding",
+     "title": "Response to recent comments on Phys. Rev. B 107, 245423 (2023) and Subsection S4.3 of the Supp. Info. for Nature 638, 651-655 (2025)",
+     "last_author": "Justin Zilke",
+     "stance": "supportive",
+     "kind": "comment",
+     "same_group": true,
+     "note": "Microsoft Response: comments 'unfounded', conclusions upheld"
+    },
+    {
+     "id": "arXiv:2507.08795",
+     "date": "2025-07-11",
+     "window": "preceding",
+     "title": "Distinct Lifetimes for X and Z Loop Measurements in a Majorana Tetron Device",
+     "last_author": "A. M. Zimmerman",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "Microsoft tetron device, X and Z loop lifetimes"
+    },
+    {
+     "id": "arXiv:2606.03884",
+     "date": "2026-06-02",
+     "window": "trailing",
+     "title": "20 Second Parity Lifetime in an InAs--Pb Tetron Device",
+     "last_author": "A. M. Zimmerman",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "Microsoft InAs-Pb tetron, 20 s parity lifetime"
+    },
+    {
+     "id": "arXiv:2502.19560",
+     "date": "2025-02-26",
+     "window": "preceding",
+     "title": "Comment on \"InAs-Al hybrid devices passing the topological gap protocol\", Microsoft Quantum, Phys. Rev. B 107, 245423 (2023)",
+     "last_author": "Henry F. Legg",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Legg Comment: TGP lacks consistent definition of gap/topological"
+    },
+    {
+     "id": "arXiv:2503.08944",
+     "date": "2025-03-11",
+     "window": "preceding",
+     "title": "Comment on \"Interferometric single-shot parity measurement in InAs-Al hybrid devices\", Microsoft Quantum, Nature 638, 651-655 (2025)",
+     "last_author": "Henry F. Legg",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Legg Comment: readout regions are gapless"
+    },
+    {
+     "id": "arXiv:2505.23741",
+     "date": "2025-05-29",
+     "window": "preceding",
+     "title": "Fermion parity and quantum capacitance oscillation with partially separated Majorana and quasi-Majorana modes",
+     "last_author": "Sumanta Tewari",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": false,
+     "note": "capacitance oscillations do not by themselves evidence MZMs"
+    },
+    {
+     "id": "arXiv:2603.12256",
+     "date": "2026-03-12",
+     "window": "trailing",
+     "title": "Quantum Inductance as a Phase-Sensitive Probe of Fermion Parity Switching in Majorana Nanowires",
+     "last_author": "Sumanta Tewari",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": false,
+     "note": "quantum capacitance alone cannot confirm protected parity"
+    },
+    {
+     "id": "arXiv:2504.01069",
+     "date": "2025-04-01",
+     "window": "preceding",
+     "title": "Identifying biases of the Majorana scattering invariant",
+     "last_author": "Anton R. Akhmerov",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": false,
+     "note": "finite-size bias of the scattering invariant used by the TGP"
+    },
+    {
+     "id": "arXiv:2502.12960",
+     "date": "2025-02-18",
+     "window": "preceding",
+     "title": "Predictive simulations of the dynamical response of mesoscopic devices",
+     "last_author": "Bela Bauer",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "Microsoft simulation methods for the readout setup"
+    },
+    {
+     "id": "arXiv:2507.01606",
+     "date": "2025-07-02",
+     "window": "preceding",
+     "title": "Single-shot parity readout of a minimal Kitaev chain",
+     "last_author": "Leo P. Kouwenhoven",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "parity readout of a Kitaev chain (different platform, Delft)"
+    }
+   ]
+  },
+  {
+   "key": "la3ni2o7_pressure_bulk",
+   "name": "Bulk ~80 K superconductivity in pressurized La3Ni2O7",
+   "claim": "La3Ni2O7-type bilayer nickelates superconduct near 80 K above ~14 GPa as a bulk (not filamentary) state.",
+   "material": "La3Ni2O7, La2PrNi2O7, La2SmNi2O7 under pressure",
+   "status": "partially_replicated",
+   "status_note": "Superconductivity is reproduced by many groups; the in-window dispute has narrowed to how large the bulk volume fraction is.",
+   "noise_score": 1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2410.10275, arXiv:2501.14584, arXiv:2509.12606, arXiv:2607.27607"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "6 Comment/Reply/null records, e.g. arXiv:2602.23842, arXiv:2603.01062, arXiv:2410.06602, arXiv:2510.02429, arXiv:2602.19282"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2305.09586"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "6 of 10 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 4 <= supportive 10 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 10,
+     "experiments": 8,
+     "trailing": 6,
+     "preceding": 4,
+     "distinct_groups": 6,
+     "independent_experiments": 4
+    },
+    "critical": {
+     "all": 4,
+     "experiments": 2,
+     "trailing": 3,
+     "preceding": 1,
+     "distinct_groups": 3
+    },
+    "neutral": {
+     "all": 2,
+     "experiments": 2,
+     "trailing": 1,
+     "preceding": 1,
+     "distinct_groups": 1
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "La3Ni2O7|La2PrNi2O7|La2SmNi2O7|bilayer nickelate",
+     "pressur",
+     "superconduct"
+    ],
+    "trailing": 98,
+    "preceding": 122,
+    "labelled_share": "13 labelled of 220 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2305.09586",
+     "date": "2023-05-16",
+     "window": null,
+     "title": "Superconductivity near 80 Kelvin in single crystals of La3Ni2O7 under pressure",
+     "last_author": "Meng Wang"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2410.10275",
+     "date": "2024-10-14",
+     "window": "preceding",
+     "title": "Imaging the Meissner effect in pressurized bilayer nickelate with integrated multi-parameter quantum sensor",
+     "last_author": "Xiaohui Yu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NV imaging of the Meissner effect (Yu group)"
+    },
+    {
+     "id": "arXiv:2501.14584",
+     "date": "2025-01-24",
+     "window": "preceding",
+     "title": "Bulk superconductivity up to 96 K in pressurized nickelate single crystals",
+     "last_author": "Junjie Zhang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "bulk SC up to 96 K in La2SmNi2O7, zero resistance + Meissner"
+    },
+    {
+     "id": "arXiv:2509.11557",
+     "date": "2025-09-15",
+     "window": "preceding",
+     "title": "Evidence for the Meissner effect in the nickelate superconductor La3Ni2O7-delta single crystal using diamond quantum sensors",
+     "last_author": "Xiaoli Huang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "zero resistance and Meissner effect in the same crystal"
+    },
+    {
+     "id": "arXiv:2509.12606",
+     "date": "2025-09-16",
+     "window": "preceding",
+     "title": "Direct Observation of d-Wave Superconducting Gap Symmetry in Pressurized La3Ni2O7-delta Single Crystals",
+     "last_author": "Ho-kwang Mao",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "d-wave gap in pressurized single crystals"
+    },
+    {
+     "id": "arXiv:2511.15265",
+     "date": "2025-11-19",
+     "window": "trailing",
+     "title": "Identifying the structure of La3Ni2O7 in the pressurized superconducting state",
+     "last_author": "Meng Wang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "bulk SC coincides with Amam->Fmmm transition (original group)"
+    },
+    {
+     "id": "arXiv:2607.27607",
+     "date": "2026-07-30",
+     "window": "trailing",
+     "title": "Single-crystal structural phase diagram of stoichiometric bilayer nickelate La3Ni2O7 under hydrostatic pressure",
+     "last_author": "Yukako Fujishiro",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "hydrostatic single crystals: bulk SC with I4/mmm transition"
+    },
+    {
+     "id": "arXiv:2510.13342",
+     "date": "2025-10-15",
+     "window": "trailing",
+     "title": "Evolution of the superconductivity in pressurized La3-xSmxNi2O7",
+     "last_author": "Meng Wang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "Sm-doped series, onset Tc up to 89 K (original group)"
+    },
+    {
+     "id": "arXiv:2605.04562",
+     "date": "2026-05-06",
+     "window": "trailing",
+     "title": "Regulating oxygen content and superconductivity in La3Ni2O7+δ",
+     "last_author": "Meng Wang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "oxygen-controlled phase purity and SC (original group)"
+    },
+    {
+     "id": "arXiv:2602.23842",
+     "date": "2026-02-27",
+     "window": "trailing",
+     "title": "Reply to \"Threefold error in the reported zero-field cooled magnetic moment of single crystal La2SmNi2O7 (arXiv: 2602.23240)\"",
+     "last_author": "Junjie Zhang",
+     "stance": "supportive",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Reply defending 62% ZFC phase fraction in La2SmNi2O7"
+    },
+    {
+     "id": "arXiv:2603.01062",
+     "date": "2026-03-01",
+     "window": "trailing",
+     "title": "On estimating superconducting shielding volume fraction from susceptibility in pressurized Ruddlesden-Popper nickelates: Response to arXiv:2602.19282",
+     "last_author": "Jun Zhao",
+     "stance": "supportive",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Response defending demagnetization-corrected volume fractions"
+    },
+    {
+     "id": "arXiv:2410.06602",
+     "date": "2024-10-09",
+     "window": "preceding",
+     "title": "Revealing nanoscale structural phase separation in La3Ni2O7-δ single crystal via scanning near-field optical microscopy",
+     "last_author": "Donglai Feng",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": true,
+     "note": "nanoscale structural phase separation; filamentary picture"
+    },
+    {
+     "id": "arXiv:2510.02429",
+     "date": "2025-10-02",
+     "window": "trailing",
+     "title": "Uncovering origins of heterogeneous superconductivity in La3Ni2O7 using quantum sensors",
+     "last_author": "Norman Y. Yao",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NV maps: strongly heterogeneous ('filamentary') diamagnetism"
+    },
+    {
+     "id": "arXiv:2602.19282",
+     "date": "2026-02-22",
+     "window": "trailing",
+     "title": "Nearly twofold overestimation of the superconducting volume fraction in pressurized Ruddlesden-Popper nickelates",
+     "last_author": "Evgeny F. Talantsev",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "~2x overestimation of SC volume fraction in RP nickelates"
+    },
+    {
+     "id": "arXiv:2602.23240",
+     "date": "2026-02-26",
+     "window": "trailing",
+     "title": "Threefold error in the reported zero-field cooled magnetic moment of single crystal La2SmNi2O7",
+     "last_author": "Evgeny F. Talantsev",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "threefold error in La2SmNi2O7 ZFC fraction (accepts bulk SC)"
+    },
+    {
+     "id": "arXiv:2501.15929",
+     "date": "2025-01-27",
+     "window": "preceding",
+     "title": "Low volume fraction of high-Tc superconductivity in La3Ni2O7 at 80 K and ambient pressure",
+     "last_author": "Meng Wang",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": true,
+     "note": "ambient pressure: <0.2% volume fraction at 80 K"
+    },
+    {
+     "id": "arXiv:2510.12250",
+     "date": "2025-10-14",
+     "window": "trailing",
+     "title": "Superconductivity in monolayer-trilayer phase of La3Ni2O7 under high pressure",
+     "last_author": "Meng Wang",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": true,
+     "note": "1313 polymorph superconducts only at 3.6 K"
+    }
+   ]
+  },
+  {
+   "key": "nickelate_film_ambient_sc",
+   "name": "Ambient-pressure superconductivity in strained (La,Pr)3Ni2O7 films",
+   "claim": "Compressively strained bilayer nickelate films superconduct at ambient pressure with onset Tc ~ 40 K.",
+   "material": "La3Ni2O7 / (La,Pr)3Ni2O7 / La2PrNi2O7 films on SrLaAlO4",
+   "status": "partially_replicated",
+   "status_note": "Reproduced by >= 8 independent groups within months; what remains open is granularity, the onset/zero-resistance gap and phase purity.",
+   "noise_score": 1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2501.08022, arXiv:2505.12603, arXiv:2506.15319, arXiv:2506.01788, arXiv:2508.11581, arXiv:2604.09807"
+    },
+    "F2_comment_reply_null": {
+     "points": 1,
+     "evidence": "1 Comment/Reply/null records, e.g. arXiv:2604.07807"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 1,
+     "evidence": "arXiv:2412.16622: '...Ambient-pressure superconductivity onset above 40 K in bilayer nickelate ultrathin films. ...'"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2412.16622"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "9 of 12 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 1 <= supportive 12 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 12,
+     "experiments": 12,
+     "trailing": 6,
+     "preceding": 6,
+     "distinct_groups": 9,
+     "independent_experiments": 9
+    },
+    "critical": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1
+    },
+    "neutral": {
+     "all": 3,
+     "experiments": 0,
+     "trailing": 3,
+     "preceding": 0,
+     "distinct_groups": 3
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "La3Ni2O7|La2PrNi2O7|\\(La,Pr\\)3Ni2O7|bilayer nickelate|La2LnNi2O7",
+     "film",
+     "superconduct"
+    ],
+    "trailing": 49,
+    "preceding": 48,
+    "labelled_share": "16 labelled of 97 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2412.16622",
+     "date": "2024-12-21",
+     "window": "preceding",
+     "title": "Ambient-pressure superconductivity onset above 40 K in bilayer nickelate ultrathin films",
+     "last_author": "Zhuoyu Chen"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2501.08022",
+     "date": "2025-01-14",
+     "window": "preceding",
+     "title": "Superconductivity and normal-state transport in compressively strained La2PrNi2O7 thin films",
+     "last_author": "Harold Y. Hwang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Hwang group: SC in compressively strained La2PrNi2O7 films"
+    },
+    {
+     "id": "arXiv:2505.12603",
+     "date": "2025-05-19",
+     "window": "preceding",
+     "title": "Superconductivity and phase diagram in Sr-doped La3-xSrxNi2O7 thin films",
+     "last_author": "Yuefeng Nie",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Nie group: SC phase diagram in Sr-doped films"
+    },
+    {
+     "id": "arXiv:2506.15319",
+     "date": "2025-06-18",
+     "window": "preceding",
+     "title": "Strain-tuning for superconductivity in La3Ni2O7 thin films",
+     "last_author": "Atsushi Tsukazaki",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Tsukazaki group: strain tuning of SC"
+    },
+    {
+     "id": "arXiv:2506.01788",
+     "date": "2025-06-02",
+     "window": "preceding",
+     "title": "Superconducting gap structure and bosonic mode in La2PrNi2O7 thin films at ambient pressure",
+     "last_author": "Hai-Hu Wen",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Wen group: SC gap and bosonic mode"
+    },
+    {
+     "id": "arXiv:2508.11581",
+     "date": "2025-08-15",
+     "window": "preceding",
+     "title": "Stabilizing and Tuning Superconductivity in La3Ni2O7-δ Films: Oxygen Recycling Protocol Reveals Hole-Doping Analogue",
+     "last_author": "Zhihai Zhu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Z. Zhu group: oxygen recycling stabilizes SC"
+    },
+    {
+     "id": "arXiv:2604.09807",
+     "date": "2026-04-10",
+     "window": "trailing",
+     "title": "Decoding Superconductivity in La3Ni2O7-δ Thin Films via Ozone-Driven Structure and Oxidation Tuning",
+     "last_author": "Daniele Preziosi",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Preziosi group: ozone-tuned SC films"
+    },
+    {
+     "id": "arXiv:2608.01295",
+     "date": "2026-08-02",
+     "window": "trailing",
+     "title": "Electron-like high-temperature superconductivity induced by compressive strain in La2PrNi2O7 thin films",
+     "last_author": "Xianhui Chen",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "X. Chen group: high-Tc SC from compressive strain"
+    },
+    {
+     "id": "arXiv:2603.29531",
+     "date": "2026-03-31",
+     "window": "trailing",
+     "title": "Pressure-enhanced superconductivity and its correlation with suppressed resistance dip in (La,Pr)3Ni2O7 films",
+     "last_author": "Liling Sun",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "L. Sun group: pressure enhances film SC"
+    },
+    {
+     "id": "arXiv:2605.15703",
+     "date": "2026-05-15",
+     "window": "trailing",
+     "title": "Observation of flat-bottom U-shaped energy gap in high-Tc nickelate (La,Pr)3Ni2O7 thin films",
+     "last_author": "Jian Wang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "J. Wang group: U-shaped gap in SC films"
+    },
+    {
+     "id": "arXiv:2501.09255",
+     "date": "2025-01-16",
+     "window": "preceding",
+     "title": "Angle-resolved photoemission spectroscopy of superconducting (La,Pr)3Ni2O7/SrLaAlO4 heterostructures",
+     "last_author": "Qi-Kun Xue",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "ARPES on SC films (original group)"
+    },
+    {
+     "id": "arXiv:2608.17745",
+     "date": "2026-08-18",
+     "window": "trailing",
+     "title": "Bridging ambient- and high-pressure superconductivity in La2LnNi2O7 films",
+     "last_author": "Atsushi Tsukazaki",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Tsukazaki group: La2LnNi2O7 films bridge ambient and high-pressure SC"
+    },
+    {
+     "id": "arXiv:2603.02685",
+     "date": "2026-03-03",
+     "window": "trailing",
+     "title": "Possible Enhancement of Superconductivity in Ambient-Pressure La3Ni2O7 Thin Film",
+     "last_author": "Changming Yue",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "theory: possible Tc enhancement in films"
+    },
+    {
+     "id": "arXiv:2512.04708",
+     "date": "2025-12-04",
+     "window": "trailing",
+     "title": "Superconductivity onset above 60 K in ambient-pressure nickelate films",
+     "last_author": "Zhuoyu Chen",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "onset above 60 K (original group)"
+    },
+    {
+     "id": "arXiv:2604.07807",
+     "date": "2026-04-09",
+     "window": "trailing",
+     "title": "Granular Superconductivity in La2PrNi2O7-δ Thin Films",
+     "last_author": "Zhihai Zhu",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "granular SC; two-step transition, Tc,zero ~ 10 K"
+    },
+    {
+     "id": "arXiv:2603.11235",
+     "date": "2026-03-11",
+     "window": "trailing",
+     "title": "Progress of ambient-pressure superconductivity in bilayer nickelate thin films",
+     "last_author": "Dao-Xin Yao",
+     "stance": "neutral",
+     "kind": "review",
+     "same_group": false,
+     "note": "review"
+    },
+    {
+     "id": "arXiv:2605.11584",
+     "date": "2026-05-12",
+     "window": "trailing",
+     "title": "Experimental Progress in Ambient-Pressure Superconducting Bilayer Nickelate Films",
+     "last_author": "Xi Yan",
+     "stance": "neutral",
+     "kind": "review",
+     "same_group": false,
+     "note": "review"
+    }
+   ]
+  },
+  {
+   "key": "hg1223_pressure_quench",
+   "name": "151 K ambient-pressure superconductivity in pressure-quenched Hg-1223",
+   "claim": "A pressure-quench protocol (PQP) retains Tc up to 151 K in HgBa2Ca2Cu3O8+d at ambient pressure (record ambient Tc).",
+   "material": "HgBa2Ca2Cu3O8+delta",
+   "status": "unreplicated",
+   "status_note": "Single-group result, peer reviewed (PNAS) but only ~6 months old; no independent attempt (positive or null) in the corpus yet.",
+   "noise_score": 1,
+   "noisy": false,
+   "watch": true,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 0,
+     "evidence": "no Comment/Reply or null-result preprint in window"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2603.12437"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "no positive follow-ups at all"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 0 <= supportive 0 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0
+    },
+    "neutral": {
+     "all": 3,
+     "experiments": 2,
+     "trailing": 2,
+     "preceding": 1,
+     "distinct_groups": 3
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "pressure[- ]quench|\\bPQP\\b|Hg-?1223|HgBa2Ca2Cu3O"
+    ],
+    "trailing": 23,
+    "preceding": 9,
+    "labelled_share": "3 labelled of 32 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2603.12437",
+     "date": "2026-03-12",
+     "window": "trailing",
+     "title": "Ambient-pressure 151-K superconductivity in HgBa2Ca2Cu3O8+δ via pressure quench",
+     "last_author": "Ching-Wu Chu"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2502.01881",
+     "date": "2025-02-03",
+     "window": "preceding",
+     "title": "Creation, stabilization, and study at ambient pressure of pressure-induced superconductivity in Bi0.5Sb1.5Te3",
+     "last_author": "Ching-Wu Chu",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": true,
+     "note": "same group, earlier: PQP retains SC in Bi0.5Sb1.5Te3 (method precursor, not a follow-up)"
+    },
+    {
+     "id": "arXiv:2602.05624",
+     "date": "2026-02-05",
+     "window": "trailing",
+     "title": "Electronic Structure and Superconducting Gap of HgBa2Ca2Cu3O8+δ Revealed by Laser-Based Angle-Resolved Photoemission Spectroscopy",
+     "last_author": "X. J. Zhou",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "ARPES on ordinary Hg1223 (Tc 133 K), unrelated to PQP"
+    },
+    {
+     "id": "arXiv:2606.08181",
+     "date": "2026-06-06",
+     "window": "trailing",
+     "title": "Microscopic mechanism of high-temperature superconductivity revealed by ab initio studies on hole-doped multilayer cuprates HgBa2Ca2Cu3O8 under pressure",
+     "last_author": "Masatoshi Imada",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "ab initio Hg1223 mechanism, unrelated to PQP"
+    }
+   ]
+  },
+  {
+   "key": "lasc2h24_room_temperature_sc",
+   "name": "Room-temperature superconductivity in LaSc2H24",
+   "claim": "La-Sc alloy + ammonia borane at 250-260 GPa forms hexagonal LaSc2H24 with Tc onset 271-298 K.",
+   "material": "LaSc2H24 (megabar pressure)",
+   "status": "contested",
+   "status_note": "One positive group, one independent null (with the caveat that the null used a different precursor route).",
+   "noise_score": 5,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 1,
+     "evidence": "1 Comment/Reply/null records, e.g. arXiv:2605.29985"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 1,
+     "evidence": "arXiv:2510.01273: '...aser-heating technique. Superconductivity with an onset temperature of 271-298 kelvin at 195-266 GPa is o...'"
+    },
+    "F5_publication_linkage": {
+     "points": 0,
+     "evidence": "arXiv:2510.01273: no venue yet, but only 359 days old"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 1,
+     "evidence": "all 1 positive follow-ups share the original group: arXiv:2601.01398"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 1 <= supportive 1 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 1,
+     "experiments": 0,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1
+    },
+    "neutral": {
+     "all": 1,
+     "experiments": 0,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "LaSc2H|La-Sc-H|La-Sc alloy|lanthanum[- ]scandium"
+    ],
+    "trailing": 8,
+    "preceding": 1,
+    "labelled_share": "3 labelled of 9 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2510.01273",
+     "date": "2025-09-29",
+     "window": "trailing",
+     "title": "Room-Temperature Superconductivity at 298 K in Ternary La-Sc-H System at High-pressure Conditions",
+     "last_author": "Yanming Ma"
+    },
+    {
+     "id": "doi:10.21203/rs.3.rs-7755852/v1",
+     "date": "2025-10-03",
+     "window": "trailing",
+     "title": "Room-Temperature Superconductivity at 298 K in Ternary La-Sc-H System at High-pressure Conditions",
+     "last_author": "Guangtao Liu"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2601.01398",
+     "date": "2026-01-04",
+     "window": "trailing",
+     "title": "Isotropic Superconductivity in Room-temperature Superconductor LaSc2H24",
+     "last_author": "Yanming Ma",
+     "stance": "supportive",
+     "kind": "theory",
+     "same_group": true,
+     "note": "same group: isotropic single-gap theory of LaSc2H24"
+    },
+    {
+     "id": "arXiv:2605.29985",
+     "date": "2026-05-28",
+     "window": "trailing",
+     "title": "Stability Analysis of Superconductivity in P6/mmm-LaSc2H24 and its Experimental Reproducibility from La-Sc Alloys",
+     "last_author": "Viktor V. Struzhkin",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "7 synthesis attempts at 250-280 GPa, no SC at 245-300 K"
+    },
+    {
+     "id": "arXiv:2509.22877",
+     "date": "2025-09-26",
+     "window": "trailing",
+     "title": "Stability and Superconductivity of Ternary Polyhydrides",
+     "last_author": "Viktor V. Struzhkin",
+     "stance": "neutral",
+     "kind": "review",
+     "same_group": false,
+     "note": "ternary hydride review mentions LaSc2H24 as promising"
+    }
+   ]
+  },
+  {
+   "key": "hydride_flux_trapping",
+   "name": "Flux trapping / Meissner evidence for hydride superconductivity",
+   "claim": "Trapped-flux and diamagnetic measurements establish bulk superconductivity in megabar hydrides (H3S, LaH10).",
+   "material": "H3S, LaH10, La-based superhydrides",
+   "status": "contested",
+   "status_note": "Independent groups now report flux trapping; the critique comes from a small, persistent set of authors.",
+   "noise_score": 1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2510.21877, arXiv:2410.08730"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "4 Comment/Reply/null records, e.g. arXiv:2411.10522, arXiv:2412.05291, arXiv:2501.01466, arXiv:2412.07792"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2206.14108"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "3 of 4 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 3 <= supportive 3 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 3,
+     "experiments": 2,
+     "trailing": 1,
+     "preceding": 2,
+     "distinct_groups": 3,
+     "independent_experiments": 2
+    },
+    "critical": {
+     "all": 3,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 3,
+     "distinct_groups": 3
+    },
+    "neutral": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 0,
+     "preceding": 1,
+     "distinct_groups": 1
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "hydride|H3S|LaH10|superhydride",
+     "trapped flux|flux trapping|meissner|diamagnet"
+    ],
+    "trailing": 4,
+    "preceding": 5,
+    "labelled_share": "5 labelled of 9 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2206.14108",
+     "date": "2022-06-28",
+     "window": null,
+     "title": "Trapped magnetic flux in hydrogen-rich high-temperature superconductors",
+     "last_author": "M. I. Eremets"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2510.21877",
+     "date": "2025-10-23",
+     "window": "trailing",
+     "title": "Imaging magnetic flux trapping in lanthanum hydride using diamond quantum sensors",
+     "last_author": "Gang-Qin Liu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NV imaging: shielding and strong flux trapping in LaH9.6 (independent)"
+    },
+    {
+     "id": "arXiv:2410.08730",
+     "date": "2024-10-11",
+     "window": "preceding",
+     "title": "Superconducting memory and trapped magnetic flux in ternary lanthanum polyhydrides",
+     "last_author": "Viktor V. Struzhkin",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "trapped flux / memory effect in ternary La polyhydrides (Struzhkin group)"
+    },
+    {
+     "id": "arXiv:2411.10522",
+     "date": "2024-11-15",
+     "window": "preceding",
+     "title": "Hydride superconductivity: here to stay",
+     "last_author": "Matthias Vojta",
+     "stance": "supportive",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Nat Rev Phys Comment by 15 physicists: 'hydride superconductivity is real'"
+    },
+    {
+     "id": "arXiv:2412.05291",
+     "date": "2024-11-22",
+     "window": "preceding",
+     "title": "Reply to \"Is MgB2 a superconductor? Comment on \"Evidence Against Superconductivity in Flux Trapping Experiments on Hydrides Under High Pressure\" \"",
+     "last_author": "F. Marsiglio",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Hirsch-Marsiglio Reply maintaining the flux data are inconsistent with SC"
+    },
+    {
+     "id": "arXiv:2501.01466",
+     "date": "2024-12-31",
+     "window": "preceding",
+     "title": "Hydride superconductivity: here to stay, or to lead astray and soon go away?",
+     "last_author": "J. E. Hirsch",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Hirsch: questions the Nat Rev Phys Comment"
+    },
+    {
+     "id": "arXiv:2412.07792",
+     "date": "2024-11-26",
+     "window": "preceding",
+     "title": "On the Author Correction to \"Magnetic flux trapping in hydrogen-rich high-temperature superconductors\", Nat Phys. 19, 1293 (2023), arXiv:2206.14108",
+     "last_author": "N. Zen",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Zen: flux-creep protocol in the Nat. Phys. correction is invalid"
+    },
+    {
+     "id": "arXiv:2505.05176",
+     "date": "2025-05-08",
+     "window": "preceding",
+     "title": "Superconducting susceptibility signal captured in a record wide pressure range",
+     "last_author": "Liling Sun",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "methodology benchmark for diamagnetism in DACs"
+    },
+    {
+     "id": "arXiv:2104.03925",
+     "date": "2021-04-08",
+     "window": null,
+     "title": "Flux trapping in superconducting hydrides under high pressure",
+     "last_author": "F. Marsiglio",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": false,
+     "note": "(pre-window) Hirsch-Marsiglio flux-trapping test proposal"
+    },
+    {
+     "id": "arXiv:2207.01541",
+     "date": "2022-07-04",
+     "window": null,
+     "title": "Evidence against superconductivity in flux trapping experiments on hydrides under high pressure & On magnetic field screening and expulsion in hydride superconductors",
+     "last_author": "F. Marsiglio",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "(pre-window) Hirsch-Marsiglio 'evidence against' the trapped-flux data"
+    },
+    {
+     "id": "arXiv:2312.04495",
+     "date": "2023-12-07",
+     "window": null,
+     "title": "Is MgB2 a superconductor?",
+     "last_author": "M. I. Eremets",
+     "stance": "supportive",
+     "kind": "comment",
+     "same_group": true,
+     "note": "(pre-window) Comment 'Is MgB2 a superconductor?' defending the data"
+    }
+   ]
+  },
+  {
+   "key": "av3sb5_trsb_loop_current",
+   "name": "Time-reversal symmetry breaking / loop currents in kagome AV3Sb5",
+   "claim": "The charge-density-wave state of AV3Sb5 (A = K, Rb, Cs) spontaneously breaks time-reversal symmetry (orbital loop currents).",
+   "material": "CsV3Sb5, KV3Sb5, RbV3Sb5",
+   "status": "contested",
+   "status_note": "Many independent positive probes and several independent nulls, with two live Comment/Reply exchanges in the trailing window.",
+   "noise_score": 1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2503.19032, arXiv:2505.05150, arXiv:2506.04601, arXiv:2605.05101, arXiv:2606.25251, arXiv:2608.26022"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "7 Comment/Reply/null records, e.g. arXiv:2510.01305, arXiv:2608.24927, arXiv:2510.26010, arXiv:2509.22634, arXiv:2608.13579"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2106.13443"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "9 of 10 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 5 <= supportive 10 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 10,
+     "experiments": 8,
+     "trailing": 5,
+     "preceding": 5,
+     "distinct_groups": 9,
+     "independent_experiments": 7
+    },
+    "critical": {
+     "all": 5,
+     "experiments": 3,
+     "trailing": 3,
+     "preceding": 2,
+     "distinct_groups": 5
+    },
+    "neutral": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "[CKR][sb]?V3Sb5|AV3Sb5|Cs3Sb5",
+     "time[- ]reversal|TRSB|kerr|loop[- ]current|orbital magnetism|imaginary|μSR|muon"
+    ],
+    "trailing": 27,
+    "preceding": 31,
+    "labelled_share": "15 labelled of 58 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2106.13443",
+     "date": "2021-06-25",
+     "window": null,
+     "title": "Time-reversal symmetry-breaking charge order in a kagome superconductor",
+     "last_author": "Z. Guguchia"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2411.18744",
+     "date": "2024-11-27",
+     "window": "preceding",
+     "title": "Pressure induced transition from chiral charge order to time-reversal symmetry-breaking superconducting state in Nb-doped CsV3Sb5",
+     "last_author": "Z. Guguchia",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "muSR: depth-tunable TRSB onset (original group)"
+    },
+    {
+     "id": "arXiv:2503.19032",
+     "date": "2025-03-24",
+     "window": "preceding",
+     "title": "Local spectroscopy of loop current order with individual magnetic atoms",
+     "last_author": "Berthold Jäck",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "single magnetic atoms: loop-current order below 30 K"
+    },
+    {
+     "id": "arXiv:2505.05150",
+     "date": "2025-05-08",
+     "window": "preceding",
+     "title": "Probing orbital magnetism of a kagome metal CsV3Sb5 by a tuning fork resonator",
+     "last_author": "Lin Jiao",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "tuning fork: tiny c-axis moment, TRSB below 30 K"
+    },
+    {
+     "id": "arXiv:2506.04601",
+     "date": "2025-06-05",
+     "window": "preceding",
+     "title": "Nonreciprocal superconducting critical currents with normal state field trainability in kagome superconductor CsV3Sb5",
+     "last_author": "Jian Wang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "field-trainable nonreciprocal Ic: loop-current CDW"
+    },
+    {
+     "id": "arXiv:2605.05101",
+     "date": "2026-05-06",
+     "window": "trailing",
+     "title": "Microscopic evidence for imaginary charge density wave in a kagome metal",
+     "last_author": "Y. Matsuda",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NQR: ~1 mT loop-current fields, imaginary CDW"
+    },
+    {
+     "id": "arXiv:2606.25251",
+     "date": "2026-06-24",
+     "window": "trailing",
+     "title": "NMR evidence for a loop-current state with broken C6 symmetry in the charge-ordered CsV3Sb5",
+     "last_author": "Guo-qing Zheng",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NMR: loop currents with broken C6"
+    },
+    {
+     "id": "arXiv:2510.01305",
+     "date": "2025-10-01",
+     "window": "trailing",
+     "title": "Reply to \"Limitations of detecting structural changes and time-reversal symmetry breaking in scanning tunneling microscopy experiments\"",
+     "last_author": "Vidya Madhavan",
+     "stance": "supportive",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Madhavan Reply: field-induced CDW switching is intrinsic"
+    },
+    {
+     "id": "arXiv:2608.24927",
+     "date": "2026-08-19",
+     "window": "trailing",
+     "title": "Reply to Comment on: Microscopic signatures of an imaginary charge density wave in a kagome metal",
+     "last_author": "Y. Matsuda",
+     "stance": "supportive",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Matsuda Reply: mosaicity cannot explain NQR asymmetry"
+    },
+    {
+     "id": "arXiv:2608.26022",
+     "date": "2026-08-26",
+     "window": "trailing",
+     "title": "Symmetry Origins of the Field-Free Superconducting Diode Effect in the Kagome Superconductor CsV3Sb5",
+     "last_author": "Ben-Chuan Lin",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "field-free SC diode linked to CDW TRSB"
+    },
+    {
+     "id": "arXiv:2412.02469",
+     "date": "2024-12-03",
+     "window": "preceding",
+     "title": "Resistive anisotropy in the charge density wave phase of Kagome superconductor CsV3Sb5 thin films",
+     "last_author": "Zhi-Min Liao",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "resistive anisotropy 'implying possible' TRSB chiral order"
+    },
+    {
+     "id": "arXiv:2510.26010",
+     "date": "2025-10-29",
+     "window": "trailing",
+     "title": "High Resolution Polar Kerr Effect Studies of Cs3Sb5 and ScV6Sn6 Below the Charge Order Transition",
+     "last_author": "Aharon Kapitulnik",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "Sagnac Kerr: no spontaneous Kerr signal (< ~100 nrad)"
+    },
+    {
+     "id": "arXiv:2509.22634",
+     "date": "2025-09-26",
+     "window": "trailing",
+     "title": "Limitations of detecting structural changes and time-reversal symmetry breaking in scanning tunneling microscopy experiments",
+     "last_author": "Ilija Zeljkovic",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Zeljkovic Comment: STM field effects are artifacts"
+    },
+    {
+     "id": "arXiv:2608.13579",
+     "date": "2026-07-07",
+     "window": "trailing",
+     "title": "Comment on: Microscopic signatures of an imaginary charge density wave in a kagome metal",
+     "last_author": "Vesna F. Mitrović",
+     "stance": "critical",
+     "kind": "comment",
+     "same_group": false,
+     "note": "Mitrovic Comment: iCDW claim unsupported by the NQR data"
+    },
+    {
+     "id": "arXiv:2503.15849",
+     "date": "2025-03-20",
+     "window": "preceding",
+     "title": "Impact of tiny Fermi pockets with extremely high mobility on the Hall anomaly in the kagome metal CsV3Sb5",
+     "last_author": "K. Hashimoto",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "low-field Hall anomaly from tiny high-mobility pockets, not AHE"
+    },
+    {
+     "id": "arXiv:2411.04848",
+     "date": "2024-11-07",
+     "window": "preceding",
+     "title": "Unveiling the nature of electronic transitions in RbV3Sb5 with Avoided Level Crossing μSR",
+     "last_author": "Samuele Sanna",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": true,
+     "note": "ALC-muSR: extra relaxation from charge rearrangement"
+    },
+    {
+     "id": "arXiv:2512.11341",
+     "date": "2025-12-12",
+     "window": "trailing",
+     "title": "Magnetic field-induced momentum-dependent symmetry breaking in a kagome superconductor",
+     "last_author": "Ming Yi",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "field-induced momentum-dependent symmetry breaking"
+    }
+   ]
+  },
+  {
+   "key": "ute2_chiral_sc",
+   "name": "Chiral (TRSB) zero-field superconductivity in UTe2",
+   "claim": "UTe2 is a chiral, two-component, time-reversal-breaking spin-triplet superconductor at zero field.",
+   "material": "UTe2",
+   "status": "refuted",
+   "status_note": "No in-window supportive measurement; four STM studies (two groups) favour a non-chiral B3u state. Multicomponent SC survives only in field/pressure.",
+   "noise_score": 4,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "4 Comment/Reply/null records, e.g. arXiv:2501.16636, arXiv:2503.17450, arXiv:2503.17761, arXiv:2602.02490"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2105.13721"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "no positive follow-ups at all"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 1,
+     "evidence": "critical 4 > supportive 0 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 4,
+     "experiments": 4,
+     "trailing": 1,
+     "preceding": 3,
+     "distinct_groups": 3
+    },
+    "neutral": {
+     "all": 3,
+     "experiments": 2,
+     "trailing": 2,
+     "preceding": 1,
+     "distinct_groups": 3
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "UTe2",
+     "chiral|time[- ]reversal|TRSB|kerr|two-component|multicomponent|order parameter"
+    ],
+    "trailing": 13,
+    "preceding": 24,
+    "labelled_share": "7 labelled of 37 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2002.02539",
+     "date": "2020-02-06",
+     "window": null,
+     "title": "Weyl Superconductivity in UTe2",
+     "last_author": "Johnpierre Paglione"
+    },
+    {
+     "id": "arXiv:2105.13721",
+     "date": "2021-05-28",
+     "window": null,
+     "title": "Chiral superconductivity in UTe2 probed by anisotropic low-energy excitations",
+     "last_author": "T. Shibauchi"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2501.16636",
+     "date": "2025-01-28",
+     "window": "preceding",
+     "title": "Pair Wavefunction Symmetry in UTe2 from Zero-Energy Surface State Visualization",
+     "last_author": "Dung-Hai Lee",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": true,
+     "note": "STM surface band: non-chiral B1u/B2u/B3u"
+    },
+    {
+     "id": "arXiv:2503.17450",
+     "date": "2025-03-21",
+     "window": "preceding",
+     "title": "Observation of Persistent Zero Modes and Superconducting Vortex Doublets in UTe2",
+     "last_author": "Xiaolong Liu",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "vortex STM: non-chiral p-wave"
+    },
+    {
+     "id": "arXiv:2503.17761",
+     "date": "2025-03-22",
+     "window": "preceding",
+     "title": "Odd-Parity Quasiparticle Interference in the Superconductive Surface State of UTe2",
+     "last_author": "Qiangqiang Gu",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": true,
+     "note": "QPI: time-reversal conserving B3u"
+    },
+    {
+     "id": "arXiv:2602.02490",
+     "date": "2026-02-02",
+     "window": "trailing",
+     "title": "Visualizing the Odd-parity Superconducting Order Parameter and its Quasiparticle Surface Band in UTe2",
+     "last_author": "J. C. Séamus Davis",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "QSB: time-reversal conserving B3u"
+    },
+    {
+     "id": "arXiv:2603.17905",
+     "date": "2026-03-18",
+     "window": "trailing",
+     "title": "Thermodynamic Discovery of Tetracriticality and Emergent Multicomponent Superconductivity in UTe2",
+     "last_author": "B. J. Ramshaw",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": true,
+     "note": "multicomponent SC only near a pressure tetracritical point"
+    },
+    {
+     "id": "arXiv:2604.25896",
+     "date": "2026-04-28",
+     "window": "trailing",
+     "title": "Thermodynamic Evidence of Tetracritical Topology in the H-T Phase Diagram of UTe2 for H \\parallel b",
+     "last_author": "Vladimír Sechovský",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "field-induced multicomponent SC (H || b)"
+    },
+    {
+     "id": "arXiv:2504.01584",
+     "date": "2025-04-02",
+     "window": "preceding",
+     "title": "Higher-order topological phases for time-reversal-symmetry breaking superconductivity in UTe2",
+     "last_author": "Shingo Kobayashi",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "topology classification assuming TRSB"
+    }
+   ]
+  },
+  {
+   "key": "ute2_pdw",
+   "name": "Pair-density wave in UTe2",
+   "claim": "UTe2 hosts a (bulk-relevant) pair-density-wave state intertwined with the surface CDW seen by STM.",
+   "material": "UTe2",
+   "status": "contested",
+   "status_note": "Seen by two STM groups at origin, but in-window STM from other groups ties the modulations to the surface and not to a primary PDW.",
+   "noise_score": 3,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "originals are two independent observations: arXiv:2209.10859, arXiv:2207.09491"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "2 Comment/Reply/null records, e.g. arXiv:2504.12505, arXiv:2603.27211"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2209.10859, arXiv:2207.09491"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 1,
+     "evidence": "all 1 positive follow-ups share the original group: arXiv:2603.08688"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 1,
+     "evidence": "critical 2 > supportive 1 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 2,
+     "experiments": 2,
+     "trailing": 1,
+     "preceding": 1,
+     "distinct_groups": 2
+    },
+    "neutral": {
+     "all": 3,
+     "experiments": 2,
+     "trailing": 2,
+     "preceding": 1,
+     "distinct_groups": 3
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "UTe2",
+     "pair[- ]density|PDW|charge density wave|CDW|charge order"
+    ],
+    "trailing": 5,
+    "preceding": 5,
+    "labelled_share": "6 labelled of 10 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2209.10859",
+     "date": "2022-09-22",
+     "window": null,
+     "title": "Detection of a Pair Density Wave State in UTe2",
+     "last_author": "Xiaolong Liu"
+    },
+    {
+     "id": "arXiv:2207.09491",
+     "date": "2022-07-19",
+     "window": null,
+     "title": "Magnetic-field sensitive charge density wave orders in the superconducting phase of UTe2",
+     "last_author": "Vidya Madhavan"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2603.08688",
+     "date": "2026-03-09",
+     "window": "trailing",
+     "title": "Evidence of intertwined pair density and charge density wave orders in UTe2",
+     "last_author": "Vidya Madhavan",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "parent PDW and descendant CDWs resolved (Madhavan)"
+    },
+    {
+     "id": "arXiv:2601.02192",
+     "date": "2026-01-05",
+     "window": "trailing",
+     "title": "Visualizing the low-energy electronic structure of the triplet superconductor UTe2 through quasiparticle interference",
+     "last_author": "Vidya Madhavan",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": true,
+     "note": "QPI and field-suppressed CDW (Madhavan)"
+    },
+    {
+     "id": "arXiv:2504.12505",
+     "date": "2025-04-16",
+     "window": "preceding",
+     "title": "Surface charge density wave in UTe2",
+     "last_author": "Hermann Suderow",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "surface CDW, purely electron-driven, no bulk role"
+    },
+    {
+     "id": "arXiv:2603.27211",
+     "date": "2026-03-28",
+     "window": "trailing",
+     "title": "Magnetic-field-tunable commensurate multi-q charge orders on UTe2 (011) surface",
+     "last_author": "Ya-Jun Yan",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "charge orders disfavour Fermi-surface-nesting or primary-PDW pictures"
+    },
+    {
+     "id": "arXiv:2603.12097",
+     "date": "2026-03-12",
+     "window": "trailing",
+     "title": "Directional Manipulation of a Staggered Charge Density Wave and Kondo Resonance in UTe2",
+     "last_author": "Xiaolong Liu",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "CDW manipulation and Kondo resonance"
+    },
+    {
+     "id": "arXiv:2503.24390",
+     "date": "2025-03-31",
+     "window": "preceding",
+     "title": "Intertwining bulk and surface: the case of UTe2",
+     "last_author": "Aline Ramires",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "bulk-surface intertwining proposal"
+    }
+   ]
+  },
+  {
+   "key": "rucl3_half_quantized_thermal_hall",
+   "name": "Half-quantized thermal Hall effect in alpha-RuCl3",
+   "claim": "alpha-RuCl3 shows a half-integer quantized thermal Hall plateau from chiral Majorana edge modes of a Kitaev spin liquid.",
+   "material": "alpha-RuCl3",
+   "status": "contested",
+   "status_note": "Positive in-window results are mostly the original Kyoto/Tokyo team; one independent geometry study is supportive, one high-profile study assigns the signal to phonons.",
+   "noise_score": 0,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2505.05417"
+    },
+    "F2_comment_reply_null": {
+     "points": 1,
+     "evidence": "1 Comment/Reply/null records, e.g. arXiv:2510.06443"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:1805.05022"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "1 of 4 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 1 <= supportive 4 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 4,
+     "experiments": 4,
+     "trailing": 1,
+     "preceding": 3,
+     "distinct_groups": 2,
+     "independent_experiments": 1
+    },
+    "critical": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1
+    },
+    "neutral": {
+     "all": 2,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 2,
+     "distinct_groups": 2
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "RuCl3",
+     "thermal hall|half[- ]quantiz|quantized thermal|majorana"
+    ],
+    "trailing": 5,
+    "preceding": 14,
+    "labelled_share": "7 labelled of 19 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:1805.05022",
+     "date": "2018-05-14",
+     "window": null,
+     "title": "Majorana quantization and half-integer thermal quantum Hall effect in a Kitaev spin liquid",
+     "last_author": "Y. Matsuda"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2410.18342",
+     "date": "2024-10-24",
+     "window": "preceding",
+     "title": "Magnetothermal transport in ultraclean single crystals of Kitaev magnet α-RuCl3",
+     "last_author": "Y. Kasahara",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "ultraclean crystals: plateau, with imperfections affecting quantization (original group)"
+    },
+    {
+     "id": "arXiv:2505.00971",
+     "date": "2025-05-02",
+     "window": "preceding",
+     "title": "Bulk excitations in ultraclean α-RuCl3: Quantitative evidence for Majorana dispersions in a Kitaev quantum spin liquid",
+     "last_author": "Takasada Shibauchi",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "Majorana-like bulk dispersions in ultraclean crystals (original group)"
+    },
+    {
+     "id": "arXiv:2608.18530",
+     "date": "2026-08-19",
+     "window": "trailing",
+     "title": "High-field fate of the Kitaev quantum spin liquid in α-RuCl3",
+     "last_author": "T. Shibauchi",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "KQSL persists at high field (original group)"
+    },
+    {
+     "id": "arXiv:2505.05417",
+     "date": "2025-05-08",
+     "window": "preceding",
+     "title": "Evidence of chiral fermion edge modes through geometric engineering of thermal Hall in α-RuCl3",
+     "last_author": "Jiaqiang Yan",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "geometry dependence: chiral fermion edge-mode contribution (ORNL)"
+    },
+    {
+     "id": "arXiv:2510.06443",
+     "date": "2025-10-07",
+     "window": "trailing",
+     "title": "Phonon Hall Viscosity and the Intrinsic Thermal Hall Effect of α-RuCl3",
+     "last_author": "B. J. Ramshaw",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "phonon Hall viscosity: thermal Hall is phononic (and intrinsic)"
+    },
+    {
+     "id": "arXiv:2505.03879",
+     "date": "2025-05-06",
+     "window": "preceding",
+     "title": "Geometry dependence of the thermal Hall effect in chiral spin liquids",
+     "last_author": "Gábor B. Halász",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "proposed geometry test"
+    },
+    {
+     "id": "arXiv:2507.16558",
+     "date": "2025-07-22",
+     "window": "preceding",
+     "title": "Thermal Hall transport in Kitaev spin liquids",
+     "last_author": "Yukitoshi Motome",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "kappa_xy/T overshoots half-quantization in models"
+    }
+   ]
+  },
+  {
+   "key": "ta2nise5_excitonic_insulator",
+   "name": "Excitonic-insulator ground state of Ta2NiSe5",
+   "claim": "The 326 K transition of Ta2NiSe5 is driven mainly by exciton condensation (electronic), not by the lattice.",
+   "material": "Ta2NiSe5",
+   "status": "contested",
+   "status_note": "A genuine two-sided debate, each side with several independent groups.",
+   "noise_score": 1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2504.10837, arXiv:2509.15771, arXiv:2512.03011, arXiv:2512.12439"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "3 Comment/Reply/null records, e.g. arXiv:2508.12363, arXiv:2509.09620, arXiv:2512.09751"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no original record in corpus"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "venue known from scout notes: Lu et al., Nat. Commun. 8, 14408 (2017) (scout notes; no arXiv record)"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "5 of 5 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 4 <= supportive 5 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 5,
+     "experiments": 4,
+     "trailing": 3,
+     "preceding": 2,
+     "distinct_groups": 5,
+     "independent_experiments": 4
+    },
+    "critical": {
+     "all": 4,
+     "experiments": 3,
+     "trailing": 1,
+     "preceding": 3,
+     "distinct_groups": 4
+    },
+    "neutral": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "Ta2NiSe5|Ta2Ni\\(Se,S\\)5"
+    ],
+    "trailing": 14,
+    "preceding": 10,
+    "labelled_share": "10 labelled of 24 in-window topic hits"
+   },
+   "originals": [],
+   "evidence": [
+    {
+     "id": "arXiv:2504.10837",
+     "date": "2025-04-15",
+     "window": "preceding",
+     "title": "Elastocaloric signature of the excitonic instability in Ta2NiSe5",
+     "last_author": "Jiun-Haw Chu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "elastocaloric: transition largely excitonic"
+    },
+    {
+     "id": "arXiv:2509.15771",
+     "date": "2025-09-19",
+     "window": "preceding",
+     "title": "Unveiling Excitonic Insulator Signatures in Ta2NiSe5",
+     "last_author": "Michael Merz",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NEXAFS: excitonic insulating state"
+    },
+    {
+     "id": "arXiv:2512.03011",
+     "date": "2025-12-02",
+     "window": "trailing",
+     "title": "Microscopic evidence of dominant excitonic instability in Ta2NiSe5",
+     "last_author": "Vidya Madhavan",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "STM: dominant excitonic instability"
+    },
+    {
+     "id": "arXiv:2512.12439",
+     "date": "2025-12-13",
+     "window": "trailing",
+     "title": "Substrate tuning of the structural and electronic transition in thin flakes of the excitonic insulator candidate Ta2NiSe5",
+     "last_author": "Dennis Huang",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "substrate tuning manifests excitonic interactions"
+    },
+    {
+     "id": "arXiv:2601.23136",
+     "date": "2026-01-30",
+     "window": "trailing",
+     "title": "Magnetic field control of the excitonic transition in Ta2NiSe5",
+     "last_author": "Giacomo Mazza",
+     "stance": "supportive",
+     "kind": "theory",
+     "same_group": false,
+     "note": "metastable excitonic phase decoupled from the lattice"
+    },
+    {
+     "id": "arXiv:2508.12363",
+     "date": "2025-08-17",
+     "window": "preceding",
+     "title": "Structural contribution to light-induced gap suppression in Ta2NiSe5",
+     "last_author": "Dao Xiang",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "UED: gap suppression explained structurally"
+    },
+    {
+     "id": "arXiv:2509.09620",
+     "date": "2025-09-11",
+     "window": "preceding",
+     "title": "Strong long-wavelength electron-phonon coupling in Ta2Ni(Se,S)5",
+     "last_author": "Yu He",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "ultra-strong electron-phonon coupling drives transition"
+    },
+    {
+     "id": "arXiv:2512.09751",
+     "date": "2025-12-10",
+     "window": "trailing",
+     "title": "Gate tuning of coupled electronic and structural phase transition in atomically thin Ta2NiSe5",
+     "last_author": "Xiaoxiang Xi",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "gating 'rules out a dominant excitonic mechanism'"
+    },
+    {
+     "id": "arXiv:2505.17324",
+     "date": "2025-05-22",
+     "window": "preceding",
+     "title": "Non-excitonic mechanism for electronic and structural phase transitions in Ta2Ni(Se,S)5",
+     "last_author": "Steven G. Louie",
+     "stance": "critical",
+     "kind": "theory",
+     "same_group": false,
+     "note": "DFT: non-excitonic mechanism"
+    },
+    {
+     "id": "arXiv:2607.11679",
+     "date": "2026-07-13",
+     "window": "trailing",
+     "title": "Electronic tuning of the soft-phonon transport anomaly in Ta2Ni(SxSe1-x)5",
+     "last_author": "Dennis Huang",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "soft-phonon transport anomaly with excitonic fluctuations"
+    },
+    {
+     "id": "arXiv:2007.02909",
+     "date": "2020-07-06",
+     "window": null,
+     "title": "The spontaneous symmetry breaking in Ta2NiSe5 is structural in nature",
+     "last_author": "Nuh Gedik",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "(pre-window) 'symmetry breaking is structural in nature'"
+    }
+   ]
+  },
+  {
+   "key": "rhombohedral_graphene_chiral_sc",
+   "name": "Chiral superconductivity in rhombohedral multilayer graphene",
+   "claim": "Rhombohedral tetra/pentalayer graphene hosts a chiral, time-reversal-breaking superconductor emerging from a spin-valley-polarized quarter metal.",
+   "material": "rhombohedral 4-6 layer graphene",
+   "status": "partially_replicated",
+   "status_note": "Independent transport groups see SC from polarized parent states; direct TRSB imaging so far includes the original group as co-authors.",
+   "noise_score": -1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2608.29873, arXiv:2504.05129, arXiv:2408.12584"
+    },
+    "F2_comment_reply_null": {
+     "points": 0,
+     "evidence": "no Comment/Reply or null-result preprint in window"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2408.15233"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "3 of 6 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 0 <= supportive 5 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 5,
+     "experiments": 5,
+     "trailing": 3,
+     "preceding": 2,
+     "distinct_groups": 3,
+     "independent_experiments": 2
+    },
+    "critical": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0
+    },
+    "neutral": {
+     "all": 5,
+     "experiments": 3,
+     "trailing": 4,
+     "preceding": 1,
+     "distinct_groups": 5
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "rhombohedral|pentalayer|tetralayer|hexalayer",
+     "graphene",
+     "chiral supercond|superconduct"
+    ],
+    "trailing": 60,
+    "preceding": 44,
+    "labelled_share": "9 labelled of 104 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2408.15233",
+     "date": "2024-08-27",
+     "window": null,
+     "title": "Signatures of Chiral Superconductivity in Rhombohedral Graphene",
+     "last_author": "Long Ju"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2605.13303",
+     "date": "2026-05-13",
+     "window": "trailing",
+     "title": "Reconfigurable chiral superconductivity",
+     "last_author": "Eli Zeldov",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "nanoSQUID imaging of TRSB chiral domains (Zeldov, with Ju)"
+    },
+    {
+     "id": "arXiv:2607.06520",
+     "date": "2026-07-07",
+     "window": "trailing",
+     "title": "Multi-Knob Switchable Chiral Superconductivity Quartet in Rhombohedral Graphene",
+     "last_author": "Zhengguang Lu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "switchable chiral SC quartet in hexalayer (with Ju)"
+    },
+    {
+     "id": "arXiv:2509.03295",
+     "date": "2025-09-03",
+     "window": "preceding",
+     "title": "Family of Unconventional Superconductivities in Crystalline Graphene",
+     "last_author": "Long Ju",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "family of unconventional SCs (Ju)"
+    },
+    {
+     "id": "arXiv:2608.29873",
+     "date": "2026-08-30",
+     "window": "trailing",
+     "title": "Chiral superconductors and competing states across a Lifshitz transition in rhombohedral pentalayer graphene",
+     "last_author": "Xiaoxue Liu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "chiral SC across a Lifshitz transition (X. Liu / T. Li)"
+    },
+    {
+     "id": "arXiv:2504.05129",
+     "date": "2025-04-07",
+     "window": "preceding",
+     "title": "Stripe Order in the Metallic and Superconducting Phases of Rhombohedral Hexalayer Graphene",
+     "last_author": "J. I. A. Li",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "hexalayer SC with magnetism and hysteretic transitions (J.I.A. Li)"
+    },
+    {
+     "id": "arXiv:2408.12584",
+     "date": "2024-08-22",
+     "window": null,
+     "title": "Superconductivity and quantized anomalous Hall in rhombohedral graphene",
+     "last_author": "Andrea F. Young",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "(pre-window) SC next to QAH in rhombohedral graphene (independent)"
+    },
+    {
+     "id": "arXiv:2605.30316",
+     "date": "2026-05-28",
+     "window": "trailing",
+     "title": "Visualizing orbital magnetism in electron doped rhombohedral multilayer graphene",
+     "last_author": "Andrea F. Young",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "magnetization imaging bounds 'condensation magnetization' (Young)"
+    },
+    {
+     "id": "arXiv:2606.05356",
+     "date": "2026-06-03",
+     "window": "trailing",
+     "title": "Fermiology and the Candidate Chiral Superconductor in Rhombohedral Tetralayer Graphene",
+     "last_author": "Aaron Sharpe",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "normal state richer than assumed; chirality of pairing open"
+    },
+    {
+     "id": "arXiv:2508.15909",
+     "date": "2025-08-21",
+     "window": "preceding",
+     "title": "Superconductivity and Ferroelectric Orbital Magnetism in Semimetallic Rhombohedral Hexalayer Graphene",
+     "last_author": "Xiaomeng Liu",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "semimetallic hexalayer SC + orbital magnetism"
+    },
+    {
+     "id": "arXiv:2606.31851",
+     "date": "2026-06-30",
+     "window": "trailing",
+     "title": "Anomalous Hall Effect Driven by Chiral Superconductivity",
+     "last_author": "Leonid Levitov",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "proposed Hall-drag signature of chiral SC"
+    },
+    {
+     "id": "arXiv:2608.12586",
+     "date": "2026-08-12",
+     "window": "trailing",
+     "title": "Thermal Hall tomography of chiral superconductivity in rhombohedral graphene",
+     "last_author": "Kumar Ghosh",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "proposed thermal Hall readout of the BdG Chern number"
+    }
+   ]
+  },
+  {
+   "key": "rhombohedral_graphene_fqah",
+   "name": "Fractional quantum anomalous Hall effect in rhombohedral graphene/hBN",
+   "claim": "Zero-field fractional Chern insulators (FQAH plateaus) in rhombohedral pentalayer graphene aligned to hBN.",
+   "material": "rhombohedral multilayer graphene / hBN moire",
+   "status": "partially_replicated",
+   "status_note": "Independent FCI observation exists; the mechanism (moire vs. interaction) and the EQAH competition remain open.",
+   "noise_score": -1,
+   "noisy": false,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 0,
+     "evidence": "independent supportive experiments: arXiv:2505.01767"
+    },
+    "F2_comment_reply_null": {
+     "points": 0,
+     "evidence": "no Comment/Reply or null-result preprint in window"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "peer-reviewed venue in metadata: arXiv:2309.17436"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "1 of 3 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 0 <= supportive 3 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 3,
+     "experiments": 3,
+     "trailing": 2,
+     "preceding": 1,
+     "distinct_groups": 2,
+     "independent_experiments": 1
+    },
+    "critical": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0
+    },
+    "neutral": {
+     "all": 4,
+     "experiments": 3,
+     "trailing": 3,
+     "preceding": 1,
+     "distinct_groups": 4
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "rhombohedral|pentalayer|multilayer graphene",
+     "fractional (?:quantum )?anomalous hall|FQAH|fractional chern"
+    ],
+    "trailing": 25,
+    "preceding": 21,
+    "labelled_share": "6 labelled of 46 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2309.17436",
+     "date": "2023-09-29",
+     "window": null,
+     "title": "Fractional Quantum Anomalous Hall Effect in a Graphene Moire Superlattice",
+     "last_author": "Long Ju"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2505.01767",
+     "date": "2025-05-03",
+     "window": "preceding",
+     "title": "Stacking-orientation and twist-angle control on integer and fractional Chern insulators in moiré rhombohedral graphene",
+     "last_author": "Xiaoxue Liu",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": false,
+     "note": "integer and fractional Chern insulators in RMG/hBN (independent)"
+    },
+    {
+     "id": "arXiv:2606.06450",
+     "date": "2026-06-04",
+     "window": "trailing",
+     "title": "1/3 Fractional and Gapless Integer Quantum Anomalous Hall States in Rhombohedral Graphene",
+     "last_author": "Raymond C. Ashoori",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "nu = 1/3 FQAH (Ashoori, with Ju)"
+    },
+    {
+     "id": "arXiv:2609.09422",
+     "date": "2026-09-08",
+     "window": "trailing",
+     "title": "Quantum Phase Transitions and Fractional Quantized Anomalous Hall Insulators in Rhombohedral Graphene",
+     "last_author": "Long Ju",
+     "stance": "supportive",
+     "kind": "exp",
+     "same_group": true,
+     "note": "FCI transitions and gaps (Ju)"
+    },
+    {
+     "id": "arXiv:2512.21612",
+     "date": "2025-12-25",
+     "window": "trailing",
+     "title": "Fractional High-Chern Insulator in Twisted Rhombohedral Graphene",
+     "last_author": "Xiaobo Lu",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "fractional high-Chern insulator, different (twisted Bernal/rhombohedral) stack"
+    },
+    {
+     "id": "arXiv:2408.10203",
+     "date": "2024-08-19",
+     "window": null,
+     "title": "Extended Quantum Anomalous Hall States in Graphene/hBN Moiré Superlattices",
+     "last_author": "Long Ju",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": true,
+     "note": "(pre-window) EQAH replaces FQAH at lower T (Ju)"
+    },
+    {
+     "id": "arXiv:2608.24684",
+     "date": "2026-08-25",
+     "window": "trailing",
+     "title": "Visualizing flat-band spatial renormalization in rhombohedral graphene superlattices",
+     "last_author": "Long-Jing Yin",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "STM: moire modulation vanishes below ~10 nm period"
+    },
+    {
+     "id": "arXiv:2507.20647",
+     "date": "2025-07-28",
+     "window": "preceding",
+     "title": "hBN alignment orientation controls moiré strength in rhombohedral graphene",
+     "last_author": "Eli Zeldov",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "hBN alignment orientation controls moire strength"
+    },
+    {
+     "id": "arXiv:2602.12737",
+     "date": "2026-02-13",
+     "window": "trailing",
+     "title": "Quantum Anomalous Hall Effect in Rhombohedral Multilayer Graphene/hBN Moiré Superlattices",
+     "last_author": "Shui-gang Xu",
+     "stance": "neutral",
+     "kind": "review",
+     "same_group": false,
+     "note": "review"
+    }
+   ]
+  },
+  {
+   "key": "tmote2_fqsh",
+   "name": "Fractional quantum spin Hall effect in 2.1-degree twisted MoTe2",
+   "claim": "A time-reversal-symmetric fractional QSH insulator at nu = 3 in 2.1-degree twisted bilayer MoTe2.",
+   "material": "twisted bilayer MoTe2",
+   "status": "unreplicated",
+   "status_note": "No independent transport reproduction; the only in-window experiment is the original group qualifying its own state.",
+   "noise_score": 3,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 1,
+     "evidence": "1 Comment/Reply/null records, e.g. arXiv:2501.02525"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": -1,
+     "evidence": "venue known from scout notes: Kang et al., Nature (2024) (scout notes)"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "no positive follow-ups at all"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 1,
+     "evidence": "critical 1 > supportive 0 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 0,
+     "preceding": 1,
+     "distinct_groups": 1
+    },
+    "neutral": {
+     "all": 2,
+     "experiments": 1,
+     "trailing": 2,
+     "preceding": 0,
+     "distinct_groups": 2
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "fractional quantum spin hall|FQSH|fractional topological insulator"
+    ],
+    "trailing": 11,
+    "preceding": 13,
+    "labelled_share": "2 labelled of 24 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2402.03294",
+     "date": "2024-02-05",
+     "window": null,
+     "title": "Observation of the fractional quantum spin Hall effect in moiré MoTe2",
+     "last_author": "Kin Fai Mak"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2501.02525",
+     "date": "2025-01-05",
+     "window": "preceding",
+     "title": "Time-reversal symmetry breaking fractional quantum spin Hall insulator in moiré MoTe2",
+     "last_author": "Kin Fai Mak",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": true,
+     "note": "same group: spontaneous TRSB at nu = 3 below 20 mT"
+    },
+    {
+     "id": "arXiv:2601.18508",
+     "date": "2026-01-26",
+     "window": "trailing",
+     "title": "Candidate for a Fractional Topological Insulator in Twisted MoTe2",
+     "last_author": "Xiaoyang Zhu",
+     "stance": "neutral",
+     "kind": "exp",
+     "same_group": false,
+     "note": "candidate FTI at nu = -4/3 in 3.7-3.9 degree devices (different state)"
+    },
+    {
+     "id": "arXiv:2608.24989",
+     "date": "2026-08-25",
+     "window": "trailing",
+     "title": "Quantum spin Hall crystals at fractional filling of twisted MoTe2",
+     "last_author": "Emil J. Bergholtz",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "QSH crystals at fractional filling near 5 degrees (does not address the 2.1-degree claim)"
+    }
+   ]
+  },
+  {
+   "key": "graphite_room_temperature_sc",
+   "name": "Ambient-pressure room-temperature superconductivity in graphite",
+   "claim": "Graphite (intercalated with Li alloys, wrinkled nanoflakes, or sorted grains) hosts local superconductivity above room temperature at ambient pressure.",
+   "material": "intercalated / defective graphite",
+   "status": "unreplicated",
+   "status_note": "Three unrelated preparations, three groups, each unreplicated; high-Tc fractions < 0.1 %; the closest related ambient claim was withdrawn in substance by its own authors.",
+   "noise_score": 5,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 1,
+     "evidence": "1 Comment/Reply/null records, e.g. arXiv:2604.14395"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 1,
+     "evidence": "arXiv:2510.03256: '...Signs of Possible High-Temperature Superconductivity in Graphite In...'"
+    },
+    "F5_publication_linkage": {
+     "points": 1,
+     "evidence": "arXiv:2410.18020: no DOI/journal-ref 700 days after posting"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "2 of 2 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 0,
+     "evidence": "critical 1 <= supportive 2 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 2,
+     "experiments": 0,
+     "trailing": 1,
+     "preceding": 1,
+     "distinct_groups": 2,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 1,
+     "experiments": 1,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1
+    },
+    "neutral": {
+     "all": 0,
+     "experiments": 0,
+     "trailing": 0,
+     "preceding": 0,
+     "distinct_groups": 0
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "graphite|graphene",
+     "room[- ]temperature superconduct|above room temperature|high-temperature superconductivity|Tc.{0,4}>.{0,3}400|ideal diamagnetism"
+    ],
+    "trailing": 27,
+    "preceding": 10,
+    "labelled_share": "3 labelled of 37 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2410.18020",
+     "date": "2024-10-23",
+     "window": "preceding",
+     "title": "Magnetic field sorting of superconducting graphite particles with Tc>400K",
+     "last_author": "Didier Dufeu"
+    },
+    {
+     "id": "arXiv:2510.03256",
+     "date": "2025-09-26",
+     "window": "trailing",
+     "title": "Signs of Possible High-Temperature Superconductivity in Graphite Intercalated with Lithium-Based Alloys",
+     "last_author": "Mikhail I. Eremets"
+    },
+    {
+     "id": "arXiv:2609.15712",
+     "date": "2026-09-14",
+     "window": "trailing",
+     "title": "Wrinkles and Magnetic Flux Trapping in Graphite Nanoflakes: A Possible Source and Manifestation of Room-Temperature Superconductivity",
+     "last_author": "Roman V. Yusupov"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "doi:10.20944/preprints202510.2304.v1",
+     "date": "2025-10-29",
+     "window": "trailing",
+     "title": "Einstein and Debye Temperatures, Electron-Phonon Coupling Constant and a Probable Mechanism for Ambient-Pressure Room-Temperature Superconductivity in Intercalated Graphite",
+     "last_author": "Evgeny Talantsev",
+     "stance": "supportive",
+     "kind": "theory",
+     "same_group": false,
+     "note": "Talantsev: e-ph analysis of 2510.03256 resistivity"
+    },
+    {
+     "id": "doi:10.21203/rs.3.rs-5876926/v1",
+     "date": "2025-05-29",
+     "window": "preceding",
+     "title": "Proton-mediated Cooper pair formation and high-temperature superconductivity at the graphite-n-alkane interface",
+     "last_author": "Yasushi Kawashima",
+     "stance": "supportive",
+     "kind": "theory",
+     "same_group": false,
+     "note": "proton-mediated pairing at graphite-alkane interfaces"
+    },
+    {
+     "id": "arXiv:2604.14395",
+     "date": "2026-04-15",
+     "window": "trailing",
+     "title": "Revisiting apparent ideal diamagnetism at ambient conditions in graphene-n-heptane-permalloy systems",
+     "last_author": "Armen Gulian",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "authors retract their graphene-heptane 'ideal diamagnetism' (artifact)"
+    }
+   ]
+  },
+  {
+   "key": "lk99_apatite",
+   "name": "Room-temperature superconductivity in Cu-doped lead apatite (LK-99)",
+   "claim": "Pb10-xCux(PO4)6O is an ambient-pressure superconductor with Tc >= 400 K.",
+   "material": "Cu-substituted lead apatite",
+   "status": "refuted",
+   "status_note": "Out-of-window original; every in-window experiment is null; the only positive item is a non-peer-reviewed Zenodo theory note.",
+   "noise_score": 6,
+   "noisy": true,
+   "watch": false,
+   "features": {
+    "F1_no_independent_replication": {
+     "points": 2,
+     "evidence": "no supportive experiment from outside the original group in the corpus"
+    },
+    "F2_comment_reply_null": {
+     "points": 2,
+     "evidence": "3 Comment/Reply/null records, e.g. arXiv:2603.23377, doi:10.21203/rs.3.rs-10086532/v1, osti:2586715"
+    },
+    "F3_withdrawn_retracted": {
+     "points": 0,
+     "evidence": "no withdrawal/retraction note on original or supportive records"
+    },
+    "F4_weak_evidence_language": {
+     "points": 0,
+     "evidence": "no weak-evidence phrase in original abstract(s)"
+    },
+    "F5_publication_linkage": {
+     "points": 1,
+     "evidence": "arXiv:2307.12008: no DOI/journal-ref 1159 days after posting"
+    },
+    "F6_positive_only_from_original_group": {
+     "points": 0,
+     "evidence": "1 of 1 positive follow-ups from other groups"
+    },
+    "F7_critical_outnumber_supportive": {
+     "points": 1,
+     "evidence": "critical 3 > supportive 1 (in window)"
+    }
+   },
+   "counts_in_window": {
+    "supportive": {
+     "all": 1,
+     "experiments": 0,
+     "trailing": 1,
+     "preceding": 0,
+     "distinct_groups": 1,
+     "independent_experiments": 0
+    },
+    "critical": {
+     "all": 3,
+     "experiments": 3,
+     "trailing": 2,
+     "preceding": 1,
+     "distinct_groups": 3
+    },
+    "neutral": {
+     "all": 2,
+     "experiments": 0,
+     "trailing": 1,
+     "preceding": 1,
+     "distinct_groups": 2
+    }
+   },
+   "topic_hits": {
+    "patterns": [
+     "LK-99|lead[- ]apatite|Pb10-xCux|copper[- ](?:doped|substituted) (?:lead )?apatite|Cu-doped apatite"
+    ],
+    "trailing": 8,
+    "preceding": 3,
+    "labelled_share": "6 labelled of 11 in-window topic hits"
+   },
+   "originals": [
+    {
+     "id": "arXiv:2307.12008",
+     "date": "2023-07-22",
+     "window": null,
+     "title": "The First Room-Temperature Ambient-Pressure Superconductor",
+     "last_author": "Young-Wan Kwon"
+    }
+   ],
+   "evidence": [
+    {
+     "id": "arXiv:2603.23377",
+     "date": "2026-03-24",
+     "window": "trailing",
+     "title": "Glassy magnetic freezing of interacting clusters in LK-99-family materials",
+     "last_author": "Armen Gulian",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "reproducible anomalies are glassy CuS cluster magnetism, not SC"
+    },
+    {
+     "id": "doi:10.21203/rs.3.rs-10086532/v1",
+     "date": "2026-06-23",
+     "window": "trailing",
+     "title": "Absence of Bulk Room-Temperature Superconductivity in Cu/S-Substituted Oxide Lead Apatite",
+     "last_author": "Jongjae Lee",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "high-purity Cu/S apatite: no transport or diamagnetic SC signature"
+    },
+    {
+     "id": "osti:2586715",
+     "date": "2025-07-18",
+     "window": "preceding",
+     "title": "Microscopic Characterization of Pb10-xCux(PO4)6O by 31P and 63/65Cu NMR Measurements",
+     "last_author": "Furukawa, Yuji",
+     "stance": "critical",
+     "kind": "exp",
+     "same_group": false,
+     "note": "NMR: non-magnetic insulator"
+    },
+    {
+     "id": "doi:10.5281/zenodo.20779430",
+     "date": "2026-06-20",
+     "window": "trailing",
+     "title": "Reinterpreting the LK-99 Puzzle Through a Sandwich Heterostructure Framework for Ambient Superconductivity",
+     "last_author": "Chang, Binggong",
+     "stance": "supportive",
+     "kind": "theory",
+     "same_group": false,
+     "note": "speculative 'Spacetime Ladder Theory' reinterpretation"
+    },
+    {
+     "id": "arXiv:2410.03722",
+     "date": "2024-09-28",
+     "window": "preceding",
+     "title": "Postmortem analysis and possible rebirth of LK-99",
+     "last_author": "Itai Panas",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "post-mortem; apatite as flat-band platform"
+    },
+    {
+     "id": "arXiv:2509.20260",
+     "date": "2025-09-24",
+     "window": "trailing",
+     "title": "Climbing the ladder: a method for identifying promising copper-lead apatites",
+     "last_author": "Volodymyr Karbivskyy",
+     "stance": "neutral",
+     "kind": "theory",
+     "same_group": false,
+     "note": "screening method for Cu-Pb apatites"
+    }
+   ]
+  }
+ ],
+ "sweep": {
+  "definition": {
+   "comment_reply": "\\bcomment on\\b|\\breply to\\b|^reply\\b|\\bresponse to (?:the |recent )?(?:comments?|critique|arxiv)|matters arising|\\brebuttal\\b",
+   "null_result": "(?<!in the )(?<!presence or )(?<!presence versus )\\babsence of\\b|\\bno evidence\\b|\\bfailure to\\b",
+   "revisit": "^revisit|\\bre-?examination\\b|^reexamin"
+  },
+  "withdrawn_definition": "(?:paper|article|manuscript|submission|version|preprint) (?:has been|is being|is|was) withdrawn|withdrawn by the (?:submitting )?authors?|(?:have|has) withdrawn this|\\bretracted\\b|(?<!deformation )\\bretraction\\b",
+  "scope": "corpus/arxiv.jsonl titles (supplement excluded); withdrawn from extra.comment",
+  "counts_by_window": {
+   "comment_reply": {
+    "trailing": 22,
+    "preceding": 22
+   },
+   "null_result": {
+    "trailing": 20,
+    "preceding": 30
+   },
+   "revisit": {
+    "trailing": 26,
+    "preceding": 35
+   },
+   "withdrawn": {
+    "trailing": 8,
+    "preceding": 3
+   }
+  },
+  "in_scope_share": "109 of 165",
+  "top_clusters_excluding_revisit": [
+   [
+    "unclassified",
+    15
+   ],
+   [
+    "unconventional_topological_sc",
+    11
+   ],
+   [
+    "quantum_many_body_theory",
+    8
+   ],
+   [
+    "quantum_magnetism_ferroic_order",
+    8
+   ],
+   [
+    "altermagnetism",
+    8
+   ],
+   [
+    "kagome",
+    7
+   ],
+   [
+    "vdw_magnets_topological_magnetism",
+    7
+   ],
+   [
+    "cuprate_sc",
+    5
+   ],
+   [
+    "spin_liquid_frustrated",
+    4
+   ],
+   [
+    "fractional_qah_chern",
+    4
+   ]
+  ],
+  "records": [
+   {
+    "id": "arXiv:2410.12580",
+    "date": "2024-09-26",
+    "window": "preceding",
+    "title": "Comment on \"Square-well model for superconducting pair-potential\"",
+    "last_author": "Edouard Sonin",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "other_superconductivity"
+   },
+   {
+    "id": "arXiv:2410.07223",
+    "date": "2024-09-30",
+    "window": "preceding",
+    "title": "Comment on \"Emergence of Nodal-Knot Transitions by Disorder\"",
+    "last_author": "Jing-Rong Wang",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2410.04325",
+    "date": "2024-10-06",
+    "window": "preceding",
+    "title": "Reply to \"Comment on \"Reconsidering the nonlinear emergent inductance: time-varying Joule heating and its impact on the AC electrical response\"\" by Yokouch et al",
+    "last_author": "Fumitaka Kagawa",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2410.14704",
+    "date": "2024-10-07",
+    "window": "preceding",
+    "title": "Does the Meissner effect violate the second law of thermodynamics? Comment on \"The Law of Entropy Increase and the Meissner Effect\" by A. Nikulov",
+    "last_author": "J. E. Hirsch",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "other_superconductivity"
+   },
+   {
+    "id": "arXiv:2411.18629",
+    "date": "2024-11-13",
+    "window": "preceding",
+    "title": "Reply to Comment on 'The Law of Entropy Increase and the Meissner Effect'",
+    "last_author": "A. V. Nikulov",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "other_superconductivity"
+   },
+   {
+    "id": "arXiv:2411.14518",
+    "date": "2024-11-21",
+    "window": "preceding",
+    "title": "Comment on 'Attosecond electron microscopy and diffraction'",
+    "last_author": "C. Ropers",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": "ultrafast_floquet_noneq"
+   },
+   {
+    "id": "arXiv:2412.05291",
+    "date": "2024-11-22",
+    "window": "preceding",
+    "title": "Reply to \"Is MgB2 a superconductor? Comment on \"Evidence Against Superconductivity in Flux Trapping Experiments on Hydrides Under High Pressure\" \"",
+    "last_author": "F. Marsiglio",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "hydride_high_pressure_sc"
+   },
+   {
+    "id": "arXiv:2501.03986",
+    "date": "2025-01-07",
+    "window": "preceding",
+    "title": "Matters Arising from S. Vaitiekenas et al., \"Zero-bias peaks at zero magnetic field in ferromagnetic hybrid nanowires\" Nature Physics 2021",
+    "last_author": "S. M. Frolov",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2501.12291",
+    "date": "2025-01-21",
+    "window": "preceding",
+    "title": "Reply to comment on \"Controlled bond expansion for Density Matrix Renormalization Group ground state search at single-site costs\"",
+    "last_author": "Jan von Delft",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2503.00041",
+    "date": "2025-02-25",
+    "window": "preceding",
+    "title": "Comment on 2501.17230 and 2502.00103 \"Phonon-mediated electron attraction in SrTiO3 via the generalized Frohlich and deformation potential mechanisms\" and \"Theory of ab initio downfolding with arbitrary range electron-phonon coupling\"",
+    "last_author": "Jonathan Ruhman",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "mott_hubbard_strange_metal"
+   },
+   {
+    "id": "arXiv:2502.19560",
+    "date": "2025-02-26",
+    "window": "preceding",
+    "title": "Comment on \"InAs-Al hybrid devices passing the topological gap protocol\", Microsoft Quantum, Phys. Rev. B 107, 245423 (2023)",
+    "last_author": "Henry F. Legg",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2503.08944",
+    "date": "2025-03-11",
+    "window": "preceding",
+    "title": "Comment on \"Interferometric single-shot parity measurement in InAs-Al hybrid devices\", Microsoft Quantum, Nature 638, 651-655 (2025)",
+    "last_author": "Henry F. Legg",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2503.13968",
+    "date": "2025-03-18",
+    "window": "preceding",
+    "title": "Comment on Unusual violation of the Wiedemann-Franz law at ultralow temperatures in topological compensated semimetals",
+    "last_author": "Louis Taillefer",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2503.22614",
+    "date": "2025-03-28",
+    "window": "preceding",
+    "title": "Comment on \"Solvent-Induced Negative Energetic Elasticity in a Lattice Polymer Chain''",
+    "last_author": "L. G. Rizzi",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2504.13240",
+    "date": "2025-04-17",
+    "window": "preceding",
+    "title": "Response to recent comments on Phys. Rev. B 107, 245423 (2023) and Subsection S4.3 of the Supp. Info. for Nature 638, 651-655 (2025)",
+    "last_author": "Justin Zilke",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2504.18531",
+    "date": "2025-04-25",
+    "window": "preceding",
+    "title": "Comment on \"Superconductivity and Mott Physics in Organic Charge Transfer Materials\"",
+    "last_author": "R. Torsten Clay",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "cuprate_sc"
+   },
+   {
+    "id": "arXiv:2506.01792",
+    "date": "2025-06-02",
+    "window": "preceding",
+    "title": "Comment on \"Neutron diffraction evidence of the 3-dimensional structure of Ba2MnTeO6 and misidentification of the triangular layers within the face-centred cubic lattice\"",
+    "last_author": "P. Khuntia",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "spin_liquid_frustrated"
+   },
+   {
+    "id": "arXiv:2506.10792",
+    "date": "2025-06-12",
+    "window": "preceding",
+    "title": "Comment on \"Electric conductivity of graphene: Kubo model versus a nonlocal quantum field theory model (arXiv:2403.02279v3)\"",
+    "last_author": "V. M. Mostepanenko",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2506.21636",
+    "date": "2025-06-25",
+    "window": "preceding",
+    "title": "Comment on \"The SPOCK equation of state for condensed phases under arbitrary compression\" by R. Myhill",
+    "last_author": "Thomas Ruedas",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2507.15014",
+    "date": "2025-07-20",
+    "window": "preceding",
+    "title": "A rediscovery of stiff pentmodes. A comment on \"High bulk modulus pentamodes: the three-dimensional metal water\"",
+    "last_author": "Graeme W. Milton",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2509.05153",
+    "date": "2025-09-05",
+    "window": "preceding",
+    "title": "Reply to the Comment by Tikhonov and Khrapai on \"Long-range crossed Andreev reflection in a topological insulator nanowire proximitized by a superconductor\"",
+    "last_author": "Yoichi Ando",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2509.14105",
+    "date": "2025-09-17",
+    "window": "preceding",
+    "title": "Comment on `High-resolution Measurements of Thermal Conductivity Matrix and Search for Thermal Hall Effect in La2CuO4'",
+    "last_author": "Kamran Behnia",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "cuprate_sc"
+   },
+   {
+    "id": "arXiv:2510.01305",
+    "date": "2025-10-01",
+    "window": "trailing",
+    "title": "Reply to \"Limitations of detecting structural changes and time-reversal symmetry breaking in scanning tunneling microscopy experiments\"",
+    "last_author": "Vidya Madhavan",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "kagome"
+   },
+   {
+    "id": "arXiv:2511.08452",
+    "date": "2025-11-11",
+    "window": "trailing",
+    "title": "Comment on \"Role of Matter Interactions in Superradiant Phenomena\"",
+    "last_author": "Kai Phillip Schmidt",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2511.16509",
+    "date": "2025-11-20",
+    "window": "trailing",
+    "title": "Comment on: \"Scaling and Universality at Noisy Quench Dynamical Quantum Phase Transitions\"",
+    "last_author": "J. Sirker",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2512.18509",
+    "date": "2025-12-20",
+    "window": "trailing",
+    "title": "Comment on: \"The future of the correlated electron problem\", arXiv:2010.00584",
+    "last_author": "A. Z. Msezane",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "mott_hubbard_strange_metal"
+   },
+   {
+    "id": "arXiv:2601.14974",
+    "date": "2026-01-21",
+    "window": "trailing",
+    "title": "Comment on \"Electrostatics-induced breakdown of the integer quantum Hall effect in cavity QED''",
+    "last_author": "J. Faist",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "fractional_qah_chern"
+   },
+   {
+    "id": "arXiv:2601.19959",
+    "date": "2026-01-27",
+    "window": "trailing",
+    "title": "Comment on \"Instability of the ferromagnetic quantum critical point and symmetry of the ferromagnetic ground state in two-dimensional and three-dimensional electron gases with arbitrary spin-orbit splitting\"",
+    "last_author": "T. R. Kirkpatrick",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "heavy_fermion_kondo_qcp"
+   },
+   {
+    "id": "arXiv:2602.23842",
+    "date": "2026-02-27",
+    "window": "trailing",
+    "title": "Reply to \"Threefold error in the reported zero-field cooled magnetic moment of single crystal La2SmNi2O7 (arXiv: 2602.23240)\"",
+    "last_author": "Junjie Zhang",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "nickelate_sc"
+   },
+   {
+    "id": "arXiv:2603.01062",
+    "date": "2026-03-01",
+    "window": "trailing",
+    "title": "On estimating superconducting shielding volume fraction from susceptibility in pressurized Ruddlesden-Popper nickelates: Response to arXiv:2602.19282",
+    "last_author": "Jun Zhao",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "nickelate_sc"
+   },
+   {
+    "id": "arXiv:2603.06825",
+    "date": "2026-03-06",
+    "window": "trailing",
+    "title": "Reply to the comment on \"Instability of the ferromagnetic quantum critical point and symmetry of the ferromagnetic ground state in 2D and 3D electron gases with arbitrary spin-orbit splitting''",
+    "last_author": "Jelena Klinovaja",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "heavy_fermion_kondo_qcp"
+   },
+   {
+    "id": "arXiv:2603.18057",
+    "date": "2026-03-18",
+    "window": "trailing",
+    "title": "Comment on: \"Coherent perfect absorption: Zero reflection without linewidth suppression\"",
+    "last_author": "Jie Li",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2603.19982",
+    "date": "2026-03-20",
+    "window": "trailing",
+    "title": "Reply to \"Comment on \"Electric conductivity in graphene: Kubo model versus a nonlocal quantum field theory model\"\" (ArXiv:2506.10792v2)",
+    "last_author": "Mauro Antezza",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2603.23274",
+    "date": "2026-03-24",
+    "window": "trailing",
+    "title": "Comment on 'Observation of Shapiro Steps in the Charge Density Wave State Induced by Strain on a Piezoelectric Substrate'",
+    "last_author": "I. A. Nedospasov",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2604.10105",
+    "date": "2026-04-11",
+    "window": "trailing",
+    "title": "Comment on arXiv:2510.13767; Structural origin of resonant diffraction in RuO2 (DOI: 10.1103/yr5q-1v1s)",
+    "last_author": "Stephen W. Lovesey",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2605.21833",
+    "date": "2026-05-20",
+    "window": "trailing",
+    "title": "Comment on \"Entropic Costs of Extracting Classical Ticks from a Quantum Clock\"",
+    "last_author": "Longyan Gong",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2605.28861",
+    "date": "2026-05-21",
+    "window": "trailing",
+    "title": "Comment on \"Spin-1/2 Kagome Heisenberg Antiferromagnet: Machine Learning Discovery of the Spinon Pair-Density-Wave Ground State\"",
+    "last_author": "Norman Y. Yao",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "kagome"
+   },
+   {
+    "id": "arXiv:2606.28407",
+    "date": "2026-06-24",
+    "window": "trailing",
+    "title": "Comment on \"Fundamental limit of phonon Tesla valve for heat rectification from first principles\"",
+    "last_author": "Aleksei Sokolov",
+    "category": "comment_reply",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2606.27975",
+    "date": "2026-06-26",
+    "window": "trailing",
+    "title": "Comment on \"Altermagnetic and Dipolar Spitting of Magnons in FeF2\" arXiv:2601.04303",
+    "last_author": "S. W. Lovesey",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2608.13579",
+    "date": "2026-07-07",
+    "window": "trailing",
+    "title": "Comment on: Microscopic signatures of an imaginary charge density wave in a kagome metal",
+    "last_author": "Vesna F. Mitrović",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "kagome"
+   },
+   {
+    "id": "arXiv:2608.24927",
+    "date": "2026-08-19",
+    "window": "trailing",
+    "title": "Reply to Comment on: Microscopic signatures of an imaginary charge density wave in a kagome metal",
+    "last_author": "Y. Matsuda",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "kagome"
+   },
+   {
+    "id": "arXiv:2609.00467",
+    "date": "2026-08-31",
+    "window": "trailing",
+    "title": "Comment on \"Distinct Behaviors of Inner and Outer CuO2 Planes in Quadruple-Layer Cuprate (Cu,C)Ba2Ca3Cu4O11 + δ\"",
+    "last_author": "Jeffery L. Tallon",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "cuprate_sc"
+   },
+   {
+    "id": "arXiv:2609.22776",
+    "date": "2026-09-19",
+    "window": "trailing",
+    "title": "Comment on \"Topography of Fermi arcs in t-PtBi2 using high-resolution angle-resolved photoemission spectroscopy\" arXiv:2503.08841 (cond-mat)",
+    "last_author": "Sergey Borisenko",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2609.25357",
+    "date": "2026-09-21",
+    "window": "trailing",
+    "title": "Comment on \"Andreev Reflection to Probe Momentum-Dependent Spin Polarization in Altermagnet CrSb\"",
+    "last_author": "Boris Nadgorny",
+    "category": "comment_reply",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2410.05850",
+    "date": "2024-10-08",
+    "window": "preceding",
+    "title": "Crystal structure and absence of magnetic order in single crystalline RuO2",
+    "last_author": "Markus Braden",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2410.07344",
+    "date": "2024-10-09",
+    "window": "preceding",
+    "title": "Absence of \"fractional ac Josephson effect\" in superconducting junctions",
+    "last_author": "Andrei D. Zaikin",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2410.10992",
+    "date": "2024-10-14",
+    "window": "preceding",
+    "title": "Absence of Phonon Softening across a Charge Density Wave Transition due to Quantum Fluctuations",
+    "last_author": "Bolin Liao",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "cuprate_sc"
+   },
+   {
+    "id": "arXiv:2410.16465",
+    "date": "2024-10-21",
+    "window": "preceding",
+    "title": "Absence of Acoustic Phonon Anomaly in a Kagome Metal with Short-ranged Structural Modulation",
+    "last_author": "Pengcheng Dai",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "kagome"
+   },
+   {
+    "id": "arXiv:2410.22738",
+    "date": "2024-10-30",
+    "window": "preceding",
+    "title": "Absence of edge states at armchair edges in inhomogeneously strained graphene under a pseudomagnetic field",
+    "last_author": "Qing-Feng Sun",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "fractional_qah_chern"
+   },
+   {
+    "id": "arXiv:2411.12887",
+    "date": "2024-11-19",
+    "window": "preceding",
+    "title": "Magnetic excitations and absence of charge order in the van der Waals ferromagnet Fe4.75GeTe2",
+    "last_author": "V. Bisogni",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2412.03545",
+    "date": "2024-12-04",
+    "window": "preceding",
+    "title": "Absence of altermagnetic magnon band splitting in MnF2",
+    "last_author": "Oksana Zaharko",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2412.07190",
+    "date": "2024-12-10",
+    "window": "preceding",
+    "title": "Absence of ferromagnetic instability and weak spin-orbit coupling effect in AV3Sb5 (A = Cs, Rb, and K)",
+    "last_author": "Jun-Hyung Cho",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "kagome"
+   },
+   {
+    "id": "arXiv:2412.18481",
+    "date": "2024-12-24",
+    "window": "preceding",
+    "title": "Linear Enhancement of Spin-Orbit Torques and Absence of Bulk Rashba-Type Spin Splitting in Perpendicularly Magnetized [Pt/Co/W]n Superlattices",
+    "last_author": "Lijun Zhu",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2501.09226",
+    "date": "2025-01-16",
+    "window": "preceding",
+    "title": "Absence of diode effect in chiral type-I superconductor NbGe2",
+    "last_author": "Jiangping Hu",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2501.10260",
+    "date": "2025-01-17",
+    "window": "preceding",
+    "title": "Absence of orbital current torque in Ta/ferromagnet bilayers",
+    "last_author": "Lijun Zhu",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2501.11936",
+    "date": "2025-01-21",
+    "window": "preceding",
+    "title": "Evidence of pseudogap and absence of spin magnetism in the time-reversal-symmetry-breaking state of Ba1-xKxFe2As2",
+    "last_author": "Vadim Grinenko",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "iron_based_sc"
+   },
+   {
+    "id": "arXiv:2501.12647",
+    "date": "2025-01-22",
+    "window": "preceding",
+    "title": "Absence of superconductivity and density-wave transition in ambient-pressure tetragonal La4Ni3O10",
+    "last_author": "Xianhui Chen",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "nickelate_sc"
+   },
+   {
+    "id": "arXiv:2501.15771",
+    "date": "2025-01-27",
+    "window": "preceding",
+    "title": "Absence of two-phonon quasi-elastic scattering in the normal state of doped--SrTiO3 by THz pump-probe spectroscopy",
+    "last_author": "N. P. Armitage",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "mott_hubbard_strange_metal"
+   },
+   {
+    "id": "arXiv:2502.01580",
+    "date": "2025-02-03",
+    "window": "preceding",
+    "title": "Susceptibility anisotropy and absence of ferroelectric order in the Kitaev spin liquid candidate Na2Co2TeO6",
+    "last_author": "A. V. Mahajan",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "spin_liquid_frustrated"
+   },
+   {
+    "id": "arXiv:2503.07985",
+    "date": "2025-03-11",
+    "window": "preceding",
+    "title": "Absence of transport altermagnetic spin-splitting effect in RuO2",
+    "last_author": "Danru Qu",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2504.21608",
+    "date": "2025-04-30",
+    "window": "preceding",
+    "title": "No Evidence of Anomalous Diffusion in Yukawa Crystals",
+    "last_author": "Dany Yaacoub",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2505.15521",
+    "date": "2025-05-21",
+    "window": "preceding",
+    "title": "Prethermalization, shadowing breakdown, and the absence of Trotterization transition in quantum circuits",
+    "last_author": "Marko Znidaric",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "ultrafast_floquet_noneq"
+   },
+   {
+    "id": "arXiv:2505.18898",
+    "date": "2025-05-24",
+    "window": "preceding",
+    "title": "Absence of Long-Range Order and Magnetic Anisotropy in the Triangular Magnet NdMgAl11O19",
+    "last_author": "Ross H. Colman",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "spin_liquid_frustrated"
+   },
+   {
+    "id": "arXiv:2506.00126",
+    "date": "2025-05-30",
+    "window": "preceding",
+    "title": "Absence of topological order in the U(1) checkerboard toric code",
+    "last_author": "K. P. Schmidt",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2506.07005",
+    "date": "2025-06-08",
+    "window": "preceding",
+    "title": "Spin fluctuations, absence of magnetic order, and crystal electric field studies in the Yb3+-based triangular lattice antiferromagnet Rb3Yb(VO4)2",
+    "last_author": "R. Nath",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "spin_liquid_frustrated"
+   },
+   {
+    "id": "arXiv:2507.04076",
+    "date": "2025-07-05",
+    "window": "preceding",
+    "title": "Absence of higher than 6-fold coordination in glassy GeO2 up to 158 GPa revealed by X-ray absorption spectroscopy",
+    "last_author": "Max Wilke",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2508.03821",
+    "date": "2025-08-05",
+    "window": "preceding",
+    "title": "Absence of dissipation-free topological edge states in quadratic open fermions",
+    "last_author": "Liang Mao",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2509.02857",
+    "date": "2025-09-02",
+    "window": "preceding",
+    "title": "Magnetic Double-Wells: Absence of Tunneling",
+    "last_author": "Michael I. Weinstein",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2509.06281",
+    "date": "2025-09-08",
+    "window": "preceding",
+    "title": "Absence of high-field spin supersolid phase in Rb2Co(SeO3)2 with a triangular lattice",
+    "last_author": "Long Ma",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2509.08823",
+    "date": "2025-09-10",
+    "window": "preceding",
+    "title": "Absence of two-orbital superconductivity in cuprate family: A DFT+DMFT perspective",
+    "last_author": "Zhong-Yi Lu",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "nickelate_sc"
+   },
+   {
+    "id": "arXiv:2509.10215",
+    "date": "2025-09-12",
+    "window": "preceding",
+    "title": "Direct evidence for the absence of coupling between shear strain and superconductivity in Sr2RuO4",
+    "last_author": "Yoshiteru Maeno",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2509.11005",
+    "date": "2025-09-13",
+    "window": "preceding",
+    "title": "Absence of detectable spin and orbital pumping from Ni to Nb by out-of-plane ferromagnetic resonance",
+    "last_author": "Satoru Emori",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2509.15288",
+    "date": "2025-09-18",
+    "window": "preceding",
+    "title": "Absence of Andreev Bound States in Noncentrosymmetric Superconductor PbTaSe2 under Hydrostatic Pressures",
+    "last_author": "Cong Ren",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2509.15352",
+    "date": "2025-09-18",
+    "window": "preceding",
+    "title": "Absence of skewness in the voltage fluctuations of a tunnel junction in the quantum regime",
+    "last_author": "Bertrand Reulet",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2509.20142",
+    "date": "2025-09-24",
+    "window": "trailing",
+    "title": "Single crystal growth, structural and physical properties, and absence of a charge density wave in Ti0.85Fe6Ge6",
+    "last_author": "Aifeng Wang",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "kagome"
+   },
+   {
+    "id": "arXiv:2510.27215",
+    "date": "2025-10-31",
+    "window": "trailing",
+    "title": "Absence of Parity Anomaly in Massive Dirac Fermions on a Lattice",
+    "last_author": "Shun-Qing Shen",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2511.00399",
+    "date": "2025-11-01",
+    "window": "trailing",
+    "title": "Absence of magnetic order and magnetic fluctuations in RuO2",
+    "last_author": "Zheng Li",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2511.15930",
+    "date": "2025-11-19",
+    "window": "trailing",
+    "title": "Nonlocal Transport in Cr-doped (Bi,Sb)2Te3: Absence of Nonchiral Edge States",
+    "last_author": "Curt A. Richter",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "fractional_qah_chern"
+   },
+   {
+    "id": "arXiv:2511.18974",
+    "date": "2025-11-24",
+    "window": "trailing",
+    "title": "Clustering-Enhanced Time- and Angle-Resolved Photoemission Study of LaTe3: Absence of a Photoinduced Secondary CDW in the Electronic Structure",
+    "last_author": "Philip Hofmann",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2512.01395",
+    "date": "2025-12-01",
+    "window": "trailing",
+    "title": "Questioning the cuprate paradigm -- absence of superfluid density loss in several overdoped cuprates I",
+    "last_author": "J. R. Cooper",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "cuprate_sc"
+   },
+   {
+    "id": "arXiv:2512.23976",
+    "date": "2025-12-30",
+    "window": "trailing",
+    "title": "On the Absence of Symmetric Simple Conformal Boundary Conditions",
+    "last_author": "Yunqin Zheng",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2601.06791",
+    "date": "2026-01-11",
+    "window": "trailing",
+    "title": "Absence of magnetic order in epitaxial RuO2 revealed by X-ray linear dichroism",
+    "last_author": "Qian Li",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2602.08665",
+    "date": "2026-02-09",
+    "window": "trailing",
+    "title": "Structural studies on A2ReCl6 (A=K, Rb, Cs): absence of Jahn-Teller distortion",
+    "last_author": "M. Braden",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2603.04889",
+    "date": "2026-03-05",
+    "window": "trailing",
+    "title": "Absence of Orbital Hall Magnetoresistance in Nonmagnet/Ferromagnet Bilayers with Large Orbital Torque",
+    "last_author": "Jianhua Zhao",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "flat_band_quantum_geometry"
+   },
+   {
+    "id": "arXiv:2603.12367",
+    "date": "2026-03-12",
+    "window": "trailing",
+    "title": "Absence of Charge Offset Drift in a Transmon Qubit",
+    "last_author": "Benjamin Huard",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2604.24858",
+    "date": "2026-04-27",
+    "window": "trailing",
+    "title": "Absence of Quasi-Majorana False Positives in Full-Shell Hybrid Nanowires",
+    "last_author": "Elsa Prada",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2605.02750",
+    "date": "2026-05-04",
+    "window": "trailing",
+    "title": "Absence of Quantum-Metric-Induced Intrinsic Longitudinal Response",
+    "last_author": "Ping Tang",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "flat_band_quantum_geometry"
+   },
+   {
+    "id": "arXiv:2605.27319",
+    "date": "2026-05-26",
+    "window": "trailing",
+    "title": "Absence of a Superradiant Phase Transition in Dirac Landau Polaritons",
+    "last_author": "Giacomo Scalari",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "fractional_qah_chern"
+   },
+   {
+    "id": "arXiv:2606.09988",
+    "date": "2026-06-08",
+    "window": "trailing",
+    "title": "Absence of poor local minima in matrix product states",
+    "last_author": "Tao Xiang",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "ml_ai"
+   },
+   {
+    "id": "arXiv:2606.14868",
+    "date": "2026-06-12",
+    "window": "trailing",
+    "title": "Absence of orbital current torque in a magnetic metal/Pt/CuOx trilayer",
+    "last_author": "Lijun Zhu",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2607.18015",
+    "date": "2026-07-20",
+    "window": "trailing",
+    "title": "Phonon dynamics in Chromium under pressure: absence of phonon criticality at the approach of the quantum critical point",
+    "last_author": "A. Bosak",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2608.17548",
+    "date": "2026-08-18",
+    "window": "trailing",
+    "title": "Absence of nontrivial local conserved quantities in a class of U(1)-symmetric spin-1 chains",
+    "last_author": "Haruki Watanabe",
+    "category": "null_result",
+    "in_scope": true,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2608.23305",
+    "date": "2026-08-24",
+    "window": "trailing",
+    "title": "Absence of lateral domain wall mobility in Zn1-xMgxO thin films",
+    "last_author": "Rama K. Vasudevan",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2609.08742",
+    "date": "2026-09-08",
+    "window": "trailing",
+    "title": "The absence of a central metal ion destabilizes phthalocyanine on In2O3(111)",
+    "last_author": "Margareta Wagner",
+    "category": "null_result",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2410.17079",
+    "date": "2024-10-22",
+    "window": "preceding",
+    "title": "Revisiting Thomson's model with multiply charged superfluid helium nanodroplets",
+    "last_author": "Marti Pi",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "other_superconductivity"
+   },
+   {
+    "id": "arXiv:2411.01255",
+    "date": "2024-11-02",
+    "window": "preceding",
+    "title": "Revisit Many-body Interaction Heat Current and Thermal Conductivity Calculation in Moment Tensor Potential/LAMMPS Interface",
+    "last_author": "Yue Chen",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "ultrafast_floquet_noneq"
+   },
+   {
+    "id": "arXiv:2412.09791",
+    "date": "2024-12-13",
+    "window": "preceding",
+    "title": "Revisiting Volterra defects: Geometrical relation between edge dislocations and wedge disclinations",
+    "last_author": "Ryuichi Tarumi",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2412.11240",
+    "date": "2024-12-15",
+    "window": "preceding",
+    "title": "Revisiting altermagnetism in RuO2: a study of laser-pulse induced charge dynamics by time-domain terahertz spectroscopy",
+    "last_author": "John Q. Xiao",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2501.01706",
+    "date": "2025-01-03",
+    "window": "preceding",
+    "title": "Revisiting the matrix elements of the position operator in the crystal momentum representation",
+    "last_author": "G. P. Zhang",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2501.16187",
+    "date": "2025-01-27",
+    "window": "preceding",
+    "title": "Revisiting the phonon theory of liquid heat capacity: low-frequency shear modes and intramolecular vibrations",
+    "last_author": "Matteo Baggioli",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2502.05144",
+    "date": "2025-02-07",
+    "window": "preceding",
+    "title": "Revisiting ab-initio excited state forces from many-body Green's function formalism: approximations and benchmark",
+    "last_author": "David A. Strubbe",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2502.07686",
+    "date": "2025-02-11",
+    "window": "preceding",
+    "title": "Revisiting Phase Transitions of Yttrium: Insights from Density Functional Theory",
+    "last_author": "Prafulla K. Jha",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2502.11342",
+    "date": "2025-02-17",
+    "window": "preceding",
+    "title": "Revisiting the charge-density-wave superlattice of 1T-TiSe2",
+    "last_author": "Yimei Zhu",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2502.17998",
+    "date": "2025-02-25",
+    "window": "preceding",
+    "title": "Revisiting the spin-orbit scattering in small-sized superconducting particles in the magnetic field",
+    "last_author": "Serguei N. Burmistrov",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "other_superconductivity"
+   },
+   {
+    "id": "arXiv:2502.18747",
+    "date": "2025-02-26",
+    "window": "preceding",
+    "title": "Revisiting MnSe : a Magnetic Semiconductor with Spin-Phonon coupling",
+    "last_author": "Rui Wu",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2503.10388",
+    "date": "2025-03-13",
+    "window": "preceding",
+    "title": "Reexamining Circular Dichroism in Photoemission From a Topological Insulator",
+    "last_author": "Jonathan A. Sobota",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2503.11189",
+    "date": "2025-03-14",
+    "window": "preceding",
+    "title": "Revisiting LaMnO3: A density functional theory study",
+    "last_author": "Bongjae Kim",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "mott_hubbard_strange_metal"
+   },
+   {
+    "id": "arXiv:2503.12983",
+    "date": "2025-03-17",
+    "window": "preceding",
+    "title": "Revisiting the Extraction of Coupling Strength for Polaron Hopping from ab~initio Approach",
+    "last_author": "Jing Li",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2505.00248",
+    "date": "2025-05-01",
+    "window": "preceding",
+    "title": "Revisiting the physical properties of (LaS)1+d(NbS2) misfit-layered compounds",
+    "last_author": "Satoshi Watauchi",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "other_superconductivity"
+   },
+   {
+    "id": "arXiv:2505.04443",
+    "date": "2025-05-07",
+    "window": "preceding",
+    "title": "Revisiting the epitaxial Si3N4 crystalline cap on AlGaN/GaN via evolutionary structure search",
+    "last_author": "Peng Cui",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2505.11630",
+    "date": "2025-05-16",
+    "window": "preceding",
+    "title": "Revisiting vestigial order in nematic superconductors: gauge-field mechanisms and model constraints",
+    "last_author": "Johan Carlström",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2506.00055",
+    "date": "2025-05-29",
+    "window": "preceding",
+    "title": "Revisiting the First, Second and Combined Laws of Thermodynamics",
+    "last_author": "Zi-Kui Liu",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2505.24359",
+    "date": "2025-05-30",
+    "window": "preceding",
+    "title": "Revisiting the Topological Nature of TaIrTe4, SrSi2, and Cu2XY3: An ab-initio Investigation",
+    "last_author": "Sudhir K. Pandey",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2506.02436",
+    "date": "2025-06-03",
+    "window": "preceding",
+    "title": "Revisiting the Mechanisms of Thermal Transport in Vacancy-Defective Silicon",
+    "last_author": "Cheng Shao",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2506.04754",
+    "date": "2025-06-05",
+    "window": "preceding",
+    "title": "Revisiting the cofactor conditions: Elimination of transition layers in compound domains",
+    "last_author": "Vivekanand Dabade",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2506.23658",
+    "date": "2025-06-30",
+    "window": "preceding",
+    "title": "Reexamination of the charge-ordered dimer pattern in the spinel compound CuIr2S4 using single-crystal synchrotron x-ray diffraction",
+    "last_author": "H. Sawa",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2507.05752",
+    "date": "2025-07-08",
+    "window": "preceding",
+    "title": "Revisiting the configurations of hydrogen impurities in SrTiO3: Insights from first-principles local vibration mode calculations",
+    "last_author": "Ma Chunlan",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "mott_hubbard_strange_metal"
+   },
+   {
+    "id": "arXiv:2507.10736",
+    "date": "2025-07-14",
+    "window": "preceding",
+    "title": "Revisiting the Abundance of Topological Materials",
+    "last_author": "Thomas D. Kühne",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2507.11416",
+    "date": "2025-07-15",
+    "window": "preceding",
+    "title": "Revisiting the Influence of Sn in Cu-Al alloys: A Third Element Effect Enabling Stainless Steel Type Aqueous Passivation Behavior",
+    "last_author": "John R. Scully",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2507.17410",
+    "date": "2025-07-23",
+    "window": "preceding",
+    "title": "Revisiting the Impact of Single-Vacancy Defects on Electronic Properties of Graphene",
+    "last_author": "Thomas. D. Kühne",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2507.21535",
+    "date": "2025-07-29",
+    "window": "preceding",
+    "title": "Revisiting THz absorption in GO and rGO liquid crystalline films",
+    "last_author": "H. Gharagulyan",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2508.05968",
+    "date": "2025-08-08",
+    "window": "preceding",
+    "title": "Revisiting μSR Studies of Ion Dynamics in the Light of Extended Kubo-Toyabe Model",
+    "last_author": "Ryosuke Kadono",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2508.15525",
+    "date": "2025-08-21",
+    "window": "preceding",
+    "title": "Revisiting thermal transport in CuCl: First-principles calculations and machine learning force fields",
+    "last_author": "Igor A. Abrikosov",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "ml_ai"
+   },
+   {
+    "id": "arXiv:2508.17367",
+    "date": "2025-08-24",
+    "window": "preceding",
+    "title": "Revisiting the adiabatic limit in ballistic multiterminal Josephson junctions",
+    "last_author": "Morteza Kayyalha",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2509.00299",
+    "date": "2025-08-30",
+    "window": "preceding",
+    "title": "Reexamining Machine Learning Models on Predicting Thermoelectric Properties",
+    "last_author": "S. Joseph Poon",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "ml_ai"
+   },
+   {
+    "id": "arXiv:2509.05088",
+    "date": "2025-09-05",
+    "window": "preceding",
+    "title": "Revisiting the Poor Man's Majoranas: The Spin-Exchange Induced Spillover Effect",
+    "last_author": "A. C. Seridonio",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2509.07950",
+    "date": "2025-09-09",
+    "window": "preceding",
+    "title": "Revisiting the Question of Information Content of EXAFS Spectra through a Bayesian Approach",
+    "last_author": "Andrei Sapelkin",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2509.09002",
+    "date": "2025-09-10",
+    "window": "preceding",
+    "title": "Revisiting intrinsic spin defects in hexagonal boron nitride with r2SCAN",
+    "last_author": "Katherine Inzani",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "cdw_nematic_excitonic"
+   },
+   {
+    "id": "arXiv:2509.20480",
+    "date": "2025-09-24",
+    "window": "trailing",
+    "title": "Revisiting dissipation-driven phase transition in a Josephson junction",
+    "last_author": "Jukka P. Pekola",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2510.10720",
+    "date": "2025-10-12",
+    "window": "trailing",
+    "title": "Revisiting YH9 Superconductivity and Predicting High-Tc in GdYH5",
+    "last_author": "M. A. Rastkhadiv",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "hydride_high_pressure_sc"
+   },
+   {
+    "id": "arXiv:2510.25938",
+    "date": "2025-10-29",
+    "window": "trailing",
+    "title": "Revisiting and Accelerating the Basin Hopping Algorithm for Lennard-Jones Clusters: Adaptive and Parallel Implementation in Python",
+    "last_author": "Alvaro Muñoz-Castro",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2510.26872",
+    "date": "2025-10-30",
+    "window": "trailing",
+    "title": "Revisiting Schrödinger CFTs: Factorization, Massless Particles, and a Path to the Bootstrap",
+    "last_author": "Ramtin M. Yazdi",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2511.02907",
+    "date": "2025-11-04",
+    "window": "trailing",
+    "title": "Revisiting Nishimori multicriticality through the lens of information measures",
+    "last_author": "Guo-Yi Zhu",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2512.03721",
+    "date": "2025-12-03",
+    "window": "trailing",
+    "title": "Revisiting Phase Stability and Superconductivity in Ca-H Superhydrides with Anharmonic Effects",
+    "last_author": "Yu Xie",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "hydride_high_pressure_sc"
+   },
+   {
+    "id": "arXiv:2512.07103",
+    "date": "2025-12-08",
+    "window": "trailing",
+    "title": "Revisiting the theory of crystal polarization: The downside of employing the periodic boundary conditions",
+    "last_author": "Su-Huai Wei",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2512.17703",
+    "date": "2025-12-19",
+    "window": "trailing",
+    "title": "Revisiting the Broken Symmetry Phase of Solid Hydrogen: A Neural Network Variational Monte Carlo Study",
+    "last_author": "X. C. Xie",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "ml_ai"
+   },
+   {
+    "id": "arXiv:2601.09705",
+    "date": "2026-01-14",
+    "window": "trailing",
+    "title": "Revisiting Jahn--Teller Transitions in Correlated Oxides with Monte Carlo Modeling",
+    "last_author": "Siân E. Dutton",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "nickelate_sc"
+   },
+   {
+    "id": "arXiv:2602.02348",
+    "date": "2026-02-02",
+    "window": "trailing",
+    "title": "Reexamining the strange metal charge response with transmission inelastic electron scattering",
+    "last_author": "Peter Abbamonte",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "cuprate_sc"
+   },
+   {
+    "id": "arXiv:2603.06460",
+    "date": "2026-03-06",
+    "window": "trailing",
+    "title": "Revisiting the symmetry and optical phonons of altermagnetic α-MnTe",
+    "last_author": "Alexander A. Tsirlin",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2603.08650",
+    "date": "2026-03-09",
+    "window": "trailing",
+    "title": "Revisiting the J1-J2 Heisenberg Model on a Triangular Lattice: Quasi-Degenerate Ground States and Phase Competition",
+    "last_author": "Jan von Delft",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "spin_liquid_frustrated"
+   },
+   {
+    "id": "arXiv:2604.07139",
+    "date": "2026-04-08",
+    "window": "trailing",
+    "title": "Revisiting quadratic band crossing: from interaction-driven instability to intrinsic topology",
+    "last_author": "Jing Wang",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "fractional_qah_chern"
+   },
+   {
+    "id": "arXiv:2604.13576",
+    "date": "2026-04-15",
+    "window": "trailing",
+    "title": "Revisiting 9Be Nuclear Magnetic Resonance in UBe13: Itinerant-Localized Duality and Possible Fermi Surface Reconstruction at High Magnetic Field",
+    "last_author": "Hideki Tou",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "heavy_fermion_kondo_qcp"
+   },
+   {
+    "id": "arXiv:2604.14395",
+    "date": "2026-04-15",
+    "window": "trailing",
+    "title": "Revisiting apparent ideal diamagnetism at ambient conditions in graphene-n-heptane-permalloy systems",
+    "last_author": "Armen Gulian",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2604.19078",
+    "date": "2026-04-21",
+    "window": "trailing",
+    "title": "Re-examination of electronic structure of dilute Kondo transition-metal ions substituted into a Heavy Fermion compound",
+    "last_author": "Satoru Nakatsuji",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "heavy_fermion_kondo_qcp"
+   },
+   {
+    "id": "arXiv:2605.02423",
+    "date": "2026-05-04",
+    "window": "trailing",
+    "title": "Revisiting the surface density of states of midgap Andreev edge states",
+    "last_author": "Seiji Higashitani",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "unconventional_topological_sc"
+   },
+   {
+    "id": "arXiv:2605.07118",
+    "date": "2026-05-08",
+    "window": "trailing",
+    "title": "Revisiting magnetoelectric response in collinear antiferromagnetic zigzag chains: A downfolding approach beyond conventional low-energy models",
+    "last_author": "Satoru Hayami",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2605.07382",
+    "date": "2026-05-08",
+    "window": "trailing",
+    "title": "Revisiting Ferroelectricity Beyond Polar Space Groups",
+    "last_author": "Shi Liu",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2605.24857",
+    "date": "2026-05-24",
+    "window": "trailing",
+    "title": "Revisiting spin Hamiltonian parameters in a Kitaev material via Bayesian optimization of magnetization curves",
+    "last_author": "Youhei Yamaji",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "spin_liquid_frustrated"
+   },
+   {
+    "id": "arXiv:2606.10985",
+    "date": "2026-06-09",
+    "window": "trailing",
+    "title": "Revisiting Cherenkov radiation in anisotropic chiral matter: exact calculation reveals threshold-free emission",
+    "last_author": "Luis F. Urrutia",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2606.17954",
+    "date": "2026-06-16",
+    "window": "trailing",
+    "title": "Revisiting quantum effects on dislocation glide in bcc metals from DFT calculations and machine-learning potentials",
+    "last_author": "Laurent Proville",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": "ml_ai"
+   },
+   {
+    "id": "arXiv:2606.21879",
+    "date": "2026-06-20",
+    "window": "trailing",
+    "title": "Revisiting Theoretical Modeling of Seebeck Coefficient of Semiconductors",
+    "last_author": "Yuchao Hua",
+    "category": "revisit",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2607.29396",
+    "date": "2026-07-31",
+    "window": "trailing",
+    "title": "Revisiting the Equation-of-Motion Method: A Universal Framework for Correlated Quantum Systems",
+    "last_author": "Andrea Porro",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2608.12459",
+    "date": "2026-08-12",
+    "window": "trailing",
+    "title": "Revisiting magnon bound states: ferro-antiferromagnetic J1\\!-\\!J2 square-lattice model",
+    "last_author": "A. L. Chernyshev",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "vdw_magnets_topological_magnetism"
+   },
+   {
+    "id": "arXiv:2608.18729",
+    "date": "2026-08-19",
+    "window": "trailing",
+    "title": "Revisiting the topological properties of XMg2Bi2 (X = Ca, Sr, Ba, Yb and Eu)",
+    "last_author": "Asiyeh Shokri",
+    "category": "revisit",
+    "in_scope": true,
+    "cluster": "topological_insulators_semimetals"
+   },
+   {
+    "id": "arXiv:2507.15170",
+    "date": "2025-07-21",
+    "window": "preceding",
+    "title": "Revisiting the magnetic ground states of RECo5 permanent magnets",
+    "last_author": "J. Larrea Jiménez",
+    "category": "revisit+withdrawn",
+    "in_scope": true,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2411.04294",
+    "date": "2024-11-06",
+    "window": "preceding",
+    "title": "Split Cherenkov radiation in isotropic chiral matter",
+    "last_author": "Maxim A. Gorlach",
+    "category": "withdrawn",
+    "in_scope": true,
+    "cluster": "quantum_many_body_theory"
+   },
+   {
+    "id": "arXiv:2504.21616",
+    "date": "2025-04-30",
+    "window": "preceding",
+    "title": "Fermionic Band Dispersions and an Evidence of Cooperon Excitations in a Spin-1/2 Trimer Chain",
+    "last_author": "S. M. Yusuf",
+    "category": "withdrawn",
+    "in_scope": true,
+    "cluster": "quantum_magnetism_ferroic_order"
+   },
+   {
+    "id": "arXiv:2511.13142",
+    "date": "2025-11-17",
+    "window": "trailing",
+    "title": "Multiphase transport and compositional mixing mechanisms in twin-wire laser directed energy deposition: toward process stability and graded material fabrication",
+    "last_author": "Zhenzhong Wang",
+    "category": "withdrawn",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2511.22760",
+    "date": "2025-11-27",
+    "window": "trailing",
+    "title": "A Functional Field Theorem: An Explicit Proof of Axioms and Equations for Applying iSAFT in Polymer Field Theory",
+    "last_author": "Maximo T. Estrada",
+    "category": "withdrawn",
+    "in_scope": false,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2512.19065",
+    "date": "2025-12-22",
+    "window": "trailing",
+    "title": "Signature of inverse orbital Hall effect in silicon studied using time-resolved terahertz polarimetry",
+    "last_author": "Ryusuke Matsunaga",
+    "category": "withdrawn",
+    "in_scope": false,
+    "cluster": "flat_band_quantum_geometry"
+   },
+   {
+    "id": "arXiv:2605.26957",
+    "date": "2026-05-26",
+    "window": "trailing",
+    "title": "Inter-Landau-Level Pair Tunneling Rigidifies the Long-Wavelength Structure Factor of the ν=1/3 Laughlin State",
+    "last_author": "Hongyi Liu",
+    "category": "withdrawn",
+    "in_scope": true,
+    "cluster": "ml_ai"
+   },
+   {
+    "id": "arXiv:2606.11912",
+    "date": "2026-06-10",
+    "window": "trailing",
+    "title": "Robust Spin Logic Enabled by Generalized SU(2) Symmetry in p-Wave Magnets",
+    "last_author": "Chui-Zhen Chen",
+    "category": "withdrawn",
+    "in_scope": false,
+    "cluster": "altermagnetism"
+   },
+   {
+    "id": "arXiv:2606.16674",
+    "date": "2026-06-15",
+    "window": "trailing",
+    "title": "Effects on a metal that is proximately coupled to hyperbolic photon modes",
+    "last_author": "Patrick A. Lee",
+    "category": "withdrawn",
+    "in_scope": true,
+    "cluster": null
+   },
+   {
+    "id": "arXiv:2607.11298",
+    "date": "2026-07-13",
+    "window": "trailing",
+    "title": "PAC Studio Machine Learning: Human-in-the-Loop Analysis of TDPAC Spectra",
+    "last_author": "Doru Constantin Lupascu",
+    "category": "withdrawn",
+    "in_scope": false,
+    "cluster": "ml_ai"
+   },
+   {
+    "id": "arXiv:2607.14461",
+    "date": "2026-07-16",
+    "window": "trailing",
+    "title": "Multistate ferroelectricity and switchable layer-locked anomalous valley Hall effects in bilayer ReIrGe2Se6",
+    "last_author": "Jiansheng Dong",
+    "category": "withdrawn",
+    "in_scope": true,
+    "cluster": "vdw_magnets_topological_magnetism"
+   }
+  ]
+ }
+}

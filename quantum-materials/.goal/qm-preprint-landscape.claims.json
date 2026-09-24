@@ -1,0 +1,102 @@
+{
+  "goal": "Map the current areas of interest in quantum materials research from preprint servers, answering six named questions with verified preprint evidence",
+  "slug": "qm-preprint-landscape",
+  "claims": [
+    {
+      "id": "C1",
+      "provenance": "verified",
+      "evidence": "My own count over corpus/arxiv.jsonl printed 'records 35295 unique ids 35295', windows {'preceding': 16579, 'trailing': 18716}; verify_citations.py printed 'arxiv by window: trailing=18716 | preceding=16579 | outside=0'. Iteration 2 verify_citations.py run: 'arxiv: 35324' and 'arxiv by window: trailing=18717 | preceding=16579 | outside=28' (29 id_list supplement records added by q6:noise; 1 in-window: arXiv:2510.03256).",
+      "claim": "The harvested arXiv corpus (cond-mat.str-el, supr-con, mes-hall, mtrl-sci incl. cross-lists; 2024-09-24..2026-09-23) holds 35,295 unique preprints: 18,716 in the trailing 12 months and 16,579 in the preceding 12 months (+12.9% raw)."
+    },
+    {
+      "id": "C2",
+      "provenance": "verified",
+      "evidence": "My arXiv API queries cat:<cat> AND submittedDate:[202509240000 TO 202609232359] printed totalResults str-el 5177, supr-con 2287, mes-hall 5956, mtrl-sci 9726 (preceding: 4618, 2124, 5901, 8551).",
+      "claim": "Every quantum-materials-relevant cond-mat category grew year over year; mtrl-sci grew most (+13.7%), mes-hall was nearly flat (+0.9%)."
+    },
+    {
+      "id": "C3",
+      "provenance": "verified",
+      "evidence": "verify_citations.py output I ran: 'harvested corpus: 38598 records' with zenodo 1458, osti 1437, researchsquare 197, hal 123, preprints_org 57, chemrxiv 29, techrxiv 2.",
+      "claim": "Non-arXiv servers contribute 3,303 phrase-filtered QM records in total (8.6% of the corpus), led by Zenodo and OSTI; ChemRxiv and TechRxiv contribute almost nothing."
+    },
+    {
+      "id": "C4",
+      "provenance": "verified",
+      "evidence": "My corpus lookup printed arXiv:2502.19560 'Comment on \"InAs-Al hybrid devices passing the topological gap protocol\"', arXiv:2503.08944 'Comment on \"Interferometric single-shot parity measurement...\"', arXiv:2504.13240 'Response to recent comments on Phys. Rev. B 107, 245423'.",
+      "claim": "The Microsoft topological-gap-protocol / Majorana parity-readout claims are actively contested on arXiv within the window by a Comment/Response thread."
+    },
+    {
+      "id": "C5",
+      "provenance": "verified",
+      "evidence": "My corpus lookup printed arXiv:2510.01273 'Room-Temperature Superconductivity at 298 K in Ternary La-Sc-H System' and arXiv:2603.12437 'Ambient-pressure 151-K superconductivity in HgBa2Ca2Cu3O8+δ via pressure quench'; arXiv:2605.29985 'Stability Analysis of Superconductivity in P6/mmm-LaSc2H24 and its Experimen...'.",
+      "claim": "Two record-Tc claims in the window (298 K La-Sc-H under pressure; 151 K ambient Hg-1223 via pressure quench) are high-visibility and not yet independently replicated."
+    },
+    {
+      "id": "C6",
+      "provenance": "verified",
+      "evidence": "My corpus lookup printed arXiv:2511.00399 'Absence of magnetic order and magnetic fluctuations in RuO2' alongside arXiv:2602.15606 'Neel temperature and helical spin order of altermagnetic RuO2'. Iteration 3 lookup printed arXiv:2410.05850 'Crystal structure and absence of magnetic order in single crystalline RuO2'.",
+      "claim": "Altermagnetism in bulk RuO2 — the field's flagship candidate — is contested within the harvest span by null-result preprints; findings.md calls bulk order 'strongly disfavoured' while thin-film/strain claims remain open."
+    },
+    {
+      "id": "C7",
+      "provenance": "verified",
+      "evidence": "My own recomputation from analysis/classified.jsonl printed 'altermagnetism T= 660 P= 414 R=1.42 CI=1.26-1.62' with scope {'trailing': 9878, 'preceding': 8828}; analysis/momentum.py re-run reproduced momentum.json identically. Exemplars in findings.md: arXiv:2511.06865, arXiv:2602.05745, arXiv:2602.08790.",
+      "claim": "Altermagnetism is the only rising quantum-materials cluster: its share of in-scope arXiv output rose ~42% (R=1.42, 95% CI 1.26-1.62) against an in-scope baseline growth of +11.9%."
+    },
+    {
+      "id": "C8",
+      "provenance": "inherited",
+      "evidence": "q5:beyond-arxiv agent (iteration 2), analysis/q5.json + q5_audit.json (152 hand-judged records): HAL 78% on arXiv; Zenodo 68% of audited sample fringe, one uploader = 152 records; Zenodo 11x growth tracks a 7.3x platform-wide upload surge.",
+      "claim": "HAL is mostly an arXiv mirror for QM preprints and Zenodo QM 'preprints' are mostly fringe; neither adds usable trend signal."
+    },
+    {
+      "id": "C9",
+      "provenance": "inherited",
+      "evidence": "harvest:crossref agent (iteration 1) crossref_harvest_log.json: fetched->kept chemrxiv 4004->37, researchsquare 8261->216, preprints_org 5444->65, techrxiv 1177->2.",
+      "claim": "Crossref keyword search over preprint prefixes is >97% noise for QM terms; a phrase filter is required."
+    },
+    {
+      "id": "C10",
+      "provenance": "inferred",
+      "evidence": "C1 and C7 together: raw arXiv growth is +12.9% and in-scope growth ~+12%, so raw count changes overstate topic momentum.",
+      "claim": "Cluster momentum must be judged against the in-scope baseline growth rather than raw count change."
+    },
+    {
+      "id": "C11",
+      "provenance": "verified",
+      "evidence": "My own recomputation printed 'topological_insulators_semimetals T= 678 P= 712 R=0.85 CI=0.76-0.95' and 'spin_liquid_frustrated T= 387 P= 407 R=0.85 CI=0.74-0.98'; exemplars cited in findings.md Q2: arXiv:2511.14454, arXiv:2603.14682.",
+      "claim": "Topological insulators/semimetals and spin-liquid/frustrated magnetism are the two declining clusters (share ratio 0.85 each), the latter only marginally."
+    },
+    {
+      "id": "C12",
+      "provenance": "verified",
+      "evidence": "My final run of verify_citations.py printed 'harvested corpus: 38627 records' with per-server breakdown and 'cited IDs: 163 | found in corpus: 163 | missing: 0', per-question tallies Q1 48, Q2 9, Q3 27, Q4 10, Q5 17, Q6 54.",
+      "claim": "Every preprint ID cited in the final findings.md (163) exists in the harvested corpus, and each question cites at least 9 IDs."
+    },
+    {
+      "id": "C13",
+      "provenance": "inherited",
+      "evidence": "q4:methods agent (iteration 2) analysis/methods.json, numbers cross-checked by audit:q3q4 (iteration 3): DFT 1,490; magnetotransport 1,098; tight-binding 850; mean field 636; ML R=1.37 (1.16-1.62), ED 1.36, QMC 1.28.",
+      "claim": "The dominant techniques are DFT (computational) and magnetotransport (experimental); the method mix is stable, with only machine learning clearly growing after multiple-comparison correction."
+    },
+    {
+      "id": "C14",
+      "provenance": "inherited",
+      "evidence": "q3:materials agent (iteration 2), analysis/materials.json: CrSb R=2.32, MnTe R=1.49, altermagnet-candidate family R=1.77, RuO2 flat; MnBi2Te4, Kitaev materials, AV3Sb5 losing share. audit:q3q4 (iteration 3): MnTe CI lower bound 1.001; family 128->254 (R 1.77, 1.43-2.20).",
+      "claim": "The one robust materials trend is the altermagnet-candidate family (R 1.77), led by CrSb (R 2.32); MnTe is marginal and RuO2 is flat despite being the flagship candidate."
+    },
+    {
+      "id": "C15",
+      "provenance": "inherited",
+      "evidence": "q6:noise agent (iteration 2) analysis/q6.json + noise_filter.py; scores reproduced exactly by audit:q6-skeptic (iteration 3). My lookup printed arXiv:2510.03256 'Signs of Possible High-Temperature Superconductivity in Graphite Intercalated with Lithium-Based All...' (weak-evidence wording, feature F4).",
+      "claim": "Under the F1-F7 noise filter, 8 of 18 high-visibility claims are noisy; room-temperature SC claims (LK-99, LaSc2H24, graphite) and Microsoft's Majorana parity readout score highest, and Hg-1223 (151 K) is on watch as unreplicated."
+    },
+    {
+      "id": "C16",
+      "provenance": "verified",
+      "evidence": "My tally of notes/audit/q1_precision_reaudit.json (verdicts by audit:q1-precision, iteration 3) printed 'pooled 181/220 = 0.82', six clusters below 0.80 incl. ('rhombohedral_multilayer_graphene', 6, 10) and ('heavy_fermion_kondo_qcp', 6, 10); file overall wilson95 [0.767, 0.868]. Same tally printed 'altermagnetism re-audit 10/10'.",
+      "claim": "On a strict fresh sample, cluster labels are ~82% precise (not the 94% of the tuning audit); the one rising cluster (altermagnetism) re-audits at 10/10, but counts for weaker clusters carry ~20% label noise."
+    }
+  ]
+}

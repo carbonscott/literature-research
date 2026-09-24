@@ -1,0 +1,3922 @@
+{
+ "taxonomy_version": "v2",
+ "population": "arXiv records, in scope (taxonomy v2); per-cluster tables: trailing window, primary cluster",
+ "windows": {
+  "trailing": [
+   "2025-09-24",
+   "2026-09-23"
+  ],
+  "preceding": [
+   "2024-09-24",
+   "2025-09-23"
+  ]
+ },
+ "scope_baseline": {
+  "trailing": 9877,
+  "preceding": 8828,
+  "baseline_share_ratio_note": "R=1 means the item kept pace with in-scope arXiv growth"
+ },
+ "ci_method": "var(log R) ~= 1/T + 1/P + 1/scope_T + 1/scope_P; 95% CI = exp(log R +- 1.96 sd)",
+ "extended_families": {
+  "ext_conventional_sc_compounds": "(?<![A-Za-z0-9])(?:NbN|NbTiN|TiN|TaN|MgB2|Nb3Sn|Nb3Ge|NbTi|V3Si|MoGe|MoSi|MoRe|WSi|K3C60|CaC6|Mo3Al2C)(?![a-z0-9])",
+  "ext_ferroelectrics_multiferroics": "(?<![A-Za-z0-9])(?:BiFeO3|BaTiO3|PbTiO3|PbZrO3|Cr2O3|In2Se3|LiNbO3|LiTaO3|HfO2|Hf0.5Zr0.5O2|Fe2Mo3O8|Co2Mo3O8|Ni3TeO6|CuCrP2S6|CuInP2S6|NbOI2|TbMnO3|YMnO3|BiMnO3|GeTe)(?![a-z0-9])|(?i:\\bmultiferroics?\\b)",
+  "ext_kagome_more": "(?<![A-Za-z0-9])(?:Nb3Cl8|Nb3Br8|Nb3I8|LaRu3Si2|CeRu3Si2|HoAgGe|FeSn|[A-Z][a-z]?Nb6Sn6|[A-Z][a-z]?Ti3Bi4|[A-Z][a-z]?Fe6Ge6|Pd3Pb2S2)(?![a-z0-9])",
+  "ext_tm_perovskite_oxides": "(?<![A-Za-z0-9])(?:SrIrO3|CaIrO3|BaIrO3|SrVO3|CaVO3|LaCoO3|LaFeO3|SrFeO3|CaMnO3|SrMnO3|BaMnO3|La2NiO4|La2-xSrxNiO4|SrCoO3|SrCoO2.5|La0\\.\\d+Sr0\\.\\d+MnO3|La0\\.\\d+Ca0\\.\\d+MnO3|Pr0\\.\\d+Ca0\\.\\d+MnO3)(?![a-z0-9])",
+  "ext_spin_chain_ladder_compounds": "(?<![A-Za-z0-9])(?:Sr2CuO3|SrCuO2|Ca2CuO3|BaCo2V2O8|SrCo2V2O8|CoNb2O6|CuGeO3|Sr14Cu24O41|KCuF3|Na2Cu3Ge4O12|LiCuVO4|CsCoCl3|YbAlO3|Cs2CoCl4|BaCu2Si2O7)(?![a-z0-9])",
+  "ext_spintronic_magnets": "(?<![A-Za-z0-9])(?:CoFeB|Co20Fe60B20|Ni80Fe20|Ni81Fe19|NiFe|CuMnAs|Mn2Au|Mn3NiN|Mn3GaN|Mn3Ga|Mn3Pt|Mn3Ir|IrMn|Co2FeAl|Co2MnSi|Fe3O4|Y3Fe5O12|Tm3Fe5O12)(?![a-z0-9])|\\bYIG\\b|\\bTmIG\\b|(?i:\\bpermalloy\\b|\\byttrium iron garnet)",
+  "ext_layered_dichalcogenides_more": "(?<![A-Za-z0-9])(?:NiTe2|SnSe2|SnS2|ZrTe2|ZrS2|VTe2|VS2|NbTe2|TaTe2|PdSe2|PtS2|HfTe2|TiTe2|TiS2)(?![a-z0-9])",
+  "ext_layered_magnets_more": "(?<![A-Za-z0-9])(?:CrOCl|CrOBr|NiBr2|NiCl2|CoCl2|FePSe3|Cr3Te4|Cr5Te8|Cr1\\+δTe2|Cr1\\+xTe2|Mn3Si2Te6|MnTe2|CrSe2|VBr3|VCl3|MnBi6Te10|MnBi8Te13|AgCrP2S6|AgCrSe2)(?![a-z0-9])",
+  "ext_heavy_fermion_more": "(?<![A-Za-z0-9])(?:CeNiAsO|CeCoSi|CeCoGe3|CeRh6Ge4|CeRhSi3|CeIrSi3|CePt3Si|YbCuS2|URhSn|UCoAl|UTe3|USb2|LiV2O4)(?![a-z0-9])",
+  "ext_semiconductors_more": "(?<![A-Za-z0-9])(?:SiGe|Si1-xGex|InP|GaSb|AlSb|AlAs|AlN|SiC|PbTe|PbSe|PbS|Pb1-xSnxSe|InGaAs|GaInSb|InAsSb|CdSe|ZnSe)(?![a-z0-9])",
+  "ext_delafossites": "(?<![A-Za-z0-9])(?:PdCoO2|PdCrO2|PtCoO2)(?![a-z0-9])|(?i:\\bdelafossites?\\b)"
+ },
+ "formula_rules": {
+  "generic_excluded": [
+   "Al2O3",
+   "CH4",
+   "CO",
+   "CO2",
+   "CaF2",
+   "CaH2",
+   "D2O",
+   "H2O",
+   "HCl",
+   "LiF",
+   "MgO",
+   "N2O",
+   "NH3",
+   "NaCl",
+   "Si3N4",
+   "SiN",
+   "SiO2",
+   "Ta2O5",
+   "TiO2"
+  ],
+  "acronyms_excluded": [
+   "CP1",
+   "CP2",
+   "HC2",
+   "SC1",
+   "SC2",
+   "SC3",
+   "SO3",
+   "SO5",
+   "SU2",
+   "SU3",
+   "SYK2"
+  ],
+  "structural_units_excluded": "^(?:[A-Z][a-z]?O[3-6]|CuO2|NiO2)$",
+  "also_excluded": "parenthesis fragments, '-type'/'structure' labels, plural all-caps acronyms, counts > 99",
+  "canonicalization": "polytype/phase prefix (1T-, 2H-, alpha-) and a trailing -x/+x/-y/-delta variable dropped"
+ },
+ "clusters": {
+  "nickelate_sc": {
+   "label": "Nickelates (bilayer/trilayer & infinite-layer) and nickelate superconductivity",
+   "n_records_trailing_primary": 222,
+   "base_families_v2": {
+    "n_with_any_family": 220,
+    "share_with_any_family": 0.991,
+    "family_counts": {
+     "nickelates_bilayer_trilayer_rp": 168,
+     "nickelates_infinite_layer": 56,
+     "cuprates": 44,
+     "iridates_mott_oxides": 11,
+     "srtio3_ktao3_oxide_interfaces": 7,
+     "iron_pnictides_chalcogenides": 5,
+     "altermagnet_candidates": 2,
+     "other_kagome_metals": 2,
+     "semiconductor_2deg_and_qw": 1,
+     "ute2_heavy_fermion_f_electron": 1
+    },
+    "top_families": [
+     [
+      "nickelates_bilayer_trilayer_rp",
+      168
+     ],
+     [
+      "nickelates_infinite_layer",
+      56
+     ],
+     [
+      "cuprates",
+      44
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 220,
+    "share_with_any_family": 0.991,
+    "family_counts": {
+     "nickelates_bilayer_trilayer_rp": 168,
+     "nickelates_infinite_layer": 56,
+     "cuprates": 44,
+     "iridates_mott_oxides": 11,
+     "srtio3_ktao3_oxide_interfaces": 7,
+     "ext_tm_perovskite_oxides": 6,
+     "iron_pnictides_chalcogenides": 5,
+     "altermagnet_candidates": 2,
+     "other_kagome_metals": 2,
+     "ext_spin_chain_ladder_compounds": 1,
+     "semiconductor_2deg_and_qw": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "ext_delafossites": 1
+    },
+    "top_families": [
+     [
+      "nickelates_bilayer_trilayer_rp",
+      168
+     ],
+     [
+      "nickelates_infinite_layer",
+      56
+     ],
+     [
+      "cuprates",
+      44
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "La3Ni2O7",
+     103
+    ],
+    [
+     "La4Ni3O10",
+     30
+    ],
+    [
+     "SrLaAlO4",
+     11
+    ],
+    [
+     "Pr4Ni3O10",
+     10
+    ],
+    [
+     "La2PrNi2O7",
+     8
+    ],
+    [
+     "La2SmNi2O7",
+     5
+    ],
+    [
+     "LaAlO3",
+     5
+    ],
+    [
+     "La2NiO4",
+     5
+    ],
+    [
+     "La5Ni3O11",
+     4
+    ],
+    [
+     "PrNiO2",
+     3
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "SrLaAlO4",
+     11
+    ]
+   ],
+   "leading_family": "nickelates_bilayer_trilayer_rp",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.20727",
+    "family": "nickelates_bilayer_trilayer_rp",
+    "title": "Distinct orbital contributions to electronic and magnetic structures in La$_{4}$Ni$_{3}$O$_{10}$",
+    "is_leading_family": true
+   }
+  },
+  "cuprate_sc": {
+   "label": "Cuprate superconductivity",
+   "n_records_trailing_primary": 223,
+   "base_families_v2": {
+    "n_with_any_family": 223,
+    "share_with_any_family": 1.0,
+    "family_counts": {
+     "cuprates": 223,
+     "iron_pnictides_chalcogenides": 6,
+     "srtio3_ktao3_oxide_interfaces": 6,
+     "iridates_mott_oxides": 5,
+     "tmds": 2,
+     "semiconductor_2deg_and_qw": 1,
+     "hydrides": 1,
+     "graphene_multilayers": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "ruthenates": 1
+    },
+    "top_families": [
+     [
+      "cuprates",
+      223
+     ],
+     [
+      "iron_pnictides_chalcogenides",
+      6
+     ],
+     [
+      "srtio3_ktao3_oxide_interfaces",
+      6
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 223,
+    "share_with_any_family": 1.0,
+    "family_counts": {
+     "cuprates": 223,
+     "ext_spin_chain_ladder_compounds": 6,
+     "iron_pnictides_chalcogenides": 6,
+     "srtio3_ktao3_oxide_interfaces": 6,
+     "iridates_mott_oxides": 5,
+     "ext_conventional_sc_compounds": 3,
+     "tmds": 2,
+     "ext_tm_perovskite_oxides": 2,
+     "semiconductor_2deg_and_qw": 1,
+     "hydrides": 1,
+     "graphene_multilayers": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "ext_ferroelectrics_multiferroics": 1,
+     "ruthenates": 1
+    },
+    "top_families": [
+     [
+      "cuprates",
+      223
+     ],
+     [
+      "ext_spin_chain_ladder_compounds",
+      6
+     ],
+     [
+      "iron_pnictides_chalcogenides",
+      6
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "YBa2Cu3O7",
+     35
+    ],
+    [
+     "Bi2Sr2CaCu2O8",
+     26
+    ],
+    [
+     "La2-xSrxCuO4",
+     11
+    ],
+    [
+     "La2CuO4",
+     11
+    ],
+    [
+     "SrTiO3",
+     6
+    ],
+    [
+     "HgBa2CuO4",
+     5
+    ],
+    [
+     "HgBa2Ca2Cu3O8",
+     5
+    ],
+    [
+     "YBa2Cu3O6",
+     4
+    ],
+    [
+     "La2-xBaxCuO4",
+     3
+    ],
+    [
+     "Sr2CuO3",
+     3
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "cuprates",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.19675",
+    "family": "cuprates",
+    "title": "Quantum criticality in cuprate superconductors revealed by optical conductivity measurement",
+    "is_leading_family": true
+   }
+  },
+  "iron_based_sc": {
+   "label": "Iron-based superconductivity (pnictides & chalcogenides)",
+   "n_records_trailing_primary": 117,
+   "base_families_v2": {
+    "n_with_any_family": 111,
+    "share_with_any_family": 0.949,
+    "family_counts": {
+     "iron_pnictides_chalcogenides": 111,
+     "srtio3_ktao3_oxide_interfaces": 8,
+     "semiconductor_2deg_and_qw": 3,
+     "cuprates": 3,
+     "mnbi2te4_bi2se3_tetradymites": 2,
+     "altermagnet_candidates": 2,
+     "tmds": 1,
+     "iridates_mott_oxides": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "hydrides": 1,
+     "weyl_dirac_semimetals": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1
+    },
+    "top_families": [
+     [
+      "iron_pnictides_chalcogenides",
+      111
+     ],
+     [
+      "srtio3_ktao3_oxide_interfaces",
+      8
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      3
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 111,
+    "share_with_any_family": 0.949,
+    "family_counts": {
+     "iron_pnictides_chalcogenides": 111,
+     "srtio3_ktao3_oxide_interfaces": 8,
+     "semiconductor_2deg_and_qw": 3,
+     "cuprates": 3,
+     "mnbi2te4_bi2se3_tetradymites": 2,
+     "altermagnet_candidates": 2,
+     "ext_conventional_sc_compounds": 2,
+     "tmds": 1,
+     "iridates_mott_oxides": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "hydrides": 1,
+     "weyl_dirac_semimetals": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1
+    },
+    "top_families": [
+     [
+      "iron_pnictides_chalcogenides",
+      111
+     ],
+     [
+      "srtio3_ktao3_oxide_interfaces",
+      8
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      3
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "FeSe",
+     41
+    ],
+    [
+     "FeTe",
+     19
+    ],
+    [
+     "SrTiO3",
+     7
+    ],
+    [
+     "FeTe0.55Se0.45",
+     6
+    ],
+    [
+     "BaFe2As2",
+     5
+    ],
+    [
+     "FeAs",
+     4
+    ],
+    [
+     "LaFeAsO",
+     4
+    ],
+    [
+     "CaKFe4As4",
+     3
+    ],
+    [
+     "LiFeAs",
+     3
+    ],
+    [
+     "KFe2As2",
+     2
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "iron_pnictides_chalcogenides",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.23591",
+    "family": "iron_pnictides_chalcogenides",
+    "title": "Fabrication of oxide/FeSe multilayer films using the PLD technique",
+    "is_leading_family": true
+   }
+  },
+  "hydride_high_pressure_sc": {
+   "label": "Hydride / high-pressure superconductivity (incl. room-temperature SC claims)",
+   "n_records_trailing_primary": 57,
+   "base_families_v2": {
+    "n_with_any_family": 39,
+    "share_with_any_family": 0.684,
+    "family_counts": {
+     "hydrides": 34,
+     "graphene_multilayers": 4,
+     "hbn": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "cuprates": 1
+    },
+    "top_families": [
+     [
+      "hydrides",
+      34
+     ],
+     [
+      "graphene_multilayers",
+      4
+     ],
+     [
+      "hbn",
+      1
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 39,
+    "share_with_any_family": 0.684,
+    "family_counts": {
+     "hydrides": 34,
+     "graphene_multilayers": 4,
+     "ext_conventional_sc_compounds": 2,
+     "hbn": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "cuprates": 1
+    },
+    "top_families": [
+     [
+      "hydrides",
+      34
+     ],
+     [
+      "graphene_multilayers",
+      4
+     ],
+     [
+      "ext_conventional_sc_compounds",
+      2
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "LaH10",
+     11
+    ],
+    [
+     "H3S",
+     9
+    ],
+    [
+     "LaSc2H24",
+     5
+    ],
+    [
+     "CaH6",
+     3
+    ],
+    [
+     "YH9",
+     3
+    ],
+    [
+     "MgZrH6",
+     3
+    ],
+    [
+     "YH6",
+     3
+    ],
+    [
+     "MgB2",
+     2
+    ],
+    [
+     "LiMgZr2H12",
+     2
+    ],
+    [
+     "PdH",
+     2
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "MgZrH6",
+     3
+    ],
+    [
+     "LiMgZr2H12",
+     2
+    ],
+    [
+     "PdH",
+     2
+    ]
+   ],
+   "leading_family": "hydrides",
+   "leading_family_exemplar": {
+    "id": "arXiv:2510.10720",
+    "family": "hydrides",
+    "title": "Revisiting YH$_9$ Superconductivity and Predicting High-T$_c$ in GdYH$_5$",
+    "is_leading_family": true
+   }
+  },
+  "kagome": {
+   "label": "Kagome metals & kagome materials",
+   "n_records_trailing_primary": 308,
+   "base_families_v2": {
+    "n_with_any_family": 142,
+    "share_with_any_family": 0.461,
+    "family_counts": {
+     "other_kagome_metals": 63,
+     "av3sb5_kagome": 63,
+     "frustrated_rare_earth_and_triangular": 10,
+     "tmds": 5,
+     "graphene_multilayers": 5,
+     "magnetic_topological_eu_compounds": 3,
+     "iridates_mott_oxides": 2,
+     "cuprates": 2,
+     "vdw_magnets": 2,
+     "b20_chiral_magnets_skyrmion_hosts": 1
+    },
+    "top_families": [
+     [
+      "other_kagome_metals",
+      63
+     ],
+     [
+      "av3sb5_kagome",
+      63
+     ],
+     [
+      "frustrated_rare_earth_and_triangular",
+      10
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 164,
+    "share_with_any_family": 0.532,
+    "family_counts": {
+     "other_kagome_metals": 63,
+     "av3sb5_kagome": 63,
+     "ext_kagome_more": 23,
+     "frustrated_rare_earth_and_triangular": 10,
+     "tmds": 5,
+     "graphene_multilayers": 5,
+     "ext_heavy_fermion_more": 3,
+     "magnetic_topological_eu_compounds": 3,
+     "iridates_mott_oxides": 2,
+     "ext_ferroelectrics_multiferroics": 2,
+     "cuprates": 2,
+     "vdw_magnets": 2,
+     "ext_spintronic_magnets": 2,
+     "b20_chiral_magnets_skyrmion_hosts": 1
+    },
+    "top_families": [
+     [
+      "other_kagome_metals",
+      63
+     ],
+     [
+      "av3sb5_kagome",
+      63
+     ],
+     [
+      "ext_kagome_more",
+      23
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "CsV3Sb5",
+     39
+    ],
+    [
+     "CsCr3Sb5",
+     10
+    ],
+    [
+     "Co3Sn2S2",
+     10
+    ],
+    [
+     "FeGe",
+     9
+    ],
+    [
+     "RbV3Sb5",
+     8
+    ],
+    [
+     "Fe3Sn2",
+     8
+    ],
+    [
+     "KV3Sb5",
+     5
+    ],
+    [
+     "CsV3Sb5-xSnx",
+     5
+    ],
+    [
+     "ScV6Sn6",
+     4
+    ],
+    [
+     "CoSn",
+     4
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "other_kagome_metals",
+   "leading_family_exemplar": {
+    "id": "arXiv:2510.01053",
+    "family": "other_kagome_metals",
+    "title": "Interacting spin and charge density waves in kagome metal FeGe",
+    "is_leading_family": true
+   }
+  },
+  "altermagnetism": {
+   "label": "Altermagnetism, p-wave/unconventional magnets & non-relativistic spin splitting",
+   "n_records_trailing_primary": 660,
+   "base_families_v2": {
+    "n_with_any_family": 251,
+    "share_with_any_family": 0.38,
+    "family_counts": {
+     "altermagnet_candidates": 203,
+     "vdw_magnets": 13,
+     "iridates_mott_oxides": 10,
+     "tmds": 10,
+     "graphene_multilayers": 7,
+     "semiconductor_2deg_and_qw": 7,
+     "iron_pnictides_chalcogenides": 6,
+     "ruthenates": 5,
+     "weyl_dirac_semimetals": 4,
+     "cuprates": 4,
+     "mnbi2te4_bi2se3_tetradymites": 3,
+     "srtio3_ktao3_oxide_interfaces": 2,
+     "other_kagome_metals": 2,
+     "magnetic_topological_eu_compounds": 1,
+     "frustrated_rare_earth_and_triangular": 1,
+     "hbn": 1
+    },
+    "top_families": [
+     [
+      "altermagnet_candidates",
+      203
+     ],
+     [
+      "vdw_magnets",
+      13
+     ],
+     [
+      "iridates_mott_oxides",
+      10
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 290,
+    "share_with_any_family": 0.439,
+    "family_counts": {
+     "altermagnet_candidates": 203,
+     "ext_ferroelectrics_multiferroics": 34,
+     "vdw_magnets": 13,
+     "iridates_mott_oxides": 10,
+     "ext_layered_magnets_more": 10,
+     "tmds": 10,
+     "ext_spintronic_magnets": 8,
+     "graphene_multilayers": 7,
+     "ext_semiconductors_more": 7,
+     "semiconductor_2deg_and_qw": 7,
+     "iron_pnictides_chalcogenides": 6,
+     "ruthenates": 5,
+     "ext_heavy_fermion_more": 5,
+     "weyl_dirac_semimetals": 4,
+     "cuprates": 4,
+     "mnbi2te4_bi2se3_tetradymites": 3,
+     "ext_tm_perovskite_oxides": 3,
+     "srtio3_ktao3_oxide_interfaces": 2,
+     "other_kagome_metals": 2,
+     "ext_layered_dichalcogenides_more": 1,
+     "ext_delafossites": 1,
+     "magnetic_topological_eu_compounds": 1,
+     "frustrated_rare_earth_and_triangular": 1,
+     "hbn": 1,
+     "ext_kagome_more": 1
+    },
+    "top_families": [
+     [
+      "altermagnet_candidates",
+      203
+     ],
+     [
+      "ext_ferroelectrics_multiferroics",
+      34
+     ],
+     [
+      "vdw_magnets",
+      13
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "MnTe",
+     60
+    ],
+    [
+     "CrSb",
+     50
+    ],
+    [
+     "RuO2",
+     33
+    ],
+    [
+     "KV2Se2O",
+     25
+    ],
+    [
+     "MnF2",
+     13
+    ],
+    [
+     "FeSb2",
+     9
+    ],
+    [
+     "V2Se2O",
+     8
+    ],
+    [
+     "MnTe2",
+     8
+    ],
+    [
+     "V2O",
+     7
+    ],
+    [
+     "V2Te2O",
+     7
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "V2O",
+     7
+    ]
+   ],
+   "leading_family": "altermagnet_candidates",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.19932",
+    "family": "altermagnet_candidates",
+    "title": "Exploration of Altermagnetism in $\\mathrm{RuO_{2}}$",
+    "is_leading_family": true
+   }
+  },
+  "fractional_qah_chern": {
+   "label": "Fractional / quantum anomalous Hall & Chern insulators (incl. quantum Hall, Landau levels)",
+   "n_records_trailing_primary": 364,
+   "base_families_v2": {
+    "n_with_any_family": 147,
+    "share_with_any_family": 0.404,
+    "family_counts": {
+     "graphene_multilayers": 75,
+     "tmds": 52,
+     "weyl_dirac_semimetals": 35,
+     "hbn": 19,
+     "semiconductor_2deg_and_qw": 19,
+     "mnbi2te4_bi2se3_tetradymites": 9,
+     "vdw_magnets": 5,
+     "cuprates": 1,
+     "srtio3_ktao3_oxide_interfaces": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      75
+     ],
+     [
+      "tmds",
+      52
+     ],
+     [
+      "weyl_dirac_semimetals",
+      35
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 147,
+    "share_with_any_family": 0.404,
+    "family_counts": {
+     "graphene_multilayers": 75,
+     "tmds": 52,
+     "weyl_dirac_semimetals": 35,
+     "hbn": 19,
+     "semiconductor_2deg_and_qw": 19,
+     "mnbi2te4_bi2se3_tetradymites": 9,
+     "vdw_magnets": 5,
+     "ext_semiconductors_more": 3,
+     "cuprates": 1,
+     "srtio3_ktao3_oxide_interfaces": 1,
+     "ext_layered_magnets_more": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      75
+     ],
+     [
+      "tmds",
+      52
+     ],
+     [
+      "weyl_dirac_semimetals",
+      35
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "MoTe2",
+     32
+    ],
+    [
+     "GaAs",
+     16
+    ],
+    [
+     "WSe2",
+     12
+    ],
+    [
+     "MnBi2Te4",
+     4
+    ],
+    [
+     "WS2",
+     3
+    ],
+    [
+     "Pb1-xSnxSe",
+     2
+    ],
+    [
+     "MoS2",
+     2
+    ],
+    [
+     "AlGaAs",
+     2
+    ],
+    [
+     "HfTe5",
+     2
+    ],
+    [
+     "SiC",
+     1
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "graphene_multilayers",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.19978",
+    "family": "graphene_multilayers",
+    "title": "Non-ohmic to ohmic crossover in the breakdown of the quantum Hall states in graphene under broadband excitations",
+    "is_leading_family": true
+   }
+  },
+  "rhombohedral_multilayer_graphene": {
+   "label": "Rhombohedral / multilayer (untwisted) graphene",
+   "n_records_trailing_primary": 81,
+   "base_families_v2": {
+    "n_with_any_family": 81,
+    "share_with_any_family": 1.0,
+    "family_counts": {
+     "graphene_multilayers": 81,
+     "tmds": 8,
+     "hbn": 4,
+     "weyl_dirac_semimetals": 2,
+     "semiconductor_2deg_and_qw": 2
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      81
+     ],
+     [
+      "tmds",
+      8
+     ],
+     [
+      "hbn",
+      4
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 81,
+    "share_with_any_family": 1.0,
+    "family_counts": {
+     "graphene_multilayers": 81,
+     "tmds": 8,
+     "hbn": 4,
+     "ext_ferroelectrics_multiferroics": 2,
+     "ext_semiconductors_more": 2,
+     "weyl_dirac_semimetals": 2,
+     "semiconductor_2deg_and_qw": 2,
+     "ext_conventional_sc_compounds": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      81
+     ],
+     [
+      "tmds",
+      8
+     ],
+     [
+      "hbn",
+      4
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "WSe2",
+     4
+    ],
+    [
+     "GaAs",
+     1
+    ],
+    [
+     "MoTe2",
+     1
+    ],
+    [
+     "SiC",
+     1
+    ],
+    [
+     "WS2",
+     1
+    ],
+    [
+     "WTe2",
+     1
+    ],
+    [
+     "C12Li",
+     1
+    ],
+    [
+     "C12Ca",
+     1
+    ],
+    [
+     "CaC6",
+     1
+    ],
+    [
+     "C12Cr",
+     1
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "C12Li",
+     1
+    ],
+    [
+     "C12Ca",
+     1
+    ],
+    [
+     "C12Cr",
+     1
+    ]
+   ],
+   "leading_family": "graphene_multilayers",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.21759",
+    "family": "graphene_multilayers",
+    "title": "Hexagonal boron nitride/bilayer graphene moiré superlattices in the Dirac-material family: energy-band engineering and carrier doping by dual gating",
+    "is_leading_family": true
+   }
+  },
+  "moire_twisted_2d": {
+   "label": "Moire & twisted 2D systems (TBG, twisted TMDs, moire heterostructures)",
+   "n_records_trailing_primary": 405,
+   "base_families_v2": {
+    "n_with_any_family": 326,
+    "share_with_any_family": 0.805,
+    "family_counts": {
+     "graphene_multilayers": 187,
+     "tmds": 149,
+     "hbn": 42,
+     "weyl_dirac_semimetals": 31,
+     "vdw_magnets": 8,
+     "srtio3_ktao3_oxide_interfaces": 7,
+     "cuprates": 3,
+     "semiconductor_2deg_and_qw": 3,
+     "excitonic_insulator_cdw_materials": 2,
+     "kitaev_materials": 1,
+     "other_kagome_metals": 1,
+     "iridates_mott_oxides": 1,
+     "iron_pnictides_chalcogenides": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      187
+     ],
+     [
+      "tmds",
+      149
+     ],
+     [
+      "hbn",
+      42
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 334,
+    "share_with_any_family": 0.825,
+    "family_counts": {
+     "graphene_multilayers": 187,
+     "tmds": 149,
+     "hbn": 42,
+     "weyl_dirac_semimetals": 31,
+     "vdw_magnets": 8,
+     "ext_layered_dichalcogenides_more": 7,
+     "srtio3_ktao3_oxide_interfaces": 7,
+     "ext_ferroelectrics_multiferroics": 4,
+     "cuprates": 3,
+     "semiconductor_2deg_and_qw": 3,
+     "ext_semiconductors_more": 2,
+     "excitonic_insulator_cdw_materials": 2,
+     "ext_layered_magnets_more": 2,
+     "kitaev_materials": 1,
+     "other_kagome_metals": 1,
+     "iridates_mott_oxides": 1,
+     "ext_spintronic_magnets": 1,
+     "iron_pnictides_chalcogenides": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      187
+     ],
+     [
+      "tmds",
+      149
+     ],
+     [
+      "hbn",
+      42
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "WSe2",
+     65
+    ],
+    [
+     "MoTe2",
+     29
+    ],
+    [
+     "WS2",
+     25
+    ],
+    [
+     "MoSe2",
+     21
+    ],
+    [
+     "MoS2",
+     17
+    ],
+    [
+     "NbSe2",
+     5
+    ],
+    [
+     "CrSBr",
+     4
+    ],
+    [
+     "SrTiO3",
+     4
+    ],
+    [
+     "SnSe2",
+     4
+    ],
+    [
+     "CrI3",
+     2
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "graphene_multilayers",
+   "leading_family_exemplar": {
+    "id": "arXiv:2510.02444",
+    "family": "graphene_multilayers",
+    "title": "Four Moiré materials at One Magic Angle in Helical Quadrilayer Graphene",
+    "is_leading_family": true
+   }
+  },
+  "unconventional_topological_sc": {
+   "label": "Unconventional & topological superconductivity, Majorana, SC diode/Josephson devices",
+   "n_records_trailing_primary": 717,
+   "base_families_v2": {
+    "n_with_any_family": 242,
+    "share_with_any_family": 0.338,
+    "family_counts": {
+     "semiconductor_2deg_and_qw": 64,
+     "ute2_heavy_fermion_f_electron": 54,
+     "tmds": 46,
+     "graphene_multilayers": 30,
+     "weyl_dirac_semimetals": 18,
+     "cuprates": 13,
+     "ruthenates": 13,
+     "iron_pnictides_chalcogenides": 7,
+     "kitaev_materials": 7,
+     "mnbi2te4_bi2se3_tetradymites": 5,
+     "srtio3_ktao3_oxide_interfaces": 4,
+     "vdw_magnets": 4,
+     "excitonic_insulator_cdw_materials": 2,
+     "hbn": 2,
+     "other_kagome_metals": 2,
+     "iridates_mott_oxides": 1,
+     "frustrated_rare_earth_and_triangular": 1,
+     "nickelates_bilayer_trilayer_rp": 1,
+     "hydrides": 1
+    },
+    "top_families": [
+     [
+      "semiconductor_2deg_and_qw",
+      64
+     ],
+     [
+      "ute2_heavy_fermion_f_electron",
+      54
+     ],
+     [
+      "tmds",
+      46
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 260,
+    "share_with_any_family": 0.363,
+    "family_counts": {
+     "semiconductor_2deg_and_qw": 64,
+     "ute2_heavy_fermion_f_electron": 54,
+     "tmds": 46,
+     "graphene_multilayers": 30,
+     "weyl_dirac_semimetals": 18,
+     "ext_conventional_sc_compounds": 15,
+     "cuprates": 13,
+     "ruthenates": 13,
+     "ext_semiconductors_more": 9,
+     "iron_pnictides_chalcogenides": 7,
+     "kitaev_materials": 7,
+     "mnbi2te4_bi2se3_tetradymites": 5,
+     "srtio3_ktao3_oxide_interfaces": 4,
+     "vdw_magnets": 4,
+     "ext_heavy_fermion_more": 3,
+     "excitonic_insulator_cdw_materials": 2,
+     "ext_spintronic_magnets": 2,
+     "hbn": 2,
+     "other_kagome_metals": 2,
+     "iridates_mott_oxides": 1,
+     "frustrated_rare_earth_and_triangular": 1,
+     "ext_spin_chain_ladder_compounds": 1,
+     "nickelates_bilayer_trilayer_rp": 1,
+     "hydrides": 1,
+     "ext_ferroelectrics_multiferroics": 1,
+     "ext_kagome_more": 1,
+     "ext_layered_dichalcogenides_more": 1
+    },
+    "top_families": [
+     [
+      "semiconductor_2deg_and_qw",
+      64
+     ],
+     [
+      "ute2_heavy_fermion_f_electron",
+      54
+     ],
+     [
+      "tmds",
+      46
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "UTe2",
+     40
+    ],
+    [
+     "NbSe2",
+     18
+    ],
+    [
+     "InAs",
+     14
+    ],
+    [
+     "Sr2RuO4",
+     12
+    ],
+    [
+     "TaS2",
+     12
+    ],
+    [
+     "CeRh2As2",
+     11
+    ],
+    [
+     "NbN",
+     8
+    ],
+    [
+     "MoTe2",
+     5
+    ],
+    [
+     "SiGe",
+     5
+    ],
+    [
+     "WTe2",
+     4
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "semiconductor_2deg_and_qw",
+   "leading_family_exemplar": {
+    "id": "arXiv:2510.00305",
+    "family": "semiconductor_2deg_and_qw",
+    "title": "Gate-tunable Josephson parametric amplifiers based on semiconductor nanowires",
+    "is_leading_family": true
+   }
+  },
+  "spin_liquid_frustrated": {
+   "label": "Quantum spin liquids & frustrated magnetism (Kitaev, triangular, pyrochlore)",
+   "n_records_trailing_primary": 387,
+   "base_families_v2": {
+    "n_with_any_family": 118,
+    "share_with_any_family": 0.305,
+    "family_counts": {
+     "frustrated_rare_earth_and_triangular": 64,
+     "kitaev_materials": 39,
+     "iridates_mott_oxides": 8,
+     "vdw_magnets": 6,
+     "graphene_multilayers": 5,
+     "tmds": 3,
+     "ruthenates": 3,
+     "cuprates": 2,
+     "b20_chiral_magnets_skyrmion_hosts": 1,
+     "hbn": 1,
+     "iron_pnictides_chalcogenides": 1
+    },
+    "top_families": [
+     [
+      "frustrated_rare_earth_and_triangular",
+      64
+     ],
+     [
+      "kitaev_materials",
+      39
+     ],
+     [
+      "iridates_mott_oxides",
+      8
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 133,
+    "share_with_any_family": 0.344,
+    "family_counts": {
+     "frustrated_rare_earth_and_triangular": 64,
+     "kitaev_materials": 39,
+     "iridates_mott_oxides": 8,
+     "ext_delafossites": 6,
+     "vdw_magnets": 6,
+     "graphene_multilayers": 5,
+     "ext_spin_chain_ladder_compounds": 4,
+     "ext_ferroelectrics_multiferroics": 3,
+     "tmds": 3,
+     "ext_kagome_more": 3,
+     "ruthenates": 3,
+     "cuprates": 2,
+     "b20_chiral_magnets_skyrmion_hosts": 1,
+     "ext_layered_magnets_more": 1,
+     "ext_tm_perovskite_oxides": 1,
+     "hbn": 1,
+     "iron_pnictides_chalcogenides": 1,
+     "ext_spintronic_magnets": 1
+    },
+    "top_families": [
+     [
+      "frustrated_rare_earth_and_triangular",
+      64
+     ],
+     [
+      "kitaev_materials",
+      39
+     ],
+     [
+      "iridates_mott_oxides",
+      8
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "RuCl3",
+     21
+    ],
+    [
+     "Na3Co2SbO6",
+     4
+    ],
+    [
+     "Na2Co2TeO6",
+     4
+    ],
+    [
+     "Dy2Ti2O7",
+     3
+    ],
+    [
+     "NaCdCu2F7",
+     2
+    ],
+    [
+     "CePdAl",
+     2
+    ],
+    [
+     "NiI2",
+     2
+    ],
+    [
+     "Ho2Ti2O7",
+     2
+    ],
+    [
+     "CoNb2O6",
+     2
+    ],
+    [
+     "Ce2Zr2O7",
+     2
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "NaCdCu2F7",
+     2
+    ]
+   ],
+   "leading_family": "frustrated_rare_earth_and_triangular",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.20199",
+    "family": "frustrated_rare_earth_and_triangular",
+    "title": "Random singlet physics in the $S = \\frac{1}{2}$ pyrochlore antiferromagnet NaCdCu$_2$F$_7$",
+    "is_leading_family": true
+   }
+  },
+  "heavy_fermion_kondo_qcp": {
+   "label": "Heavy fermions, Kondo physics & metallic quantum criticality",
+   "n_records_trailing_primary": 162,
+   "base_families_v2": {
+    "n_with_any_family": 42,
+    "share_with_any_family": 0.259,
+    "family_counts": {
+     "ute2_heavy_fermion_f_electron": 26,
+     "semiconductor_2deg_and_qw": 5,
+     "graphene_multilayers": 5,
+     "magnetic_topological_eu_compounds": 2,
+     "excitonic_insulator_cdw_materials": 2,
+     "tmds": 2,
+     "altermagnet_candidates": 2,
+     "srtio3_ktao3_oxide_interfaces": 1,
+     "cuprates": 1,
+     "ruthenates": 1,
+     "hbn": 1
+    },
+    "top_families": [
+     [
+      "ute2_heavy_fermion_f_electron",
+      26
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      5
+     ],
+     [
+      "graphene_multilayers",
+      5
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 50,
+    "share_with_any_family": 0.309,
+    "family_counts": {
+     "ute2_heavy_fermion_f_electron": 26,
+     "ext_heavy_fermion_more": 8,
+     "semiconductor_2deg_and_qw": 5,
+     "graphene_multilayers": 5,
+     "magnetic_topological_eu_compounds": 2,
+     "excitonic_insulator_cdw_materials": 2,
+     "tmds": 2,
+     "altermagnet_candidates": 2,
+     "srtio3_ktao3_oxide_interfaces": 1,
+     "cuprates": 1,
+     "ext_ferroelectrics_multiferroics": 1,
+     "ruthenates": 1,
+     "ext_conventional_sc_compounds": 1,
+     "hbn": 1
+    },
+    "top_families": [
+     [
+      "ute2_heavy_fermion_f_electron",
+      26
+     ],
+     [
+      "ext_heavy_fermion_more",
+      8
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      5
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "CeCoIn5",
+     6
+    ],
+    [
+     "CeRh6Ge4",
+     4
+    ],
+    [
+     "SmB6",
+     4
+    ],
+    [
+     "GaAs",
+     3
+    ],
+    [
+     "YbRh2Si2",
+     3
+    ],
+    [
+     "LiV2O4",
+     2
+    ],
+    [
+     "UGe2",
+     2
+    ],
+    [
+     "AlGaAs",
+     2
+    ],
+    [
+     "UBe13",
+     2
+    ],
+    [
+     "UTe2",
+     2
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "ute2_heavy_fermion_f_electron",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.19684",
+    "family": "ute2_heavy_fermion_f_electron",
+    "title": "Hybridization gap and $f$-electron effect evolutions with Cd- and Sn-doping in CeCoIn$_5$ via infrared spectroscopy",
+    "is_leading_family": true
+   }
+  },
+  "vdw_magnets_topological_magnetism": {
+   "label": "2D/van der Waals magnets, skyrmions, topological magnetism, multiferroics & spintronics/magnonics",
+   "n_records_trailing_primary": 820,
+   "base_families_v2": {
+    "n_with_any_family": 352,
+    "share_with_any_family": 0.429,
+    "family_counts": {
+     "vdw_magnets": 234,
+     "tmds": 38,
+     "mnbi2te4_bi2se3_tetradymites": 35,
+     "other_kagome_metals": 32,
+     "graphene_multilayers": 23,
+     "b20_chiral_magnets_skyrmion_hosts": 20,
+     "weyl_dirac_semimetals": 18,
+     "iridates_mott_oxides": 11,
+     "srtio3_ktao3_oxide_interfaces": 10,
+     "altermagnet_candidates": 9,
+     "ruthenates": 9,
+     "hbn": 7,
+     "magnetic_topological_eu_compounds": 7,
+     "semiconductor_2deg_and_qw": 5,
+     "iron_pnictides_chalcogenides": 3,
+     "av3sb5_kagome": 1,
+     "cuprates": 1
+    },
+    "top_families": [
+     [
+      "vdw_magnets",
+      234
+     ],
+     [
+      "tmds",
+      38
+     ],
+     [
+      "mnbi2te4_bi2se3_tetradymites",
+      35
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 450,
+    "share_with_any_family": 0.549,
+    "family_counts": {
+     "vdw_magnets": 234,
+     "ext_ferroelectrics_multiferroics": 90,
+     "tmds": 38,
+     "mnbi2te4_bi2se3_tetradymites": 35,
+     "other_kagome_metals": 32,
+     "ext_spintronic_magnets": 25,
+     "graphene_multilayers": 23,
+     "b20_chiral_magnets_skyrmion_hosts": 20,
+     "weyl_dirac_semimetals": 18,
+     "iridates_mott_oxides": 11,
+     "ext_layered_magnets_more": 11,
+     "srtio3_ktao3_oxide_interfaces": 10,
+     "altermagnet_candidates": 9,
+     "ext_tm_perovskite_oxides": 9,
+     "ruthenates": 9,
+     "hbn": 7,
+     "magnetic_topological_eu_compounds": 7,
+     "semiconductor_2deg_and_qw": 5,
+     "ext_layered_dichalcogenides_more": 4,
+     "iron_pnictides_chalcogenides": 3,
+     "ext_semiconductors_more": 2,
+     "ext_kagome_more": 2,
+     "ext_heavy_fermion_more": 1,
+     "ext_conventional_sc_compounds": 1,
+     "av3sb5_kagome": 1,
+     "cuprates": 1
+    },
+    "top_families": [
+     [
+      "vdw_magnets",
+      234
+     ],
+     [
+      "ext_ferroelectrics_multiferroics",
+      90
+     ],
+     [
+      "tmds",
+      38
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "CrSBr",
+     57
+    ],
+    [
+     "MnBi2Te4",
+     26
+    ],
+    [
+     "CrI3",
+     22
+    ],
+    [
+     "NiPS3",
+     20
+    ],
+    [
+     "Fe3GeTe2",
+     20
+    ],
+    [
+     "Fe3GaTe2",
+     15
+    ],
+    [
+     "Cr2Ge2Te6",
+     12
+    ],
+    [
+     "CrPS4",
+     12
+    ],
+    [
+     "MnPS3",
+     10
+    ],
+    [
+     "NiI2",
+     10
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "vdw_magnets",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.22303",
+    "family": "vdw_magnets",
+    "title": "Self-organization mechanism in Bridgman-grown MnBi2Te4/(Bi2Te3)n: influence on layer sequence and magnetic properties",
+    "is_leading_family": true
+   }
+  },
+  "cdw_nematic_excitonic": {
+   "label": "Charge/spin density waves, nematicity, Wigner crystals & excitonic insulators/excitons",
+   "n_records_trailing_primary": 390,
+   "base_families_v2": {
+    "n_with_any_family": 204,
+    "share_with_any_family": 0.523,
+    "family_counts": {
+     "tmds": 132,
+     "excitonic_insulator_cdw_materials": 49,
+     "iridates_mott_oxides": 22,
+     "graphene_multilayers": 17,
+     "hbn": 10,
+     "cuprates": 9,
+     "semiconductor_2deg_and_qw": 9,
+     "weyl_dirac_semimetals": 4,
+     "srtio3_ktao3_oxide_interfaces": 4,
+     "magnetic_topological_eu_compounds": 3,
+     "iron_pnictides_chalcogenides": 3,
+     "mnbi2te4_bi2se3_tetradymites": 2,
+     "frustrated_rare_earth_and_triangular": 1
+    },
+    "top_families": [
+     [
+      "tmds",
+      132
+     ],
+     [
+      "excitonic_insulator_cdw_materials",
+      49
+     ],
+     [
+      "iridates_mott_oxides",
+      22
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 214,
+    "share_with_any_family": 0.549,
+    "family_counts": {
+     "tmds": 132,
+     "excitonic_insulator_cdw_materials": 49,
+     "iridates_mott_oxides": 22,
+     "graphene_multilayers": 17,
+     "hbn": 10,
+     "cuprates": 9,
+     "semiconductor_2deg_and_qw": 9,
+     "ext_layered_dichalcogenides_more": 6,
+     "ext_semiconductors_more": 6,
+     "weyl_dirac_semimetals": 4,
+     "srtio3_ktao3_oxide_interfaces": 4,
+     "ext_kagome_more": 4,
+     "magnetic_topological_eu_compounds": 3,
+     "iron_pnictides_chalcogenides": 3,
+     "mnbi2te4_bi2se3_tetradymites": 2,
+     "ext_layered_magnets_more": 2,
+     "ext_ferroelectrics_multiferroics": 2,
+     "ext_conventional_sc_compounds": 1,
+     "ext_spin_chain_ladder_compounds": 1,
+     "ext_tm_perovskite_oxides": 1,
+     "frustrated_rare_earth_and_triangular": 1
+    },
+    "top_families": [
+     [
+      "tmds",
+      132
+     ],
+     [
+      "excitonic_insulator_cdw_materials",
+      49
+     ],
+     [
+      "iridates_mott_oxides",
+      22
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "TaS2",
+     31
+    ],
+    [
+     "WSe2",
+     21
+    ],
+    [
+     "MoSe2",
+     20
+    ],
+    [
+     "TiSe2",
+     17
+    ],
+    [
+     "Ta2NiSe5",
+     10
+    ],
+    [
+     "NbSe2",
+     10
+    ],
+    [
+     "MoS2",
+     7
+    ],
+    [
+     "TaSe2",
+     7
+    ],
+    [
+     "WS2",
+     6
+    ],
+    [
+     "NbSe3",
+     4
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "tmds",
+   "leading_family_exemplar": {
+    "id": "arXiv:2510.00556",
+    "family": "tmds",
+    "title": "Excitons and Optical Response in Excitonic Insulator Candidate TiSe$_2$",
+    "is_leading_family": true
+   }
+  },
+  "topological_insulators_semimetals": {
+   "label": "Topological insulators & semimetals (Weyl/Dirac/nodal), band topology incl. non-Hermitian",
+   "n_records_trailing_primary": 678,
+   "base_families_v2": {
+    "n_with_any_family": 212,
+    "share_with_any_family": 0.313,
+    "family_counts": {
+     "weyl_dirac_semimetals": 86,
+     "graphene_multilayers": 45,
+     "tmds": 36,
+     "mnbi2te4_bi2se3_tetradymites": 35,
+     "semiconductor_2deg_and_qw": 22,
+     "magnetic_topological_eu_compounds": 8,
+     "excitonic_insulator_cdw_materials": 6,
+     "vdw_magnets": 6,
+     "other_kagome_metals": 6,
+     "srtio3_ktao3_oxide_interfaces": 5,
+     "iridates_mott_oxides": 4,
+     "frustrated_rare_earth_and_triangular": 2,
+     "hbn": 2,
+     "ruthenates": 1,
+     "iron_pnictides_chalcogenides": 1,
+     "cuprates": 1,
+     "altermagnet_candidates": 1
+    },
+    "top_families": [
+     [
+      "weyl_dirac_semimetals",
+      86
+     ],
+     [
+      "graphene_multilayers",
+      45
+     ],
+     [
+      "tmds",
+      36
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 224,
+    "share_with_any_family": 0.33,
+    "family_counts": {
+     "weyl_dirac_semimetals": 86,
+     "graphene_multilayers": 45,
+     "tmds": 36,
+     "mnbi2te4_bi2se3_tetradymites": 35,
+     "semiconductor_2deg_and_qw": 22,
+     "ext_semiconductors_more": 12,
+     "magnetic_topological_eu_compounds": 8,
+     "excitonic_insulator_cdw_materials": 6,
+     "vdw_magnets": 6,
+     "other_kagome_metals": 6,
+     "srtio3_ktao3_oxide_interfaces": 5,
+     "ext_tm_perovskite_oxides": 5,
+     "iridates_mott_oxides": 4,
+     "ext_ferroelectrics_multiferroics": 3,
+     "ext_layered_magnets_more": 3,
+     "ext_layered_dichalcogenides_more": 2,
+     "ext_spintronic_magnets": 2,
+     "frustrated_rare_earth_and_triangular": 2,
+     "hbn": 2,
+     "ruthenates": 1,
+     "iron_pnictides_chalcogenides": 1,
+     "ext_conventional_sc_compounds": 1,
+     "cuprates": 1,
+     "altermagnet_candidates": 1
+    },
+    "top_families": [
+     [
+      "weyl_dirac_semimetals",
+      86
+     ],
+     [
+      "graphene_multilayers",
+      45
+     ],
+     [
+      "tmds",
+      36
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "WTe2",
+     18
+    ],
+    [
+     "Bi2Se3",
+     12
+    ],
+    [
+     "Bi2Te3",
+     9
+    ],
+    [
+     "TaIrTe4",
+     8
+    ],
+    [
+     "TaAs",
+     8
+    ],
+    [
+     "ZrTe5",
+     8
+    ],
+    [
+     "Cd3As2",
+     7
+    ],
+    [
+     "InAs",
+     6
+    ],
+    [
+     "PdTe2",
+     6
+    ],
+    [
+     "PtBi2",
+     6
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "weyl_dirac_semimetals",
+   "leading_family_exemplar": {
+    "id": "arXiv:2510.06618",
+    "family": "weyl_dirac_semimetals",
+    "title": "Intrinsic ultrafast edge photocurrent dynamics in WTe$_2$ driven by broken crystal symmetry",
+    "is_leading_family": true
+   }
+  },
+  "flat_band_quantum_geometry": {
+   "label": "Flat bands & quantum geometry (quantum metric, Berry curvature; anomalous, nonlinear & orbital Hall responses)",
+   "n_records_trailing_primary": 297,
+   "base_families_v2": {
+    "n_with_any_family": 64,
+    "share_with_any_family": 0.215,
+    "family_counts": {
+     "graphene_multilayers": 26,
+     "tmds": 18,
+     "srtio3_ktao3_oxide_interfaces": 5,
+     "semiconductor_2deg_and_qw": 4,
+     "weyl_dirac_semimetals": 4,
+     "other_kagome_metals": 3,
+     "ruthenates": 3,
+     "mnbi2te4_bi2se3_tetradymites": 2,
+     "magnetic_topological_eu_compounds": 2,
+     "iridates_mott_oxides": 2,
+     "frustrated_rare_earth_and_triangular": 2,
+     "vdw_magnets": 1,
+     "hydrides": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      26
+     ],
+     [
+      "tmds",
+      18
+     ],
+     [
+      "srtio3_ktao3_oxide_interfaces",
+      5
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 69,
+    "share_with_any_family": 0.232,
+    "family_counts": {
+     "graphene_multilayers": 26,
+     "tmds": 18,
+     "srtio3_ktao3_oxide_interfaces": 5,
+     "semiconductor_2deg_and_qw": 4,
+     "weyl_dirac_semimetals": 4,
+     "ext_spintronic_magnets": 3,
+     "other_kagome_metals": 3,
+     "ext_semiconductors_more": 3,
+     "ruthenates": 3,
+     "ext_layered_dichalcogenides_more": 3,
+     "ext_ferroelectrics_multiferroics": 2,
+     "mnbi2te4_bi2se3_tetradymites": 2,
+     "magnetic_topological_eu_compounds": 2,
+     "iridates_mott_oxides": 2,
+     "ext_layered_magnets_more": 2,
+     "frustrated_rare_earth_and_triangular": 2,
+     "ext_tm_perovskite_oxides": 1,
+     "vdw_magnets": 1,
+     "ext_conventional_sc_compounds": 1,
+     "hydrides": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      26
+     ],
+     [
+      "tmds",
+      18
+     ],
+     [
+      "srtio3_ktao3_oxide_interfaces",
+      5
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "MoS2",
+     5
+    ],
+    [
+     "CuMnAs",
+     2
+    ],
+    [
+     "NbOCl2",
+     2
+    ],
+    [
+     "BaTiO3",
+     2
+    ],
+    [
+     "BeAu",
+     2
+    ],
+    [
+     "KTaO3",
+     2
+    ],
+    [
+     "WS2",
+     2
+    ],
+    [
+     "SrRuO3",
+     2
+    ],
+    [
+     "WTe2",
+     2
+    ],
+    [
+     "MoTe2",
+     2
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "NbOCl2",
+     2
+    ],
+    [
+     "BeAu",
+     2
+    ]
+   ],
+   "leading_family": "graphene_multilayers",
+   "leading_family_exemplar": {
+    "id": "arXiv:2601.08586",
+    "family": "graphene_multilayers",
+    "title": "Sublattice polarization and filamentary superconductivity in strained graphene",
+    "is_leading_family": true
+   }
+  },
+  "mott_hubbard_strange_metal": {
+   "label": "Mott/Hubbard physics, strange metals & correlated oxides",
+   "n_records_trailing_primary": 533,
+   "base_families_v2": {
+    "n_with_any_family": 160,
+    "share_with_any_family": 0.3,
+    "family_counts": {
+     "iridates_mott_oxides": 76,
+     "srtio3_ktao3_oxide_interfaces": 44,
+     "cuprates": 22,
+     "ruthenates": 14,
+     "graphene_multilayers": 9,
+     "altermagnet_candidates": 7,
+     "tmds": 6,
+     "semiconductor_2deg_and_qw": 6,
+     "hbn": 4,
+     "nickelates_bilayer_trilayer_rp": 3,
+     "weyl_dirac_semimetals": 1,
+     "iron_pnictides_chalcogenides": 1,
+     "frustrated_rare_earth_and_triangular": 1,
+     "vdw_magnets": 1,
+     "magnetic_topological_eu_compounds": 1
+    },
+    "top_families": [
+     [
+      "iridates_mott_oxides",
+      76
+     ],
+     [
+      "srtio3_ktao3_oxide_interfaces",
+      44
+     ],
+     [
+      "cuprates",
+      22
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 172,
+    "share_with_any_family": 0.323,
+    "family_counts": {
+     "iridates_mott_oxides": 76,
+     "srtio3_ktao3_oxide_interfaces": 44,
+     "cuprates": 22,
+     "ext_tm_perovskite_oxides": 17,
+     "ruthenates": 14,
+     "graphene_multilayers": 9,
+     "altermagnet_candidates": 7,
+     "tmds": 6,
+     "semiconductor_2deg_and_qw": 6,
+     "ext_ferroelectrics_multiferroics": 5,
+     "hbn": 4,
+     "nickelates_bilayer_trilayer_rp": 3,
+     "ext_semiconductors_more": 2,
+     "weyl_dirac_semimetals": 1,
+     "iron_pnictides_chalcogenides": 1,
+     "ext_conventional_sc_compounds": 1,
+     "ext_delafossites": 1,
+     "ext_layered_dichalcogenides_more": 1,
+     "frustrated_rare_earth_and_triangular": 1,
+     "vdw_magnets": 1,
+     "magnetic_topological_eu_compounds": 1,
+     "ext_spintronic_magnets": 1,
+     "ext_spin_chain_ladder_compounds": 1
+    },
+    "top_families": [
+     [
+      "iridates_mott_oxides",
+      76
+     ],
+     [
+      "srtio3_ktao3_oxide_interfaces",
+      44
+     ],
+     [
+      "cuprates",
+      22
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "SrTiO3",
+     28
+    ],
+    [
+     "VO2",
+     21
+    ],
+    [
+     "KTaO3",
+     14
+    ],
+    [
+     "LaAlO3",
+     11
+    ],
+    [
+     "V2O3",
+     10
+    ],
+    [
+     "SrVO3",
+     6
+    ],
+    [
+     "NdNiO3",
+     6
+    ],
+    [
+     "Ca2RuO4",
+     5
+    ],
+    [
+     "Sr2IrO4",
+     4
+    ],
+    [
+     "NiO",
+     4
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "iridates_mott_oxides",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.20337",
+    "family": "iridates_mott_oxides",
+    "title": "Spin-polaron fingerprints in the optical conductivity of iridates",
+    "is_leading_family": true
+   }
+  },
+  "ultrafast_floquet_noneq": {
+   "label": "Ultrafast, Floquet & nonequilibrium quantum materials",
+   "n_records_trailing_primary": 136,
+   "base_families_v2": {
+    "n_with_any_family": 20,
+    "share_with_any_family": 0.147,
+    "family_counts": {
+     "graphene_multilayers": 8,
+     "tmds": 6,
+     "vdw_magnets": 2,
+     "weyl_dirac_semimetals": 2,
+     "magnetic_topological_eu_compounds": 1,
+     "hydrides": 1,
+     "excitonic_insulator_cdw_materials": 1,
+     "srtio3_ktao3_oxide_interfaces": 1,
+     "iron_pnictides_chalcogenides": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      8
+     ],
+     [
+      "tmds",
+      6
+     ],
+     [
+      "vdw_magnets",
+      2
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 28,
+    "share_with_any_family": 0.206,
+    "family_counts": {
+     "graphene_multilayers": 8,
+     "tmds": 6,
+     "ext_conventional_sc_compounds": 6,
+     "vdw_magnets": 2,
+     "weyl_dirac_semimetals": 2,
+     "ext_layered_dichalcogenides_more": 1,
+     "ext_ferroelectrics_multiferroics": 1,
+     "magnetic_topological_eu_compounds": 1,
+     "hydrides": 1,
+     "excitonic_insulator_cdw_materials": 1,
+     "ext_semiconductors_more": 1,
+     "srtio3_ktao3_oxide_interfaces": 1,
+     "iron_pnictides_chalcogenides": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      8
+     ],
+     [
+      "tmds",
+      6
+     ],
+     [
+      "ext_conventional_sc_compounds",
+      6
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "K3C60",
+     3
+    ],
+    [
+     "GeS",
+     2
+    ],
+    [
+     "SnS",
+     2
+    ],
+    [
+     "WSe2",
+     2
+    ],
+    [
+     "MoTe2",
+     2
+    ],
+    [
+     "NbN",
+     2
+    ],
+    [
+     "IrTe2",
+     1
+    ],
+    [
+     "PdSe2",
+     1
+    ],
+    [
+     "FeCl2",
+     1
+    ],
+    [
+     "K0.3MnO3",
+     1
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "GeS",
+     2
+    ],
+    [
+     "SnS",
+     2
+    ],
+    [
+     "IrTe2",
+     1
+    ],
+    [
+     "K0.3MnO3",
+     1
+    ]
+   ],
+   "leading_family": "graphene_multilayers",
+   "leading_family_exemplar": {
+    "id": "arXiv:2603.28724",
+    "family": "graphene_multilayers",
+    "title": "Robust Floquet-induced gap in irradiated graphite",
+    "is_leading_family": true
+   }
+  },
+  "ml_ai": {
+   "label": "Machine learning / AI for quantum materials",
+   "n_records_trailing_primary": 115,
+   "base_families_v2": {
+    "n_with_any_family": 14,
+    "share_with_any_family": 0.122,
+    "family_counts": {
+     "cuprates": 3,
+     "semiconductor_2deg_and_qw": 3,
+     "iridates_mott_oxides": 3,
+     "graphene_multilayers": 3,
+     "tmds": 1,
+     "magnetic_topological_eu_compounds": 1,
+     "altermagnet_candidates": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1
+    },
+    "top_families": [
+     [
+      "cuprates",
+      3
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      3
+     ],
+     [
+      "iridates_mott_oxides",
+      3
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 16,
+    "share_with_any_family": 0.139,
+    "family_counts": {
+     "cuprates": 3,
+     "semiconductor_2deg_and_qw": 3,
+     "iridates_mott_oxides": 3,
+     "graphene_multilayers": 3,
+     "ext_ferroelectrics_multiferroics": 1,
+     "ext_delafossites": 1,
+     "tmds": 1,
+     "ext_semiconductors_more": 1,
+     "magnetic_topological_eu_compounds": 1,
+     "altermagnet_candidates": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1
+    },
+    "top_families": [
+     [
+      "cuprates",
+      3
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      3
+     ],
+     [
+      "iridates_mott_oxides",
+      3
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "WS2",
+     1
+    ],
+    [
+     "WSe2",
+     1
+    ],
+    [
+     "Co2TiSn",
+     1
+    ],
+    [
+     "Co2ZrAl",
+     1
+    ],
+    [
+     "InAs",
+     1
+    ],
+    [
+     "LaVO3",
+     1
+    ],
+    [
+     "Ba2TiHfO6",
+     1
+    ],
+    [
+     "SiGe",
+     1
+    ],
+    [
+     "HfZrRe4",
+     1
+    ],
+    [
+     "Zr3ScRe8",
+     1
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "Co2TiSn",
+     1
+    ],
+    [
+     "Co2ZrAl",
+     1
+    ],
+    [
+     "Ba2TiHfO6",
+     1
+    ],
+    [
+     "HfZrRe4",
+     1
+    ],
+    [
+     "Zr3ScRe8",
+     1
+    ]
+   ],
+   "leading_family": "cuprates",
+   "leading_family_exemplar": {
+    "id": "arXiv:2512.10909",
+    "family": "semiconductor_2deg_and_qw",
+    "title": "Electronic crystals and quasicrystals in semiconductor quantum wells: an AI-powered discovery",
+    "is_leading_family": false
+   }
+  },
+  "quantum_magnetism_ferroic_order": {
+   "label": "Quantum & low-dimensional magnetism and ferroic order (antiferro/ferrimagnets, spin-chain/ladder/dimer compounds, spin-orbit-entangled & multipolar magnets, ferroelectric/ferroaxial order)",
+   "n_records_trailing_primary": 471,
+   "base_families_v2": {
+    "n_with_any_family": 86,
+    "share_with_any_family": 0.183,
+    "family_counts": {
+     "graphene_multilayers": 16,
+     "altermagnet_candidates": 15,
+     "tmds": 11,
+     "iridates_mott_oxides": 10,
+     "ruthenates": 10,
+     "srtio3_ktao3_oxide_interfaces": 8,
+     "vdw_magnets": 8,
+     "other_kagome_metals": 5,
+     "weyl_dirac_semimetals": 5,
+     "frustrated_rare_earth_and_triangular": 5,
+     "iron_pnictides_chalcogenides": 2,
+     "magnetic_topological_eu_compounds": 2,
+     "hbn": 2,
+     "cuprates": 2,
+     "semiconductor_2deg_and_qw": 2,
+     "ute2_heavy_fermion_f_electron": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1,
+     "mnbi2te4_bi2se3_tetradymites": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      16
+     ],
+     [
+      "altermagnet_candidates",
+      15
+     ],
+     [
+      "tmds",
+      11
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 119,
+    "share_with_any_family": 0.253,
+    "family_counts": {
+     "ext_ferroelectrics_multiferroics": 17,
+     "graphene_multilayers": 16,
+     "altermagnet_candidates": 15,
+     "tmds": 11,
+     "iridates_mott_oxides": 10,
+     "ruthenates": 10,
+     "srtio3_ktao3_oxide_interfaces": 8,
+     "ext_spin_chain_ladder_compounds": 8,
+     "vdw_magnets": 8,
+     "ext_tm_perovskite_oxides": 6,
+     "other_kagome_metals": 5,
+     "weyl_dirac_semimetals": 5,
+     "frustrated_rare_earth_and_triangular": 5,
+     "ext_layered_magnets_more": 4,
+     "ext_delafossites": 3,
+     "ext_semiconductors_more": 2,
+     "iron_pnictides_chalcogenides": 2,
+     "magnetic_topological_eu_compounds": 2,
+     "hbn": 2,
+     "cuprates": 2,
+     "ext_kagome_more": 2,
+     "ext_spintronic_magnets": 2,
+     "semiconductor_2deg_and_qw": 2,
+     "ute2_heavy_fermion_f_electron": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1,
+     "mnbi2te4_bi2se3_tetradymites": 1,
+     "ext_conventional_sc_compounds": 1,
+     "ext_heavy_fermion_more": 1
+    },
+    "top_families": [
+     [
+      "ext_ferroelectrics_multiferroics",
+      17
+     ],
+     [
+      "graphene_multilayers",
+      16
+     ],
+     [
+      "altermagnet_candidates",
+      15
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "SrRuO3",
+     7
+    ],
+    [
+     "RuO2",
+     5
+    ],
+    [
+     "SrTiO3",
+     5
+    ],
+    [
+     "Cr2O3",
+     4
+    ],
+    [
+     "BiFeO3",
+     4
+    ],
+    [
+     "Mn3Sn",
+     3
+    ],
+    [
+     "BaCo2V2O8",
+     3
+    ],
+    [
+     "NbSe2",
+     3
+    ],
+    [
+     "LaMnSi",
+     3
+    ],
+    [
+     "CoZr2",
+     2
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "LaMnSi",
+     3
+    ],
+    [
+     "CoZr2",
+     2
+    ]
+   ],
+   "leading_family": "ext_ferroelectrics_multiferroics",
+   "leading_family_exemplar": {
+    "id": "arXiv:2604.05220",
+    "family": "ext_ferroelectrics_multiferroics",
+    "title": "Many-body description of two-dimensional van der Waals ferroelectric $α-$In$_2$Se$_3$",
+    "is_leading_family": true
+   }
+  },
+  "quantum_many_body_theory": {
+   "label": "Quantum many-body theory & generalized symmetries (tensor networks, spin-chain & lattice-gauge models, non-invertible/higher-form symmetries, SPT/topological order & anyons, scars, entanglement)",
+   "n_records_trailing_primary": 1181,
+   "base_families_v2": {
+    "n_with_any_family": 23,
+    "share_with_any_family": 0.019,
+    "family_counts": {
+     "graphene_multilayers": 9,
+     "semiconductor_2deg_and_qw": 8,
+     "cuprates": 3,
+     "tmds": 2,
+     "iridates_mott_oxides": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "ruthenates": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      9
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      8
+     ],
+     [
+      "cuprates",
+      3
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 27,
+    "share_with_any_family": 0.023,
+    "family_counts": {
+     "graphene_multilayers": 9,
+     "semiconductor_2deg_and_qw": 8,
+     "cuprates": 3,
+     "ext_semiconductors_more": 2,
+     "ext_spin_chain_ladder_compounds": 2,
+     "tmds": 2,
+     "iridates_mott_oxides": 1,
+     "ext_layered_magnets_more": 1,
+     "ext_layered_dichalcogenides_more": 1,
+     "ute2_heavy_fermion_f_electron": 1,
+     "ruthenates": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      9
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      8
+     ],
+     [
+      "cuprates",
+      3
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "Fe4S4",
+     4
+    ],
+    [
+     "GaAs",
+     3
+    ],
+    [
+     "FP64",
+     2
+    ],
+    [
+     "Fe2S2",
+     2
+    ],
+    [
+     "AlGaAs",
+     2
+    ],
+    [
+     "MoC",
+     1
+    ],
+    [
+     "YbCu5-xZnx",
+     1
+    ],
+    [
+     "HB8",
+     1
+    ],
+    [
+     "HB4",
+     1
+    ],
+    [
+     "HB12",
+     1
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "Fe4S4",
+     4
+    ],
+    [
+     "FP64",
+     2
+    ],
+    [
+     "Fe2S2",
+     2
+    ],
+    [
+     "MoC",
+     1
+    ],
+    [
+     "YbCu5-xZnx",
+     1
+    ],
+    [
+     "HB8",
+     1
+    ],
+    [
+     "HB4",
+     1
+    ],
+    [
+     "HB12",
+     1
+    ]
+   ],
+   "leading_family": "graphene_multilayers",
+   "leading_family_exemplar": {
+    "id": "arXiv:2512.20559",
+    "family": "graphene_multilayers",
+    "title": "Plasmon excitations in half-filled graphene: A Comparative study between Quantum Monte Carlo and Random Phase Approximation",
+    "is_leading_family": true
+   }
+  },
+  "other_superconductivity": {
+   "label": "Other superconductivity & superfluidity (conventional/phonon-mediated & new superconductors, vortices, SC films & devices incl. qubit/resonator materials, applied SC, superfluid He)",
+   "n_records_trailing_primary": 571,
+   "base_families_v2": {
+    "n_with_any_family": 104,
+    "share_with_any_family": 0.182,
+    "family_counts": {
+     "semiconductor_2deg_and_qw": 33,
+     "tmds": 24,
+     "cuprates": 20,
+     "graphene_multilayers": 16,
+     "iron_pnictides_chalcogenides": 8,
+     "srtio3_ktao3_oxide_interfaces": 4,
+     "weyl_dirac_semimetals": 4,
+     "hydrides": 3,
+     "hbn": 3,
+     "altermagnet_candidates": 2,
+     "vdw_magnets": 1,
+     "excitonic_insulator_cdw_materials": 1,
+     "ruthenates": 1
+    },
+    "top_families": [
+     [
+      "semiconductor_2deg_and_qw",
+      33
+     ],
+     [
+      "tmds",
+      24
+     ],
+     [
+      "cuprates",
+      20
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 157,
+    "share_with_any_family": 0.275,
+    "family_counts": {
+     "ext_conventional_sc_compounds": 59,
+     "semiconductor_2deg_and_qw": 33,
+     "tmds": 24,
+     "cuprates": 20,
+     "graphene_multilayers": 16,
+     "iron_pnictides_chalcogenides": 8,
+     "ext_semiconductors_more": 7,
+     "srtio3_ktao3_oxide_interfaces": 4,
+     "weyl_dirac_semimetals": 4,
+     "hydrides": 3,
+     "hbn": 3,
+     "altermagnet_candidates": 2,
+     "vdw_magnets": 1,
+     "excitonic_insulator_cdw_materials": 1,
+     "ext_layered_dichalcogenides_more": 1,
+     "ruthenates": 1,
+     "ext_ferroelectrics_multiferroics": 1
+    },
+    "top_families": [
+     [
+      "ext_conventional_sc_compounds",
+      59
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      33
+     ],
+     [
+      "tmds",
+      24
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "NbN",
+     17
+    ],
+    [
+     "MgB2",
+     10
+    ],
+    [
+     "NbTiN",
+     9
+    ],
+    [
+     "NbSe2",
+     9
+    ],
+    [
+     "Nb3Sn",
+     7
+    ],
+    [
+     "InAs",
+     7
+    ],
+    [
+     "Ti40V60",
+     5
+    ],
+    [
+     "TiN",
+     5
+    ],
+    [
+     "SiGe",
+     4
+    ],
+    [
+     "NbTi",
+     3
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [
+    [
+     "Ti40V60",
+     5
+    ]
+   ],
+   "leading_family": "ext_conventional_sc_compounds",
+   "leading_family_exemplar": {
+    "id": "arXiv:2509.19697",
+    "family": "ext_conventional_sc_compounds",
+    "title": "Roles of Fe-ion irradiation on MgB$_2$ thin films: Structural, superconducting, and optical properties",
+    "is_leading_family": true
+   }
+  },
+  "_unclassified": {
+   "label": "in scope, no cluster",
+   "n_records_trailing_primary": 982,
+   "base_families_v2": {
+    "n_with_any_family": 205,
+    "share_with_any_family": 0.209,
+    "family_counts": {
+     "graphene_multilayers": 81,
+     "tmds": 41,
+     "semiconductor_2deg_and_qw": 31,
+     "hbn": 22,
+     "altermagnet_candidates": 10,
+     "srtio3_ktao3_oxide_interfaces": 10,
+     "iridates_mott_oxides": 7,
+     "cuprates": 6,
+     "frustrated_rare_earth_and_triangular": 6,
+     "weyl_dirac_semimetals": 5,
+     "vdw_magnets": 5,
+     "mnbi2te4_bi2se3_tetradymites": 3,
+     "iron_pnictides_chalcogenides": 3,
+     "ute2_heavy_fermion_f_electron": 2,
+     "ruthenates": 2,
+     "magnetic_topological_eu_compounds": 2,
+     "other_kagome_metals": 2,
+     "kitaev_materials": 2,
+     "nickelates_infinite_layer": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1,
+     "excitonic_insulator_cdw_materials": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      81
+     ],
+     [
+      "tmds",
+      41
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      31
+     ]
+    ]
+   },
+   "base_plus_extended": {
+    "n_with_any_family": 235,
+    "share_with_any_family": 0.239,
+    "family_counts": {
+     "graphene_multilayers": 81,
+     "tmds": 41,
+     "semiconductor_2deg_and_qw": 31,
+     "hbn": 22,
+     "ext_semiconductors_more": 17,
+     "ext_ferroelectrics_multiferroics": 12,
+     "altermagnet_candidates": 10,
+     "srtio3_ktao3_oxide_interfaces": 10,
+     "ext_tm_perovskite_oxides": 10,
+     "iridates_mott_oxides": 7,
+     "cuprates": 6,
+     "frustrated_rare_earth_and_triangular": 6,
+     "weyl_dirac_semimetals": 5,
+     "vdw_magnets": 5,
+     "mnbi2te4_bi2se3_tetradymites": 3,
+     "ext_layered_dichalcogenides_more": 3,
+     "ext_heavy_fermion_more": 3,
+     "iron_pnictides_chalcogenides": 3,
+     "ext_spintronic_magnets": 3,
+     "ute2_heavy_fermion_f_electron": 2,
+     "ruthenates": 2,
+     "magnetic_topological_eu_compounds": 2,
+     "other_kagome_metals": 2,
+     "kitaev_materials": 2,
+     "ext_conventional_sc_compounds": 2,
+     "nickelates_infinite_layer": 1,
+     "ext_delafossites": 1,
+     "b20_chiral_magnets_skyrmion_hosts": 1,
+     "excitonic_insulator_cdw_materials": 1,
+     "ext_layered_magnets_more": 1,
+     "ext_kagome_more": 1
+    },
+    "top_families": [
+     [
+      "graphene_multilayers",
+      81
+     ],
+     [
+      "tmds",
+      41
+     ],
+     [
+      "semiconductor_2deg_and_qw",
+      31
+     ]
+    ]
+   },
+   "top_formulas": [
+    [
+     "MoS2",
+     14
+    ],
+    [
+     "GaAs",
+     12
+    ],
+    [
+     "SiC",
+     8
+    ],
+    [
+     "InAs",
+     7
+    ],
+    [
+     "WSe2",
+     6
+    ],
+    [
+     "RuO2",
+     5
+    ],
+    [
+     "SrTiO3",
+     5
+    ],
+    [
+     "NbSe2",
+     4
+    ],
+    [
+     "AlGaAs",
+     4
+    ],
+    [
+     "Fe2O3",
+     3
+    ]
+   ],
+   "top_formulas_not_covered_by_any_family": [],
+   "leading_family": "graphene_multilayers",
+   "leading_family_exemplar": {
+    "id": "arXiv:2510.00760",
+    "family": "graphene_multilayers",
+    "title": "Valley Hall Viscosity in Gapped Graphene with and without a Magnetic Field",
+    "is_leading_family": true
+   }
+  }
+ },
+ "family_trends_top20": [
+  {
+   "label": "graphene_multilayers",
+   "trailing": 653,
+   "preceding": 595,
+   "share_ratio": 0.981,
+   "ci95_low": 0.875,
+   "ci95_high": 1.1
+  },
+  {
+   "label": "tmds",
+   "trailing": 593,
+   "preceding": 484,
+   "share_ratio": 1.095,
+   "ci95_low": 0.968,
+   "ci95_high": 1.239
+  },
+  {
+   "label": "cuprates",
+   "trailing": 364,
+   "preceding": 346,
+   "share_ratio": 0.94,
+   "ci95_low": 0.809,
+   "ci95_high": 1.092
+  },
+  {
+   "label": "vdw_magnets",
+   "trailing": 296,
+   "preceding": 288,
+   "share_ratio": 0.919,
+   "ci95_low": 0.779,
+   "ci95_high": 1.083
+  },
+  {
+   "label": "semiconductor_2deg_and_qw",
+   "trailing": 228,
+   "preceding": 223,
+   "share_ratio": 0.914,
+   "ci95_low": 0.758,
+   "ci95_high": 1.102
+  },
+  {
+   "label": "weyl_dirac_semimetals",
+   "trailing": 220,
+   "preceding": 228,
+   "share_ratio": 0.862,
+   "ci95_low": 0.715,
+   "ci95_high": 1.04
+  },
+  {
+   "label": "altermagnet_candidates",
+   "trailing": 254,
+   "preceding": 128,
+   "share_ratio": 1.774,
+   "ci95_low": 1.431,
+   "ci95_high": 2.198
+  },
+  {
+   "label": "ext_ferroelectrics_multiferroics",
+   "trailing": 182,
+   "preceding": 178,
+   "share_ratio": 0.914,
+   "ci95_low": 0.742,
+   "ci95_high": 1.126
+  },
+  {
+   "label": "nickelates_bilayer_trilayer_rp",
+   "trailing": 172,
+   "preceding": 160,
+   "share_ratio": 0.961,
+   "ci95_low": 0.773,
+   "ci95_high": 1.194
+  },
+  {
+   "label": "iridates_mott_oxides",
+   "trailing": 175,
+   "preceding": 145,
+   "share_ratio": 1.079,
+   "ci95_low": 0.864,
+   "ci95_high": 1.347
+  },
+  {
+   "label": "iron_pnictides_chalcogenides",
+   "trailing": 159,
+   "preceding": 157,
+   "share_ratio": 0.905,
+   "ci95_low": 0.725,
+   "ci95_high": 1.131
+  },
+  {
+   "label": "other_kagome_metals",
+   "trailing": 118,
+   "preceding": 130,
+   "share_ratio": 0.811,
+   "ci95_low": 0.631,
+   "ci95_high": 1.043
+  },
+  {
+   "label": "srtio3_ktao3_oxide_interfaces",
+   "trailing": 127,
+   "preceding": 103,
+   "share_ratio": 1.102,
+   "ci95_low": 0.848,
+   "ci95_high": 1.431
+  },
+  {
+   "label": "hbn",
+   "trailing": 121,
+   "preceding": 100,
+   "share_ratio": 1.081,
+   "ci95_low": 0.829,
+   "ci95_high": 1.412
+  },
+  {
+   "label": "mnbi2te4_bi2se3_tetradymites",
+   "trailing": 97,
+   "preceding": 113,
+   "share_ratio": 0.767,
+   "ci95_low": 0.584,
+   "ci95_high": 1.008
+  },
+  {
+   "label": "frustrated_rare_earth_and_triangular",
+   "trailing": 93,
+   "preceding": 104,
+   "share_ratio": 0.799,
+   "ci95_low": 0.603,
+   "ci95_high": 1.059
+  },
+  {
+   "label": "ext_conventional_sc_compounds",
+   "trailing": 97,
+   "preceding": 82,
+   "share_ratio": 1.057,
+   "ci95_low": 0.787,
+   "ci95_high": 1.421
+  },
+  {
+   "label": "ute2_heavy_fermion_f_electron",
+   "trailing": 88,
+   "preceding": 77,
+   "share_ratio": 1.021,
+   "ci95_low": 0.751,
+   "ci95_high": 1.389
+  },
+  {
+   "label": "av3sb5_kagome",
+   "trailing": 64,
+   "preceding": 80,
+   "share_ratio": 0.715,
+   "ci95_low": 0.514,
+   "ci95_high": 0.995
+  },
+  {
+   "label": "ext_semiconductors_more",
+   "trailing": 78,
+   "preceding": 60,
+   "share_ratio": 1.162,
+   "ci95_low": 0.829,
+   "ci95_high": 1.629
+  }
+ ],
+ "formula_trends_top20": [
+  {
+   "label": "La3Ni2O7",
+   "trailing": 105,
+   "preceding": 121,
+   "share_ratio": 0.776,
+   "ci95_low": 0.596,
+   "ci95_high": 1.009
+  },
+  {
+   "label": "WSe2",
+   "trailing": 131,
+   "preceding": 91,
+   "share_ratio": 1.287,
+   "ci95_low": 0.983,
+   "ci95_high": 1.684
+  },
+  {
+   "label": "MoTe2",
+   "trailing": 88,
+   "preceding": 77,
+   "share_ratio": 1.021,
+   "ci95_low": 0.751,
+   "ci95_high": 1.389
+  },
+  {
+   "label": "SrTiO3",
+   "trailing": 70,
+   "preceding": 63,
+   "share_ratio": 0.993,
+   "ci95_low": 0.706,
+   "ci95_high": 1.397
+  },
+  {
+   "label": "CrSBr",
+   "trailing": 67,
+   "preceding": 56,
+   "share_ratio": 1.069,
+   "ci95_low": 0.749,
+   "ci95_high": 1.527
+  },
+  {
+   "label": "NbSe2",
+   "trailing": 55,
+   "preceding": 62,
+   "share_ratio": 0.793,
+   "ci95_low": 0.551,
+   "ci95_high": 1.141
+  },
+  {
+   "label": "TaS2",
+   "trailing": 53,
+   "preceding": 53,
+   "share_ratio": 0.894,
+   "ci95_low": 0.61,
+   "ci95_high": 1.309
+  },
+  {
+   "label": "MnTe",
+   "trailing": 65,
+   "preceding": 39,
+   "share_ratio": 1.49,
+   "ci95_low": 1.001,
+   "ci95_high": 2.218
+  },
+  {
+   "label": "MoS2",
+   "trailing": 55,
+   "preceding": 46,
+   "share_ratio": 1.069,
+   "ci95_low": 0.722,
+   "ci95_high": 1.583
+  },
+  {
+   "label": "FeSe",
+   "trailing": 48,
+   "preceding": 45,
+   "share_ratio": 0.953,
+   "ci95_low": 0.634,
+   "ci95_high": 1.433
+  },
+  {
+   "label": "RuO2",
+   "trailing": 51,
+   "preceding": 41,
+   "share_ratio": 1.112,
+   "ci95_low": 0.736,
+   "ci95_high": 1.679
+  },
+  {
+   "label": "WS2",
+   "trailing": 52,
+   "preceding": 39,
+   "share_ratio": 1.192,
+   "ci95_low": 0.786,
+   "ci95_high": 1.807
+  },
+  {
+   "label": "MnBi2Te4",
+   "trailing": 37,
+   "preceding": 52,
+   "share_ratio": 0.636,
+   "ci95_low": 0.417,
+   "ci95_high": 0.97
+  },
+  {
+   "label": "MoSe2",
+   "trailing": 51,
+   "preceding": 33,
+   "share_ratio": 1.381,
+   "ci95_low": 0.891,
+   "ci95_high": 2.142
+  },
+  {
+   "label": "UTe2",
+   "trailing": 44,
+   "preceding": 38,
+   "share_ratio": 1.035,
+   "ci95_low": 0.67,
+   "ci95_high": 1.599
+  },
+  {
+   "label": "CsV3Sb5",
+   "trailing": 40,
+   "preceding": 37,
+   "share_ratio": 0.966,
+   "ci95_low": 0.617,
+   "ci95_high": 1.512
+  },
+  {
+   "label": "CrSb",
+   "trailing": 52,
+   "preceding": 20,
+   "share_ratio": 2.324,
+   "ci95_low": 1.386,
+   "ci95_high": 3.895
+  },
+  {
+   "label": "GaAs",
+   "trailing": 43,
+   "preceding": 29,
+   "share_ratio": 1.325,
+   "ci95_low": 0.827,
+   "ci95_high": 2.124
+  },
+  {
+   "label": "InAs",
+   "trailing": 37,
+   "preceding": 34,
+   "share_ratio": 0.973,
+   "ci95_low": 0.61,
+   "ci95_high": 1.551
+  },
+  {
+   "label": "WTe2",
+   "trailing": 34,
+   "preceding": 35,
+   "share_ratio": 0.868,
+   "ci95_low": 0.541,
+   "ci95_high": 1.393
+  }
+ ],
+ "fastest_growing_formulas": [
+  {
+   "label": "CrSb",
+   "trailing": 52,
+   "preceding": 20,
+   "share_ratio": 2.324,
+   "ci95_low": 1.386,
+   "ci95_high": 3.895,
+   "exemplar": {
+    "id": "arXiv:2509.21303",
+    "title": "Topological nontrivial berry phase in altermagnet CrSb"
+   }
+  },
+  {
+   "label": "YBa2Cu3O7",
+   "trailing": 38,
+   "preceding": 18,
+   "share_ratio": 1.887,
+   "ci95_low": 1.076,
+   "ci95_high": 3.308,
+   "exemplar": {
+    "id": "arXiv:2509.26095",
+    "title": "The diffusion-driven orthorhombic to tetragonal transition in YBa$_2$Cu$_3$O$_7$ derived with a machine learning interatomic potential"
+   }
+  },
+  {
+   "label": "MnTe",
+   "trailing": 65,
+   "preceding": 39,
+   "share_ratio": 1.49,
+   "ci95_low": 1.001,
+   "ci95_high": 2.218,
+   "exemplar": {
+    "id": "arXiv:2509.20120",
+    "title": "Multipole analysis of spin currents in altermagnetic MnTe"
+   }
+  },
+  {
+   "label": "WSe2",
+   "trailing": 131,
+   "preceding": 91,
+   "share_ratio": 1.287,
+   "ci95_low": 0.983,
+   "ci95_high": 1.684,
+   "exemplar": {
+    "id": "arXiv:2510.11088",
+    "title": "Local-Antisymmetric Flat Band and Coexisting Correlated stripe charge orders in WSe2-Modulated Twisted Bilayer Graphene"
+   }
+  },
+  {
+   "label": "MoSe2",
+   "trailing": 51,
+   "preceding": 33,
+   "share_ratio": 1.381,
+   "ci95_low": 0.891,
+   "ci95_high": 2.142,
+   "exemplar": {
+    "id": "arXiv:2510.19596",
+    "title": "Atomic displacements drive flat band formation and lateral electron and hole separation in near-60 degree twisted MoSe2/WSe2 bilayers"
+   }
+  }
+ ],
+ "growth_ranking_formulas_min_support": [
+  {
+   "label": "CrSb",
+   "trailing": 52,
+   "preceding": 20,
+   "share_ratio": 2.324,
+   "ci95_low": 1.386,
+   "ci95_high": 3.895
+  },
+  {
+   "label": "YBa2Cu3O7",
+   "trailing": 38,
+   "preceding": 18,
+   "share_ratio": 1.887,
+   "ci95_low": 1.076,
+   "ci95_high": 3.308
+  },
+  {
+   "label": "MnTe",
+   "trailing": 65,
+   "preceding": 39,
+   "share_ratio": 1.49,
+   "ci95_low": 1.001,
+   "ci95_high": 2.218
+  },
+  {
+   "label": "WSe2",
+   "trailing": 131,
+   "preceding": 91,
+   "share_ratio": 1.287,
+   "ci95_low": 0.983,
+   "ci95_high": 1.684
+  },
+  {
+   "label": "MoSe2",
+   "trailing": 51,
+   "preceding": 33,
+   "share_ratio": 1.381,
+   "ci95_low": 0.891,
+   "ci95_high": 2.142
+  },
+  {
+   "label": "GaAs",
+   "trailing": 43,
+   "preceding": 29,
+   "share_ratio": 1.325,
+   "ci95_low": 0.827,
+   "ci95_high": 2.124
+  },
+  {
+   "label": "WS2",
+   "trailing": 52,
+   "preceding": 39,
+   "share_ratio": 1.192,
+   "ci95_low": 0.786,
+   "ci95_high": 1.807
+  },
+  {
+   "label": "LaAlO3",
+   "trailing": 29,
+   "preceding": 19,
+   "share_ratio": 1.364,
+   "ci95_low": 0.764,
+   "ci95_high": 2.435
+  },
+  {
+   "label": "MoTe2",
+   "trailing": 88,
+   "preceding": 77,
+   "share_ratio": 1.021,
+   "ci95_low": 0.751,
+   "ci95_high": 1.389
+  },
+  {
+   "label": "CrSBr",
+   "trailing": 67,
+   "preceding": 56,
+   "share_ratio": 1.069,
+   "ci95_low": 0.749,
+   "ci95_high": 1.527
+  },
+  {
+   "label": "RuO2",
+   "trailing": 51,
+   "preceding": 41,
+   "share_ratio": 1.112,
+   "ci95_low": 0.736,
+   "ci95_high": 1.679
+  },
+  {
+   "label": "MoS2",
+   "trailing": 55,
+   "preceding": 46,
+   "share_ratio": 1.069,
+   "ci95_low": 0.722,
+   "ci95_high": 1.583
+  },
+  {
+   "label": "KTaO3",
+   "trailing": 24,
+   "preceding": 16,
+   "share_ratio": 1.341,
+   "ci95_low": 0.712,
+   "ci95_high": 2.525
+  },
+  {
+   "label": "SrTiO3",
+   "trailing": 70,
+   "preceding": 63,
+   "share_ratio": 0.993,
+   "ci95_low": 0.706,
+   "ci95_high": 1.397
+  },
+  {
+   "label": "UTe2",
+   "trailing": 44,
+   "preceding": 38,
+   "share_ratio": 1.035,
+   "ci95_low": 0.67,
+   "ci95_high": 1.599
+  },
+  {
+   "label": "Bi2Sr2CaCu2O8",
+   "trailing": 30,
+   "preceding": 24,
+   "share_ratio": 1.117,
+   "ci95_low": 0.653,
+   "ci95_high": 1.912
+  },
+  {
+   "label": "VO2",
+   "trailing": 22,
+   "preceding": 16,
+   "share_ratio": 1.229,
+   "ci95_low": 0.645,
+   "ci95_high": 2.342
+  },
+  {
+   "label": "FeSe",
+   "trailing": 48,
+   "preceding": 45,
+   "share_ratio": 0.953,
+   "ci95_low": 0.634,
+   "ci95_high": 1.433
+  },
+  {
+   "label": "CsV3Sb5",
+   "trailing": 40,
+   "preceding": 37,
+   "share_ratio": 0.966,
+   "ci95_low": 0.617,
+   "ci95_high": 1.512
+  },
+  {
+   "label": "NiPS3",
+   "trailing": 22,
+   "preceding": 17,
+   "share_ratio": 1.157,
+   "ci95_low": 0.614,
+   "ci95_high": 2.18
+  },
+  {
+   "label": "InAs",
+   "trailing": 37,
+   "preceding": 34,
+   "share_ratio": 0.973,
+   "ci95_low": 0.61,
+   "ci95_high": 1.551
+  },
+  {
+   "label": "TaS2",
+   "trailing": 53,
+   "preceding": 53,
+   "share_ratio": 0.894,
+   "ci95_low": 0.61,
+   "ci95_high": 1.309
+  },
+  {
+   "label": "NbN",
+   "trailing": 29,
+   "preceding": 25,
+   "share_ratio": 1.037,
+   "ci95_low": 0.607,
+   "ci95_high": 1.771
+  },
+  {
+   "label": "La3Ni2O7",
+   "trailing": 105,
+   "preceding": 121,
+   "share_ratio": 0.776,
+   "ci95_low": 0.596,
+   "ci95_high": 1.009
+  },
+  {
+   "label": "La4Ni3O10",
+   "trailing": 30,
+   "preceding": 28,
+   "share_ratio": 0.958,
+   "ci95_low": 0.572,
+   "ci95_high": 1.604
+  }
+ ],
+ "growth_ranking_families_min_support": [
+  {
+   "label": "altermagnet_candidates",
+   "trailing": 254,
+   "preceding": 128,
+   "share_ratio": 1.774,
+   "ci95_low": 1.431,
+   "ci95_high": 2.198
+  },
+  {
+   "label": "tmds",
+   "trailing": 593,
+   "preceding": 484,
+   "share_ratio": 1.095,
+   "ci95_low": 0.968,
+   "ci95_high": 1.239
+  },
+  {
+   "label": "graphene_multilayers",
+   "trailing": 653,
+   "preceding": 595,
+   "share_ratio": 0.981,
+   "ci95_low": 0.875,
+   "ci95_high": 1.1
+  },
+  {
+   "label": "iridates_mott_oxides",
+   "trailing": 175,
+   "preceding": 145,
+   "share_ratio": 1.079,
+   "ci95_low": 0.864,
+   "ci95_high": 1.347
+  },
+  {
+   "label": "srtio3_ktao3_oxide_interfaces",
+   "trailing": 127,
+   "preceding": 103,
+   "share_ratio": 1.102,
+   "ci95_low": 0.848,
+   "ci95_high": 1.431
+  },
+  {
+   "label": "ext_semiconductors_more",
+   "trailing": 78,
+   "preceding": 60,
+   "share_ratio": 1.162,
+   "ci95_low": 0.829,
+   "ci95_high": 1.629
+  },
+  {
+   "label": "hbn",
+   "trailing": 121,
+   "preceding": 100,
+   "share_ratio": 1.081,
+   "ci95_low": 0.829,
+   "ci95_high": 1.412
+  },
+  {
+   "label": "cuprates",
+   "trailing": 364,
+   "preceding": 346,
+   "share_ratio": 0.94,
+   "ci95_low": 0.809,
+   "ci95_high": 1.092
+  },
+  {
+   "label": "ext_tm_perovskite_oxides",
+   "trailing": 61,
+   "preceding": 46,
+   "share_ratio": 1.185,
+   "ci95_low": 0.807,
+   "ci95_high": 1.74
+  },
+  {
+   "label": "ext_conventional_sc_compounds",
+   "trailing": 97,
+   "preceding": 82,
+   "share_ratio": 1.057,
+   "ci95_low": 0.787,
+   "ci95_high": 1.421
+  },
+  {
+   "label": "vdw_magnets",
+   "trailing": 296,
+   "preceding": 288,
+   "share_ratio": 0.919,
+   "ci95_low": 0.779,
+   "ci95_high": 1.083
+  },
+  {
+   "label": "excitonic_insulator_cdw_materials",
+   "trailing": 64,
+   "preceding": 51,
+   "share_ratio": 1.122,
+   "ci95_low": 0.776,
+   "ci95_high": 1.622
+  },
+  {
+   "label": "nickelates_bilayer_trilayer_rp",
+   "trailing": 172,
+   "preceding": 160,
+   "share_ratio": 0.961,
+   "ci95_low": 0.773,
+   "ci95_high": 1.194
+  },
+  {
+   "label": "ruthenates",
+   "trailing": 64,
+   "preceding": 52,
+   "share_ratio": 1.1,
+   "ci95_low": 0.762,
+   "ci95_high": 1.588
+  },
+  {
+   "label": "semiconductor_2deg_and_qw",
+   "trailing": 228,
+   "preceding": 223,
+   "share_ratio": 0.914,
+   "ci95_low": 0.758,
+   "ci95_high": 1.102
+  },
+  {
+   "label": "ute2_heavy_fermion_f_electron",
+   "trailing": 88,
+   "preceding": 77,
+   "share_ratio": 1.021,
+   "ci95_low": 0.751,
+   "ci95_high": 1.389
+  },
+  {
+   "label": "ext_ferroelectrics_multiferroics",
+   "trailing": 182,
+   "preceding": 178,
+   "share_ratio": 0.914,
+   "ci95_low": 0.742,
+   "ci95_high": 1.126
+  },
+  {
+   "label": "iron_pnictides_chalcogenides",
+   "trailing": 159,
+   "preceding": 157,
+   "share_ratio": 0.905,
+   "ci95_low": 0.725,
+   "ci95_high": 1.131
+  },
+  {
+   "label": "weyl_dirac_semimetals",
+   "trailing": 220,
+   "preceding": 228,
+   "share_ratio": 0.862,
+   "ci95_low": 0.715,
+   "ci95_high": 1.04
+  },
+  {
+   "label": "hydrides",
+   "trailing": 42,
+   "preceding": 35,
+   "share_ratio": 1.073,
+   "ci95_low": 0.684,
+   "ci95_high": 1.681
+  },
+  {
+   "label": "ext_layered_dichalcogenides_more",
+   "trailing": 31,
+   "preceding": 25,
+   "share_ratio": 1.108,
+   "ci95_low": 0.654,
+   "ci95_high": 1.879
+  },
+  {
+   "label": "ext_layered_magnets_more",
+   "trailing": 38,
+   "preceding": 33,
+   "share_ratio": 1.029,
+   "ci95_low": 0.645,
+   "ci95_high": 1.642
+  },
+  {
+   "label": "other_kagome_metals",
+   "trailing": 118,
+   "preceding": 130,
+   "share_ratio": 0.811,
+   "ci95_low": 0.631,
+   "ci95_high": 1.043
+  },
+  {
+   "label": "nickelates_infinite_layer",
+   "trailing": 57,
+   "preceding": 57,
+   "share_ratio": 0.894,
+   "ci95_low": 0.618,
+   "ci95_high": 1.292
+  },
+  {
+   "label": "ext_spintronic_magnets",
+   "trailing": 50,
+   "preceding": 49,
+   "share_ratio": 0.912,
+   "ci95_low": 0.614,
+   "ci95_high": 1.354
+  },
+  {
+   "label": "frustrated_rare_earth_and_triangular",
+   "trailing": 93,
+   "preceding": 104,
+   "share_ratio": 0.799,
+   "ci95_low": 0.603,
+   "ci95_high": 1.059
+  },
+  {
+   "label": "mnbi2te4_bi2se3_tetradymites",
+   "trailing": 97,
+   "preceding": 113,
+   "share_ratio": 0.767,
+   "ci95_low": 0.584,
+   "ci95_high": 1.008
+  },
+  {
+   "label": "ext_heavy_fermion_more",
+   "trailing": 24,
+   "preceding": 21,
+   "share_ratio": 1.021,
+   "ci95_low": 0.568,
+   "ci95_high": 1.836
+  },
+  {
+   "label": "ext_spin_chain_ladder_compounds",
+   "trailing": 24,
+   "preceding": 21,
+   "share_ratio": 1.021,
+   "ci95_low": 0.568,
+   "ci95_high": 1.836
+  },
+  {
+   "label": "av3sb5_kagome",
+   "trailing": 64,
+   "preceding": 80,
+   "share_ratio": 0.715,
+   "ci95_low": 0.514,
+   "ci95_high": 0.995
+  },
+  {
+   "label": "magnetic_topological_eu_compounds",
+   "trailing": 33,
+   "preceding": 37,
+   "share_ratio": 0.797,
+   "ci95_low": 0.498,
+   "ci95_high": 1.276
+  },
+  {
+   "label": "kitaev_materials",
+   "trailing": 49,
+   "preceding": 70,
+   "share_ratio": 0.626,
+   "ci95_low": 0.434,
+   "ci95_high": 0.902
+  },
+  {
+   "label": "ext_kagome_more",
+   "trailing": 37,
+   "preceding": 52,
+   "share_ratio": 0.636,
+   "ci95_low": 0.417,
+   "ci95_high": 0.97
+  },
+  {
+   "label": "b20_chiral_magnets_skyrmion_hosts",
+   "trailing": 26,
+   "preceding": 34,
+   "share_ratio": 0.683,
+   "ci95_low": 0.41,
+   "ci95_high": 1.14
+  }
+ ],
+ "min_support_for_growth": 30
+}

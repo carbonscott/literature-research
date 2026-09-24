@@ -1,0 +1,141 @@
+{
+  "goal": "Map the current areas of interest in quantum materials research from preprint servers, answering six named questions with verified preprint evidence",
+  "slug": "qm-preprint-landscape",
+  "contract": "quantum-materials/.goal/qm-preprint-landscape.json",
+  "created": "2026-09-23T11:09:05-07:00",
+  "limits": {
+    "subagents_min": 4,
+    "subagents_max": 8,
+    "min_iterations": 3,
+    "max_turns": 9
+  },
+  "iterations": [
+    {
+      "n": 1,
+      "thought": "Bootstrap. Health-checked the manifest endpoints (ChemRxiv native API returns 403 -> route via Crossref prefix 10.26434) and sized arXiv volumes (trailing: str-el 5177, supr-con 2287, mes-hall 5956, mtrl-sci 9726). Decomposed into disjoint harvest lanes so only one agent touches arxiv.org (1 req/3 s), plus parallel build lanes (taxonomy, verifier, contested-claims scout) that need no arXiv traffic.",
+      "delegated": [
+        {
+          "agent": "harvest:arxiv",
+          "task": "Resumable month-sliced arXiv API harvest of cond-mat.str-el/supr-con/mes-hall/mtrl-sci, 2024-09-24..2026-09-23, reconcile each slice vs totalResults, write corpus/arxiv.jsonl",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "harvest:crossref",
+          "task": "Crossref-prefix harvest of chemrxiv/researchsquare/preprints_org/techrxiv for 24 QM terms with phrase filter and version collapse",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "harvest:native",
+          "task": "Native-API harvest of Zenodo preprints, HAL preprints, OSTI records for 24 QM terms with phrase filter and arXiv-overlap tagging",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "build:taxonomy",
+          "task": "Write analysis/taxonomy.py (scope rule, 18 clusters, 25 methods, 24 material families), tests, and count_clusters.py; run on corpus",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "build:verifier",
+          "task": "Write verify_citations.py (corpus breakdown + 'cited IDs: N | found in corpus: M | missing: K') and unit tests",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "scout:contested",
+          "task": "Scout contested/unreplicated high-visibility QM claims with in-window preprint activity (no arXiv API use); propose a noise filter",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        }
+      ],
+      "integrated": "All 6 returned complete. Re-ran myself: verifier tests (7/7 OK), taxonomy tests (48+15+8 OK), verify_citations.py on the real corpus -> 38,598 records (arxiv 35,295; zenodo 1,458; osti 1,437; researchsquare 197; hal 123; preprints_org 57; chemrxiv 29; techrxiv 2), my own arXiv count 18,716 trailing / 16,579 preceding, 0 outside. Looked up 12 contested-claim IDs in the corpus myself (e.g. arXiv:2502.19560, arXiv:2603.12437, arXiv:2511.00399). 43/78 scout IDs are in corpus; the 35 absent ones predate the window (expected). Read agent-produced cluster_counts.json (not yet re-run by me).",
+      "new": "Harvested 38,598-record multi-server corpus (quantum-materials/corpus/*.jsonl) + scope rule/18-cluster taxonomy (analysis/taxonomy.py) + verify_citations.py + 14-candidate contested-claims list (notes/contested_candidates.json); decision: ChemRxiv via Crossref, Zenodo treated as separate low-quality population, momentum to be normalized to the in-scope baseline",
+      "remaining": "Q1: reduce 17% unclassified in-scope (many-body theory, conventional SC), re-run counts myself. Q2: baseline-normalized momentum with uncertainty. Q3: leading families per cluster. Q4: method counts (exp vs comp). Q5: per-server counts + noise assessment (HAL mirror rate, Zenodo fringe share, Crossref fuzzy-match ratio, OSTI indexing lag). Q6: verify contested claims against corpus, apply noise filter, find Comment/Reply pairs in-corpus. Then write findings.md and run verify_citations.py."
+    },
+    {
+      "n": 2,
+      "thought": "Answer Q1-Q6. Taxonomy refinement is the one hard dependency (Q2/Q3/Q4 all read the per-record classification), so it runs first and freezes v2 + analysis/classified.jsonl; Q5 (non-arXiv) and Q6 (contested claims) need only the corpus and run in parallel from the start; a synthesizer drafts findings.md after a barrier so the six answers share one set of cluster names and numbers.",
+      "delegated": [
+        {
+          "agent": "q1:taxonomy-v2",
+          "task": "Refine taxonomy to v2 (unclassified <=10%, precision audit >=0.80/cluster), build analysis/classified.jsonl, regenerate cluster_counts.json",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "q2:momentum",
+          "task": "Baseline-normalized share ratio R with Poisson 95% CI, label rule, monthly-slope and scope/label-variant robustness",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "q3:materials",
+          "task": "Leading material families per cluster, formula-token gap check, material trends vs baseline",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "q4:methods",
+          "task": "Method precision audit + refined counts, exp vs comp split, trends, per-cluster top methods",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "q5:beyond-arxiv",
+          "task": "Per-server counts, yield, arXiv-duplicate share, 152-record manual quality audit, unique contribution, noise rating",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "q6:noise",
+          "task": "Verify contested candidates against corpus, stance-label ~230 abstracts, Comment/Reply/withdrawn sweep, implement noise_filter.py and score 18 claims",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "synth:findings",
+          "task": "Draft findings.md (Scope, Q1-Q6, caveats) from lane JSON, pass verify_citations.py, write print_findings_summary.py",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        }
+      ],
+      "integrated": "All 7 complete. I ran verify_citations.py myself: corpus 38,627 records (arxiv 35,324 incl. 29 id_list supplement records), 'cited IDs: 156 | found in corpus: 156 | missing: 0', per-Q tallies Q1 44, Q2 9, Q3 27, Q4 10, Q5 17, Q6 51. Ran print_findings_summary.py (22-cluster table with trend + families). Re-ran analysis/momentum.py (byte-identical momentum.json) and independently recomputed R/CI from classified.jsonl with my own code: altermagnetism T=660 P=414 R=1.42 (1.26-1.62); topological_insulators_semimetals R=0.85 (0.76-0.95); spin_liquid_frustrated R=0.85 (0.74-0.98).",
+      "new": "findings.md draft answering Q1-Q6 (156 corpus-verified citations) + taxonomy v2 (22 clusters, audited precision 0.94) + classified.jsonl cache + momentum/materials/methods/q5/q6 analyses + noise_filter.py; decisions: label rule R>=1.10 & CI>1 rising / R<=0.90 & CI<1 declining, OSTI treated as lagging journal layer, Zenodo excluded from trend claims",
+      "remaining": "Harden in iteration 3: (1) independent re-audit of cluster precision + exemplar IDs on fresh seed; (2) independent recount of Q1/Q2 table vs findings.md, investigate 2025-10 share dip; (3) Q4 headline must name dominant exp + comp techniques with counts; human-readable family labels in Q1 table; (4) Q5 per-server topic distribution now that classified.jsonl exists; (5) adversarial check of Q6 wording ('effectively refuted' for bulk RuO2 / chiral UTe2) and ID-description match; (6) completeness critic vs done_when; then final verify + print."
+    },
+    {
+      "n": 3,
+      "thought": "Harden before declaring done. Six auditors, each with a distinct failure lens (label precision on a fresh sample, cell-by-cell numeric recount, materials/methods interpretation, beyond-arXiv numbers, adversarial contested-claim skeptic, evaluator-eye completeness vs done_when), all read-only; then one editor after a barrier, because all fixes land in a single file and conflicting proposals must be reconciled against the data.",
+      "delegated": [
+        {
+          "agent": "audit:q1-precision",
+          "task": "Fresh-seed (Random(2026)) strict precision re-audit, 10/cluster x 22, plus exemplar-ID checks",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "audit:q1q2-numbers",
+          "task": "Own-script recount of every Q1/Q2 table cell; diagnose 2025-10 share dip; partial-month and leave-one-month-out sensitivity",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "audit:q3q4",
+          "task": "Cross-check Q3/Q4 numbers, readable family names, flag framing-word-driven leading families, draft Q4 headline with dominant-technique counts",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "audit:q5",
+          "task": "Re-run q5 with topic distribution, recount per-server records, check cited non-arXiv IDs, challenge 4%/600 headline numbers",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "audit:q6-skeptic",
+          "task": "Reproduce noise scores, check cited-ID roles, recalibrate 'effectively refuted' wording for RuO2/UTe2, author-network independence",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "audit:completeness",
+          "task": "Judge printed summary against each done_when clause; propose Scope/Noise-filter lines and print-script changes; find contradictions",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        },
+        {
+          "agent": "edit:findings",
+          "task": "Apply must/should edits after re-checking data, keep structure, update print_findings_summary.py, re-run verifier",
+          "model": "claude-opus-5-5 (Opus 5.5, effort=medium)"
+        }
+      ],
+      "integrated": "All 7 complete. I recounted notes/audit/q1_precision_reaudit.json myself: pooled 181/220 = 0.82, 6 clusters below 0.80, 6 at 0.80 (confirms the editor's correction of the auditor's '13 of 22'); confirmed findings.md states it. Ran verify_citations.py: 'cited IDs: 163 | found in corpus: 163 | missing: 0' (Q1 48, Q2 9, Q3 27, Q4 10, Q5 17, Q6 54). Ran print_findings_summary.py: 22-cluster table + Q1 Scope line, Q4 dominant-technique counts, Q5 per-server counts/noise ratings, Q6 Noise filter line. Looked up 10 cited IDs in the corpus (e.g. arXiv:2410.05850, arXiv:2510.03256, osti:3818104, hal:hal-05482717, doi:10.5281/zenodo.21357073) and their titles match their described roles.",
+      "new": "Independent audit layer notes/audit/* (fresh-sample precision 0.82 [0.77-0.87], Q1/Q2 recount 0 mismatches, 2025-10 dip diagnosed as noise not artefact, Q6 recalibration) + hardened findings.md (readable family labels, Q1 Scope line, Q6 Noise filter line, Q4 dominant-technique counts, Q5 per-server counts/noise ratings, UTe2 chiral 'refuted'->'disfavoured', bulk RuO2 'strongly disfavoured')",
+      "remaining": "All done_when items demonstrated this turn. Open follow-ups, not required: q6.json/q6_claims.py still say UTe2 'refuted' while findings.md says 'disfavoured'; the v1 '17% unclassified' figure rests on the iteration-1 report; rhombohedral-graphene and heavy-fermion clusters are at 0.6 on the strict re-audit; ML-method precision 0.70 on n=10; arXiv dedup covers only 4 cond-mat categories, so non-arXiv unique counts are upper bounds."
+    }
+  ]
+}

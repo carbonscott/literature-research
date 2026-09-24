@@ -1,0 +1,1275 @@
+{
+ "servers": {
+  "chemrxiv": {
+   "prefix": "10.26434",
+   "summary": {
+    "unique_records": 29,
+    "by_window": {
+     "trailing": 14,
+     "preceding": 12,
+     "outside": 3
+    },
+    "top_terms_by_unique_kept": [
+     [
+      "moire",
+      9
+     ],
+     [
+      "superconductivity",
+      3
+     ],
+     [
+      "flat band",
+      3
+     ],
+     [
+      "strongly correlated",
+      3
+     ],
+     [
+      "quantum material",
+      3
+     ],
+     [
+      "multiferroic",
+      2
+     ],
+     [
+      "topological insulator",
+      2
+     ],
+     [
+      "skyrmion",
+      2
+     ],
+     [
+      "superconductor",
+      2
+     ],
+     [
+      "twisted bilayer graphene",
+      1
+     ]
+    ],
+    "crossref_total_results_sum": 4004,
+    "fetched_sum": 4004,
+    "kept_sum": 37,
+    "raw_to_kept_ratio": 0.0092,
+    "with_is_preprint_of": 12,
+    "with_arxiv_id": 0,
+    "truncated_terms": [],
+    "v1_lookups": 9
+   },
+   "terms": [
+    {
+     "server": "chemrxiv",
+     "term": "superconductivity",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 5,
+     "kept_unique_works": 3,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "superconductor",
+     "total_results": 2,
+     "fetched": 2,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "topological insulator",
+     "total_results": 48,
+     "fetched": 48,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 0.0417
+    },
+    {
+     "server": "chemrxiv",
+     "term": "topological semimetal",
+     "total_results": 48,
+     "fetched": 48,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "Weyl semimetal",
+     "total_results": 2,
+     "fetched": 2,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "quantum spin liquid",
+     "total_results": 1135,
+     "fetched": 1135,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "altermagnet",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "chemrxiv",
+     "term": "kagome",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "chemrxiv",
+     "term": "moire",
+     "total_results": 12,
+     "fetched": 12,
+     "truncated_by_cap": false,
+     "query_variants": [
+      {
+       "server": "chemrxiv",
+       "term": "moire",
+       "total_results": 0,
+       "fetched": 0,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:19:21.450286Z"
+      },
+      {
+       "server": "chemrxiv",
+       "term": "moir\u00e9",
+       "total_results": 12,
+       "fetched": 12,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:22:47.343315Z"
+      }
+     ],
+     "kept_after_phrase_filter": 12,
+     "kept_unique_works": 9,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "twisted bilayer graphene",
+     "total_results": 163,
+     "fetched": 163,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 1,
+     "kept_ratio": 0.0184
+    },
+    {
+     "server": "chemrxiv",
+     "term": "quantum anomalous Hall",
+     "total_results": 608,
+     "fetched": 608,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "Majorana",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "chemrxiv",
+     "term": "heavy fermion",
+     "total_results": 48,
+     "fetched": 48,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "charge density wave",
+     "total_results": 682,
+     "fetched": 682,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "van der Waals magnet",
+     "total_results": 431,
+     "fetched": 431,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "nickelate",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "chemrxiv",
+     "term": "cuprate",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "chemrxiv",
+     "term": "excitonic insulator",
+     "total_results": 22,
+     "fetched": 22,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "multiferroic",
+     "total_results": 2,
+     "fetched": 2,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "skyrmion",
+     "total_results": 2,
+     "fetched": 2,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "chemrxiv",
+     "term": "quantum material",
+     "total_results": 683,
+     "fetched": 683,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 3,
+     "kept_ratio": 0.0044
+    },
+    {
+     "server": "chemrxiv",
+     "term": "strongly correlated",
+     "total_results": 48,
+     "fetched": 48,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 3,
+     "kept_ratio": 0.0625
+    },
+    {
+     "server": "chemrxiv",
+     "term": "flat band",
+     "total_results": 58,
+     "fetched": 58,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 3,
+     "kept_ratio": 0.0517
+    },
+    {
+     "server": "chemrxiv",
+     "term": "Mott insulator",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    }
+   ]
+  },
+  "researchsquare": {
+   "prefix": "10.21203",
+   "summary": {
+    "unique_records": 197,
+    "by_window": {
+     "trailing": 109,
+     "preceding": 88,
+     "outside": 0
+    },
+    "top_terms_by_unique_kept": [
+     [
+      "superconductivity",
+      48
+     ],
+     [
+      "moire",
+      22
+     ],
+     [
+      "topological insulator",
+      18
+     ],
+     [
+      "quantum material",
+      17
+     ],
+     [
+      "Weyl semimetal",
+      14
+     ],
+     [
+      "kagome",
+      12
+     ],
+     [
+      "quantum spin liquid",
+      10
+     ],
+     [
+      "superconductor",
+      10
+     ],
+     [
+      "charge density wave",
+      8
+     ],
+     [
+      "multiferroic",
+      7
+     ]
+    ],
+    "crossref_total_results_sum": 8261,
+    "fetched_sum": 8261,
+    "kept_sum": 216,
+    "raw_to_kept_ratio": 0.0261,
+    "with_is_preprint_of": 58,
+    "with_arxiv_id": 0,
+    "truncated_terms": [],
+    "v1_lookups": 0
+   },
+   "terms": [
+    {
+     "server": "researchsquare",
+     "term": "superconductivity",
+     "total_results": 49,
+     "fetched": 49,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 49,
+     "kept_unique_works": 48,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "superconductor",
+     "total_results": 10,
+     "fetched": 10,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 10,
+     "kept_unique_works": 10,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "topological insulator",
+     "total_results": 242,
+     "fetched": 242,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 18,
+     "kept_unique_works": 18,
+     "kept_ratio": 0.0744
+    },
+    {
+     "server": "researchsquare",
+     "term": "topological semimetal",
+     "total_results": 221,
+     "fetched": 221,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 7,
+     "kept_unique_works": 7,
+     "kept_ratio": 0.0317
+    },
+    {
+     "server": "researchsquare",
+     "term": "Weyl semimetal",
+     "total_results": 29,
+     "fetched": 29,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 14,
+     "kept_unique_works": 14,
+     "kept_ratio": 0.4828
+    },
+    {
+     "server": "researchsquare",
+     "term": "quantum spin liquid",
+     "total_results": 1792,
+     "fetched": 1792,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 10,
+     "kept_unique_works": 10,
+     "kept_ratio": 0.0056
+    },
+    {
+     "server": "researchsquare",
+     "term": "altermagnet",
+     "total_results": 3,
+     "fetched": 3,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 3,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "kagome",
+     "total_results": 12,
+     "fetched": 12,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 12,
+     "kept_unique_works": 12,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "moire",
+     "total_results": 24,
+     "fetched": 24,
+     "truncated_by_cap": false,
+     "query_variants": [
+      {
+       "server": "researchsquare",
+       "term": "moire",
+       "total_results": 0,
+       "fetched": 0,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:20:09.236748Z"
+      },
+      {
+       "server": "researchsquare",
+       "term": "moir\u00e9",
+       "total_results": 24,
+       "fetched": 24,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:22:50.096609Z"
+      }
+     ],
+     "kept_after_phrase_filter": 22,
+     "kept_unique_works": 22,
+     "kept_ratio": 0.9167
+    },
+    {
+     "server": "researchsquare",
+     "term": "twisted bilayer graphene",
+     "total_results": 361,
+     "fetched": 361,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 5,
+     "kept_unique_works": 5,
+     "kept_ratio": 0.0139
+    },
+    {
+     "server": "researchsquare",
+     "term": "quantum anomalous Hall",
+     "total_results": 1531,
+     "fetched": 1531,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 0.0007
+    },
+    {
+     "server": "researchsquare",
+     "term": "Majorana",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 4,
+     "kept_unique_works": 3,
+     "kept_ratio": 0.8
+    },
+    {
+     "server": "researchsquare",
+     "term": "heavy fermion",
+     "total_results": 372,
+     "fetched": 372,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 0.0027
+    },
+    {
+     "server": "researchsquare",
+     "term": "charge density wave",
+     "total_results": 1240,
+     "fetched": 1240,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 8,
+     "kept_unique_works": 8,
+     "kept_ratio": 0.0065
+    },
+    {
+     "server": "researchsquare",
+     "term": "van der Waals magnet",
+     "total_results": 174,
+     "fetched": 174,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 0.0115
+    },
+    {
+     "server": "researchsquare",
+     "term": "nickelate",
+     "total_results": 3,
+     "fetched": 3,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 3,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "cuprate",
+     "total_results": 3,
+     "fetched": 3,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 3,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "excitonic insulator",
+     "total_results": 49,
+     "fetched": 49,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 0.0408
+    },
+    {
+     "server": "researchsquare",
+     "term": "multiferroic",
+     "total_results": 7,
+     "fetched": 7,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 7,
+     "kept_unique_works": 7,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "skyrmion",
+     "total_results": 7,
+     "fetched": 7,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 7,
+     "kept_unique_works": 7,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "researchsquare",
+     "term": "quantum material",
+     "total_results": 1715,
+     "fetched": 1715,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 17,
+     "kept_unique_works": 17,
+     "kept_ratio": 0.0099
+    },
+    {
+     "server": "researchsquare",
+     "term": "strongly correlated",
+     "total_results": 101,
+     "fetched": 101,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 0.0198
+    },
+    {
+     "server": "researchsquare",
+     "term": "flat band",
+     "total_results": 257,
+     "fetched": 257,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 5,
+     "kept_unique_works": 5,
+     "kept_ratio": 0.0195
+    },
+    {
+     "server": "researchsquare",
+     "term": "Mott insulator",
+     "total_results": 54,
+     "fetched": 54,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 4,
+     "kept_unique_works": 4,
+     "kept_ratio": 0.0741
+    }
+   ]
+  },
+  "preprints_org": {
+   "prefix": "10.20944",
+   "summary": {
+    "unique_records": 57,
+    "by_window": {
+     "trailing": 25,
+     "preceding": 30,
+     "outside": 2
+    },
+    "top_terms_by_unique_kept": [
+     [
+      "superconductivity",
+      18
+     ],
+     [
+      "superconductor",
+      8
+     ],
+     [
+      "topological insulator",
+      7
+     ],
+     [
+      "Majorana",
+      5
+     ],
+     [
+      "moire",
+      5
+     ],
+     [
+      "strongly correlated",
+      3
+     ],
+     [
+      "quantum spin liquid",
+      2
+     ],
+     [
+      "quantum material",
+      2
+     ],
+     [
+      "skyrmion",
+      2
+     ],
+     [
+      "altermagnet",
+      2
+     ]
+    ],
+    "crossref_total_results_sum": 5444,
+    "fetched_sum": 5444,
+    "kept_sum": 65,
+    "raw_to_kept_ratio": 0.0119,
+    "with_is_preprint_of": 28,
+    "with_arxiv_id": 2,
+    "truncated_terms": [],
+    "v1_lookups": 2
+   },
+   "terms": [
+    {
+     "server": "preprints_org",
+     "term": "superconductivity",
+     "total_results": 22,
+     "fetched": 22,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 22,
+     "kept_unique_works": 18,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "superconductor",
+     "total_results": 8,
+     "fetched": 8,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 8,
+     "kept_unique_works": 8,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "topological insulator",
+     "total_results": 139,
+     "fetched": 139,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 7,
+     "kept_unique_works": 7,
+     "kept_ratio": 0.0504
+    },
+    {
+     "server": "preprints_org",
+     "term": "topological semimetal",
+     "total_results": 137,
+     "fetched": 137,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "Weyl semimetal",
+     "total_results": 9,
+     "fetched": 9,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "quantum spin liquid",
+     "total_results": 1329,
+     "fetched": 1329,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 0.0015
+    },
+    {
+     "server": "preprints_org",
+     "term": "altermagnet",
+     "total_results": 2,
+     "fetched": 2,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "kagome",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "preprints_org",
+     "term": "moire",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "query_variants": [
+      {
+       "server": "preprints_org",
+       "term": "moire",
+       "total_results": 0,
+       "fetched": 0,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:20:57.603923Z"
+      },
+      {
+       "server": "preprints_org",
+       "term": "moir\u00e9",
+       "total_results": 5,
+       "fetched": 5,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:22:54.508724Z"
+      }
+     ],
+     "kept_after_phrase_filter": 5,
+     "kept_unique_works": 5,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "twisted bilayer graphene",
+     "total_results": 98,
+     "fetched": 98,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 0.0102
+    },
+    {
+     "server": "preprints_org",
+     "term": "quantum anomalous Hall",
+     "total_results": 1195,
+     "fetched": 1195,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 0.0008
+    },
+    {
+     "server": "preprints_org",
+     "term": "Majorana",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 5,
+     "kept_unique_works": 5,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "heavy fermion",
+     "total_results": 154,
+     "fetched": 154,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "charge density wave",
+     "total_results": 532,
+     "fetched": 532,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 0.0019
+    },
+    {
+     "server": "preprints_org",
+     "term": "van der Waals magnet",
+     "total_results": 284,
+     "fetched": 284,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 0.0035
+    },
+    {
+     "server": "preprints_org",
+     "term": "nickelate",
+     "total_results": 1,
+     "fetched": 1,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "cuprate",
+     "total_results": 1,
+     "fetched": 1,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "excitonic insulator",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "multiferroic",
+     "total_results": 1,
+     "fetched": 1,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 1,
+     "kept_unique_works": 1,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "skyrmion",
+     "total_results": 2,
+     "fetched": 2,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "quantum material",
+     "total_results": 1340,
+     "fetched": 1340,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 0.0015
+    },
+    {
+     "server": "preprints_org",
+     "term": "strongly correlated",
+     "total_results": 45,
+     "fetched": 45,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 3,
+     "kept_unique_works": 3,
+     "kept_ratio": 0.0667
+    },
+    {
+     "server": "preprints_org",
+     "term": "flat band",
+     "total_results": 124,
+     "fetched": 124,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "preprints_org",
+     "term": "Mott insulator",
+     "total_results": 6,
+     "fetched": 6,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    }
+   ]
+  },
+  "techrxiv": {
+   "prefix": "10.36227",
+   "summary": {
+    "unique_records": 2,
+    "by_window": {
+     "trailing": 1,
+     "preceding": 1,
+     "outside": 0
+    },
+    "top_terms_by_unique_kept": [
+     [
+      "superconductivity",
+      2
+     ]
+    ],
+    "crossref_total_results_sum": 1177,
+    "fetched_sum": 1177,
+    "kept_sum": 2,
+    "raw_to_kept_ratio": 0.0017,
+    "with_is_preprint_of": 0,
+    "with_arxiv_id": 0,
+    "truncated_terms": [],
+    "v1_lookups": 0
+   },
+   "terms": [
+    {
+     "server": "techrxiv",
+     "term": "superconductivity",
+     "total_results": 2,
+     "fetched": 2,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 2,
+     "kept_unique_works": 2,
+     "kept_ratio": 1.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "superconductor",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "topological insulator",
+     "total_results": 24,
+     "fetched": 24,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "topological semimetal",
+     "total_results": 19,
+     "fetched": 19,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "Weyl semimetal",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "quantum spin liquid",
+     "total_results": 302,
+     "fetched": 302,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "altermagnet",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "kagome",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "moire",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "query_variants": [
+      {
+       "server": "techrxiv",
+       "term": "moire",
+       "total_results": 0,
+       "fetched": 0,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:21:32.934010Z"
+      },
+      {
+       "server": "techrxiv",
+       "term": "moir\u00e9",
+       "total_results": 0,
+       "fetched": 0,
+       "pages": 1,
+       "truncated_by_cap": false,
+       "fetched_at": "2026-09-23T18:22:56.484450Z"
+      }
+     ],
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "twisted bilayer graphene",
+     "total_results": 13,
+     "fetched": 13,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "quantum anomalous Hall",
+     "total_results": 287,
+     "fetched": 287,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "Majorana",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "heavy fermion",
+     "total_results": 1,
+     "fetched": 1,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "charge density wave",
+     "total_results": 123,
+     "fetched": 123,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "van der Waals magnet",
+     "total_results": 22,
+     "fetched": 22,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "nickelate",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "cuprate",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "excitonic insulator",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "multiferroic",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "skyrmion",
+     "total_results": 0,
+     "fetched": 0,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": null
+    },
+    {
+     "server": "techrxiv",
+     "term": "quantum material",
+     "total_results": 296,
+     "fetched": 296,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "strongly correlated",
+     "total_results": 10,
+     "fetched": 10,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "flat band",
+     "total_results": 68,
+     "fetched": 68,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    },
+    {
+     "server": "techrxiv",
+     "term": "Mott insulator",
+     "total_results": 5,
+     "fetched": 5,
+     "truncated_by_cap": false,
+     "kept_after_phrase_filter": 0,
+     "kept_unique_works": 0,
+     "kept_ratio": 0.0
+    }
+   ]
+  }
+ },
+ "generated": "2026-09-23T18:23:10.175182Z",
+ "api": "https://api.crossref.org",
+ "query_template": "/prefixes/<prefix>/works?filter=type:posted-content,from-posted-date:2024-09-24,until-posted-date:2026-09-23&query.bibliographic=<term>&rows=500&cursor=*",
+ "cap_per_server_term": 2000,
+ "windows": {
+  "trailing": [
+   "2025-09-24",
+   "2026-09-23"
+  ],
+  "preceding": [
+   "2024-09-24",
+   "2025-09-23"
+  ]
+ },
+ "phrase_filter": "term (case/accent-insensitive; hyphen/space/no-space variants; leading word boundary) in title or abstract"
+}

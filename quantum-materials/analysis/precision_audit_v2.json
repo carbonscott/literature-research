@@ -1,0 +1,3684 @@
+{
+ "taxonomy_version": "v2",
+ "method": "For each cluster: ids of trailing-window arXiv records whose primary_cluster is that cluster (analysis/classified.jsonl), sorted, then random.Random(42).sample(ids, 15) (see analysis/sample_precision_audit.py). Each title (abstract where needed) was read and judged: is the PRIMARY label a correct description of the paper's main topic? Single annotator (the classifying agent); n=15 per cluster, so each precision has a wide uncertainty (Wilson 95% interval roughly +/-15-20 points); treat as a screen for systematic leaks, not a calibrated estimate.",
+ "judging_rules": [
+  "correct = the paper's main topic fits the cluster label; mere mention of the topic is not enough",
+  "methods papers count as correct when the cluster's physics is the stated application (e.g. DMFT solvers for Mott physics)",
+  "fallback clusters are judged against their own (broad) labels"
+ ],
+ "classified_jsonl_md5_note": "sample drawn from the frozen v2 classified.jsonl",
+ "clusters": {
+  "nickelate_sc": {
+   "label": "Nickelates (bilayer/trilayer & infinite-layer) and nickelate superconductivity",
+   "n_population_trailing_primary": 222,
+   "n_sampled": 15,
+   "n_correct": 14,
+   "precision": 0.933,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2606.16195",
+     "title": "Electronic structure trends in La2RNi2O7 (R= Pr, Nd, Sm) from first-principles",
+     "all_clusters": [
+      "nickelate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.05956",
+     "title": "Minimal two band model and experimental proposals to distinguish pairing mechanisms of the high-Tc superconductor La3Ni2O7",
+     "all_clusters": [
+      "nickelate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.08194",
+     "title": "Electronic structures and superconductivity in Nd-doped La3Ni2O7",
+     "all_clusters": [
+      "nickelate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.26676",
+     "title": "Electronically Inactive Intercalated La2NiO4 Layer in Superconducting La5Ni3O11",
+     "all_clusters": [
+      "nickelate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.05365",
+     "title": "Spectroscopic Evidence of Competing Diagonal Spin Interactions and Spin Disproportionation in the Bilayer Nickelate La3Ni2O7",
+     "all_clusters": [
+      "nickelate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.17663",
+     "title": "Intertwined Charge and Spin Density Waves in Trilayer Nickelate La4Ni3O10 Revealed by 139La NQR",
+     "all_clusters": [
+      "nickelate_sc",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.13084",
+     "title": "Weakly anisotropic superconductivity of Pr4Ni3O10 single crystals",
+     "all_clusters": [
+      "nickelate_sc",
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.13793",
+     "title": "Magnetism and superconductivity in bilayer nickelate",
+     "all_clusters": [
+      "nickelate_sc",
+      "cdw_nematic_excitonic",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.18094",
+     "title": "Symmetry-Based Microscopic Theory of the Unconventional Pairing Mechanism in La5Ni3O11",
+     "all_clusters": [
+      "nickelate_sc",
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.04754",
+     "title": "Evolution of Correlated Electrons in La3Ni2O7 at Ambient Pressure: a Study of Double-Counting Effect",
+     "all_clusters": [
+      "nickelate_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.28735",
+     "title": "Anomalous Behavior of the Ni1+ moment in bi-infinite-layered La3Ni2O5F",
+     "all_clusters": [
+      "nickelate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.09713",
+     "title": "Non-magnetic insulating phase induced by Jahn-Teller effect in RNiO3",
+     "all_clusters": [
+      "nickelate_sc",
+      "cdw_nematic_excitonic",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.00301",
+     "title": "Dual instability of superconductivity from oxygen defects in La3Ni2O7+δ",
+     "all_clusters": [
+      "nickelate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.20985",
+     "title": "Hubbard-U-corrected electron-phonon interactions in strongly correlated materials via the finite-displacement method",
+     "all_clusters": [
+      "nickelate_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": false,
+     "note": "DFT+U electron-phonon method paper; nickelates only an example"
+    },
+    {
+     "id": "arXiv:2603.26978",
+     "title": "Non-Fermi liquid behavior in La3Ni2O7 thin films under hydrostatic pressure",
+     "all_clusters": [
+      "nickelate_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2512.05956",
+     "title": "Minimal two band model and experimental proposals to distinguish pairing mechanisms of the high-Tc superconductor La3Ni2O7"
+    },
+    {
+     "id": "arXiv:2601.17663",
+     "title": "Intertwined Charge and Spin Density Waves in Trilayer Nickelate La4Ni3O10 Revealed by 139La NQR"
+    },
+    {
+     "id": "arXiv:2603.26978",
+     "title": "Non-Fermi liquid behavior in La3Ni2O7 thin films under hydrostatic pressure"
+    }
+   ]
+  },
+  "cuprate_sc": {
+   "label": "Cuprate superconductivity",
+   "n_population_trailing_primary": 223,
+   "n_sampled": 15,
+   "n_correct": 13,
+   "precision": 0.867,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2606.18084",
+     "title": "Cavity-enhanced superconducting response in an underdoped cuprate",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.15608",
+     "title": "Magnetic electron-hole asymmetry in cuprates: a computational revisit",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2509.26472",
+     "title": "Half-filled metal and molecular-orbital-mediated pairing in cuprate",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.20030",
+     "title": "How to measure loop currents in scanning tunneling microscopy",
+     "all_clusters": [
+      "cuprate_sc",
+      "unconventional_topological_sc"
+     ],
+     "correct": false,
+     "note": "generic STM method for loop currents; cuprates only one example"
+    },
+    {
+     "id": "arXiv:2601.01643",
+     "title": "Orbital Separation of Charge Order and Superconductivity in La2-xSrxCuO4",
+     "all_clusters": [
+      "cuprate_sc",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.16647",
+     "title": "Observation of REBCO delamination in the resistive insulation nested coils",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": false,
+     "note": "REBCO coil engineering (applied magnet), not cuprate physics"
+    },
+    {
+     "id": "arXiv:2512.13588",
+     "title": "Vortex core spectroscopy links pseudogap and Lifshitz critical point in a cuprate superconductor",
+     "all_clusters": [
+      "cuprate_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.19896",
+     "title": "Visualization of Current-Driven Vortex Formation in High-Tc Cuprate Superconductors",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.19807",
+     "title": "Multi-Criticality and RG Topology in the Charge-Kondo-Breakdown Scenario in the Cuprates",
+     "all_clusters": [
+      "cuprate_sc",
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.05390",
+     "title": "Anomalous Nodal Gap in a Doped Spin-1/2 Antiferromagnetic Mott Insulator",
+     "all_clusters": [
+      "cuprate_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.04168",
+     "title": "Cuprate d-wave superconductivity based on Non perturbative many body theory for spin fluctuation",
+     "all_clusters": [
+      "cuprate_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.12381",
+     "title": "Anomalous spin-pumping behavior of half-metallic ferromagnet/d-wave superconductor heterostructures",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.00426",
+     "title": "Cu-spin Correlation in the Electron-overdoped High-Tc Cuprate Thin Films of La2-xCexCuO4 Probed by Low-energy Muons",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.00185",
+     "title": "Photostationary Lifshitz transition in High Tc superconductor Bi2Sr2CaCu2O8+δ",
+     "all_clusters": [
+      "cuprate_sc",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.15509",
+     "title": "Effect of pulse duration on current-induced selective oxygen migration in high-Tc superconductors",
+     "all_clusters": [
+      "cuprate_sc"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2601.01643",
+     "title": "Orbital Separation of Charge Order and Superconductivity in La2-xSrxCuO4"
+    },
+    {
+     "id": "arXiv:2512.13588",
+     "title": "Vortex core spectroscopy links pseudogap and Lifshitz critical point in a cuprate superconductor"
+    },
+    {
+     "id": "arXiv:2606.00185",
+     "title": "Photostationary Lifshitz transition in High Tc superconductor Bi2Sr2CaCu2O8+δ"
+    }
+   ]
+  },
+  "iron_based_sc": {
+   "label": "Iron-based superconductivity (pnictides & chalcogenides)",
+   "n_population_trailing_primary": 117,
+   "n_sampled": 15,
+   "n_correct": 14,
+   "precision": 0.933,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2606.13257",
+     "title": "Selective stabilization of antiferromagnetic orders in FeTe films via local strain engineering",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.19050",
+     "title": "Boost of critical current density near quantum critical points in FeSe-Based superconductors with two superconducting domes",
+     "all_clusters": [
+      "iron_based_sc",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.06435",
+     "title": "Hund's coupling assisted orbital-selective superconductivity in Ba1-xKxFe2As2",
+     "all_clusters": [
+      "iron_based_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.15197",
+     "title": "Emergent d-wave altermagnetism in chlorine-adsorbed FeSe monolayer",
+     "all_clusters": [
+      "iron_based_sc",
+      "altermagnetism"
+     ],
+     "correct": false,
+     "note": "topic is altermagnetism in a Cl-adsorbed FeSe monolayer"
+    },
+    {
+     "id": "arXiv:2601.18247",
+     "title": "Direct observation of vortex liquid droplets in the iron pnictide superconductor CaKAs4Fe4 at 0.5Tc",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.02707",
+     "title": "Energy-Resolved Real-Space Imaging of Orbital Nematicity in an Fe-Based Superconductor",
+     "all_clusters": [
+      "iron_based_sc",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.20364",
+     "title": "Distinct Suppression Mechanisms of Superconductivity by Magnetic Domains and Spin Fluctuations in EuFe2(As1-xPx)2 superconductors",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.01703",
+     "title": "Distinct Modulation Behavior of Superconducting Coherence Peaks Associated with Sign-Reversal Gaps in FeTe0.55Se0.45",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.08511",
+     "title": "Interband pairing as the origin of the sublattice dichotomy in monolayer FeSe/SrTiO3",
+     "all_clusters": [
+      "iron_based_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.25862",
+     "title": "First-Principles Quantum-Spectral framework for Elementary Vortex Pinning in superconductors",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.15290",
+     "title": "Twinning of domains and spin anisotropy in K5Fe4Ag6Te10",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.24298",
+     "title": "Cosine bands, flat bands and superconductivity in orthorhombic iron selenide",
+     "all_clusters": [
+      "iron_based_sc",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.22240",
+     "title": "Effects of successive annealing on high-field electrical transport and the upper critical field in S-substituted FeTe",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.24362",
+     "title": "Helical Rashba-exchange gauge field drives a uniaxial pair density wave in EuRbFe4As4",
+     "all_clusters": [
+      "iron_based_sc",
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.21959",
+     "title": "A possible superconducting gap signature with filling temperature around 40 K in hexagonal iron telluride islands",
+     "all_clusters": [
+      "iron_based_sc"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2601.02707",
+     "title": "Energy-Resolved Real-Space Imaging of Orbital Nematicity in an Fe-Based Superconductor"
+    },
+    {
+     "id": "arXiv:2512.20364",
+     "title": "Distinct Suppression Mechanisms of Superconductivity by Magnetic Domains and Spin Fluctuations in EuFe2(As1-xPx)2 superconductors"
+    },
+    {
+     "id": "arXiv:2601.18247",
+     "title": "Direct observation of vortex liquid droplets in the iron pnictide superconductor CaKAs4Fe4 at 0.5Tc"
+    }
+   ]
+  },
+  "hydride_high_pressure_sc": {
+   "label": "Hydride / high-pressure superconductivity (incl. room-temperature SC claims)",
+   "n_population_trailing_primary": 57,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2604.16460",
+     "title": "Quantum Tunnelling and Room-Temperature Superconductivity of Hydride from Size Effects",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.25902",
+     "title": "Nonadiabatic and anharmonic effects in high-pressure H3S and D3S superconductors",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2509.21120",
+     "title": "Room-temperature superconductivity in ultra-thin carbon nanotube zeolite composites: a conventional or unconventional superconductor?",
+     "all_clusters": [
+      "hydride_high_pressure_sc",
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.18095",
+     "title": "Structural and Vibrational Properties of D3Se from First Principles: Anharmonic Quantum and Isotope Effects",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.24849",
+     "title": "SSCHA-based evolutionary crystal structure prediction at finite temperatures with account for quantum nuclear motion",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.20228",
+     "title": "Composition-Based Machine Learning for Screening Superconducting Ternary Hydrides from a Curated Dataset",
+     "all_clusters": [
+      "hydride_high_pressure_sc",
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.19901",
+     "title": "Metastability and high-Tc superconductivity in A15-type ternary hydride YSbH6 at moderate pressure",
+     "all_clusters": [
+      "hydride_high_pressure_sc",
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.04222",
+     "title": "High-Tc superconductivity above 130 K in cubic MH4 compounds at ambient pressure",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.18865",
+     "title": "Synthesis and stability of high-Tc LaH10\\pmδ films at high pressures",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.21877",
+     "title": "Imaging magnetic flux trapping in lanthanum hydride using diamond quantum sensors",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.25626",
+     "title": "Physical properties of transition metal hydride superconductors Mg2TmH6 (Tm = Rh, Pd, Ir, Pt) by first-principles calculations",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.14051",
+     "title": "Superhydrides on the way to ambient pressure: weak localization and persistent X-ray photoconductivity in BaSiH8",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.21338",
+     "title": "High Pressure Superconducting transition in Dihydride BiH2 with Bismuth Open-Channel Framework",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.04151",
+     "title": "Disentangling electronic and phononic contributions to high-temperature superconductivity in X2MH6 hydrides",
+     "all_clusters": [
+      "hydride_high_pressure_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.09654",
+     "title": "Pressure-induced superconductivity beyond magnetic quantum criticality in a Kondo ferromagnet",
+     "all_clusters": [
+      "hydride_high_pressure_sc",
+      "unconventional_topological_sc",
+      "heavy_fermion_kondo_qcp",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2510.25902",
+     "title": "Nonadiabatic and anharmonic effects in high-pressure H3S and D3S superconductors"
+    },
+    {
+     "id": "arXiv:2608.18865",
+     "title": "Synthesis and stability of high-Tc LaH10\\pmδ films at high pressures"
+    },
+    {
+     "id": "arXiv:2603.14051",
+     "title": "Superhydrides on the way to ambient pressure: weak localization and persistent X-ray photoconductivity in BaSiH8"
+    }
+   ]
+  },
+  "kagome": {
+   "label": "Kagome metals & kagome materials",
+   "n_population_trailing_primary": 308,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2512.00173",
+     "title": "Exploring the apparent violation of the Mott relation in a noncentrosymmetric kagome ferromagnet",
+     "all_clusters": [
+      "kagome",
+      "topological_insulators_semimetals",
+      "flat_band_quantum_geometry",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.09150",
+     "title": "Chern insulators and topological flat bands in cavity-embedded kagome systems",
+     "all_clusters": [
+      "kagome",
+      "fractional_qah_chern",
+      "topological_insulators_semimetals",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.19951",
+     "title": "Quantum Fisher Information as a Probe of Critical Scaling in Frustrated Magnets: Signatures from Kagome Quantum Spin Liquid",
+     "all_clusters": [
+      "kagome",
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.02664",
+     "title": "Unusual magnetic and charge transport properties in In-Substituted Half-Metallic Kagome Ferromagnet Co3Sn2S2",
+     "all_clusters": [
+      "kagome"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.12998",
+     "title": "Variational study of the magnetization plateaus in the spin-1/2 kagome Heisenberg antiferromagnet: an approach from vision transformer neural quantum states",
+     "all_clusters": [
+      "kagome",
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.11670",
+     "title": "2kF instability and chiral spin density wave at the 1/9 magnetization plateau in the kagome antiferromagnets",
+     "all_clusters": [
+      "kagome",
+      "spin_liquid_frustrated",
+      "cdw_nematic_excitonic",
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.20598",
+     "title": "Emergent Superfluidity of Hard-Core Excitons in Single-Layer Breathing-Kagome Nb3TexCl8-x",
+     "all_clusters": [
+      "kagome",
+      "cdw_nematic_excitonic",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.29323",
+     "title": "Experimental observation of decoupled spin subsystems in decorated square kagomé lattice magnets of the nabokoite family",
+     "all_clusters": [
+      "kagome",
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.07606",
+     "title": "Hidden symmetry-breaking in a kagome Ising ferromagnet",
+     "all_clusters": [
+      "kagome"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.19618",
+     "title": "Vestigial chirality from fluctuating loop currents on the kagome lattice",
+     "all_clusters": [
+      "kagome"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.15666",
+     "title": "Van der waals engineering of valley polarization in WSe2 via kagome V2O3 monolayer heterostructure through magnetic proximity effect",
+     "all_clusters": [
+      "kagome",
+      "vdw_magnets_topological_magnetism",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.10958",
+     "title": "Phase-sensitive evidence for pair density waves in a kagome superconductor",
+     "all_clusters": [
+      "kagome",
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.10543",
+     "title": "Supercurrent interference and its transfer in a kagome superconductor",
+     "all_clusters": [
+      "kagome",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.09402",
+     "title": "The parent state in kagome metals and superconductors: Chiral-nematic Fermi liquid state",
+     "all_clusters": [
+      "kagome",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.08900",
+     "title": "Anisotropy, frustration and saddle point in the twisted Kagome antiferromagnet ErPdPb",
+     "all_clusters": [
+      "kagome",
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2510.10958",
+     "title": "Phase-sensitive evidence for pair density waves in a kagome superconductor"
+    },
+    {
+     "id": "arXiv:2603.02664",
+     "title": "Unusual magnetic and charge transport properties in In-Substituted Half-Metallic Kagome Ferromagnet Co3Sn2S2"
+    },
+    {
+     "id": "arXiv:2511.09402",
+     "title": "The parent state in kagome metals and superconductors: Chiral-nematic Fermi liquid state"
+    }
+   ]
+  },
+  "altermagnetism": {
+   "label": "Altermagnetism, p-wave/unconventional magnets & non-relativistic spin splitting",
+   "n_population_trailing_primary": 660,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2609.20767",
+     "title": "Spacetime Dynamics of Altermagnetic Magnons",
+     "all_clusters": [
+      "altermagnetism",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.15619",
+     "title": "Symmetry classification of magnetic octupole current based on multipole representation theory",
+     "all_clusters": [
+      "altermagnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.11355",
+     "title": "Nonequilibrium spin-splitter effect in altermagnet superconductor hybrids",
+     "all_clusters": [
+      "altermagnetism",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.21455",
+     "title": "Control of band structure in the altermagnetic candidate MnTe by temperature and strain",
+     "all_clusters": [
+      "altermagnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.06537",
+     "title": "Deterministic Electrical Switching in Altermagnets via Surface Antisymmetry Groups",
+     "all_clusters": [
+      "altermagnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.23554",
+     "title": "Generic Long-Range Order-Parameter Correlations in Metallic Quantum Magnets",
+     "all_clusters": [
+      "altermagnetism",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.02913",
+     "title": "Strain Engineering of Intrinsic Anomalous Hall and Nernst Effects in Altermagnetic MnTe at Realistic Doping Levels",
+     "all_clusters": [
+      "altermagnetism",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.07683",
+     "title": "Extreme Strain Controlled Correlated Metal-Insulator Transition in the Altermagnet CrSb",
+     "all_clusters": [
+      "altermagnetism",
+      "flat_band_quantum_geometry",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.04184",
+     "title": "Pressure-Tunable Electronic and Magnonic Transport in Altermagnet La2O3Mn2Se2",
+     "all_clusters": [
+      "altermagnetism",
+      "vdw_magnets_topological_magnetism",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.01206",
+     "title": "Microscopic origin of the spin-splitting in altermagnets",
+     "all_clusters": [
+      "altermagnetism",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.27107",
+     "title": "Emergent Skyrmion Hall Effect in d-wave Altermagnets at Finite Temperature",
+     "all_clusters": [
+      "altermagnetism",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.11584",
+     "title": "Chiral Magnons and Cycloidal Phonons in Altermagnetic CuF2 Monolayer",
+     "all_clusters": [
+      "altermagnetism",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.14193",
+     "title": "Ferroelasticity tunable altermagnets",
+     "all_clusters": [
+      "altermagnetism",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.13781",
+     "title": "Resonant diffraction and photoemission inconsistent with altermagnetism in epitaxial RuO2 films",
+     "all_clusters": [
+      "altermagnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.03814",
+     "title": "Quantum-Geometric Fingerprints of Altermagnetic Order in Planar Magnetotransport",
+     "all_clusters": [
+      "altermagnetism",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2603.21455",
+     "title": "Control of band structure in the altermagnetic candidate MnTe by temperature and strain"
+    },
+    {
+     "id": "arXiv:2512.01206",
+     "title": "Microscopic origin of the spin-splitting in altermagnets"
+    },
+    {
+     "id": "arXiv:2510.13781",
+     "title": "Resonant diffraction and photoemission inconsistent with altermagnetism in epitaxial RuO2 films"
+    }
+   ]
+  },
+  "fractional_qah_chern": {
+   "label": "Fractional / quantum anomalous Hall & Chern insulators (incl. quantum Hall, Landau levels)",
+   "n_population_trailing_primary": 364,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2608.18199",
+     "title": "Chern insulator boundary criticality",
+     "all_clusters": [
+      "fractional_qah_chern",
+      "unconventional_topological_sc",
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.22326",
+     "title": "Incommensurate-Stabilized Fractional Chern Insulator in Alternating Twisted Trilayer Graphene",
+     "all_clusters": [
+      "fractional_qah_chern",
+      "moire_twisted_2d",
+      "cdw_nematic_excitonic",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.07795",
+     "title": "Chiral Edge Excitations of ν=1/2 Fractional Chern Insulators in the Bosonic Hofstadter Model",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.14184",
+     "title": "Composite Boson Theory of Fractional Chern Insulators",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.02428",
+     "title": "Electromagnetic Response of a Half-Filled Chern Band near Topological Criticality",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.15011",
+     "title": "Quasisymmetry Enriched Gapless Criticality at Chern Insulator Transitions",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.09045",
+     "title": "On modeling quantum point contacts in quantum Hall systems",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.18332",
+     "title": "Real-space formulation of the Chern invariant and topological phases in a disordered Chern insulator",
+     "all_clusters": [
+      "fractional_qah_chern",
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.09065",
+     "title": "Divergent Orbital Diamagnetism from Chiral Edge States in Chern Insulators",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.06298",
+     "title": "Composite-Fermion Study of Cavity-Modified Fractional Quantum Hall Excitation Gaps",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.12231",
+     "title": "Fractional Chern Insulators Transition in Non-ideal Flat Bands of Twisted Mono-bilayer Graphene",
+     "all_clusters": [
+      "fractional_qah_chern",
+      "moire_twisted_2d",
+      "topological_insulators_semimetals",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.27112",
+     "title": "Interaction-induced sign reversal of the orbital magnetic susceptibility in Chern insulators",
+     "all_clusters": [
+      "fractional_qah_chern",
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.06801",
+     "title": "Does a Fractional Quantum Hall Edge Have a Protected Intrinsic Dipole Moment?",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.09973",
+     "title": "Relationship among Structural, Disordered, Magnetism and Band Topology in MnSb2Te4(Sb2Te3)n Family",
+     "all_clusters": [
+      "fractional_qah_chern",
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.09798",
+     "title": "Thermoelectric effect at the quantum Hall-superconductor interface",
+     "all_clusters": [
+      "fractional_qah_chern"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2511.22326",
+     "title": "Incommensurate-Stabilized Fractional Chern Insulator in Alternating Twisted Trilayer Graphene"
+    },
+    {
+     "id": "arXiv:2602.14184",
+     "title": "Composite Boson Theory of Fractional Chern Insulators"
+    },
+    {
+     "id": "arXiv:2605.06801",
+     "title": "Does a Fractional Quantum Hall Edge Have a Protected Intrinsic Dipole Moment?"
+    }
+   ]
+  },
+  "rhombohedral_multilayer_graphene": {
+   "label": "Rhombohedral / multilayer (untwisted) graphene",
+   "n_population_trailing_primary": 81,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2511.17423",
+     "title": "Flat band surface state superconductivity in thick rhombohedral graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.00898",
+     "title": "The role of stacking and strain in mean-field magnetic moments of multilayer graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.11515",
+     "title": "Electron localization, charge redistribution, and emergence of topological states at graphite junctions",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "topological_insulators_semimetals",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.24976",
+     "title": "Low-Field Metal-Insulator Transition in AB-Stacked Bilayer Graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.13498",
+     "title": "Magnetic-field-induced superconductivity in hexalayer rhombohedral graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.23084",
+     "title": "Emergence of Topological Electron Crystals in Bilayer Graphene--Mott Insulator Heterostructures",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "cdw_nematic_excitonic",
+      "topological_insulators_semimetals",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.17188",
+     "title": "Tunable Kondo effect in a bilayer graphene quantum channel",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.16711",
+     "title": "Proximity-induced superconductivity in a bilayer graphene quantum point contact",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.07402",
+     "title": "The ideal limit of rhombohedral graphene: Interaction-induced layer-skyrmion lattices and their collective excitations",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.15014",
+     "title": "Competing Orders Driven by Wigner Crystal Phase in Rhombohedral Graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.09548",
+     "title": "Mapping the moiré potential in multi-layer rhombohedral graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "moire_twisted_2d",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.19283",
+     "title": "Valley-Helical Superconductivity Driven by Repulsion and Quantum Geometry: Applications to Time-Reversal Symmetric Rhombohedral Graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.26104",
+     "title": "Multicomponent Magnetic Domain Walls in Rhombohedral Graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.11175",
+     "title": "Imaging flat band electron hydrodynamics in biased bilayer graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.16828",
+     "title": "Majorana Crystal in Rhombohedral Graphene",
+     "all_clusters": [
+      "rhombohedral_multilayer_graphene",
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2603.13498",
+     "title": "Magnetic-field-induced superconductivity in hexalayer rhombohedral graphene"
+    },
+    {
+     "id": "arXiv:2607.15014",
+     "title": "Competing Orders Driven by Wigner Crystal Phase in Rhombohedral Graphene"
+    },
+    {
+     "id": "arXiv:2511.17423",
+     "title": "Flat band surface state superconductivity in thick rhombohedral graphene"
+    }
+   ]
+  },
+  "moire_twisted_2d": {
+   "label": "Moire & twisted 2D systems (TBG, twisted TMDs, moire heterostructures)",
+   "n_population_trailing_primary": 405,
+   "n_sampled": 15,
+   "n_correct": 14,
+   "precision": 0.933,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2607.16544",
+     "title": "AIMS: an AI experimentalist turns uncertainty into quantum matter discovery",
+     "all_clusters": [
+      "moire_twisted_2d",
+      "ml_ai"
+     ],
+     "correct": false,
+     "note": "AI experimentalist platform; moire only as demonstration"
+    },
+    {
+     "id": "arXiv:2511.04741",
+     "title": "Twistraintronics in Square Moire Superlattices of Stacked Graphene Layers",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.06137",
+     "title": "Origin of trapped intralayer Wannier and charge-transfer excitons in moiré materials",
+     "all_clusters": [
+      "moire_twisted_2d",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.30531",
+     "title": "Moiré-induced lattice reconstruction at buried atomic interfaces",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.09739",
+     "title": "MoireStudio: A Universal Twisted Electronic Structure Calculation Package",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.16851",
+     "title": "Twisted bilayer graphene from first-principles: structural and electronic properties",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.09086",
+     "title": "Electronic procrystalline state in moire structures",
+     "all_clusters": [
+      "moire_twisted_2d",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.16987",
+     "title": "Giant Nonlinear Photon-Drag Currents in Moiré Bilayers",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.29062",
+     "title": "Enhanced Diffusion from Twist-Angle Disorder",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.01691",
+     "title": "Phason-driven temperature-dependent transport in moiré graphene",
+     "all_clusters": [
+      "moire_twisted_2d",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.02165",
+     "title": "Charge Tunable Optical Nonlinearity of Moiré Exciton-Polaritons",
+     "all_clusters": [
+      "moire_twisted_2d",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.16676",
+     "title": "Optical vortex probe of loop-current chirality in moiré materials",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.24270",
+     "title": "Signatures of superconducting pairing driven by electron-electron interactions in moiré WSe2/WSe2 homobilayer modelled by Hubbard Hamiltonian",
+     "all_clusters": [
+      "moire_twisted_2d",
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.31028",
+     "title": "Tunable Extended Magnetic Non-Fermi Liquid in Graphene Moiré Heterostructures",
+     "all_clusters": [
+      "moire_twisted_2d",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.23405",
+     "title": "A Single Twist-Angle Selection Method for the Electronic Structure of Bilayer Materials",
+     "all_clusters": [
+      "moire_twisted_2d"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2601.16851",
+     "title": "Twisted bilayer graphene from first-principles: structural and electronic properties"
+    },
+    {
+     "id": "arXiv:2606.31028",
+     "title": "Tunable Extended Magnetic Non-Fermi Liquid in Graphene Moiré Heterostructures"
+    },
+    {
+     "id": "arXiv:2608.02165",
+     "title": "Charge Tunable Optical Nonlinearity of Moiré Exciton-Polaritons"
+    }
+   ]
+  },
+  "unconventional_topological_sc": {
+   "label": "Unconventional & topological superconductivity, Majorana, SC diode/Josephson devices",
+   "n_population_trailing_primary": 717,
+   "n_sampled": 15,
+   "n_correct": 14,
+   "precision": 0.933,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2608.28855",
+     "title": "Superconductivity and Magnetism in Bi-Ni System: From Bulk to Heterostructures",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.17386",
+     "title": "Building 3D superconductor-based Josephson junctions using a via transfer approach",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.05230",
+     "title": "Boundary criticality in two-dimensional correlated topological superconductors",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.08827",
+     "title": "Josephson tunneling through a Yu-Shiba-Rusinov state: Interplay of π-shifts in Josephson current and local superconducting order parameter",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.18036",
+     "title": "Hybridization of topologically distinct quartet modes in three-terminal graphene Josephson junctions",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.09591",
+     "title": "Submicrometer tunnel ferromagnetic Josephson junctions with transmon energy scale",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.03908",
+     "title": "Visualization of vortex sheets and half quantum vortices in the chiral odd-parity superconductor UPt3",
+     "all_clusters": [
+      "unconventional_topological_sc",
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.11798",
+     "title": "Floquet Engineering Magnetism and Superconductivity in the Square-Lattice Hubbard Model",
+     "all_clusters": [
+      "unconventional_topological_sc",
+      "mott_hubbard_strange_metal",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.16277",
+     "title": "Current - voltage characteristics in magnetic field for layered superconductor with intrinsic pinning of Josephson vortices",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.06293",
+     "title": "Calculating strongly correlated ground states from the non-Markovian dissipative dynamics of Gaussian fermions",
+     "all_clusters": [
+      "unconventional_topological_sc",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": false,
+     "note": "Gaussian-fermion method; 'Majorana' is a representation, not physics"
+    },
+    {
+     "id": "arXiv:2511.04629",
+     "title": "Pair-mixing induced Time-reversal-breaking superconductivity",
+     "all_clusters": [
+      "unconventional_topological_sc",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.28734",
+     "title": "Meissner Effect and Josephson Radiation in Driven Dissipative Superconductors",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.25169",
+     "title": "Nonlocal Cooper pairs in finite topological superconductors and their relation to Majorana nonlocality",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.07826",
+     "title": "Phase-controlled quantum transport signatures in a quantum dot-Majorana hybrid ring system",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.07406",
+     "title": "Pareto-optimality of Majoranas in hybrid platforms",
+     "all_clusters": [
+      "unconventional_topological_sc"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2604.25169",
+     "title": "Nonlocal Cooper pairs in finite topological superconductors and their relation to Majorana nonlocality"
+    },
+    {
+     "id": "arXiv:2512.03908",
+     "title": "Visualization of vortex sheets and half quantum vortices in the chiral odd-parity superconductor UPt3"
+    },
+    {
+     "id": "arXiv:2602.08827",
+     "title": "Josephson tunneling through a Yu-Shiba-Rusinov state: Interplay of π-shifts in Josephson current and local superconducting order parameter"
+    }
+   ]
+  },
+  "spin_liquid_frustrated": {
+   "label": "Quantum spin liquids & frustrated magnetism (Kitaev, triangular, pyrochlore)",
+   "n_population_trailing_primary": 387,
+   "n_sampled": 15,
+   "n_correct": 14,
+   "precision": 0.933,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2607.14893",
+     "title": "Sizable Ligand-Mediated Bond-Dependent Interactions in a Spin-1 Triangular Antiferromagnet NiI2",
+     "all_clusters": [
+      "spin_liquid_frustrated",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.21308",
+     "title": "Unveiling Micrometer-Range Spin-Wave Transport in Artificial Spin Ice",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.02428",
+     "title": "Utility-Scale Quantum State Preparation: Classical Training using Pauli Path Simulation",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": false,
+     "note": "quantum-state-preparation algorithm; Kitaev model only as benchmark"
+    },
+    {
+     "id": "arXiv:2609.15941",
+     "title": "Fractional vortices in a spin-isotropic spiral spin liquid",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.11983",
+     "title": "Dynamics and thermodynamics of the S = 5/2 almost Heisenberg triangular lattice antiferromagnet K2Mn(SeO3)2",
+     "all_clusters": [
+      "spin_liquid_frustrated",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.20766",
+     "title": "Observation of Dipolar Spin-ice--like Correlations in the Quantum Spin Ice Candidate Ce2Sn2O7",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.10158",
+     "title": "Electric field effects in one-dimensional spin-1/2 K1J1Γ1Γ1\\prime K2J2 model with ferromagnetic Kitaev coupling",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.08768",
+     "title": "Triangular J1-J2 Heisenberg Antiferromagnet in a Magnetic Field",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.15060",
+     "title": "Observation of complex orbital order in MnV2O4",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.19409",
+     "title": "Chiral spin liquid instability of the Kitaev honeycomb model with crystallographic defects",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.05277",
+     "title": "Superconducting and charge-ordered phases from Dirac quantum spin liquids on the triangular lattice",
+     "all_clusters": [
+      "spin_liquid_frustrated",
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.08558",
+     "title": "Microscopic universal theory of symmetry-enriched topological quantum spin liquids",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.15144",
+     "title": "Characterizing entanglement at finite temperature: how does a \"classical\" paramagnet become a quantum spin liquid?",
+     "all_clusters": [
+      "spin_liquid_frustrated"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.01062",
+     "title": "Chiral enhancement of two-magnon bound states in an S=1/2 triangular-lattice magnet",
+     "all_clusters": [
+      "spin_liquid_frustrated",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.16063",
+     "title": "Spinon shift current in a noncentrosymmetric quantum spin chain",
+     "all_clusters": [
+      "spin_liquid_frustrated",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2601.20766",
+     "title": "Observation of Dipolar Spin-ice--like Correlations in the Quantum Spin Ice Candidate Ce2Sn2O7"
+    },
+    {
+     "id": "arXiv:2606.08558",
+     "title": "Microscopic universal theory of symmetry-enriched topological quantum spin liquids"
+    },
+    {
+     "id": "arXiv:2608.05277",
+     "title": "Superconducting and charge-ordered phases from Dirac quantum spin liquids on the triangular lattice"
+    }
+   ]
+  },
+  "heavy_fermion_kondo_qcp": {
+   "label": "Heavy fermions, Kondo physics & metallic quantum criticality",
+   "n_population_trailing_primary": 162,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2512.00486",
+     "title": "Near-flat-band-driven violation of Pauli limit in heavy fermion superconductors",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.15163",
+     "title": "Three Types of Non-Fermi-Liquid Fixed Point for a Triplet Quantum Impurity in a Cubic Metal",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.23316",
+     "title": "Magnetic order and excitations in Ce3TiBi5 and Ce3ZrBi5",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.10086",
+     "title": "Canonical strong coupling spin wave expansion of Kondo lattice magnets. II. Itinerant ferromagnets and topological magnon bands",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp",
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.20242",
+     "title": "Vibrational and Electronic Properties of Np2O5 from Experimental Spectroscopy and First Principles Calculations",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.11965",
+     "title": "Multichannel Kondo Effect in Superconducting Leads",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.22577",
+     "title": "Engineering the localization transition in a Charge-Kondo circuit",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.29166",
+     "title": "Photoemission insights into lanthanide-based crystals",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.14085",
+     "title": "Pressure-Induced B1 to B2 Phase Transition in CeN Studied by ab initio Correlation Matrix Renormalization Theory Calculations",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.03994",
+     "title": "Evolution of electron spin resonance through a metallic quantum critical phase diagram",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.14638",
+     "title": "A DFT+DMFT study of the electronic structure of Samarium",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.19404",
+     "title": "Anisotropic collapse of electronic correlations in the ferromagnet UGe2 under high magnetic field",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.17755",
+     "title": "Mott vs Kondo: Influence of Various Density Functional Based Methods on the Ce Isostructural Phase Transition Mechanism",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.17173",
+     "title": "Probing Boundary Spins in the Su-Schrieffer-Heeger-Hubbard model",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.16525",
+     "title": "Bosonization Solution to Spin-Valley Kondo Problem: Finite-Size Spectrum and Renormalization Group Analysis",
+     "all_clusters": [
+      "heavy_fermion_kondo_qcp"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2602.23316",
+     "title": "Magnetic order and excitations in Ce3TiBi5 and Ce3ZrBi5"
+    },
+    {
+     "id": "arXiv:2510.19404",
+     "title": "Anisotropic collapse of electronic correlations in the ferromagnet UGe2 under high magnetic field"
+    },
+    {
+     "id": "arXiv:2512.11965",
+     "title": "Multichannel Kondo Effect in Superconducting Leads"
+    }
+   ]
+  },
+  "vdw_magnets_topological_magnetism": {
+   "label": "2D/van der Waals magnets, skyrmions, topological magnetism, multiferroics & spintronics/magnonics",
+   "n_population_trailing_primary": 820,
+   "n_sampled": 15,
+   "n_correct": 14,
+   "precision": 0.933,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2607.15132",
+     "title": "Periodic orbits and quantum many-body scars in integrable spin chains",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": false,
+     "note": "many-body scars in integrable chains ('magnon' scars)"
+    },
+    {
+     "id": "arXiv:2511.12250",
+     "title": "Skyrmionic qubits stabilized by Dzyaloshinskii-Moriya interaction as platforms for qubits and quantum gates",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.06004",
+     "title": "Magnon-Magnon Interaction Induced by Dynamic Coupling in a Hybrid Magnonic Crystal",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.23683",
+     "title": "Raman Circular Dichroism Reveals Higher-Order Quantum Geometry of Magnons",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.21322",
+     "title": "Transferable mechanism of perpendicular magnetic anisotropy switching by hole doping in VX2 (X=Te, Se, S) monolayers",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.09092",
+     "title": "Unexpected type-II multiferroic phase in GdMnO3 under high magnetic fields",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.24091",
+     "title": "Thermal Evolution of Skyrmions in Synthetic Ferrimagnets of Co/Gd Heterostructure for Topological Spintronic Applications",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.21596",
+     "title": "Phonon-tunable THz magnonic emission in multiferroic heterostructures",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.20021",
+     "title": "Amorphous and Nanocrystalline Topological Semimetal YPtBi/W/CoFeB Heterostructures for BEOL-Compatible Spin-Orbit Torque Devices",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism",
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.07371",
+     "title": "Coexistence of Ferroelectric and Relaxor-like Phases in a Multiferroic Solid Solution (1-x)Pb(Fe1/2Nb1/2)O3-xPbMnO3",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.28828",
+     "title": "Giant Exfoliation Induced Magnetic Coercivity in Fe3GaTe2",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.22783",
+     "title": "A Topological Magnonic Black-White Hole Crystal",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.04738",
+     "title": "Local multiferroic ordering at room temperature in collinear magnetoelectric antiferromagnets induced by flexo-Zeeman coupling",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.27458",
+     "title": "First-Order Spin-Reorientation Transition and Incomplete Softening of the Antiferromagnetic Resonance Mode in Multiferroic GdFe3(BO3)4",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.27365",
+     "title": "3D Imaging of Complex Skyrmion and Hopf Topologies in an Extended Sample",
+     "all_clusters": [
+      "vdw_magnets_topological_magnetism"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2607.28828",
+     "title": "Giant Exfoliation Induced Magnetic Coercivity in Fe3GaTe2"
+    },
+    {
+     "id": "arXiv:2512.24091",
+     "title": "Thermal Evolution of Skyrmions in Synthetic Ferrimagnets of Co/Gd Heterostructure for Topological Spintronic Applications"
+    },
+    {
+     "id": "arXiv:2601.21322",
+     "title": "Transferable mechanism of perpendicular magnetic anisotropy switching by hole doping in VX2 (X=Te, Se, S) monolayers"
+    }
+   ]
+  },
+  "cdw_nematic_excitonic": {
+   "label": "Charge/spin density waves, nematicity, Wigner crystals & excitonic insulators/excitons",
+   "n_population_trailing_primary": 390,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2607.21507",
+     "title": "Supercurrent effect in a charge density wave intertwined superconductor",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.01768",
+     "title": "Exciton-Polariton hybrid skin-topological states",
+     "all_clusters": [
+      "cdw_nematic_excitonic",
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.09194",
+     "title": "Quasiparticle effects and strong excitonic features in exfoliable 1D semiconducting materials",
+     "all_clusters": [
+      "cdw_nematic_excitonic",
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.08932",
+     "title": "Real-time Dyson expansion for the nonequilibrium GW approximation: Correlated spectra and dependence on the reference propagator",
+     "all_clusters": [
+      "cdw_nematic_excitonic",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.02871",
+     "title": "CVD Grown Hybrid MoSe2-WSe2 Lateral/Vertical Heterostructures with Strong Interlayer Exciton Emission",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.13890",
+     "title": "Correlation-driven branch in doped excitonic insulators",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.06246",
+     "title": "Topological phonons in anomalous Hall crystals",
+     "all_clusters": [
+      "cdw_nematic_excitonic",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.07947",
+     "title": "Quantum Geometry Driven Crystallization: A Neural-Network Variational Monte Carlo Study",
+     "all_clusters": [
+      "cdw_nematic_excitonic",
+      "flat_band_quantum_geometry",
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.07587",
+     "title": "Encapsulated macroscopic WS2 monolayers enable room-temperature exciton-polariton lattices",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.21914",
+     "title": "Quantum Wigner solid in two-dimensional electron systems in semiconductors",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.16226",
+     "title": "Efficient nonequilibrium electron dynamics from first-principles: leveraging Koopmans spectral functionals and Wannier localization",
+     "all_clusters": [
+      "cdw_nematic_excitonic",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.16260",
+     "title": "Tuning superconductivity and charge density wave order by next-nearest-neighbor hopping integral in honeycomb Holstein model",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.10605",
+     "title": "Competition of fermion pairing, magnetism, and charge order in the spin-doped attractive Hubbard gas",
+     "all_clusters": [
+      "cdw_nematic_excitonic",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.06561",
+     "title": "2D Transport in an in-plane magnetic field",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.14002",
+     "title": "Spin-mediated hysteretic switching of unidirectional charge density waves by rotating magnetic fields",
+     "all_clusters": [
+      "cdw_nematic_excitonic"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2511.21914",
+     "title": "Quantum Wigner solid in two-dimensional electron systems in semiconductors"
+    },
+    {
+     "id": "arXiv:2604.14002",
+     "title": "Spin-mediated hysteretic switching of unidirectional charge density waves by rotating magnetic fields"
+    },
+    {
+     "id": "arXiv:2601.13890",
+     "title": "Correlation-driven branch in doped excitonic insulators"
+    }
+   ]
+  },
+  "topological_insulators_semimetals": {
+   "label": "Topological insulators & semimetals (Weyl/Dirac/nodal), band topology incl. non-Hermitian",
+   "n_population_trailing_primary": 678,
+   "n_sampled": 15,
+   "n_correct": 13,
+   "precision": 0.867,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2609.07775",
+     "title": "Simple invariants for band topology",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.06307",
+     "title": "Scale-robust Low Resistance Transport in Atomic Layer Deposited Topological Semimetal Wafers on Amorphous Substrate",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.08690",
+     "title": "Theory of non-resonant Raman scattering from electrons in nodal and flat bands",
+     "all_clusters": [
+      "topological_insulators_semimetals",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.11464",
+     "title": "Quantum Oscillations and Superconductivity in YPtBi Under Pressure",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.21398",
+     "title": "Ambient-Pressure Organic Dirac Electron State in α-(BETS)2AuCl2",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.11932",
+     "title": "Emergence of a Helical Metal in Rippled Ultrathin Topological Insulator Sb\\textsubscript2Te\\textsubscript3 on Graphene",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.18621",
+     "title": "Gyrotropic Fingerprints of Magnetic Topological Insulator-Unconventional Magnet Interfaces",
+     "all_clusters": [
+      "topological_insulators_semimetals",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.00845",
+     "title": "Screened topological plasmons in graphene plasmonic crystals",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": false,
+     "note": "plasmonic crystal (classical-wave topology)"
+    },
+    {
+     "id": "arXiv:2607.19265",
+     "title": "Symmetry-protected cubic-touching topological surface bands with tunable singularities",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.17412",
+     "title": "Breakdown of chiral anomaly and emergent phases in Weyl semimetals under orbital magnetic fields",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.16724",
+     "title": "Resolving the Magnetic Ground State and Field-Induced Transitions in Magnetic Dirac Semimetal Candidate EuMnSb2",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.17632",
+     "title": "Finite-frequency anomaly-induced electromechanical response of Dirac fermions in deformed graphene",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.14048",
+     "title": "Comparative study of phonon-limited carrier transport in the Weyl semimetal TaAs family",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.13618",
+     "title": "Coupled electric dipole model for a Su-Schrieffer-Heeger chain of optically resonant coreshell nanoparticles",
+     "all_clusters": [
+      "topological_insulators_semimetals"
+     ],
+     "correct": false,
+     "note": "SSH chain of optical nanoparticles (photonics)"
+    },
+    {
+     "id": "arXiv:2511.20608",
+     "title": "From quantum geometry to non-linear optics and gerbes: Recent advances in topological band theory",
+     "all_clusters": [
+      "topological_insulators_semimetals",
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2602.11932",
+     "title": "Emergence of a Helical Metal in Rippled Ultrathin Topological Insulator Sb\\textsubscript2Te\\textsubscript3 on Graphene"
+    },
+    {
+     "id": "arXiv:2511.17412",
+     "title": "Breakdown of chiral anomaly and emergent phases in Weyl semimetals under orbital magnetic fields"
+    },
+    {
+     "id": "arXiv:2510.14048",
+     "title": "Comparative study of phonon-limited carrier transport in the Weyl semimetal TaAs family"
+    }
+   ]
+  },
+  "flat_band_quantum_geometry": {
+   "label": "Flat bands & quantum geometry (quantum metric, Berry curvature; anomalous, nonlinear & orbital Hall responses)",
+   "n_population_trailing_primary": 297,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2512.14335",
+     "title": "Sensor free, self regulating thermal switching via anomalous Ettingshausen effect and spin reorientation in DyCo5",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.15080",
+     "title": "Robust Orbital-Selective Flat Bands in Transition-Metal Oxychlorides",
+     "all_clusters": [
+      "flat_band_quantum_geometry",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.06083",
+     "title": "Ultrafast nonlinear Hall effect in black phosphorus",
+     "all_clusters": [
+      "flat_band_quantum_geometry",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.11499",
+     "title": "Nonlinear spin-motive force driven by mixed-space quantum geometry",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.22548",
+     "title": "Quantum-geometry-driven Mott transitions and magnetism",
+     "all_clusters": [
+      "flat_band_quantum_geometry",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.04460",
+     "title": "A Structural Map of Potential Correlated Electron Molecular Orbital Materials",
+     "all_clusters": [
+      "flat_band_quantum_geometry",
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.09051",
+     "title": "Orbital magnetization from parallel transport of Bloch states",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.04330",
+     "title": "The influence of quantum geometry on the phase boundary and collective excitations of electron liquids and crystals",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.23218",
+     "title": "Compact localized currents in flat bands with broken time-reversal symmetry",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.31409",
+     "title": "Hodge Topology of Semiclassical Transport: A Coordinate-Free Geometric Framework for the Anomalous Hall Effect and Non-Linear Berry Dipole",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.19515",
+     "title": "Intrinsic nonlinear Hall effect beyond Bloch geometry",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.17258",
+     "title": "Real space decay of flat band projectors from compact localized states",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.01575",
+     "title": "Real-Space Spectral Approach to Orbital Magnetization",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.20693",
+     "title": "Disentangling the dynamics of transient spin and orbital magnetization in SrTiO3 via the inverse Faraday effect from RT-TDDFT",
+     "all_clusters": [
+      "flat_band_quantum_geometry",
+      "mott_hubbard_strange_metal",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.04248",
+     "title": "Progress on artificial flat band systems: classifying, perturbing, applying",
+     "all_clusters": [
+      "flat_band_quantum_geometry"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2511.23218",
+     "title": "Compact localized currents in flat bands with broken time-reversal symmetry"
+    },
+    {
+     "id": "arXiv:2510.19515",
+     "title": "Intrinsic nonlinear Hall effect beyond Bloch geometry"
+    },
+    {
+     "id": "arXiv:2604.06083",
+     "title": "Ultrafast nonlinear Hall effect in black phosphorus"
+    }
+   ]
+  },
+  "mott_hubbard_strange_metal": {
+   "label": "Mott/Hubbard physics, strange metals & correlated oxides",
+   "n_population_trailing_primary": 533,
+   "n_sampled": 15,
+   "n_correct": 12,
+   "precision": 0.8,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2512.05294",
+     "title": "Scaling limits of complex Sachdev-Ye-Kitaev models and holographic geometry",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": false,
+     "note": "complex SYK / holographic geometry (many-body theory)"
+    },
+    {
+     "id": "arXiv:2510.07279",
+     "title": "Tangent space Krylov computation of real-frequency spectral functions: Influence of density-assisted hopping on 2D Mott physics",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.08937",
+     "title": "Superconductivity and competing orders in honeycomb t-J model: interplay of lattice geometry and next-nearest-neighbor hopping",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.17937",
+     "title": "Non-Fermi-liquid behaviour of electrons coupled to gauge phonons",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.05254",
+     "title": "Higher harmonics in Mott-Hubbard insulators as sensors",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.18532",
+     "title": "Global approximations to correlation functions of strongly interacting quantum field theories",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.02154",
+     "title": "Accurate prediction of macroscopic transport from microscopic imaging via critical fractals at the Mott transition",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.15526",
+     "title": "Interplay of spin-orbit coupling and trigonal crystal field enhances superconductivity in LaAlO3/KTaO3 (111)",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.21490",
+     "title": "Strong correlations and local self-energies from on-site ensembles",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.10684",
+     "title": "Integrable Model of a Superconductor with non-Fermi liquid and Mott Phases",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.09515",
+     "title": "A microscopic approach to nonlinear theory of spin-charge separation",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.22927",
+     "title": "Two-Electron Correlations in the Metallic Electron Gas",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": false,
+     "note": "electron-gas correlation theory, not Mott/Hubbard"
+    },
+    {
+     "id": "arXiv:2602.22705",
+     "title": "Quantum Monte Carlo study of the metal-insulator crossover in the square-lattice Hubbard model",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.12309",
+     "title": "Interaction-Driven Ferrimagnetic Stripes in the Extended Hubbard Model",
+     "all_clusters": [
+      "mott_hubbard_strange_metal"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.16438",
+     "title": "Analytical solutions to the non-equilibrium Green's functions in large-q SYK models",
+     "all_clusters": [
+      "mott_hubbard_strange_metal",
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": false,
+     "note": "large-q SYK non-equilibrium Green's functions (many-body theory)"
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2602.22705",
+     "title": "Quantum Monte Carlo study of the metal-insulator crossover in the square-lattice Hubbard model"
+    },
+    {
+     "id": "arXiv:2512.02154",
+     "title": "Accurate prediction of macroscopic transport from microscopic imaging via critical fractals at the Mott transition"
+    },
+    {
+     "id": "arXiv:2604.08937",
+     "title": "Superconductivity and competing orders in honeycomb t-J model: interplay of lattice geometry and next-nearest-neighbor hopping"
+    }
+   ]
+  },
+  "ultrafast_floquet_noneq": {
+   "label": "Ultrafast, Floquet & nonequilibrium quantum materials",
+   "n_population_trailing_primary": 136,
+   "n_sampled": 15,
+   "n_correct": 14,
+   "precision": 0.933,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2601.01354",
+     "title": "Recent Progress in Ultrafast Dynamics of Transition-Metal Compounds Studied by Time-Resolved X-ray Techniques",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.20908",
+     "title": "Local-to-Global Entanglement Dynamics by Periodically Driving Impurities",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.16647",
+     "title": "Nonequilibrium Cooper quartet generation in superconducting devices",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.28724",
+     "title": "Robust Floquet-induced gap in irradiated graphite",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.18182",
+     "title": "Ultrafast dynamics and light-induced superconductivity from first principles",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.20938",
+     "title": "Non-Equilibrium Phase Transition in a Boundary-Driven Dissipative Fermionic Chain",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": false,
+     "note": "boundary-driven dissipative chain (many-body theory)"
+    },
+    {
+     "id": "arXiv:2512.23536",
+     "title": "Spin-galvanic response to non-equilibrium spin injection in superconductors with spin-orbit coupling",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.03691",
+     "title": "Terahertz light driven coherent excitation of a zone-folded Raman-active phonon mode in the Spin-Ladder System α'-NaV2O5",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.27985",
+     "title": "Bridging continuous control and Floquet driving for charging many-body spin chains",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.24158",
+     "title": "Development of a 10.8-eV Tabletop Femtosecond Laser with Tunable Polarization for High-Resolution Angle-Resolved Photoemission Spectroscopy",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.22645",
+     "title": "Light induced Berezinskii-Kosterlitz-Thouless transition in Superconducting Films",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.15868",
+     "title": "Classifying one-dimensional Floquet phases through two-dimensional topological order",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.13513",
+     "title": "Dissipative Nonlinear Phononics: Nonequilibrium Quasiperiodic Order in Light-Driven Spin-Phonon System",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.22632",
+     "title": "Generalized thermodynamic closure in ultrafast phonon dynamics",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.03752",
+     "title": "Real-space Floquet topology written by the orbital angular momentum of light",
+     "all_clusters": [
+      "ultrafast_floquet_noneq"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2603.18182",
+     "title": "Ultrafast dynamics and light-induced superconductivity from first principles"
+    },
+    {
+     "id": "arXiv:2510.22645",
+     "title": "Light induced Berezinskii-Kosterlitz-Thouless transition in Superconducting Films"
+    },
+    {
+     "id": "arXiv:2603.28724",
+     "title": "Robust Floquet-induced gap in irradiated graphite"
+    }
+   ]
+  },
+  "ml_ai": {
+   "label": "Machine learning / AI for quantum materials",
+   "n_population_trailing_primary": 115,
+   "n_sampled": 15,
+   "n_correct": 12,
+   "precision": 0.8,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2607.01336",
+     "title": "Mechanistic Interpretability and Causal Feature Steering of Neural Quantum States via Sparse Autoencoders",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.00292",
+     "title": "Interpretable Graph Neural Networks for Classifying Structure and Magnetism in Delafossite Compounds",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.16165",
+     "title": "AtomBench: A Benchmarking Framework for Generative Crystal Reconstruction Models in Conventional Superconductors",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2608.14234",
+     "title": "Dispersive-phonon-driven room-temperature Ni1+-Ni2+ polaron hopping in spin-charge coupled rutile niobate",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": false,
+     "note": "polaron hopping physics; ML only as a tool in passing"
+    },
+    {
+     "id": "arXiv:2602.18213",
+     "title": "Machine-learning force-field models for dynamical simulations of metallic magnets",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.00242",
+     "title": "Machine Learning to Predict Spectral Anisotropy in Valence-to-Core X-ray Emission Spectroscopy",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.16287",
+     "title": "Active learning for photonic crystals",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": false,
+     "note": "active learning for photonic crystals (not quantum materials)"
+    },
+    {
+     "id": "arXiv:2512.10847",
+     "title": "Large Language Models for Superconductor Discovery",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.18341",
+     "title": "Phase Structure and Machine Learning Identification in One Dimensional Systems with Power Law Correlated Disorder and Long Range Hopping",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.18092",
+     "title": "Correcting DFT formation energies towards experimental accuracy using foundational MLIPs and latent-feature delta-learning",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.26544",
+     "title": "Neural Network Backflow with Low-Rank Multi-Determinant Updates",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.02794",
+     "title": "Scaling Laws for Neural-Network Quantum States",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.04932",
+     "title": "Representational power of selected neural network quantum states in second quantization",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.23571",
+     "title": "INCARBench: A Benchmark for Scientific Configuration in VASP INCAR by Large Language Models",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2604.21068",
+     "title": "Expanding the extreme-k dielectric materials space through physics-validated generative reasoning",
+     "all_clusters": [
+      "ml_ai"
+     ],
+     "correct": false,
+     "note": "generative design of dielectrics (not quantum materials)"
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2512.10847",
+     "title": "Large Language Models for Superconductor Discovery"
+    },
+    {
+     "id": "arXiv:2512.00292",
+     "title": "Interpretable Graph Neural Networks for Classifying Structure and Magnetism in Delafossite Compounds"
+    },
+    {
+     "id": "arXiv:2606.02794",
+     "title": "Scaling Laws for Neural-Network Quantum States"
+    }
+   ]
+  },
+  "quantum_magnetism_ferroic_order": {
+   "label": "Quantum & low-dimensional magnetism and ferroic order (antiferro/ferrimagnets, spin-chain/ladder/dimer compounds, spin-orbit-entangled & multipolar magnets, ferroelectric/ferroaxial order)",
+   "n_population_trailing_primary": 471,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2606.14624",
+     "title": "Spin disorder competing with positional symmetry breaking governs the metal-insulator behavior in oxide paramagnets",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.11905",
+     "title": "Quantum Heisenberg antiferromagnet in a field on the Tasaki square lattice",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.08064",
+     "title": "Surface-Localized Magnetic Order in RuO2 Thin Films Revealed by Low-Energy Muon Probes",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.17980",
+     "title": "Spin-phonon interaction in a symmetry-enforced spin-polarized state",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.15702",
+     "title": "Spin reorientations in structurally metastable, disordered, and hexagonal Cr7Te8",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.07083",
+     "title": "Ferromagnetic Insulator to Metal Transition in Non-Centrosymmetric Graphene Nanoribbons",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2601.00574",
+     "title": "Doping induced itinerant ferromagnetism and enhanced ferroelectricity in BL-InSe",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.01994",
+     "title": "Heterometallic spin-1/2 quantum magnet under hydrostatic pressure",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.15110",
+     "title": "Local magnetic correlations and light-sensitive centers in the Cr2AlC MAX phase",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.07579",
+     "title": "Magnetic structure evolution and magnetoelastic coupling across the spin reorientation transition in TmCrO3",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.26243",
+     "title": "Bobkingite, a new coupled sawtooth chain platform",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.11862",
+     "title": "High-Temperature ferromagnetism from site-selective filling in (Fe,Ni)6-δGeTe2",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.05516",
+     "title": "Field-Induced Local Excitations Causing Zero-Magnetization Plateaus in Antiferromagnets of Antiferromagnetic Spin Dimers Under Magnetic Field",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.04101",
+     "title": "Phase diagrams of S=1/2 bilayer Models of SU(2) symmetric antiferromagnets",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2605.24430",
+     "title": "Superconfined Antiferromagnons on the Two-Dimensional Penrose Lattice",
+     "all_clusters": [
+      "quantum_magnetism_ferroic_order"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2511.07579",
+     "title": "Magnetic structure evolution and magnetoelastic coupling across the spin reorientation transition in TmCrO3"
+    },
+    {
+     "id": "arXiv:2606.26243",
+     "title": "Bobkingite, a new coupled sawtooth chain platform"
+    },
+    {
+     "id": "arXiv:2605.24430",
+     "title": "Superconfined Antiferromagnons on the Two-Dimensional Penrose Lattice"
+    }
+   ]
+  },
+  "quantum_many_body_theory": {
+   "label": "Quantum many-body theory & generalized symmetries (tensor networks, spin-chain & lattice-gauge models, non-invertible/higher-form symmetries, SPT/topological order & anyons, scars, entanglement)",
+   "n_population_trailing_primary": 1181,
+   "n_sampled": 15,
+   "n_correct": 15,
+   "precision": 1.0,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2512.03530",
+     "title": "Edge bits in average symmetry protected topological mixed state",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.07583",
+     "title": "Quantizing Bosonized Fermi Surfaces",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.26870",
+     "title": "Ergodicity breaking in matrix-product-state effective Hamiltonians",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.06363",
+     "title": "Universal Dynamical Scaling of Strong-to-Weak Spontaneous Symmetry Breaking in Open Quantum Systems",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.16774",
+     "title": "Singular three-point density correlations in two-dimensional Fermi liquids",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.19655",
+     "title": "Finite-gap potentials as a semiclassical limit of the thermodynamic Bethe Ansatz",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.20860",
+     "title": "Defect Bootstrap: Tight Ground State Bounds in Spontaneous Symmetry Breaking Phases",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.06751",
+     "title": "Ginzburg-Landau Theory for Non-Invertible Symmetry-Breaking Transitions",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.14734",
+     "title": "From Random Determinants to the Ground State",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2606.23117",
+     "title": "Angular-time evolution and edge-spin dynamics in the Haldane phase of the S=1 bilinear-biquadratic chain",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.12875",
+     "title": "Tunable quantum Mpemba effect in long-range interacting systems",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.11818",
+     "title": "Secret communication games and a hierarchy of quasiparticle statistics in 3 + 1D topological phases",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.16729",
+     "title": "Time Evolution of Multi-Party Entanglement Signals",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.13776",
+     "title": "Measuring Spin-Charge Separation by an Off-diagonal Dissipative Response",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.22322",
+     "title": "The Anyon Zeno Effect",
+     "all_clusters": [
+      "quantum_many_body_theory"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2609.06751",
+     "title": "Ginzburg-Landau Theory for Non-Invertible Symmetry-Breaking Transitions"
+    },
+    {
+     "id": "arXiv:2602.22322",
+     "title": "The Anyon Zeno Effect"
+    },
+    {
+     "id": "arXiv:2606.23117",
+     "title": "Angular-time evolution and edge-spin dynamics in the Haldane phase of the S=1 bilinear-biquadratic chain"
+    }
+   ]
+  },
+  "other_superconductivity": {
+   "label": "Other superconductivity & superfluidity (conventional/phonon-mediated & new superconductors, vortices, SC films & devices incl. qubit/resonator materials, applied SC, superfluid He)",
+   "n_population_trailing_primary": 572,
+   "n_sampled": 15,
+   "n_correct": 13,
+   "precision": 0.867,
+   "below_0.80": false,
+   "items": [
+    {
+     "id": "arXiv:2511.22995",
+     "title": "Coexistence of near-EF van Hove singularity and in-gap topological Dirac surface states in superconducting electrides",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.01819",
+     "title": "Three-Dimensional Niobium Coaxial Cavity with \\sim0.1\\,second Lifetime",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.28920",
+     "title": "Disorder-Driven Enhancement of Coulomb Repulsion Governs The Superconducting Dome in Ionic-Liquid-Gated Quasi-2D Materials",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2603.05176",
+     "title": "Thin amorphous molybdenum silicide superconducting shells around individual nanowires deposited via magnetron co-sputtering",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.17249",
+     "title": "Near-single-domain superconducting aluminum films on GaAs(111)A with exceptional crystalline quality for scalable quantum circuits",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2512.13367",
+     "title": "Control of thin NbN film superconducting properties by ScN buffer layer",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.17250",
+     "title": "Basic cell for a quantum microwave router",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2609.13882",
+     "title": "Vortex rivers and multiple voltage transitions in superconducting MgB2 thin films",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.10364",
+     "title": "Microwave Dressed States and Vacuum Fluctuations in a Superconducting Condensate",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2607.00429",
+     "title": "Surface Platinum Alloying for Passivation of Oxide Interfaces on Superconducting Niobium Films",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2510.06144",
+     "title": "Connections between Richardson-Gaudin States, Perfect-Pairing, and Pair Coupled-Cluster Theory",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": false,
+     "note": "quantum-chemistry pairing wavefunctions"
+    },
+    {
+     "id": "arXiv:2510.05473",
+     "title": "Cryogenic growth of aluminum: structural morphology, optical properties, superconductivity and microwave dielectric loss",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2511.11284",
+     "title": "Interpretable descriptors enable prediction of hydrogen-based superconductors at moderate pressures",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    },
+    {
+     "id": "arXiv:2602.14637",
+     "title": "A scalable non-superconducting tunnel junction technology",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": false,
+     "note": "non-superconducting tunnel-junction technology"
+    },
+    {
+     "id": "arXiv:2602.24028",
+     "title": "Superconductivity in the A15-type V3(Os1-2xSixGex) medium-entropy alloys",
+     "all_clusters": [
+      "other_superconductivity"
+     ],
+     "correct": true,
+     "note": ""
+    }
+   ],
+   "exemplars": [
+    {
+     "id": "arXiv:2602.24028",
+     "title": "Superconductivity in the A15-type V3(Os1-2xSixGex) medium-entropy alloys"
+    },
+    {
+     "id": "arXiv:2609.13882",
+     "title": "Vortex rivers and multiple voltage transitions in superconducting MgB2 thin films"
+    },
+    {
+     "id": "arXiv:2512.13367",
+     "title": "Control of thin NbN film superconducting properties by ScN buffer layer"
+    }
+   ]
+  }
+ },
+ "audit_history": [
+  {
+   "round": "draft v2 (single-mention matching, 22 clusters)",
+   "finding": "passing mentions dominated errors: other_superconductivity ~8/15, quantum_many_body_theory ~9/15, mott_hubbard_strange_metal ~10/15 ('strongly correlated' framing), kagome/cuprate/ml_ai name-drops",
+   "fix": "EVIDENCE RULE for every cluster (title hit or >=2 hits in title+abstract); generic correlation phrases title-only; ultrafast 'non-equilibrium' title-only; NbSe2 removed from CDW formulas; Fe2Se2O/manganese-pnictide/Peierls-substitution/magic-angle-spinning/liquid-crystal guards"
+  },
+  {
+   "round": "intermediate audit",
+   "cluster": "heavy_fermion_kondo_qcp",
+   "precision_before": "9/15",
+   "fix": "generic 'quantum critical'/QCP moved to quantum_many_body_theory; heavy-fermion cluster keeps only metallic/Kondo/f-electron quantum criticality",
+   "precision_after": "15/15 (fresh sample)"
+  },
+  {
+   "round": "intermediate audit",
+   "cluster": "fractional_qah_chern",
+   "precision_before": "11/15",
+   "fix": "bare 'Chern number' and 'Hofstadter' dropped; plain 'quantum Hall' / 'Landau level(s)' made title-only",
+   "precision_after": "15/15 (fresh sample)"
+  },
+  {
+   "round": "intermediate audit",
+   "cluster": "topological_insulators_semimetals",
+   "precision_before": "11/15",
+   "fix": "exclude interacting topological-order contexts (anyons, SPT, TQFT, F-symbols, mixed-state, higher Berry phase) and more photonic contexts (photonic lattices/braids, split-ring resonators, plasmas)",
+   "precision_after": "13/15 (fresh sample)"
+  },
+  {
+   "round": "intermediate audit",
+   "cluster": "unconventional_topological_sc",
+   "note": "'p-wave magnet' papers were labelled superconductivity; p-/f-wave magnets moved to altermagnetism",
+   "precision_after": "14/15"
+  }
+ ],
+ "overall": {
+  "n_sampled": 330,
+  "n_correct": 311,
+  "precision": 0.942,
+  "clusters_below_0.80": []
+ }
+}

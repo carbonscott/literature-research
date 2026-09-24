@@ -1,0 +1,975 @@
+{
+ "_meta": {
+  "sample": "in-window records sorted by id; fresh random.Random(11).sample per server, up to 25",
+  "labels": [
+   "on_topic_research",
+   "off_topic",
+   "fringe_or_pseudoscience",
+   "duplicate_of_arxiv",
+   "dataset_or_report"
+  ],
+  "rule": "duplicate_of_arxiv takes priority whenever a record declares an arXiv id or its title matches corpus/arxiv.jsonl (exact or Jaccard>=0.8); 'dup_content' records whether the duplicate itself is on-topic. Labels were assigned by reading title+abstract (one reviewer, no second rater).",
+  "labeled": "2026-09-23"
+ },
+ "chemrxiv": [
+  {
+   "id": "doi:10.26434/chemrxiv-2026-dvwc9",
+   "title": "Comprehensive Guidelines for Magnetoelectrocatalysis: Quantum-Engineered Materials, Mechanistic Insights, and Application Spectrum",
+   "label": "off_topic",
+   "reason": "Electrocatalysis review; 'quantum-engineered materials' used loosely"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15001387/v1",
+   "title": "Local Symmetry Breaking and Two-Stage Phase Transition in RuP Uncovered by a Fine-Tuned Atomistic Foundation Model",
+   "label": "on_topic_research",
+   "reason": "ML-MD of local symmetry breaking in RuP, parent of Ru-pnictide superconductors"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15008556/v1",
+   "title": "Hypermolecule: Chemically Synthesized Three-dimensional Macroscopic Molecular Moiré Superlattices",
+   "label": "off_topic",
+   "reason": "Molecular self-assembly 'moire' superstructure; no electronic moire physics"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15007630/v1",
+   "title": "Mn-Driven Ferromagnetism and Electronic Correlations in Multiferroic Bi5Ti3MnO15 from First Principles",
+   "label": "on_topic_research",
+   "reason": "DFT study of magnetism/correlations in multiferroic Aurivillius Bi5Ti3MnO15"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15000106/v1",
+   "title": "Accelerating Superconductor Discovery with Disorder-Aware Multi-Fidelity Graph Transformers",
+   "label": "on_topic_research",
+   "reason": "ML (graph transformer) prediction of superconducting Tc"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15002414/v1",
+   "title": "Dynamic correlation suppresses antiferromagnetism in heavily doped Fe-pnictide superconductor LaFeAsO1−xFx",
+   "label": "on_topic_research",
+   "reason": "DFT+DMFT on doped iron pnictide LaFeAsO1-xFx"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-6x0rh",
+   "title": "Engineering Bilayer MoS2 with Moiré–Dopant Synergy for Advanced Supercapacitor Electrodes",
+   "label": "off_topic",
+   "reason": "Moire MoS2 as supercapacitor electrode (energy storage)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-5b1g6",
+   "title": "Achieving high-pressure superconductivity without applying high-pressure: leveraging frustrated two-dimensional hybrid van der Waals materials",
+   "label": "on_topic_research",
+   "reason": "Proposal for strain-stabilised high-pressure superconductors in vdW stacks"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15006049/v1",
+   "title": "Resonant Quantum Tunneling Mediated High Chirality Induced Spin Selectivity in the Multilayered Moiré Superlattices of Graphene",
+   "label": "on_topic_research",
+   "reason": "Spin-selective resonant tunnelling in moire multilayer graphene (weakly characterised device claim)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15000100/v1",
+   "title": "Computational Prediction of Moiré Superlattice Engineering in Magic-Angle Twisted Bilayer Graphene: A Literature-Validated Framework for Molecular Filtration and Electrochemical Applications",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Implausible 15,500-atom DFT 'literature-validated framework' for TBG water filtration; generated-text markers"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15005475/v1",
+   "title": "Prospect to Boost Catalytic Activity of Precious Metals by Adsorption Atop Topological Insulators",
+   "label": "on_topic_research",
+   "reason": "First-principles: topological surface states modify catalytic metal monolayers"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2024-l3tn6",
+   "title": "Scalable Quasiperiodicity of Two-Dimensional Moiré Metal-Organic Frameworks",
+   "label": "off_topic",
+   "reason": "Quasiperiodic moire MOFs: structural chemistry, no electronic QM physics"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-95t55",
+   "title": "Skyrmion-Like Spin Textures Emerging in the Material Derived from Structural Frustration",
+   "label": "on_topic_research",
+   "reason": "Skyrmion-like spin textures from structural frustration in a new material"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-56l44",
+   "title": "Thickness Dependent Flat Band Potentials at the Nanoscale on Hematite Electrodes and an Alternative Fabrication to Atomic Layer Deposition",
+   "label": "off_topic",
+   "reason": "Electrochemical 'flat band potential' of hematite (term collision)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-1sd9x",
+   "title": "Time-resolved photo-electrochemical measurements to study band bending of BiVO4 photoanodes",
+   "label": "off_topic",
+   "reason": "Photoelectrochemistry of BiVO4 photoanodes (band bending)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15006131/v1",
+   "title": "High Chirality Induced Spin Selectivity in the Multilayered Moiré Superlattices of n-type as well as p-type 2D Crystalline Silicene Based on Resonant Quantum Tunneling",
+   "label": "on_topic_research",
+   "reason": "Spin-selective tunnelling in moire multilayer silicene (same group as 15006049)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-bt453",
+   "title": "Theoretical Principles of Quantum Memory Design: Decoherence Resilience Through Engineered Physical Structures",
+   "label": "off_topic",
+   "reason": "Generic quantum-memory design 'framework'; no specific material system"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2024-hbbfj",
+   "title": "Atomic-Scale Observation of Moiré potential in Twisted Hexagonal Boron Nitride Layers by Electron Microscopy",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match to arXiv:2411.07653 (moire potential in twisted hBN)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15004058/v1",
+   "title": "Thermally Driven Skyrmion Oscillators in Ferromagnetic Nanoring with Engineered Damping Asymmetry",
+   "label": "on_topic_research",
+   "reason": "Micromagnetic thermally driven skyrmion oscillator"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-4hxl9",
+   "title": "Orbital Inversion Mechanisms Hidden in Strongly-Correlated Radical Systems",
+   "label": "off_topic",
+   "reason": "Orbital inversion in organic radicals (molecular chemistry)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv.15008475/v1",
+   "title": "Automated Symbolic Derivation Enables Scalable Ensemble DFT for Strongly Correlated Molecules and Materials",
+   "label": "off_topic",
+   "reason": "Ensemble-DFT method for strongly correlated molecules (quantum chemistry)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-qkmp5",
+   "title": "Plasmon-Induced Resonant Energy Transfer and Flat Band Formation in Fe and Co Doped Ni(II) Hydroxide for Efficient Photocatalytic Oxygen Evolution",
+   "label": "off_topic",
+   "reason": "Photocatalytic oxygen evolution; 'flat bands' in hydroxide catalyst"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-mfhz0",
+   "title": "Thermodynamic Stability and Site-Specific Distribution of Graphitic and Pyridinic Nitrogen in Graphene Moiré on Ru(0001)",
+   "label": "off_topic",
+   "reason": "N-doped graphene moire on Ru for hydrogen storage (surface chemistry)"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-q6rfm",
+   "title": "Cavity quantum electrodynamics complete active space self consistent field theory",
+   "label": "off_topic",
+   "reason": "QED-CASSCF quantum-chemistry method for molecules in cavities"
+  },
+  {
+   "id": "doi:10.26434/chemrxiv-2025-dkh0l",
+   "title": "Hypermolecular Reaction-Based Precise Twist Angle Engineering in Molecular Moiré Superlattices Exhibiting Chirality Induced Spin Selectivity",
+   "label": "off_topic",
+   "reason": "Molecular (tryptophan) moire assemblies and CISS; molecular electronics"
+  }
+ ],
+ "researchsquare": [
+  {
+   "id": "doi:10.21203/rs.3.rs-7385024/v1",
+   "title": "Superconductivity-Driven Unipolar State in a Superatomic Antipolar Metal",
+   "label": "on_topic_research",
+   "reason": "STM study of superconductivity vs CDW/antipolar order in Au6Te12Se8"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-8283039/v1",
+   "title": "From Classical to Quantum: Extending Prometheus to Uncover Quantum Critical Behavior in Disordered Transverse Field Ising Chains",
+   "label": "on_topic_research",
+   "reason": "Unsupervised ML detection of quantum criticality in disordered TFIM"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-7443608/v1",
+   "title": "High Harmonic Spectroscopy from Lower-Order to Higher-Order Topological Insulators",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2508.15631 (HHG in higher-order TIs)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-9954519/v1",
+   "title": "Actively Tunable Sb2S3 Metasurface with Polarization-insensitive Quasi-bound Flat-Band in the Continuum for Enhancing Third-harmonic Generation",
+   "label": "off_topic",
+   "reason": "Photonic metasurface 'flat band' BIC for third-harmonic generation"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-7755852/v1",
+   "title": "Room-Temperature Superconductivity at 298 K in Ternary La-Sc-H System at High-pressure Conditions",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2510.01273 (298 K La-Sc-H superconductivity)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-8494339/v1",
+   "title": "Determining the Magic Angle in Twisted Bilayer Graphene via Lattice Coherence Splitting",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Numerological geometric 'derivation' of the TBG magic angle"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-5245841/v1",
+   "title": "When superfluidity meets superconductivity - extraction of 3He isotope from liquid helium",
+   "label": "off_topic",
+   "reason": "3He isotope extraction using a YBCO filter (fusion-fuel application)"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-5194318/v1",
+   "title": "Nonperturbative Nonlinear Transport in a Floquet-Weyl Semimetal",
+   "label": "on_topic_research",
+   "reason": "Floquet-Weyl transport in Td-MoTe2 under circularly polarised pulses"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-7765161/v1",
+   "title": "Influence of chemical ordering on the magnetoelastic properties of Weyl magnetic semimetal Co 2 MnGa thin films",
+   "label": "on_topic_research",
+   "reason": "Magnetoelastic properties of Weyl semimetal Co2MnGa films"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-7487995/v1",
+   "title": "Gapless fracton quantum spin liquid and emergent photons in a 2D spin-1 model",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2508.06605 (fracton QSL)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-8851570/v1",
+   "title": "Observation of the Magnus Nonlinear Hall effect from Chiral Weyl Monopoles",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2604.28091 (Magnus NLHE in CoSi)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-8743396/v1",
+   "title": "Bi-Sb alloys irradiated with swift heavy ions as potential topological amorphous superconductors",
+   "label": "on_topic_research",
+   "reason": "Ion-irradiated amorphous Bi-Sb as topological amorphous superconductor"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-9873667/v1",
+   "title": "Electric-Field-Induced Ferromagnetic-to-Altermagnetic Transition in a Two-Dimensional Fractional-Quantum Ferroelectric Multiferroic",
+   "label": "on_topic_research",
+   "reason": "DFT: electric-field FM-to-altermagnet switching in monolayer ScO2"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-10741245/v1",
+   "title": "World-First Realization of Dynamical Quasi-Superconductivity in Phase-Engineered Active Conductors Bypassing Ambient Thermal Dissipation Limits",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'World-first' ambient quasi-superconductivity in driven copper/aluminium"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-7287112/v1",
+   "title": "High harmonic generation reflecting the sub-cycle evolution of the Mott transition under a mid-infrared electric field",
+   "label": "on_topic_research",
+   "reason": "HHG tracking Mott transition in Sr2CuO3"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-6070455/v1",
+   "title": "Experimental evidence of Tc enhancement above 50 K and diode and paramagnetic-Meissner effects, in Nickelate films on highly reduced SrTiO3",
+   "label": "duplicate_of_arxiv",
+   "reason": "Near title match arXiv:2502.17892 (nickelate films Tc > 50 K)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-4705720/v1",
+   "title": "Parity Breaking and Sublattice Dichotomy in Monolayer FeSe Superconductor",
+   "label": "on_topic_research",
+   "reason": "Sublattice parity breaking in monolayer FeSe (MBE/STM)"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-10710072/v1",
+   "title": "Emergent chirality-dependent electromotive force in Weyl semimetals enabled by generalized unitary transformation",
+   "label": "on_topic_research",
+   "reason": "Theory of chirality-dependent spin-motive force in Weyl semimetals"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-7923049/v1",
+   "title": "Impurity-induced bound states in BCS superconductor: The role of Rashba spin-orbit and non-linear electron-phonon interactions",
+   "label": "on_topic_research",
+   "reason": "Theory of YSR bound states with Rashba and nonlinear e-ph coupling"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-9440473/v1",
+   "title": "Impurity quadrupole moments as local probes of flux sectors in the Kitaev spin liquid",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2603.23145 (Kitaev spin liquid impurities)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-8875722/v1",
+   "title": "Emergent Polar Metal Phase in a Van der Waals Mott Magnet",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2501.13635 (polar metal in FePSe3)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-10181905/v1",
+   "title": "in situ Growth of and Proximity-induced Superconductivity in Al-Ge Quantum Well Heterostructures",
+   "label": "on_topic_research",
+   "reason": "MBE Al-Ge quantum wells with proximity-induced superconductivity"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-8659972/v1",
+   "title": "Room Temperature long-wavelength infrared Sensitive Imaging Photodetection based on topological insulator Bi2Te3 nanoflakes",
+   "label": "on_topic_research",
+   "reason": "Bi2Te3 topological-insulator nanoflake LWIR photodetector (applied)"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-6879854/v1",
+   "title": "Time-domain decoding of unconventional charge order mechanisms in nonmagnetic and magnetic kagome metals",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2506.14888 (kagome charge order, time domain)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-9917216/v1",
+   "title": "Discovery of Quasi-One-Dimensional Superconductivity in PtPb3Bi",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2604.04653 (quasi-1D superconductor PtPb3Bi)",
+   "dup_content": "on_topic"
+  }
+ ],
+ "preprints_org": [
+  {
+   "id": "doi:10.20944/preprints202509.0541.v1",
+   "title": "On a Novel Bulk Superconductor: Oxygen Doped Delafossite Oxide Y6Cu6O14",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Claims superconductivity above 0 C in Y6Cu6O14 from resistance drop"
+  },
+  {
+   "id": "doi:10.20944/preprints202511.1994.v1",
+   "title": "Influence of Sintering Temperature on the Transport Properties of GdBa2Cu3O7 Superconductor Prepared from Nano-Powders via Co-Precipitation Method",
+   "label": "on_topic_research",
+   "reason": "Sintering vs transport in GdBa2Cu3O7 ceramics (routine materials work)"
+  },
+  {
+   "id": "doi:10.20944/preprints202605.0880.v1",
+   "title": "Floquet Bessel Tuning of Chern Transport in Altermagnet–Topological-Insulator Interfaces",
+   "label": "on_topic_research",
+   "reason": "Theory proposal: Floquet-strain Chern valve at altermagnet/TI interface"
+  },
+  {
+   "id": "doi:10.20944/preprints202509.0924.v1",
+   "title": "Optimize the Ferroelectric and Ferromagnetic Characteristics of Composite Multiferroic Materials to Facilitate Broadband Electromagnetic Wave Absorption",
+   "label": "off_topic",
+   "reason": "Multiferroic composites as microwave absorbers (EM engineering)"
+  },
+  {
+   "id": "doi:10.20944/preprints202609.1869.v1",
+   "title": "Physics-Grounded Knowledge Base Construction for Altermagnets with Structure-Aware Document Reading and LLM Extraction: Altermagnet Talking Database",
+   "label": "on_topic_research",
+   "reason": "LLM-built knowledge base of altermagnetic materials (informatics)"
+  },
+  {
+   "id": "doi:10.20944/preprints202510.1255.v1",
+   "title": "Dynamic Spatio-Topological Metrology: Electromagnetic Inversion and Axion Electrodynamics",
+   "label": "on_topic_research",
+   "reason": "Single-author review-style essay on axion electrodynamics in TIs; low novelty, misfiled"
+  },
+  {
+   "id": "doi:10.20944/preprints202512.0291.v1",
+   "title": "Anomalous AC Susceptibility Response and Paramagnetic Meissner Phase of EuRbFe4As4 Superconductor",
+   "label": "on_topic_research",
+   "reason": "AC susceptibility of magnetic superconductor EuRbFe4As4"
+  },
+  {
+   "id": "doi:10.20944/preprints202503.0281.v1",
+   "title": "Superconductivity and the Sustainable Development Goals (SDGs): A Challenge For Researchers in Superconductivity",
+   "label": "off_topic",
+   "reason": "Bibliometrics of superconductivity vs UN SDGs"
+  },
+  {
+   "id": "doi:10.20944/preprints202502.1068.v1",
+   "title": "Discussion on the Properties of ThS’s Room-Temperature Superconductivity",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Defends 'Zhao theory' room-temperature superconductivity in ThS"
+  },
+  {
+   "id": "doi:10.20944/preprints202609.1677.v1",
+   "title": "Quantum Anomalous Hall Transport in Physical–Observation Dual-Axis Geometry: Mixed Chern Curvature, Fixed-Source Recovery, and a Quantized Observation Cycle",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Idiosyncratic 'observation-record' reformulation of QAH; no physical prediction"
+  },
+  {
+   "id": "doi:10.20944/preprints202509.2167.v1",
+   "title": "Enhanced Superconductivity near the Pressure-Tuned Quantum Critical Point of Charge-Density-Wave Order in Cu1-δTe (δ = 0.016)",
+   "label": "on_topic_research",
+   "reason": "Pressure-tuned CDW quantum critical point and SC in Cu1-dTe"
+  },
+  {
+   "id": "doi:10.20944/preprints202512.0581.v1",
+   "title": "Combined Physical and Computational Simulation of the Moiré Effect in 3D Objects and Displays",
+   "label": "off_topic",
+   "reason": "Optical moire effect in 3D displays (term collision)"
+  },
+  {
+   "id": "doi:10.20944/preprints202512.0537.v1",
+   "title": "Zero-Energy Bound State Trapped in Line-Shaped Vortex in Topological Superconductor",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2607.13194 (posted here 7 months before arXiv)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "doi:10.20944/preprints202602.1792.v1",
+   "title": "Geometric Resonance Analysis of Superconductivity in CaC6: Hexagonal and Rhombohedral Descriptions in the Roeser–Huber Framework",
+   "label": "on_topic_research",
+   "reason": "CaC6 Tc in Roeser-Huber empirical formalism (niche approach)"
+  },
+  {
+   "id": "doi:10.20944/preprints202411.1696.v1",
+   "title": "Evidence for Proximity Effect in Superconductor-Organic Semiconductor-Superconductor Stacked DevicesEvidence for Proximity Effect in Superconductor-Organic Semiconductor-Superconductor Stacked Devices",
+   "label": "on_topic_research",
+   "reason": "Proximity effect in Nb/organic-semiconductor/NbN stacks"
+  },
+  {
+   "id": "doi:10.20944/preprints202606.1827.v1",
+   "title": "Constraint on the Majorana Nature of Neutrinos Using Solar Neutrinos",
+   "label": "off_topic",
+   "reason": "Majorana nature of neutrinos (particle physics; term collision)"
+  },
+  {
+   "id": "doi:10.20944/preprints202506.1820.v1",
+   "title": "Negative Differential Conductance Induced by Majorana Bound States Side-Coupled to T-Shaped Double Quantum Dots",
+   "label": "on_topic_research",
+   "reason": "Transport through double quantum dots side-coupled to Majorana bound states"
+  },
+  {
+   "id": "doi:10.20944/preprints202502.0118.v1",
+   "title": "Fragmentation-Based Linear-Scaling Method for Strongly Correlated Systems: Divide-and-Conquer Hartree–Fock–Bogoliubov Method, Its Energy Gradient, and Applications to Graphene Nano-Ribbon Systems",
+   "label": "off_topic",
+   "reason": "Linear-scaling HFB quantum chemistry for graphene-nanoribbon polyradicals"
+  },
+  {
+   "id": "doi:10.20944/preprints202411.0970.v1",
+   "title": "Multi-Band Superconductivity, Polarons, Jahn-Teller Polarons, Heterogeneity and High-Temperature Superconductivity",
+   "label": "on_topic_research",
+   "reason": "Review/perspective: polarons and multiband HTSC (K.A. Mueller legacy)"
+  },
+  {
+   "id": "doi:10.20944/preprints202510.2304.v1",
+   "title": "Einstein and Debye Temperatures, Electron-Phonon Coupling Constant and a Probable Mechanism for Ambient-Pressure Room-Temperature Superconductivity in Intercalated Graphite",
+   "label": "on_topic_research",
+   "reason": "Re-analysis of resistivity in claimed RT-superconducting intercalated graphite; declared arXiv id is the analysed paper, not this one"
+  },
+  {
+   "id": "doi:10.20944/preprints202410.1239.v1",
+   "title": "Perfect Crossed Andreev Reflection in the Staggered Graphene/Superconductor/Periodic Line Defect Superlattice Junctions",
+   "label": "on_topic_research",
+   "reason": "Crossed Andreev reflection in graphene/superconductor junction theory"
+  },
+  {
+   "id": "doi:10.20944/preprints202508.1281.v1",
+   "title": "Interrelation of Topological Matter Phases, Axion Electrodynamics, and the Kuznetsov Tensor",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Introduces eponymous 'Kuznetsov tensor' linking topology and axion electrodynamics"
+  },
+  {
+   "id": "doi:10.20944/preprints202512.2321.v1",
+   "title": "Parity-Sector Signatures in Ultraweak Photon Emission from Driven-Dissipative Majorana Spin Systems",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Majorana spin model for biological ultraweak photon emission"
+  },
+  {
+   "id": "doi:10.20944/preprints202502.0137.v1",
+   "title": "Two-Band Superconductivity and Transition Temperature Limited by Thermal Fluctuations in Ambient Pressure La3-xPrxNi2O7-d (x = 0.0, 0.15, 1.0) Thin Films",
+   "label": "on_topic_research",
+   "reason": "Re-analysis of penetration depth in La3-xPrxNi2O7 films"
+  },
+  {
+   "id": "doi:10.20944/preprints202512.0514.v1",
+   "title": "On the Theoretical Inconsistencies of Cooper Pairing in Superconductivity",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Claims BCS/Cooper pairing is theoretically inconsistent"
+  }
+ ],
+ "techrxiv": [
+  {
+   "id": "doi:10.36227/techrxiv.176369865.59370636/v1",
+   "title": "Metamaterial-Enhanced Phonon Engineering: A Pathway to Room-Temperature Superconductivity",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Unsubstantiated 300 K ambient superconductivity via metamaterial phonons"
+  },
+  {
+   "id": "doi:10.36227/techrxiv.172902566.60093072/v1",
+   "title": "A search for Magnetic Monopole from the context of Superconductivity",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Two-sentence abstract on monopoles 'from the view of superconductivity'; no content"
+  }
+ ],
+ "zenodo": [
+  {
+   "id": "doi:10.5281/zenodo.21064912",
+   "title": "τ-Fiber Geometry and the Lepton Mass Spectrum",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Five-dimensional 'Harvey space' derivation of lepton masses"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21765888",
+   "title": "Stiffness Switching on a Local-Unitary Orbit of Exact Condensates",
+   "label": "on_topic_research",
+   "reason": "Exactly solvable flat-band pairing model; stiffness vs entanglement (independent theory)"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21179710",
+   "title": "A Magnetic Dome for Lunar Surface Radiation Protection: A Magnetic Net Concept",
+   "label": "off_topic",
+   "reason": "Superconducting-coil radiation shield for lunar surface"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21061152",
+   "title": "The Informational Particle Catalogue: Forty Standard-Model Observables from Thirteen Axioms with Zero Free Parameters",
+   "label": "fringe_or_pseudoscience",
+   "reason": "40 Standard-Model observables from 13 axioms, zero parameters"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21357073",
+   "title": "Phi‑Floquet 4320th Harmonic Realizes Self‑Dual E8 Torus with Fibonacci Anyon Network — E8 Intelligence Research",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'E8 Intelligence Research' phi-Floquet anyon series (150+ uploads)"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21901492",
+   "title": "Emergent Superconductivity as a Topological Tension-Release in Recursive Space-Time Networks",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Superconductivity as 'topological tension release' of spacetime networks"
+  },
+  {
+   "id": "doi:10.5281/zenodo.18817350",
+   "title": "Registered Testable Predictions from Information Geometry: A Priority Claim for 2026-2035",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Priority-claim list of 'registered predictions' from information geometry"
+  },
+  {
+   "id": "doi:10.5281/zenodo.18774456",
+   "title": "MULTI-EMITTER PULSED 144.07 HZ RESONANCE ENTRAINMENT FOR MEGALITHIC STONE TRANSPORT Dynamical Simulations Demonstrate 40-80% Weight Reduction via Constructive Interference and Piezoelectric Granite Coupling:",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Acoustic resonance weight reduction for megalith transport"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21392864",
+   "title": "Neutrinos as the fixed-point sector: why the lightest fermions mix the most, and why their mixing cannot be measured exactly",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Neutrino masses from an 'unwinding spiral' framework"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21243571",
+   "title": "A Universal Maximum in Vortex-Emergence Efficiency at the BKT Transition of the Kagome XY Model",
+   "label": "on_topic_research",
+   "reason": "Monte Carlo of kagome XY BKT transition (idiosyncratic 'information' framing)"
+  },
+  {
+   "id": "doi:10.5281/zenodo.22136792",
+   "title": "Confinement from the Flag Manifold: Area Law for Faddeev-Niemi Wilson Loops",
+   "label": "off_topic",
+   "reason": "Lattice gauge confinement in Faddeev-Niemi model (HEP)"
+  },
+  {
+   "id": "doi:10.5281/zenodo.22052099",
+   "title": "Superconductivity in the Framework of Spacetime Ladder Theory: A Unified Interpretation Based on the Dark Matter Qi-Field",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Superconductivity from a 'dark matter Qi-field'"
+  },
+  {
+   "id": "doi:10.5281/zenodo.18787313",
+   "title": "Preprint of \"Surface and Bulk Reduction Kinetics of Liquid Plasma-Sprayed NiO-YSZ Layers for Solid Oxide Cells\"",
+   "label": "off_topic",
+   "reason": "NiO-YSZ solid-oxide-cell electrode reduction kinetics"
+  },
+  {
+   "id": "doi:10.5281/zenodo.17717055",
+   "title": "Simultaneous Enhancement of Electrical and Thermal Conductivity in Graphene through Excitation of the Etheric Longitudinal Mode",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'Etheric longitudinal mode' in graphene (Quarkbase Cosmology)"
+  },
+  {
+   "id": "doi:10.5281/zenodo.20969150",
+   "title": "The Inward Winding: Neutrinos, the Higgs, and Decay on the Spiral",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'Euler Universe' phasor account of neutrinos/Higgs"
+  },
+  {
+   "id": "doi:10.5281/zenodo.19778477",
+   "title": "绝对零度:阳场耗散极限与阴场激活临界的太极统一场论解释 Absolute Zero: The Dissipation Limit of Yang Field and the Activation Criticality of Yin Field",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Tai Chi unified field theory of absolute zero"
+  },
+  {
+   "id": "doi:10.5281/zenodo.18245217",
+   "title": "Neutrino Masses, the Gravitational Coupling Constant and the Cosmological Constant",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Integer-multiple neutrino mass postulate tied to cosmological constant"
+  },
+  {
+   "id": "doi:10.5281/zenodo.17685480",
+   "title": "The Nature of Matter and Atomic Structure: Geometric Connement and Solitonic Shells in the Continuous Subquantum Field",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'Continuous Subquantum Field' model of atoms/neutron as skyrmion"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21591269",
+   "title": "21-Equation Geometric Unification Framework: Universal Embedding, Complete Proof of the Smooth 4D Poincaré Conjecture, and Empirical Validation from Torsion-Curvature Six-Dimensional Riemann-Cartan Geometry",
+   "label": "fringe_or_pseudoscience",
+   "reason": "21-equation unification incl. 'proof' of smooth 4D Poincare conjecture (v29)"
+  },
+  {
+   "id": "doi:10.5281/zenodo.22773492",
+   "title": "THE ABÏON WARP",
+   "label": "fringe_or_pseudoscience",
+   "reason": "Gravitomagnetic propulsion from superconducting Archimedes screws"
+  },
+  {
+   "id": "doi:10.5281/zenodo.22168481",
+   "title": "Lithographically Patterned Cobalt Nanoribbons as Magnetic Artificial Pinning Centers in REBCO Coated Conductors for Continuous-Wave Accelerator Magnets",
+   "label": "on_topic_research",
+   "reason": "Co-nanoribbon artificial pinning centres in REBCO conductors (applied SC)"
+  },
+  {
+   "id": "doi:10.5281/zenodo.16923198",
+   "title": "Room Temperature Superconductor",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'Octomorphic Framework' list of room-temperature superconductors"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21937346",
+   "title": "Interface Engineering of Nickelate Superconducting Thin Films by a Graphene Capping Layer: A Low-Cost, Falsifiable Experimental Proposal with Quantitative Expectations",
+   "label": "on_topic_research",
+   "reason": "Experimental proposal: graphene capping of nickelate SC films"
+  },
+  {
+   "id": "doi:10.5281/zenodo.20622200",
+   "title": "The Thermoelectric Resolution: Why Persistent Currents in Superconducting Rings Do Not Violate the Second Law of Thermodynamics",
+   "label": "on_topic_research",
+   "reason": "Thermoelectric rebuttal of second-law violation claim for SC rings"
+  },
+  {
+   "id": "doi:10.5281/zenodo.21073572",
+   "title": "The Foundation of Projection Relativity II",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'Projection Relativity' derivation of electroweak sector"
+  }
+ ],
+ "hal": [
+  {
+   "id": "hal:hal-05407889",
+   "title": "Pressure-tunable structural instabilities in single-layer-trilayer La$_3$Ni$_2$O$_7$",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2412.21150 + exact title (La3Ni2O7 structural instabilities)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05730561",
+   "title": "Photochemical ageing drives the browning of urban outflows through secondary brown carbon production",
+   "label": "off_topic",
+   "reason": "Atmospheric brown-carbon aerosol ('strongly correlated' collision)"
+  },
+  {
+   "id": "hal:hal-05482717",
+   "title": "Paramagnetically driven superconducting re-entrance in Eu-doped infinite layer nickelates",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2601.19473 + exact title (Eu-doped nickelates)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05724279",
+   "title": "Moiré and Floquet-Bloch band-structures engineering of transition metal dichalcogenides heterostructures Ingeniérie moiré et Floquet-Bloch des structures de bandes d'hétérostructures de dichalcogénures de métaux de transition",
+   "label": "dataset_or_report",
+   "reason": "PhD project description (moire/Floquet TMDs); abstract lists supervisors only"
+  },
+  {
+   "id": "hal:hal-05756114",
+   "title": "Inferring the microscopic mechanisms of opinion dynamics using a kinetic Ising model",
+   "label": "off_topic",
+   "reason": "Kinetic Ising model of online opinion dynamics"
+  },
+  {
+   "id": "hal:hal-05699189",
+   "title": "A GDP-neutral climate vulnerability index for improved environmental risk assessment and adaptation policy",
+   "label": "off_topic",
+   "reason": "Climate vulnerability index"
+  },
+  {
+   "id": "hal:hal-05408783",
+   "title": "Measuring non-Abelian quantum geometry and topology in a multi-gap photonic lattice",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2511.03894 + exact title (non-Abelian QGT, photonic)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05760059",
+   "title": "Tunable anharmonicity in Sn-InAs nanowire transmons beyond the short junction limit",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2603.26895 + exact title (Sn-InAs transmons)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05430429",
+   "title": "Direct demonstration of time-reversal-symmetry-breaking spin injection from a compensated magnet",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2512.17427 + exact title (spin injection, compensated magnet)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05759084",
+   "title": "Effect of non-homogeneous non-magnetic Impurities in Superconductors: A comparison between Microscopic and Macroscopic theories",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2609.06236 + exact title (impurities in SC)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05506780",
+   "title": "Massless Representations in Conformal Space and Their de Sitter (dS) Restrictions. The Split-Octonionic Fabric of Inflationary Field Dynamics",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2601.18433; conformal-group monograph (off-topic content)",
+   "dup_content": "off_topic"
+  },
+  {
+   "id": "hal:hal-04983943",
+   "title": "Neutrino Physics on the special Superstrings in Metals",
+   "label": "fringe_or_pseudoscience",
+   "reason": "'Metallic superstrings' capturing gravitons/axions/neutrinos in Nb sheets"
+  },
+  {
+   "id": "hal:hal-04955492",
+   "title": "Detecting the topological winding of superconducting nodes via Local Density of States",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2412.13042 + exact title (winding of SC nodes via LDOS)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05701179",
+   "title": "Challenging Majorana neutrino effects in $B\\to K^{(\\ast)}νν$ and $K\\to πνν$ decays",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2607.13142; Majorana-neutrino flavour physics (off-topic)",
+   "dup_content": "off_topic"
+  },
+  {
+   "id": "hal:hal-05742802",
+   "title": "Raman scattering in cuprate oxychlorides high-temperature superconductors single-crystals",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2609.22400 + exact title (Raman in cuprate oxychlorides)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05409553",
+   "title": "Realizing a Symmetry Protected Topological Phase in a Superconducting Circuit",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2503.13406 + exact title (SPT phase in SC circuit)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05558132",
+   "title": "Characterization of Exciton-exciton entanglement and correlations",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2603.12833 + exact title (exciton entanglement)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05544210",
+   "title": "Mechanical and Growth Anisotropy in Chara corallina : Challenging Green’s Hypothesis",
+   "label": "off_topic",
+   "reason": "Plant cell-wall growth anisotropy"
+  },
+  {
+   "id": "hal:hal-05700129",
+   "title": "Evidence of electronic instability driven structural distortion in the nodal line semimetal CoSn$_2$",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2509.23221 + exact title (CoSn2 nodal-line semimetal)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05760014",
+   "title": "Distinguishing Majorana zero modes from trivial defect states in an iron-based superconductor",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2606.17499 + exact title (MZM vs defect states, Fe(Te,Se))",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-04799868",
+   "title": "MIND WANDERING AND ITS RELATIONSHIP WITH SUSTAINED ATTENTION AND EXECUTIVE FUNCTIONS IN PRESCHOOLERS",
+   "label": "off_topic",
+   "reason": "Mind wandering in preschoolers (psychology)"
+  },
+  {
+   "id": "hal:hal-05749448",
+   "title": "Phonon-tunable THz magnonic emission in multiferroic heterostructures",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2511.21596 + exact title (THz magnonics in BiFeO3)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-05342525",
+   "title": "Gate-tunable Josephson parametric amplifiers based on semiconductor nanowires",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2510.00305 + exact title (nanowire JPAs)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-04917967",
+   "title": "Inductance measurement of YBCO strip-lines made by ion irradiation",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:1008.4042: a 2010 paper deposited to HAL in 2025 (date caveat)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "hal:hal-04794705",
+   "title": "High-quality poor man's Majorana bound states from cavity embedding",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2407.12088 (pre-window arXiv; poor man's Majoranas)",
+   "dup_content": "on_topic"
+  }
+ ],
+ "osti": [
+  {
+   "id": "osti:3018236",
+   "title": "Ferroaxial density wave from intertwined charge and orbital order in rare-earth tritellurides",
+   "label": "on_topic_research",
+   "reason": "Ferroaxial CDW order in rare-earth tritellurides (journal AM)"
+  },
+  {
+   "id": "osti:3363865",
+   "title": "Nanoscale structural correlations in a model cuprate superconductor",
+   "label": "on_topic_research",
+   "reason": "Diffuse scattering: structural correlations in HgBa2CuO4+d"
+  },
+  {
+   "id": "osti:3020229",
+   "title": "Separate Surface and Bulk Topological Anderson Localization Transitions in Disordered Axion Insulators",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2501.16413 (axion insulator localization)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "osti:3018118",
+   "title": "Effects of the next-nearest-neighbor hopping on the low-dimensional Hubbard model: ferromagnetism, antiferromagnetism, and superconductivity",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2511.13534 (NNN Hubbard review)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "osti:3027528",
+   "title": "Cavity-altered superconductivity",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2505.17378 (cavity-altered superconductivity)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "osti:3367245",
+   "title": "Electronic coherence evolution at the nearly commensurate-incommensurate CDW boundary of 1⁢T−TaS2",
+   "label": "on_topic_research",
+   "reason": "ARPES of NC-IC CDW transition in 1T-TaS2"
+  },
+  {
+   "id": "osti:2570762",
+   "title": "Anisotropic field-induced changes in the superconducting order parameter of UTe2",
+   "label": "on_topic_research",
+   "reason": "Specific heat of UTe2 order parameter in field"
+  },
+  {
+   "id": "osti:2569899",
+   "title": "Kinetic Isotope Effect in the Radical Step-Growth Termination of On-Surface Synthesized Graphene Nanoribbons",
+   "label": "off_topic",
+   "reason": "Kinetic isotope effect in on-surface GNR growth (surface chemistry)"
+  },
+  {
+   "id": "osti:3028355",
+   "title": "Ferromagnetic Insulator to Metal Transition in Noncentrosymmetric Graphene Nanoribbons",
+   "label": "on_topic_research",
+   "reason": "Ferromagnetic insulator-metal transition in bottom-up graphene nanoribbons"
+  },
+  {
+   "id": "osti:3021621",
+   "title": "Unified Description of Cuprate Superconductors by Fractionalized Electrons Emerging from Integrated Analyses of Photoemission Spectra and Quasiparticle Interference",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2508.01297 (fractionalized electrons in cuprates)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "osti:3378234",
+   "title": "Detecting the full photoemission cone from laser-based ARPES experiments by leveraging deflector technology",
+   "label": "duplicate_of_arxiv",
+   "reason": "Exact title match arXiv:2601.17099 (laser-ARPES deflector)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "osti:3376425",
+   "title": "Protonic nickelate device networks for spatiotemporal neuromorphic computing",
+   "label": "on_topic_research",
+   "reason": "Protonic NdNiO3 devices for neuromorphic computing (correlated-oxide devices)"
+  },
+  {
+   "id": "osti:2569981",
+   "title": "Evidence of antiferromagnetism in ultrathin metallic (111)-oriented LaNiO3 films",
+   "label": "on_topic_research",
+   "reason": "Antiferromagnetism in ultrathin (111) LaNiO3 films"
+  },
+  {
+   "id": "osti:2525850",
+   "title": "Persistent Current Simulation for CCT Testing Magnet Used in EIC",
+   "label": "off_topic",
+   "reason": "Persistent-current simulation for EIC accelerator magnet"
+  },
+  {
+   "id": "osti:3017370",
+   "title": "Correlation-driven topological band inversion in VSe2",
+   "label": "on_topic_research",
+   "reason": "Correlation-driven band inversion in VSe2 (DFT)"
+  },
+  {
+   "id": "osti:2867839",
+   "title": "Anomalies of coset non-invertible symmetries",
+   "label": "duplicate_of_arxiv",
+   "reason": "Declared arXiv:2503.00105 + exact title (coset non-invertible symmetries)",
+   "dup_content": "on_topic"
+  },
+  {
+   "id": "osti:2560506",
+   "title": "Pulling Order Back from the Brink of Disorder: Observation of a Nodal-Line Spin Liquid and Fluctuation Stabilized Order in K2⁢IrCl6",
+   "label": "on_topic_research",
+   "reason": "Neutron evidence of nodal-line spin liquid in K2IrCl6"
+  },
+  {
+   "id": "osti:2520466",
+   "title": "Time-dependent phenomena in correlated materials",
+   "label": "dataset_or_report",
+   "reason": "DOE technical (final) report on time-dependent phenomena in correlated materials"
+  },
+  {
+   "id": "osti:3101849",
+   "title": "Pressure‐Induced Structural and Magnetic Evolution in Layered Antiferromagnet YbMn2Sb2",
+   "label": "on_topic_research",
+   "reason": "Pressure-induced structural/magnetic evolution in YbMn2Sb2"
+  },
+  {
+   "id": "osti:3818104",
+   "title": "Spin Stripes and Superconductivity in Bilayer Nickelates",
+   "label": "on_topic_research",
+   "reason": "DMRG of spin stripes and pairing in bilayer nickelates"
+  },
+  {
+   "id": "osti:3384904",
+   "title": "Electronic structure of the kagome compound CaTi3⁢Bi4 using high-field torque magnetometry and density functional theory",
+   "label": "on_topic_research",
+   "reason": "dHvA/torque on kagome CaTi3Bi4"
+  },
+  {
+   "id": "osti:2479932",
+   "title": "Fluctuating charge-density-wave correlations in the three-band Hubbard model",
+   "label": "on_topic_research",
+   "reason": "DQMC of fluctuating CDW in three-band Hubbard model"
+  },
+  {
+   "id": "osti:3374150",
+   "title": "Clifford transformations for fermionic quantum systems: From Pauli and Majorana operators to Dirac fermions",
+   "label": "off_topic",
+   "reason": "Clifford transformations for fermions (quantum computing formalism)"
+  },
+  {
+   "id": "osti:3007502",
+   "title": "High-magnetic-field phases in U1-xThxTe2",
+   "label": "on_topic_research",
+   "reason": "High-field phases of U1-xThxTe2"
+  },
+  {
+   "id": "osti:3018257",
+   "title": "Phase Diagrams and Piezoelectric Properties of Wurtzite Al1-x-yScxGdyN Heterostructural Alloys",
+   "label": "off_topic",
+   "reason": "Piezoelectric wurtzite Al-Sc-Gd-N alloys (nitride ferroelectrics)"
+  }
+ ]
+}

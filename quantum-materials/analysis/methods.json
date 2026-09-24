@@ -1,0 +1,1593 @@
+{
+ "description": "Q4 methods: counts of in-scope arXiv preprints per method (refined lexicon), trailing vs preceding window; see analysis/methods.py docstring.",
+ "taxonomy_version": "v2",
+ "population": "in-scope arXiv records (analysis/classified.jsonl) in the trailing (2025-09-24..2026-09-23) and preceding (2024-09-24..2025-09-23) windows",
+ "in_scope": {
+  "trailing": 9878,
+  "preceding": 8828
+ },
+ "refined_methods": [
+  "high_pressure_dac",
+  "magnetotransport_hall",
+  "nv_quantum_sensing",
+  "optical_raman_ir",
+  "phonon_electron_phonon",
+  "quantum_oscillations",
+  "stm_sts"
+ ],
+ "ci_formula": "exp(log R +- 1.96*sqrt(1/T+1/P+1/scope_T+1/scope_P))",
+ "v2_retag_mismatches": 0,
+ "methods": [
+  {
+   "method": "dft_first_principles",
+   "label": "DFT / first-principles",
+   "kind": "computational",
+   "trailing": 1490,
+   "preceding": 1242,
+   "share_trailing": 0.1508,
+   "share_preceding": 0.1407,
+   "share_ratio": 1.072,
+   "ci95_low": 0.989,
+   "ci95_high": 1.162,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "magnetotransport_hall",
+   "label": "Magnetotransport / Hall / resistivity",
+   "kind": "experimental",
+   "trailing": 1098,
+   "preceding": 1051,
+   "share_trailing": 0.1112,
+   "share_preceding": 0.1191,
+   "share_ratio": 0.934,
+   "ci95_low": 0.854,
+   "ci95_high": 1.021,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "tight_binding_continuum",
+   "label": "Tight-binding / Wannier / continuum & effective models",
+   "kind": "computational",
+   "trailing": 850,
+   "preceding": 763,
+   "share_trailing": 0.086,
+   "share_preceding": 0.0864,
+   "share_ratio": 0.996,
+   "ci95_low": 0.899,
+   "ci95_high": 1.102,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "hartree_fock_mean_field",
+   "label": "Hartree-Fock / mean field / RPA / BdG",
+   "kind": "computational",
+   "trailing": 636,
+   "preceding": 533,
+   "share_trailing": 0.0644,
+   "share_preceding": 0.0604,
+   "share_ratio": 1.066,
+   "ci95_low": 0.947,
+   "ci95_high": 1.201,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "thin_film_growth_mbe",
+   "label": "Thin-film growth (MBE, PLD, CVD, sputtering)",
+   "kind": "experimental",
+   "trailing": 578,
+   "preceding": 490,
+   "share_trailing": 0.0585,
+   "share_preceding": 0.0555,
+   "share_ratio": 1.054,
+   "ci95_low": 0.932,
+   "ci95_high": 1.193,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "optical_raman_ir",
+   "label": "Optical / infrared / THz / Raman / magneto-optics",
+   "kind": "experimental",
+   "trailing": 510,
+   "preceding": 423,
+   "share_trailing": 0.0516,
+   "share_preceding": 0.0479,
+   "share_ratio": 1.078,
+   "ci95_low": 0.944,
+   "ci95_high": 1.23,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "thermodynamics_specific_heat",
+   "label": "Specific heat / magnetization / thermodynamics",
+   "kind": "experimental",
+   "trailing": 508,
+   "preceding": 493,
+   "share_trailing": 0.0514,
+   "share_preceding": 0.0558,
+   "share_ratio": 0.921,
+   "ci95_low": 0.811,
+   "ci95_high": 1.046,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "diffraction_structure",
+   "label": "X-ray / electron diffraction & electron microscopy",
+   "kind": "experimental",
+   "trailing": 485,
+   "preceding": 407,
+   "share_trailing": 0.0491,
+   "share_preceding": 0.0461,
+   "share_ratio": 1.065,
+   "ci95_low": 0.931,
+   "ci95_high": 1.219,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "dmrg_tensor_networks",
+   "label": "DMRG / tensor networks",
+   "kind": "computational",
+   "trailing": 476,
+   "preceding": 377,
+   "share_trailing": 0.0482,
+   "share_preceding": 0.0427,
+   "share_ratio": 1.128,
+   "ci95_low": 0.983,
+   "ci95_high": 1.296,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "phonon_electron_phonon",
+   "label": "Phonons / electron-phonon / Eliashberg",
+   "kind": "computational",
+   "trailing": 360,
+   "preceding": 310,
+   "share_trailing": 0.0364,
+   "share_preceding": 0.0351,
+   "share_ratio": 1.038,
+   "ci95_low": 0.889,
+   "ci95_high": 1.211,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "machine_learning",
+   "label": "Machine learning / neural networks",
+   "kind": "computational",
+   "trailing": 354,
+   "preceding": 231,
+   "share_trailing": 0.0358,
+   "share_preceding": 0.0262,
+   "share_ratio": 1.37,
+   "ci95_low": 1.157,
+   "ci95_high": 1.621,
+   "ci_excludes_1": true
+  },
+  {
+   "method": "ultrafast_pump_probe",
+   "label": "Ultrafast pump-probe / time-resolved",
+   "kind": "experimental",
+   "trailing": 311,
+   "preceding": 278,
+   "share_trailing": 0.0315,
+   "share_preceding": 0.0315,
+   "share_ratio": 1.0,
+   "ci95_low": 0.848,
+   "ci95_high": 1.178,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "arpes",
+   "label": "ARPES / photoemission",
+   "kind": "experimental",
+   "trailing": 310,
+   "preceding": 263,
+   "share_trailing": 0.0314,
+   "share_preceding": 0.0298,
+   "share_ratio": 1.053,
+   "ci95_low": 0.892,
+   "ci95_high": 1.245,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "qmc",
+   "label": "Quantum Monte Carlo",
+   "kind": "computational",
+   "trailing": 277,
+   "preceding": 194,
+   "share_trailing": 0.028,
+   "share_preceding": 0.022,
+   "share_ratio": 1.276,
+   "ci95_low": 1.06,
+   "ci95_high": 1.536,
+   "ci_excludes_1": true
+  },
+  {
+   "method": "neutron_scattering",
+   "label": "Neutron scattering",
+   "kind": "experimental",
+   "trailing": 271,
+   "preceding": 241,
+   "share_trailing": 0.0274,
+   "share_preceding": 0.0273,
+   "share_ratio": 1.005,
+   "ci95_low": 0.843,
+   "ci95_high": 1.198,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "stm_sts",
+   "label": "STM / STS / QPI",
+   "kind": "experimental",
+   "trailing": 258,
+   "preceding": 215,
+   "share_trailing": 0.0261,
+   "share_preceding": 0.0244,
+   "share_ratio": 1.072,
+   "ci95_low": 0.893,
+   "ci95_high": 1.288,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "exact_diagonalization",
+   "label": "Exact diagonalization",
+   "kind": "computational",
+   "trailing": 256,
+   "preceding": 168,
+   "share_trailing": 0.0259,
+   "share_preceding": 0.019,
+   "share_ratio": 1.362,
+   "ci95_low": 1.119,
+   "ci95_high": 1.658,
+   "ci_excludes_1": true
+  },
+  {
+   "method": "high_pressure_dac",
+   "label": "High pressure / diamond anvil cell",
+   "kind": "experimental",
+   "trailing": 186,
+   "preceding": 160,
+   "share_trailing": 0.0188,
+   "share_preceding": 0.0181,
+   "share_ratio": 1.039,
+   "ci95_low": 0.839,
+   "ci95_high": 1.286,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "dmft",
+   "label": "DMFT / DFT+DMFT / cluster DMFT",
+   "kind": "computational",
+   "trailing": 182,
+   "preceding": 157,
+   "share_trailing": 0.0184,
+   "share_preceding": 0.0178,
+   "share_ratio": 1.036,
+   "ci95_low": 0.835,
+   "ci95_high": 1.285,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "rixs_resonant_xray",
+   "label": "RIXS / resonant & soft x-ray spectroscopy",
+   "kind": "experimental",
+   "trailing": 164,
+   "preceding": 145,
+   "share_trailing": 0.0166,
+   "share_preceding": 0.0164,
+   "share_ratio": 1.011,
+   "ci95_low": 0.807,
+   "ci95_high": 1.266,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "gw_beyond_dft",
+   "label": "GW / BSE / hybrid functionals / quantum chemistry (beyond DFT)",
+   "kind": "computational",
+   "trailing": 151,
+   "preceding": 125,
+   "share_trailing": 0.0153,
+   "share_preceding": 0.0142,
+   "share_ratio": 1.08,
+   "ci95_low": 0.85,
+   "ci95_high": 1.371,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "nmr_nqr",
+   "label": "NMR / NQR",
+   "kind": "experimental",
+   "trailing": 97,
+   "preceding": 91,
+   "share_trailing": 0.0098,
+   "share_preceding": 0.0103,
+   "share_ratio": 0.953,
+   "ci95_low": 0.715,
+   "ci95_high": 1.27,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "quantum_oscillations",
+   "label": "Quantum oscillations",
+   "kind": "experimental",
+   "trailing": 80,
+   "preceding": 72,
+   "share_trailing": 0.0081,
+   "share_preceding": 0.0082,
+   "share_ratio": 0.993,
+   "ci95_low": 0.721,
+   "ci95_high": 1.367,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "musr",
+   "label": "muSR",
+   "kind": "experimental",
+   "trailing": 73,
+   "preceding": 85,
+   "share_trailing": 0.0074,
+   "share_preceding": 0.0096,
+   "share_ratio": 0.768,
+   "ci95_low": 0.561,
+   "ci95_high": 1.051,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "nv_quantum_sensing",
+   "label": "NV-center / quantum sensing / scanning SQUID magnetometry",
+   "kind": "experimental",
+   "trailing": 48,
+   "preceding": 36,
+   "share_trailing": 0.0049,
+   "share_preceding": 0.0041,
+   "share_ratio": 1.192,
+   "ci95_low": 0.773,
+   "ci95_high": 1.837,
+   "ci_excludes_1": false
+  }
+ ],
+ "methods_v2_unrefined": [
+  {
+   "method": "magnetotransport_hall",
+   "label": "Magnetotransport / Hall / resistivity",
+   "kind": "experimental",
+   "trailing": 1875,
+   "preceding": 1744,
+   "share_trailing": 0.1898,
+   "share_preceding": 0.1976,
+   "share_ratio": 0.961,
+   "ci95_low": 0.895,
+   "ci95_high": 1.032,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "dft_first_principles",
+   "label": "DFT / first-principles",
+   "kind": "computational",
+   "trailing": 1490,
+   "preceding": 1242,
+   "share_trailing": 0.1508,
+   "share_preceding": 0.1407,
+   "share_ratio": 1.072,
+   "ci95_low": 0.989,
+   "ci95_high": 1.162,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "tight_binding_continuum",
+   "label": "Tight-binding / Wannier / continuum & effective models",
+   "kind": "computational",
+   "trailing": 850,
+   "preceding": 763,
+   "share_trailing": 0.086,
+   "share_preceding": 0.0864,
+   "share_ratio": 0.996,
+   "ci95_low": 0.899,
+   "ci95_high": 1.102,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "optical_raman_ir",
+   "label": "Optical / infrared / THz / Raman / magneto-optics",
+   "kind": "experimental",
+   "trailing": 841,
+   "preceding": 655,
+   "share_trailing": 0.0851,
+   "share_preceding": 0.0742,
+   "share_ratio": 1.147,
+   "ci95_low": 1.032,
+   "ci95_high": 1.276,
+   "ci_excludes_1": true
+  },
+  {
+   "method": "hartree_fock_mean_field",
+   "label": "Hartree-Fock / mean field / RPA / BdG",
+   "kind": "computational",
+   "trailing": 636,
+   "preceding": 533,
+   "share_trailing": 0.0644,
+   "share_preceding": 0.0604,
+   "share_ratio": 1.066,
+   "ci95_low": 0.947,
+   "ci95_high": 1.201,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "thin_film_growth_mbe",
+   "label": "Thin-film growth (MBE, PLD, CVD, sputtering)",
+   "kind": "experimental",
+   "trailing": 578,
+   "preceding": 490,
+   "share_trailing": 0.0585,
+   "share_preceding": 0.0555,
+   "share_ratio": 1.054,
+   "ci95_low": 0.932,
+   "ci95_high": 1.193,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "thermodynamics_specific_heat",
+   "label": "Specific heat / magnetization / thermodynamics",
+   "kind": "experimental",
+   "trailing": 508,
+   "preceding": 493,
+   "share_trailing": 0.0514,
+   "share_preceding": 0.0558,
+   "share_ratio": 0.921,
+   "ci95_low": 0.811,
+   "ci95_high": 1.046,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "phonon_electron_phonon",
+   "label": "Phonons / electron-phonon / Eliashberg",
+   "kind": "computational",
+   "trailing": 503,
+   "preceding": 444,
+   "share_trailing": 0.0509,
+   "share_preceding": 0.0503,
+   "share_ratio": 1.012,
+   "ci95_low": 0.888,
+   "ci95_high": 1.154,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "diffraction_structure",
+   "label": "X-ray / electron diffraction & electron microscopy",
+   "kind": "experimental",
+   "trailing": 485,
+   "preceding": 407,
+   "share_trailing": 0.0491,
+   "share_preceding": 0.0461,
+   "share_ratio": 1.065,
+   "ci95_low": 0.931,
+   "ci95_high": 1.219,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "dmrg_tensor_networks",
+   "label": "DMRG / tensor networks",
+   "kind": "computational",
+   "trailing": 476,
+   "preceding": 377,
+   "share_trailing": 0.0482,
+   "share_preceding": 0.0427,
+   "share_ratio": 1.128,
+   "ci95_low": 0.983,
+   "ci95_high": 1.296,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "high_pressure_dac",
+   "label": "High pressure / diamond anvil cell",
+   "kind": "experimental",
+   "trailing": 403,
+   "preceding": 355,
+   "share_trailing": 0.0408,
+   "share_preceding": 0.0402,
+   "share_ratio": 1.015,
+   "ci95_low": 0.877,
+   "ci95_high": 1.173,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "machine_learning",
+   "label": "Machine learning / neural networks",
+   "kind": "computational",
+   "trailing": 354,
+   "preceding": 231,
+   "share_trailing": 0.0358,
+   "share_preceding": 0.0262,
+   "share_ratio": 1.37,
+   "ci95_low": 1.157,
+   "ci95_high": 1.621,
+   "ci_excludes_1": true
+  },
+  {
+   "method": "ultrafast_pump_probe",
+   "label": "Ultrafast pump-probe / time-resolved",
+   "kind": "experimental",
+   "trailing": 311,
+   "preceding": 278,
+   "share_trailing": 0.0315,
+   "share_preceding": 0.0315,
+   "share_ratio": 1.0,
+   "ci95_low": 0.848,
+   "ci95_high": 1.178,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "arpes",
+   "label": "ARPES / photoemission",
+   "kind": "experimental",
+   "trailing": 310,
+   "preceding": 263,
+   "share_trailing": 0.0314,
+   "share_preceding": 0.0298,
+   "share_ratio": 1.053,
+   "ci95_low": 0.892,
+   "ci95_high": 1.245,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "stm_sts",
+   "label": "STM / STS / QPI",
+   "kind": "experimental",
+   "trailing": 302,
+   "preceding": 261,
+   "share_trailing": 0.0306,
+   "share_preceding": 0.0296,
+   "share_ratio": 1.034,
+   "ci95_low": 0.874,
+   "ci95_high": 1.223,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "qmc",
+   "label": "Quantum Monte Carlo",
+   "kind": "computational",
+   "trailing": 277,
+   "preceding": 194,
+   "share_trailing": 0.028,
+   "share_preceding": 0.022,
+   "share_ratio": 1.276,
+   "ci95_low": 1.06,
+   "ci95_high": 1.536,
+   "ci_excludes_1": true
+  },
+  {
+   "method": "neutron_scattering",
+   "label": "Neutron scattering",
+   "kind": "experimental",
+   "trailing": 271,
+   "preceding": 241,
+   "share_trailing": 0.0274,
+   "share_preceding": 0.0273,
+   "share_ratio": 1.005,
+   "ci95_low": 0.843,
+   "ci95_high": 1.198,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "exact_diagonalization",
+   "label": "Exact diagonalization",
+   "kind": "computational",
+   "trailing": 256,
+   "preceding": 168,
+   "share_trailing": 0.0259,
+   "share_preceding": 0.019,
+   "share_ratio": 1.362,
+   "ci95_low": 1.119,
+   "ci95_high": 1.658,
+   "ci_excludes_1": true
+  },
+  {
+   "method": "dmft",
+   "label": "DMFT / DFT+DMFT / cluster DMFT",
+   "kind": "computational",
+   "trailing": 182,
+   "preceding": 157,
+   "share_trailing": 0.0184,
+   "share_preceding": 0.0178,
+   "share_ratio": 1.036,
+   "ci95_low": 0.835,
+   "ci95_high": 1.285,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "rixs_resonant_xray",
+   "label": "RIXS / resonant & soft x-ray spectroscopy",
+   "kind": "experimental",
+   "trailing": 164,
+   "preceding": 145,
+   "share_trailing": 0.0166,
+   "share_preceding": 0.0164,
+   "share_ratio": 1.011,
+   "ci95_low": 0.807,
+   "ci95_high": 1.266,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "gw_beyond_dft",
+   "label": "GW / BSE / hybrid functionals / quantum chemistry (beyond DFT)",
+   "kind": "computational",
+   "trailing": 151,
+   "preceding": 125,
+   "share_trailing": 0.0153,
+   "share_preceding": 0.0142,
+   "share_ratio": 1.08,
+   "ci95_low": 0.85,
+   "ci95_high": 1.371,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "quantum_oscillations",
+   "label": "Quantum oscillations",
+   "kind": "experimental",
+   "trailing": 110,
+   "preceding": 100,
+   "share_trailing": 0.0111,
+   "share_preceding": 0.0113,
+   "share_ratio": 0.983,
+   "ci95_low": 0.749,
+   "ci95_high": 1.291,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "nmr_nqr",
+   "label": "NMR / NQR",
+   "kind": "experimental",
+   "trailing": 97,
+   "preceding": 91,
+   "share_trailing": 0.0098,
+   "share_preceding": 0.0103,
+   "share_ratio": 0.953,
+   "ci95_low": 0.715,
+   "ci95_high": 1.27,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "nv_quantum_sensing",
+   "label": "NV-center / quantum sensing / scanning SQUID magnetometry",
+   "kind": "experimental",
+   "trailing": 93,
+   "preceding": 88,
+   "share_trailing": 0.0094,
+   "share_preceding": 0.01,
+   "share_ratio": 0.944,
+   "ci95_low": 0.705,
+   "ci95_high": 1.266,
+   "ci_excludes_1": false
+  },
+  {
+   "method": "musr",
+   "label": "muSR",
+   "kind": "experimental",
+   "trailing": 73,
+   "preceding": 85,
+   "share_trailing": 0.0074,
+   "share_preceding": 0.0096,
+   "share_ratio": 0.768,
+   "ci95_low": 0.561,
+   "ci95_high": 1.051,
+   "ci_excludes_1": false
+  }
+ ],
+ "kind_totals": {
+  "trailing": {
+   "in_scope": 9878,
+   "papers_with_experimental_tag": 3299,
+   "share_experimental": 0.334,
+   "papers_with_computational_tag": 3732,
+   "share_computational": 0.3778,
+   "papers_with_both": 972,
+   "share_both": 0.0984,
+   "papers_computational_only": 2760,
+   "share_computational_only": 0.2794,
+   "papers_no_experimental_tag": 6579,
+   "share_no_experimental_tag": 0.666,
+   "papers_no_method_tag": 3819,
+   "share_no_method_tag": 0.3866,
+   "experimental_tag_mentions": 4977,
+   "computational_tag_mentions": 5032
+  },
+  "preceding": {
+   "in_scope": 8828,
+   "papers_with_experimental_tag": 3036,
+   "share_experimental": 0.3439,
+   "papers_with_computational_tag": 3133,
+   "share_computational": 0.3549,
+   "papers_with_both": 824,
+   "share_both": 0.0933,
+   "papers_computational_only": 2309,
+   "share_computational_only": 0.2616,
+   "papers_no_experimental_tag": 5792,
+   "share_no_experimental_tag": 0.6561,
+   "papers_no_method_tag": 3483,
+   "share_no_method_tag": 0.3945,
+   "experimental_tag_mentions": 4450,
+   "computational_tag_mentions": 4100
+  },
+  "share_ratios": {
+   "papers_with_experimental_tag": {
+    "share_ratio": 0.971,
+    "ci95_low": 0.917,
+    "ci95_high": 1.028
+   },
+   "papers_with_computational_tag": {
+    "share_ratio": 1.065,
+    "ci95_low": 1.007,
+    "ci95_high": 1.125
+   },
+   "papers_no_experimental_tag": {
+    "share_ratio": 1.015,
+    "ci95_low": 0.97,
+    "ci95_high": 1.062
+   },
+   "papers_no_method_tag": {
+    "share_ratio": 0.98,
+    "ci95_low": 0.928,
+    "ci95_high": 1.034
+   },
+   "papers_computational_only": {
+    "share_ratio": 1.068,
+    "ci95_low": 1.004,
+    "ci95_high": 1.137
+   }
+  }
+ },
+ "kind_totals_v2_unrefined": {
+  "trailing": {
+   "in_scope": 9878,
+   "papers_with_experimental_tag": 4396,
+   "share_experimental": 0.445,
+   "papers_with_computational_tag": 3852,
+   "share_computational": 0.39,
+   "papers_with_both": 1545,
+   "share_both": 0.1564,
+   "papers_computational_only": 2307,
+   "share_computational_only": 0.2335,
+   "papers_no_experimental_tag": 5482,
+   "share_no_experimental_tag": 0.555,
+   "papers_no_method_tag": 3175,
+   "share_no_method_tag": 0.3214,
+   "experimental_tag_mentions": 6421,
+   "computational_tag_mentions": 5175
+  },
+  "preceding": {
+   "in_scope": 8828,
+   "papers_with_experimental_tag": 3973,
+   "share_experimental": 0.45,
+   "papers_with_computational_tag": 3236,
+   "share_computational": 0.3666,
+   "papers_with_both": 1317,
+   "share_both": 0.1492,
+   "papers_computational_only": 1919,
+   "share_computational_only": 0.2174,
+   "papers_no_experimental_tag": 4855,
+   "share_no_experimental_tag": 0.55,
+   "papers_no_method_tag": 2936,
+   "share_no_method_tag": 0.3326,
+   "experimental_tag_mentions": 5696,
+   "computational_tag_mentions": 4234
+  },
+  "share_ratios": {
+   "papers_with_experimental_tag": {
+    "share_ratio": 0.989,
+    "ci95_low": 0.939,
+    "ci95_high": 1.041
+   },
+   "papers_with_computational_tag": {
+    "share_ratio": 1.064,
+    "ci95_low": 1.007,
+    "ci95_high": 1.124
+   },
+   "papers_no_experimental_tag": {
+    "share_ratio": 1.009,
+    "ci95_low": 0.962,
+    "ci95_high": 1.059
+   },
+   "papers_no_method_tag": {
+    "share_ratio": 0.966,
+    "ci95_low": 0.912,
+    "ci95_high": 1.024
+   },
+   "papers_computational_only": {
+    "share_ratio": 1.074,
+    "ci95_low": 1.005,
+    "ci95_high": 1.149
+   }
+  }
+ },
+ "top_methods_per_cluster_trailing": {
+  "nickelate_sc": {
+   "label": "Nickelates (bilayer/trilayer & infinite-layer) and nickelate superconductivity",
+   "papers": 222,
+   "share_no_experimental_tag": 0.333,
+   "top": [
+    {
+     "method": "thin_film_growth_mbe",
+     "count": 62,
+     "share_of_cluster": 0.279
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 51,
+     "share_of_cluster": 0.23
+    },
+    {
+     "method": "high_pressure_dac",
+     "count": 39,
+     "share_of_cluster": 0.176
+    }
+   ]
+  },
+  "cuprate_sc": {
+   "label": "Cuprate superconductivity",
+   "papers": 240,
+   "share_no_experimental_tag": 0.342,
+   "top": [
+    {
+     "method": "magnetotransport_hall",
+     "count": 46,
+     "share_of_cluster": 0.192
+    },
+    {
+     "method": "diffraction_structure",
+     "count": 45,
+     "share_of_cluster": 0.188
+    },
+    {
+     "method": "thin_film_growth_mbe",
+     "count": 34,
+     "share_of_cluster": 0.142
+    }
+   ]
+  },
+  "iron_based_sc": {
+   "label": "Iron-based superconductivity (pnictides & chalcogenides)",
+   "papers": 123,
+   "share_no_experimental_tag": 0.268,
+   "top": [
+    {
+     "method": "magnetotransport_hall",
+     "count": 33,
+     "share_of_cluster": 0.268
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 29,
+     "share_of_cluster": 0.236
+    },
+    {
+     "method": "thin_film_growth_mbe",
+     "count": 23,
+     "share_of_cluster": 0.187
+    }
+   ]
+  },
+  "hydride_high_pressure_sc": {
+   "label": "Hydride / high-pressure superconductivity (incl. room-temperature SC claims)",
+   "papers": 61,
+   "share_no_experimental_tag": 0.623,
+   "top": [
+    {
+     "method": "phonon_electron_phonon",
+     "count": 29,
+     "share_of_cluster": 0.475
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 25,
+     "share_of_cluster": 0.41
+    },
+    {
+     "method": "high_pressure_dac",
+     "count": 19,
+     "share_of_cluster": 0.311
+    }
+   ]
+  },
+  "kagome": {
+   "label": "Kagome metals & kagome materials",
+   "papers": 310,
+   "share_no_experimental_tag": 0.448,
+   "top": [
+    {
+     "method": "dft_first_principles",
+     "count": 85,
+     "share_of_cluster": 0.274
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 66,
+     "share_of_cluster": 0.213
+    },
+    {
+     "method": "thermodynamics_specific_heat",
+     "count": 46,
+     "share_of_cluster": 0.148
+    }
+   ]
+  },
+  "altermagnetism": {
+   "label": "Altermagnetism, p-wave/unconventional magnets & non-relativistic spin splitting",
+   "papers": 678,
+   "share_no_experimental_tag": 0.68,
+   "top": [
+    {
+     "method": "dft_first_principles",
+     "count": 236,
+     "share_of_cluster": 0.348
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 91,
+     "share_of_cluster": 0.134
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 89,
+     "share_of_cluster": 0.131
+    }
+   ]
+  },
+  "fractional_qah_chern": {
+   "label": "Fractional / quantum anomalous Hall & Chern insulators (incl. quantum Hall, Landau levels)",
+   "papers": 379,
+   "share_no_experimental_tag": 0.699,
+   "top": [
+    {
+     "method": "magnetotransport_hall",
+     "count": 93,
+     "share_of_cluster": 0.245
+    },
+    {
+     "method": "exact_diagonalization",
+     "count": 35,
+     "share_of_cluster": 0.092
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 32,
+     "share_of_cluster": 0.084
+    }
+   ]
+  },
+  "rhombohedral_multilayer_graphene": {
+   "label": "Rhombohedral / multilayer (untwisted) graphene",
+   "papers": 102,
+   "share_no_experimental_tag": 0.559,
+   "top": [
+    {
+     "method": "magnetotransport_hall",
+     "count": 31,
+     "share_of_cluster": 0.304
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 17,
+     "share_of_cluster": 0.167
+    },
+    {
+     "method": "hartree_fock_mean_field",
+     "count": 14,
+     "share_of_cluster": 0.137
+    }
+   ]
+  },
+  "moire_twisted_2d": {
+   "label": "Moire & twisted 2D systems (TBG, twisted TMDs, moire heterostructures)",
+   "papers": 489,
+   "share_no_experimental_tag": 0.667,
+   "top": [
+    {
+     "method": "tight_binding_continuum",
+     "count": 80,
+     "share_of_cluster": 0.164
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 79,
+     "share_of_cluster": 0.162
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 70,
+     "share_of_cluster": 0.143
+    }
+   ]
+  },
+  "unconventional_topological_sc": {
+   "label": "Unconventional & topological superconductivity, Majorana, SC diode/Josephson devices",
+   "papers": 945,
+   "share_no_experimental_tag": 0.717,
+   "top": [
+    {
+     "method": "magnetotransport_hall",
+     "count": 137,
+     "share_of_cluster": 0.145
+    },
+    {
+     "method": "hartree_fock_mean_field",
+     "count": 112,
+     "share_of_cluster": 0.119
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 71,
+     "share_of_cluster": 0.075
+    }
+   ]
+  },
+  "spin_liquid_frustrated": {
+   "label": "Quantum spin liquids & frustrated magnetism (Kitaev, triangular, pyrochlore)",
+   "papers": 484,
+   "share_no_experimental_tag": 0.599,
+   "top": [
+    {
+     "method": "thermodynamics_specific_heat",
+     "count": 90,
+     "share_of_cluster": 0.186
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 74,
+     "share_of_cluster": 0.153
+    },
+    {
+     "method": "dmrg_tensor_networks",
+     "count": 57,
+     "share_of_cluster": 0.118
+    }
+   ]
+  },
+  "heavy_fermion_kondo_qcp": {
+   "label": "Heavy fermions, Kondo physics & metallic quantum criticality",
+   "papers": 274,
+   "share_no_experimental_tag": 0.507,
+   "top": [
+    {
+     "method": "dft_first_principles",
+     "count": 46,
+     "share_of_cluster": 0.168
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 37,
+     "share_of_cluster": 0.135
+    },
+    {
+     "method": "thermodynamics_specific_heat",
+     "count": 35,
+     "share_of_cluster": 0.128
+    }
+   ]
+  },
+  "vdw_magnets_topological_magnetism": {
+   "label": "2D/van der Waals magnets, skyrmions, topological magnetism, multiferroics & spintronics/magnonics",
+   "papers": 1168,
+   "share_no_experimental_tag": 0.578,
+   "top": [
+    {
+     "method": "dft_first_principles",
+     "count": 289,
+     "share_of_cluster": 0.247
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 175,
+     "share_of_cluster": 0.15
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 116,
+     "share_of_cluster": 0.099
+    }
+   ]
+  },
+  "cdw_nematic_excitonic": {
+   "label": "Charge/spin density waves, nematicity, Wigner crystals & excitonic insulators/excitons",
+   "papers": 744,
+   "share_no_experimental_tag": 0.504,
+   "top": [
+    {
+     "method": "dft_first_principles",
+     "count": 138,
+     "share_of_cluster": 0.185
+    },
+    {
+     "method": "optical_raman_ir",
+     "count": 96,
+     "share_of_cluster": 0.129
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 71,
+     "share_of_cluster": 0.095
+    }
+   ]
+  },
+  "topological_insulators_semimetals": {
+   "label": "Topological insulators & semimetals (Weyl/Dirac/nodal), band topology incl. non-Hermitian",
+   "papers": 1149,
+   "share_no_experimental_tag": 0.674,
+   "top": [
+    {
+     "method": "dft_first_principles",
+     "count": 230,
+     "share_of_cluster": 0.2
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 197,
+     "share_of_cluster": 0.171
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 148,
+     "share_of_cluster": 0.129
+    }
+   ]
+  },
+  "flat_band_quantum_geometry": {
+   "label": "Flat bands & quantum geometry (quantum metric, Berry curvature; anomalous, nonlinear & orbital Hall responses)",
+   "papers": 852,
+   "share_no_experimental_tag": 0.624,
+   "top": [
+    {
+     "method": "magnetotransport_hall",
+     "count": 217,
+     "share_of_cluster": 0.255
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 169,
+     "share_of_cluster": 0.198
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 134,
+     "share_of_cluster": 0.157
+    }
+   ]
+  },
+  "mott_hubbard_strange_metal": {
+   "label": "Mott/Hubbard physics, strange metals & correlated oxides",
+   "papers": 976,
+   "share_no_experimental_tag": 0.713,
+   "top": [
+    {
+     "method": "dft_first_principles",
+     "count": 161,
+     "share_of_cluster": 0.165
+    },
+    {
+     "method": "dmft",
+     "count": 152,
+     "share_of_cluster": 0.156
+    },
+    {
+     "method": "hartree_fock_mean_field",
+     "count": 106,
+     "share_of_cluster": 0.109
+    }
+   ]
+  },
+  "ultrafast_floquet_noneq": {
+   "label": "Ultrafast, Floquet & nonequilibrium quantum materials",
+   "papers": 433,
+   "share_no_experimental_tag": 0.439,
+   "top": [
+    {
+     "method": "ultrafast_pump_probe",
+     "count": 204,
+     "share_of_cluster": 0.471
+    },
+    {
+     "method": "optical_raman_ir",
+     "count": 74,
+     "share_of_cluster": 0.171
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 51,
+     "share_of_cluster": 0.118
+    }
+   ]
+  },
+  "ml_ai": {
+   "label": "Machine learning / AI for quantum materials",
+   "papers": 229,
+   "share_no_experimental_tag": 0.825,
+   "top": [
+    {
+     "method": "machine_learning",
+     "count": 223,
+     "share_of_cluster": 0.974
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 66,
+     "share_of_cluster": 0.288
+    },
+    {
+     "method": "dmrg_tensor_networks",
+     "count": 24,
+     "share_of_cluster": 0.105
+    }
+   ]
+  },
+  "quantum_magnetism_ferroic_order": {
+   "label": "Quantum & low-dimensional magnetism and ferroic order (antiferro/ferrimagnets, spin-chain/ladder/dimer compounds, spin-orbit-entangled & multipolar magnets, ferroelectric/ferroaxial order)",
+   "papers": 471,
+   "share_no_experimental_tag": 0.461,
+   "top": [
+    {
+     "method": "thermodynamics_specific_heat",
+     "count": 98,
+     "share_of_cluster": 0.208
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 85,
+     "share_of_cluster": 0.18
+    },
+    {
+     "method": "neutron_scattering",
+     "count": 64,
+     "share_of_cluster": 0.136
+    }
+   ]
+  },
+  "quantum_many_body_theory": {
+   "label": "Quantum many-body theory & generalized symmetries (tensor networks, spin-chain & lattice-gauge models, non-invertible/higher-form symmetries, SPT/topological order & anyons, scars, entanglement)",
+   "papers": 1181,
+   "share_no_experimental_tag": 0.967,
+   "top": [
+    {
+     "method": "dmrg_tensor_networks",
+     "count": 222,
+     "share_of_cluster": 0.188
+    },
+    {
+     "method": "qmc",
+     "count": 94,
+     "share_of_cluster": 0.08
+    },
+    {
+     "method": "tight_binding_continuum",
+     "count": 82,
+     "share_of_cluster": 0.069
+    }
+   ]
+  },
+  "other_superconductivity": {
+   "label": "Other superconductivity & superfluidity (conventional/phonon-mediated & new superconductors, vortices, SC films & devices incl. qubit/resonator materials, applied SC, superfluid He)",
+   "papers": 572,
+   "share_no_experimental_tag": 0.593,
+   "top": [
+    {
+     "method": "thin_film_growth_mbe",
+     "count": 105,
+     "share_of_cluster": 0.184
+    },
+    {
+     "method": "magnetotransport_hall",
+     "count": 78,
+     "share_of_cluster": 0.136
+    },
+    {
+     "method": "dft_first_principles",
+     "count": 72,
+     "share_of_cluster": 0.126
+    }
+   ]
+  }
+ },
+ "co_occurrences": [
+  {
+   "a": "arpes",
+   "b": "dft_first_principles",
+   "trailing": {
+    "n_a": 310,
+    "n_b": 1490,
+    "n_both": 110,
+    "share_of_a_with_b": 0.355,
+    "lift": 2.35
+   },
+   "preceding": {
+    "n_a": 263,
+    "n_b": 1242,
+    "n_both": 104,
+    "share_of_a_with_b": 0.395,
+    "lift": 2.81
+   }
+  },
+  {
+   "a": "stm_sts",
+   "b": "dft_first_principles",
+   "trailing": {
+    "n_a": 258,
+    "n_b": 1490,
+    "n_both": 45,
+    "share_of_a_with_b": 0.174,
+    "lift": 1.16
+   },
+   "preceding": {
+    "n_a": 215,
+    "n_b": 1242,
+    "n_both": 47,
+    "share_of_a_with_b": 0.219,
+    "lift": 1.55
+   }
+  },
+  {
+   "a": "dft_first_principles",
+   "b": "dmft",
+   "trailing": {
+    "n_a": 1490,
+    "n_b": 182,
+    "n_both": 84,
+    "share_of_a_with_b": 0.056,
+    "lift": 3.06
+   },
+   "preceding": {
+    "n_a": 1242,
+    "n_b": 157,
+    "n_both": 62,
+    "share_of_a_with_b": 0.05,
+    "lift": 2.81
+   }
+  },
+  {
+   "a": "machine_learning",
+   "b": "dft_first_principles",
+   "trailing": {
+    "n_a": 354,
+    "n_b": 1490,
+    "n_both": 94,
+    "share_of_a_with_b": 0.266,
+    "lift": 1.76
+   },
+   "preceding": {
+    "n_a": 231,
+    "n_b": 1242,
+    "n_both": 54,
+    "share_of_a_with_b": 0.234,
+    "lift": 1.66
+   }
+  },
+  {
+   "a": "magnetotransport_hall",
+   "b": "ANY_COMPUTATIONAL",
+   "trailing": {
+    "n_a": 1098,
+    "n_b": 3732,
+    "n_both": 245,
+    "share_of_a_with_b": 0.223,
+    "lift": 0.59
+   },
+   "preceding": {
+    "n_a": 1051,
+    "n_b": 3133,
+    "n_both": 178,
+    "share_of_a_with_b": 0.169,
+    "lift": 0.48
+   }
+  }
+ ],
+ "exemplar_methods": {
+  "top_experimental": [
+   "magnetotransport_hall",
+   "thin_film_growth_mbe",
+   "optical_raman_ir",
+   "thermodynamics_specific_heat"
+  ],
+  "top_computational": [
+   "dft_first_principles",
+   "tight_binding_continuum",
+   "hartree_fock_mean_field",
+   "dmrg_tensor_networks"
+  ],
+  "fastest_growing": "machine_learning"
+ },
+ "exemplar_candidates": {
+  "magnetotransport_hall": [
+   {
+    "id": "arXiv:2603.06486",
+    "title": "Linearly Polarized Light-Induced Anomalous Hall Effect and Topological Phase Transitions in an Altermagnetic Topological Insulator"
+   },
+   {
+    "id": "arXiv:2601.02913",
+    "title": "Strain Engineering of Intrinsic Anomalous Hall and Nernst Effects in Altermagnetic MnTe at Realistic Doping Levels"
+   },
+   {
+    "id": "arXiv:2604.26480",
+    "title": "Large magnetoresistance and weak-antilocalization in the nodal-line semimetal VP2"
+   },
+   {
+    "id": "arXiv:2511.19054",
+    "title": "Depairing critical current density and the vortex-free state in FeSe nanobridges"
+   },
+   {
+    "id": "arXiv:2510.02661",
+    "title": "Quantum geometric map of magnetotransport"
+   }
+  ],
+  "thin_film_growth_mbe": [
+   {
+    "id": "arXiv:2512.06307",
+    "title": "Scale-robust Low Resistance Transport in Atomic Layer Deposited Topological Semimetal Wafers on Amorphous Substrate"
+   },
+   {
+    "id": "arXiv:2510.12344",
+    "title": "Two-Dimensional Altermagnetism in Epitaxial CrSb Ultrathin Films"
+   },
+   {
+    "id": "arXiv:2605.22932",
+    "title": "Thickness-Dependent Spintronic Terahertz Emission in MBE-Grown PtTe2: From Semiconductor to Type-II Dirac Semimetal"
+   },
+   {
+    "id": "arXiv:2607.05890",
+    "title": "Microscopic theory of the lower critical field in superconducting thin-film strips"
+   },
+   {
+    "id": "arXiv:2511.13268",
+    "title": "A tractable framework for phase transitions in phase-fluctuating disordered 2D superconductors: applications to bilayer MoS2 and disordered InOx thin films"
+   }
+  ],
+  "optical_raman_ir": [
+   {
+    "id": "arXiv:2511.15452",
+    "title": "Spinon excitations and spin correlations in the one-dimensional quantum magnet β-VOSO4 probed by Raman spectroscopy"
+   },
+   {
+    "id": "arXiv:2609.03519",
+    "title": "Non-Resonant Impulsively Stimulated Raman Scattering by a Terahertz Field: a Case Study of 1T-TaS2"
+   },
+   {
+    "id": "arXiv:2605.28987",
+    "title": "Quantum Light Nano-Imaging"
+   },
+   {
+    "id": "arXiv:2510.26010",
+    "title": "High Resolution Polar Kerr Effect Studies of Cs3Sb5 and ScV6Sn6 Below the Charge Order Transition"
+   },
+   {
+    "id": "arXiv:2606.09127",
+    "title": "Symmetry-Breaking Induced Spin Transport and Magneto-Optical Regulation in 2D Altermagnet Ru2MoSe4"
+   }
+  ],
+  "thermodynamics_specific_heat": [
+   {
+    "id": "arXiv:2601.05522",
+    "title": "Unusually high phonon thermal conductivity in the Weyl semimetal TaP: A comparative study with TaAs"
+   },
+   {
+    "id": "arXiv:2606.10300",
+    "title": "Vortex pinning of Ba0.62K0.38BiO3 investigated by magneto-optical Kerr-effect and magnetization measurements"
+   },
+   {
+    "id": "arXiv:2512.18724",
+    "title": "Spiral states, first-order transitions and specific heat multipeak phenomenon in J1-J2-J3 Ising model: A Wang-Landau algorithm study"
+   },
+   {
+    "id": "arXiv:2608.28546",
+    "title": "Switchable chiral antiferromagnetism through nonlinear magnetic susceptibility"
+   },
+   {
+    "id": "arXiv:2607.06332",
+    "title": "Anomalously high quasiparticle thermal conductivity in the underdoped cuprate superconductor HgBa2CuO4+δ"
+   }
+  ],
+  "dft_first_principles": [
+   {
+    "id": "arXiv:2601.16851",
+    "title": "Twisted bilayer graphene from first-principles: structural and electronic properties"
+   },
+   {
+    "id": "arXiv:2511.13346",
+    "title": "Projection-based DMRG-in-DFT embedding corrected by non-additive exchange-correlation"
+   },
+   {
+    "id": "arXiv:2605.12067",
+    "title": "Discovery of High-Voltage Magnesium-Ion Cathodes using Machine Learning and First-Principles Calculations"
+   },
+   {
+    "id": "arXiv:2609.05082",
+    "title": "A locally ab initio computational framework for arbitrary incommensurate materials interfaces"
+   },
+   {
+    "id": "arXiv:2602.07897",
+    "title": "CDW Gap Collapse and Weyl State Restoration in Ta2Se8I via Coherent Phonons: A First-Principles Study"
+   }
+  ],
+  "tight_binding_continuum": [
+   {
+    "id": "arXiv:2607.20624",
+    "title": "Ideal Bands in Tight-Binding Models"
+   },
+   {
+    "id": "arXiv:2604.21574",
+    "title": "Generalized stochastic spin-wave theory for open quantum spin systems"
+   },
+   {
+    "id": "arXiv:2603.03455",
+    "title": "Mixed-state Phases from Higher-order SSPTs with Kramers-Wannier Symmetry"
+   },
+   {
+    "id": "arXiv:2512.12104",
+    "title": "Self-consistent renormalized spin-wave theory of magnetic and topological transitions in two-dimensional honeycomb ferromagnets"
+   },
+   {
+    "id": "arXiv:2512.11664",
+    "title": "X-ray magnetic circular dichroism of altermagnet α-Fe2O3 based on multiplet ligand-field theory using Wannier orbitals"
+   }
+  ],
+  "hartree_fock_mean_field": [
+   {
+    "id": "arXiv:2511.05786",
+    "title": "Dual holography as functional renormalization group"
+   },
+   {
+    "id": "arXiv:2602.22837",
+    "title": "Surface-localized topological superconductivity in nodal-loop materials: BdG analysis"
+   },
+   {
+    "id": "arXiv:2510.04132",
+    "title": "Ground state and excitations of quasiperiodic 1D narrow-band moiré systems: a mean field approach"
+   },
+   {
+    "id": "arXiv:2606.05822",
+    "title": "Study on the validity of IPT+parquet method as an impurity solver in DMFT focusing on orbital fluctuations"
+   },
+   {
+    "id": "arXiv:2511.17697",
+    "title": "Functional renormalization with interaction flows: A single-boson exchange perspective and application to electron-phonon systems"
+   }
+  ],
+  "dmrg_tensor_networks": [
+   {
+    "id": "arXiv:2512.20215",
+    "title": "Tree tensor network states represent low-energy states faithfully"
+   },
+   {
+    "id": "arXiv:2512.06768",
+    "title": "Real-Time Dynamics in Two Dimensions with Tensor Network States via Time-Dependent Variational Monte Carlo"
+   },
+   {
+    "id": "arXiv:2605.12907",
+    "title": "Grassmann tensor networks"
+   },
+   {
+    "id": "arXiv:2603.18825",
+    "title": "Quantum Advantage: a Tensor Network Perspective"
+   },
+   {
+    "id": "arXiv:2510.04795",
+    "title": "Mixed-precision ab initio tensor network state methods adapted for NVIDIA Blackwell technology via emulated FP64 arithmetic"
+   }
+  ],
+  "machine_learning": [
+   {
+    "id": "arXiv:2603.05699",
+    "title": "Active Learning for Tractable and Reproducible Pulsed Laser Deposition"
+   },
+   {
+    "id": "arXiv:2605.28929",
+    "title": "Improving CFT Operators Using Machine Learning"
+   },
+   {
+    "id": "arXiv:2510.02051",
+    "title": "Improving neural network performance for solving quantum sign structure"
+   },
+   {
+    "id": "arXiv:2602.15178",
+    "title": "Deciphering Majorana Zero Modes in Topological Superconductor FeTe0.55Se0.45 with Machine-Learning-Assisted Spectral Deconvolution"
+   },
+   {
+    "id": "arXiv:2603.14425",
+    "title": "Disentangling Tensor Network States with Deep Neural Network"
+   }
+  ]
+ }
+}

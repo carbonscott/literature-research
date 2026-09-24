@@ -1,0 +1,1703 @@
+{
+ "servers": {
+  "chemrxiv": {
+   "records_in_file": 29,
+   "records_trailing": 14,
+   "records_preceding": 12,
+   "records_outside_windows": 3,
+   "yield": {
+    "api_total": 4004,
+    "fetched": 4004,
+    "kept_hits": 37,
+    "unique_records": 29,
+    "kept_per_fetched": 0.0092,
+    "truncated_terms": [],
+    "top_terms": [
+     [
+      "moire",
+      12,
+      12
+     ],
+     [
+      "superconductivity",
+      5,
+      5
+     ],
+     [
+      "twisted bilayer graphene",
+      3,
+      163
+     ],
+     [
+      "quantum material",
+      3,
+      683
+     ],
+     [
+      "strongly correlated",
+      3,
+      48
+     ],
+     [
+      "flat band",
+      3,
+      58
+     ]
+    ],
+    "zero_yield_terms": [
+     "topological semimetal",
+     "Weyl semimetal",
+     "quantum spin liquid",
+     "altermagnet",
+     "kagome",
+     "quantum anomalous Hall",
+     "Majorana",
+     "heavy fermion",
+     "charge density wave",
+     "van der Waals magnet",
+     "nickelate",
+     "cuprate",
+     "excitonic insulator",
+     "Mott insulator"
+    ]
+   },
+   "arxiv_overlap": {
+    "n": 26,
+    "declared_arxiv_id": 0,
+    "declared_arxiv_share": 0.0,
+    "declared_found_in_arxiv_corpus": 0,
+    "title_exact": 1,
+    "title_near": 0,
+    "title_dup_share": 0.0385,
+    "declared_and_title": 0,
+    "on_arxiv_union": 1,
+    "arxiv_dup_share": 0.0385,
+    "near_match_examples": []
+   },
+   "publication_linkage": {
+    "linked": 10,
+    "share": 0.3846,
+    "method": "Crossref relation is-preprint-of (extra.is_preprint_of)"
+   },
+   "date_caveats": {
+    "records_with_multiple_versions": 4,
+    "note": "date = posted date of v1 (Crossref posted-content); window filter used posted date."
+   },
+   "monthly_counts": {
+    "2024-10": 1,
+    "2024-11": 1,
+    "2025-01": 1,
+    "2025-03": 3,
+    "2025-05": 1,
+    "2025-06": 1,
+    "2025-07": 1,
+    "2025-09": 3,
+    "2025-10": 1,
+    "2025-11": 1,
+    "2026-01": 1,
+    "2026-02": 2,
+    "2026-03": 1,
+    "2026-04": 1,
+    "2026-05": 1,
+    "2026-07": 3,
+    "2026-08": 1,
+    "2026-09": 2
+   },
+   "top_first_authors": [
+    [
+     "Ujjala Dey",
+     2
+    ],
+    [
+     "Jiyeon Kim",
+     1
+    ],
+    [
+     "Rina Mishima",
+     1
+    ],
+    [
+     "Buddhika Gedara",
+     1
+    ],
+    [
+     "Benjamin Kaufold",
+     1
+    ]
+   ],
+   "arxiv_lead_days_for_title_matches": {
+    "n": 1,
+    "median_days": 1,
+    "share_arxiv_first": 1.0,
+    "min": 1,
+    "max": 1
+   },
+   "arxiv_dup_share_by_quarter": {
+    "2024Q4": {
+     "n": 2,
+     "dup_share": 0.5
+    },
+    "2025Q1": {
+     "n": 4,
+     "dup_share": 0.0
+    },
+    "2025Q2": {
+     "n": 2,
+     "dup_share": 0.0
+    },
+    "2025Q3": {
+     "n": 4,
+     "dup_share": 0.0
+    },
+    "2025Q4": {
+     "n": 2,
+     "dup_share": 0.0
+    },
+    "2026Q1": {
+     "n": 4,
+     "dup_share": 0.0
+    },
+    "2026Q2": {
+     "n": 2,
+     "dup_share": 0.0
+    },
+    "2026Q3": {
+     "n": 6,
+     "dup_share": 0.0
+    }
+   },
+   "arxiv_dup_share_late_dated": {
+    "cutoff": "2026-01-01",
+    "n": 12,
+    "dup_share": 0.0
+   },
+   "audit": {
+    "n": 25,
+    "counts": {
+     "on_topic_research": 10,
+     "off_topic": 13,
+     "fringe_or_pseudoscience": 1,
+     "duplicate_of_arxiv": 1,
+     "dataset_or_report": 0
+    },
+    "rates": {
+     "on_topic_research": 0.4,
+     "off_topic": 0.52,
+     "fringe_or_pseudoscience": 0.04,
+     "duplicate_of_arxiv": 0.04,
+     "dataset_or_report": 0.0
+    },
+    "on_topic_content_rate_incl_duplicates": 0.44,
+    "on_topic_rate_among_non_duplicates": 0.4167,
+    "interval_95_on_topic_non_dup": [
+     0.245,
+     0.612
+    ]
+   },
+   "unique_on_topic_estimate_both_windows": {
+    "point": 10.4,
+    "range_95": [
+     6.1,
+     15.3
+    ]
+   },
+   "unique_on_topic_estimate_trailing": {
+    "point": 5.6,
+    "range_95": [
+     3.3,
+     8.2
+    ]
+   },
+   "unique_on_topic_estimate_both_windows_late_dup_share": {
+    "point": 10.8,
+    "range_95": [
+     6.4,
+     15.9
+    ]
+   }
+  },
+  "researchsquare": {
+   "records_in_file": 197,
+   "records_trailing": 109,
+   "records_preceding": 88,
+   "records_outside_windows": 0,
+   "yield": {
+    "api_total": 8261,
+    "fetched": 8261,
+    "kept_hits": 216,
+    "unique_records": 197,
+    "kept_per_fetched": 0.0261,
+    "truncated_terms": [],
+    "top_terms": [
+     [
+      "superconductivity",
+      49,
+      49
+     ],
+     [
+      "moire",
+      22,
+      24
+     ],
+     [
+      "topological insulator",
+      18,
+      242
+     ],
+     [
+      "quantum material",
+      17,
+      1715
+     ],
+     [
+      "Weyl semimetal",
+      14,
+      29
+     ],
+     [
+      "kagome",
+      12,
+      12
+     ]
+    ],
+    "zero_yield_terms": []
+   },
+   "arxiv_overlap": {
+    "n": 197,
+    "declared_arxiv_id": 0,
+    "declared_arxiv_share": 0.0,
+    "declared_found_in_arxiv_corpus": 0,
+    "title_exact": 46,
+    "title_near": 4,
+    "title_dup_share": 0.2538,
+    "declared_and_title": 0,
+    "on_arxiv_union": 50,
+    "arxiv_dup_share": 0.2538,
+    "near_match_examples": [
+     {
+      "id": "doi:10.21203/rs.3.rs-6070455/v1",
+      "arxiv": "arXiv:2502.17892",
+      "score": 0.833
+     },
+     {
+      "id": "doi:10.21203/rs.3.rs-6521355/v1",
+      "arxiv": "arXiv:2505.03713",
+      "score": 0.929
+     },
+     {
+      "id": "doi:10.21203/rs.3.rs-6712797/v1",
+      "arxiv": "arXiv:2503.06507",
+      "score": 0.8
+     },
+     {
+      "id": "doi:10.21203/rs.3.rs-9889123/v1",
+      "arxiv": "arXiv:2505.12639",
+      "score": 0.857
+     }
+    ]
+   },
+   "publication_linkage": {
+    "linked": 58,
+    "share": 0.2944,
+    "method": "Crossref relation is-preprint-of (extra.is_preprint_of)"
+   },
+   "date_caveats": {
+    "records_with_multiple_versions": 2,
+    "note": "date = posted date of v1 (Crossref posted-content); window filter used posted date."
+   },
+   "monthly_counts": {
+    "2024-09": 1,
+    "2024-10": 8,
+    "2024-11": 13,
+    "2024-12": 6,
+    "2025-01": 5,
+    "2025-02": 5,
+    "2025-03": 3,
+    "2025-04": 8,
+    "2025-05": 6,
+    "2025-06": 11,
+    "2025-07": 5,
+    "2025-08": 7,
+    "2025-09": 15,
+    "2025-10": 9,
+    "2025-11": 8,
+    "2025-12": 3,
+    "2026-01": 10,
+    "2026-02": 6,
+    "2026-03": 5,
+    "2026-04": 10,
+    "2026-05": 11,
+    "2026-06": 14,
+    "2026-07": 8,
+    "2026-08": 14,
+    "2026-09": 6
+   },
+   "top_first_authors": [
+    [
+     "Satish Prajapati",
+     4
+    ],
+    [
+     "Wojciech Kempiński",
+     2
+    ],
+    [
+     "Lili Wang",
+     2
+    ],
+    [
+     "Yang Zhang",
+     2
+    ],
+    [
+     "Fan Yang",
+     2
+    ]
+   ],
+   "arxiv_lead_days_for_title_matches": {
+    "n": 50,
+    "median_days": 35,
+    "share_arxiv_first": 0.92,
+    "min": -182,
+    "max": 418
+   },
+   "arxiv_dup_share_by_quarter": {
+    "2024Q3": {
+     "n": 1,
+     "dup_share": 0.0
+    },
+    "2024Q4": {
+     "n": 27,
+     "dup_share": 0.1111
+    },
+    "2025Q1": {
+     "n": 13,
+     "dup_share": 0.4615
+    },
+    "2025Q2": {
+     "n": 25,
+     "dup_share": 0.44
+    },
+    "2025Q3": {
+     "n": 27,
+     "dup_share": 0.2963
+    },
+    "2025Q4": {
+     "n": 20,
+     "dup_share": 0.25
+    },
+    "2026Q1": {
+     "n": 21,
+     "dup_share": 0.1905
+    },
+    "2026Q2": {
+     "n": 35,
+     "dup_share": 0.2286
+    },
+    "2026Q3": {
+     "n": 28,
+     "dup_share": 0.1786
+    }
+   },
+   "arxiv_dup_share_late_dated": {
+    "cutoff": "2026-01-01",
+    "n": 84,
+    "dup_share": 0.2024
+   },
+   "audit": {
+    "n": 25,
+    "counts": {
+     "on_topic_research": 12,
+     "off_topic": 2,
+     "fringe_or_pseudoscience": 2,
+     "duplicate_of_arxiv": 9,
+     "dataset_or_report": 0
+    },
+    "rates": {
+     "on_topic_research": 0.48,
+     "off_topic": 0.08,
+     "fringe_or_pseudoscience": 0.08,
+     "duplicate_of_arxiv": 0.36,
+     "dataset_or_report": 0.0
+    },
+    "on_topic_content_rate_incl_duplicates": 0.84,
+    "on_topic_rate_among_non_duplicates": 0.75,
+    "interval_95_on_topic_non_dup": [
+     0.505,
+     0.898
+    ]
+   },
+   "unique_on_topic_estimate_both_windows": {
+    "point": 110.3,
+    "range_95": [
+     74.2,
+     132.0
+    ]
+   },
+   "unique_on_topic_estimate_trailing": {
+    "point": 61.0,
+    "range_95": [
+     41.1,
+     73.0
+    ]
+   },
+   "unique_on_topic_estimate_both_windows_late_dup_share": {
+    "point": 117.8,
+    "range_95": [
+     79.3,
+     141.1
+    ]
+   }
+  },
+  "preprints_org": {
+   "records_in_file": 57,
+   "records_trailing": 25,
+   "records_preceding": 30,
+   "records_outside_windows": 2,
+   "yield": {
+    "api_total": 5444,
+    "fetched": 5444,
+    "kept_hits": 65,
+    "unique_records": 57,
+    "kept_per_fetched": 0.0119,
+    "truncated_terms": [],
+    "top_terms": [
+     [
+      "superconductivity",
+      22,
+      22
+     ],
+     [
+      "superconductor",
+      8,
+      8
+     ],
+     [
+      "topological insulator",
+      7,
+      139
+     ],
+     [
+      "moire",
+      5,
+      5
+     ],
+     [
+      "Majorana",
+      5,
+      5
+     ],
+     [
+      "strongly correlated",
+      3,
+      45
+     ]
+    ],
+    "zero_yield_terms": [
+     "topological semimetal",
+     "Weyl semimetal",
+     "kagome",
+     "heavy fermion",
+     "excitonic insulator",
+     "flat band",
+     "Mott insulator"
+    ]
+   },
+   "arxiv_overlap": {
+    "n": 55,
+    "declared_arxiv_id": 2,
+    "declared_arxiv_share": 0.0364,
+    "declared_found_in_arxiv_corpus": 1,
+    "title_exact": 1,
+    "title_near": 0,
+    "title_dup_share": 0.0182,
+    "declared_and_title": 0,
+    "on_arxiv_union": 3,
+    "arxiv_dup_share": 0.0545,
+    "near_match_examples": []
+   },
+   "publication_linkage": {
+    "linked": 28,
+    "share": 0.5091,
+    "method": "Crossref relation is-preprint-of (extra.is_preprint_of)"
+   },
+   "date_caveats": {
+    "records_with_multiple_versions": 3,
+    "note": "date = posted date of v1 (Crossref posted-content); window filter used posted date."
+   },
+   "monthly_counts": {
+    "2024-10": 4,
+    "2024-11": 4,
+    "2024-12": 1,
+    "2025-02": 3,
+    "2025-03": 2,
+    "2025-04": 3,
+    "2025-05": 1,
+    "2025-06": 3,
+    "2025-07": 4,
+    "2025-08": 2,
+    "2025-09": 4,
+    "2025-10": 4,
+    "2025-11": 2,
+    "2025-12": 6,
+    "2026-01": 1,
+    "2026-02": 3,
+    "2026-04": 2,
+    "2026-05": 1,
+    "2026-06": 1,
+    "2026-08": 1,
+    "2026-09": 3
+   },
+   "top_first_authors": [
+    [
+     "Vladimir Saveljev",
+     4
+    ],
+    [
+     "Evgeny Talantsev",
+     2
+    ],
+    [
+     "Satoru Hayami",
+     2
+    ],
+    [
+     "Giovanni Mirarchi",
+     1
+    ],
+    [
+     "Chuanzhao Zhang",
+     1
+    ]
+   ],
+   "arxiv_lead_days_for_title_matches": {
+    "n": 1,
+    "median_days": -221,
+    "share_arxiv_first": 0.0,
+    "min": -221,
+    "max": -221
+   },
+   "arxiv_dup_share_by_quarter": {
+    "2024Q4": {
+     "n": 9,
+     "dup_share": 0.0
+    },
+    "2025Q1": {
+     "n": 5,
+     "dup_share": 0.2
+    },
+    "2025Q2": {
+     "n": 7,
+     "dup_share": 0.0
+    },
+    "2025Q3": {
+     "n": 10,
+     "dup_share": 0.0
+    },
+    "2025Q4": {
+     "n": 12,
+     "dup_share": 0.1667
+    },
+    "2026Q1": {
+     "n": 4,
+     "dup_share": 0.0
+    },
+    "2026Q2": {
+     "n": 4,
+     "dup_share": 0.0
+    },
+    "2026Q3": {
+     "n": 4,
+     "dup_share": 0.0
+    }
+   },
+   "arxiv_dup_share_late_dated": {
+    "cutoff": "2026-01-01",
+    "n": 12,
+    "dup_share": 0.0
+   },
+   "audit": {
+    "n": 25,
+    "counts": {
+     "on_topic_research": 13,
+     "off_topic": 5,
+     "fringe_or_pseudoscience": 6,
+     "duplicate_of_arxiv": 1,
+     "dataset_or_report": 0
+    },
+    "rates": {
+     "on_topic_research": 0.52,
+     "off_topic": 0.2,
+     "fringe_or_pseudoscience": 0.24,
+     "duplicate_of_arxiv": 0.04,
+     "dataset_or_report": 0.0
+    },
+    "on_topic_content_rate_incl_duplicates": 0.56,
+    "on_topic_rate_among_non_duplicates": 0.5417,
+    "interval_95_on_topic_non_dup": [
+     0.351,
+     0.721
+    ]
+   },
+   "unique_on_topic_estimate_both_windows": {
+    "point": 28.2,
+    "range_95": [
+     18.3,
+     37.5
+    ]
+   },
+   "unique_on_topic_estimate_trailing": {
+    "point": 12.8,
+    "range_95": [
+     8.3,
+     17.0
+    ]
+   },
+   "unique_on_topic_estimate_both_windows_late_dup_share": {
+    "point": 29.8,
+    "range_95": [
+     19.3,
+     39.7
+    ]
+   }
+  },
+  "techrxiv": {
+   "records_in_file": 2,
+   "records_trailing": 1,
+   "records_preceding": 1,
+   "records_outside_windows": 0,
+   "yield": {
+    "api_total": 1177,
+    "fetched": 1177,
+    "kept_hits": 2,
+    "unique_records": 2,
+    "kept_per_fetched": 0.0017,
+    "truncated_terms": [],
+    "top_terms": [
+     [
+      "superconductivity",
+      2,
+      2
+     ]
+    ],
+    "zero_yield_terms": [
+     "superconductor",
+     "topological insulator",
+     "topological semimetal",
+     "Weyl semimetal",
+     "quantum spin liquid",
+     "altermagnet",
+     "kagome",
+     "moire",
+     "twisted bilayer graphene",
+     "quantum anomalous Hall",
+     "Majorana",
+     "heavy fermion",
+     "charge density wave",
+     "van der Waals magnet",
+     "nickelate",
+     "cuprate",
+     "excitonic insulator",
+     "multiferroic",
+     "skyrmion",
+     "quantum material",
+     "strongly correlated",
+     "flat band",
+     "Mott insulator"
+    ]
+   },
+   "arxiv_overlap": {
+    "n": 2,
+    "declared_arxiv_id": 0,
+    "declared_arxiv_share": 0.0,
+    "declared_found_in_arxiv_corpus": 0,
+    "title_exact": 0,
+    "title_near": 0,
+    "title_dup_share": 0.0,
+    "declared_and_title": 0,
+    "on_arxiv_union": 0,
+    "arxiv_dup_share": 0.0,
+    "near_match_examples": []
+   },
+   "publication_linkage": {
+    "linked": 0,
+    "share": 0.0,
+    "method": "Crossref relation is-preprint-of (extra.is_preprint_of)"
+   },
+   "date_caveats": {
+    "records_with_multiple_versions": 0,
+    "note": "date = posted date of v1 (Crossref posted-content); window filter used posted date."
+   },
+   "monthly_counts": {
+    "2024-10": 1,
+    "2025-11": 1
+   },
+   "top_first_authors": [
+    [
+     "Deepalakshmi Chandrasekaran",
+     1
+    ],
+    [
+     "Alexi G. Choueiri",
+     1
+    ]
+   ],
+   "arxiv_lead_days_for_title_matches": null,
+   "arxiv_dup_share_by_quarter": {
+    "2024Q4": {
+     "n": 1,
+     "dup_share": 0.0
+    },
+    "2025Q4": {
+     "n": 1,
+     "dup_share": 0.0
+    }
+   },
+   "arxiv_dup_share_late_dated": {
+    "cutoff": "2026-01-01",
+    "n": 0,
+    "dup_share": null
+   },
+   "audit": {
+    "n": 2,
+    "counts": {
+     "on_topic_research": 0,
+     "off_topic": 0,
+     "fringe_or_pseudoscience": 2,
+     "duplicate_of_arxiv": 0,
+     "dataset_or_report": 0
+    },
+    "rates": {
+     "on_topic_research": 0.0,
+     "off_topic": 0.0,
+     "fringe_or_pseudoscience": 1.0,
+     "duplicate_of_arxiv": 0.0,
+     "dataset_or_report": 0.0
+    },
+    "on_topic_content_rate_incl_duplicates": 0.0,
+    "on_topic_rate_among_non_duplicates": 0.0,
+    "interval_95_on_topic_non_dup": [
+     0.0,
+     0.658
+    ]
+   },
+   "unique_on_topic_estimate_both_windows": {
+    "point": 0.0,
+    "range_95": [
+     0.0,
+     1.3
+    ]
+   },
+   "unique_on_topic_estimate_trailing": {
+    "point": 0.0,
+    "range_95": [
+     0.0,
+     0.7
+    ]
+   },
+   "unique_on_topic_estimate_both_windows_late_dup_share": {
+    "point": 0.0,
+    "range_95": [
+     0.0,
+     1.3
+    ]
+   }
+  },
+  "zenodo": {
+   "records_in_file": 1458,
+   "records_trailing": 1336,
+   "records_preceding": 122,
+   "records_outside_windows": 0,
+   "yield": {
+    "api_total": 2208,
+    "fetched": 2208,
+    "kept_hits": 1700,
+    "unique_records": 1458,
+    "kept_per_fetched": 0.7699,
+    "truncated_terms": [],
+    "top_terms": [
+     [
+      "superconductivity",
+      540,
+      758
+     ],
+     [
+      "Majorana",
+      470,
+      521
+     ],
+     [
+      "superconductor",
+      165,
+      219
+     ],
+     [
+      "strongly correlated",
+      95,
+      115
+     ],
+     [
+      "skyrmion",
+      79,
+      111
+     ],
+     [
+      "topological insulator",
+      61,
+      74
+     ]
+    ],
+    "zero_yield_terms": []
+   },
+   "arxiv_overlap": {
+    "n": 1458,
+    "declared_arxiv_id": 2,
+    "declared_arxiv_share": 0.0014,
+    "declared_found_in_arxiv_corpus": 1,
+    "title_exact": 6,
+    "title_near": 1,
+    "title_dup_share": 0.0048,
+    "declared_and_title": 1,
+    "on_arxiv_union": 8,
+    "arxiv_dup_share": 0.0055,
+    "near_match_examples": [
+     {
+      "id": "doi:10.5281/zenodo.17392162",
+      "arxiv": "arXiv:2512.16025",
+      "score": 0.875
+     }
+    ]
+   },
+   "publication_linkage": {
+    "linked": 0,
+    "share": 0.0,
+    "method": "not recorded in harvest (Zenodo related_identifiers were not kept)"
+   },
+   "date_caveats": {
+    "publication_date_differs_from_upload": 168,
+    "note": "date = user-declared publication_date (upload date only if partial)."
+   },
+   "monthly_counts": {
+    "2024-10": 2,
+    "2024-11": 2,
+    "2024-12": 1,
+    "2025-01": 1,
+    "2025-02": 6,
+    "2025-03": 12,
+    "2025-04": 8,
+    "2025-05": 5,
+    "2025-06": 10,
+    "2025-07": 27,
+    "2025-08": 29,
+    "2025-09": 28,
+    "2025-10": 25,
+    "2025-11": 52,
+    "2025-12": 58,
+    "2026-01": 65,
+    "2026-02": 68,
+    "2026-03": 121,
+    "2026-04": 123,
+    "2026-05": 132,
+    "2026-06": 158,
+    "2026-07": 203,
+    "2026-08": 181,
+    "2026-09": 141
+   },
+   "top_first_authors": [
+    [
+     "Caldin, Andrew Stewart",
+     152
+    ],
+    [
+     "geruganti, sudhakar",
+     43
+    ],
+    [
+     "Beecham, James E.",
+     27
+    ],
+    [
+     "Fenning, Nicholas Brian",
+     16
+    ],
+    [
+     "Levratti, Giovanni",
+     15
+    ]
+   ],
+   "arxiv_lead_days_for_title_matches": {
+    "n": 7,
+    "median_days": 0,
+    "share_arxiv_first": 0.4286,
+    "min": -382,
+    "max": 98
+   },
+   "arxiv_dup_share_by_quarter": {
+    "2024Q4": {
+     "n": 5,
+     "dup_share": 0.0
+    },
+    "2025Q1": {
+     "n": 19,
+     "dup_share": 0.0526
+    },
+    "2025Q2": {
+     "n": 23,
+     "dup_share": 0.0435
+    },
+    "2025Q3": {
+     "n": 84,
+     "dup_share": 0.0119
+    },
+    "2025Q4": {
+     "n": 135,
+     "dup_share": 0.0222
+    },
+    "2026Q1": {
+     "n": 254,
+     "dup_share": 0.0039
+    },
+    "2026Q2": {
+     "n": 413,
+     "dup_share": 0.0
+    },
+    "2026Q3": {
+     "n": 525,
+     "dup_share": 0.0019
+    }
+   },
+   "arxiv_dup_share_late_dated": {
+    "cutoff": "2026-01-01",
+    "n": 1192,
+    "dup_share": 0.0017
+   },
+   "audit": {
+    "n": 25,
+    "counts": {
+     "on_topic_research": 5,
+     "off_topic": 3,
+     "fringe_or_pseudoscience": 17,
+     "duplicate_of_arxiv": 0,
+     "dataset_or_report": 0
+    },
+    "rates": {
+     "on_topic_research": 0.2,
+     "off_topic": 0.12,
+     "fringe_or_pseudoscience": 0.68,
+     "duplicate_of_arxiv": 0.0,
+     "dataset_or_report": 0.0
+    },
+    "on_topic_content_rate_incl_duplicates": 0.2,
+    "on_topic_rate_among_non_duplicates": 0.2,
+    "interval_95_on_topic_non_dup": [
+     0.089,
+     0.391
+    ]
+   },
+   "unique_on_topic_estimate_both_windows": {
+    "point": 290.0,
+    "range_95": [
+     129.0,
+     566.9
+    ]
+   },
+   "unique_on_topic_estimate_trailing": {
+    "point": 265.7,
+    "range_95": [
+     118.3,
+     519.5
+    ]
+   },
+   "unique_on_topic_estimate_both_windows_late_dup_share": {
+    "point": 291.1,
+    "range_95": [
+     129.5,
+     569.1
+    ]
+   }
+  },
+  "hal": {
+   "records_in_file": 123,
+   "records_trailing": 95,
+   "records_preceding": 28,
+   "records_outside_windows": 0,
+   "yield": {
+    "api_total": 253,
+    "fetched": 253,
+    "kept_hits": 145,
+    "unique_records": 123,
+    "kept_per_fetched": 0.5731,
+    "truncated_terms": [],
+    "top_terms": [
+     [
+      "strongly correlated",
+      35,
+      90
+     ],
+     [
+      "superconductivity",
+      21,
+      35
+     ],
+     [
+      "Majorana",
+      20,
+      41
+     ],
+     [
+      "superconductor",
+      18,
+      18
+     ],
+     [
+      "moire",
+      9,
+      24
+     ],
+     [
+      "charge density wave",
+      5,
+      5
+     ]
+    ],
+    "zero_yield_terms": [
+     "quantum spin liquid",
+     "van der Waals magnet"
+    ]
+   },
+   "arxiv_overlap": {
+    "n": 123,
+    "declared_arxiv_id": 94,
+    "declared_arxiv_share": 0.7642,
+    "declared_found_in_arxiv_corpus": 53,
+    "title_exact": 50,
+    "title_near": 0,
+    "title_dup_share": 0.4065,
+    "declared_and_title": 48,
+    "on_arxiv_union": 96,
+    "arxiv_dup_share": 0.7805,
+    "near_match_examples": []
+   },
+   "publication_linkage": {
+    "linked": 47,
+    "share": 0.3821,
+    "method": "HAL doiId_s present (journal DOI attached to a record still typed as preprint)"
+   },
+   "date_caveats": {
+    "produced_before_submitted": 16,
+    "note": "Harvest kept docType UNDEFINED (preprint). HAL retypes a deposit once its journal version is added, so older windows lose records: survivorship bias toward recent, still-unpublished preprints."
+   },
+   "monthly_counts": {
+    "2024-09": 2,
+    "2024-10": 3,
+    "2024-11": 8,
+    "2025-01": 4,
+    "2025-02": 4,
+    "2025-03": 1,
+    "2025-04": 2,
+    "2025-05": 2,
+    "2025-06": 1,
+    "2025-09": 1,
+    "2025-10": 3,
+    "2025-11": 12,
+    "2025-12": 17,
+    "2026-01": 7,
+    "2026-02": 6,
+    "2026-03": 7,
+    "2026-04": 2,
+    "2026-05": 3,
+    "2026-06": 8,
+    "2026-07": 12,
+    "2026-08": 5,
+    "2026-09": 13
+   },
+   "top_first_authors": [
+    [
+     "Parameshwar R. Pasnoori",
+     2
+    ],
+    [
+     "Asmaa Abada",
+     2
+    ],
+    [
+     "Loïc Philoxene",
+     1
+    ],
+    [
+     "A Ghermaoui",
+     1
+    ],
+    [
+     "Damien Léa",
+     1
+    ]
+   ],
+   "arxiv_lead_days_for_title_matches": {
+    "n": 50,
+    "median_days": 63,
+    "share_arxiv_first": 0.96,
+    "min": -5,
+    "max": 523
+   },
+   "arxiv_dup_share_by_quarter": {
+    "2024Q3": {
+     "n": 2,
+     "dup_share": 1.0
+    },
+    "2024Q4": {
+     "n": 11,
+     "dup_share": 0.8182
+    },
+    "2025Q1": {
+     "n": 9,
+     "dup_share": 0.8889
+    },
+    "2025Q2": {
+     "n": 5,
+     "dup_share": 1.0
+    },
+    "2025Q3": {
+     "n": 1,
+     "dup_share": 1.0
+    },
+    "2025Q4": {
+     "n": 32,
+     "dup_share": 0.875
+    },
+    "2026Q1": {
+     "n": 20,
+     "dup_share": 0.7
+    },
+    "2026Q2": {
+     "n": 13,
+     "dup_share": 0.6923
+    },
+    "2026Q3": {
+     "n": 30,
+     "dup_share": 0.6667
+    }
+   },
+   "arxiv_dup_share_late_dated": {
+    "cutoff": "2026-01-01",
+    "n": 63,
+    "dup_share": 0.6825
+   },
+   "audit": {
+    "n": 25,
+    "counts": {
+     "on_topic_research": 0,
+     "off_topic": 5,
+     "fringe_or_pseudoscience": 1,
+     "duplicate_of_arxiv": 18,
+     "dataset_or_report": 1
+    },
+    "rates": {
+     "on_topic_research": 0.0,
+     "off_topic": 0.2,
+     "fringe_or_pseudoscience": 0.04,
+     "duplicate_of_arxiv": 0.72,
+     "dataset_or_report": 0.04
+    },
+    "on_topic_content_rate_incl_duplicates": 0.64,
+    "on_topic_rate_among_non_duplicates": 0.0,
+    "interval_95_on_topic_non_dup": [
+     0.0,
+     0.354
+    ]
+   },
+   "unique_on_topic_estimate_both_windows": {
+    "point": 0.0,
+    "range_95": [
+     0.0,
+     9.6
+    ]
+   },
+   "unique_on_topic_estimate_trailing": {
+    "point": 0.0,
+    "range_95": [
+     0.0,
+     7.4
+    ]
+   },
+   "unique_on_topic_estimate_both_windows_late_dup_share": {
+    "point": 0.0,
+    "range_95": [
+     0.0,
+     13.8
+    ]
+   }
+  },
+  "osti": {
+   "records_in_file": 1437,
+   "records_trailing": 590,
+   "records_preceding": 847,
+   "records_outside_windows": 0,
+   "yield": {
+    "api_total": 20971,
+    "fetched": 15925,
+    "kept_hits": 2146,
+    "unique_records": 1437,
+    "kept_per_fetched": 0.1348,
+    "truncated_terms": [
+     "superconductivity",
+     "nickelate",
+     "strongly correlated"
+    ],
+    "top_terms": [
+     [
+      "superconductor",
+      310,
+      1634
+     ],
+     [
+      "superconductivity",
+      294,
+      4294
+     ],
+     [
+      "quantum material",
+      189,
+      1422
+     ],
+     [
+      "strongly correlated",
+      153,
+      2024
+     ],
+     [
+      "kagome",
+      149,
+      492
+     ],
+     [
+      "moire",
+      111,
+      600
+     ]
+    ],
+    "zero_yield_terms": []
+   },
+   "arxiv_overlap": {
+    "n": 1437,
+    "declared_arxiv_id": 68,
+    "declared_arxiv_share": 0.0473,
+    "declared_found_in_arxiv_corpus": 35,
+    "title_exact": 364,
+    "title_near": 30,
+    "title_dup_share": 0.2742,
+    "declared_and_title": 34,
+    "on_arxiv_union": 428,
+    "arxiv_dup_share": 0.2978,
+    "near_match_examples": [
+     {
+      "id": "osti:2568328",
+      "arxiv": "arXiv:2503.20064",
+      "score": 0.923
+     },
+     {
+      "id": "osti:3005372",
+      "arxiv": "arXiv:2501.09715",
+      "score": 0.8
+     },
+     {
+      "id": "osti:2520224",
+      "arxiv": "arXiv:2411.17081",
+      "score": 1.0
+     },
+     {
+      "id": "osti:2573272",
+      "arxiv": "arXiv:2409.19082",
+      "score": 0.824
+     },
+     {
+      "id": "osti:2530995",
+      "arxiv": "arXiv:2503.08072",
+      "score": 1.0
+     }
+    ]
+   },
+   "publication_linkage": {
+    "linked": 1349,
+    "share": 0.9388,
+    "method": "OSTI journal_name or a non-OSTI DOI (most OSTI records ARE journal accepted manuscripts)"
+   },
+   "date_caveats": {
+    "product_type": {
+     "Journal Article": 1311,
+     "Technical Report": 55,
+     "Conference": 50,
+     "Dataset": 19,
+     "Thesis/Dissertation": 2
+    },
+    "article_type": {
+     "Accepted Manuscript": 1150,
+     "none": 146,
+     "Published Article": 118,
+     "Publisher's Accepted Manuscript": 23
+    },
+    "entry_month_after_publication_month": 1290,
+    "note": "date = OSTI publication_date (journal/report date), not first posting; entry_date lags; many items were on arXiv months earlier."
+   },
+   "monthly_counts": {
+    "2024-09": 25,
+    "2024-10": 67,
+    "2024-11": 63,
+    "2024-12": 62,
+    "2025-01": 85,
+    "2025-02": 60,
+    "2025-03": 74,
+    "2025-04": 83,
+    "2025-05": 66,
+    "2025-06": 62,
+    "2025-07": 86,
+    "2025-08": 67,
+    "2025-09": 66,
+    "2025-10": 68,
+    "2025-11": 69,
+    "2025-12": 53,
+    "2026-01": 86,
+    "2026-02": 52,
+    "2026-03": 51,
+    "2026-04": 41,
+    "2026-05": 36,
+    "2026-06": 52,
+    "2026-07": 31,
+    "2026-08": 22,
+    "2026-09": 10
+   },
+   "top_first_authors": [
+    [
+     "Zhang, Yang",
+     6
+    ],
+    [
+     "Hossain, Md Shafayat",
+     5
+    ],
+    [
+     "Cervantes, Raphael",
+     4
+    ],
+    [
+     "Petkov, V.",
+     4
+    ],
+    [
+     "Ding, Qing-Ping",
+     4
+    ]
+   ],
+   "arxiv_lead_days_for_title_matches": {
+    "n": 394,
+    "median_days": 127,
+    "share_arxiv_first": 0.8655,
+    "min": -282,
+    "max": 583
+   },
+   "arxiv_dup_share_by_quarter": {
+    "2024Q3": {
+     "n": 25,
+     "dup_share": 0.04
+    },
+    "2024Q4": {
+     "n": 192,
+     "dup_share": 0.0781
+    },
+    "2025Q1": {
+     "n": 219,
+     "dup_share": 0.2466
+    },
+    "2025Q2": {
+     "n": 211,
+     "dup_share": 0.2844
+    },
+    "2025Q3": {
+     "n": 219,
+     "dup_share": 0.3333
+    },
+    "2025Q4": {
+     "n": 190,
+     "dup_share": 0.3211
+    },
+    "2026Q1": {
+     "n": 189,
+     "dup_share": 0.418
+    },
+    "2026Q2": {
+     "n": 129,
+     "dup_share": 0.4729
+    },
+    "2026Q3": {
+     "n": 63,
+     "dup_share": 0.381
+    }
+   },
+   "arxiv_dup_share_late_dated": {
+    "cutoff": "2026-01-01",
+    "n": 381,
+    "dup_share": 0.4304
+   },
+   "audit": {
+    "n": 25,
+    "counts": {
+     "on_topic_research": 14,
+     "off_topic": 4,
+     "fringe_or_pseudoscience": 0,
+     "duplicate_of_arxiv": 6,
+     "dataset_or_report": 1
+    },
+    "rates": {
+     "on_topic_research": 0.56,
+     "off_topic": 0.16,
+     "fringe_or_pseudoscience": 0.0,
+     "duplicate_of_arxiv": 0.24,
+     "dataset_or_report": 0.04
+    },
+    "on_topic_content_rate_incl_duplicates": 0.8,
+    "on_topic_rate_among_non_duplicates": 0.7368,
+    "interval_95_on_topic_non_dup": [
+     0.512,
+     0.882
+    ]
+   },
+   "unique_on_topic_estimate_both_windows": {
+    "point": 743.5,
+    "range_95": [
+     516.6,
+     890.0
+    ]
+   },
+   "unique_on_topic_estimate_trailing": {
+    "point": 305.3,
+    "range_95": [
+     212.1,
+     365.4
+    ]
+   },
+   "unique_on_topic_estimate_both_windows_late_dup_share": {
+    "point": 603.1,
+    "range_95": [
+     419.1,
+     721.9
+    ]
+   }
+  }
+ },
+ "method": {
+  "windows": {
+   "trailing": "2025-09-24..2026-09-23",
+   "preceding": "2024-09-24..2025-09-23"
+  },
+  "title_normalization": "NFKD accent strip, drop LaTeX commands and $, lowercase, non-alphanumerics -> space; stopwords dropped for Jaccard",
+  "near_match": "token-set Jaccard >= 0.80, titles with >= 4 tokens",
+  "on_arxiv": "declared arXiv id OR exact/near title match to corpus/arxiv.jsonl (arXiv corpus is a category/term-limited harvest, so this is a lower bound)",
+  "audit_sample": "in-window records sorted by id; random.Random(11).sample, up to 25/server",
+  "unique_estimate": "in-window records * (1 - arxiv_dup_share) * on-topic rate among audited non-duplicates; range from the Wilson 95% interval"
+ },
+ "api_checks": {
+  "hal_superconductivity": {
+   "preceding": {
+    "preprint_UNDEFINED": 10,
+    "journal_ART": 546,
+    "journal_ART_with_arxiv": 115
+   },
+   "trailing": {
+    "preprint_UNDEFINED": 25,
+    "journal_ART": 150,
+    "journal_ART_with_arxiv": 43
+   }
+  },
+  "zenodo_all_preprints": {
+   "preceding": 27418,
+   "trailing": 201419
+  },
+  "crossref_all_posted_content": {
+   "researchsquare": {
+    "preceding": 56482,
+    "trailing": 90941
+   },
+   "chemrxiv": {
+    "preceding": 9714,
+    "trailing": 12759
+   },
+   "preprints_org": {
+    "preceding": 31660,
+    "trailing": 30844
+   }
+  },
+  "note": "HAL counts use submittedDate; ART = journal article. Zenodo/Crossref totals are all-subject base volumes for normalization."
+ },
+ "topic_distribution": {
+  "available": true,
+  "taxonomy_version": "v2",
+  "top_clusters": {
+   "chemrxiv": [
+    [
+     "moire_twisted_2d",
+     10
+    ],
+    [
+     "vdw_magnets_topological_magnetism",
+     6
+    ],
+    [
+     "mott_hubbard_strange_metal",
+     4
+    ],
+    [
+     "flat_band_quantum_geometry",
+     2
+    ],
+    [
+     "unclassified",
+     2
+    ],
+    [
+     "ml_ai",
+     2
+    ]
+   ],
+   "hal": [
+    [
+     "unclassified",
+     40
+    ],
+    [
+     "mott_hubbard_strange_metal",
+     18
+    ],
+    [
+     "unconventional_topological_sc",
+     13
+    ],
+    [
+     "moire_twisted_2d",
+     11
+    ],
+    [
+     "cdw_nematic_excitonic",
+     9
+    ],
+    [
+     "topological_insulators_semimetals",
+     7
+    ]
+   ],
+   "osti": [
+    [
+     "unclassified",
+     224
+    ],
+    [
+     "vdw_magnets_topological_magnetism",
+     207
+    ],
+    [
+     "cdw_nematic_excitonic",
+     155
+    ],
+    [
+     "topological_insulators_semimetals",
+     153
+    ],
+    [
+     "mott_hubbard_strange_metal",
+     130
+    ],
+    [
+     "kagome",
+     125
+    ]
+   ],
+   "preprints_org": [
+    [
+     "unclassified",
+     10
+    ],
+    [
+     "other_superconductivity",
+     8
+    ],
+    [
+     "cuprate_sc",
+     5
+    ],
+    [
+     "unconventional_topological_sc",
+     5
+    ],
+    [
+     "topological_insulators_semimetals",
+     5
+    ],
+    [
+     "mott_hubbard_strange_metal",
+     4
+    ]
+   ],
+   "researchsquare": [
+    [
+     "topological_insulators_semimetals",
+     40
+    ],
+    [
+     "moire_twisted_2d",
+     31
+    ],
+    [
+     "cdw_nematic_excitonic",
+     26
+    ],
+    [
+     "vdw_magnets_topological_magnetism",
+     23
+    ],
+    [
+     "flat_band_quantum_geometry",
+     18
+    ],
+    [
+     "mott_hubbard_strange_metal",
+     16
+    ]
+   ],
+   "techrxiv": [
+    [
+     "other_superconductivity",
+     1
+    ],
+    [
+     "hydride_high_pressure_sc",
+     1
+    ]
+   ],
+   "zenodo": [
+    [
+     "unclassified",
+     529
+    ],
+    [
+     "other_superconductivity",
+     220
+    ],
+    [
+     "unconventional_topological_sc",
+     206
+    ],
+    [
+     "topological_insulators_semimetals",
+     87
+    ],
+    [
+     "moire_twisted_2d",
+     80
+    ],
+    [
+     "vdw_magnets_topological_magnetism",
+     65
+    ]
+   ]
+  }
+ }
+}

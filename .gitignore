@@ -1,0 +1,13 @@
+# Harvested corpus: large, and the abstracts carry third-party licenses.
+# Rebuild it with the scripts in quantum-materials/harvest/.
+# The schema and harvest logs (counts only) are kept.
+quantum-materials/corpus/*
+!quantum-materials/corpus/SCHEMA.md
+!quantum-materials/corpus/*_harvest_log.json
+
+# Local session transcripts (contain personal information).
+goal-campaigns/
+
+# Python caches
+__pycache__/
+*.pyc

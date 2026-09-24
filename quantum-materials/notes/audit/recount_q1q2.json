@@ -1,0 +1,2458 @@
+{
+ "boundary_2025_09": {
+  "preceding/category": 446,
+  "preceding/keyword": 195,
+  "trailing/category": 145,
+  "trailing/keyword": 62
+ },
+ "mismatches": [],
+ "monthly": [
+  {
+   "arxiv_all": 312,
+   "counts": {
+    "other_superconductivity": 10,
+    "quantum_many_body_theory": 22,
+    "spin_liquid_frustrated": 7,
+    "topological_insulators_semimetals": 8,
+    "unconventional_topological_sc": 16,
+    "vdw_magnets_topological_magnetism": 12
+   },
+   "counts_category_only": {
+    "other_superconductivity": 10,
+    "quantum_many_body_theory": 20,
+    "spin_liquid_frustrated": 6,
+    "topological_insulators_semimetals": 3,
+    "unconventional_topological_sc": 14,
+    "vdw_magnets_topological_magnetism": 3
+   },
+   "in_scope": 165,
+   "in_scope_category": 120,
+   "in_scope_keyword": 45,
+   "keyword_mtrl_only": 10,
+   "keyword_share": 0.2727272727272727,
+   "month": "2024-09",
+   "mtrl_only_all": 94,
+   "queried": {
+    "cond-mat.mes-hall": 124,
+    "cond-mat.mtrl-sci": 160,
+    "cond-mat.str-el": 85,
+    "cond-mat.supr-con": 46
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.08333333333333333,
+    "quantum_many_body_theory": 0.16666666666666666,
+    "spin_liquid_frustrated": 0.05,
+    "topological_insulators_semimetals": 0.025,
+    "unconventional_topological_sc": 0.11666666666666667,
+    "vdw_magnets_topological_magnetism": 0.025
+   },
+   "shares_full": {
+    "other_superconductivity": 0.06060606060606061,
+    "quantum_many_body_theory": 0.13333333333333333,
+    "spin_liquid_frustrated": 0.04242424242424243,
+    "topological_insulators_semimetals": 0.048484848484848485,
+    "unconventional_topological_sc": 0.09696969696969697,
+    "vdw_magnets_topological_magnetism": 0.07272727272727272
+   }
+  },
+  {
+   "arxiv_all": 1402,
+   "counts": {
+    "other_superconductivity": 50,
+    "quantum_many_body_theory": 86,
+    "spin_liquid_frustrated": 34,
+    "topological_insulators_semimetals": 69,
+    "unconventional_topological_sc": 58,
+    "vdw_magnets_topological_magnetism": 61
+   },
+   "counts_category_only": {
+    "other_superconductivity": 42,
+    "quantum_many_body_theory": 80,
+    "spin_liquid_frustrated": 29,
+    "topological_insulators_semimetals": 21,
+    "unconventional_topological_sc": 47,
+    "vdw_magnets_topological_magnetism": 21
+   },
+   "in_scope": 756,
+   "in_scope_category": 502,
+   "in_scope_keyword": 254,
+   "keyword_mtrl_only": 55,
+   "keyword_share": 0.335978835978836,
+   "month": "2024-10",
+   "mtrl_only_all": 439,
+   "queried": {
+    "cond-mat.mes-hall": 550,
+    "cond-mat.mtrl-sci": 694,
+    "cond-mat.str-el": 368,
+    "cond-mat.supr-con": 188
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.08366533864541832,
+    "quantum_many_body_theory": 0.1593625498007968,
+    "spin_liquid_frustrated": 0.05776892430278884,
+    "topological_insulators_semimetals": 0.04183266932270916,
+    "unconventional_topological_sc": 0.09362549800796813,
+    "vdw_magnets_topological_magnetism": 0.04183266932270916
+   },
+   "shares_full": {
+    "other_superconductivity": 0.06613756613756613,
+    "quantum_many_body_theory": 0.11375661375661375,
+    "spin_liquid_frustrated": 0.04497354497354497,
+    "topological_insulators_semimetals": 0.09126984126984126,
+    "unconventional_topological_sc": 0.07671957671957672,
+    "vdw_magnets_topological_magnetism": 0.08068783068783068
+   }
+  },
+  {
+   "arxiv_all": 1295,
+   "counts": {
+    "other_superconductivity": 39,
+    "quantum_many_body_theory": 83,
+    "spin_liquid_frustrated": 30,
+    "topological_insulators_semimetals": 57,
+    "unconventional_topological_sc": 52,
+    "vdw_magnets_topological_magnetism": 58
+   },
+   "counts_category_only": {
+    "other_superconductivity": 36,
+    "quantum_many_body_theory": 77,
+    "spin_liquid_frustrated": 28,
+    "topological_insulators_semimetals": 13,
+    "unconventional_topological_sc": 46,
+    "vdw_magnets_topological_magnetism": 16
+   },
+   "in_scope": 677,
+   "in_scope_category": 457,
+   "in_scope_keyword": 220,
+   "keyword_mtrl_only": 75,
+   "keyword_share": 0.3249630723781389,
+   "month": "2024-11",
+   "mtrl_only_all": 459,
+   "queried": {
+    "cond-mat.mes-hall": 464,
+    "cond-mat.mtrl-sci": 688,
+    "cond-mat.str-el": 350,
+    "cond-mat.supr-con": 161
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.0787746170678337,
+    "quantum_many_body_theory": 0.16849015317286653,
+    "spin_liquid_frustrated": 0.061269146608315096,
+    "topological_insulators_semimetals": 0.028446389496717725,
+    "unconventional_topological_sc": 0.10065645514223195,
+    "vdw_magnets_topological_magnetism": 0.0350109409190372
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05760709010339734,
+    "quantum_many_body_theory": 0.12259970457902511,
+    "spin_liquid_frustrated": 0.04431314623338257,
+    "topological_insulators_semimetals": 0.08419497784342689,
+    "unconventional_topological_sc": 0.07680945347119646,
+    "vdw_magnets_topological_magnetism": 0.08567208271787297
+   }
+  },
+  {
+   "arxiv_all": 1422,
+   "counts": {
+    "other_superconductivity": 45,
+    "quantum_many_body_theory": 94,
+    "spin_liquid_frustrated": 31,
+    "topological_insulators_semimetals": 62,
+    "unconventional_topological_sc": 63,
+    "vdw_magnets_topological_magnetism": 71
+   },
+   "counts_category_only": {
+    "other_superconductivity": 42,
+    "quantum_many_body_theory": 88,
+    "spin_liquid_frustrated": 29,
+    "topological_insulators_semimetals": 15,
+    "unconventional_topological_sc": 56,
+    "vdw_magnets_topological_magnetism": 22
+   },
+   "in_scope": 798,
+   "in_scope_category": 561,
+   "in_scope_keyword": 237,
+   "keyword_mtrl_only": 80,
+   "keyword_share": 0.29699248120300753,
+   "month": "2024-12",
+   "mtrl_only_all": 455,
+   "queried": {
+    "cond-mat.mes-hall": 503,
+    "cond-mat.mtrl-sci": 676,
+    "cond-mat.str-el": 419,
+    "cond-mat.supr-con": 191
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.0748663101604278,
+    "quantum_many_body_theory": 0.1568627450980392,
+    "spin_liquid_frustrated": 0.05169340463458111,
+    "topological_insulators_semimetals": 0.026737967914438502,
+    "unconventional_topological_sc": 0.09982174688057041,
+    "vdw_magnets_topological_magnetism": 0.0392156862745098
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05639097744360902,
+    "quantum_many_body_theory": 0.11779448621553884,
+    "spin_liquid_frustrated": 0.03884711779448621,
+    "topological_insulators_semimetals": 0.07769423558897243,
+    "unconventional_topological_sc": 0.07894736842105263,
+    "vdw_magnets_topological_magnetism": 0.08897243107769423
+   }
+  },
+  {
+   "arxiv_all": 1243,
+   "counts": {
+    "other_superconductivity": 36,
+    "quantum_many_body_theory": 53,
+    "spin_liquid_frustrated": 34,
+    "topological_insulators_semimetals": 55,
+    "unconventional_topological_sc": 58,
+    "vdw_magnets_topological_magnetism": 73
+   },
+   "counts_category_only": {
+    "other_superconductivity": 31,
+    "quantum_many_body_theory": 51,
+    "spin_liquid_frustrated": 32,
+    "topological_insulators_semimetals": 23,
+    "unconventional_topological_sc": 45,
+    "vdw_magnets_topological_magnetism": 24
+   },
+   "in_scope": 615,
+   "in_scope_category": 421,
+   "in_scope_keyword": 194,
+   "keyword_mtrl_only": 58,
+   "keyword_share": 0.3154471544715447,
+   "month": "2025-01",
+   "mtrl_only_all": 424,
+   "queried": {
+    "cond-mat.mes-hall": 494,
+    "cond-mat.mtrl-sci": 635,
+    "cond-mat.str-el": 319,
+    "cond-mat.supr-con": 155
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.07363420427553444,
+    "quantum_many_body_theory": 0.12114014251781473,
+    "spin_liquid_frustrated": 0.07600950118764846,
+    "topological_insulators_semimetals": 0.05463182897862233,
+    "unconventional_topological_sc": 0.10688836104513064,
+    "vdw_magnets_topological_magnetism": 0.057007125890736345
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05853658536585366,
+    "quantum_many_body_theory": 0.08617886178861789,
+    "spin_liquid_frustrated": 0.055284552845528454,
+    "topological_insulators_semimetals": 0.08943089430894309,
+    "unconventional_topological_sc": 0.0943089430894309,
+    "vdw_magnets_topological_magnetism": 0.11869918699186992
+   }
+  },
+  {
+   "arxiv_all": 1333,
+   "counts": {
+    "other_superconductivity": 41,
+    "quantum_many_body_theory": 70,
+    "spin_liquid_frustrated": 32,
+    "topological_insulators_semimetals": 57,
+    "unconventional_topological_sc": 55,
+    "vdw_magnets_topological_magnetism": 75
+   },
+   "counts_category_only": {
+    "other_superconductivity": 35,
+    "quantum_many_body_theory": 63,
+    "spin_liquid_frustrated": 28,
+    "topological_insulators_semimetals": 15,
+    "unconventional_topological_sc": 41,
+    "vdw_magnets_topological_magnetism": 23
+   },
+   "in_scope": 707,
+   "in_scope_category": 464,
+   "in_scope_keyword": 243,
+   "keyword_mtrl_only": 94,
+   "keyword_share": 0.3437057991513437,
+   "month": "2025-02",
+   "mtrl_only_all": 505,
+   "queried": {
+    "cond-mat.mes-hall": 451,
+    "cond-mat.mtrl-sci": 742,
+    "cond-mat.str-el": 350,
+    "cond-mat.supr-con": 164
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.07543103448275862,
+    "quantum_many_body_theory": 0.13577586206896552,
+    "spin_liquid_frustrated": 0.0603448275862069,
+    "topological_insulators_semimetals": 0.032327586206896554,
+    "unconventional_topological_sc": 0.08836206896551724,
+    "vdw_magnets_topological_magnetism": 0.04956896551724138
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05799151343705799,
+    "quantum_many_body_theory": 0.09900990099009901,
+    "spin_liquid_frustrated": 0.04526166902404526,
+    "topological_insulators_semimetals": 0.08062234794908062,
+    "unconventional_topological_sc": 0.07779349363507779,
+    "vdw_magnets_topological_magnetism": 0.10608203677510608
+   }
+  },
+  {
+   "arxiv_all": 1623,
+   "counts": {
+    "other_superconductivity": 61,
+    "quantum_many_body_theory": 100,
+    "spin_liquid_frustrated": 46,
+    "topological_insulators_semimetals": 65,
+    "unconventional_topological_sc": 60,
+    "vdw_magnets_topological_magnetism": 69
+   },
+   "counts_category_only": {
+    "other_superconductivity": 55,
+    "quantum_many_body_theory": 94,
+    "spin_liquid_frustrated": 42,
+    "topological_insulators_semimetals": 19,
+    "unconventional_topological_sc": 52,
+    "vdw_magnets_topological_magnetism": 18
+   },
+   "in_scope": 880,
+   "in_scope_category": 609,
+   "in_scope_keyword": 271,
+   "keyword_mtrl_only": 100,
+   "keyword_share": 0.3079545454545455,
+   "month": "2025-03",
+   "mtrl_only_all": 579,
+   "queried": {
+    "cond-mat.mes-hall": 533,
+    "cond-mat.mtrl-sci": 847,
+    "cond-mat.str-el": 464,
+    "cond-mat.supr-con": 220
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.090311986863711,
+    "quantum_many_body_theory": 0.15435139573070608,
+    "spin_liquid_frustrated": 0.06896551724137931,
+    "topological_insulators_semimetals": 0.031198686371100164,
+    "unconventional_topological_sc": 0.08538587848932677,
+    "vdw_magnets_topological_magnetism": 0.029556650246305417
+   },
+   "shares_full": {
+    "other_superconductivity": 0.06931818181818182,
+    "quantum_many_body_theory": 0.11363636363636363,
+    "spin_liquid_frustrated": 0.05227272727272727,
+    "topological_insulators_semimetals": 0.07386363636363637,
+    "unconventional_topological_sc": 0.06818181818181818,
+    "vdw_magnets_topological_magnetism": 0.07840909090909091
+   }
+  },
+  {
+   "arxiv_all": 1292,
+   "counts": {
+    "other_superconductivity": 36,
+    "quantum_many_body_theory": 69,
+    "spin_liquid_frustrated": 29,
+    "topological_insulators_semimetals": 64,
+    "unconventional_topological_sc": 66,
+    "vdw_magnets_topological_magnetism": 59
+   },
+   "counts_category_only": {
+    "other_superconductivity": 30,
+    "quantum_many_body_theory": 62,
+    "spin_liquid_frustrated": 25,
+    "topological_insulators_semimetals": 19,
+    "unconventional_topological_sc": 55,
+    "vdw_magnets_topological_magnetism": 17
+   },
+   "in_scope": 666,
+   "in_scope_category": 449,
+   "in_scope_keyword": 217,
+   "keyword_mtrl_only": 69,
+   "keyword_share": 0.3258258258258258,
+   "month": "2025-04",
+   "mtrl_only_all": 474,
+   "queried": {
+    "cond-mat.mes-hall": 451,
+    "cond-mat.mtrl-sci": 686,
+    "cond-mat.str-el": 336,
+    "cond-mat.supr-con": 154
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.066815144766147,
+    "quantum_many_body_theory": 0.13808463251670378,
+    "spin_liquid_frustrated": 0.0556792873051225,
+    "topological_insulators_semimetals": 0.042316258351893093,
+    "unconventional_topological_sc": 0.12249443207126949,
+    "vdw_magnets_topological_magnetism": 0.0378619153674833
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05405405405405406,
+    "quantum_many_body_theory": 0.1036036036036036,
+    "spin_liquid_frustrated": 0.04354354354354354,
+    "topological_insulators_semimetals": 0.0960960960960961,
+    "unconventional_topological_sc": 0.0990990990990991,
+    "vdw_magnets_topological_magnetism": 0.08858858858858859
+   }
+  },
+  {
+   "arxiv_all": 1365,
+   "counts": {
+    "other_superconductivity": 39,
+    "quantum_many_body_theory": 79,
+    "spin_liquid_frustrated": 42,
+    "topological_insulators_semimetals": 56,
+    "unconventional_topological_sc": 58,
+    "vdw_magnets_topological_magnetism": 57
+   },
+   "counts_category_only": {
+    "other_superconductivity": 37,
+    "quantum_many_body_theory": 77,
+    "spin_liquid_frustrated": 37,
+    "topological_insulators_semimetals": 18,
+    "unconventional_topological_sc": 48,
+    "vdw_magnets_topological_magnetism": 21
+   },
+   "in_scope": 718,
+   "in_scope_category": 506,
+   "in_scope_keyword": 212,
+   "keyword_mtrl_only": 67,
+   "keyword_share": 0.29526462395543174,
+   "month": "2025-05",
+   "mtrl_only_all": 488,
+   "queried": {
+    "cond-mat.mes-hall": 482,
+    "cond-mat.mtrl-sci": 727,
+    "cond-mat.str-el": 398,
+    "cond-mat.supr-con": 174
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.07312252964426877,
+    "quantum_many_body_theory": 0.15217391304347827,
+    "spin_liquid_frustrated": 0.07312252964426877,
+    "topological_insulators_semimetals": 0.03557312252964427,
+    "unconventional_topological_sc": 0.09486166007905138,
+    "vdw_magnets_topological_magnetism": 0.041501976284584984
+   },
+   "shares_full": {
+    "other_superconductivity": 0.054317548746518104,
+    "quantum_many_body_theory": 0.11002785515320335,
+    "spin_liquid_frustrated": 0.0584958217270195,
+    "topological_insulators_semimetals": 0.07799442896935933,
+    "unconventional_topological_sc": 0.0807799442896936,
+    "vdw_magnets_topological_magnetism": 0.07938718662952646
+   }
+  },
+  {
+   "arxiv_all": 1317,
+   "counts": {
+    "other_superconductivity": 41,
+    "quantum_many_body_theory": 78,
+    "spin_liquid_frustrated": 32,
+    "topological_insulators_semimetals": 54,
+    "unconventional_topological_sc": 51,
+    "vdw_magnets_topological_magnetism": 61
+   },
+   "counts_category_only": {
+    "other_superconductivity": 35,
+    "quantum_many_body_theory": 76,
+    "spin_liquid_frustrated": 31,
+    "topological_insulators_semimetals": 20,
+    "unconventional_topological_sc": 40,
+    "vdw_magnets_topological_magnetism": 17
+   },
+   "in_scope": 682,
+   "in_scope_category": 472,
+   "in_scope_keyword": 210,
+   "keyword_mtrl_only": 61,
+   "keyword_share": 0.30791788856304986,
+   "month": "2025-06",
+   "mtrl_only_all": 469,
+   "queried": {
+    "cond-mat.mes-hall": 453,
+    "cond-mat.mtrl-sci": 684,
+    "cond-mat.str-el": 355,
+    "cond-mat.supr-con": 169
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.07415254237288135,
+    "quantum_many_body_theory": 0.16101694915254236,
+    "spin_liquid_frustrated": 0.06567796610169492,
+    "topological_insulators_semimetals": 0.0423728813559322,
+    "unconventional_topological_sc": 0.0847457627118644,
+    "vdw_magnets_topological_magnetism": 0.036016949152542374
+   },
+   "shares_full": {
+    "other_superconductivity": 0.060117302052785926,
+    "quantum_many_body_theory": 0.11436950146627566,
+    "spin_liquid_frustrated": 0.0469208211143695,
+    "topological_insulators_semimetals": 0.07917888563049853,
+    "unconventional_topological_sc": 0.0747800586510264,
+    "vdw_magnets_topological_magnetism": 0.08944281524926687
+   }
+  },
+  {
+   "arxiv_all": 1534,
+   "counts": {
+    "other_superconductivity": 43,
+    "quantum_many_body_theory": 109,
+    "spin_liquid_frustrated": 31,
+    "topological_insulators_semimetals": 59,
+    "unconventional_topological_sc": 58,
+    "vdw_magnets_topological_magnetism": 79
+   },
+   "counts_category_only": {
+    "other_superconductivity": 39,
+    "quantum_many_body_theory": 102,
+    "spin_liquid_frustrated": 27,
+    "topological_insulators_semimetals": 18,
+    "unconventional_topological_sc": 51,
+    "vdw_magnets_topological_magnetism": 34
+   },
+   "in_scope": 845,
+   "in_scope_category": 589,
+   "in_scope_keyword": 256,
+   "keyword_mtrl_only": 85,
+   "keyword_share": 0.3029585798816568,
+   "month": "2025-07",
+   "mtrl_only_all": 511,
+   "queried": {
+    "cond-mat.mes-hall": 553,
+    "cond-mat.mtrl-sci": 753,
+    "cond-mat.str-el": 457,
+    "cond-mat.supr-con": 206
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.06621392190152801,
+    "quantum_many_body_theory": 0.1731748726655348,
+    "spin_liquid_frustrated": 0.04584040747028863,
+    "topological_insulators_semimetals": 0.030560271646859084,
+    "unconventional_topological_sc": 0.0865874363327674,
+    "vdw_magnets_topological_magnetism": 0.057724957555178265
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05088757396449704,
+    "quantum_many_body_theory": 0.1289940828402367,
+    "spin_liquid_frustrated": 0.036686390532544376,
+    "topological_insulators_semimetals": 0.06982248520710059,
+    "unconventional_topological_sc": 0.06863905325443787,
+    "vdw_magnets_topological_magnetism": 0.09349112426035502
+   }
+  },
+  {
+   "arxiv_all": 1300,
+   "counts": {
+    "other_superconductivity": 34,
+    "quantum_many_body_theory": 77,
+    "spin_liquid_frustrated": 29,
+    "topological_insulators_semimetals": 58,
+    "unconventional_topological_sc": 51,
+    "vdw_magnets_topological_magnetism": 53
+   },
+   "counts_category_only": {
+    "other_superconductivity": 32,
+    "quantum_many_body_theory": 71,
+    "spin_liquid_frustrated": 25,
+    "topological_insulators_semimetals": 25,
+    "unconventional_topological_sc": 43,
+    "vdw_magnets_topological_magnetism": 20
+   },
+   "in_scope": 678,
+   "in_scope_category": 465,
+   "in_scope_keyword": 213,
+   "keyword_mtrl_only": 70,
+   "keyword_share": 0.3141592920353982,
+   "month": "2025-08",
+   "mtrl_only_all": 499,
+   "queried": {
+    "cond-mat.mes-hall": 435,
+    "cond-mat.mtrl-sci": 711,
+    "cond-mat.str-el": 366,
+    "cond-mat.supr-con": 154
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.06881720430107527,
+    "quantum_many_body_theory": 0.15268817204301074,
+    "spin_liquid_frustrated": 0.053763440860215055,
+    "topological_insulators_semimetals": 0.053763440860215055,
+    "unconventional_topological_sc": 0.09247311827956989,
+    "vdw_magnets_topological_magnetism": 0.043010752688172046
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05014749262536873,
+    "quantum_many_body_theory": 0.11356932153392331,
+    "spin_liquid_frustrated": 0.04277286135693215,
+    "topological_insulators_semimetals": 0.0855457227138643,
+    "unconventional_topological_sc": 0.0752212389380531,
+    "vdw_magnets_topological_magnetism": 0.07817109144542773
+   }
+  },
+  {
+   "arxiv_all": 1487,
+   "counts": {
+    "other_superconductivity": 54,
+    "quantum_many_body_theory": 98,
+    "spin_liquid_frustrated": 40,
+    "topological_insulators_semimetals": 64,
+    "unconventional_topological_sc": 62,
+    "vdw_magnets_topological_magnetism": 70
+   },
+   "counts_category_only": {
+    "other_superconductivity": 50,
+    "quantum_many_body_theory": 93,
+    "spin_liquid_frustrated": 36,
+    "topological_insulators_semimetals": 19,
+    "unconventional_topological_sc": 52,
+    "vdw_magnets_topological_magnetism": 21
+   },
+   "in_scope": 848,
+   "in_scope_category": 591,
+   "in_scope_keyword": 257,
+   "keyword_mtrl_only": 93,
+   "keyword_share": 0.30306603773584906,
+   "month": "2025-09",
+   "mtrl_only_all": 500,
+   "queried": {
+    "cond-mat.mes-hall": 502,
+    "cond-mat.mtrl-sci": 705,
+    "cond-mat.str-el": 458,
+    "cond-mat.supr-con": 199
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.08460236886632826,
+    "quantum_many_body_theory": 0.15736040609137056,
+    "spin_liquid_frustrated": 0.06091370558375635,
+    "topological_insulators_semimetals": 0.032148900169204735,
+    "unconventional_topological_sc": 0.08798646362098139,
+    "vdw_magnets_topological_magnetism": 0.03553299492385787
+   },
+   "shares_full": {
+    "other_superconductivity": 0.06367924528301887,
+    "quantum_many_body_theory": 0.11556603773584906,
+    "spin_liquid_frustrated": 0.04716981132075472,
+    "topological_insulators_semimetals": 0.07547169811320754,
+    "unconventional_topological_sc": 0.07311320754716981,
+    "vdw_magnets_topological_magnetism": 0.08254716981132075
+   }
+  },
+  {
+   "arxiv_all": 1464,
+   "counts": {
+    "other_superconductivity": 41,
+    "quantum_many_body_theory": 93,
+    "spin_liquid_frustrated": 17,
+    "topological_insulators_semimetals": 34,
+    "unconventional_topological_sc": 60,
+    "vdw_magnets_topological_magnetism": 76
+   },
+   "counts_category_only": {
+    "other_superconductivity": 37,
+    "quantum_many_body_theory": 89,
+    "spin_liquid_frustrated": 17,
+    "topological_insulators_semimetals": 7,
+    "unconventional_topological_sc": 46,
+    "vdw_magnets_topological_magnetism": 26
+   },
+   "in_scope": 749,
+   "in_scope_category": 510,
+   "in_scope_keyword": 239,
+   "keyword_mtrl_only": 90,
+   "keyword_share": 0.3190921228304406,
+   "month": "2025-10",
+   "mtrl_only_all": 582,
+   "queried": {
+    "cond-mat.mes-hall": 451,
+    "cond-mat.mtrl-sci": 792,
+    "cond-mat.str-el": 393,
+    "cond-mat.supr-con": 179
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.07254901960784314,
+    "quantum_many_body_theory": 0.17450980392156862,
+    "spin_liquid_frustrated": 0.03333333333333333,
+    "topological_insulators_semimetals": 0.013725490196078431,
+    "unconventional_topological_sc": 0.09019607843137255,
+    "vdw_magnets_topological_magnetism": 0.050980392156862744
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05473965287049399,
+    "quantum_many_body_theory": 0.12416555407209613,
+    "spin_liquid_frustrated": 0.022696929238985315,
+    "topological_insulators_semimetals": 0.04539385847797063,
+    "unconventional_topological_sc": 0.0801068090787717,
+    "vdw_magnets_topological_magnetism": 0.10146862483311081
+   }
+  },
+  {
+   "arxiv_all": 1394,
+   "counts": {
+    "other_superconductivity": 54,
+    "quantum_many_body_theory": 96,
+    "spin_liquid_frustrated": 34,
+    "topological_insulators_semimetals": 55,
+    "unconventional_topological_sc": 55,
+    "vdw_magnets_topological_magnetism": 63
+   },
+   "counts_category_only": {
+    "other_superconductivity": 49,
+    "quantum_many_body_theory": 88,
+    "spin_liquid_frustrated": 30,
+    "topological_insulators_semimetals": 13,
+    "unconventional_topological_sc": 44,
+    "vdw_magnets_topological_magnetism": 22
+   },
+   "in_scope": 741,
+   "in_scope_category": 503,
+   "in_scope_keyword": 238,
+   "keyword_mtrl_only": 77,
+   "keyword_share": 0.32118758434547906,
+   "month": "2025-11",
+   "mtrl_only_all": 514,
+   "queried": {
+    "cond-mat.mes-hall": 452,
+    "cond-mat.mtrl-sci": 679,
+    "cond-mat.str-el": 382,
+    "cond-mat.supr-con": 170
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.09741550695825049,
+    "quantum_many_body_theory": 0.1749502982107356,
+    "spin_liquid_frustrated": 0.05964214711729622,
+    "topological_insulators_semimetals": 0.02584493041749503,
+    "unconventional_topological_sc": 0.0874751491053678,
+    "vdw_magnets_topological_magnetism": 0.0437375745526839
+   },
+   "shares_full": {
+    "other_superconductivity": 0.0728744939271255,
+    "quantum_many_body_theory": 0.12955465587044535,
+    "spin_liquid_frustrated": 0.04588394062078273,
+    "topological_insulators_semimetals": 0.07422402159244265,
+    "unconventional_topological_sc": 0.07422402159244265,
+    "vdw_magnets_topological_magnetism": 0.08502024291497975
+   }
+  },
+  {
+   "arxiv_all": 1682,
+   "counts": {
+    "other_superconductivity": 46,
+    "quantum_many_body_theory": 104,
+    "spin_liquid_frustrated": 34,
+    "topological_insulators_semimetals": 53,
+    "unconventional_topological_sc": 80,
+    "vdw_magnets_topological_magnetism": 79
+   },
+   "counts_category_only": {
+    "other_superconductivity": 41,
+    "quantum_many_body_theory": 95,
+    "spin_liquid_frustrated": 31,
+    "topological_insulators_semimetals": 15,
+    "unconventional_topological_sc": 68,
+    "vdw_magnets_topological_magnetism": 30
+   },
+   "in_scope": 906,
+   "in_scope_category": 641,
+   "in_scope_keyword": 265,
+   "keyword_mtrl_only": 107,
+   "keyword_share": 0.2924944812362031,
+   "month": "2025-12",
+   "mtrl_only_all": 651,
+   "queried": {
+    "cond-mat.mes-hall": 502,
+    "cond-mat.mtrl-sci": 878,
+    "cond-mat.str-el": 489,
+    "cond-mat.supr-con": 225
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.06396255850234009,
+    "quantum_many_body_theory": 0.1482059282371295,
+    "spin_liquid_frustrated": 0.0483619344773791,
+    "topological_insulators_semimetals": 0.0234009360374415,
+    "unconventional_topological_sc": 0.1060842433697348,
+    "vdw_magnets_topological_magnetism": 0.046801872074883
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05077262693156733,
+    "quantum_many_body_theory": 0.11479028697571744,
+    "spin_liquid_frustrated": 0.037527593818984545,
+    "topological_insulators_semimetals": 0.05849889624724062,
+    "unconventional_topological_sc": 0.08830022075055188,
+    "vdw_magnets_topological_magnetism": 0.08719646799116998
+   }
+  },
+  {
+   "arxiv_all": 1422,
+   "counts": {
+    "other_superconductivity": 43,
+    "quantum_many_body_theory": 83,
+    "spin_liquid_frustrated": 36,
+    "topological_insulators_semimetals": 50,
+    "unconventional_topological_sc": 55,
+    "vdw_magnets_topological_magnetism": 53
+   },
+   "counts_category_only": {
+    "other_superconductivity": 42,
+    "quantum_many_body_theory": 78,
+    "spin_liquid_frustrated": 28,
+    "topological_insulators_semimetals": 16,
+    "unconventional_topological_sc": 39,
+    "vdw_magnets_topological_magnetism": 20
+   },
+   "in_scope": 713,
+   "in_scope_category": 486,
+   "in_scope_keyword": 227,
+   "keyword_mtrl_only": 75,
+   "keyword_share": 0.31837307152875177,
+   "month": "2026-01",
+   "mtrl_only_all": 585,
+   "queried": {
+    "cond-mat.mes-hall": 428,
+    "cond-mat.mtrl-sci": 792,
+    "cond-mat.str-el": 379,
+    "cond-mat.supr-con": 173
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.08641975308641975,
+    "quantum_many_body_theory": 0.16049382716049382,
+    "spin_liquid_frustrated": 0.05761316872427984,
+    "topological_insulators_semimetals": 0.03292181069958848,
+    "unconventional_topological_sc": 0.08024691358024691,
+    "vdw_magnets_topological_magnetism": 0.0411522633744856
+   },
+   "shares_full": {
+    "other_superconductivity": 0.06030855539971949,
+    "quantum_many_body_theory": 0.11640953716690042,
+    "spin_liquid_frustrated": 0.05049088359046283,
+    "topological_insulators_semimetals": 0.07012622720897616,
+    "unconventional_topological_sc": 0.07713884992987377,
+    "vdw_magnets_topological_magnetism": 0.07433380084151472
+   }
+  },
+  {
+   "arxiv_all": 1308,
+   "counts": {
+    "other_superconductivity": 36,
+    "quantum_many_body_theory": 79,
+    "spin_liquid_frustrated": 29,
+    "topological_insulators_semimetals": 53,
+    "unconventional_topological_sc": 52,
+    "vdw_magnets_topological_magnetism": 45
+   },
+   "counts_category_only": {
+    "other_superconductivity": 33,
+    "quantum_many_body_theory": 74,
+    "spin_liquid_frustrated": 28,
+    "topological_insulators_semimetals": 15,
+    "unconventional_topological_sc": 47,
+    "vdw_magnets_topological_magnetism": 17
+   },
+   "in_scope": 690,
+   "in_scope_category": 478,
+   "in_scope_keyword": 212,
+   "keyword_mtrl_only": 85,
+   "keyword_share": 0.3072463768115942,
+   "month": "2026-02",
+   "mtrl_only_all": 498,
+   "queried": {
+    "cond-mat.mes-hall": 411,
+    "cond-mat.mtrl-sci": 686,
+    "cond-mat.str-el": 366,
+    "cond-mat.supr-con": 160
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.06903765690376569,
+    "quantum_many_body_theory": 0.15481171548117154,
+    "spin_liquid_frustrated": 0.058577405857740586,
+    "topological_insulators_semimetals": 0.03138075313807531,
+    "unconventional_topological_sc": 0.09832635983263599,
+    "vdw_magnets_topological_magnetism": 0.03556485355648536
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05217391304347826,
+    "quantum_many_body_theory": 0.1144927536231884,
+    "spin_liquid_frustrated": 0.042028985507246375,
+    "topological_insulators_semimetals": 0.07681159420289856,
+    "unconventional_topological_sc": 0.07536231884057971,
+    "vdw_magnets_topological_magnetism": 0.06521739130434782
+   }
+  },
+  {
+   "arxiv_all": 1755,
+   "counts": {
+    "other_superconductivity": 40,
+    "quantum_many_body_theory": 90,
+    "spin_liquid_frustrated": 39,
+    "topological_insulators_semimetals": 75,
+    "unconventional_topological_sc": 68,
+    "vdw_magnets_topological_magnetism": 70
+   },
+   "counts_category_only": {
+    "other_superconductivity": 34,
+    "quantum_many_body_theory": 85,
+    "spin_liquid_frustrated": 36,
+    "topological_insulators_semimetals": 23,
+    "unconventional_topological_sc": 55,
+    "vdw_magnets_topological_magnetism": 17
+   },
+   "in_scope": 895,
+   "in_scope_category": 585,
+   "in_scope_keyword": 310,
+   "keyword_mtrl_only": 122,
+   "keyword_share": 0.3463687150837989,
+   "month": "2026-03",
+   "mtrl_only_all": 701,
+   "queried": {
+    "cond-mat.mes-hall": 589,
+    "cond-mat.mtrl-sci": 956,
+    "cond-mat.str-el": 454,
+    "cond-mat.supr-con": 182
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.05811965811965812,
+    "quantum_many_body_theory": 0.1452991452991453,
+    "spin_liquid_frustrated": 0.06153846153846154,
+    "topological_insulators_semimetals": 0.039316239316239315,
+    "unconventional_topological_sc": 0.09401709401709402,
+    "vdw_magnets_topological_magnetism": 0.02905982905982906
+   },
+   "shares_full": {
+    "other_superconductivity": 0.0446927374301676,
+    "quantum_many_body_theory": 0.1005586592178771,
+    "spin_liquid_frustrated": 0.04357541899441341,
+    "topological_insulators_semimetals": 0.08379888268156424,
+    "unconventional_topological_sc": 0.07597765363128492,
+    "vdw_magnets_topological_magnetism": 0.0782122905027933
+   }
+  },
+  {
+   "arxiv_all": 1578,
+   "counts": {
+    "other_superconductivity": 45,
+    "quantum_many_body_theory": 107,
+    "spin_liquid_frustrated": 30,
+    "topological_insulators_semimetals": 68,
+    "unconventional_topological_sc": 53,
+    "vdw_magnets_topological_magnetism": 83
+   },
+   "counts_category_only": {
+    "other_superconductivity": 40,
+    "quantum_many_body_theory": 101,
+    "spin_liquid_frustrated": 26,
+    "topological_insulators_semimetals": 21,
+    "unconventional_topological_sc": 43,
+    "vdw_magnets_topological_magnetism": 23
+   },
+   "in_scope": 851,
+   "in_scope_category": 571,
+   "in_scope_keyword": 280,
+   "keyword_mtrl_only": 104,
+   "keyword_share": 0.3290246768507638,
+   "month": "2026-04",
+   "mtrl_only_all": 606,
+   "queried": {
+    "cond-mat.mes-hall": 490,
+    "cond-mat.mtrl-sci": 813,
+    "cond-mat.str-el": 453,
+    "cond-mat.supr-con": 190
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.07005253940455342,
+    "quantum_many_body_theory": 0.17688266199649738,
+    "spin_liquid_frustrated": 0.04553415061295972,
+    "topological_insulators_semimetals": 0.03677758318739054,
+    "unconventional_topological_sc": 0.07530647985989491,
+    "vdw_magnets_topological_magnetism": 0.040280210157618214
+   },
+   "shares_full": {
+    "other_superconductivity": 0.052878965922444184,
+    "quantum_many_body_theory": 0.12573443008225618,
+    "spin_liquid_frustrated": 0.03525264394829612,
+    "topological_insulators_semimetals": 0.0799059929494712,
+    "unconventional_topological_sc": 0.06227967097532315,
+    "vdw_magnets_topological_magnetism": 0.09753231492361927
+   }
+  },
+  {
+   "arxiv_all": 1630,
+   "counts": {
+    "other_superconductivity": 51,
+    "quantum_many_body_theory": 116,
+    "spin_liquid_frustrated": 42,
+    "topological_insulators_semimetals": 55,
+    "unconventional_topological_sc": 49,
+    "vdw_magnets_topological_magnetism": 69
+   },
+   "counts_category_only": {
+    "other_superconductivity": 48,
+    "quantum_many_body_theory": 110,
+    "spin_liquid_frustrated": 42,
+    "topological_insulators_semimetals": 12,
+    "unconventional_topological_sc": 42,
+    "vdw_magnets_topological_magnetism": 10
+   },
+   "in_scope": 833,
+   "in_scope_category": 563,
+   "in_scope_keyword": 270,
+   "keyword_mtrl_only": 94,
+   "keyword_share": 0.3241296518607443,
+   "month": "2026-05",
+   "mtrl_only_all": 620,
+   "queried": {
+    "cond-mat.mes-hall": 528,
+    "cond-mat.mtrl-sci": 841,
+    "cond-mat.str-el": 432,
+    "cond-mat.supr-con": 193
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.0852575488454707,
+    "quantum_many_body_theory": 0.19538188277087035,
+    "spin_liquid_frustrated": 0.07460035523978685,
+    "topological_insulators_semimetals": 0.021314387211367674,
+    "unconventional_topological_sc": 0.07460035523978685,
+    "vdw_magnets_topological_magnetism": 0.017761989342806393
+   },
+   "shares_full": {
+    "other_superconductivity": 0.061224489795918366,
+    "quantum_many_body_theory": 0.13925570228091236,
+    "spin_liquid_frustrated": 0.05042016806722689,
+    "topological_insulators_semimetals": 0.06602641056422569,
+    "unconventional_topological_sc": 0.058823529411764705,
+    "vdw_magnets_topological_magnetism": 0.08283313325330131
+   }
+  },
+  {
+   "arxiv_all": 1564,
+   "counts": {
+    "other_superconductivity": 53,
+    "quantum_many_body_theory": 94,
+    "spin_liquid_frustrated": 28,
+    "topological_insulators_semimetals": 56,
+    "unconventional_topological_sc": 56,
+    "vdw_magnets_topological_magnetism": 65
+   },
+   "counts_category_only": {
+    "other_superconductivity": 47,
+    "quantum_many_body_theory": 88,
+    "spin_liquid_frustrated": 26,
+    "topological_insulators_semimetals": 16,
+    "unconventional_topological_sc": 51,
+    "vdw_magnets_topological_magnetism": 24
+   },
+   "in_scope": 859,
+   "in_scope_category": 577,
+   "in_scope_keyword": 282,
+   "keyword_mtrl_only": 104,
+   "keyword_share": 0.32828870779976715,
+   "month": "2026-06",
+   "mtrl_only_all": 582,
+   "queried": {
+    "cond-mat.mes-hall": 525,
+    "cond-mat.mtrl-sci": 783,
+    "cond-mat.str-el": 446,
+    "cond-mat.supr-con": 215
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.08145580589254767,
+    "quantum_many_body_theory": 0.15251299826689774,
+    "spin_liquid_frustrated": 0.045060658578856154,
+    "topological_insulators_semimetals": 0.02772963604852686,
+    "unconventional_topological_sc": 0.08838821490467938,
+    "vdw_magnets_topological_magnetism": 0.0415944540727903
+   },
+   "shares_full": {
+    "other_superconductivity": 0.06169965075669383,
+    "quantum_many_body_theory": 0.10942956926658906,
+    "spin_liquid_frustrated": 0.03259604190919674,
+    "topological_insulators_semimetals": 0.06519208381839348,
+    "unconventional_topological_sc": 0.06519208381839348,
+    "vdw_magnets_topological_magnetism": 0.07566938300349244
+   }
+  },
+  {
+   "arxiv_all": 1646,
+   "counts": {
+    "other_superconductivity": 55,
+    "quantum_many_body_theory": 100,
+    "spin_liquid_frustrated": 41,
+    "topological_insulators_semimetals": 58,
+    "unconventional_topological_sc": 65,
+    "vdw_magnets_topological_magnetism": 78
+   },
+   "counts_category_only": {
+    "other_superconductivity": 51,
+    "quantum_many_body_theory": 93,
+    "spin_liquid_frustrated": 39,
+    "topological_insulators_semimetals": 15,
+    "unconventional_topological_sc": 47,
+    "vdw_magnets_topological_magnetism": 31
+   },
+   "in_scope": 890,
+   "in_scope_category": 602,
+   "in_scope_keyword": 288,
+   "keyword_mtrl_only": 106,
+   "keyword_share": 0.3235955056179775,
+   "month": "2026-07",
+   "mtrl_only_all": 605,
+   "queried": {
+    "cond-mat.mes-hall": 545,
+    "cond-mat.mtrl-sci": 823,
+    "cond-mat.str-el": 476,
+    "cond-mat.supr-con": 204
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.08471760797342193,
+    "quantum_many_body_theory": 0.15448504983388706,
+    "spin_liquid_frustrated": 0.06478405315614617,
+    "topological_insulators_semimetals": 0.024916943521594685,
+    "unconventional_topological_sc": 0.07807308970099668,
+    "vdw_magnets_topological_magnetism": 0.05149501661129568
+   },
+   "shares_full": {
+    "other_superconductivity": 0.06179775280898876,
+    "quantum_many_body_theory": 0.11235955056179775,
+    "spin_liquid_frustrated": 0.046067415730337076,
+    "topological_insulators_semimetals": 0.0651685393258427,
+    "unconventional_topological_sc": 0.07303370786516854,
+    "vdw_magnets_topological_magnetism": 0.08764044943820225
+   }
+  },
+  {
+   "arxiv_all": 1672,
+   "counts": {
+    "other_superconductivity": 51,
+    "quantum_many_body_theory": 110,
+    "spin_liquid_frustrated": 27,
+    "topological_insulators_semimetals": 65,
+    "unconventional_topological_sc": 54,
+    "vdw_magnets_topological_magnetism": 81
+   },
+   "counts_category_only": {
+    "other_superconductivity": 43,
+    "quantum_many_body_theory": 106,
+    "spin_liquid_frustrated": 24,
+    "topological_insulators_semimetals": 25,
+    "unconventional_topological_sc": 42,
+    "vdw_magnets_topological_magnetism": 29
+   },
+   "in_scope": 901,
+   "in_scope_category": 590,
+   "in_scope_keyword": 311,
+   "keyword_mtrl_only": 122,
+   "keyword_share": 0.34517203107658156,
+   "month": "2026-08",
+   "mtrl_only_all": 638,
+   "queried": {
+    "cond-mat.mes-hall": 559,
+    "cond-mat.mtrl-sci": 845,
+    "cond-mat.str-el": 454,
+    "cond-mat.supr-con": 184
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.07288135593220339,
+    "quantum_many_body_theory": 0.17966101694915254,
+    "spin_liquid_frustrated": 0.04067796610169491,
+    "topological_insulators_semimetals": 0.0423728813559322,
+    "unconventional_topological_sc": 0.0711864406779661,
+    "vdw_magnets_topological_magnetism": 0.04915254237288136
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05660377358490566,
+    "quantum_many_body_theory": 0.1220865704772475,
+    "spin_liquid_frustrated": 0.029966703662597113,
+    "topological_insulators_semimetals": 0.07214206437291898,
+    "unconventional_topological_sc": 0.05993340732519423,
+    "vdw_magnets_topological_magnetism": 0.08990011098779134
+   }
+  },
+  {
+   "arxiv_all": 1256,
+   "counts": {
+    "other_superconductivity": 34,
+    "quantum_many_body_theory": 79,
+    "spin_liquid_frustrated": 20,
+    "topological_insulators_semimetals": 40,
+    "unconventional_topological_sc": 55,
+    "vdw_magnets_topological_magnetism": 44
+   },
+   "counts_category_only": {
+    "other_superconductivity": 34,
+    "quantum_many_body_theory": 76,
+    "spin_liquid_frustrated": 18,
+    "topological_insulators_semimetals": 13,
+    "unconventional_topological_sc": 46,
+    "vdw_magnets_topological_magnetism": 15
+   },
+   "in_scope": 643,
+   "in_scope_category": 449,
+   "in_scope_keyword": 194,
+   "keyword_mtrl_only": 62,
+   "keyword_share": 0.30171073094867806,
+   "month": "2026-09",
+   "mtrl_only_all": 495,
+   "queried": {
+    "cond-mat.mes-hall": 382,
+    "cond-mat.mtrl-sci": 680,
+    "cond-mat.str-el": 345,
+    "cond-mat.supr-con": 154
+   },
+   "shares_category_only": {
+    "other_superconductivity": 0.0757238307349666,
+    "quantum_many_body_theory": 0.16926503340757237,
+    "spin_liquid_frustrated": 0.0400890868596882,
+    "topological_insulators_semimetals": 0.028953229398663696,
+    "unconventional_topological_sc": 0.10244988864142539,
+    "vdw_magnets_topological_magnetism": 0.0334075723830735
+   },
+   "shares_full": {
+    "other_superconductivity": 0.05287713841368585,
+    "quantum_many_body_theory": 0.12286158631415241,
+    "spin_liquid_frustrated": 0.03110419906687403,
+    "topological_insulators_semimetals": 0.06220839813374806,
+    "unconventional_topological_sc": 0.08553654743390357,
+    "vdw_magnets_topological_magnetism": 0.06842923794712286
+   }
+  }
+ ],
+ "scope_P": 8828,
+ "scope_T": 9878,
+ "sensitivity": {
+  "exclude_2024-09-24..30": {
+   "label_changes": [],
+   "scope_P": 8663,
+   "scope_T": 9878,
+   "table": {
+    "altermagnetism": {
+     "P": 409,
+     "R": 1.4152068437876075,
+     "T": 660,
+     "T_multi": 678,
+     "hi": 1.6063218914513289,
+     "label": "rising",
+     "lo": 1.2468300540271673
+    },
+    "cdw_nematic_excitonic": {
+     "P": 305,
+     "R": 1.1214090593768566,
+     "T": 390,
+     "T_multi": 744,
+     "hi": 1.3062459598284062,
+     "label": "flat",
+     "lo": 0.9627270185912647
+    },
+    "cuprate_sc": {
+     "P": 186,
+     "R": 1.051456261007953,
+     "T": 223,
+     "T_multi": 240,
+     "hi": 1.2800925390421551,
+     "label": "flat",
+     "lo": 0.8636565209887666
+    },
+    "flat_band_quantum_geometry": {
+     "P": 239,
+     "R": 1.0898276970674023,
+     "T": 297,
+     "T_multi": 852,
+     "hi": 1.2953282550625698,
+     "label": "flat",
+     "lo": 0.9169292838731953
+    },
+    "fractional_qah_chern": {
+     "P": 357,
+     "R": 0.8941954591109577,
+     "T": 364,
+     "T_multi": 379,
+     "hi": 1.037680293997375,
+     "label": "flat",
+     "lo": 0.7705509333847667
+    },
+    "heavy_fermion_kondo_qcp": {
+     "P": 149,
+     "R": 0.953516118117544,
+     "T": 162,
+     "T_multi": 274,
+     "hi": 1.1933221721746137,
+     "label": "flat",
+     "lo": 0.7619006909534837
+    },
+    "hydride_high_pressure_sc": {
+     "P": 49,
+     "R": 1.0201829668899347,
+     "T": 57,
+     "T_multi": 61,
+     "hi": 1.4961624319281686,
+     "label": "flat",
+     "lo": 0.6956285385344562
+    },
+    "iron_based_sc": {
+     "P": 117,
+     "R": 0.876999392589593,
+     "T": 117,
+     "T_multi": 123,
+     "hi": 1.1349951469182893,
+     "label": "flat",
+     "lo": 0.6776486548782453
+    },
+    "kagome": {
+     "P": 306,
+     "R": 0.8827314147633814,
+     "T": 308,
+     "T_multi": 310,
+     "hi": 1.0367326284607263,
+     "label": "flat",
+     "lo": 0.7516062765064977
+    },
+    "ml_ai": {
+     "P": 90,
+     "R": 1.1206103349755911,
+     "T": 115,
+     "T_multi": 229,
+     "hi": 1.4787862702396206,
+     "label": "flat",
+     "lo": 0.8491879780914005
+    },
+    "moire_twisted_2d": {
+     "P": 331,
+     "R": 1.0730657220507105,
+     "T": 405,
+     "T_multi": 489,
+     "hi": 1.244316874902117,
+     "label": "flat",
+     "lo": 0.9253832902738638
+    },
+    "mott_hubbard_strange_metal": {
+     "P": 444,
+     "R": 1.0527943158789483,
+     "T": 533,
+     "T_multi": 976,
+     "hi": 1.1979908168360787,
+     "label": "flat",
+     "lo": 0.925195632529362
+    },
+    "nickelate_sc": {
+     "P": 208,
+     "R": 0.9360281978600463,
+     "T": 222,
+     "T_multi": 222,
+     "hi": 1.1333949408089632,
+     "label": "flat",
+     "lo": 0.7730304377075945
+    },
+    "other_superconductivity": {
+     "P": 496,
+     "R": 1.011378331776708,
+     "T": 572,
+     "T_multi": 572,
+     "hi": 1.1445154698127868,
+     "label": "flat",
+     "lo": 0.8937285313887059
+    },
+    "quantum_magnetism_ferroic_order": {
+     "P": 431,
+     "R": 0.958391447586307,
+     "T": 471,
+     "T_multi": 471,
+     "hi": 1.0955963100591724,
+     "label": "flat",
+     "lo": 0.8383691678890091
+    },
+    "quantum_many_body_theory": {
+     "P": 966,
+     "R": 1.0721907687870698,
+     "T": 1181,
+     "T_multi": 1181,
+     "hi": 1.1729156464248924,
+     "label": "flat",
+     "lo": 0.9801157041226509
+    },
+    "rhombohedral_multilayer_graphene": {
+     "P": 62,
+     "R": 1.145757270963823,
+     "T": 81,
+     "T_multi": 102,
+     "hi": 1.5968947752308722,
+     "label": "flat",
+     "lo": 0.8220702730877645
+    },
+    "spin_liquid_frustrated": {
+     "P": 400,
+     "R": 0.8484969123304313,
+     "T": 387,
+     "T_multi": 484,
+     "hi": 0.9786414360824098,
+     "label": "declining",
+     "lo": 0.7356596437570523
+    },
+    "topological_insulators_semimetals": {
+     "P": 704,
+     "R": 0.8446102104769091,
+     "T": 678,
+     "T_multi": 1149,
+     "hi": 0.9421978565332684,
+     "label": "declining",
+     "lo": 0.7571301533911526
+    },
+    "ultrafast_floquet_noneq": {
+     "P": 127,
+     "R": 0.9391489558439736,
+     "T": 136,
+     "T_multi": 433,
+     "hi": 1.1981667650245154,
+     "label": "flat",
+     "lo": 0.736125209786452
+    },
+    "unclassified": {
+     "P": 838,
+     "R": 1.0277009588579717,
+     "T": 982,
+     "T_multi": null,
+     "hi": 1.1319128636306897,
+     "label": "flat",
+     "lo": 0.9330835391779698
+    },
+    "unconventional_topological_sc": {
+     "P": 677,
+     "R": 0.9288161956968068,
+     "T": 717,
+     "T_multi": 945,
+     "hi": 1.0357032867265357,
+     "label": "flat",
+     "lo": 0.8329601116892794
+    },
+    "vdw_magnets_topological_magnetism": {
+     "P": 772,
+     "R": 0.9315278522324693,
+     "T": 820,
+     "T_multi": 1168,
+     "hi": 1.0320097321561839,
+     "label": "flat",
+     "lo": 0.8408294151178732
+    }
+   }
+  },
+  "exclude_2026-09": {
+   "label_changes": [],
+   "scope_P": 8828,
+   "scope_T": 9235,
+   "table": {
+    "altermagnetism": {
+     "P": 414,
+     "R": 1.4131117440738212,
+     "T": 612,
+     "T_multi": 630,
+     "hi": 1.6062237497636196,
+     "label": "rising",
+     "lo": 1.2432170807667544
+    },
+    "cdw_nematic_excitonic": {
+     "P": 310,
+     "R": 1.1378633180222506,
+     "T": 369,
+     "T_multi": 699,
+     "hi": 1.3270409004724666,
+     "label": "flat",
+     "lo": 0.9756541264399924
+    },
+    "cuprate_sc": {
+     "P": 192,
+     "R": 1.0455468327016784,
+     "T": 210,
+     "T_multi": 227,
+     "hi": 1.2743174781423978,
+     "label": "flat",
+     "lo": 0.8578460219866466
+    },
+    "flat_band_quantum_geometry": {
+     "P": 243,
+     "R": 1.0975475746455714,
+     "T": 279,
+     "T_multi": 787,
+     "hi": 1.3067176503323725,
+     "label": "flat",
+     "lo": 0.9218599582732928
+    },
+    "fractional_qah_chern": {
+     "P": 363,
+     "R": 0.8927266462926257,
+     "T": 339,
+     "T_multi": 354,
+     "hi": 1.0381184879807253,
+     "label": "flat",
+     "lo": 0.7676974008536065
+    },
+    "heavy_fermion_kondo_qcp": {
+     "P": 151,
+     "R": 0.9495978802210137,
+     "T": 150,
+     "T_multi": 255,
+     "hi": 1.1925636831771966,
+     "label": "flat",
+     "lo": 0.7561324789950513
+    },
+    "hydride_high_pressure_sc": {
+     "P": 52,
+     "R": 0.9926950147848901,
+     "T": 54,
+     "T_multi": 58,
+     "hi": 1.4544036501945738,
+     "label": "flat",
+     "lo": 0.6775583877604666
+    },
+    "iron_based_sc": {
+     "P": 117,
+     "R": 0.9069065567170602,
+     "T": 111,
+     "T_multi": 116,
+     "hi": 1.1777619680486346,
+     "label": "flat",
+     "lo": 0.6983410272443359
+    },
+    "kagome": {
+     "P": 313,
+     "R": 0.8581978201418067,
+     "T": 281,
+     "T_multi": 283,
+     "hi": 1.010831825702328,
+     "label": "flat",
+     "lo": 0.7286113078052568
+    },
+    "ml_ai": {
+     "P": 93,
+     "R": 1.0587165470306394,
+     "T": 103,
+     "T_multi": 211,
+     "hi": 1.4034540083378046,
+     "label": "flat",
+     "lo": 0.7986586808669327
+    },
+    "moire_twisted_2d": {
+     "P": 335,
+     "R": 1.0900438791424578,
+     "T": 382,
+     "T_multi": 460,
+     "hi": 1.2659226302745246,
+     "label": "flat",
+     "lo": 0.9386005353251868
+    },
+    "mott_hubbard_strange_metal": {
+     "P": 454,
+     "R": 1.0422568804276013,
+     "T": 495,
+     "T_multi": 921,
+     "hi": 1.187742591550825,
+     "label": "flat",
+     "lo": 0.9145916064021108
+    },
+    "nickelate_sc": {
+     "P": 211,
+     "R": 0.9287457308765077,
+     "T": 205,
+     "T_multi": 205,
+     "hi": 1.1280550712379078,
+     "label": "flat",
+     "lo": 0.7646511722825472
+    },
+    "other_superconductivity": {
+     "P": 506,
+     "R": 1.0163825111119196,
+     "T": 538,
+     "T_multi": 538,
+     "hi": 1.151522168521236,
+     "label": "flat",
+     "lo": 0.8971024936678155
+    },
+    "quantum_magnetism_ferroic_order": {
+     "P": 440,
+     "R": 0.9602736624501648,
+     "T": 442,
+     "T_multi": 442,
+     "hi": 1.0992656599118393,
+     "label": "flat",
+     "lo": 0.8388559202962886
+    },
+    "quantum_many_body_theory": {
+     "P": 988,
+     "R": 1.0662279788430302,
+     "T": 1102,
+     "T_multi": 1102,
+     "hi": 1.1674493336265255,
+     "label": "flat",
+     "lo": 0.9737828187680274
+    },
+    "rhombohedral_multilayer_graphene": {
+     "P": 63,
+     "R": 1.168357095590447,
+     "T": 77,
+     "T_multi": 95,
+     "hi": 1.632061166494151,
+     "label": "flat",
+     "lo": 0.8364014357065073
+    },
+    "spin_liquid_frustrated": {
+     "P": 407,
+     "R": 0.861979782607828,
+     "T": 367,
+     "T_multi": 457,
+     "hi": 0.9955611872552433,
+     "label": "declining",
+     "lo": 0.7463219289143951
+    },
+    "topological_insulators_semimetals": {
+     "P": 712,
+     "R": 0.8565764099694009,
+     "T": 638,
+     "T_multi": 1075,
+     "hi": 0.9569052459972464,
+     "label": "declining",
+     "lo": 0.7667667715118561
+    },
+    "ultrafast_floquet_noneq": {
+     "P": 131,
+     "R": 0.9267398752670929,
+     "T": 127,
+     "T_multi": 403,
+     "hi": 1.1849883233344973,
+     "label": "flat",
+     "lo": 0.7247723707465028
+    },
+    "unclassified": {
+     "P": 856,
+     "R": 1.0229328691639386,
+     "T": 916,
+     "T_multi": null,
+     "hi": 1.1278468067234126,
+     "label": "flat",
+     "lo": 0.9277781774777673
+    },
+    "unconventional_topological_sc": {
+     "P": 693,
+     "R": 0.9131669389384603,
+     "T": 662,
+     "T_multi": 875,
+     "hi": 1.0197996356799042,
+     "label": "flat",
+     "lo": 0.8176840128152145
+    },
+    "vdw_magnets_topological_magnetism": {
+     "P": 784,
+     "R": 0.9461741599725975,
+     "T": 776,
+     "T_multi": 1102,
+     "hi": 1.0492967707254899,
+     "label": "flat",
+     "lo": 0.8531862157365379
+    }
+   }
+  },
+  "exclude_both": {
+   "label_changes": [],
+   "scope_P": 8663,
+   "scope_T": 9235,
+   "table": {
+    "altermagnetism": {
+     "P": 409,
+     "R": 1.40365225840357,
+     "T": 612,
+     "T_multi": 630,
+     "hi": 1.5962284277860421,
+     "label": "rising",
+     "lo": 1.2343093433401329
+    },
+    "cdw_nematic_excitonic": {
+     "P": 305,
+     "R": 1.1349009026600514,
+     "T": 369,
+     "T_multi": 699,
+     "hi": 1.3244940693509406,
+     "label": "flat",
+     "lo": 0.972446829822179
+    },
+    "cuprate_sc": {
+     "P": 186,
+     "R": 1.0591019438671254,
+     "T": 210,
+     "T_multi": 227,
+     "hi": 1.2929637469751118,
+     "label": "flat",
+     "lo": 0.8675393491328223
+    },
+    "flat_band_quantum_geometry": {
+     "P": 239,
+     "R": 1.0950594994030804,
+     "T": 279,
+     "T_multi": 787,
+     "hi": 1.3047732457529717,
+     "label": "flat",
+     "lo": 0.919052648524307
+    },
+    "fractional_qah_chern": {
+     "P": 357,
+     "R": 0.8907644920447876,
+     "T": 339,
+     "T_multi": 354,
+     "hi": 1.0364746438501131,
+     "label": "flat",
+     "lo": 0.7655386313556095
+    },
+    "heavy_fermion_kondo_qcp": {
+     "P": 149,
+     "R": 0.9443574379639756,
+     "T": 150,
+     "T_multi": 255,
+     "hi": 1.1868916612216094,
+     "label": "flat",
+     "lo": 0.7513836348972127
+    },
+    "hydride_high_pressure_sc": {
+     "P": 49,
+     "R": 1.0337823055589317,
+     "T": 54,
+     "T_multi": 58,
+     "hi": 1.523543434608594,
+     "label": "flat",
+     "lo": 0.7014607073288306
+    },
+    "iron_based_sc": {
+     "P": 117,
+     "R": 0.8899559923923758,
+     "T": 111,
+     "T_multi": 116,
+     "hi": 1.1557672997292137,
+     "label": "flat",
+     "lo": 0.6852777964739635
+    },
+    "kagome": {
+     "P": 306,
+     "R": 0.8614226921593399,
+     "T": 281,
+     "T_multi": 283,
+     "hi": 1.015524071223088,
+     "label": "flat",
+     "lo": 0.7307055298781128
+    },
+    "ml_ai": {
+     "P": 90,
+     "R": 1.07355952595801,
+     "T": 103,
+     "T_multi": 211,
+     "hi": 1.426616049401352,
+     "label": "flat",
+     "lo": 0.8078768329143786
+    },
+    "moire_twisted_2d": {
+     "P": 331,
+     "R": 1.0825969114608975,
+     "T": 382,
+     "T_multi": 460,
+     "hi": 1.2578904602387027,
+     "label": "flat",
+     "lo": 0.9317314263455561
+    },
+    "mott_hubbard_strange_metal": {
+     "P": 444,
+     "R": 1.0458120546101055,
+     "T": 495,
+     "T_multi": 921,
+     "hi": 1.1926986623275404,
+     "label": "flat",
+     "lo": 0.917015242922651
+    },
+    "nickelate_sc": {
+     "P": 208,
+     "R": 0.9245319853400523,
+     "T": 205,
+     "T_multi": 205,
+     "hi": 1.1237182377391166,
+     "label": "flat",
+     "lo": 0.7606527714959632
+    },
+    "other_superconductivity": {
+     "P": 496,
+     "R": 1.017494367500917,
+     "T": 538,
+     "T_multi": 538,
+     "hi": 1.1535251909839424,
+     "label": "flat",
+     "lo": 0.89750513988602
+    },
+    "quantum_magnetism_ferroic_order": {
+     "P": 431,
+     "R": 0.9620029721489792,
+     "T": 442,
+     "T_multi": 442,
+     "hi": 1.1020199153208707,
+     "label": "flat",
+     "lo": 0.8397758566404947
+    },
+    "quantum_many_body_theory": {
+     "P": 966,
+     "R": 1.0701283823244228,
+     "T": 1102,
+     "T_multi": 1102,
+     "hi": 1.1723439194734575,
+     "label": "flat",
+     "lo": 0.9768249194064363
+    },
+    "rhombohedral_multilayer_graphene": {
+     "P": 62,
+     "R": 1.165012138253838,
+     "T": 77,
+     "T_multi": 95,
+     "hi": 1.629799556340707,
+     "label": "flat",
+     "lo": 0.8327731327440908
+    },
+    "spin_liquid_frustrated": {
+     "P": 400,
+     "R": 0.8606716296697348,
+     "T": 367,
+     "T_multi": 457,
+     "hi": 0.9946476675691394,
+     "label": "declining",
+     "lo": 0.7447417595908312
+    },
+    "topological_insulators_semimetals": {
+     "P": 704,
+     "R": 0.8501184353004874,
+     "T": 638,
+     "T_multi": 1075,
+     "hi": 0.9499888757442172,
+     "label": "declining",
+     "lo": 0.7607471755620168
+    },
+    "ultrafast_floquet_noneq": {
+     "P": 127,
+     "R": 0.9380617217108825,
+     "T": 127,
+     "T_multi": 403,
+     "hi": 1.2017322547670037,
+     "label": "flat",
+     "lo": 0.7322428022120411
+    },
+    "unclassified": {
+     "P": 838,
+     "R": 1.0253753425861198,
+     "T": 916,
+     "T_multi": null,
+     "hi": 1.1311443752403205,
+     "label": "flat",
+     "lo": 0.9294963721675453
+    },
+    "unconventional_topological_sc": {
+     "P": 677,
+     "R": 0.9172774885858261,
+     "T": 662,
+     "T_multi": 875,
+     "hi": 1.025034577922023,
+     "label": "flat",
+     "lo": 0.8208483978872446
+    },
+    "vdw_magnets_topological_magnetism": {
+     "P": 772,
+     "R": 0.9429221451394363,
+     "T": 776,
+     "T_multi": 1102,
+     "hi": 1.0461164130181562,
+     "label": "flat",
+     "lo": 0.8499074870923807
+    }
+   }
+  },
+  "leave_one_month_out": {
+   "2024-11": [
+    [
+     "cdw_nematic_excitonic",
+     "flat",
+     "rising",
+     1.17,
+     1.0,
+     1.369
+    ]
+   ],
+   "2025-05": [
+    [
+     "spin_liquid_frustrated",
+     "declining",
+     "flat",
+     0.871,
+     0.752,
+     1.007
+    ]
+   ],
+   "2025-10": [
+    [
+     "spin_liquid_frustrated",
+     "declining",
+     "flat",
+     0.879,
+     0.761,
+     1.015
+    ]
+   ],
+   "2026-08": [
+    [
+     "spin_liquid_frustrated",
+     "declining",
+     "flat",
+     0.87,
+     0.753,
+     1.005
+    ]
+   ]
+  }
+ },
+ "table": {
+  "altermagnetism": {
+   "P": 414,
+   "R": 1.4247441980568736,
+   "T": 660,
+   "T_multi": 678,
+   "hi": 1.6163689070955225,
+   "label": "rising",
+   "lo": 1.2558370932439393
+  },
+  "cdw_nematic_excitonic": {
+   "P": 310,
+   "R": 1.12433625717626,
+   "T": 390,
+   "T_multi": 744,
+   "hi": 1.3087463912708603,
+   "label": "flat",
+   "lo": 0.9659106054715335
+  },
+  "cuprate_sc": {
+   "P": 192,
+   "R": 1.037999004521833,
+   "T": 223,
+   "T_multi": 240,
+   "hi": 1.2616025356374212,
+   "label": "flat",
+   "lo": 0.8540264488640567
+  },
+  "flat_band_quantum_geometry": {
+   "P": 243,
+   "R": 1.0923038851769364,
+   "T": 297,
+   "T_multi": 852,
+   "hi": 1.2972440072956706,
+   "label": "flat",
+   "lo": 0.9197404427097036
+  },
+  "fractional_qah_chern": {
+   "P": 363,
+   "R": 0.8961651710091771,
+   "T": 364,
+   "T_multi": 379,
+   "hi": 1.0393144721674383,
+   "label": "flat",
+   "lo": 0.7727324455081027
+  },
+  "heavy_fermion_kondo_qcp": {
+   "P": 151,
+   "R": 0.9588073838579009,
+   "T": 162,
+   "T_multi": 274,
+   "hi": 1.1990074638165773,
+   "label": "flat",
+   "lo": 0.7667271698327536
+  },
+  "hydride_high_pressure_sc": {
+   "P": 52,
+   "R": 0.9796361767408538,
+   "T": 57,
+   "T_multi": 61,
+   "hi": 1.428156096508262,
+   "label": "flat",
+   "lo": 0.6719762924555673
+  },
+  "iron_based_sc": {
+   "P": 117,
+   "R": 0.8937031787811297,
+   "T": 117,
+   "T_multi": 123,
+   "hi": 1.15659426685136,
+   "label": "flat",
+   "lo": 0.6905666011451375
+  },
+  "kagome": {
+   "P": 313,
+   "R": 0.8794267701744026,
+   "T": 308,
+   "T_multi": 310,
+   "hi": 1.0319209875697994,
+   "label": "flat",
+   "lo": 0.7494676951195056
+  },
+  "ml_ai": {
+   "P": 93,
+   "R": 1.105116833976666,
+   "T": 115,
+   "T_multi": 229,
+   "hi": 1.4546868714299466,
+   "label": "flat",
+   "lo": 0.8395505869507831
+  },
+  "moire_twisted_2d": {
+   "P": 335,
+   "R": 1.080447126586142,
+   "T": 405,
+   "T_multi": 489,
+   "hi": 1.2522540271427387,
+   "label": "flat",
+   "lo": 0.9322118101004022
+  },
+  "mott_hubbard_strange_metal": {
+   "P": 454,
+   "R": 1.0492154059258636,
+   "T": 533,
+   "T_multi": 976,
+   "hi": 1.1929970597539126,
+   "label": "flat",
+   "lo": 0.9227625156588861
+  },
+  "nickelate_sc": {
+   "P": 211,
+   "R": 0.9402943397602407,
+   "T": 222,
+   "T_multi": 222,
+   "hi": 1.1377534161371223,
+   "label": "flat",
+   "lo": 0.7771046281601219
+  },
+  "other_superconductivity": {
+   "P": 506,
+   "R": 1.0102731586221467,
+   "T": 572,
+   "T_multi": 572,
+   "hi": 1.1425172426818333,
+   "label": "flat",
+   "lo": 0.8933360626020758
+  },
+  "quantum_magnetism_ferroic_order": {
+   "P": 440,
+   "R": 0.9566686300134367,
+   "T": 471,
+   "T_multi": 471,
+   "hi": 1.0928460714775698,
+   "label": "flat",
+   "lo": 0.8374599969183036
+  },
+  "quantum_many_body_theory": {
+   "P": 988,
+   "R": 1.0682828483203586,
+   "T": 1181,
+   "T_multi": 1181,
+   "hi": 1.1680086572275483,
+   "label": "flat",
+   "lo": 0.9770717339752792
+  },
+  "rhombohedral_multilayer_graphene": {
+   "P": 63,
+   "R": 1.1490469441471667,
+   "T": 81,
+   "T_multi": 102,
+   "hi": 1.5990840061737088,
+   "label": "flat",
+   "lo": 0.8256657403591819
+  },
+  "spin_liquid_frustrated": {
+   "P": 407,
+   "R": 0.8497865606592069,
+   "T": 387,
+   "T_multi": 484,
+   "hi": 0.9795320691050478,
+   "label": "declining",
+   "lo": 0.737226703906475
+  },
+  "topological_insulators_semimetals": {
+   "P": 712,
+   "R": 0.8510263415921433,
+   "T": 678,
+   "T_multi": 1149,
+   "hi": 0.9490527670884547,
+   "label": "declining",
+   "lo": 0.7631249380427816
+  },
+  "ultrafast_floquet_noneq": {
+   "P": 131,
+   "R": 0.9278139871315545,
+   "T": 136,
+   "T_multi": 433,
+   "hi": 1.1814343890060122,
+   "label": "flat",
+   "lo": 0.7286386808506653
+  },
+  "unclassified": {
+   "P": 856,
+   "R": 1.0252529457512494,
+   "T": 982,
+   "T_multi": null,
+   "hi": 1.1286030888093914,
+   "label": "flat",
+   "lo": 0.9313669377606504
+  },
+  "unconventional_topological_sc": {
+   "P": 693,
+   "R": 0.9246539382194373,
+   "T": 717,
+   "T_multi": 945,
+   "hi": 1.0304010145325586,
+   "label": "flat",
+   "lo": 0.8297593785392176
+  },
+  "vdw_magnets_topological_magnetism": {
+   "P": 784,
+   "R": 0.9347405696435285,
+   "T": 820,
+   "T_multi": 1168,
+   "hi": 1.035141338500206,
+   "label": "flat",
+   "lo": 0.8440779051520163
+  }
+ },
+ "zscores": {
+  "other_superconductivity": {
+   "pooled_cat": 0.07619750656167978,
+   "pooled_full": 0.05777181808023243,
+   "z_cat": {
+    "2024-09": 0.294628650526739,
+    "2024-10": 0.6306471794021934,
+    "2024-11": 0.20764964664683971,
+    "2024-12": -0.11884026743276414,
+    "2025-01": -0.19823527048519088,
+    "2025-02": -0.06222936712266139,
+    "2025-03": 1.3128454194113677,
+    "2025-04": -0.7493339357331705,
+    "2025-05": -0.26070969011159395,
+    "2025-06": -0.1674544762996801,
+    "2025-07": -0.9132384902568524,
+    "2025-08": -0.5998472609853139,
+    "2025-09": 0.7701306327442086,
+    "2025-10": -0.31055458151765414,
+    "2025-11": 1.7936119991434436,
+    "2025-12": -1.1675384709804928,
+    "2026-01": 0.8493849077374672,
+    "2026-02": -0.5900080081808077,
+    "2026-03": -1.6480285426584471,
+    "2026-04": -0.5534490867229385,
+    "2026-05": 0.8102601441284963,
+    "2026-06": 0.4760726873509166,
+    "2026-07": 0.7879217057270289,
+    "2026-08": -0.3035989813382833,
+    "2026-09": -0.03783070608742162
+   },
+   "z_full": {
+    "2024-09": 0.15604250721970941,
+    "2024-10": 0.9858926220888259,
+    "2024-11": -0.01837069709898519,
+    "2024-12": -0.16718947831705733,
+    "2025-01": 0.08128881589346426,
+    "2025-02": 0.02503770527133284,
+    "2025-03": 1.4680826575027783,
+    "2025-04": -0.4112281850279083,
+    "2025-05": -0.39671841189354295,
+    "2025-06": 0.26253583708654826,
+    "2025-07": -0.8577259589081055,
+    "2025-08": -0.8509033060057006,
+    "2025-09": 0.7373271778177923,
+    "2025-10": -0.3556785762430105,
+    "2025-11": 1.7620853590120455,
+    "2025-12": -0.9029753415113531,
+    "2026-01": 0.2903248435305532,
+    "2026-02": -0.6302516767408265,
+    "2026-03": -1.6770757261731566,
+    "2026-04": -0.6117737114662972,
+    "2026-05": 0.42711195275726754,
+    "2026-06": 0.49341630683239507,
+    "2026-07": 0.5147847471319522,
+    "2026-08": -0.15027464826846823,
+    "2026-09": -0.5319780321550087
+   }
+  },
+  "quantum_many_body_theory": {
+   "pooled_cat": 0.1592027559055118,
+   "pooled_full": 0.11554363616046485,
+   "z_cat": {
+    "2024-09": 0.22347869718755003,
+    "2024-10": 0.009785682296090111,
+    "2024-11": 0.542664225810233,
+    "2024-12": -0.15148804586406275,
+    "2025-01": -2.134610892388555,
+    "2025-02": -1.3792810494438672,
+    "2025-03": -0.3272285851530317,
+    "2025-04": -1.2230875996900388,
+    "2025-05": -0.4321536269095428,
+    "2025-06": 0.10772924468000528,
+    "2025-07": 0.9268275252959937,
+    "2025-08": -0.3839655187092733,
+    "2025-09": -0.1224178942704783,
+    "2025-10": 0.9448341937811657,
+    "2025-11": 0.9653300947857052,
+    "2025-12": -0.760983961310439,
+    "2026-01": 0.07779423528741455,
+    "2026-02": -0.26239795928222726,
+    "2026-03": -0.9191462056618759,
+    "2026-04": 1.154721035846446,
+    "2026-05": 2.346342182971625,
+    "2026-06": -0.43921519881451204,
+    "2026-07": -0.31637939746122506,
+    "2026-08": 1.3582314775357753,
+    "2026-09": 0.5827718027224297
+   },
+   "z_full": {
+    "2024-09": 0.7148242981559711,
+    "2024-10": -0.1537020550234551,
+    "2024-11": 0.5743093630284646,
+    "2024-12": 0.19890091881634228,
+    "2025-01": -2.2779962521420902,
+    "2025-02": -1.3752113974262208,
+    "2025-03": -0.17698761119443202,
+    "2025-04": -0.9638987224838589,
+    "2025-05": -0.4623363247066143,
+    "2025-06": -0.09591772897837664,
+    "2025-07": 1.2230771167037973,
+    "2025-08": -0.16081256866849045,
+    "2025-09": 0.0020406346949556433,
+    "2025-10": 0.7381312148719273,
+    "2025-11": 1.1930746748074965,
+    "2025-12": -0.07093314250930734,
+    "2026-01": 0.07232722262530275,
+    "2026-02": -0.08635102554387032,
+    "2026-03": -1.4023498610145504,
+    "2026-04": 0.929954239252053,
+    "2026-05": 2.1408225817716517,
+    "2026-06": -0.5605515361282012,
+    "2026-07": -0.29714506160587745,
+    "2026-08": 0.614361136496137,
+    "2026-09": 0.5804752570510648
+   }
+  },
+  "spin_liquid_frustrated": {
+   "pooled_cat": 0.05708661417322835,
+   "pooled_full": 0.042853950162029274,
+   "z_cat": {
+    "2024-09": -0.3346003324533068,
+    "2024-10": 0.06589168810539543,
+    "2024-11": 0.38538461596665813,
+    "2024-12": -0.5505866554634263,
+    "2025-01": 1.6734987828082255,
+    "2025-02": 0.3025070316479689,
+    "2025-03": 1.263519478578457,
+    "2025-04": -0.12853313673841535,
+    "2025-05": 1.5547693600325188,
+    "2025-06": 0.8045063297036713,
+    "2025-07": -1.1764153037184897,
+    "2025-08": -0.30887049538854255,
+    "2025-09": 0.40101399800046755,
+    "2025-10": -2.3120948598702786,
+    "2025-11": 0.24703724370946056,
+    "2025-12": -0.952084430803176,
+    "2026-01": 0.050033220949460104,
+    "2026-02": 0.1404843241781543,
+    "2026-03": 0.4641038332661812,
+    "2026-04": -1.189842885256515,
+    "2026-05": 1.7911422513652142,
+    "2026-06": -1.245100647847357,
+    "2026-07": 0.8140319618871034,
+    "2026-08": -1.7178916269368054,
+    "2026-09": -1.5524080097658408
+   },
+   "z_full": {
+    "2024-09": -0.027254022521890277,
+    "2024-10": 0.28775919489748053,
+    "2024-11": 0.18746640464973077,
+    "2024-12": -0.558879375863327,
+    "2025-01": 1.522107085181111,
+    "2025-02": 0.3161046948774742,
+    "2025-03": 1.3795940734322452,
+    "2025-04": 0.08787101914023272,
+    "2025-05": 2.0695046279614338,
+    "2025-06": 0.5244064725610346,
+    "2025-07": -0.885232144771512,
+    "2025-08": -0.010425363633786353,
+    "2025-09": 0.6205558232206254,
+    "2025-10": -2.723847064748386,
+    "2025-11": 0.40725444126868937,
+    "2025-12": -0.7916072831158275,
+    "2026-01": 1.006883523091377,
+    "2026-02": -0.10699792398207174,
+    "2026-03": 0.10657235336210509,
+    "2026-04": -1.0948849155063072,
+    "2026-05": 1.078243402884234,
+    "2026-06": -1.4844680560515067,
+    "2026-07": 0.4733518931920919,
+    "2026-08": -1.9100203537176763,
+    "2026-09": -1.4711251406243797
+   }
+  },
+  "topological_insulators_semimetals": {
+   "pooled_cat": 0.03305446194225722,
+   "pooled_full": 0.07498044474242932,
+   "z_cat": {
+    "2024-09": -0.49352721221223556,
+    "2024-10": 1.1001240076534757,
+    "2024-11": -0.5510123657135254,
+    "2024-12": -0.8368381439339759,
+    "2025-01": 2.4764151034934883,
+    "2025-02": -0.08757963054554349,
+    "2025-03": -0.2561639709598988,
+    "2025-04": 1.0977472246724167,
+    "2025-05": 0.31690482516643054,
+    "2025-06": 1.132393062791641,
+    "2025-07": -0.33858770178483244,
+    "2025-08": 2.4978658442424306,
+    "2025-09": -0.12313904146565602,
+    "2025-10": -2.4416183845052406,
+    "2025-11": -0.9044300526963699,
+    "2025-12": -1.3670957342214622,
+    "2026-01": -0.016357367252554822,
+    "2026-02": -0.20468112532352198,
+    "2026-03": 0.8471484159901229,
+    "2026-04": 0.4976330094330349,
+    "2026-05": -1.5581490739524788,
+    "2026-06": -0.7154466686981369,
+    "2026-07": -1.1167968424326453,
+    "2026-08": 1.2660539328256484,
+    "2026-09": -0.48609540129623485
+   },
+   "z_full": {
+    "2024-09": -1.2923085165248265,
+    "2024-10": 1.7006558214496283,
+    "2024-11": 0.9103705619481893,
+    "2024-12": 0.2910907170593246,
+    "2025-01": 1.3607221471961413,
+    "2025-02": 0.569620846584167,
+    "2025-03": -0.12579707310975208,
+    "2025-04": 2.0691507567418954,
+    "2025-05": 0.306657601309059,
+    "2025-06": 0.41632334780289754,
+    "2025-07": -0.5693205000999912,
+    "2025-08": 1.0445910768846838,
+    "2025-09": 0.05431928021050595,
+    "2025-10": -3.0745835869080573,
+    "2025-11": -0.07818518222686703,
+    "2025-12": -1.8837039499909052,
+    "2026-01": -0.4921693183848834,
+    "2026-02": 0.18264125204898,
+    "2026-03": 1.0017370054746857,
+    "2026-04": 0.5455943835155943,
+    "2026-05": -0.9812773747337628,
+    "2026-06": -1.0893240536241826,
+    "2026-07": -1.1114729389569695,
+    "2026-08": -0.3235068843067489,
+    "2026-09": -1.2297491134956222
+   }
+  },
+  "unconventional_topological_sc": {
+   "pooled_cat": 0.09022309711286089,
+   "pooled_full": 0.07481282824896636,
+   "z_cat": {
+    "2024-09": 1.011077353784663,
+    "2024-10": 0.2660792596613663,
+    "2024-11": 0.7784951151193198,
+    "2024-12": 0.7935334842997959,
+    "2025-01": 1.1935123711474092,
+    "2025-02": -0.13992187395588856,
+    "2025-03": -0.4166563869512195,
+    "2025-04": 2.386787653118259,
+    "2025-05": 0.36419367216107434,
+    "2025-06": -0.41534973380851287,
+    "2025-07": -0.3079744466625374,
+    "2025-08": 0.16935060835600788,
+    "2025-09": -0.1897851577749773,
+    "2025-10": -0.002129722017023974,
+    "2025-11": -0.21511276613284921,
+    "2025-12": 1.4016425258702394,
+    "2026-01": -0.7676376122512504,
+    "2026-02": 0.6183687713551869,
+    "2026-03": 0.3202938399582897,
+    "2026-04": -1.244119454728368,
+    "2026-05": -1.2938535911862972,
+    "2026-06": -0.1538401792019131,
+    "2026-07": -1.0405152973378788,
+    "2026-08": -1.6139510502476018,
+    "2026-09": 0.9042933952140345
+   },
+   "z_full": {
+    "2024-09": 1.08180134929499,
+    "2024-10": 0.19927438002082223,
+    "2024-11": 0.19746405424683194,
+    "2024-12": 0.4439415804642269,
+    "2025-01": 1.8377346098150948,
+    "2025-02": 0.3012451706224113,
+    "2025-03": -0.7476841694043824,
+    "2025-04": 2.3822926503005433,
+    "2025-05": 0.6077484610785805,
+    "2025-06": -0.003252823227057704,
+    "2025-07": -0.6821443935185775,
+    "2025-08": 0.04042119132101347,
+    "2025-09": -0.18812525454204154,
+    "2025-10": 0.5507067952653925,
+    "2025-11": -0.06092267684114578,
+    "2025-12": 1.543082895367435,
+    "2026-01": 0.2360780914930504,
+    "2026-02": 0.0548633052694275,
+    "2026-03": 0.1324553502744261,
+    "2026-04": -1.3897043972727658,
+    "2026-05": -1.754078730110369,
+    "2026-06": -1.0717720374526498,
+    "2026-07": -0.20174254770383765,
+    "2026-08": -1.697639952221316,
+    "2026-09": 1.0335894826909415
+   }
+  },
+  "vdw_magnets_topological_magnetism": {
+   "pooled_cat": 0.04125656167979003,
+   "pooled_full": 0.08649011062688569,
+   "z_cat": {
+    "2024-09": -0.8954093011128945,
+    "2024-10": 0.06490195478695382,
+    "2024-11": -0.6713299026867035,
+    "2024-12": -0.24305256282709456,
+    "2025-01": 1.6249479174677222,
+    "2025-02": 0.9003013608580664,
+    "2025-03": -1.451755575693045,
+    "2025-04": -0.36167624453133285,
+    "2025-05": 0.02775734637753401,
+    "2025-06": -0.5723641886854864,
+    "2025-07": 2.00960743013255,
+    "2025-08": 0.19019786568485972,
+    "2025-09": -0.6996209004567162,
+    "2025-10": 1.1041415395987857,
+    "2025-11": 0.27977911515834375,
+    "2025-12": 0.7059227161153774,
+    "2026-01": -0.011561060359475246,
+    "2026-02": -0.625689477578599,
+    "2026-03": -1.4832819723670423,
+    "2026-04": -0.1173077065097885,
+    "2026-05": -2.803005976192378,
+    "2026-06": 0.04081018873921018,
+    "2026-07": 1.26309190176008,
+    "2026-08": 0.9643492914386974,
+    "2026-09": -0.8362558897259738
+   },
+   "z_full": {
+    "2024-09": -0.6289412998672805,
+    "2024-10": -0.5675703803178291,
+    "2024-11": -0.07572209173758061,
+    "2024-12": 0.24947063817308612,
+    "2025-01": 2.841685269542173,
+    "2025-02": 1.8533053908990131,
+    "2025-03": -0.8528401730259675,
+    "2025-04": 0.1926644886938618,
+    "2025-05": -0.6771104818735635,
+    "2025-06": 0.2743293903390765,
+    "2025-07": 0.7240181025080569,
+    "2025-08": -0.770632143416126,
+    "2025-09": -0.40848708624571317,
+    "2025-10": 1.4583769500303105,
+    "2025-11": -0.14234673200460113,
+    "2025-12": 0.07563951287139478,
+    "2026-01": -1.1547997226252147,
+    "2026-02": -1.9879602780034622,
+    "2026-03": -0.8810238185136814,
+    "2026-04": 1.1459896757268966,
+    "2026-05": -0.37549565938792573,
+    "2026-06": -1.1282703988887244,
+    "2026-07": 0.122090233156396,
+    "2026-08": 0.36414719379020516,
+    "2026-09": -1.629312406963342
+   }
+  }
+ }
+}

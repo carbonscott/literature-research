@@ -1,0 +1,5672 @@
+{
+ "taxonomy_version": "v2",
+ "input": "analysis/classified.jsonl",
+ "input_taxonomy_versions": {
+  "v2": 38594
+ },
+ "windows_note": "trailing and preceding windows only (classified.jsonl)",
+ "scope_description": "Quantum-materials scope rule (taxonomy v2; the v1 rule plus one extra context veto). An arXiv record is IN SCOPE if its categories include cond-mat.str-el or cond-mat.supr-con, OR its normalized title+abstract matches any QM keyword group. Records from other servers are in scope only via the keyword groups. Keyword groups: topological phases (topological insulator/semimetal/superconductor/order/magnon/..., higher-order topology); moire & twisted layers (moire, twisted bilayer, magic angle, twist angle); correlated electrons (strongly correlated, Hubbard model, t-J, Hund's metal; NOT 'Hubbard U' DFT+U corrections); superconductivity; spin liquids/spinons; frustrated magnetism (Kitaev, spin ice, pyrochlore magnets, quantum magnets); altermagnets; kagome; Weyl/Dirac/nodal-line semimetals; heavy fermion/Kondo; charge/spin/pair density waves and charge order; quantum (anomalous/fractional) Hall and Chern insulators; Majorana/parafermions; flat bands; excitonic insulators/interlayer excitons; van der Waals/2D magnets (CrI3, CrSBr, Fe3GeTe2, ...); multiferroics/magnetoelectrics; Mott (not Mott-Schottky/Mott-Gurney); quantum criticality; electronic nematicity; strange metals/Planckian/non-Fermi liquids; skyrmions/hopfions/merons; Berry curvature/quantum geometry; quantum spin Hall; Wigner crystals; Luttinger liquids/anyons/fractionalization; and named classes (cuprate, nickelate, iron pnictide/chalcogenide, iridate, ruthenate). Context vetoes drop a keyword when it only appears in an engineering/soft-matter sense: superconductivity in superconducting magnets/cables/qubits/resonators/SRF/SNSPDs, nematic in liquid crystals/active nematics, moire in moire-fringe metrology, and photonic flat bands; and (new in v2) 'topological' in classical-wave contexts (topological photonics/acoustics/mechanics, metamaterials, phononic crystals, topolectric circuits, topological lasers, topological data analysis/optimization).",
+ "corpus_dir": "/sdf/scratch/lcls/ds/prj/prjdat21/scratch/cwang31/literature-research/quantum-materials/corpus",
+ "cluster_order": [
+  "nickelate_sc",
+  "cuprate_sc",
+  "iron_based_sc",
+  "hydride_high_pressure_sc",
+  "kagome",
+  "altermagnetism",
+  "fractional_qah_chern",
+  "rhombohedral_multilayer_graphene",
+  "moire_twisted_2d",
+  "unconventional_topological_sc",
+  "spin_liquid_frustrated",
+  "heavy_fermion_kondo_qcp",
+  "vdw_magnets_topological_magnetism",
+  "cdw_nematic_excitonic",
+  "topological_insulators_semimetals",
+  "flat_band_quantum_geometry",
+  "mott_hubbard_strange_metal",
+  "ultrafast_floquet_noneq",
+  "ml_ai",
+  "quantum_magnetism_ferroic_order",
+  "quantum_many_body_theory",
+  "other_superconductivity"
+ ],
+ "residual_clusters": [
+  "quantum_magnetism_ferroic_order",
+  "quantum_many_body_theory",
+  "other_superconductivity"
+ ],
+ "cluster_labels": {
+  "nickelate_sc": "Nickelates (bilayer/trilayer & infinite-layer) and nickelate superconductivity",
+  "cuprate_sc": "Cuprate superconductivity",
+  "iron_based_sc": "Iron-based superconductivity (pnictides & chalcogenides)",
+  "hydride_high_pressure_sc": "Hydride / high-pressure superconductivity (incl. room-temperature SC claims)",
+  "kagome": "Kagome metals & kagome materials",
+  "altermagnetism": "Altermagnetism, p-wave/unconventional magnets & non-relativistic spin splitting",
+  "fractional_qah_chern": "Fractional / quantum anomalous Hall & Chern insulators (incl. quantum Hall, Landau levels)",
+  "rhombohedral_multilayer_graphene": "Rhombohedral / multilayer (untwisted) graphene",
+  "moire_twisted_2d": "Moire & twisted 2D systems (TBG, twisted TMDs, moire heterostructures)",
+  "unconventional_topological_sc": "Unconventional & topological superconductivity, Majorana, SC diode/Josephson devices",
+  "spin_liquid_frustrated": "Quantum spin liquids & frustrated magnetism (Kitaev, triangular, pyrochlore)",
+  "heavy_fermion_kondo_qcp": "Heavy fermions, Kondo physics & metallic quantum criticality",
+  "vdw_magnets_topological_magnetism": "2D/van der Waals magnets, skyrmions, topological magnetism, multiferroics & spintronics/magnonics",
+  "cdw_nematic_excitonic": "Charge/spin density waves, nematicity, Wigner crystals & excitonic insulators/excitons",
+  "topological_insulators_semimetals": "Topological insulators & semimetals (Weyl/Dirac/nodal), band topology incl. non-Hermitian",
+  "flat_band_quantum_geometry": "Flat bands & quantum geometry (quantum metric, Berry curvature; anomalous, nonlinear & orbital Hall responses)",
+  "mott_hubbard_strange_metal": "Mott/Hubbard physics, strange metals & correlated oxides",
+  "ultrafast_floquet_noneq": "Ultrafast, Floquet & nonequilibrium quantum materials",
+  "ml_ai": "Machine learning / AI for quantum materials",
+  "quantum_magnetism_ferroic_order": "Quantum & low-dimensional magnetism and ferroic order (antiferro/ferrimagnets, spin-chain/ladder/dimer compounds, spin-orbit-entangled & multipolar magnets, ferroelectric/ferroaxial order)",
+  "quantum_many_body_theory": "Quantum many-body theory & generalized symmetries (tensor networks, spin-chain & lattice-gauge models, non-invertible/higher-form symmetries, SPT/topological order & anyons, scars, entanglement)",
+  "other_superconductivity": "Other superconductivity & superfluidity (conventional/phonon-mediated & new superconductors, vortices, SC films & devices incl. qubit/resonator materials, applied SC, superfluid He)"
+ },
+ "method_kinds": {
+  "arpes": "experimental",
+  "stm_sts": "experimental",
+  "neutron_scattering": "experimental",
+  "rixs_resonant_xray": "experimental",
+  "musr": "experimental",
+  "nmr_nqr": "experimental",
+  "magnetotransport_hall": "experimental",
+  "quantum_oscillations": "experimental",
+  "optical_raman_ir": "experimental",
+  "ultrafast_pump_probe": "experimental",
+  "thermodynamics_specific_heat": "experimental",
+  "diffraction_structure": "experimental",
+  "high_pressure_dac": "experimental",
+  "thin_film_growth_mbe": "experimental",
+  "nv_quantum_sensing": "experimental",
+  "dft_first_principles": "computational",
+  "dmft": "computational",
+  "qmc": "computational",
+  "dmrg_tensor_networks": "computational",
+  "exact_diagonalization": "computational",
+  "hartree_fock_mean_field": "computational",
+  "tight_binding_continuum": "computational",
+  "machine_learning": "computational",
+  "gw_beyond_dft": "computational",
+  "phonon_electron_phonon": "computational"
+ },
+ "servers": {
+  "arxiv": {
+   "trailing": {
+    "n_records": 18717,
+    "n_in_scope": 9878,
+    "n_in_scope_by_category": 6700,
+    "n_in_scope_by_keyword_only": 3178,
+    "clusters_multi": {
+     "nickelate_sc": 222,
+     "cuprate_sc": 240,
+     "iron_based_sc": 123,
+     "hydride_high_pressure_sc": 61,
+     "kagome": 310,
+     "altermagnetism": 678,
+     "fractional_qah_chern": 379,
+     "rhombohedral_multilayer_graphene": 102,
+     "moire_twisted_2d": 489,
+     "unconventional_topological_sc": 945,
+     "spin_liquid_frustrated": 484,
+     "heavy_fermion_kondo_qcp": 274,
+     "vdw_magnets_topological_magnetism": 1168,
+     "cdw_nematic_excitonic": 744,
+     "topological_insulators_semimetals": 1149,
+     "flat_band_quantum_geometry": 852,
+     "mott_hubbard_strange_metal": 976,
+     "ultrafast_floquet_noneq": 433,
+     "ml_ai": 229,
+     "quantum_magnetism_ferroic_order": 471,
+     "quantum_many_body_theory": 1181,
+     "other_superconductivity": 572
+    },
+    "clusters_primary": {
+     "nickelate_sc": 222,
+     "cuprate_sc": 223,
+     "iron_based_sc": 117,
+     "hydride_high_pressure_sc": 57,
+     "kagome": 308,
+     "altermagnetism": 660,
+     "fractional_qah_chern": 364,
+     "rhombohedral_multilayer_graphene": 81,
+     "moire_twisted_2d": 405,
+     "unconventional_topological_sc": 717,
+     "spin_liquid_frustrated": 387,
+     "heavy_fermion_kondo_qcp": 162,
+     "vdw_magnets_topological_magnetism": 820,
+     "cdw_nematic_excitonic": 390,
+     "topological_insulators_semimetals": 678,
+     "flat_band_quantum_geometry": 297,
+     "mott_hubbard_strange_metal": 533,
+     "ultrafast_floquet_noneq": 136,
+     "ml_ai": 115,
+     "quantum_magnetism_ferroic_order": 471,
+     "quantum_many_body_theory": 1181,
+     "other_superconductivity": 572
+    },
+    "n_unclassified_in_scope": 982,
+    "unclassified_fraction": 0.0994,
+    "methods": {
+     "arpes": 310,
+     "stm_sts": 302,
+     "neutron_scattering": 271,
+     "rixs_resonant_xray": 164,
+     "musr": 73,
+     "nmr_nqr": 97,
+     "magnetotransport_hall": 1875,
+     "quantum_oscillations": 110,
+     "optical_raman_ir": 841,
+     "ultrafast_pump_probe": 311,
+     "thermodynamics_specific_heat": 508,
+     "diffraction_structure": 485,
+     "high_pressure_dac": 403,
+     "thin_film_growth_mbe": 578,
+     "nv_quantum_sensing": 93,
+     "dft_first_principles": 1490,
+     "dmft": 182,
+     "qmc": 277,
+     "dmrg_tensor_networks": 476,
+     "exact_diagonalization": 256,
+     "hartree_fock_mean_field": 636,
+     "tight_binding_continuum": 850,
+     "machine_learning": 354,
+     "gw_beyond_dft": 151,
+     "phonon_electron_phonon": 503
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_bilayer_trilayer_rp",
+       168
+      ],
+      [
+       "nickelates_infinite_layer",
+       56
+      ],
+      [
+       "cuprates",
+       44
+      ],
+      [
+       "iridates_mott_oxides",
+       11
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       7
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       240
+      ],
+      [
+       "nickelates_infinite_layer",
+       10
+      ],
+      [
+       "iridates_mott_oxides",
+       7
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       7
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       7
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       117
+      ],
+      [
+       "cuprates",
+       9
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       8
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       3
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       2
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "hydrides",
+       36
+      ],
+      [
+       "graphene_multilayers",
+       4
+      ],
+      [
+       "cuprates",
+       3
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       2
+      ],
+      [
+       "hbn",
+       1
+      ]
+     ],
+     "kagome": [
+      [
+       "other_kagome_metals",
+       65
+      ],
+      [
+       "av3sb5_kagome",
+       63
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       10
+      ],
+      [
+       "tmds",
+       5
+      ],
+      [
+       "graphene_multilayers",
+       5
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "altermagnet_candidates",
+       204
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       15
+      ],
+      [
+       "vdw_magnets",
+       13
+      ],
+      [
+       "tmds",
+       11
+      ],
+      [
+       "iridates_mott_oxides",
+       10
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "graphene_multilayers",
+       75
+      ],
+      [
+       "tmds",
+       52
+      ],
+      [
+       "weyl_dirac_semimetals",
+       36
+      ],
+      [
+       "hbn",
+       19
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       19
+      ]
+     ],
+     "rhombohedral_multilayer_graphene": [
+      [
+       "graphene_multilayers",
+       102
+      ],
+      [
+       "hbn",
+       12
+      ],
+      [
+       "tmds",
+       12
+      ],
+      [
+       "weyl_dirac_semimetals",
+       5
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       218
+      ],
+      [
+       "tmds",
+       185
+      ],
+      [
+       "weyl_dirac_semimetals",
+       58
+      ],
+      [
+       "hbn",
+       57
+      ],
+      [
+       "cuprates",
+       13
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "semiconductor_2deg_and_qw",
+       71
+      ],
+      [
+       "graphene_multilayers",
+       69
+      ],
+      [
+       "tmds",
+       57
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       55
+      ],
+      [
+       "cuprates",
+       39
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "frustrated_rare_earth_and_triangular",
+       74
+      ],
+      [
+       "kitaev_materials",
+       47
+      ],
+      [
+       "iridates_mott_oxides",
+       10
+      ],
+      [
+       "cuprates",
+       8
+      ],
+      [
+       "graphene_multilayers",
+       7
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       82
+      ],
+      [
+       "graphene_multilayers",
+       14
+      ],
+      [
+       "tmds",
+       8
+      ],
+      [
+       "cuprates",
+       7
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       6
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "vdw_magnets",
+       264
+      ],
+      [
+       "altermagnet_candidates",
+       60
+      ],
+      [
+       "tmds",
+       57
+      ],
+      [
+       "other_kagome_metals",
+       40
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       39
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       219
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       53
+      ],
+      [
+       "av3sb5_kagome",
+       40
+      ],
+      [
+       "vdw_magnets",
+       39
+      ],
+      [
+       "graphene_multilayers",
+       39
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "weyl_dirac_semimetals",
+       126
+      ],
+      [
+       "graphene_multilayers",
+       91
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       81
+      ],
+      [
+       "tmds",
+       78
+      ],
+      [
+       "vdw_magnets",
+       42
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "graphene_multilayers",
+       134
+      ],
+      [
+       "tmds",
+       77
+      ],
+      [
+       "altermagnet_candidates",
+       40
+      ],
+      [
+       "weyl_dirac_semimetals",
+       38
+      ],
+      [
+       "other_kagome_metals",
+       27
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "cuprates",
+       106
+      ],
+      [
+       "iridates_mott_oxides",
+       105
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       73
+      ],
+      [
+       "tmds",
+       52
+      ],
+      [
+       "graphene_multilayers",
+       42
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "tmds",
+       43
+      ],
+      [
+       "graphene_multilayers",
+       32
+      ],
+      [
+       "vdw_magnets",
+       20
+      ],
+      [
+       "iridates_mott_oxides",
+       17
+      ],
+      [
+       "cuprates",
+       15
+      ]
+     ],
+     "ml_ai": [
+      [
+       "tmds",
+       13
+      ],
+      [
+       "cuprates",
+       12
+      ],
+      [
+       "graphene_multilayers",
+       12
+      ],
+      [
+       "hydrides",
+       5
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       5
+      ]
+     ],
+     "quantum_magnetism_ferroic_order": [
+      [
+       "graphene_multilayers",
+       16
+      ],
+      [
+       "altermagnet_candidates",
+       15
+      ],
+      [
+       "tmds",
+       11
+      ],
+      [
+       "iridates_mott_oxides",
+       10
+      ],
+      [
+       "ruthenates",
+       10
+      ]
+     ],
+     "quantum_many_body_theory": [
+      [
+       "graphene_multilayers",
+       9
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       8
+      ],
+      [
+       "cuprates",
+       3
+      ],
+      [
+       "tmds",
+       2
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "semiconductor_2deg_and_qw",
+       33
+      ],
+      [
+       "tmds",
+       24
+      ],
+      [
+       "cuprates",
+       20
+      ],
+      [
+       "graphene_multilayers",
+       17
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       8
+      ]
+     ]
+    }
+   },
+   "preceding": {
+    "n_records": 16579,
+    "n_in_scope": 8828,
+    "n_in_scope_by_category": 6061,
+    "n_in_scope_by_keyword_only": 2767,
+    "clusters_multi": {
+     "nickelate_sc": 211,
+     "cuprate_sc": 212,
+     "iron_based_sc": 121,
+     "hydride_high_pressure_sc": 58,
+     "kagome": 313,
+     "altermagnetism": 421,
+     "fractional_qah_chern": 372,
+     "rhombohedral_multilayer_graphene": 84,
+     "moire_twisted_2d": 419,
+     "unconventional_topological_sc": 858,
+     "spin_liquid_frustrated": 504,
+     "heavy_fermion_kondo_qcp": 261,
+     "vdw_magnets_topological_magnetism": 1097,
+     "cdw_nematic_excitonic": 657,
+     "topological_insulators_semimetals": 1197,
+     "flat_band_quantum_geometry": 709,
+     "mott_hubbard_strange_metal": 875,
+     "ultrafast_floquet_noneq": 376,
+     "ml_ai": 162,
+     "quantum_magnetism_ferroic_order": 440,
+     "quantum_many_body_theory": 988,
+     "other_superconductivity": 506
+    },
+    "clusters_primary": {
+     "nickelate_sc": 211,
+     "cuprate_sc": 192,
+     "iron_based_sc": 117,
+     "hydride_high_pressure_sc": 52,
+     "kagome": 313,
+     "altermagnetism": 414,
+     "fractional_qah_chern": 363,
+     "rhombohedral_multilayer_graphene": 63,
+     "moire_twisted_2d": 335,
+     "unconventional_topological_sc": 693,
+     "spin_liquid_frustrated": 407,
+     "heavy_fermion_kondo_qcp": 151,
+     "vdw_magnets_topological_magnetism": 784,
+     "cdw_nematic_excitonic": 310,
+     "topological_insulators_semimetals": 712,
+     "flat_band_quantum_geometry": 243,
+     "mott_hubbard_strange_metal": 454,
+     "ultrafast_floquet_noneq": 131,
+     "ml_ai": 93,
+     "quantum_magnetism_ferroic_order": 440,
+     "quantum_many_body_theory": 988,
+     "other_superconductivity": 506
+    },
+    "n_unclassified_in_scope": 856,
+    "unclassified_fraction": 0.097,
+    "methods": {
+     "arpes": 263,
+     "stm_sts": 261,
+     "neutron_scattering": 241,
+     "rixs_resonant_xray": 145,
+     "musr": 85,
+     "nmr_nqr": 91,
+     "magnetotransport_hall": 1744,
+     "quantum_oscillations": 100,
+     "optical_raman_ir": 655,
+     "ultrafast_pump_probe": 278,
+     "thermodynamics_specific_heat": 493,
+     "diffraction_structure": 407,
+     "high_pressure_dac": 355,
+     "thin_film_growth_mbe": 490,
+     "nv_quantum_sensing": 88,
+     "dft_first_principles": 1242,
+     "dmft": 157,
+     "qmc": 194,
+     "dmrg_tensor_networks": 377,
+     "exact_diagonalization": 168,
+     "hartree_fock_mean_field": 533,
+     "tight_binding_continuum": 763,
+     "machine_learning": 231,
+     "gw_beyond_dft": 125,
+     "phonon_electron_phonon": 444
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_bilayer_trilayer_rp",
+       156
+      ],
+      [
+       "nickelates_infinite_layer",
+       53
+      ],
+      [
+       "cuprates",
+       49
+      ],
+      [
+       "iridates_mott_oxides",
+       13
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       12
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       212
+      ],
+      [
+       "nickelates_infinite_layer",
+       12
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       8
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       7
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       5
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       120
+      ],
+      [
+       "cuprates",
+       10
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       8
+      ],
+      [
+       "vdw_magnets",
+       5
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       4
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "hydrides",
+       29
+      ],
+      [
+       "cuprates",
+       4
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       3
+      ],
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       1
+      ]
+     ],
+     "kagome": [
+      [
+       "other_kagome_metals",
+       81
+      ],
+      [
+       "av3sb5_kagome",
+       79
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       14
+      ],
+      [
+       "graphene_multilayers",
+       10
+      ],
+      [
+       "tmds",
+       10
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "altermagnet_candidates",
+       101
+      ],
+      [
+       "vdw_magnets",
+       10
+      ],
+      [
+       "tmds",
+       10
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       8
+      ],
+      [
+       "graphene_multilayers",
+       5
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "graphene_multilayers",
+       79
+      ],
+      [
+       "tmds",
+       54
+      ],
+      [
+       "weyl_dirac_semimetals",
+       49
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       25
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       20
+      ]
+     ],
+     "rhombohedral_multilayer_graphene": [
+      [
+       "graphene_multilayers",
+       84
+      ],
+      [
+       "hbn",
+       8
+      ],
+      [
+       "tmds",
+       5
+      ],
+      [
+       "vdw_magnets",
+       2
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       208
+      ],
+      [
+       "tmds",
+       148
+      ],
+      [
+       "weyl_dirac_semimetals",
+       55
+      ],
+      [
+       "hbn",
+       41
+      ],
+      [
+       "vdw_magnets",
+       10
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "semiconductor_2deg_and_qw",
+       70
+      ],
+      [
+       "tmds",
+       65
+      ],
+      [
+       "graphene_multilayers",
+       56
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       47
+      ],
+      [
+       "cuprates",
+       40
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "frustrated_rare_earth_and_triangular",
+       86
+      ],
+      [
+       "kitaev_materials",
+       63
+      ],
+      [
+       "iridates_mott_oxides",
+       11
+      ],
+      [
+       "tmds",
+       10
+      ],
+      [
+       "cuprates",
+       8
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       68
+      ],
+      [
+       "graphene_multilayers",
+       14
+      ],
+      [
+       "cuprates",
+       13
+      ],
+      [
+       "tmds",
+       11
+      ],
+      [
+       "weyl_dirac_semimetals",
+       7
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "vdw_magnets",
+       266
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       53
+      ],
+      [
+       "other_kagome_metals",
+       50
+      ],
+      [
+       "tmds",
+       40
+      ],
+      [
+       "altermagnet_candidates",
+       39
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       166
+      ],
+      [
+       "av3sb5_kagome",
+       52
+      ],
+      [
+       "cuprates",
+       48
+      ],
+      [
+       "graphene_multilayers",
+       45
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       45
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "weyl_dirac_semimetals",
+       142
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       104
+      ],
+      [
+       "graphene_multilayers",
+       93
+      ],
+      [
+       "tmds",
+       77
+      ],
+      [
+       "vdw_magnets",
+       60
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "graphene_multilayers",
+       127
+      ],
+      [
+       "tmds",
+       63
+      ],
+      [
+       "weyl_dirac_semimetals",
+       38
+      ],
+      [
+       "other_kagome_metals",
+       34
+      ],
+      [
+       "vdw_magnets",
+       31
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "cuprates",
+       113
+      ],
+      [
+       "iridates_mott_oxides",
+       75
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       60
+      ],
+      [
+       "tmds",
+       43
+      ],
+      [
+       "graphene_multilayers",
+       39
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "tmds",
+       28
+      ],
+      [
+       "iridates_mott_oxides",
+       19
+      ],
+      [
+       "vdw_magnets",
+       15
+      ],
+      [
+       "cuprates",
+       13
+      ],
+      [
+       "graphene_multilayers",
+       12
+      ]
+     ],
+     "ml_ai": [
+      [
+       "tmds",
+       9
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       6
+      ],
+      [
+       "graphene_multilayers",
+       6
+      ],
+      [
+       "hydrides",
+       5
+      ],
+      [
+       "weyl_dirac_semimetals",
+       4
+      ]
+     ],
+     "quantum_magnetism_ferroic_order": [
+      [
+       "iridates_mott_oxides",
+       11
+      ],
+      [
+       "graphene_multilayers",
+       10
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       10
+      ],
+      [
+       "tmds",
+       8
+      ],
+      [
+       "altermagnet_candidates",
+       6
+      ]
+     ],
+     "quantum_many_body_theory": [
+      [
+       "graphene_multilayers",
+       5
+      ],
+      [
+       "tmds",
+       3
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       3
+      ],
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       2
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "semiconductor_2deg_and_qw",
+       34
+      ],
+      [
+       "tmds",
+       21
+      ],
+      [
+       "cuprates",
+       11
+      ],
+      [
+       "graphene_multilayers",
+       8
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       6
+      ]
+     ]
+    }
+   }
+  },
+  "chemrxiv": {
+   "trailing": {
+    "n_records": 14,
+    "n_in_scope": 14,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 14,
+    "clusters_multi": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 5,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 4,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 1,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 3,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 2,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 0
+    },
+    "clusters_primary": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 5,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 1,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 1,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 2,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 0
+    },
+    "n_unclassified_in_scope": 2,
+    "unclassified_fraction": 0.1429,
+    "methods": {
+     "arpes": 0,
+     "stm_sts": 0,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 0,
+     "quantum_oscillations": 0,
+     "optical_raman_ir": 1,
+     "ultrafast_pump_probe": 0,
+     "thermodynamics_specific_heat": 0,
+     "diffraction_structure": 2,
+     "high_pressure_dac": 0,
+     "thin_film_growth_mbe": 3,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 7,
+     "dmft": 1,
+     "qmc": 0,
+     "dmrg_tensor_networks": 0,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 2,
+     "tight_binding_continuum": 0,
+     "machine_learning": 3,
+     "gw_beyond_dft": 1,
+     "phonon_electron_phonon": 1
+    },
+    "cluster_top_families": {
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ]
+    }
+   },
+   "preceding": {
+    "n_records": 12,
+    "n_in_scope": 12,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 12,
+    "clusters_multi": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 1,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 5,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 2,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 0,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 1,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 1,
+     "other_superconductivity": 1
+    },
+    "clusters_primary": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 1,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 5,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 1,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 0,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 1,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 1,
+     "other_superconductivity": 1
+    },
+    "n_unclassified_in_scope": 0,
+    "unclassified_fraction": 0.0,
+    "methods": {
+     "arpes": 0,
+     "stm_sts": 1,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 2,
+     "quantum_oscillations": 0,
+     "optical_raman_ir": 0,
+     "ultrafast_pump_probe": 1,
+     "thermodynamics_specific_heat": 0,
+     "diffraction_structure": 2,
+     "high_pressure_dac": 1,
+     "thin_film_growth_mbe": 1,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 4,
+     "dmft": 0,
+     "qmc": 0,
+     "dmrg_tensor_networks": 1,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 0,
+     "tight_binding_continuum": 0,
+     "machine_learning": 0,
+     "gw_beyond_dft": 1,
+     "phonon_electron_phonon": 0
+    },
+    "cluster_top_families": {
+     "hydride_high_pressure_sc": [
+      [
+       "weyl_dirac_semimetals",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "hbn",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  "hal": {
+   "trailing": {
+    "n_records": 95,
+    "n_in_scope": 90,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 90,
+    "clusters_multi": {
+     "nickelate_sc": 4,
+     "cuprate_sc": 6,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 1,
+     "altermagnetism": 2,
+     "fractional_qah_chern": 3,
+     "rhombohedral_multilayer_graphene": 2,
+     "moire_twisted_2d": 7,
+     "unconventional_topological_sc": 9,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 4,
+     "vdw_magnets_topological_magnetism": 5,
+     "cdw_nematic_excitonic": 8,
+     "topological_insulators_semimetals": 4,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 10,
+     "ultrafast_floquet_noneq": 2,
+     "ml_ai": 1,
+     "quantum_magnetism_ferroic_order": 2,
+     "quantum_many_body_theory": 7,
+     "other_superconductivity": 4
+    },
+    "clusters_primary": {
+     "nickelate_sc": 4,
+     "cuprate_sc": 5,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 1,
+     "altermagnetism": 2,
+     "fractional_qah_chern": 3,
+     "rhombohedral_multilayer_graphene": 1,
+     "moire_twisted_2d": 6,
+     "unconventional_topological_sc": 8,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 2,
+     "vdw_magnets_topological_magnetism": 3,
+     "cdw_nematic_excitonic": 5,
+     "topological_insulators_semimetals": 3,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 2,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 1,
+     "quantum_magnetism_ferroic_order": 2,
+     "quantum_many_body_theory": 7,
+     "other_superconductivity": 4
+    },
+    "n_unclassified_in_scope": 29,
+    "unclassified_fraction": 0.3222,
+    "methods": {
+     "arpes": 2,
+     "stm_sts": 3,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 16,
+     "quantum_oscillations": 1,
+     "optical_raman_ir": 8,
+     "ultrafast_pump_probe": 3,
+     "thermodynamics_specific_heat": 2,
+     "diffraction_structure": 3,
+     "high_pressure_dac": 3,
+     "thin_film_growth_mbe": 3,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 10,
+     "dmft": 3,
+     "qmc": 1,
+     "dmrg_tensor_networks": 1,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 7,
+     "tight_binding_continuum": 2,
+     "machine_learning": 2,
+     "gw_beyond_dft": 3,
+     "phonon_electron_phonon": 4
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_infinite_layer",
+       2
+      ],
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       2
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       6
+      ],
+      [
+       "nickelates_infinite_layer",
+       1
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "tmds",
+       1
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "rhombohedral_multilayer_graphene": [
+      [
+       "graphene_multilayers",
+       2
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       4
+      ],
+      [
+       "tmds",
+       2
+      ],
+      [
+       "hbn",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       2
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       1
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       2
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "altermagnet_candidates",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       3
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       2
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       1
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "weyl_dirac_semimetals",
+       1
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "cuprates",
+       4
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "tmds",
+       2
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       1
+      ]
+     ]
+    }
+   },
+   "preceding": {
+    "n_records": 28,
+    "n_in_scope": 27,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 27,
+    "clusters_multi": {
+     "nickelate_sc": 1,
+     "cuprate_sc": 1,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 1,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 4,
+     "unconventional_topological_sc": 4,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 1,
+     "cdw_nematic_excitonic": 1,
+     "topological_insulators_semimetals": 3,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 8,
+     "ultrafast_floquet_noneq": 1,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 2
+    },
+    "clusters_primary": {
+     "nickelate_sc": 1,
+     "cuprate_sc": 1,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 1,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 4,
+     "unconventional_topological_sc": 4,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 1,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 1,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 6,
+     "ultrafast_floquet_noneq": 1,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 2
+    },
+    "n_unclassified_in_scope": 5,
+    "unclassified_fraction": 0.1852,
+    "methods": {
+     "arpes": 1,
+     "stm_sts": 2,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 1,
+     "quantum_oscillations": 0,
+     "optical_raman_ir": 2,
+     "ultrafast_pump_probe": 1,
+     "thermodynamics_specific_heat": 0,
+     "diffraction_structure": 1,
+     "high_pressure_dac": 1,
+     "thin_film_growth_mbe": 2,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 1,
+     "dmft": 1,
+     "qmc": 0,
+     "dmrg_tensor_networks": 0,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 2,
+     "tight_binding_continuum": 3,
+     "machine_learning": 0,
+     "gw_beyond_dft": 1,
+     "phonon_electron_phonon": 1
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_infinite_layer",
+       1
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "kagome": [
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       4
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "tmds",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  "osti": {
+   "trailing": {
+    "n_records": 590,
+    "n_in_scope": 558,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 558,
+    "clusters_multi": {
+     "nickelate_sc": 17,
+     "cuprate_sc": 29,
+     "iron_based_sc": 13,
+     "hydride_high_pressure_sc": 6,
+     "kagome": 56,
+     "altermagnetism": 32,
+     "fractional_qah_chern": 14,
+     "rhombohedral_multilayer_graphene": 4,
+     "moire_twisted_2d": 38,
+     "unconventional_topological_sc": 49,
+     "spin_liquid_frustrated": 30,
+     "heavy_fermion_kondo_qcp": 19,
+     "vdw_magnets_topological_magnetism": 79,
+     "cdw_nematic_excitonic": 69,
+     "topological_insulators_semimetals": 59,
+     "flat_band_quantum_geometry": 37,
+     "mott_hubbard_strange_metal": 50,
+     "ultrafast_floquet_noneq": 29,
+     "ml_ai": 12,
+     "quantum_magnetism_ferroic_order": 25,
+     "quantum_many_body_theory": 18,
+     "other_superconductivity": 37
+    },
+    "clusters_primary": {
+     "nickelate_sc": 17,
+     "cuprate_sc": 29,
+     "iron_based_sc": 13,
+     "hydride_high_pressure_sc": 6,
+     "kagome": 56,
+     "altermagnetism": 30,
+     "fractional_qah_chern": 13,
+     "rhombohedral_multilayer_graphene": 2,
+     "moire_twisted_2d": 30,
+     "unconventional_topological_sc": 33,
+     "spin_liquid_frustrated": 18,
+     "heavy_fermion_kondo_qcp": 9,
+     "vdw_magnets_topological_magnetism": 51,
+     "cdw_nematic_excitonic": 34,
+     "topological_insulators_semimetals": 29,
+     "flat_band_quantum_geometry": 9,
+     "mott_hubbard_strange_metal": 23,
+     "ultrafast_floquet_noneq": 7,
+     "ml_ai": 8,
+     "quantum_magnetism_ferroic_order": 25,
+     "quantum_many_body_theory": 18,
+     "other_superconductivity": 37
+    },
+    "n_unclassified_in_scope": 61,
+    "unclassified_fraction": 0.1093,
+    "methods": {
+     "arpes": 54,
+     "stm_sts": 26,
+     "neutron_scattering": 50,
+     "rixs_resonant_xray": 18,
+     "musr": 5,
+     "nmr_nqr": 4,
+     "magnetotransport_hall": 117,
+     "quantum_oscillations": 11,
+     "optical_raman_ir": 49,
+     "ultrafast_pump_probe": 30,
+     "thermodynamics_specific_heat": 42,
+     "diffraction_structure": 84,
+     "high_pressure_dac": 32,
+     "thin_film_growth_mbe": 55,
+     "nv_quantum_sensing": 6,
+     "dft_first_principles": 125,
+     "dmft": 8,
+     "qmc": 3,
+     "dmrg_tensor_networks": 16,
+     "exact_diagonalization": 3,
+     "hartree_fock_mean_field": 19,
+     "tight_binding_continuum": 19,
+     "machine_learning": 18,
+     "gw_beyond_dft": 19,
+     "phonon_electron_phonon": 22
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_bilayer_trilayer_rp",
+       10
+      ],
+      [
+       "cuprates",
+       4
+      ],
+      [
+       "nickelates_infinite_layer",
+       4
+      ],
+      [
+       "iridates_mott_oxides",
+       3
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       29
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "hbn",
+       1
+      ],
+      [
+       "kitaev_materials",
+       1
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       13
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "hydrides",
+       2
+      ]
+     ],
+     "kagome": [
+      [
+       "other_kagome_metals",
+       16
+      ],
+      [
+       "av3sb5_kagome",
+       8
+      ],
+      [
+       "tmds",
+       2
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "altermagnet_candidates",
+       17
+      ],
+      [
+       "tmds",
+       3
+      ],
+      [
+       "b20_chiral_magnets_skyrmion_hosts",
+       1
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "graphene_multilayers",
+       6
+      ],
+      [
+       "tmds",
+       5
+      ],
+      [
+       "hbn",
+       3
+      ],
+      [
+       "weyl_dirac_semimetals",
+       3
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ]
+     ],
+     "rhombohedral_multilayer_graphene": [
+      [
+       "graphene_multilayers",
+       4
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       11
+      ],
+      [
+       "tmds",
+       11
+      ],
+      [
+       "weyl_dirac_semimetals",
+       4
+      ],
+      [
+       "cuprates",
+       3
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       2
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "graphene_multilayers",
+       6
+      ],
+      [
+       "cuprates",
+       5
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       4
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       4
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       3
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "frustrated_rare_earth_and_triangular",
+       9
+      ],
+      [
+       "kitaev_materials",
+       3
+      ],
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       6
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       1
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "vdw_magnets",
+       19
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       8
+      ],
+      [
+       "tmds",
+       8
+      ],
+      [
+       "altermagnet_candidates",
+       7
+      ],
+      [
+       "other_kagome_metals",
+       6
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       20
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       10
+      ],
+      [
+       "vdw_magnets",
+       4
+      ],
+      [
+       "av3sb5_kagome",
+       4
+      ],
+      [
+       "cuprates",
+       4
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       12
+      ],
+      [
+       "weyl_dirac_semimetals",
+       10
+      ],
+      [
+       "other_kagome_metals",
+       5
+      ],
+      [
+       "vdw_magnets",
+       5
+      ],
+      [
+       "graphene_multilayers",
+       5
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "other_kagome_metals",
+       7
+      ],
+      [
+       "tmds",
+       5
+      ],
+      [
+       "graphene_multilayers",
+       4
+      ],
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       2
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "iridates_mott_oxides",
+       7
+      ],
+      [
+       "tmds",
+       5
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       5
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       4
+      ],
+      [
+       "cuprates",
+       4
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "tmds",
+       7
+      ],
+      [
+       "cuprates",
+       3
+      ],
+      [
+       "vdw_magnets",
+       3
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ]
+     ],
+     "ml_ai": [
+      [
+       "vdw_magnets",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "quantum_magnetism_ferroic_order": [
+      [
+       "iridates_mott_oxides",
+       1
+      ],
+      [
+       "ruthenates",
+       1
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       1
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "quantum_many_body_theory": [
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ]
+    }
+   },
+   "preceding": {
+    "n_records": 847,
+    "n_in_scope": 804,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 804,
+    "clusters_multi": {
+     "nickelate_sc": 38,
+     "cuprate_sc": 37,
+     "iron_based_sc": 22,
+     "hydride_high_pressure_sc": 13,
+     "kagome": 69,
+     "altermagnetism": 24,
+     "fractional_qah_chern": 17,
+     "rhombohedral_multilayer_graphene": 6,
+     "moire_twisted_2d": 56,
+     "unconventional_topological_sc": 62,
+     "spin_liquid_frustrated": 46,
+     "heavy_fermion_kondo_qcp": 34,
+     "vdw_magnets_topological_magnetism": 128,
+     "cdw_nematic_excitonic": 86,
+     "topological_insulators_semimetals": 94,
+     "flat_band_quantum_geometry": 64,
+     "mott_hubbard_strange_metal": 80,
+     "ultrafast_floquet_noneq": 40,
+     "ml_ai": 16,
+     "quantum_magnetism_ferroic_order": 24,
+     "quantum_many_body_theory": 13,
+     "other_superconductivity": 59
+    },
+    "clusters_primary": {
+     "nickelate_sc": 38,
+     "cuprate_sc": 31,
+     "iron_based_sc": 21,
+     "hydride_high_pressure_sc": 13,
+     "kagome": 68,
+     "altermagnetism": 24,
+     "fractional_qah_chern": 17,
+     "rhombohedral_multilayer_graphene": 1,
+     "moire_twisted_2d": 46,
+     "unconventional_topological_sc": 50,
+     "spin_liquid_frustrated": 34,
+     "heavy_fermion_kondo_qcp": 15,
+     "vdw_magnets_topological_magnetism": 108,
+     "cdw_nematic_excitonic": 39,
+     "topological_insulators_semimetals": 49,
+     "flat_band_quantum_geometry": 13,
+     "mott_hubbard_strange_metal": 33,
+     "ultrafast_floquet_noneq": 13,
+     "ml_ai": 7,
+     "quantum_magnetism_ferroic_order": 24,
+     "quantum_many_body_theory": 13,
+     "other_superconductivity": 59
+    },
+    "n_unclassified_in_scope": 88,
+    "unclassified_fraction": 0.1095,
+    "methods": {
+     "arpes": 58,
+     "stm_sts": 39,
+     "neutron_scattering": 55,
+     "rixs_resonant_xray": 31,
+     "musr": 4,
+     "nmr_nqr": 10,
+     "magnetotransport_hall": 152,
+     "quantum_oscillations": 10,
+     "optical_raman_ir": 78,
+     "ultrafast_pump_probe": 38,
+     "thermodynamics_specific_heat": 56,
+     "diffraction_structure": 115,
+     "high_pressure_dac": 60,
+     "thin_film_growth_mbe": 72,
+     "nv_quantum_sensing": 8,
+     "dft_first_principles": 143,
+     "dmft": 10,
+     "qmc": 13,
+     "dmrg_tensor_networks": 22,
+     "exact_diagonalization": 7,
+     "hartree_fock_mean_field": 29,
+     "tight_binding_continuum": 36,
+     "machine_learning": 25,
+     "gw_beyond_dft": 17,
+     "phonon_electron_phonon": 44
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_infinite_layer",
+       16
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       15
+      ],
+      [
+       "cuprates",
+       9
+      ],
+      [
+       "iridates_mott_oxides",
+       6
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       4
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       37
+      ],
+      [
+       "nickelates_infinite_layer",
+       4
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       3
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       2
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       21
+      ],
+      [
+       "cuprates",
+       3
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       2
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "hydrides",
+       5
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "kagome": [
+      [
+       "other_kagome_metals",
+       21
+      ],
+      [
+       "av3sb5_kagome",
+       11
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       2
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "altermagnet_candidates",
+       7
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "graphene_multilayers",
+       11
+      ],
+      [
+       "tmds",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       2
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ],
+      [
+       "hbn",
+       1
+      ]
+     ],
+     "rhombohedral_multilayer_graphene": [
+      [
+       "graphene_multilayers",
+       6
+      ],
+      [
+       "hbn",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       25
+      ],
+      [
+       "tmds",
+       15
+      ],
+      [
+       "hbn",
+       5
+      ],
+      [
+       "weyl_dirac_semimetals",
+       4
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       14
+      ],
+      [
+       "tmds",
+       7
+      ],
+      [
+       "cuprates",
+       6
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       5
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       5
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "frustrated_rare_earth_and_triangular",
+       8
+      ],
+      [
+       "kitaev_materials",
+       8
+      ],
+      [
+       "iridates_mott_oxides",
+       4
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       17
+      ],
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "vdw_magnets",
+       23
+      ],
+      [
+       "tmds",
+       7
+      ],
+      [
+       "other_kagome_metals",
+       6
+      ],
+      [
+       "weyl_dirac_semimetals",
+       5
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       5
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       20
+      ],
+      [
+       "vdw_magnets",
+       8
+      ],
+      [
+       "iridates_mott_oxides",
+       6
+      ],
+      [
+       "cuprates",
+       6
+      ],
+      [
+       "excitonic_insulator_cdw_materials",
+       6
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       13
+      ],
+      [
+       "graphene_multilayers",
+       12
+      ],
+      [
+       "weyl_dirac_semimetals",
+       10
+      ],
+      [
+       "tmds",
+       8
+      ],
+      [
+       "vdw_magnets",
+       7
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "graphene_multilayers",
+       19
+      ],
+      [
+       "other_kagome_metals",
+       8
+      ],
+      [
+       "tmds",
+       7
+      ],
+      [
+       "weyl_dirac_semimetals",
+       3
+      ],
+      [
+       "hbn",
+       2
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       12
+      ],
+      [
+       "iridates_mott_oxides",
+       11
+      ],
+      [
+       "cuprates",
+       11
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       7
+      ],
+      [
+       "tmds",
+       4
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "tmds",
+       3
+      ],
+      [
+       "cuprates",
+       3
+      ],
+      [
+       "iridates_mott_oxides",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       2
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       2
+      ]
+     ],
+     "ml_ai": [
+      [
+       "tmds",
+       1
+      ],
+      [
+       "hbn",
+       1
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "quantum_magnetism_ferroic_order": [
+      [
+       "tmds",
+       3
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ],
+      [
+       "ruthenates",
+       1
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ]
+     ],
+     "quantum_many_body_theory": [
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "cuprates",
+       4
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       3
+      ],
+      [
+       "hydrides",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       2
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  "preprints_org": {
+   "trailing": {
+    "n_records": 25,
+    "n_in_scope": 20,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 20,
+    "clusters_multi": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 1,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 2,
+     "kagome": 0,
+     "altermagnetism": 2,
+     "fractional_qah_chern": 1,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 0,
+     "unconventional_topological_sc": 2,
+     "spin_liquid_frustrated": 1,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 2,
+     "cdw_nematic_excitonic": 2,
+     "topological_insulators_semimetals": 3,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 1,
+     "ml_ai": 1,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 3
+    },
+    "clusters_primary": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 1,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 2,
+     "kagome": 0,
+     "altermagnetism": 2,
+     "fractional_qah_chern": 1,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 0,
+     "unconventional_topological_sc": 2,
+     "spin_liquid_frustrated": 1,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 2,
+     "cdw_nematic_excitonic": 2,
+     "topological_insulators_semimetals": 2,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 3
+    },
+    "n_unclassified_in_scope": 0,
+    "unclassified_fraction": 0.0,
+    "methods": {
+     "arpes": 0,
+     "stm_sts": 0,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 6,
+     "quantum_oscillations": 0,
+     "optical_raman_ir": 1,
+     "ultrafast_pump_probe": 0,
+     "thermodynamics_specific_heat": 2,
+     "diffraction_structure": 2,
+     "high_pressure_dac": 4,
+     "thin_film_growth_mbe": 0,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 2,
+     "dmft": 0,
+     "qmc": 0,
+     "dmrg_tensor_networks": 0,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 1,
+     "tight_binding_continuum": 0,
+     "machine_learning": 2,
+     "gw_beyond_dft": 0,
+     "phonon_electron_phonon": 3
+    },
+    "cluster_top_families": {
+     "cuprate_sc": [
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "hydrides",
+       1
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       1
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ]
+     ]
+    }
+   },
+   "preceding": {
+    "n_records": 30,
+    "n_in_scope": 26,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 26,
+    "clusters_multi": {
+     "nickelate_sc": 2,
+     "cuprate_sc": 4,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 2,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 2,
+     "unconventional_topological_sc": 3,
+     "spin_liquid_frustrated": 2,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 2,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 2,
+     "flat_band_quantum_geometry": 2,
+     "mott_hubbard_strange_metal": 3,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 1,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 1,
+     "other_superconductivity": 5
+    },
+    "clusters_primary": {
+     "nickelate_sc": 2,
+     "cuprate_sc": 4,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 2,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 2,
+     "unconventional_topological_sc": 3,
+     "spin_liquid_frustrated": 2,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 1,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 1,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 1,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 1,
+     "other_superconductivity": 5
+    },
+    "n_unclassified_in_scope": 1,
+    "unclassified_fraction": 0.0385,
+    "methods": {
+     "arpes": 0,
+     "stm_sts": 0,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 7,
+     "quantum_oscillations": 0,
+     "optical_raman_ir": 1,
+     "ultrafast_pump_probe": 0,
+     "thermodynamics_specific_heat": 2,
+     "diffraction_structure": 3,
+     "high_pressure_dac": 3,
+     "thin_film_growth_mbe": 4,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 4,
+     "dmft": 0,
+     "qmc": 0,
+     "dmrg_tensor_networks": 0,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 2,
+     "tight_binding_continuum": 0,
+     "machine_learning": 1,
+     "gw_beyond_dft": 0,
+     "phonon_electron_phonon": 2
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_bilayer_trilayer_rp",
+       2
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       4
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "hydrides",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "hbn",
+       1
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "hbn",
+       1
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "graphene_multilayers",
+       2
+      ]
+     ]
+    }
+   }
+  },
+  "researchsquare": {
+   "trailing": {
+    "n_records": 109,
+    "n_in_scope": 105,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 105,
+    "clusters_multi": {
+     "nickelate_sc": 3,
+     "cuprate_sc": 5,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 6,
+     "kagome": 7,
+     "altermagnetism": 4,
+     "fractional_qah_chern": 3,
+     "rhombohedral_multilayer_graphene": 2,
+     "moire_twisted_2d": 18,
+     "unconventional_topological_sc": 9,
+     "spin_liquid_frustrated": 6,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 11,
+     "cdw_nematic_excitonic": 8,
+     "topological_insulators_semimetals": 25,
+     "flat_band_quantum_geometry": 10,
+     "mott_hubbard_strange_metal": 10,
+     "ultrafast_floquet_noneq": 2,
+     "ml_ai": 2,
+     "quantum_magnetism_ferroic_order": 2,
+     "quantum_many_body_theory": 3,
+     "other_superconductivity": 10
+    },
+    "clusters_primary": {
+     "nickelate_sc": 3,
+     "cuprate_sc": 5,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 6,
+     "kagome": 7,
+     "altermagnetism": 4,
+     "fractional_qah_chern": 3,
+     "rhombohedral_multilayer_graphene": 1,
+     "moire_twisted_2d": 15,
+     "unconventional_topological_sc": 8,
+     "spin_liquid_frustrated": 4,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 7,
+     "cdw_nematic_excitonic": 2,
+     "topological_insulators_semimetals": 15,
+     "flat_band_quantum_geometry": 2,
+     "mott_hubbard_strange_metal": 5,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 2,
+     "quantum_many_body_theory": 3,
+     "other_superconductivity": 10
+    },
+    "n_unclassified_in_scope": 3,
+    "unclassified_fraction": 0.0286,
+    "methods": {
+     "arpes": 2,
+     "stm_sts": 3,
+     "neutron_scattering": 4,
+     "rixs_resonant_xray": 2,
+     "musr": 2,
+     "nmr_nqr": 1,
+     "magnetotransport_hall": 29,
+     "quantum_oscillations": 3,
+     "optical_raman_ir": 15,
+     "ultrafast_pump_probe": 4,
+     "thermodynamics_specific_heat": 10,
+     "diffraction_structure": 6,
+     "high_pressure_dac": 15,
+     "thin_film_growth_mbe": 9,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 18,
+     "dmft": 2,
+     "qmc": 0,
+     "dmrg_tensor_networks": 2,
+     "exact_diagonalization": 1,
+     "hartree_fock_mean_field": 5,
+     "tight_binding_continuum": 3,
+     "machine_learning": 5,
+     "gw_beyond_dft": 0,
+     "phonon_electron_phonon": 15
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_bilayer_trilayer_rp",
+       2
+      ],
+      [
+       "nickelates_infinite_layer",
+       1
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       5
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       1
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       1
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "hydrides",
+       2
+      ],
+      [
+       "tmds",
+       1
+      ]
+     ],
+     "kagome": [
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "hbn",
+       2
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ]
+     ],
+     "rhombohedral_multilayer_graphene": [
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "hbn",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "tmds",
+       6
+      ],
+      [
+       "graphene_multilayers",
+       5
+      ],
+      [
+       "hbn",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "semiconductor_2deg_and_qw",
+       3
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "kitaev_materials",
+       2
+      ],
+      [
+       "tmds",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       2
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       1
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "graphene_multilayers",
+       4
+      ],
+      [
+       "weyl_dirac_semimetals",
+       4
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       2
+      ],
+      [
+       "tmds",
+       2
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       1
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "cuprates",
+       3
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       1
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "ml_ai": [
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ]
+     ],
+     "quantum_magnetism_ferroic_order": [
+      [
+       "iridates_mott_oxides",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "tmds",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ]
+    }
+   },
+   "preceding": {
+    "n_records": 88,
+    "n_in_scope": 85,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 85,
+    "clusters_multi": {
+     "nickelate_sc": 7,
+     "cuprate_sc": 2,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 8,
+     "altermagnetism": 2,
+     "fractional_qah_chern": 2,
+     "rhombohedral_multilayer_graphene": 1,
+     "moire_twisted_2d": 13,
+     "unconventional_topological_sc": 5,
+     "spin_liquid_frustrated": 7,
+     "heavy_fermion_kondo_qcp": 3,
+     "vdw_magnets_topological_magnetism": 12,
+     "cdw_nematic_excitonic": 18,
+     "topological_insulators_semimetals": 15,
+     "flat_band_quantum_geometry": 8,
+     "mott_hubbard_strange_metal": 6,
+     "ultrafast_floquet_noneq": 6,
+     "ml_ai": 5,
+     "quantum_magnetism_ferroic_order": 2,
+     "quantum_many_body_theory": 1,
+     "other_superconductivity": 5
+    },
+    "clusters_primary": {
+     "nickelate_sc": 7,
+     "cuprate_sc": 2,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 8,
+     "altermagnetism": 2,
+     "fractional_qah_chern": 1,
+     "rhombohedral_multilayer_graphene": 1,
+     "moire_twisted_2d": 13,
+     "unconventional_topological_sc": 3,
+     "spin_liquid_frustrated": 6,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 9,
+     "cdw_nematic_excitonic": 7,
+     "topological_insulators_semimetals": 8,
+     "flat_band_quantum_geometry": 3,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 2,
+     "ml_ai": 1,
+     "quantum_magnetism_ferroic_order": 2,
+     "quantum_many_body_theory": 1,
+     "other_superconductivity": 5
+    },
+    "n_unclassified_in_scope": 2,
+    "unclassified_fraction": 0.0235,
+    "methods": {
+     "arpes": 3,
+     "stm_sts": 2,
+     "neutron_scattering": 4,
+     "rixs_resonant_xray": 0,
+     "musr": 1,
+     "nmr_nqr": 2,
+     "magnetotransport_hall": 25,
+     "quantum_oscillations": 1,
+     "optical_raman_ir": 12,
+     "ultrafast_pump_probe": 7,
+     "thermodynamics_specific_heat": 3,
+     "diffraction_structure": 7,
+     "high_pressure_dac": 8,
+     "thin_film_growth_mbe": 8,
+     "nv_quantum_sensing": 1,
+     "dft_first_principles": 16,
+     "dmft": 0,
+     "qmc": 1,
+     "dmrg_tensor_networks": 1,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 4,
+     "tight_binding_continuum": 3,
+     "machine_learning": 5,
+     "gw_beyond_dft": 0,
+     "phonon_electron_phonon": 2
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "nickelates_bilayer_trilayer_rp",
+       6
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ],
+      [
+       "nickelates_infinite_layer",
+       1
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       2
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       1
+      ]
+     ],
+     "kagome": [
+      [
+       "av3sb5_kagome",
+       3
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "altermagnet_candidates",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       1
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ]
+     ],
+     "rhombohedral_multilayer_graphene": [
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       5
+      ],
+      [
+       "tmds",
+       2
+      ],
+      [
+       "hbn",
+       1
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ],
+      [
+       "vdw_magnets",
+       1
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "frustrated_rare_earth_and_triangular",
+       3
+      ],
+      [
+       "kitaev_materials",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "vdw_magnets",
+       3
+      ],
+      [
+       "iridates_mott_oxides",
+       2
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       4
+      ],
+      [
+       "av3sb5_kagome",
+       3
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       2
+      ],
+      [
+       "vdw_magnets",
+       1
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       1
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "weyl_dirac_semimetals",
+       4
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "vdw_magnets",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "graphene_multilayers",
+       4
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       1
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       2
+      ],
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "weyl_dirac_semimetals",
+       2
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "ml_ai": [
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ]
+     ],
+     "quantum_magnetism_ferroic_order": [
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  "techrxiv": {
+   "trailing": {
+    "n_records": 1,
+    "n_in_scope": 1,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 1,
+    "clusters_multi": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 1,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 0,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 0,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 0,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 0,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 0
+    },
+    "clusters_primary": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 1,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 0,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 0,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 0,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 0,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 0
+    },
+    "n_unclassified_in_scope": 0,
+    "unclassified_fraction": 0.0,
+    "methods": {
+     "arpes": 0,
+     "stm_sts": 0,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 0,
+     "quantum_oscillations": 0,
+     "optical_raman_ir": 0,
+     "ultrafast_pump_probe": 0,
+     "thermodynamics_specific_heat": 0,
+     "diffraction_structure": 0,
+     "high_pressure_dac": 0,
+     "thin_film_growth_mbe": 1,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 0,
+     "dmft": 0,
+     "qmc": 0,
+     "dmrg_tensor_networks": 0,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 0,
+     "tight_binding_continuum": 0,
+     "machine_learning": 0,
+     "gw_beyond_dft": 0,
+     "phonon_electron_phonon": 1
+    },
+    "cluster_top_families": {}
+   },
+   "preceding": {
+    "n_records": 1,
+    "n_in_scope": 1,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 1,
+    "clusters_multi": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 0,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 0,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 0,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 0,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 1
+    },
+    "clusters_primary": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 0,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 0,
+     "kagome": 0,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 0,
+     "unconventional_topological_sc": 0,
+     "spin_liquid_frustrated": 0,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 0,
+     "cdw_nematic_excitonic": 0,
+     "topological_insulators_semimetals": 0,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 0,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 0,
+     "quantum_magnetism_ferroic_order": 0,
+     "quantum_many_body_theory": 0,
+     "other_superconductivity": 1
+    },
+    "n_unclassified_in_scope": 0,
+    "unclassified_fraction": 0.0,
+    "methods": {
+     "arpes": 0,
+     "stm_sts": 0,
+     "neutron_scattering": 0,
+     "rixs_resonant_xray": 0,
+     "musr": 0,
+     "nmr_nqr": 0,
+     "magnetotransport_hall": 0,
+     "quantum_oscillations": 0,
+     "optical_raman_ir": 0,
+     "ultrafast_pump_probe": 0,
+     "thermodynamics_specific_heat": 0,
+     "diffraction_structure": 0,
+     "high_pressure_dac": 0,
+     "thin_film_growth_mbe": 0,
+     "nv_quantum_sensing": 0,
+     "dft_first_principles": 0,
+     "dmft": 0,
+     "qmc": 0,
+     "dmrg_tensor_networks": 0,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 0,
+     "tight_binding_continuum": 0,
+     "machine_learning": 0,
+     "gw_beyond_dft": 0,
+     "phonon_electron_phonon": 0
+    },
+    "cluster_top_families": {}
+   }
+  },
+  "zenodo": {
+   "trailing": {
+    "n_records": 1336,
+    "n_in_scope": 1132,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 1132,
+    "clusters_multi": {
+     "nickelate_sc": 9,
+     "cuprate_sc": 59,
+     "iron_based_sc": 13,
+     "hydride_high_pressure_sc": 56,
+     "kagome": 17,
+     "altermagnetism": 2,
+     "fractional_qah_chern": 7,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 79,
+     "unconventional_topological_sc": 194,
+     "spin_liquid_frustrated": 15,
+     "heavy_fermion_kondo_qcp": 14,
+     "vdw_magnets_topological_magnetism": 62,
+     "cdw_nematic_excitonic": 16,
+     "topological_insulators_semimetals": 81,
+     "flat_band_quantum_geometry": 40,
+     "mott_hubbard_strange_metal": 57,
+     "ultrafast_floquet_noneq": 35,
+     "ml_ai": 42,
+     "quantum_magnetism_ferroic_order": 12,
+     "quantum_many_body_theory": 57,
+     "other_superconductivity": 187
+    },
+    "clusters_primary": {
+     "nickelate_sc": 9,
+     "cuprate_sc": 55,
+     "iron_based_sc": 6,
+     "hydride_high_pressure_sc": 44,
+     "kagome": 17,
+     "altermagnetism": 1,
+     "fractional_qah_chern": 7,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 67,
+     "unconventional_topological_sc": 172,
+     "spin_liquid_frustrated": 7,
+     "heavy_fermion_kondo_qcp": 8,
+     "vdw_magnets_topological_magnetism": 52,
+     "cdw_nematic_excitonic": 8,
+     "topological_insulators_semimetals": 62,
+     "flat_band_quantum_geometry": 16,
+     "mott_hubbard_strange_metal": 25,
+     "ultrafast_floquet_noneq": 17,
+     "ml_ai": 20,
+     "quantum_magnetism_ferroic_order": 12,
+     "quantum_many_body_theory": 57,
+     "other_superconductivity": 187
+    },
+    "n_unclassified_in_scope": 283,
+    "unclassified_fraction": 0.25,
+    "methods": {
+     "arpes": 14,
+     "stm_sts": 16,
+     "neutron_scattering": 7,
+     "rixs_resonant_xray": 3,
+     "musr": 0,
+     "nmr_nqr": 4,
+     "magnetotransport_hall": 67,
+     "quantum_oscillations": 5,
+     "optical_raman_ir": 59,
+     "ultrafast_pump_probe": 19,
+     "thermodynamics_specific_heat": 21,
+     "diffraction_structure": 6,
+     "high_pressure_dac": 43,
+     "thin_film_growth_mbe": 19,
+     "nv_quantum_sensing": 6,
+     "dft_first_principles": 106,
+     "dmft": 3,
+     "qmc": 8,
+     "dmrg_tensor_networks": 19,
+     "exact_diagonalization": 4,
+     "hartree_fock_mean_field": 56,
+     "tight_binding_continuum": 45,
+     "machine_learning": 72,
+     "gw_beyond_dft": 11,
+     "phonon_electron_phonon": 57
+    },
+    "cluster_top_families": {
+     "nickelate_sc": [
+      [
+       "cuprates",
+       6
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       5
+      ],
+      [
+       "nickelates_infinite_layer",
+       3
+      ],
+      [
+       "graphene_multilayers",
+       3
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       3
+      ]
+     ],
+     "cuprate_sc": [
+      [
+       "cuprates",
+       59
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       12
+      ],
+      [
+       "graphene_multilayers",
+       7
+      ],
+      [
+       "hydrides",
+       5
+      ],
+      [
+       "nickelates_bilayer_trilayer_rp",
+       3
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "iron_pnictides_chalcogenides",
+       12
+      ],
+      [
+       "cuprates",
+       10
+      ],
+      [
+       "srtio3_ktao3_oxide_interfaces",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       1
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "cuprates",
+       17
+      ],
+      [
+       "hydrides",
+       12
+      ],
+      [
+       "graphene_multilayers",
+       9
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       7
+      ],
+      [
+       "hbn",
+       5
+      ]
+     ],
+     "kagome": [
+      [
+       "av3sb5_kagome",
+       2
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "altermagnetism": [
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ],
+      [
+       "altermagnet_candidates",
+       1
+      ]
+     ],
+     "fractional_qah_chern": [
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       47
+      ],
+      [
+       "cuprates",
+       10
+      ],
+      [
+       "tmds",
+       9
+      ],
+      [
+       "hbn",
+       8
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       4
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "graphene_multilayers",
+       12
+      ],
+      [
+       "cuprates",
+       10
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       8
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       7
+      ],
+      [
+       "ute2_heavy_fermion_f_electron",
+       3
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       9
+      ],
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "hbn",
+       2
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ],
+      [
+       "vdw_magnets",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "tmds",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       2
+      ],
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "iridates_mott_oxides",
+       1
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "graphene_multilayers",
+       9
+      ],
+      [
+       "weyl_dirac_semimetals",
+       6
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       6
+      ],
+      [
+       "cuprates",
+       5
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       3
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "graphene_multilayers",
+       10
+      ],
+      [
+       "other_kagome_metals",
+       3
+      ],
+      [
+       "tmds",
+       3
+      ],
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "cuprates",
+       18
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       8
+      ],
+      [
+       "hydrides",
+       3
+      ],
+      [
+       "graphene_multilayers",
+       3
+      ],
+      [
+       "tmds",
+       2
+      ]
+     ],
+     "ultrafast_floquet_noneq": [
+      [
+       "graphene_multilayers",
+       3
+      ],
+      [
+       "weyl_dirac_semimetals",
+       2
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       2
+      ],
+      [
+       "hbn",
+       2
+      ],
+      [
+       "other_kagome_metals",
+       1
+      ]
+     ],
+     "ml_ai": [
+      [
+       "cuprates",
+       5
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       3
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "nickelates_infinite_layer",
+       1
+      ],
+      [
+       "mnbi2te4_bi2se3_tetradymites",
+       1
+      ]
+     ],
+     "quantum_many_body_theory": [
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "hbn",
+       1
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "cuprates",
+       22
+      ],
+      [
+       "graphene_multilayers",
+       10
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       3
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       2
+      ],
+      [
+       "tmds",
+       2
+      ]
+     ]
+    }
+   },
+   "preceding": {
+    "n_records": 122,
+    "n_in_scope": 114,
+    "n_in_scope_by_category": 0,
+    "n_in_scope_by_keyword_only": 114,
+    "clusters_multi": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 4,
+     "iron_based_sc": 1,
+     "hydride_high_pressure_sc": 6,
+     "kagome": 1,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 1,
+     "unconventional_topological_sc": 12,
+     "spin_liquid_frustrated": 2,
+     "heavy_fermion_kondo_qcp": 3,
+     "vdw_magnets_topological_magnetism": 3,
+     "cdw_nematic_excitonic": 4,
+     "topological_insulators_semimetals": 6,
+     "flat_band_quantum_geometry": 1,
+     "mott_hubbard_strange_metal": 1,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 3,
+     "quantum_magnetism_ferroic_order": 7,
+     "quantum_many_body_theory": 6,
+     "other_superconductivity": 33
+    },
+    "clusters_primary": {
+     "nickelate_sc": 0,
+     "cuprate_sc": 4,
+     "iron_based_sc": 0,
+     "hydride_high_pressure_sc": 5,
+     "kagome": 1,
+     "altermagnetism": 0,
+     "fractional_qah_chern": 0,
+     "rhombohedral_multilayer_graphene": 0,
+     "moire_twisted_2d": 1,
+     "unconventional_topological_sc": 11,
+     "spin_liquid_frustrated": 1,
+     "heavy_fermion_kondo_qcp": 0,
+     "vdw_magnets_topological_magnetism": 2,
+     "cdw_nematic_excitonic": 2,
+     "topological_insulators_semimetals": 4,
+     "flat_band_quantum_geometry": 0,
+     "mott_hubbard_strange_metal": 0,
+     "ultrafast_floquet_noneq": 0,
+     "ml_ai": 3,
+     "quantum_magnetism_ferroic_order": 7,
+     "quantum_many_body_theory": 6,
+     "other_superconductivity": 33
+    },
+    "n_unclassified_in_scope": 34,
+    "unclassified_fraction": 0.2982,
+    "methods": {
+     "arpes": 4,
+     "stm_sts": 3,
+     "neutron_scattering": 4,
+     "rixs_resonant_xray": 0,
+     "musr": 3,
+     "nmr_nqr": 2,
+     "magnetotransport_hall": 19,
+     "quantum_oscillations": 3,
+     "optical_raman_ir": 4,
+     "ultrafast_pump_probe": 0,
+     "thermodynamics_specific_heat": 7,
+     "diffraction_structure": 3,
+     "high_pressure_dac": 6,
+     "thin_film_growth_mbe": 3,
+     "nv_quantum_sensing": 1,
+     "dft_first_principles": 12,
+     "dmft": 0,
+     "qmc": 0,
+     "dmrg_tensor_networks": 0,
+     "exact_diagonalization": 0,
+     "hartree_fock_mean_field": 4,
+     "tight_binding_continuum": 3,
+     "machine_learning": 9,
+     "gw_beyond_dft": 0,
+     "phonon_electron_phonon": 11
+    },
+    "cluster_top_families": {
+     "cuprate_sc": [
+      [
+       "cuprates",
+       4
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "iron_based_sc": [
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "hydride_high_pressure_sc": [
+      [
+       "graphene_multilayers",
+       3
+      ],
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "moire_twisted_2d": [
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "unconventional_topological_sc": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       2
+      ],
+      [
+       "weyl_dirac_semimetals",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ],
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ]
+     ],
+     "spin_liquid_frustrated": [
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ],
+      [
+       "frustrated_rare_earth_and_triangular",
+       1
+      ]
+     ],
+     "heavy_fermion_kondo_qcp": [
+      [
+       "ute2_heavy_fermion_f_electron",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "vdw_magnets_topological_magnetism": [
+      [
+       "vdw_magnets",
+       2
+      ],
+      [
+       "hbn",
+       1
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "cdw_nematic_excitonic": [
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "tmds",
+       1
+      ],
+      [
+       "hbn",
+       1
+      ]
+     ],
+     "topological_insulators_semimetals": [
+      [
+       "weyl_dirac_semimetals",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       2
+      ],
+      [
+       "magnetic_topological_eu_compounds",
+       1
+      ],
+      [
+       "av3sb5_kagome",
+       1
+      ]
+     ],
+     "flat_band_quantum_geometry": [
+      [
+       "graphene_multilayers",
+       1
+      ]
+     ],
+     "mott_hubbard_strange_metal": [
+      [
+       "cuprates",
+       1
+      ]
+     ],
+     "quantum_magnetism_ferroic_order": [
+      [
+       "cuprates",
+       1
+      ],
+      [
+       "iron_pnictides_chalcogenides",
+       1
+      ]
+     ],
+     "quantum_many_body_theory": [
+      [
+       "semiconductor_2deg_and_qw",
+       1
+      ]
+     ],
+     "other_superconductivity": [
+      [
+       "cuprates",
+       2
+      ],
+      [
+       "graphene_multilayers",
+       1
+      ],
+      [
+       "hydrides",
+       1
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "unclassified_title_bigrams": {
+  "arxiv": [
+   [
+    "electronic structure",
+    27
+   ],
+   [
+    "der waals",
+    23
+   ],
+   [
+    "van der",
+    21
+   ],
+   [
+    "magnetic field",
+    20
+   ],
+   [
+    "hall effect",
+    17
+   ],
+   [
+    "ab initio",
+    17
+   ],
+   [
+    "quantum dots",
+    14
+   ],
+   [
+    "edge states",
+    13
+   ],
+   [
+    "phase transition",
+    12
+   ],
+   [
+    "transport properties",
+    12
+   ],
+   [
+    "quantum materials",
+    12
+   ],
+   [
+    "x-ray scattering",
+    12
+   ],
+   [
+    "thin films",
+    12
+   ],
+   [
+    "density functional",
+    11
+   ],
+   [
+    "quantum dot",
+    11
+   ],
+   [
+    "symmetry breaking",
+    11
+   ],
+   [
+    "angle-resolved photoemission",
+    11
+   ],
+   [
+    "transition metal",
+    10
+   ],
+   [
+    "bound states",
+    10
+   ],
+   [
+    "phase transitions",
+    10
+   ],
+   [
+    "resonant inelastic",
+    10
+   ],
+   [
+    "inelastic x-ray",
+    10
+   ],
+   [
+    "quantum systems",
+    10
+   ],
+   [
+    "functional theory",
+    9
+   ],
+   [
+    "charge transport",
+    9
+   ],
+   [
+    "quantum transport",
+    9
+   ],
+   [
+    "magnetic fields",
+    9
+   ],
+   [
+    "monte carlo",
+    8
+   ],
+   [
+    "phase diagram",
+    8
+   ],
+   [
+    "chiral phonons",
+    8
+   ]
+  ],
+  "chemrxiv": [
+   [
+    "theoretical principles",
+    1
+   ],
+   [
+    "principles quantum",
+    1
+   ],
+   [
+    "quantum memory",
+    1
+   ],
+   [
+    "memory design",
+    1
+   ],
+   [
+    "design decoherence",
+    1
+   ],
+   [
+    "decoherence resilience",
+    1
+   ],
+   [
+    "resilience through",
+    1
+   ],
+   [
+    "through engineered",
+    1
+   ],
+   [
+    "engineered physical",
+    1
+   ],
+   [
+    "physical structures",
+    1
+   ],
+   [
+    "comprehensive guidelines",
+    1
+   ],
+   [
+    "guidelines magnetoelectrocatalysis",
+    1
+   ],
+   [
+    "magnetoelectrocatalysis quantum-engineered",
+    1
+   ],
+   [
+    "quantum-engineered materials",
+    1
+   ],
+   [
+    "materials mechanistic",
+    1
+   ],
+   [
+    "mechanistic insights",
+    1
+   ],
+   [
+    "insights application",
+    1
+   ],
+   [
+    "application spectrum",
+    1
+   ]
+  ],
+  "hal": [
+   [
+    "de spin",
+    2
+   ],
+   [
+    "sur les",
+    2
+   ],
+   [
+    "les investissements",
+    2
+   ],
+   [
+    "investissements dans",
+    2
+   ],
+   [
+    "dans industrie",
+    2
+   ],
+   [
+    "cavity-mediated superthermal",
+    1
+   ],
+   [
+    "superthermal phonon",
+    1
+   ],
+   [
+    "phonon correlations",
+    1
+   ],
+   [
+    "correlations ultrastrong",
+    1
+   ],
+   [
+    "ultrastrong coupling",
+    1
+   ],
+   [
+    "coupling regime",
+    1
+   ],
+   [
+    "mind wandering",
+    1
+   ],
+   [
+    "wandering relationship",
+    1
+   ],
+   [
+    "relationship sustained",
+    1
+   ],
+   [
+    "sustained attention",
+    1
+   ],
+   [
+    "attention executive",
+    1
+   ],
+   [
+    "executive functions",
+    1
+   ],
+   [
+    "functions preschoolers",
+    1
+   ],
+   [
+    "perspectives density-matrix",
+    1
+   ],
+   [
+    "density-matrix embedding",
+    1
+   ],
+   [
+    "embedding theory",
+    1
+   ],
+   [
+    "enhancing european",
+    1
+   ],
+   [
+    "european cooperation",
+    1
+   ],
+   [
+    "cooperation search",
+    1
+   ],
+   [
+    "search dark",
+    1
+   ],
+   [
+    "dark matter",
+    1
+   ],
+   [
+    "high field",
+    1
+   ],
+   [
+    "field magnet",
+    1
+   ],
+   [
+    "magnet programme",
+    1
+   ],
+   [
+    "programme european",
+    1
+   ]
+  ],
+  "osti": [
+   [
+    "quantum materials",
+    6
+   ],
+   [
+    "x-ray scattering",
+    4
+   ],
+   [
+    "der waals",
+    4
+   ],
+   [
+    "final report",
+    3
+   ],
+   [
+    "van der",
+    3
+   ],
+   [
+    "vertically aligned",
+    2
+   ],
+   [
+    "summer school",
+    2
+   ],
+   [
+    "quantum computing",
+    2
+   ],
+   [
+    "inelastic x-ray",
+    2
+   ],
+   [
+    "thin films",
+    2
+   ],
+   [
+    "graphene nanoribbons",
+    2
+   ],
+   [
+    "helium recovery",
+    2
+   ],
+   [
+    "recovery system",
+    2
+   ],
+   [
+    "system ib3a",
+    2
+   ],
+   [
+    "fracture network",
+    2
+   ],
+   [
+    "network quantification",
+    2
+   ],
+   [
+    "quantification during",
+    2
+   ],
+   [
+    "during co2",
+    2
+   ],
+   [
+    "co2 injection",
+    2
+   ],
+   [
+    "ion implantation",
+    2
+   ],
+   [
+    "waals crystals",
+    2
+   ],
+   [
+    "dark matter",
+    2
+   ],
+   [
+    "quantum eigensolver",
+    2
+   ],
+   [
+    "quantum transport",
+    2
+   ],
+   [
+    "final technical",
+    2
+   ],
+   [
+    "technical report",
+    2
+   ],
+   [
+    "fe1 tas2",
+    2
+   ],
+   [
+    "ab initio",
+    2
+   ],
+   [
+    "sc sc-psma-617",
+    2
+   ],
+   [
+    "nh3 ch2",
+    2
+   ]
+  ],
+  "preprints_org": [
+   [
+    "kernel ridge-type",
+    1
+   ],
+   [
+    "ridge-type shrinkage",
+    1
+   ],
+   [
+    "shrinkage estimators",
+    1
+   ],
+   [
+    "estimators partially",
+    1
+   ],
+   [
+    "partially linear",
+    1
+   ],
+   [
+    "linear regression",
+    1
+   ],
+   [
+    "regression models",
+    1
+   ],
+   [
+    "models correlated",
+    1
+   ],
+   [
+    "correlated errors",
+    1
+   ]
+  ],
+  "researchsquare": [
+   [
+    "topological-insulating grain",
+    1
+   ],
+   [
+    "grain boundary",
+    1
+   ],
+   [
+    "boundary networks",
+    1
+   ],
+   [
+    "networks high-performance",
+    1
+   ],
+   [
+    "high-performance fe2val",
+    1
+   ],
+   [
+    "fe2val thermoelectrics",
+    1
+   ],
+   [
+    "non-abelian topological",
+    1
+   ],
+   [
+    "topological quantum",
+    1
+   ],
+   [
+    "quantum light",
+    1
+   ],
+   [
+    "light source",
+    1
+   ],
+   [
+    "resolving self-cavity",
+    1
+   ],
+   [
+    "self-cavity effects",
+    1
+   ],
+   [
+    "effects two-dimensional",
+    1
+   ],
+   [
+    "two-dimensional quantum",
+    1
+   ],
+   [
+    "quantum materials",
+    1
+   ],
+   [
+    "insulator-free topological",
+    1
+   ],
+   [
+    "topological photonic",
+    1
+   ],
+   [
+    "photonic multi-lane",
+    1
+   ],
+   [
+    "multi-lane highways",
+    1
+   ],
+   [
+    "topological-insulator heterophase",
+    1
+   ],
+   [
+    "heterophase gate",
+    1
+   ],
+   [
+    "gate stacks",
+    1
+   ],
+   [
+    "stacks transistor",
+    1
+   ],
+   [
+    "transistor electrostatics",
+    1
+   ]
+  ],
+  "zenodo": [
+   [
+    "e8 intelligence",
+    29
+   ],
+   [
+    "intelligence research",
+    29
+   ],
+   [
+    "field theory",
+    8
+   ],
+   [
+    "unified framework",
+    7
+   ],
+   [
+    "quantum mechanics",
+    5
+   ],
+   [
+    "unified theory",
+    5
+   ],
+   [
+    "unified field",
+    5
+   ],
+   [
+    "golden ratio",
+    4
+   ],
+   [
+    "quantum coherence",
+    4
+   ],
+   [
+    "hubble tension",
+    3
+   ],
+   [
+    "geometric origin",
+    3
+   ],
+   [
+    "algebraic framework",
+    3
+   ],
+   [
+    "sp3 framework",
+    3
+   ],
+   [
+    "condensed matter",
+    3
+   ],
+   [
+    "standard model",
+    3
+   ],
+   [
+    "fermion mass",
+    3
+   ],
+   [
+    "evidence rel0",
+    3
+   ],
+   [
+    "absolute zero",
+    3
+   ],
+   [
+    "de la",
+    3
+   ],
+   [
+    "ckm pmns",
+    3
+   ],
+   [
+    "e8 root",
+    3
+   ],
+   [
+    "framework emergent",
+    2
+   ],
+   [
+    "emergent physics",
+    2
+   ],
+   [
+    "quantum gravity",
+    2
+   ],
+   [
+    "theory mathematical",
+    2
+   ],
+   [
+    "physical constants",
+    2
+   ],
+   [
+    "spatial-causal geometry",
+    2
+   ],
+   [
+    "geometry scg",
+    2
+   ],
+   [
+    "neutrino masses",
+    2
+   ],
+   [
+    "cp violation",
+    2
+   ]
+  ],
+  "ALL": [
+   [
+    "e8 intelligence",
+    29
+   ],
+   [
+    "intelligence research",
+    29
+   ],
+   [
+    "electronic structure",
+    28
+   ],
+   [
+    "der waals",
+    27
+   ],
+   [
+    "van der",
+    24
+   ],
+   [
+    "quantum materials",
+    20
+   ],
+   [
+    "magnetic field",
+    20
+   ],
+   [
+    "ab initio",
+    19
+   ],
+   [
+    "hall effect",
+    17
+   ],
+   [
+    "x-ray scattering",
+    16
+   ],
+   [
+    "edge states",
+    14
+   ],
+   [
+    "quantum dots",
+    14
+   ],
+   [
+    "thin films",
+    14
+   ],
+   [
+    "transport properties",
+    13
+   ],
+   [
+    "density functional",
+    12
+   ],
+   [
+    "phase transition",
+    12
+   ],
+   [
+    "phase transitions",
+    12
+   ],
+   [
+    "inelastic x-ray",
+    12
+   ],
+   [
+    "quantum dot",
+    12
+   ],
+   [
+    "angle-resolved photoemission",
+    12
+   ],
+   [
+    "quantum transport",
+    12
+   ],
+   [
+    "field theory",
+    12
+   ],
+   [
+    "resonant inelastic",
+    11
+   ],
+   [
+    "quantum systems",
+    11
+   ],
+   [
+    "symmetry breaking",
+    11
+   ],
+   [
+    "functional theory",
+    10
+   ],
+   [
+    "transition metal",
+    10
+   ],
+   [
+    "bound states",
+    10
+   ],
+   [
+    "charge transport",
+    9
+   ],
+   [
+    "quantum mechanics",
+    9
+   ]
+  ]
+ }
+}

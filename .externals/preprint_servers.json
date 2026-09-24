@@ -1,0 +1,477 @@
+{
+  "manifest_version": "1.0",
+  "generated": "2026-09-23",
+  "notes": [
+    "access.method is the recommended way for an agent to reach each server: 'native_api' (server's own JSON/Atom API), 'oai_pmh' (bulk metadata harvesting, XML), 'aggregator' (no usable public API; query Crossref/OpenAlex by DOI prefix instead), or 'web_only'.",
+    "crossref_doi_prefix lets you query any server through Crossref: https://api.crossref.org/prefixes/{prefix}/works?filter=type:posted-content. Prefixes marked verify:true are from memory and should be confirmed with one test call.",
+    "data_repositories holds sources of datasets and software rather than papers; use them to find the data behind a result, or data with no paper yet.",
+    "Endpoints change. Run a health check (one small request per endpoint) before relying on this file in production.",
+    "Respect each server's terms of use and rate limits; send a descriptive User-Agent with a contact email."
+  ],
+  "servers": [
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "fields": ["physics", "mathematics", "computer science", "statistics", "quantitative biology", "quantitative finance", "electrical engineering", "economics", "materials science"],
+      "homepage": "https://arxiv.org",
+      "status": "active",
+      "operator": "arXiv (independent nonprofit)",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://export.arxiv.org/api/query?search_query=all:{query}&start=0&max_results=50",
+        "search_api_format": "Atom XML",
+        "oai_pmh": "https://oaipmh.arxiv.org/oai",
+        "rss": "https://rss.arxiv.org/rss/{category}",
+        "bulk": "https://info.arxiv.org/help/bulk_data_s3.html",
+        "docs": "https://info.arxiv.org/help/api/index.html",
+        "terms": "https://info.arxiv.org/help/api/tou.html",
+        "auth_required": false,
+        "rate_limit_note": "Roughly one request every 3 seconds; see API terms of use."
+      },
+      "materials_science_categories": ["cond-mat.mtrl-sci", "cond-mat.soft", "cond-mat.supr-con"],
+      "crossref_doi_prefix": { "prefix": "10.48550", "verify": false }
+    },
+    {
+      "id": "biorxiv",
+      "name": "bioRxiv",
+      "fields": ["biology"],
+      "homepage": "https://www.biorxiv.org",
+      "status": "active",
+      "operator": "openRxiv",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.biorxiv.org/details/biorxiv/{from_date}/{to_date}/{cursor}?category={category}",
+        "single_record": "https://api.biorxiv.org/details/biorxiv/{doi}",
+        "published_versions": "https://api.biorxiv.org/pubs/biorxiv/{from_date}/{to_date}/{cursor}",
+        "search_api_format": "JSON (also OAI-PMH XML)",
+        "docs": "https://api.biorxiv.org/",
+        "auth_required": false,
+        "rate_limit_note": "No keyword search endpoint; the API lists by date range or DOI. Use Europe PMC or OpenAlex for keyword search."
+      },
+      "crossref_doi_prefix": { "prefix": "10.1101", "verify": false }
+    },
+    {
+      "id": "medrxiv",
+      "name": "medRxiv",
+      "fields": ["medicine", "health sciences"],
+      "homepage": "https://www.medrxiv.org",
+      "status": "active",
+      "operator": "openRxiv",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.biorxiv.org/details/medrxiv/{from_date}/{to_date}/{cursor}?category={category}",
+        "single_record": "https://api.biorxiv.org/details/medrxiv/{doi}",
+        "search_api_format": "JSON (also OAI-PMH XML)",
+        "docs": "https://api.biorxiv.org/",
+        "auth_required": false,
+        "rate_limit_note": "Same API as bioRxiv; no keyword search."
+      },
+      "crossref_doi_prefix": { "prefix": "10.1101", "verify": false }
+    },
+    {
+      "id": "chemrxiv",
+      "name": "ChemRxiv",
+      "fields": ["chemistry", "materials science"],
+      "homepage": "https://chemrxiv.org",
+      "status": "active",
+      "operator": "ACS, RSC, GDCh, CCS, CSJ (Cambridge Open Engage platform)",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://chemrxiv.org/engage/chemrxiv/public-api/v1/items?term={query}&limit=50",
+        "graphql": "https://chemrxiv.org/engage/chemrxiv/public-api/graphql",
+        "search_api_format": "JSON",
+        "docs": "https://github.com/mlederbauer/chemrxiv",
+        "auth_required": false,
+        "rate_limit_note": "No official public docs page; community wrappers document it. Metadata reuse is subject to ChemRxiv licensing terms."
+      },
+      "crossref_doi_prefix": { "prefix": "10.26434", "verify": false }
+    },
+    {
+      "id": "eartharxiv",
+      "name": "EarthArXiv",
+      "fields": ["earth sciences", "geosciences"],
+      "homepage": "https://eartharxiv.org",
+      "status": "active",
+      "operator": "California Digital Library (Janeway platform)",
+      "access": {
+        "method": "oai_pmh",
+        "oai_pmh": "https://eartharxiv.org/api/oai/",
+        "search_api_format": "OAI-PMH XML (JATS or Dublin Core)",
+        "docs": "https://eartharxiv.github.io/",
+        "auth_required": false
+      },
+      "crossref_doi_prefix": { "prefix": "10.31223", "verify": true }
+    },
+    {
+      "id": "ecoevorxiv",
+      "name": "EcoEvoRxiv",
+      "fields": ["ecology", "evolution", "conservation"],
+      "homepage": "https://ecoevorxiv.org",
+      "status": "active",
+      "operator": "Society for Open, Reliable and Transparent Ecology and Evolutionary Biology (Janeway platform)",
+      "access": {
+        "method": "oai_pmh",
+        "oai_pmh": "https://ecoevorxiv.org/api/oai/",
+        "search_api_format": "OAI-PMH XML",
+        "auth_required": false,
+        "rate_limit_note": "OAI path follows the standard Janeway pattern; verify before use."
+      },
+      "crossref_doi_prefix": { "prefix": "10.32942", "verify": true }
+    },
+    {
+      "id": "engrxiv",
+      "name": "engrXiv",
+      "fields": ["engineering"],
+      "homepage": "https://engrxiv.org",
+      "status": "active",
+      "operator": "Open Engineering Inc (Janeway platform)",
+      "access": {
+        "method": "oai_pmh",
+        "oai_pmh": "https://engrxiv.org/api/oai/",
+        "search_api_format": "OAI-PMH XML",
+        "auth_required": false,
+        "rate_limit_note": "OAI path follows the standard Janeway pattern; verify before use."
+      },
+      "crossref_doi_prefix": { "prefix": "10.31224", "verify": true }
+    },
+    {
+      "id": "techrxiv",
+      "name": "TechRxiv",
+      "fields": ["electrical engineering", "computer science", "technology"],
+      "homepage": "https://www.techrxiv.org",
+      "status": "active",
+      "operator": "IEEE (hosted on Wiley's preprint platform)",
+      "access": {
+        "method": "aggregator",
+        "rate_limit_note": "No documented public API. Platform migrated to Wiley Research Exchange Preprints in 2026; query via Crossref or OpenAlex."
+      },
+      "crossref_doi_prefix": { "prefix": "10.36227", "verify": true }
+    },
+    {
+      "id": "essopenarchive",
+      "name": "ESS Open Archive",
+      "fields": ["earth sciences", "space science", "environmental science"],
+      "homepage": "https://essopenarchive.org",
+      "status": "active",
+      "operator": "AGU with Wiley",
+      "access": {
+        "method": "aggregator",
+        "rate_limit_note": "No documented public API; query via Crossref or OpenAlex."
+      },
+      "crossref_doi_prefix": { "prefix": "10.22541", "verify": true }
+    },
+    {
+      "id": "psyarxiv",
+      "name": "PsyArXiv",
+      "fields": ["psychology"],
+      "homepage": "https://osf.io/preprints/psyarxiv",
+      "status": "active",
+      "operator": "SIPS (hosted on OSF)",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.osf.io/v2/preprints/?filter[provider]=psyarxiv",
+        "search_api_format": "JSON:API",
+        "docs": "https://developer.osf.io/",
+        "auth_required": false,
+        "rate_limit_note": "OSF API is public; a personal access token raises limits."
+      },
+      "crossref_doi_prefix": { "prefix": "10.31234", "verify": true }
+    },
+    {
+      "id": "socarxiv",
+      "name": "SocArXiv",
+      "fields": ["social sciences"],
+      "homepage": "https://osf.io/preprints/socarxiv",
+      "status": "active",
+      "operator": "University of Maryland (hosted on OSF)",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.osf.io/v2/preprints/?filter[provider]=socarxiv",
+        "search_api_format": "JSON:API",
+        "docs": "https://developer.osf.io/",
+        "auth_required": false
+      },
+      "crossref_doi_prefix": { "prefix": "10.31235", "verify": true }
+    },
+    {
+      "id": "edarxiv",
+      "name": "EdArXiv",
+      "fields": ["education"],
+      "homepage": "https://osf.io/preprints/edarxiv",
+      "status": "active",
+      "operator": "hosted on OSF",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.osf.io/v2/preprints/?filter[provider]=edarxiv",
+        "search_api_format": "JSON:API",
+        "docs": "https://developer.osf.io/",
+        "auth_required": false
+      },
+      "crossref_doi_prefix": { "prefix": "10.35542", "verify": true }
+    },
+    {
+      "id": "sportrxiv",
+      "name": "SportRxiv",
+      "fields": ["sport science", "exercise science"],
+      "homepage": "https://sportrxiv.org",
+      "status": "verify",
+      "access": {
+        "method": "aggregator",
+        "rate_limit_note": "Hosting has moved in the past; confirm current platform before building a direct integration."
+      },
+      "crossref_doi_prefix": { "prefix": "10.51224", "verify": true }
+    },
+    {
+      "id": "metaarxiv",
+      "name": "MetaArXiv",
+      "fields": ["meta-research", "research methods"],
+      "homepage": "https://osf.io/preprints/metaarxiv",
+      "status": "active",
+      "operator": "hosted on OSF",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.osf.io/v2/preprints/?filter[provider]=metaarxiv",
+        "search_api_format": "JSON:API",
+        "auth_required": false
+      },
+      "crossref_doi_prefix": { "prefix": "10.31222", "verify": true }
+    },
+    {
+      "id": "paleorxiv",
+      "name": "PaleorXiv",
+      "fields": ["paleontology"],
+      "homepage": "https://osf.io/preprints/paleorxiv",
+      "status": "verify",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.osf.io/v2/preprints/?filter[provider]=paleorxiv",
+        "search_api_format": "JSON:API",
+        "auth_required": false,
+        "rate_limit_note": "Low activity; may be archived."
+      },
+      "crossref_doi_prefix": { "prefix": "10.31233", "verify": true }
+    },
+    {
+      "id": "lawarxiv",
+      "name": "LawArXiv",
+      "fields": ["law"],
+      "homepage": "https://osf.io/preprints/lawarxiv",
+      "status": "archived",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.osf.io/v2/preprints/?filter[provider]=lawarxiv",
+        "search_api_format": "JSON:API",
+        "auth_required": false,
+        "rate_limit_note": "Reported as archived; historical records only."
+      },
+      "crossref_doi_prefix": { "prefix": "10.31228", "verify": true }
+    },
+    {
+      "id": "osf_preprints",
+      "name": "OSF Preprints (general)",
+      "fields": ["multidisciplinary"],
+      "homepage": "https://osf.io/preprints",
+      "status": "active",
+      "operator": "Center for Open Science",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.osf.io/v2/preprints/?filter[provider]=osf",
+        "providers_list": "https://api.osf.io/v2/providers/preprints/",
+        "search_api_format": "JSON:API",
+        "docs": "https://developer.osf.io/",
+        "auth_required": false
+      },
+      "crossref_doi_prefix": { "prefix": "10.31219", "verify": true }
+    },
+    {
+      "id": "ssrn",
+      "name": "SSRN",
+      "fields": ["economics", "law", "finance", "business", "social sciences"],
+      "homepage": "https://www.ssrn.com",
+      "status": "active",
+      "operator": "Elsevier",
+      "access": {
+        "method": "aggregator",
+        "rate_limit_note": "No public API and scraping is prohibited by terms. Use Crossref/OpenAlex for metadata."
+      },
+      "crossref_doi_prefix": { "prefix": "10.2139", "verify": false }
+    },
+    {
+      "id": "nber",
+      "name": "NBER Working Papers",
+      "fields": ["economics"],
+      "homepage": "https://www.nber.org/papers",
+      "status": "active",
+      "access": {
+        "method": "aggregator",
+        "rate_limit_note": "Also indexed in RePEc (https://ideas.repec.org)."
+      },
+      "crossref_doi_prefix": { "prefix": "10.3386", "verify": false }
+    },
+    {
+      "id": "researchsquare",
+      "name": "Research Square",
+      "fields": ["multidisciplinary"],
+      "homepage": "https://www.researchsquare.com",
+      "status": "active",
+      "operator": "Springer Nature",
+      "access": {
+        "method": "aggregator",
+        "rate_limit_note": "Indexed by Europe PMC (life sciences) and Crossref."
+      },
+      "crossref_doi_prefix": { "prefix": "10.21203", "verify": false }
+    },
+    {
+      "id": "preprints_org",
+      "name": "Preprints.org",
+      "fields": ["multidisciplinary"],
+      "homepage": "https://www.preprints.org",
+      "status": "active",
+      "operator": "MDPI",
+      "access": {
+        "method": "aggregator"
+      },
+      "crossref_doi_prefix": { "prefix": "10.20944", "verify": false }
+    },
+    {
+      "id": "zenodo",
+      "name": "Zenodo",
+      "fields": ["multidisciplinary"],
+      "homepage": "https://zenodo.org",
+      "status": "active",
+      "operator": "CERN",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://zenodo.org/api/records?q={query}&type=publication&subtype=preprint",
+        "oai_pmh": "https://zenodo.org/oai2d",
+        "search_api_format": "JSON",
+        "docs": "https://developers.zenodo.org/",
+        "auth_required": false,
+        "rate_limit_note": "General repository, not curated as a preprint server."
+      },
+      "crossref_doi_prefix": { "prefix": "10.5281", "verify": false, "note": "Zenodo DOIs are registered with DataCite, not Crossref." }
+    },
+    {
+      "id": "hal",
+      "name": "HAL",
+      "fields": ["multidisciplinary"],
+      "homepage": "https://hal.science",
+      "status": "active",
+      "operator": "CCSD (France)",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://api.archives-ouvertes.fr/search/?q={query}&fq=docType_s:UNDEFINED&wt=json",
+        "oai_pmh": "https://api.archives-ouvertes.fr/oai/hal/",
+        "search_api_format": "JSON (Solr)",
+        "docs": "https://api.archives-ouvertes.fr/docs",
+        "auth_required": false,
+        "rate_limit_note": "docType_s:UNDEFINED is HAL's preprint type."
+      }
+    }
+  ],
+  "data_repositories": [
+    {
+      "id": "zenodo_data",
+      "name": "Zenodo (datasets and software)",
+      "fields": ["multidisciplinary"],
+      "homepage": "https://zenodo.org",
+      "status": "active",
+      "operator": "CERN",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://zenodo.org/api/records?q={query}&type=dataset&size=25",
+        "search_api_software": "https://zenodo.org/api/records?q={query}&type=software&size=25",
+        "search_api_alt": "https://zenodo.org/api/records?q={query} AND resource_type.type:dataset",
+        "single_record": "https://zenodo.org/api/records/{record_id}",
+        "files": "https://zenodo.org/api/records/{record_id}/files",
+        "oai_pmh": "https://zenodo.org/oai2d",
+        "search_api_format": "JSON",
+        "docs": "https://developers.zenodo.org/",
+        "auth_required": false,
+        "rate_limit_note": "Public reads need no token; a personal token raises limits. Use search_api_alt if the type= shortcut is ignored. Records often link to the paper they support via related_identifiers.",
+        "verify": true
+      },
+      "doi_registrar": { "registrar": "DataCite", "prefix": "10.5281" }
+    },
+    {
+      "id": "osti",
+      "name": "OSTI.GOV (DOE research results, including datasets)",
+      "fields": ["energy", "physics", "materials science", "chemistry", "engineering", "earth sciences", "biology"],
+      "homepage": "https://www.osti.gov",
+      "status": "active",
+      "operator": "U.S. Department of Energy, Office of Scientific and Technical Information",
+      "access": {
+        "method": "native_api",
+        "search_api": "https://www.osti.gov/api/v1/records?q={query}&rows=25",
+        "search_api_datasets": "https://www.osti.gov/api/v1/records?q={query}&product_type=Dataset&rows=25",
+        "single_record": "https://www.osti.gov/api/v1/records/{osti_id}",
+        "search_api_format": "JSON (default), XML or BibTeX via Accept header",
+        "query_params": ["q", "title", "author", "doi", "fulltext", "sponsor_org", "research_org", "publication_date_start", "publication_date_end", "sort", "order", "rows", "page"],
+        "docs": "https://www.osti.gov/api/v1/docs",
+        "auth_required": false,
+        "rate_limit_note": "product_type is a record field but is not documented as a filter; if the dataset filter is ignored, filter results client-side on product_type == 'Dataset'. Rate limits undocumented; keep requests modest.",
+        "verify": true
+      }
+    },
+    {
+      "id": "doe_data_explorer",
+      "name": "DOE Data Explorer",
+      "fields": ["energy", "physics", "materials science", "chemistry", "engineering", "earth sciences", "biology"],
+      "homepage": "https://www.osti.gov/dataexplorer/",
+      "status": "active",
+      "operator": "U.S. Department of Energy, OSTI",
+      "access": {
+        "method": "web_only",
+        "rate_limit_note": "Web search interface over DOE datasets and data collections. No separately documented API; its dataset records are served by the OSTI.GOV API above, so agents should use that.",
+        "verify": true
+      }
+    }
+  ],
+  "aggregators": [
+    {
+      "id": "crossref",
+      "name": "Crossref REST API",
+      "covers": "Nearly every server above that registers Crossref DOIs",
+      "search_api": "https://api.crossref.org/works?query={query}&filter=type:posted-content",
+      "by_prefix": "https://api.crossref.org/prefixes/{prefix}/works?filter=type:posted-content",
+      "docs": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "auth_required": false,
+      "rate_limit_note": "Add mailto={email} to use the faster 'polite' pool."
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "covers": "All disciplines, including preprints linked to their published versions",
+      "search_api": "https://api.openalex.org/works?search={query}&filter=type:preprint",
+      "docs": "https://docs.openalex.org/",
+      "auth_required": "optional but strongly recommended: free key (api_key={key}) raises the daily budget from $0.10 to $1 (~1,000 searches or ~10,000 list/filter calls); usage beyond that is paid",
+      "docs_auth": "https://developers.openalex.org/api-reference/authentication",
+      "rate_limit_note": "Single-record lookups are unlimited. Also offers full data snapshots for bulk use."
+    },
+    {
+      "id": "europepmc",
+      "name": "Europe PMC",
+      "covers": "Life-science preprints (bioRxiv, medRxiv, Research Square, ChemRxiv and others), with keyword search and some full text",
+      "search_api": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query={query}%20AND%20SRC:PPR&format=json",
+      "docs": "https://europepmc.org/RestfulWebService",
+      "auth_required": false
+    },
+    {
+      "id": "semantic_scholar",
+      "name": "Semantic Scholar Academic Graph API",
+      "covers": "All disciplines; good relevance ranking and citation data",
+      "search_api": "https://api.semanticscholar.org/graph/v1/paper/search?query={query}&fields=title,externalIds,year,venue",
+      "docs": "https://api.semanticscholar.org/api-docs/",
+      "auth_required": "optional free key; strongly recommended for sustained use"
+    },
+    {
+      "id": "datacite",
+      "name": "DataCite REST API",
+      "covers": "Datasets and software across most data repositories (Zenodo, Figshare, Dryad, institutional repositories and many DOE datasets)",
+      "search_api": "https://api.datacite.org/dois?query={query}&resource-type-id=dataset&page[size]=25",
+      "docs": "https://support.datacite.org/docs/api",
+      "auth_required": false,
+      "rate_limit_note": "The data-side counterpart to Crossref: one search across many repositories."
+    }
+  ]
+}

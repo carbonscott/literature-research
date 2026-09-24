@@ -1,0 +1,33 @@
+{
+ "hal_superconductivity": {
+  "preceding": {
+   "preprint_UNDEFINED": 10,
+   "journal_ART": 546,
+   "journal_ART_with_arxiv": 115
+  },
+  "trailing": {
+   "preprint_UNDEFINED": 25,
+   "journal_ART": 150,
+   "journal_ART_with_arxiv": 43
+  }
+ },
+ "zenodo_all_preprints": {
+  "preceding": 27418,
+  "trailing": 201419
+ },
+ "crossref_all_posted_content": {
+  "researchsquare": {
+   "preceding": 56482,
+   "trailing": 90941
+  },
+  "chemrxiv": {
+   "preceding": 9714,
+   "trailing": 12759
+  },
+  "preprints_org": {
+   "preceding": 31660,
+   "trailing": 30844
+  }
+ },
+ "note": "HAL counts use submittedDate; ART = journal article. Zenodo/Crossref totals are all-subject base volumes for normalization."
+}
