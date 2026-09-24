@@ -142,13 +142,13 @@ Interpretation and caveats:
 
 ## Q3 Materials
 
-**Headline:** Altermagnet candidates are the one robust materials story: the family grew from 128 to 254 records (R 1.77, 95% CI 1.43-2.20), led by CrSb (R 2.32, 1.39-3.90). MnTe is marginal (R 1.49, 1.00-2.22) and RuO2 is flat. Kitaev materials (R 0.63), AV3Sb5 kagome metals (R 0.72), further kagome compounds such as RTi3Bi4, LaRu3Si2 and FeSn (R 0.64), and the compound MnBi2Te4 (R 0.64) appear to be losing share, but their CIs only just exclude 1 (upper bounds 0.90-0.995) and ignore author clustering; La3Ni2O7 is borderline (R 0.78, 0.60-1.01). Only the altermagnet family survives a multiple-comparison correction.
+**Headline:** Altermagnet candidates are the one robust materials story: the family grew from 128 to 254 records (R 1.77, 95% CI 1.43-2.20), led by CrSb (R 2.32, 1.39-3.90). MnTe is marginal (R 1.49, 1.00-2.22) and RuO2 is flat. Kitaev materials (R 0.63), AV3Sb5 kagome metals (R 0.72) and further kagome compounds such as RTi3Bi4, LaRu3Si2 and FeSn (R 0.64) appear to be losing share, but their CIs only just exclude 1 (upper bounds 0.90-0.995) and ignore author clustering; La3Ni2O7 (R 0.78, 0.60-1.01) and the compound MnBi2Te4 (R 0.64-0.67, upper bound 0.97-1.02 depending on the counting rule) are borderline. Only the altermagnet family survives a multiple-comparison correction.
 
 **Counts:**
 - Population: in-scope arXiv records, 9,877 trailing (one record lacks a text row in the corpus) and 8,828 preceding.
 - Families: v2 families plus 11 extended families.
 - Family coverage varies widely by cluster: 0.99-1.00 for the nickelate, cuprate and rhombohedral clusters, but 0.02 for many-body theory.
-- Share trends (support T+P >= 30; 34 families and 25 formulas ranked): 1 family (altermagnet candidates) and 3 formulas (CrSb, YBa2Cu3O7, MnTe; MnTe only barely, lower bound 1.001) grew with CIs above 1. 3 families (Kitaev materials, AV3Sb5 kagome metals, further kagome compounds) and 1 formula (MnBi2Te4) declined with CIs below 1.
+- Share trends (support T+P >= 30; 34 families and 25 formulas ranked): 1 family (altermagnet candidates) and 3 formulas (CrSb, YBa2Cu3O7, MnTe; MnTe only barely, lower bound 1.001) grew with CIs above 1. 3 families (Kitaev materials, AV3Sb5 kagome metals, further kagome compounds) declined with CIs below 1. The formula MnBi2Te4 is borderline: its CI is below 1 only when two records written as MnBi2Te4(Bi2Te3)n are left out.
 
 Per-cluster leading families (trailing window, primary cluster; analysis/materials.json):
 
@@ -193,10 +193,11 @@ Family-level trends:
 - **Growing:** altermagnet candidates, 254 vs 128, R 1.77 (1.43-2.20). This is the only family whose CI excludes 1.
 - **Declining:**
   - Kitaev materials: 49 vs 70, R 0.63 (0.43-0.90)
-  - MnBi2Te4 (formula, 37 vs 52): R 0.64 (0.42-0.97). The wider tetradymite family (Bi2Se3, Bi2Te3, MnBi2Te4) is not significant: R 0.77 (0.58-1.01).
   - AV3Sb5 kagome metals: 64 vs 80, R 0.72 (0.51-0.995)
   - Further kagome compounds (RTi3Bi4, LaRu3Si2, FeSn ...): 37 vs 52, R 0.64 (0.42-0.97). The broader 'other kagome metals' family is flat: R 0.81 (0.63-1.04).
-- **Borderline:** La3Ni2O7, 105 vs 121, R 0.78 (0.60-1.01).
+- **Borderline:**
+  - La3Ni2O7, 105 vs 121, R 0.78 (0.60-1.01).
+  - MnBi2Te4 (formula). The formula extractor gives 37 vs 52, R 0.64 (0.42-0.97). It skips a formula written directly before "(", which drops two trailing records that name the MnBi2Te4(Bi2Te3)n series (arXiv:2510.09973, arXiv:2512.15667). Counting them gives 39 vs 52, R 0.67 (0.44-1.02), so the decline is not robust. (That the extractor's 37 vs 52 equals the further-kagome figures is a coincidence: the two record sets do not overlap.) The wider tetradymite family (Bi2Se3, Bi2Te3, MnBi2Te4) is not significant either: R 0.77 (0.58-1.01).
 - **Flat:**
   - RuO2: R 1.11 (0.74-1.68)
   - CrSBr: R 1.07

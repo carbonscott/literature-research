@@ -63,13 +63,14 @@ MATERIAL_FAMILIES = {
 }
 MATERIAL_FORMULAS = ["CrSb", "YBa2Cu3O7", "MnTe", "WSe2", "RuO2", "CrSBr", "UTe2", "CsV3Sb5", "La3Ni2O7"]
 
-# materials.json stores MnBi2Te4 with exactly the numbers of the "further kagome
-# compounds" family (37 vs 52). An independent recount (MnBi2Te4 named in the
-# normalized title+abstract of in-scope arXiv records) gives 39 vs 52, so the
-# chart uses the recount and flags the discrepancy.
+# The formula extractor in analysis/materials.py skips a formula written directly
+# before "(", so it misses two trailing records that name the MnBi2Te4(Bi2Te3)n
+# series (37 vs 52). Counting them gives 39 vs 52, whose CI includes 1, so the
+# chart shows that count and findings.md calls MnBi2Te4 borderline.
 MNBI2TE4_RECOUNT = {"label": "MnBi2Te4", "kind": "formula", "T": 39, "P": 52,
                     "R": 0.67, "lo": 0.44, "hi": 1.02,
-                    "note": "Recount: 39 vs 52, CI 0.44-1.02 (findings.md lists 37 vs 52, CI 0.42-0.97). Treat as borderline."}
+                    "note": "Counts the two MnBi2Te4(Bi2Te3)n records that the formula extractor skips; without them it is "
+                            "37 vs 52, CI 0.42-0.97. Borderline either way."}
 
 SHORT_METHOD_NAMES = {
     "Magnetotransport / Hall / resistivity": "Magnetotransport / Hall",

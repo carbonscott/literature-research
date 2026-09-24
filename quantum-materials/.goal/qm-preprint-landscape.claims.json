@@ -83,7 +83,7 @@
     {
       "id": "C14",
       "provenance": "inherited",
-      "evidence": "q3:materials agent (iteration 2), analysis/materials.json: CrSb R=2.32, MnTe R=1.49, altermagnet-candidate family R=1.77, RuO2 flat; MnBi2Te4, Kitaev materials, AV3Sb5 losing share. audit:q3q4 (iteration 3): MnTe CI lower bound 1.001; family 128->254 (R 1.77, 1.43-2.20).",
+      "evidence": "q3:materials agent (iteration 2), analysis/materials.json: CrSb R=2.32, MnTe R=1.49, altermagnet-candidate family R=1.77, RuO2 flat; MnBi2Te4, Kitaev materials, AV3Sb5 losing share. audit:q3q4 (iteration 3): MnTe CI lower bound 1.001; family 128->254 (R 1.77, 1.43-2.20). Correction after the campaign: MnBi2Te4 is borderline, not losing share. The extractor's 37 vs 52 (CI 0.42-0.97) omits two MnBi2Te4(Bi2Te3)n records (arXiv:2510.09973, arXiv:2512.15667); counting them gives 39 vs 52, CI 0.44-1.02.",
       "claim": "The one robust materials trend is the altermagnet-candidate family (R 1.77), led by CrSb (R 2.32); MnTe is marginal and RuO2 is flat despite being the flagship candidate."
     },
     {
