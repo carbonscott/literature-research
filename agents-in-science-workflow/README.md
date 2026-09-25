@@ -24,7 +24,10 @@ machine-checked reference list.
 
 ## Rebuild and check
 
-From the repository root (the scripts use only the Python standard library):
+From the repository root. The scripts use only the Python standard library but
+need Python 3.7 or newer (`build_report.py` and `check_report.py` fail on 3.6).
+If `python` is missing or older on your system, call a specific interpreter,
+such as `python3.12`:
 
 ```bash
 python agents-in-science-workflow/report/merge_notes.py

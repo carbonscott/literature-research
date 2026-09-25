@@ -1,7 +1,7 @@
 # Literature research
 
-Evidence-backed surveys of research fronts, built from preprint servers.
-Each topic lives in its own folder.
+Evidence-backed surveys of research fronts, built from preprints, papers and
+other primary sources. Each topic lives in its own folder.
 
 Site: https://carbonscott.github.io/literature-research/
 
