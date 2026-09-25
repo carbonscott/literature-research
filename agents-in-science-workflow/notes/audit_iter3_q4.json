@@ -1,0 +1,668 @@
+[
+ {
+  "file": "q4.html",
+  "statement": "Answer: chat assistants (2023-24) -> supervised control (2025-26); deployed systems mainly knowledge assistants, data-reduction agents, one accelerator control-room framework",
+  "keys": "q4_xray_scientist; q4_vision; q4_osprey; q4_apexa; q4_aps_rag",
+  "status": "confirmed",
+  "evidence": "Synthesis consistent with sources: Osprey 'production deployment at the Advanced Light Source'; APEXA 'a deployed multi-agent framework'; APS-RAG 'a deployed platform ... to staff'; x-ray scientist and VISION are single-campaign demos.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "SSRL agent aligned a single crystal on the BL17-2 six-circle diffractometer; MCP tools wrap SPEC; found reference reflections and orientation matrix",
+  "keys": "q4_xray_scientist",
+  "status": "confirmed",
+  "evidence": "NMI 8:1075 full text: 'on BL17-2 at SSRL'; 'six-circle diffractometer'; SPEC commands (wm, umv, pd) exposed via MCP; 'correctly identified reference reflections and determined the orientation matrix'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: AI X-ray scientist controls diffractometer motors and detector; Demonstrated; Peer-reviewed",
+  "keys": "q4_xray_scientist",
+  "status": "confirmed",
+  "evidence": "Full text: 'two detector motors (delta and nu) and four sample motors'; 'pd exposure Acquire a detector image'; one real-beamline campaign; Nature Machine Intelligence.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "LCLS: no public LLM-agent paper on LCLS experiment control (none-found statement)",
+  "keys": "",
+  "status": "confirmed",
+  "evidence": "No LCLS experiment-control LLM agent found in arXiv/OpenAlex (LCLS-affiliated LLM works: only the SSRL x-ray scientist paper) or web search. Note: the LCLS AI/ML web page lists 'elog-copilot', a natural-language interface to 'search LCLS metadata ... analyze instrument performance trends' (metadata only, not control, not a paper).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "LCLS BO 'aligns' a 12-parameter split-and-delay optic",
+  "keys": "q4_lcls_bo",
+  "status": "corrected",
+  "evidence": "arXiv 2602.10670 Appendix B: 'we performed wave-optical simulations of the system in preparation of the limited availability of XFEL beamtime'; simulator checked 'against experimental results on the HXRSND (delay branch only)'. The optimization was run in simulation, not on the live optic.",
+  "old": "physics-guided Bayesian optimization (not an LLM) that aligns a 12-parameter split-and-delay optic [@q4_lcls_bo]",
+  "new": "physics-guided Bayesian optimization (not an LLM) that aligned a 12-parameter split-and-delay optic in wave-optics simulations checked against measured data [@q4_lcls_bo]"
+ },
+ {
+  "file": "q4.html",
+  "statement": "LCLS cognitive model of operator, analyst and manager roles; beam time 'extremely valuable and limited'",
+  "keys": "q4_lcls_cognitive",
+  "status": "confirmed",
+  "evidence": "arXiv 2408.04734 abstract: 'As beam time at LCLS is extremely valuable and limited'; agents 'including instrument operator, real time data analyst, and experiment manager'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "ChatEED (SLAC) answers accelerator-operator questions from electronic logbooks and wikis",
+  "keys": "q4_chateed",
+  "status": "confirmed",
+  "evidence": "SC'25 Workshops abstract: 'Scientists and operators at SLAC ... rely on electronic logbooks (ELOGs)'; ACM listing: 'integrating logbooks, wikis, and other data sources into a single easy-to-use virtual assistant'. Crossref affiliation: SLAC.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: ChatEED, SLAC, accelerator operations, e-log retrieval, Demonstrated, peer-reviewed workshop",
+  "keys": "q4_chateed",
+  "status": "confirmed",
+  "evidence": "Proceedings of the SC '25 Workshops (conference paper); abstract calls it 'ongoing work' and describes 'system architecture and deployment'. 'Demonstrated' is a fair label.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "VISION turns voice/text into Bluesky code at 11-BM CMS; first voice-controlled x-ray scattering experiment",
+  "keys": "q4_vision",
+  "status": "confirmed",
+  "evidence": "arXiv 2412.18161 Sec 3.2: 'We have deployed VISION at the 11-BM Complex Materials Scattering (CMS) beamline at NSLS-II'; abstract: 'demonstrated the first voice-controlled experiment at an x-ray scattering beamline'; cogs execute 'on Bluesky'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "VISION: beamline models run locally; cloud GPT-4o serves other functions",
+  "keys": "q4_vision",
+  "status": "confirmed",
+  "evidence": "Table of cogs: Transcriber Whisper (open), Classifier/Operator/Analyst Qwen2/Qwen2.5-Coder (open, Ollama) on local GPU server 'HAL'; Refiner and Chatbot 'GPT-4o ... Azure OpenAI'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: VISION, BNL NSLS-II, x-ray scattering, Bluesky motors/detector, Demonstrated, Peer-reviewed",
+  "keys": "q4_vision",
+  "status": "confirmed",
+  "evidence": "GIWAXS on a Pilatus800k at CMS driven through Bluesky; MLST 2025 (peer-reviewed). OpenAlex institutions: BNL, CFN.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "EnvTrace scores control code from >30 LLMs against a beamline digital twin for pre-execution checks (BNL)",
+  "keys": "q4_envtrace",
+  "status": "confirmed",
+  "evidence": "arXiv 2511.09964: 'beamline control-logic digital twin ... also enabling the pre-execution validation of live experiments. Over 30 LLMs were evaluated'. Authors BNL.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "CALMS combines retrieval over facility documentation with instrument tool calls",
+  "keys": "q4_calms",
+  "status": "confirmed",
+  "evidence": "npj Comput Mater 2024 abstract: 'retrieve relevant information from facility documentation'; 'interface with software tools and experimental hardware, CALMS can conversationally operate scientific instruments'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Human-in-the-loop agents operate an x-ray nanoprobe beamline and a robotic materials station (APS/CNM)",
+  "keys": "q4_learn_on_job",
+  "status": "confirmed",
+  "evidence": "arXiv 2509.00098: affiliations 'Center for Nanoscale Materials' and 'Advanced Photon Source'; agents access 'the Hard X-ray Nanoprobe (HXN) and N9 robot's operation commands'; 'optional human input and iterative learning'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "EAA vision-language agents automate zone-plate focusing and feature search at an APS imaging beamline",
+  "keys": "q4_eaa",
+  "status": "confirmed",
+  "evidence": "npj Comput Mater 2026 abstract: 'We demonstrate EAA at an imaging beamline at the Advanced Photon Source, including automated zone plate focusing, natural language-described feature search'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "ALD reactor: 'only recent reasoning models solved process-discovery tasks'",
+  "keys": "q4_ald_agent",
+  "status": "corrected",
+  "evidence": "RSI 2026 abstract: 'only recent models, such as o1, o3, GPT-5, and Claude Opus 4, performed well in process discovery tasks. We also observed significant variability in the response for the hardest challenges.' 'Solved' overstates; the paper says 'recent models', not 'reasoning models'.",
+  "old": "only recent reasoning models solved process-discovery tasks [@q4_ald_agent]",
+  "new": "only recent models (o1, o3, GPT-5, Claude Opus 4) performed well on process-discovery tasks [@q4_ald_agent]"
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: APEXA at Argonne APS, diffraction, calibration/integration, Deployed, Preprint",
+  "keys": "q4_apexa",
+  "status": "confirmed",
+  "evidence": "arXiv 2609.24165: affiliation 'X-ray Science Division, Advanced Photon Source'; 'a deployed multi-agent framework'; validated 'on a real APS 1-ID dataset' (high-energy diffraction). arXiv only.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: APS-RAG at Argonne APS, operations, logbooks and control data, Deployed, Preprint",
+  "keys": "q4_aps_rag",
+  "status": "confirmed",
+  "evidence": "arXiv 2607.24663: 'a deployed platform that makes the institutional knowledge at the Advanced Photon Source (APS) accessible to staff'; sources include 'electronic logbooks ... and live control-system data'. arXiv only.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: EAA, Argonne APS, x-ray imaging, focusing/feature search, Demonstrated, Peer-reviewed",
+  "keys": "q4_eaa",
+  "status": "confirmed",
+  "evidence": "Same abstract as above; npj Computational Materials (peer-reviewed).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: Learn-on-the-job agents, Argonne APS/CNM, nanoprobe/robotics, multi-task workflows, Demonstrated, Peer-reviewed",
+  "keys": "q4_learn_on_job",
+  "status": "confirmed",
+  "evidence": "npj Comput Mater 2026: 'orchestrating complex, multi-task workflows'; work 'performed at the Center for Nanoscale Materials and Advanced Photon Source'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "ALS agent ran multistage machine-physics experiments; Osprey is the framework behind it",
+  "keys": "q4_als_agentic; q4_osprey",
+  "status": "confirmed",
+  "evidence": "PRR abstract: 'Implemented at the Advanced Light Source particle accelerator'; arXiv 2509.17255 Sec II: design 'following the Osprey framework'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Osprey requires human review of a complete plan before hardware action; production across hundreds of thousands of ALS control channels",
+  "keys": "q4_osprey",
+  "status": "confirmed",
+  "evidence": "APL ML 2026 abstract: 'plan-first orchestrator that generates complete execution plans ... for human review before any hardware is touched'; 'a production deployment at the Advanced Light Source, where Osprey manages real-time operations across hundreds of thousands of control channels'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: ALS agent / Osprey, LBNL ALS, accelerator, control channels and archiver, Deployed, Peer-reviewed",
+  "keys": "q4_als_agentic; q4_osprey",
+  "status": "confirmed",
+  "evidence": "PRR: 'archive data retrieval, control-system channel resolution'; Osprey 'production deployment'; both peer-reviewed (PRR; APL Machine Learning).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Semantic channel finding: proof-of-concepts at four facilities",
+  "keys": "q4_channel_finding",
+  "status": "confirmed",
+  "evidence": "MLST 2026 abstract: 'proof-of-concept implementations at four operational facilities ... from compact free-electron lasers to large synchrotron light sources'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Lightfall (built-in agent) in testing at COSMIC-Scattering; table: LBNL ALS, coherent scattering, devices/GP scans, In testing, Preprint",
+  "keys": "q4_lightfall",
+  "status": "confirmed",
+  "evidence": "arXiv 2606.06711: 'An embedded language-model agent drives experiments ... from a single move-and-read to a Gaussian-process-driven autonomous scan'; 'Lightfall is in testing at the COSMIC-Scattering beamline at the Advanced Light Source'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "TEM Agent (Molecular Foundry): commercial LLM controls microscope subsystems, data management and HPC through MCP",
+  "keys": "q4_tem_agent",
+  "status": "confirmed",
+  "evidence": "arXiv 2511.08819: affiliation 'The Molecular Foundry, Lawrence Berkeley National Laboratory'; TEAM 0.5 microscope, Crucible data platform, Distiller HPC via MCP; abstract: 'commercial LLM without any additional training'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "A-Lab GPSS: 'an agent chose 352 syntheses'",
+  "keys": "q4_alab_gpss",
+  "status": "corrected",
+  "evidence": "arXiv 2604.11957 full text: 'The first 77 samples comprise initial attempts using experimental parameters designed by human researchers'; '12 additional samples in total were designed and submitted manually. The remaining 263 samples were proposed and executed in a self-driving manner.'",
+  "old": "In the air-free A-Lab, an agent chose 352 syntheses (preprint) [@q4_alab_gpss].",
+  "new": "In the air-free A-Lab, LLM agents proposed 263 of 352 syntheses; researchers designed the rest (preprint) [@q4_alab_gpss]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "At CNMS, GPT-4 wrote scanning-probe microscope code but struggled with in-depth experiment design",
+  "keys": "q4_liu_spm",
+  "status": "confirmed",
+  "evidence": "MLST 2024 abstract: 'especially useful in converting ideations of experimental workflows to executable code on microscope APIs'; 'GPT4 suffers from an inability to extend beyond basic analyses for more in-depth technical experimental design'. Institutions: ORNL, CNMS.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "INTERSECT: federated microservices for multi-facility autonomous experiments",
+  "keys": "q4_intersect_toolkit",
+  "status": "confirmed",
+  "evidence": "SC24-W abstract: 'INTERSECT Open Architecture leverages federated systems of microservices to construct interconnected science ecosystems ... deploying an example multi-facility INTERSECT ecosystem'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "RAG e-log search demonstrated at Fermilab, JLab, LBNL and SLAC",
+  "keys": "q4_elog_accel",
+  "status": "confirmed",
+  "evidence": "arXiv 2506.12949 abstract: 'at the accelerator facilities of Fermilab, Jefferson Lab, Lawrence Berkeley National Laboratory (LBNL), SLAC'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "DESY: an LLM tuned an accelerator subsystem from an operator prompt (proof of principle)",
+  "keys": "q4_kaiser_sciadv",
+  "status": "corrected",
+  "evidence": "Sci Adv 2025 (PMC11691695) Methods: 'A Gymnasium environment of the EA transverse beam parameter tuning task using the Cheetah beam dynamics simulator is used to evaluate the LLMs and baselines'. No run on the real ARES linac is reported.",
+  "old": "At DESY, an LLM tuned an accelerator subsystem from an operator prompt, as a proof of principle [@q4_kaiser_sciadv].",
+  "new": "At DESY, an LLM tuned a simulated accelerator subsystem (an ARES linac beam-tuning task) from an operator prompt, as a proof of principle [@q4_kaiser_sciadv]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "CSNS runs a Rietveld refinement agent for external users; runs GSAS-II from natural-language task to report",
+  "keys": "q4_rongzai",
+  "status": "confirmed",
+  "evidence": "arXiv 2605.13911: 'from natural language task parsing to ... report generation'; 'currently deployed at the China Spallation Neutron Source (CSNS) and is open for external user registration'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "None found: 'no comparable system from ESRF, Diamond, European XFEL or PSI'",
+  "keys": "",
+  "status": "corrected",
+  "evidence": "Counterexample: arXiv 2607.16845 (ICSME'26, European XFEL co-authors): 'we designed and evaluated an agentic artificial intelligence (AI) system ... integrated with the high-performance computing environment of European XFEL', two prototypes with a user study. It is a prototype, not a deployed service. No ESRF, Diamond or PSI system found (arXiv, OpenAlex institution filter, web). Suggest adding 2607.16845 to refs.json if the European XFEL prototype should be named.",
+  "old": "We found no comparable system from ESRF, Diamond, European XFEL or PSI.",
+  "new": "We found no comparable deployed system from ESRF, Diamond, European XFEL or PSI."
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: Rongzai, CSNS, neutron powder diffraction, Rietveld refinement, Deployed, Preprint",
+  "keys": "q4_rongzai",
+  "status": "confirmed",
+  "evidence": "Same abstract: Rietveld refinement of neutron diffraction data with GSAS-II; 'currently deployed'; arXiv only.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Precursors 'predate the agents above'",
+  "keys": "q4_corrao_multibeamline; q4_lcls_bo",
+  "status": "corrected",
+  "evidence": "The NSLS-II multi-beamline framework paper (arXiv 2509.22959, Sep 2025) and the LCLS BO paper arXiv 2602.10670 (Feb 2026) postdate CALMS (npj 2024) and VISION (MLST May 2025).",
+  "old": "They predate the agents above.",
+  "new": "Most predate the agents above."
+ },
+ {
+  "file": "q4.html",
+  "statement": "Gaussian-process autonomous x-ray scattering (gpCAM lineage)",
+  "keys": "q4_kriging_2019",
+  "status": "confirmed",
+  "evidence": "Sci Rep 2019 abstract: surrogate model with uncertainty used 'to direct autonomous small-angle (SAXS) and grazing-incidence small-angle (GISAXS) x-ray scattering experiments'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Argonne FAST: autonomous scanning microscopy needed under 25% of the sample",
+  "keys": "q4_kandel_fast",
+  "status": "confirmed",
+  "evidence": "Nat Commun 2023 abstract: 'a FAST scan of <25% is sufficient to accurately image and analyze the sample' (dark-field X-ray microscopy). Argonne.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Bluesky-hosted agents coordinated multi-beamline measurements at NSLS-II",
+  "keys": "q4_maffettone_multimodal; q4_corrao_multibeamline",
+  "status": "confirmed",
+  "evidence": "arXiv 2301.09177: 'a concert of distributed agents ... Powered by the Bluesky project at the National Synchrotron Light Source II'; arXiv 2509.22959: XRD and XAFS 'at the PDF and BMM beamlines'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Precursor list: LCLS BO of a 12-parameter split-and-delay optic",
+  "keys": "q4_lcls_bo",
+  "status": "corrected",
+  "evidence": "Same as the LCLS steering item: optimization runs used wave-optical simulations 'in preparation of the limited availability of XFEL beamtime'.",
+  "old": "LCLS physics-guided Bayesian optimization of a 12-parameter split-and-delay optic [@q4_lcls_bo]",
+  "new": "LCLS physics-guided Bayesian optimization of a 12-parameter split-and-delay optic, tested in simulation [@q4_lcls_bo]"
+ },
+ {
+  "file": "q4.html",
+  "statement": "ORNL edge-to-exascale steering at SNS, still a proof of concept",
+  "keys": "q4_ornl_edge_exascale",
+  "status": "confirmed",
+  "evidence": "Struct Dyn 2024 abstract: 'time-of-flight neutron event data at the Spallation Neutron Source'; 'real-time experiment steering is still in the proof-of-concept stage'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "NeuDiff Agent is for SNS TOPAZ, raw data to validated CIF; allowlisted tools, fail-closed gates, provenance",
+  "keys": "q4_neudiff",
+  "status": "confirmed",
+  "evidence": "J Appl Cryst 2026 abstract: 'AI workflow for TOPAZ at the Spallation Neutron Source'; 'restricting actions to allowlisted tools, enforcing fail-closed verification gates ... capturing complete provenance'. (Timing numbers already audited in iter2.)",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: NeuDiff Agent, ORNL SNS, neutron crystallography, reduction to CIF, Demonstrated, Peer-reviewed",
+  "keys": "q4_neudiff",
+  "status": "confirmed",
+  "evidence": "Reference-case benchmark with repeated runs; paper frames it as 'a practical route to deploy'; J Appl Cryst (peer-reviewed).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Heading attributes SasAgent to SNS ('SNS small-angle and diffraction tools')",
+  "keys": "q4_sasagent",
+  "status": "corrected",
+  "evidence": "arXiv 2509.05363: affiliation 'Neutron Scattering Division, Oak Ridge National Laboratory'; SasAgent is a general SasView analysis tool with no SNS instrument named. EQSANS-CLI (EQ-SANS) and VULCAN are SNS instruments.",
+  "old": "<strong>SNS small-angle and diffraction tools.</strong>",
+  "new": "<strong>ORNL neutron small-angle and diffraction tools.</strong>"
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: SasAgent / EQSANS-CLI listed under 'ORNL SNS'",
+  "keys": "q4_sasagent; q4_eqsans_cli",
+  "status": "corrected",
+  "evidence": "SasAgent: ORNL Neutron Scattering Division, not tied to an SNS instrument; EQSANS-CLI: 'data reduction at EQ-SANS' (SNS).",
+  "old": "<tr><td>SasAgent / EQSANS-CLI</td><td>ORNL SNS</td>",
+  "new": "<tr><td>SasAgent / EQSANS-CLI</td><td>ORNL; SNS EQ-SANS</td>"
+ },
+ {
+  "file": "q4.html",
+  "statement": "SasAgent drives SasView",
+  "keys": "q4_sasagent",
+  "status": "confirmed",
+  "evidence": "J Appl Cryst 2026 abstract: 'automates small-angle scattering (SAS) data analysis by using tools from the SasView software'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "EQSANS-CLI lets an external agent run reductions from Slack (preprint)",
+  "keys": "q4_eqsans_cli",
+  "status": "confirmed",
+  "evidence": "arXiv 2605.00651: 'A Slack bot demonstrates that the headless interface, together with a single skill document loaded into an external agent's system prompt, is sufficient to drive complete reductions by natural language'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "VULCAN's reduction pipeline was written with an AI coding agent",
+  "keys": "q4_vulcan_reduction",
+  "status": "confirmed",
+  "evidence": "OSTI 10.2172/3413708 abstract: 'The whole program is coded through vibe-coding fashion, where an AI agent is used with multiple rounds of prompt and testing'; 'delivered to VULCAN beamline for running/testing'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "APEXA is a deployed calibration and integration agent (APS)",
+  "keys": "q4_apexa",
+  "status": "confirmed",
+  "evidence": "arXiv 2609.24165: 'a deployed multi-agent framework ... automating calibration and integration from natural language at a major light source'; APS XSD authors; APS 1-ID data. (Numbers audited in iter2.)",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "PEAR uses multiple agents for ptychography",
+  "keys": "q4_pear",
+  "status": "confirmed",
+  "evidence": "arXiv 2410.09034: 'PEAR employs multiple LLM agents for tasks including knowledge retrieval, code generation, parameter recommendation, and image reasoning'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "ESAC is a chatbot for visiting EQ-SANS users",
+  "keys": "q4_esac",
+  "status": "confirmed",
+  "evidence": "SoftwareX 2025: 'EQ-SANS, a small-angle neutron scattering instrument at the Spallation Neutron Source'; ESAC 'facilitating the use of the instrument by visiting scientists'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "SNS proposals: LLM vs human rankings rho ~0.2-0.8, >100x lower cost",
+  "keys": "q4_proposal_llm",
+  "status": "confirmed",
+  "evidence": "Sci Rep 2026 (Crossref abstract): 'proposals ... from three beamlines at the Spallation Neutron Source'; 'Spearman rho ~ 0.2-0.8'; 'costing over two orders of magnitude less'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Genesis EO (Nov 24, 2025): platform includes 'AI agents' and autonomous experimentation; 60/90/120/240/270-day milestones; 240-day robotic-lab review; classification, cybersecurity, export-control",
+  "keys": "whitehouse2025genesis",
+  "status": "confirmed",
+  "evidence": "EO 14363: 'AI agents to explore design spaces'; '(vi) ... autonomous and AI-augmented experimentation'; 'Within 240 days ... review capabilities ... for robotic laboratories'; 'compliance with classification, privacy, and export-control requirements'. Minor omission only: EO also has a 30-day APST review and a 1-year report.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Autonomous-labs challenge names user facilities as its 'nucleus'",
+  "keys": "q4_genesis_autolabs",
+  "status": "corrected",
+  "evidence": "DOE page: 'DOE's user facilities and long-standing National laboratories have the infrastructure, capabilities, and expertise to serve as the nucleus for innovation'.",
+  "old": "The autonomous-labs challenge names user facilities as its \"nucleus\" [@q4_genesis_autolabs].",
+  "new": "The autonomous-labs challenge names DOE user facilities and national laboratories as its \"nucleus\" [@q4_genesis_autolabs]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "SCAC subcommittee: high-performance-magnets milestones include connecting autonomous labs to user facilities",
+  "keys": "q4_scac_genesis",
+  "status": "confirmed",
+  "evidence": "DOE/SC-2031: 'three opportunity areas ... biology, fusion, and high-performance magnets'; Table 4.1 'Magnet Sovereignty Implementation Path', Year 1: 'Connect autonomous laboratories to DOE user facilities'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "ASCR lab call (LAB 25-3555) builds on IRI and includes API access to user facilities and instruments",
+  "keys": "q4_amsc_lab25_3555",
+  "status": "confirmed",
+  "evidence": "LAB 25-3555 PDF: management 'built upon the concept and framework for DOE's Integrated Research Infrastructure'; 'production-grade AmSC API that enables users to access DOE SC research infrastructure (user facilities, instruments, ...)'. Program: ASCR.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "SYNAPS-I: LBNL-led with Argonne, BNL, ORNL and SLAC; real-time analysis at light and neutron sources",
+  "keys": "q4_lbnl_amsc; q4_synaps_release",
+  "status": "confirmed",
+  "evidence": "Argonne release (Apr 1, 2026): 'The SYNAPS-I project is led by [a] senior scientist at ... LBNL. The project also includes members from ... Brookhaven ..., SLAC ... and Oak Ridge'; integrates 'neutron, X-ray and microscopy experiments'. LBNL Q&A: make 'synchrotron and neutron user facilities function more like self-driving laboratories'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Robotics and automation testbed call is about $30M",
+  "keys": "q4_lab26_3601",
+  "status": "confirmed",
+  "evidence": "LAB 26-3601 (ASCR, May 14, 2026): 'a total of $30 million in current and future fiscal year funds'; 2-3 awards.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "DOE released a FASST roadmap in 2024",
+  "keys": "q4_fasst_roadmap",
+  "status": "confirmed",
+  "evidence": "energy.gov, July 16, 2024: 'DOE Announces Roadmap for New Initiative for Artificial Intelligence in Science, Security and Technology'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "OpenAI models run on LANL's Venado (cited source only announces a plan)",
+  "keys": "q4_lanl_openai",
+  "status": "corrected",
+  "evidence": "LANL Jan 30, 2025: partnership 'to install its latest o-series models ... on the Lab's Venado supercomputer' (future). NNSA Aug 28, 2025 (refs key q4_nnsa_venado): 'the Venado supercomputer ... is now running OpenAI's latest o-series reasoning models'. Add that key.",
+  "old": "OpenAI models run on LANL's Venado supercomputer [@q4_lanl_openai].",
+  "new": "OpenAI models run on LANL's Venado supercomputer [@q4_lanl_openai; @q4_nnsa_venado]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "Anthropic's DOE partnership 'includes' MCP servers connecting Claude to instruments",
+  "keys": "q4_anthropic_doe",
+  "status": "corrected",
+  "evidence": "Anthropic, Dec 18, 2025: 'Anthropic seeks to provide DOE researchers access ... to a team of Anthropic engineers, who can develop purpose-built tools, including: ... Model Context Protocol servers that connect Claude to scientific instruments and tools'. These are planned, not yet delivered.",
+  "old": "Anthropic's DOE partnership includes MCP servers that connect Claude to scientific instruments [@q4_anthropic_doe].",
+  "new": "Anthropic's DOE partnership plans MCP servers that connect Claude to scientific instruments [@q4_anthropic_doe]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "DOE announced NVIDIA-based Solstice and Equinox at Argonne",
+  "keys": "q4_doe_nvidia_oracle",
+  "status": "confirmed",
+  "evidence": "energy.gov Oct 28, 2025: 'Solstice ... 100,000 NVIDIA Blackwell GPUs'; 'Equinox, will feature 10,000 NVIDIA Blackwell GPUs'; at the Argonne Leadership Computing Facility.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "DOE announced AMD-based Lux and Discovery at ORNL",
+  "keys": "q4_doe_amd_lux",
+  "status": "confirmed",
+  "evidence": "energy.gov Oct 27, 2025: 'two new AMD-accelerated artificial intelligence (AI) supercomputers at Oak Ridge National Laboratory'; 'Lux AI cluster, powered by AMD Instinct MI355X'; 'Discovery'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "IRI: 2023 blueprint on linking experimental facilities, computing and data",
+  "keys": "q4_iri_aba",
+  "status": "confirmed",
+  "evidence": "OSTI 10.2172/1984466 (July 2023) abstract: 'experimental facilities could be connected with high performance computing resources for near real-time analysis'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: Genesis platform status 'Proposed'",
+  "keys": "whitehouse2025genesis; q4_genesis_5b",
+  "status": "corrected",
+  "evidence": "EO 14363 set a 270-day target (Aug 2026) to 'demonstrate an initial operating capability of the Platform'; White House, Jul 22, 2026: agencies 'will leverage the DOE-built American Science and Security Platform, which provides shared infrastructure'. Autonomous-lab capability is still under review. 'Proposed' is out of date.",
+  "old": "<td>Autonomous experimentation</td><td>Proposed</td><td>Executive order [@whitehouse2025genesis]</td>",
+  "new": "<td>Autonomous experimentation</td><td>In development</td><td>Executive order; White House release [@whitehouse2025genesis; @q4_genesis_5b]</td>"
+ },
+ {
+  "file": "q4.html",
+  "statement": "Table: TEM Agent, LBNL Molecular Foundry, TEM, microscope and HPC, Demonstrated, Peer-reviewed",
+  "keys": "q4_tem_agent",
+  "status": "confirmed",
+  "evidence": "arXiv 2511.08819 affiliation 'The Molecular Foundry'; controls TEAM 0.5 subsystems and Distiller HPC; npj Comput Mater 2026.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Integration: agents reach hardware through SPEC, Bluesky and control-system channels",
+  "keys": "q4_xray_scientist; q4_vision; q4_bluesky; q4_osprey",
+  "status": "confirmed",
+  "evidence": "x-ray scientist: SPEC commands via MCP; VISION: 'keyboard injection for VISION to interact with Bluesky'; Osprey: 'connector abstractions ... across different control systems'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Integration: Tiled, Prefect and gpCAM workflow ran at ALS and PETRA III with minimal changes",
+  "keys": "q4_als_petra",
+  "status": "confirmed",
+  "evidence": "Photon Science 2026 abstract: Tiled, Prefect, pyFAI, gpCAM; 'The same configuration operates across two synchrotron beamlines (ALS 7.3.3 and PETRA III P03) with only minimal facility-specific adjustments, as shown in proof-of-concept demonstrations'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Integration: 'MCP is the common way' to expose instruments and data",
+  "keys": "q4_eaa; q4_aps_rag",
+  "status": "corrected",
+  "evidence": "Several systems use MCP (x-ray scientist, EAA, TEM Agent, ALD, APS-RAG), but others do not: VISION injects code into the Bluesky IPython terminal, Osprey uses its own connectors, Lightfall exposes its own API. 'A common way' is supported, 'the common way' is not.",
+  "old": "MCP is the common way to expose instruments and data to agents [@q4_eaa; @q4_aps_rag].",
+  "new": "MCP is a common way to expose instruments and data to agents [@q4_xray_scientist; @q4_eaa; @q4_tem_agent; @q4_aps_rag]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "Integration: agents can be served on leadership-class HPC",
+  "keys": "q4_agentic_hpc",
+  "status": "confirmed",
+  "evidence": "ISC 2026 abstract: agentic framework 'deployed on leadership-class systems at the Oak Ridge Leadership Computing Facility'; 'multi-node LLM serving on AMD and NVIDIA GPUs'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Integration: agents 'reach facilities through IRI and AmSC APIs'",
+  "keys": "q4_amsc_lab25_3555",
+  "status": "corrected",
+  "evidence": "LAB 25-3555 describes an AmSC API to be built ('will architect, develop, deploy, and maintain the production-grade AmSC API that enables users to access ... user facilities, instruments'). It does not mention agents, and the API is not yet in production.",
+  "old": " and reach facilities through IRI and AmSC APIs [@q4_amsc_lab25_3555].",
+  "new": "; a planned AmSC API, built on the IRI framework, is to give code-level access to user facilities and instruments [@q4_amsc_lab25_3555]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "Safety: safeguards sit outside the model (human relay, plan review, allowlisted tools, deterministic guards, digital-twin check)",
+  "keys": "q4_xray_scientist; q4_osprey; q4_neudiff; q4_apexa; q4_envtrace",
+  "status": "confirmed",
+  "evidence": "Each confirmed in its source: human relay (NMI p.1077); plan review (Osprey abstract); allowlisted tools (NeuDiff abstract); 'deterministic tool-layer guard' (APEXA); 'pre-execution validation of live experiments' (EnvTrace).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "User turnover: visiting users need guidance; agents must work zero-shot",
+  "keys": "q4_esac; q4_base_scale",
+  "status": "confirmed",
+  "evidence": "ESAC: 'limited number of experiments each person may perform each year'; BASE: 'User Facilities require zero-shot deployment where agents must operate immediately without extensive training periods'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q4.html",
+  "statement": "Security/data policy: 'VISION keeps its beamline models local'",
+  "keys": "q4_vision",
+  "status": "corrected",
+  "evidence": "VISION runs open models on its local GPU server 'HAL' but sends Refiner and Chatbot cogs to 'GPT-4o ... Azure OpenAI'. The paper gives latency and deployment reasons, not data policy; the only related phrase is 'efficient and secure data exchange' via MinIO. The new text describes the data flow without implying a motive.",
+  "old": "VISION keeps its beamline models local [@q4_vision].",
+  "new": "VISION runs its beamline-control models on a local GPU server and sends only chatbot and refinement tasks to cloud GPT-4o [@q4_vision]."
+ },
+ {
+  "file": "q4.html",
+  "statement": "Verification (checking results, not generating ideas) is now the bottleneck",
+  "keys": "q4_trust_roadmap",
+  "status": "confirmed",
+  "evidence": "OSTI 10.2172/3377973 abstract: 'producing a candidate discovery is no longer the hard part, but verifying it is, and this asymmetry now limits autonomous science more than raw model capability'.",
+  "old": "",
+  "new": ""
+ }
+]

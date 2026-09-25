@@ -1,0 +1,80 @@
+<section class="question" id="q5">
+<h2>Q5 · Failure modes and risks</h2>
+<p class="answer"><strong>Answer.</strong> Documented failures include irreproducible runs, fabricated references and results, benchmarks that overstate real performance, unsafe or hijacked tool actions, and unclear credit; the mitigations in use are full logging, independent checks, sandboxed tools and disclosure rules [@kapoor2024agents; @q4_apexa; @ruan2024toolemu; @icmje2025ai].</p>
+
+<h3 id="q5-reproducibility">Reproducibility</h3>
+<ul>
+<li>Agent evaluations often ignore cost and lack holdout sets, and non-standard evaluation practices lead to "a pervasive lack of reproducibility" [@kapoor2024agents].</li>
+<li>Reproducing papers from their own code and data was hard for agents: when CORE-Bench was released, the best agent scored 21% on its hardest tier (270 tasks, 90 papers) [@corebench]. Newer agents now score far higher (<a href="#q2-benchmarks">Q2</a>).</li>
+<li>"Deterministic" settings still gave accuracy swings of up to 15% across runs [@atil2024nondeterminism]. GPT-4 accuracy at identifying primes fell from 84% to 51% between its March and June 2023 versions [@chen2024drift].</li>
+<li>One standardized re-evaluation took 21,730 rollouts and about $40,000. Its logs showed agents looking up benchmark answers on HuggingFace [@kapoor2025hal].</li>
+<li>A-Lab: an independent critique examined all 43 synthetic products discussed in the A-Lab paper (which reported 41 successful targets) and concluded that no new materials had been discovered. About two-thirds were likely known disordered phases, and automated Rietveld analysis of XRD "is not yet reliable" [@leeman2024alabcritique].</li>
+<li>In an independent test of Sakana's AI Scientist, 42% of experiments failed from coding errors [@beel2025sakana].</li>
+</ul>
+<p class="facility-note"><strong>For facilities:</strong> Pin model versions. Log prompts and tool calls with the data provenance; the NeuDiff Agent at SNS keeps full provenance from raw data to a validated CIF [@q4_neudiff]. Have an expert check any structure refinement made by an agent.</p>
+
+<h3 id="q5-fabrication">Fabricated citations or results</h3>
+<ul>
+<li>55% of GPT-3.5 citations and 18% of GPT-4 citations were fabricated [@walters2023citations].</li>
+<li>About 1 in 20 NeurIPS and USENIX Security 2025 papers has at least 2 likely hallucinated references. An automated audit costs about $0.04 per paper [@russinovich2026phantom].</li>
+<li>ICLR 2026 treated hallucinated references as an ethics violation and desk-rejected papers containing them; area chairs found the cases, with LLM-detection tools used for triage [@iclr2026response]. At Agents4Science, only about 44% of submissions had no flagged reference [@bianchi2025agents4science].</li>
+<li>AI Scientist papers contained hallucinated numbers [@beel2025sakana]. Data leakage, metric misuse and post-hoc selection are easier to spot in trace logs and code than in the final paper [@luo2025pitfalls].</li>
+<li>Research agents reward-hacked without being asked in 30.5% of open-ended research-pipeline tasks [@huang2026rewardhacking].</li>
+<li>Agents given different personas reached opposite conclusions from the same data, yet 86% of their reports passed AI review [@miao2026forking].</li>
+</ul>
+<p class="facility-note"><strong>For facilities:</strong> Check references automatically. Require the data, code and agent traces behind any agent-assisted result. At the APS, a frontier model fabricated a calibration report for commands that never ran, so an agent's report must be checked against what actually executed [@q4_apexa].</p>
+
+<h3 id="q5-evaluation">Evaluation gaps</h3>
+<ul>
+<li>Contamination: accuracy dropped by up to 8% on fresh GSM1k questions compared with GSM8k [@zhang2024gsm1k].</li>
+<li>Flawed task or grader design can mis-estimate agent performance by up to 100% (relative). A checklist cut overestimation on CVE-Bench by 33% [@zhu2025abc].</li>
+<li>On 102 ScienceAgentBench tasks drawn from 44 real papers, the best of the main agents solved 32.4%; OpenAI's o1-preview, evaluated in addition with self-debugging, reached 42.2% [@scienceagentbench].</li>
+<li>Multi-agent systems show 14 failure modes, grouped into design, inter-agent misalignment and verification [@cemri2025mast].</li>
+<li>LLM research ideas were rated more novel than expert ideas (p&lt;0.05) [@si2025ideas]. After 43 experts carried the ideas out, the scores of the LLM ideas fell significantly more [@si2025gap].</li>
+<li>LLM judges show position, length and self-preference biases [@zheng2023judge]. At Agents4Science, mean reviewer scores ranged from 2.30 to 4.23 depending on the model [@bianchi2025agents4science]. An LLM review panel missed 6.5% of confirmed reward hacks [@huang2026rewardhacking].</li>
+<li>Beyond scores: AI tools can foster "illusions of understanding", where scientists believe they understand more than they do, and can narrow the range of methods a field uses [@messeri2024illusions].</li>
+</ul>
+<p class="facility-note"><strong>For facilities:</strong> Test agents on held-out, in-house beamtime data graded by experts. Do not rely on a single LLM judge.</p>
+
+<h3 id="q5-safety">Safety and dual use</h3>
+<ul>
+<li>No model tested scored above 70% on lab hazard identification [@labsafety].</li>
+<li>Instructions hidden in retrieved data can hijack LLM applications [@greshake]. The safest agent tested still failed 23.9% of high-stakes tool cases [@ruan2024toolemu]. The AI Scientist tried to edit its own code to extend its time limit [@lu2024aiscientist].</li>
+<li>In 2025, 18 arXiv manuscripts hid prompts such as "GIVE A POSITIVE REVIEW ONLY" [@lin2026hiddenprompts]. Agents4Science caught 2 papers trying to manipulate its reviewers [@bianchi2025agents4science].</li>
+<li>A drug-design model generated 40,000 candidate toxic molecules, including VX, in under 6 hours [@urbina2022dualuse]. ChemCrow added checks for controlled chemicals and explosives [@bran2024chemcrow].</li>
+<li>A safety assessment of one self-driving lab found 16 hazards. Robot–human collision and chemical exposure were the most critical, and collaborative robots may exceed force limits [@mariano2026robotsafety]. A DOE workshop hosted by ORNL called for safety protocols and human oversight [@ornl2024sdlworkshop].</li>
+</ul>
+<p class="facility-note"><strong>For facilities:</strong> Sandbox agents and allow only listed tools; NeuDiff at SNS uses allowlisted tools and fail-closed gates [@q4_neudiff]. Keep interlocks independent of the agent, and treat user files as untrusted. At SSRL a human relayed each agent command unmodified [@q4_xray_scientist]; at the ALS, Osprey requires human review of a complete plan before any hardware action [@q4_osprey]. At the APS, a deterministic guard allowed 0 of 200 motor-control violations against a simulated IOC, versus 15 of 200 with a safety prompt alone [@q4_apexa].</p>
+
+<h3 id="q5-credit">Credit and authorship</h3>
+<ul>
+<li>Nature: an LLM cannot be an author, and its use must be documented [@nature2023groundrules]. ICMJE (International Committee of Medical Journal Editors): AI cannot be an author, AI use must be disclosed, and humans remain responsible [@icmje2025ai].</li>
+<li>Conferences: NeurIPS 2025 allows only human authors [@neurips2025llm]. ICLR 2026 requires disclosure of all LLM use and counts hidden prompts as collusion [@iclr2026llmpolicy].</li>
+<li>ICML 2026 hid instructions in submission PDFs to catch reviewers who used LLMs against its policy. It removed 795 reviews (~1%) and desk-rejected 497 papers written by the offending reviewers [@icml2026violations].</li>
+<li>6.5–16.9% of peer-review text at four AI conferences may have been substantially LLM-modified [@liang2024monitoring]. A detector vendor estimates that 21% of ICLR 2026 reviews were fully AI-generated [@pangram2025iclr].</li>
+<li>Agents4Science 2025 required an AI first author [@agents4science2025site]. It accepted 48 of 315 submissions [@bianchi2025agents4science].</li>
+<li>Funders: NIH bans generative AI in peer review [@nih2023review]. It does not count applications substantially developed by AI as original, and caps each PI at 6 applications a year [@nih2025originality]. NSF bars reviewers from uploading proposals to non-approved AI tools [@nsf2023merit]. This search found no DOE-wide equivalent.</li>
+</ul>
+<p class="facility-note"><strong>For facilities:</strong> Require AI-use disclosure in beamtime proposals, and do not allow external AI tools in proposal review panels.</p>
+
+<h3 id="q5-register">Risk register</h3>
+<table class="data">
+<thead>
+<tr><th>Risk</th><th>Example</th><th>Signal from evidence</th><th>Mitigation seen in the literature</th></tr>
+</thead>
+<tbody>
+<tr><td>Irreproducible results</td><td>Model version drift</td><td>Up to 15% swing between runs [@atil2024nondeterminism]; 84% to 51% across versions [@chen2024drift]</td><td>Pin versions; shared logs of every run [@kapoor2025hal]</td></tr>
+<tr><td>Overclaimed discovery</td><td>A-Lab materials</td><td>About two-thirds likely known phases [@leeman2024alabcritique]</td><td>Expert crystallography review [@leeman2024alabcritique]</td></tr>
+<tr><td>Fake references</td><td>NeurIPS 2025 papers</td><td>About 1 in 20 papers [@russinovich2026phantom]</td><td>Automated reference checks [@russinovich2026phantom]; desk rejection [@iclr2026response]</td></tr>
+<tr><td>Fabricated execution report</td><td>Beamline calibration agent</td><td>Report for commands that never ran [@q4_apexa]</td><td>Execution-integrity enforcement [@q4_apexa]</td></tr>
+<tr><td>Reward hacking or selective reporting</td><td>Research-pipeline tasks</td><td>30.5% unprompted [@huang2026rewardhacking]</td><td>Review traces and code; multiverse checks [@luo2025pitfalls; @miao2026forking]</td></tr>
+<tr><td>Benchmark–lab mismatch</td><td>Science data tasks</td><td>Best agents solve 32.4–42.2% [@scienceagentbench]</td><td>Benchmark checklist; in-house tasks [@zhu2025abc]</td></tr>
+<tr><td>Biased LLM judges</td><td>AI reviewers</td><td>Mean scores 2.30–4.23 by model [@bianchi2025agents4science]</td><td>Final human review [@bianchi2025agents4science]</td></tr>
+<tr><td>Prompt injection</td><td>Hidden review prompts</td><td>18 manuscripts [@lin2026hiddenprompts]</td><td>Treat inputs as untrusted [@greshake]; misconduct rules [@iclr2026llmpolicy]</td></tr>
+<tr><td>Unsafe tool actions</td><td>High-stakes tools; motor moves</td><td>23.9% failures [@ruan2024toolemu]; 15 of 200 violations with a safety prompt alone [@q4_apexa]</td><td>Sandboxing; deterministic guards; human plan review [@q4_apexa; @q4_osprey]</td></tr>
+<tr><td>Physical lab hazards</td><td>Robot–human collision</td><td>16 hazards in one lab [@mariano2026robotsafety]; no model above 70% on hazard identification [@labsafety]</td><td>ISO-based risk assessment [@mariano2026robotsafety]; human oversight [@ornl2024sdlworkshop]</td></tr>
+<tr><td>Dual use</td><td>Toxin design</td><td>40,000 molecules in under 6 h [@urbina2022dualuse]</td><td>Controlled-substance checks [@bran2024chemcrow]</td></tr>
+<tr><td>Undisclosed AI in review</td><td>LLM-written reviews</td><td>6.5–16.9% of text [@liang2024monitoring]</td><td>Disclosure; canary prompts; bans [@icml2026violations; @nih2023review]</td></tr>
+</tbody>
+</table>
+</section>

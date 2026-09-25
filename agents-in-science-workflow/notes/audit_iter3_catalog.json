@@ -1,0 +1,167 @@
+[
+ {
+  "name": "NeuDiff Agent",
+  "lane": "facility",
+  "field": "autonomy",
+  "old": "L4 End-to-end",
+  "new": "L2 Tool-using agent",
+  "reason": "Paper calls itself a 'governed, tool-using AI workflow'; 'The user authorizes each tool execution and approves any corrective action' at gates. One analysis task (TOPAZ data to CIF), no experiments or paper, so not L4 'minimal human help'."
+ },
+ {
+  "name": "Rongzai agent",
+  "lane": "facility",
+  "field": "autonomy",
+  "old": "L4 End-to-end",
+  "new": "L3 Closed-loop",
+  "reason": "Source: 'iterative decision-execution-evaluation loop' against GSAS-II 'until convergence', with a 'refine pause' for user instructions. One refinement task on given data and known starting structures; the 'report' is a refinement report, not a research paper, so L3 not L4."
+ },
+ {
+  "name": "ALS accelerator agentic AI",
+  "lane": "facility",
+  "field": "autonomy",
+  "old": "L3 Closed-loop",
+  "new": "L2 Tool-using agent",
+  "reason": "Plan-first: 'before any tool is called, the system generates a complete execution plan'; operator approval for all control-system writes. Demo ran a user-specified 30-point ID-gap hysteresis scan once; no agent observe-and-replan cycles. Same design as Osprey (L2)."
+ },
+ {
+  "name": "CycleResearcher / CycleReviewer",
+  "lane": "general",
+  "field": "autonomy",
+  "old": "L4 End-to-end",
+  "new": "L1 Assistant",
+  "reason": "Paper: 'all experimental results mentioned in the generated papers within this work were fabricated'; 'execution of actual experiments is beyond the scope'; humans or other agents must run experiments. Drafts papers without tools, so not L4 (goal to experiments to paper)."
+ },
+ {
+  "name": "CycleResearcher / CycleReviewer",
+  "lane": "general",
+  "field": "spans",
+  "old": [
+   "Hypothesis generation",
+   "Data analysis & simulation"
+  ],
+  "new": [
+   "Hypothesis generation"
+  ],
+  "reason": "No data analysis or simulation is run: experimental results in generated papers are fabricated by the model (paper, Sec. 3 and Limitations)."
+ },
+ {
+  "name": "Ai2 Asta agents + AstaBench",
+  "lane": "general",
+  "field": "evidence_type",
+  "old": "Preprint",
+  "new": "Peer-reviewed",
+  "reason": "arXiv 2510.21652 comment 'Published as a conference paper at ICLR 2026'; OpenReview lists it as 'ICLR 2026 Oral'. refs.json entry bragg2025astabench (venue 'arXiv preprint', evidence 'Preprint') needs the same update."
+ },
+ {
+  "name": "AI X-ray scientist",
+  "lane": "facility",
+  "field": "year",
+  "old": 2026,
+  "new": 2025,
+  "reason": "Research Square preprint 10.21203/rs.3.rs-7456716/v1 posted 2025 (Crossref); NMI article says 'Received 25 August 2025' and links the preprint. Journal version 2026."
+ },
+ {
+  "name": "VISION",
+  "lane": "facility",
+  "field": "year",
+  "old": 2025,
+  "new": 2024,
+  "reason": "First released as arXiv 2412.18161 on 2024-12-24; MLST version 2025-05-16."
+ },
+ {
+  "name": "CALMS",
+  "lane": "facility",
+  "field": "year",
+  "old": 2024,
+  "new": 2023,
+  "reason": "First released as arXiv 2312.01291 on 2023-12-03; npj Comput Mater version 2024-11-05."
+ },
+ {
+  "name": "Instrument agents that learn on the job",
+  "lane": "facility",
+  "field": "year",
+  "old": 2026,
+  "new": 2025,
+  "reason": "First released as arXiv 2509.00098 on 2025-08-27 (Research Square 2025-10-27); npj Comput Mater version 2026-03-06."
+ },
+ {
+  "name": "ALS accelerator agentic AI",
+  "lane": "facility",
+  "field": "year",
+  "old": 2026,
+  "new": 2025,
+  "reason": "First released as arXiv 2509.17255 on 2025-09-21; Phys. Rev. Research version published 2025-12-05, so 2026 is wrong under either reading."
+ },
+ {
+  "name": "Osprey",
+  "lane": "facility",
+  "field": "year",
+  "old": 2026,
+  "new": 2025,
+  "reason": "First released as arXiv 2508.15066 on 2025-08-20; APL Machine Learning version 2026-02-04."
+ },
+ {
+  "name": "TEM Agent",
+  "lane": "facility",
+  "field": "year",
+  "old": 2026,
+  "new": 2025,
+  "reason": "First released as arXiv 2511.08819 on 2025-11-11; npj Comput Mater version 2026-06-10."
+ },
+ {
+  "name": "SasAgent",
+  "lane": "facility",
+  "field": "year",
+  "old": 2026,
+  "new": 2025,
+  "reason": "First released as arXiv 2509.05363 on 2025-09-04; J. Appl. Cryst. version 2026-03-28."
+ },
+ {
+  "name": "ESAC",
+  "lane": "facility",
+  "field": "year",
+  "old": 2025,
+  "new": 2024,
+  "reason": "First released as arXiv 2407.19075 on 2024-07-26; SoftwareX version 2025-06-11."
+ },
+ {
+  "name": "LLM proposal ranking",
+  "lane": "facility",
+  "field": "year",
+  "old": 2026,
+  "new": 2025,
+  "reason": "First released as arXiv 2512.10895 on 2025-12-11; Scientific Reports version 2026-09-25."
+ },
+ {
+  "name": "LLM accelerator tuning",
+  "lane": "facility",
+  "field": "year",
+  "old": 2025,
+  "new": 2024,
+  "reason": "First released as arXiv 2405.08888 on 2024-05-14; Science Advances version 2025."
+ },
+ {
+  "name": "CycleResearcher / CycleReviewer",
+  "lane": "general",
+  "field": "one_line",
+  "old": "Open LLMs trained with feedback from an automated reviewer; CycleReviewer cut score-prediction error 26.89% versus individual human reviewers.",
+  "new": "Open LLMs trained with automated-reviewer feedback draft full papers whose experimental results are fabricated, not run; CycleReviewer cut score error 26.89% versus individual reviewers.",
+  "reason": "Current line omits that no experiments are run: the paper states all experimental results in generated papers were fabricated. Numbers unchanged (26.89% MAE reduction vs individual human reviewers)."
+ },
+ {
+  "name": "LLM proposal ranking",
+  "lane": "facility",
+  "field": "one_line",
+  "old": "Pairwise LLM ranking of beamtime proposals from three SNS beamlines tracks human rankings at over 100x lower cost.",
+  "new": "Pairwise LLM ranking of proposals from three SNS beamlines correlates with human rankings (Spearman 0.2-0.8) at over 100x lower cost.",
+  "reason": "'Tracks human rankings' overstates agreement: abstract reports Spearman rho about 0.2-0.8 across beamlines (>=0.5 after 10% outlier removal) and 'over two orders of magnitude' lower cost."
+ },
+ {
+  "name": "A-Lab",
+  "lane": "general",
+  "field": "one_line",
+  "old": "Robotic solid-state synthesis with computation, literature-trained recipe models and active learning; reported 41 of 58 targets in 17 days (novelty later disputed).",
+  "new": "Robotic solid-state synthesis with computation, literature-trained recipe models and active learning; reported 41 of 58 targets in 17 days; 2026 correction confirms 36.",
+  "reason": "Align with the 2026 Author Correction already used in Q2 (doi 10.1038/s41586-025-09992-y, ref key alab_correction): 36 of 40 remaining successes confirmed, 4 inconclusive, 1 removed. Row cites only szymanski2023alab; the report text should cite alab_correction next to it."
+ }
+]

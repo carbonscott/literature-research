@@ -1,0 +1,96 @@
+<section class="question" id="q2">
+<h2>Q2 · What works: evidence versus claims, and what benchmarks show</h2>
+<p class="answer"><strong>Answer.</strong> Peer-reviewed studies show real but narrow agent successes in labs and literature. Top models now score 95.8% on graduate science questions, above expert level, but open-ended research and XRD analysis stay weak, and no public benchmark tests closed-loop x-ray or neutron beamtime [@gottweis2026coscientist; @epoch_hub; @macbench].</p>
+
+<div id="q2-established">
+<h3>Established: peer-reviewed or machine-checkable</h3>
+<p>"Established" means peer-reviewed or machine-checkable, not independently replicated.</p>
+<div class="table-scroll">
+<table class="data">
+<thead><tr><th>Result</th><th>Evidence</th><th>What was actually shown</th><th>Caveat</th></tr></thead>
+<tbody>
+<tr><td>Coscientist (chemistry)</td><td>Peer-reviewed (Nature 2023)</td><td>A GPT-4 agent planned and ran robotic experiments, including Pd-catalysed cross-coupling optimization [@boiko2023coscientist].</td><td>No outside replication in our sources.</td></tr>
+<tr><td>ChemCrow</td><td>Peer-reviewed (Nat Mach Intell 2024)</td><td>An agent with 18 tools carried out syntheses of an insect repellent and three organocatalysts [@bran2024chemcrow].</td><td>Authors' own demonstration.</td></tr>
+<tr><td>A-Lab <em>(contested)</em></td><td>Peer-reviewed (Nature 2023); critique (PRX Energy 2024); correction (Nature 2026)</td><td>Reported 41 of 58 targets made in 17 days [@szymanski2023alab]. A 2026 Author Correction cut this to 36 confirmed (4 inconclusive by XRD, 1 removed because it was in the training data) and said "novel" meant new to the prediction platform, not to science [@alab_correction].</td><td>Outside analysis: no new materials, and automated Rietveld analysis (whole-pattern structure fitting) of powder XRD "not yet reliable" [@leeman2024alabcritique]. 2026 Author Correction: the title now says "inorganic", not "novel" [@alab_correction].</td></tr>
+<tr><td>Virtual Lab</td><td>Peer-reviewed (Nature 2025)</td><td>Agents designed 92 SARS-CoV-2 nanobodies; two bound JN.1 or KP.3 better [@swanson2025virtuallab].</td><td>Tests ran in the authors' own lab.</td></tr>
+<tr><td>CRISPR-GPT</td><td>Peer-reviewed (Nat Biomed Eng 2025)</td><td>Guided knockout of four genes and activation of two in human cells [@qu2025crisprgpt].</td><td>Authors' own demonstration.</td></tr>
+<tr><td>Google Co-Scientist</td><td>Peer-reviewed + partner-lab tests (Nature 2026; Cell 2025; Adv Sci 2025)</td><td>Acute myeloid leukaemia drug-repurposing candidates confirmed in vitro [@gottweis2026coscientist]. Top hypothesis matched a lab's confirmed but unpublished mechanism (cf-PICIs hijack phage tails) [@penades2025cfpici; @penades_exp]. Two suggested drugs were anti-fibrotic in human liver organoids [@liverfibrosis].</td><td>Partner labs co-authored with Google.</td></tr>
+<tr><td>Robin</td><td>Peer-reviewed (Nature 2026)</td><td>In vitro tests confirmed ripasudil and KL001 as candidates for dry age-related macular degeneration [@ghareeb2026robin].</td><td>No animal or clinical evidence yet.</td></tr>
+<tr><td>Biomni</td><td>Peer-reviewed (Science 2026)</td><td>A general biomedical agent with wet-lab case studies [@huang2026biomni].</td><td>Case studies only.</td></tr>
+<tr><td>AlphaEvolve</td><td>White papers (arXiv 2025); machine-checkable</td><td>Provably correct new algorithms, e.g. 4×4 complex matrix multiplication with 48 scalar multiplications [@novikov2025alphaevolve]; with outside mathematicians, improved several best-known constructions [@alphaevolve_math].</td><td>Not peer-reviewed, but checkable.</td></tr>
+<tr><td>OpenScholar</td><td>Peer-reviewed (Nature 2026)</td><td>Citation accuracy on par with human experts; GPT-4o hallucinated (invented) citations 78–90% of the time [@asai2026openscholar].</td><td>Measures citation accuracy only.</td></tr>
+<tr><td>Review feedback</td><td>Peer-reviewed (Nat Mach Intell 2026; NEJM AI 2024)</td><td>In a randomized trial on 20,000+ ICLR 2025 reviews, 27% of reviewers given LLM feedback updated their reviews [@thakkar2026reviewfeedback]. GPT-4 comments overlap humans about as much as two humans do (30.85% vs 28.58%) [@liang2024feedback].</td><td>Measures change, not review quality.</td></tr>
+<tr><td>AI Scientist</td><td>Peer-reviewed (Nature 2026)</td><td>An AI-written paper passed first-round review at a workshop [@lu2026aiscientist].</td><td>The workshop accepted 70%: a low bar.</td></tr>
+<tr><td>X-ray beamline control</td><td>Peer-reviewed (Nat Mach Intell 2026)</td><td>An LLM agent found reference reflections and the orientation matrix (crystal orientation on the diffractometer) on a real SSRL beamline [@q4_xray_scientist].</td><td>A human relayed each command, unmodified, for safety.</td></tr>
+<tr><td>AFM control</td><td>Peer-reviewed (Nat Commun 2025)</td><td>An agent on a real atomic force microscope scored 88.3% on documentation tasks but 33.3% on analysis [@aila_afm].</td><td>It "sleepwalked" off its instructions.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="q2-claims">
+<h3>Claims awaiting validation</h3>
+<p>Numbers are the claimants' own.</p>
+<div class="table-scroll">
+<table class="data">
+<thead><tr><th>Claim</th><th>Source type</th><th>What would validate it</th></tr></thead>
+<tbody>
+<tr><td>Kosmos (Edison): independent scientists judged 79.4% of statements accurate, only 57.9% of synthesis statements; claims seven discoveries [@mitchener2025kosmos].</td><td>Preprint (arXiv 2025)</td><td>Peer review, outside replication, and false-positive rates across all runs.</td></tr>
+<tr><td>Zochi (Intology): says its AI-written paper was accepted at ACL 2025 [@zochi].</td><td>Company report (GitHub)</td><td>An audited record of human versus AI work.</td></tr>
+<tr><td>Periodic Labs Neon: 55.3% on an internal test of 134 multiphase XRD patterns, graded by an LLM judge (a model grading answers); claimed to beat frontier models [@periodic_neon].</td><td>Company blog (2026)</td><td>Release the test set, or score against expert Rietveld refinements of public data.</td></tr>
+<tr><td>Lila Sciences: an AI-guided loop screened 2,942 catalysts; InMnPdOx stayed below 0.5 V overpotential for 1,000 h in acid [@lila_oer].</td><td>Preprint (arXiv, 2026-09)</td><td>Independent synthesis and durability tests.</td></tr>
+<tr><td>OpenAI GPT-5 cases: four new math results, checked only by the human co-authors [@bubeck2025gpt5science].</td><td>Preprint (arXiv 2025)</td><td>Refereed publication.</td></tr>
+<tr><td>OpenAI Navier–Stokes (2026-09): Lean (proof-checker) certificates claim finite-time blowup (Clay alternatives C/D) [@openai_ns].</td><td>Code release (GitHub, 2026)</td><td>Experts confirm the formal statements match the Clay problem, then refereed publication.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="q2-benchmarks">
+<h3>What the benchmarks show</h3>
+<p>"—" means no human baseline was reported.</p>
+<div class="table-scroll">
+<table class="data">
+<thead><tr><th>Benchmark</th><th>Measures</th><th>Best reported (system, date)</th><th>Human/expert baseline</th></tr></thead>
+<tbody>
+<tr><td>GPQA Diamond [@gpqa]</td><td>Graduate-level science multiple choice</td><td>95.8% (GPT-6 Astra, 2026-09, per the Epoch AI benchmarking hub) [@epoch_hub]</td><td>Experts 65% on the full question pool (74% discounting clear mistakes); the paper puts expert accuracy on Diamond between 65% and 81%</td></tr>
+<tr><td>HLE (Humanity's Last Exam) [@hle]</td><td>Expert-written closed questions</td><td>54.8% (GPT 6 Astra, 2026-09-09, per the Scale Labs leaderboard) [@hle_scale]</td><td>None</td></tr>
+<tr><td>FrontierScience [@frontierscience]</td><td>Olympiad / research tasks</td><td>77% / 25% (GPT-5.2, 2026-01)</td><td>—</td></tr>
+<tr><td>CritPt [@critpt]</td><td>Unpublished physics research problems</td><td>32.3% (GPT-5.6 Sol, 2026-07, per the Epoch AI benchmarking hub) [@epoch_hub]</td><td>—</td></tr>
+<tr><td>ChemBench [@chembench]</td><td>Chemistry questions</td><td>Best models beat the best chemist surveyed (2025)</td><td>Surveyed chemists</td></tr>
+<tr><td>MaCBench [@macbench]</td><td>Chemistry/materials images (XRD, AFM)</td><td>XRD intensity ranking 0.28 (2025)</td><td>—</td></tr>
+<tr><td>LAB-Bench [@labbench]</td><td>Practical biology</td><td>Claude 3.5 Sonnet (2024-07)</td><td>Experts clearly ahead</td></tr>
+<tr><td>LabSafety Bench [@labsafety]</td><td>Lab hazards</td><td>&lt;70% hazard identification (2026)</td><td>—</td></tr>
+<tr><td>SciCode [@scicode]</td><td>Research code</td><td>10.8% main problems (official leaderboard) [@scicode_lb]; 66.9% subproblems (Claude Opus 5.5, 2026-09, per Artificial Analysis) [@aa_scicode]</td><td>—</td></tr>
+<tr><td>ScienceAgentBench [@scienceagentbench]</td><td>Code for data-driven discovery</td><td>42.2% (o1-preview, 3 tries, 2024-10)</td><td>—</td></tr>
+<tr><td>CORE-Bench Hard [@corebench]</td><td>Reproduce results from code</td><td>95.5% with manual validation (77.8% automated), declared "solved" (Opus 4.5 + Claude Code, per the HAL leaderboard) [@hal_core]</td><td>—</td></tr>
+<tr><td>BixBench [@bixbench]</td><td>Bioinformatics</td><td>17% (2025-02)</td><td>—</td></tr>
+<tr><td>DiscoveryWorld [@discoveryworld]</td><td>Simulated discovery</td><td>≤18% completion (2024)</td><td>Human scientists (MSc or PhD) 66%</td></tr>
+<tr><td>MLE-bench [@mlebench]</td><td>Kaggle machine-learning competitions</td><td>Medal in 64.4% (Famou-Agent 2.0, 2026-02, per the MLE-bench leaderboard) [@mlebench_lb]</td><td>Kaggle leaderboards</td></tr>
+<tr><td>MLAgentBench [@mlagentbench]</td><td>ML experiments</td><td>37.5% (Claude 3 Opus, 2024)</td><td>—</td></tr>
+<tr><td>RE-Bench [@rebench]</td><td>ML research and development</td><td>Agents 4× the expert score with a 2 h budget (2024-11)</td><td>Experts 2× the agent score with 32 h</td></tr>
+<tr><td>PaperBench [@paperbench]</td><td>Replicate ICML papers</td><td>21.0% (Claude 3.5 Sonnet, 2025-04)</td><td>ML PhDs 41.4% (subset)</td></tr>
+<tr><td>EXP-Bench [@expbench]</td><td>Full AI experiments</td><td>0.5% (2025-05)</td><td>—</td></tr>
+<tr><td>SciReplicate-Bench [@scireplicate]</td><td>Implement algorithms from papers</td><td>39% (2025)</td><td>—</td></tr>
+<tr><td>ReplicationBench [@replicationbench]</td><td>Astrophysics paper replication</td><td>~20% (Claude Sonnet 4.5, 2025-10)</td><td>—</td></tr>
+<tr><td>AstaBench [@bragg2025astabench]</td><td>Research assistance</td><td>53.0% (Asta v0, 2025-08) [@asta_blog]</td><td>—</td></tr>
+<tr><td>CURIE [@curie]</td><td>Long-context science</td><td>32% (2025-03)</td><td>—</td></tr>
+<tr><td>FIRE-Bench [@firebench]</td><td>Rediscover ML findings</td><td>&lt;50 F1 (2026)</td><td>—</td></tr>
+<tr><td>Collider-Bench [@colliderbench]</td><td>Reproduce LHC analyses</td><td>None reliably beats the baseline (2026-05)</td><td>Physicist-in-the-loop</td></tr>
+<tr><td>AFMBench [@aila_afm]</td><td>Real AFM hardware</td><td>33.3% analysis (GPT-4o, 2025)</td><td>—</td></tr>
+<tr><td>APEXA-Bench [@q4_apexa]</td><td>Synchrotron data reduction (58 tasks)</td><td>Not yet scored (2026-09)</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Reading the benchmarks</h4>
+<ul>
+<li><strong>Closed science exams no longer separate models.</strong> Experts score about 65–81% on GPQA Diamond [@gpqa], against a best reported 95.8% [@epoch_hub]. HLE's answer key also has problems: by FutureHouse's estimate about 29% of its text-only chemistry and biology answers conflict with the literature, and HLE's own expert re-review found about 18% of a subset problematic. New HLE scores also carry contamination flags (the questions may be in training data) [@hle_errors; @hle_scale].</li>
+<li><strong>Well-specified computing tasks are nearly solved</strong> (CORE-Bench Hard, MLE-bench) [@hal_core; @mlebench_lb]; humans still lead RE-Bench at long time budgets [@rebench].</li>
+<li><strong>Open-ended research is weak:</strong> 25% on FrontierScience-Research, about 20% on ReplicationBench, 0.5% on EXP-Bench [@frontierscience; @replicationbench; @expbench].</li>
+<li><strong>Lab-facing skills lag:</strong> experts lead LAB-Bench, BixBench tops out at 17%, and no model exceeds 70% on hazard identification [@labbench; @bixbench; @labsafety].</li>
+<li><strong>X-ray and neutron relevance is thin.</strong> On XRD, models find the highest peak (0.74 accuracy) but rank intensities at only 0.28; shown crystal structures, they assign space groups at only 0.45 [@macbench]. AFMBench is a rare real-instrument benchmark [@aila_afm]. In APEXA, a frontier model fabricated a calibration report for commands that never ran [@q4_apexa]. No public benchmark covers closed-loop x-ray or neutron beamtime (diffraction, spectroscopy, imaging); the SSRL work is a demonstration, not a benchmark [@q4_xray_scientist].</li>
+<li><strong>Read scores with care.</strong> Many rest on LLM judges or private test sets, and saturated (near-ceiling) benchmarks still have construct-validity problems: they may not measure the skill they name [@paperbench; @periodic_neon; @corebench_sat].</li>
+</ul>
+</div>
+</section>

@@ -1,0 +1,45 @@
+<section class="question" id="q6">
+<h2>Q6 · Discussion: open questions for the session</h2>
+<p class="answer"><strong>Answer.</strong> The open questions for facilities are no longer whether agents can touch instruments (they already align crystals, run accelerator experiments and reduce neutron data) but where humans must stay in the loop, how agent results are verified and credited, and what shared infrastructure DOE facilities should build [@q4_xray_scientist; @q4_als_agentic; @q4_neudiff; @ding2026verificationgap].</p>
+<p>Each prompt below states the evidence it rests on and links to the section where that evidence is discussed. The prompts are ordered from beamline-level to program-level questions.</p>
+<p><strong>Suggested running order for a 60–90 minute session.</strong> Three blocks of about 20 minutes each: <em>at the beamline</em> (prompts 1, 2 and 4), <em>shared infrastructure and data</em> (prompts 3, 5 and 6), and <em>programs and people</em> (prompts 7, 8 and 9). If time is short, use prompts 1, 2, 4, 6 and 8. Each block works best if it ends with one concrete output, for example a list of beamline actions that always need human approval, one candidate joint benchmark, or a first joint deliverable.</p>
+<ol id="discussion-prompts">
+
+<li class="prompt"><strong>Where should the human stay in the loop at a beamline?</strong>
+In its first real-beamline trial, the SSRL agent had a person relay every command [@q4_xray_scientist], and the ALS accelerator framework requires human review of a complete plan before any hardware action [@q4_osprey] (<a href="#q4-steering">Q4 steering</a>). Outside facilities, targeted human interventions beat both full autonomy and step-by-step oversight [@liu2026autoresearchclaw], and accepted Agents4Science papers had more human guidance [@bianchi2025agents4science] (<a href="#q1-trends">Q1 trends</a>).
+<em>For discussion:</em> which actions (moving motors, changing sample environment, discarding data, ending a run) need explicit approval, and could facilities agree on a shared autonomy scale for beamtime, like the L1–L4 scale used here?</li>
+
+<li class="prompt"><strong>Should safety be enforced in the tool layer rather than in the prompt?</strong>
+At APS, a deterministic execution guard allowed 0 of 200 adversarial motor-control violations, against 15 of 200 with a safety prompt alone [@q4_apexa]; NeuDiff at SNS uses allowlisted tools and fail-closed gates [@q4_neudiff] (<a href="#q3-hpc">Q3 workflow and HPC</a>). Tool poisoning succeeds against many models on real MCP servers [@mcptox] (<a href="#q3-protocols">Q3 protocols</a>), and no model tested scored above 70% on lab hazard identification [@labsafety] (<a href="#q5-safety">Q5 safety</a>).
+<em>For discussion:</em> should DOE facilities define a common "agent-safe" instrument interface, with allowlisted tools, simulation-first execution and interlocks that do not depend on the agent?</li>
+
+<li class="prompt"><strong>What evaluation would convince facility scientists?</strong>
+Closed-form science benchmarks are saturated [@epoch_hub; @gpqa], while models rank XRD peak intensities poorly [@macbench] and no public benchmark covers closed-loop x-ray or neutron beamtime (<a href="#q2-benchmarks">Q2 benchmarks</a>). A beamline digital twin already scores LLM-written control code [@q4_envtrace] (<a href="#q4-steering">Q4 steering</a>), and benchmark design flaws can badly mis-estimate agent performance [@zhu2025abc] (<a href="#q5-evaluation">Q5 evaluation gaps</a>).
+<em>For discussion:</em> could SLAC, ORNL, BNL and university partners build a shared, held-out benchmark from archived beamtime (diffraction, SAXS/SANS, spectroscopy, imaging) with expert grading, plus digital twins for control tasks?</li>
+
+<li class="prompt"><strong>How are agent-produced analyses verified before they reach a paper?</strong>
+An outside analysis disputed the A-Lab's claims of new materials and called automated Rietveld analysis of powder XRD not yet reliable [@leeman2024alabcritique] (<a href="#q2-established">Q2 established results</a>). A frontier model fabricated a calibration report for commands that never ran [@q4_apexa], and research agents reward-hacked without being asked in open-ended tasks [@huang2026rewardhacking] (<a href="#q5-fabrication">Q5 fabrication</a>). A 2026 survey calls verification the field's central bottleneck [@ding2026verificationgap].
+<em>For discussion:</em> what provenance should be required for agent-assisted results from facility data (prompts, tool calls, code, model version, raw-data hashes), and who checks it: the user, the beamline scientist, or the journal? Provenance tooling for agents already exists [@provagent].</li>
+
+<li class="prompt"><strong>Which models may touch user data, and where do they run?</strong>
+Center-hosted, OpenAI-compatible inference on open-weight models already runs at ALCF and OLCF [@first; @olcfinf] (<a href="#q3-models">Q3 models</a>). VISION keeps its beamline models local [@q4_vision], NERSC tells users not to place credentials in external AI services [@nersccoding], and the Genesis Mission order requires security and export-control compliance [@whitehouse2025genesis] (<a href="#q3-hpc">Q3 workflow and HPC</a>; <a href="#q4-status">Q4 constraints</a>).
+<em>For discussion:</em> what is the policy for proprietary or sensitive user data: commercial APIs, center-hosted open-weight models, or both? Who pays for inference during beamtime?</li>
+
+<li class="prompt"><strong>What should facilities standardize on: MCP servers, skills, or the APIs they already have?</strong>
+MCP moved to a Linux Foundation body in December 2025 [@mcpaaif], and its July 2026 revision changed core behavior [@mcpchg2607] (<a href="#q3-protocols">Q3 protocols</a>). MCP servers already wrap Globus and facility services [@mcpscihpc], the IRI Facility API standardizes job and data endpoints [@iriapi], and Bluesky is shared across facilities [@q4_bluesky] (<a href="#q3-hpc">Q3 workflow and HPC</a>; <a href="#q4-status">Q4 status</a>). Anthropic's DOE partnership describes MCP servers for instruments [@q4_anthropic_doe].
+<em>For discussion:</em> should facilities jointly publish and maintain agent interfaces for Bluesky, EPICS, Tiled and IRI, rather than each beamline building its own? Who owns them as the protocols change?</li>
+
+<li class="prompt"><strong>How should agent use be disclosed and credited in proposals, papers and review?</strong>
+Journals and ICMJE bar AI authorship and require disclosure [@nature2023groundrules; @icmje2025ai]. ICML 2026 found 795 reviews that broke its no-LLM policy and desk-rejected 497 papers from the reviewers involved [@icml2026violations], and NIH does not count applications substantially developed by AI as original [@nih2025originality] (<a href="#q5-credit">Q5 credit</a>). At SNS, LLM proposal rankings correlated with human rankings at ρ≈0.2–0.8, at over 100× lower cost [@q4_proposal_llm] (<a href="#q4-analysis">Q4 analysis</a>).
+<em>For discussion:</em> should beamtime proposals and facility-data papers declare agent use? Should LLMs help triage proposals, and if so, with what disclosure to proposers?</li>
+
+<li class="prompt"><strong>Where will Genesis Mission funding meet facility operations?</strong>
+DOE's autonomous-laboratories challenge names user facilities as its nucleus [@q4_genesis_autolabs]. The July 2026 announcement lists more than $5 billion in federal commitments, and DOE selected 278 projects [@q4_genesis_5b]; the American Science Cloud aims to unify access to the 17 DOE labs and 28 user facilities that ESnet already links [@q4_lbnl_amsc] (<a href="#q4-programs">Q4 programs</a>). Most facility agent systems are still single-campaign demonstrations (<a href="#q4-status">Q4 status</a>).
+<em>For discussion:</em> what is a realistic first joint deliverable, for example one agent-steered experiment that spans a light or neutron source and an HPC center, and how do teams avoid one-off demonstrations that are never maintained?</li>
+
+<li class="prompt"><strong>How do users and staff keep their expertise as agents take over routine steps?</strong>
+A facility chatbot already serves visiting EQ-SANS users [@q4_esac] (<a href="#q4-analysis">Q4 analysis</a>), and AI can create "illusions of understanding" and narrow the range of methods scientists use [@messeri2024illusions] (<a href="#q5-evaluation">Q5 evaluation gaps</a>). LLM-generated research ideas lost their apparent edge once experts carried them out [@si2025gap] (<a href="#q1-trends">Q1 trends</a>).
+<em>For discussion:</em> which skills (alignment, reduction, refinement) must users still show before an agent acts for them, and how should university partners train students for agent-assisted beamtime?</li>
+
+</ol>
+</section>

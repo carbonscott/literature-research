@@ -1,0 +1,555 @@
+[
+ {
+  "claim": "SSRL agent: MCP tools issue SPEC commands on BL17-2; Claude Sonnet 4 / Gemini 2.5 Flash in simulation, Claude Opus 4 on real beamline; human relayed commands unmodified",
+  "key": "q4_xray_scientist",
+  "status": "confirmed",
+  "source_quote": "NMI 8:1075 (2026) p.1077: commands 'relayed through a human experimentalist solely to satisfy facility safety requirements ... executed without modification'; Results: 'we used a more capable model, Anthropic's Claude Opus 4'; Fig. 1/Table 1 SPEC commands via MCP execute_command.",
+  "fix": ""
+ },
+ {
+  "claim": "The SSRL team did all development in simulation",
+  "key": "q4_xray_scientist",
+  "status": "corrected",
+  "source_quote": "Methods: 'Guidance prompts were primarily developed within the virtual beamline environment'; abstract: workflow 'developed in the virtual environment was directly deployed' with 'only necessary interface-level adaptations'.",
+  "fix": "The SSRL team developed the workflow in simulation and deployed it on the beamline with only interface-level changes [@q4_xray_scientist]."
+ },
+ {
+  "claim": "ALS agent cut machine-physics experiment preparation time ~100x within operator safety constraints",
+  "key": "q4_als_agentic",
+  "status": "confirmed",
+  "source_quote": "PRR abstract: 'preparation time was reduced by 2 orders of magnitude relative to manual scripting even for a system expert, while operator-standard safety constraints were strictly upheld'.",
+  "fix": ""
+ },
+ {
+  "claim": "NeuDiff Agent: 435 min manual to 86.5-94.4 min, no checkCIF A/B alerts; allowlisted tools, fail-closed gates, provenance",
+  "key": "q4_neudiff",
+  "status": "confirmed",
+  "source_quote": "J Appl Cryst abstract: 'reduces wall time from 435 min (manual) to 86.5 +/- 4.7 to 94.4 +/- 3.5 min (4.6-5.0x faster) ... no checkCIF level A or B alerts'.",
+  "fix": ""
+ },
+ {
+  "claim": "APEXA (APS): 61 tools; frontier model fabricated a calibration report; 0/200 vs 15/200 motor violations",
+  "key": "q4_apexa",
+  "status": "confirmed",
+  "source_quote": "arXiv 2609.24165 abstract: '61 tools'; 'a frontier model fabricated a complete calibration-comparison report for commands that never ran'; '0/200 adversarial violations against a simulated IOC, versus 15/200 for an equivalent safety prompt'. Affiliation: X-ray Science Division, APS, Argonne.",
+  "fix": ""
+ },
+ {
+  "claim": "APS-RAG: 70.3% vs 63.8% strict vital recall",
+  "key": "q4_aps_rag",
+  "status": "confirmed",
+  "source_quote": "arXiv 2607.24663 abstract: 'naive BM25 baseline (63.8%), with the full corrective Agentic GraphRAG scoring (70.3%)'; deployed for APS staff.",
+  "fix": ""
+ },
+ {
+  "claim": "Genesis EO dated Nov 24, 2025; platform text includes 'AI agents' and autonomous experimentation; 60/90/120/240/270-day milestones; classification/cyber/export-control",
+  "key": "whitehouse2025genesis",
+  "status": "confirmed",
+  "source_quote": "EO Sec. 3(a)(ii): 'AI agents to explore design spaces, evaluate experimental outcomes, and automate workflows'; (vi) 'autonomous and AI-augmented experimentation'; signed November 24, 2025; Sec. 3(e) 240-day robotic-lab review.",
+  "fix": ""
+ },
+ {
+  "claim": "26 Genesis challenges incl. accelerators and autonomous labs",
+  "key": "q4_genesis_challenges",
+  "status": "confirmed",
+  "source_quote": "DOE, Feb 12, 2026: 'announced 26 science and technology challenges'; lists 'Enhancing Particle Accelerators for Discovery' and 'Achieving AI-Driven Autonomous Laboratories'.",
+  "fix": ""
+ },
+ {
+  "claim": "Agreements with 24 organizations incl. Anthropic, AWS, Google, NVIDIA, OpenAI",
+  "key": "q4_genesis_mous",
+  "status": "confirmed",
+  "source_quote": "DOE, Dec 18, 2025: 'agreements with 24 organizations'; list includes Anthropic, Amazon Web Services, Google, NVIDIA, OpenAI.",
+  "fix": ""
+ },
+ {
+  "claim": "Jul 2026: >$5B across 278 projects",
+  "key": "q4_genesis_5b",
+  "status": "corrected",
+  "source_quote": "White House, Jul 22, 2026: 'more than $5 billion in Federal commitments' from 'More than 15 Federal agencies'; separately, Sec. Wright: 'The 278 projects selected today'. The $5B is not stated to be spread across the 278 projects.",
+  "fix": "In July 2026 the White House announced more than $5B in federal commitments from more than 15 agencies, and DOE selected 278 projects [@q4_genesis_5b]"
+ },
+ {
+  "claim": ">$800M in partner commitments",
+  "key": "q4_genesis_800m",
+  "status": "confirmed",
+  "source_quote": "DOE, Jul 22, 2026: 'secured more than $800 million in committed partner support'; consortium of 17 labs, 5 NNSA sites, 41 organizations.",
+  "fix": ""
+ },
+ {
+  "claim": ">$320M incl. 14 robotics/autonomous-experiment projects",
+  "key": "q4_doe_ai_investments",
+  "status": "confirmed",
+  "source_quote": "DOE, Dec 10, 2025: 'over $320 million in investments'; 'Robotics and automation: 14 projects in robotics, automated laboratories, and autonomous control of large-scale experiments'.",
+  "fix": ""
+ },
+ {
+  "claim": "AmSC links 17 labs and 28 user facilities",
+  "key": "q4_lbnl_amsc",
+  "status": "corrected",
+  "source_quote": "LBNL, Jul 15, 2026: ESnet 'provides high-performance data transfer connections linking all 17 national laboratories and 28 user facilities'; 'Right now, the 17 DOE national labs and 28 user facilities connect to each other across the ESnet network, but they require dozens of different login systems'. AmSC adds a common identity layer and interfaces on top.",
+  "fix": "AmSC aims to unify access to the 17 DOE labs and 28 user facilities that ESnet already links, adding a common identity layer and shared service interfaces [@q4_lbnl_amsc]."
+ },
+ {
+  "claim": "Public Law 119-21, Sec. 50404 established AmSC with $150M",
+  "key": "q4_pl119_21",
+  "status": "corrected",
+  "source_quote": "PL 119-21 Sec. 50404 is titled 'Transformational artificial intelligence models'; it defines 'American science cloud', directs DOE to curate lab data and seed self-improving AI models 'provided to the scientific community through the American science cloud', and appropriates '$150,000,000, to remain available through September 30, 2026, to carry out this section' (whole section, not AmSC alone).",
+  "fix": "Public Law 119-21, Sec. 50404 (\"Transformational artificial intelligence models\") defines the American Science Cloud and appropriates $150M, through Sept 30, 2026, for curating DOE data and seeding science AI models to be shared through it [@q4_pl119_21]."
+ },
+ {
+  "claim": "1,000 Scientist AI Jam: Feb 28, 2025, nine labs (not SLAC), >1,400 scientists",
+  "key": "q4_llnl_aijam",
+  "status": "confirmed",
+  "source_quote": "LLNL: 'on Feb. 28 joined an initiative that brought together over 1,400 DOE scientists'; 'hosted at nine DOE labs'; hosts listed: LLNL, Argonne, LBNL, Brookhaven, Idaho, Los Alamos, Oak Ridge, PNNL, PPPL (no SLAC). ORNL page: 'scientists from nine national laboratories'.",
+  "fix": ""
+ },
+ {
+  "claim": "CAMEO found a new Ge-Sb-Te phase-change material at SSRL",
+  "key": "q4_cameo",
+  "status": "confirmed",
+  "source_quote": "Nat Commun 2020: 'discovery of a novel epitaxial nanocomposite phase-change memory material'; 'we explored the Ge-Sb-Te ternary system'; run at 'the SSRL diffraction synchrotron beamline endstation' via SPEC.",
+  "fix": ""
+ },
+ {
+  "claim": "ANDiE determined Neel temperatures 5-fold more efficiently",
+  "key": "q4_andie",
+  "status": "confirmed",
+  "source_quote": "Appl Phys Rev 2022 abstract: 'determine the magnetic ordering transition of both MnO and Fe1.09Te all while providing a fivefold enhancement in measurement efficiency'.",
+  "fix": ""
+ },
+ {
+  "claim": "GPQA Diamond best 95.8% (GPT-6 Astra, 2026-09)",
+  "key": "epoch_hub",
+  "status": "confirmed",
+  "source_quote": "Epoch benchmark_data.zip (fetched 2026-09-25), gpqa_diamond.csv top row: gpt-6-astra_max 0.9577, release 2026-09-03.",
+  "fix": ""
+ },
+ {
+  "claim": "GPQA expert baseline 65% (74% adjusted), shown as the GPQA Diamond baseline",
+  "key": "gpqa",
+  "status": "corrected",
+  "source_quote": "Rein et al. Table 2: expert accuracy 64.8% on GPQA Extended (546 q), 71.9% main (448), 81.3% Diamond (198, 'skewed by selection effects'); 74% is the Extended-set estimate of uncontroversially correct questions. Text: true expert accuracy on each subset lies between the Extended value and the subset value.",
+  "fix": "Table cell: \"Experts 65% on the full question pool (74% discounting clear mistakes); the paper puts expert accuracy on Diamond between 65% and 81%\". Bullet: \"Experts score about 65-81% on GPQA Diamond [@gpqa]\"."
+ },
+ {
+  "claim": "HLE best 54.8% (GPT 6 Astra, Scale, 2026-09-09) with contamination flag",
+  "key": "hle_scale",
+  "status": "confirmed",
+  "source_quote": "Scale Labs leaderboard: 'GPT 6 Astra ... 54.80 +/- 1.94'; createdAt 2026-09-09; 'Potential contamination warning: This model was evaluated after the public release of HLE'.",
+  "fix": ""
+ },
+ {
+  "claim": "About 29% of HLE chemistry/biology answers conflict with the literature",
+  "key": "hle_errors",
+  "status": "corrected",
+  "source_quote": "FutureHouse: '29 +/- 3.7% (95% CI) of the text-only chemistry and biology questions had answers with directly conflicting evidence'. Same page, update Sep 16, 2025: HLE team's three-expert review 'found about 18% of a subset of questions in Bio/Chem were problematic'.",
+  "fix": "about 29% of HLE's text-only chemistry and biology answers conflict with the literature by FutureHouse's estimate (HLE's own expert re-review found about 18% of a subset problematic)"
+ },
+ {
+  "claim": "FrontierScience 77% Olympiad / 25% Research (GPT-5.2)",
+  "key": "frontierscience",
+  "status": "confirmed",
+  "source_quote": "arXiv 2601.21165: 'GPT-5.2 is the top performing model on FrontierScience, scoring 77% on the Olympiad set and 25% on the Research set'.",
+  "fix": ""
+ },
+ {
+  "claim": "CritPt best 32.3% (GPT-5.6 Sol, 2026-07)",
+  "key": "epoch_hub",
+  "status": "confirmed",
+  "source_quote": "Epoch critpt_external.csv top row: GPT-5.6 Sol (max) 0.3229, release 2026-07-09. Note: the CritPt paper [@critpt] itself reports only 5.7% best base model (~10% with tools); the 32.3% must stay attributed to [@epoch_hub].",
+  "fix": ""
+ },
+ {
+  "claim": "CORE-Bench Hard 95.5%, declared solved (Opus 4.5 + Claude Code)",
+  "key": "hal_core",
+  "status": "corrected",
+  "source_quote": "HAL CORE-Bench Hard: 'Claude Opus 4.5 ... 77.78% (95.5% w/ manual validation)'; 'We have now declared CORE-Bench solved'. Notes omit that 95.5% needs manual grading (q2.html already says 'with manual validation').",
+  "fix": "95.5% with manual validation (77.8% automated), declared \"solved\" (Claude Opus 4.5 + Claude Code) [@hal_core]"
+ },
+ {
+  "claim": "CORE-Bench original best 21% on hardest level",
+  "key": "corebench",
+  "status": "confirmed",
+  "source_quote": "arXiv 2409.11363 abstract: 'The best agent achieved an accuracy of 21% on the hardest task'; 270 tasks, 90 papers.",
+  "fix": ""
+ },
+ {
+  "claim": "PaperBench best agent 21.0%; ML PhDs 41.4% on subset",
+  "key": "paperbench",
+  "status": "confirmed",
+  "source_quote": "arXiv 2504.01848: 'Claude 3.5 Sonnet (New) ... 21.0%'; 'On a 3-paper subset, our human baseline of ML PhDs (best of 3 attempts) achieved 41.4% after 48 hours ... compared to 26.6% achieved by o1 on the same subset'.",
+  "fix": ""
+ },
+ {
+  "claim": "ScienceAgentBench 32.4% best agent; 42.2% o1-preview",
+  "key": "scienceagentbench",
+  "status": "confirmed",
+  "source_quote": "arXiv 2410.05080 abstract: 'Given three attempts ... the best-performing agent can only solve 32.4% ... o1-preview ... can boost the performance to 42.2%'. Note: HAL leaderboard [@hal_sab] top is 33.33% (o3 Medium) and does not support 42.2%.",
+  "fix": ""
+ },
+ {
+  "claim": "Q5: 'The best agent solved only 32.4% of 102 ScienceAgentBench tasks'; risk register '32.4% best solve rate'",
+  "key": "scienceagentbench",
+  "status": "corrected",
+  "source_quote": "Same paper reports o1-preview at 42.2%, so 32.4% is not the best result; inconsistent with Q2 table (q5.html already fixed).",
+  "fix": "The best agent solved 32.4% of 102 ScienceAgentBench tasks drawn from 44 real papers; o1-preview with self-debugging reached 42.2% [@scienceagentbench]. Risk register cell: \"Best agents solve 32.4-42.2%\"."
+ },
+ {
+  "claim": "MaCBench: XRD highest peak 0.74, intensity ranking 0.28",
+  "key": "macbench",
+  "status": "confirmed",
+  "source_quote": "Nat Comput Sci 2025: 'average accuracy of 0.74 for identification of the highest peak versus 0.28 for ranking'.",
+  "fix": ""
+ },
+ {
+  "claim": "MaCBench: space groups 0.45, presented as XRD/lab-data analysis",
+  "key": "macbench",
+  "status": "corrected",
+  "source_quote": "Space-group result is for crystal-structure images, not XRD: 'models perform well in simple perception tasks on crystal structures ... but struggle at assigning the crystal system (0.55) or space groups (average accuracy of 0.45)'.",
+  "fix": "On XRD, models find the highest peak (0.74 accuracy) but rank intensities at only 0.28; shown crystal structures, they assign space groups at only 0.45 [@macbench]."
+ },
+ {
+  "claim": "EXP-Bench 0.5% complete executable experiments",
+  "key": "expbench",
+  "status": "confirmed",
+  "source_quote": "arXiv 2505.24785 abstract: 'the success rate for complete, executable experiments was a mere 0.5%'.",
+  "fix": ""
+ },
+ {
+  "claim": "MLE-bench top 64.4% any-medal (Famou-Agent 2.0, 2026-02)",
+  "key": "mlebench_lb",
+  "status": "confirmed",
+  "source_quote": "GitHub README leaderboard: 'Famou-Agent 2.0 | Gemini-3-Pro-Preview | ... All 64.44 +/- 1.18 | 2026-02-23'; metric 'Any Medal (%)'; submissions paused 04-24-2026.",
+  "fix": ""
+ },
+ {
+  "claim": "DiscoveryWorld agents <=18% completion (Normal/Challenge)",
+  "key": "discoveryworld",
+  "status": "confirmed",
+  "source_quote": "arXiv 2406.06769 Table 4: ReAct completion Normal 0.18, Challenge 0.18 (Easy 0.38).",
+  "fix": ""
+ },
+ {
+  "claim": "DiscoveryWorld human baseline: 'PhD scientists 66%'",
+  "key": "discoveryworld",
+  "status": "corrected",
+  "source_quote": "Sec. 4.3: '11 practicing human scientists' recruited on UpWork, 'each with ... an MSc or PhD in a natural science'; 'average completion rate across tasks was 66%'.",
+  "fix": "Human scientists (MSc or PhD) 66%"
+ },
+ {
+  "claim": "RE-Bench: agents 4x experts at 2 h; experts 2x agents at 32 h",
+  "key": "rebench",
+  "status": "confirmed",
+  "source_quote": "arXiv 2411.15114 abstract: 'best AI agents achieve a score 4x higher than human experts when both are given ... 2 hours'; humans 'achieving 2x the score of the top AI agent when both are given 32 total hours'.",
+  "fix": ""
+ },
+ {
+  "claim": "ReplicationBench ~20% (Claude Sonnet 4.5)",
+  "key": "replicationbench",
+  "status": "confirmed",
+  "source_quote": "arXiv 2510.24591 Table 2: Sonnet 4.5 unweighted 0.22, difficulty-weighted 0.19 (best); abstract: 'even the best-performing language models score under 20%'.",
+  "fix": ""
+ },
+ {
+  "claim": "AstaBench best 53.0% (Asta v0, 2025-08)",
+  "key": "bragg2025astabench",
+  "status": "confirmed",
+  "source_quote": "Ai2 blog (Aug 26, 2025) [@asta_blog]: 'the best (highest-scoring) agent - our own Asta v0 ... scoring 53.0%'. Number verified on the blog, not in the paper (arXiv HTML unavailable).",
+  "fix": ""
+ },
+ {
+  "claim": "Kosmos 79.4% statements accurate; 57.9% of synthesis statements",
+  "key": "mitchener2025kosmos",
+  "status": "confirmed",
+  "source_quote": "arXiv 2511.02824: '79.4% of the statements in the report were accurate ... 57.9% of synthesis statements were accurate'.",
+  "fix": ""
+ },
+ {
+  "claim": "OpenScholar: GPT-4o hallucinated citations 78-90%",
+  "key": "asai2026openscholar",
+  "status": "confirmed",
+  "source_quote": "Nature 2026 abstract: 'Although GPT-4o hallucinates citations 78-90% of the time, OpenScholar achieves citation accuracy on par with human experts'.",
+  "fix": ""
+ },
+ {
+  "claim": "ICLR 2025 RCT: 27% of reviewers updated reviews",
+  "key": "thakkar2026reviewfeedback",
+  "status": "confirmed",
+  "source_quote": "arXiv 2504.09737 (preprint of the NMI paper): '27% of reviewers who received feedback updated their reviews'; >20,000 reviews.",
+  "fix": ""
+ },
+ {
+  "claim": "Liang: GPT-4 vs human overlap 30.85% vs 28.58%",
+  "key": "liang2024feedback",
+  "status": "confirmed",
+  "source_quote": "arXiv 2310.01783 abstract: 'average overlap 30.85% for Nature journals ... comparable to the overlap between two human reviewers (average overlap 28.58% for Nature journals)'. (ICLR: 39.23% vs 35.25%.)",
+  "fix": ""
+ },
+ {
+  "claim": "Virtual Lab: 92 nanobodies, 2 with improved JN.1/KP.3 binding",
+  "key": "swanson2025virtuallab",
+  "status": "confirmed",
+  "source_quote": "Nature 2025: 'designed 92 new nanobodies ... two new nanobodies exhibit improved binding to the recent JN.1 or KP.3 variants'.",
+  "fix": ""
+ },
+ {
+  "claim": "A-Lab: 41 of 58 targets in 17 days",
+  "key": "szymanski2023alab",
+  "status": "corrected",
+  "source_quote": "Original abstract: 'Over 17 days ... realized 41 novel compounds from a set of 58 targets'. Author Correction (Nature, 19 Jan 2026, doi 10.1038/s41586-025-09992-y): re-analysis 'confirmed ... the correct conclusion in 36 of its 40 reported successes, with 4 compounds being inconclusive'; one compound (Zn2Cr3FeO8) removed as it was in the training data; 'novelty' meant 'new to the prediction platform, not necessarily new to science'.",
+  "fix": "Reported 41 of 58 targets made in 17 days; a 2026 Author Correction cut this to 36 confirmed (4 inconclusive by XRD, 1 removed because it was in the training data) and said \"novel\" meant new to the prediction platform, not to science [@szymanski2023alab; @alab_correction]."
+ },
+ {
+  "claim": "A-Lab critique: none of 43 'novel' materials new; ~2/3 likely known disordered phases; automated Rietveld 'not yet reliable'",
+  "key": "leeman2024alabcritique",
+  "status": "confirmed",
+  "source_quote": "PRX Energy 2024 abstract: 'lead to the conclusion that no new materials have been discovered'; 'two thirds of the claimed successful materials ... are likely to be known compositionally disordered versions'; 'Automated Rietveld analysis ... is not yet reliable'.",
+  "fix": ""
+ },
+ {
+  "claim": "AlphaEvolve: 4x4 complex matrices with 48 scalar multiplications",
+  "key": "novikov2025alphaevolve",
+  "status": "confirmed",
+  "source_quote": "arXiv 2506.13131 abstract: 'multiply two 4x4 complex-valued matrices using 48 scalar multiplications'.",
+  "fix": ""
+ },
+ {
+  "claim": "Periodic Labs Neon 55.3% on 134 FrontierXRD patterns, LLM-judge graded",
+  "key": "periodic_neon",
+  "status": "confirmed",
+  "source_quote": "Periodic Labs blog: 'Periodic Neon achieves a 55.3% success rate on ... FrontierXRD'; '134 samples from our labs'; 'LLM-Judge ensemble of Opus 5 and GPT-5.6-Sol'; 'Our evaluation focuses on these harder, multiphase cases'.",
+  "fix": ""
+ },
+ {
+  "claim": "Q6: 'Closed-form science benchmarks are saturated [@gpqa]'",
+  "key": "gpqa",
+  "status": "unsupported",
+  "source_quote": "The 2023 GPQA paper reports GPT-4 at 39% and cannot support saturation; the saturation evidence is the Epoch hub score (95.8%).",
+  "fix": "Closed-form science benchmarks are saturated [@epoch_hub; @gpqa]"
+ },
+ {
+  "claim": "55% of GPT-3.5 and 18% of GPT-4 citations fabricated",
+  "key": "walters2023citations",
+  "status": "confirmed",
+  "source_quote": "Sci Rep 2023 abstract: '55% of the GPT-3.5 citations but just 18% of the GPT-4 citations are fabricated' (636 citations, 84 papers).",
+  "fix": ""
+ },
+ {
+  "claim": "~1 in 20 NeurIPS/USENIX Security 2025 papers have >=2 hallucinated refs; ~$0.04 per paper",
+  "key": "russinovich2026phantom",
+  "status": "confirmed",
+  "source_quote": "arXiv 2607.00738: 'roughly one in twenty NeurIPS and USENIX Security papers contains at least two likely hallucinated ... references'; 'about 0.04$ per paper'.",
+  "fix": ""
+ },
+ {
+  "claim": "100 fabricated citations in 53 NeurIPS 2025 papers",
+  "key": "ansari2026neurips",
+  "status": "confirmed",
+  "source_quote": "arXiv 2602.05930: '100 AI-generated hallucinated citations ... appearing in 53 published papers (approx. 1% of all accepted papers)'.",
+  "fix": ""
+ },
+ {
+  "claim": "Reward hacking 30.5% (17 models, 38 tasks); LLM panel misses 6.5%",
+  "key": "huang2026rewardhacking",
+  "status": "confirmed",
+  "source_quote": "arXiv 2609.28614: 'Across 17 language models and 38 tasks, the spontaneous reward-hacking rate is 30.5% on open-ended research-pipeline tasks'; 'misses 33/505 confirmed hacks (6.5%)'.",
+  "fix": ""
+ },
+ {
+  "claim": "86% of opposite-conclusion reports passed AI review",
+  "key": "miao2026forking",
+  "status": "confirmed",
+  "source_quote": "arXiv 2607.01507: 'Despite reaching opposing conclusions ... 86% passed independent AI review and 78% passed majority human expert review'.",
+  "fix": ""
+ },
+ {
+  "claim": "GPT-4 prime identification 84% -> 51%",
+  "key": "chen2024drift",
+  "status": "confirmed",
+  "source_quote": "HDSR 2024 abstract: 'GPT-4 (March 2023) ... (84% accuracy) but GPT-4 (June 2023) ... (51% accuracy)'.",
+  "fix": ""
+ },
+ {
+  "claim": "Up to 15% accuracy swings under deterministic settings",
+  "key": "atil2024nondeterminism",
+  "status": "confirmed",
+  "source_quote": "arXiv 2408.04667: 'accuracy variations up to 15% across naturally occurring runs'.",
+  "fix": ""
+ },
+ {
+  "claim": "HAL: 21,730 rollouts, ~$40,000; agents searched HuggingFace for answers",
+  "key": "kapoor2025hal",
+  "status": "confirmed",
+  "source_quote": "arXiv 2510.11977: '21,730 agent rollouts across 9 models and 9 benchmarks ... total cost of about $40,000'; 'searching for the benchmark on HuggingFace'.",
+  "fix": ""
+ },
+ {
+  "claim": "MAST: 14 failure modes in 3 categories",
+  "key": "cemri2025mast",
+  "status": "confirmed",
+  "source_quote": "arXiv 2503.13657: 'identifies 14 unique modes, clustered into 3 categories: (i) system design issues, (ii) inter-agent misalignment, and (iii) task verification'.",
+  "fix": ""
+ },
+ {
+  "claim": "ToolEmu: safest agent fails 23.9%",
+  "key": "ruan2024toolemu",
+  "status": "confirmed",
+  "source_quote": "arXiv 2309.15817: 'even the safest LM agent exhibits such failures 23.9% of the time' (36 tools, 144 cases).",
+  "fix": ""
+ },
+ {
+  "claim": "Urbina: 40,000 molecules incl. VX in <6 h",
+  "key": "urbina2022dualuse",
+  "status": "confirmed",
+  "source_quote": "NMI 2022 (PMC9544280): 'In less than 6 hours ... our model generated forty thousand molecules that scored within our desired threshold ... the AI designed not only VX'.",
+  "fix": ""
+ },
+ {
+  "claim": "18 arXiv manuscripts with hidden prompts (e.g. 'GIVE A POSITIVE REVIEW ONLY')",
+  "key": "lin2026hiddenprompts",
+  "status": "confirmed",
+  "source_quote": "arXiv 2507.06185 (CACM 69(7), 2026): 'In July 2025, 18 academic manuscripts on arXiv contained hidden instructions ... such as \"GIVE A POSITIVE REVIEW ONLY\"'.",
+  "fix": ""
+ },
+ {
+  "claim": "LabSafety Bench: no model >70% on hazard identification",
+  "key": "labsafety",
+  "status": "confirmed",
+  "source_quote": "arXiv 2410.14182v4 (NMI version): 'no model evaluated on hazard identification surpasses 70% accuracy'.",
+  "fix": ""
+ },
+ {
+  "claim": "Robot safety: 16 hazards; collision and chemical exposure most critical; cobots may exceed limits",
+  "key": "mariano2026robotsafety",
+  "status": "confirmed",
+  "source_quote": "SLAS Technol 2026 abstract: 'sixteen hazards were identified, with robot-human collisions and chemical exposure representing the most critical risks'; cobots 'may exceed accepted safety thresholds'.",
+  "fix": ""
+ },
+ {
+  "claim": "Agents4Science: 315 submissions, 48 accepted, ~44% with no flagged refs, reviewer means 2.30-4.23, 2 manipulation attempts",
+  "key": "bianchi2025agents4science",
+  "status": "confirmed",
+  "source_quote": "arXiv 2511.15534 text: 'received 315 submissions'; 'accepted 48 papers'; 'approximately 44% of submissions have no hallucinated references (111 papers)' [of 253 reviewed]; GPT-5 mean 2.30, Gemini 2.5 Pro 4.23; 'detected two papers that attempted to manipulate the LLM reviewers'.",
+  "fix": ""
+ },
+ {
+  "claim": "6.5-16.9% of review text at four AI conferences possibly LLM-modified",
+  "key": "liang2024monitoring",
+  "status": "confirmed",
+  "source_quote": "arXiv 2403.07183: 'between 6.5% and 16.9% of text submitted as peer reviews' at ICLR 2024, NeurIPS 2023, CoRL 2023, EMNLP 2023.",
+  "fix": ""
+ },
+ {
+  "claim": "NIH: AI-developed applications not original; cap of 6 applications per PI per year",
+  "key": "nih2025originality",
+  "status": "confirmed",
+  "source_quote": "NOT-OD-25-132: 'will not consider applications that are either substantially developed by AI ... to be original'; 'will only accept six new, renewal, resubmission, or revision applications from an individual PI ... in a calendar year'; effective Sept 25, 2025.",
+  "fix": ""
+ },
+ {
+  "claim": "MCP introduced 25 Nov 2024",
+  "key": "mcpintro",
+  "status": "confirmed",
+  "source_quote": "Anthropic news page dated 'Nov 25, 2024'.",
+  "fix": ""
+ },
+ {
+  "claim": "MCP moved to AAIF (Linux Foundation) on 9 Dec 2025; maintainers and SEP process unchanged",
+  "key": "mcpaaif",
+  "status": "confirmed",
+  "source_quote": "MCP blog, December 9, 2025: 'Anthropic is donating MCP to the Agentic AI Foundation, a directed fund under the Linux Foundation'; 'MCP's maintainer structure stays the same ... guided by community input through our SEP process'.",
+  "fix": ""
+ },
+ {
+  "claim": "2026-07-28 revision: stateless, tasks moved to official extension, Roots/Sampling/Logging deprecated",
+  "key": "mcpchg2607",
+  "status": "confirmed",
+  "source_quote": "Changelog: 'Make MCP stateless: remove the initialize ... handshake'; 'Move experimental tasks out of the core protocol and into an official extension'; 'Deprecate the Roots, Sampling, and Logging features'.",
+  "fix": ""
+ },
+ {
+  "claim": "A2A reached v1.0 and joined AAIF in Aug 2026; MCP vertical, A2A horizontal",
+  "key": "a2aaaif",
+  "status": "confirmed",
+  "source_quote": "A2A blog, August 27, 2026: 'accepted as a Growth Stage project at the Agentic AI Foundation'; 'Since reaching its stable v1.0 specification'; MCP 'the vertical integration layer', A2A 'the horizontal protocol'.",
+  "fix": ""
+ },
+ {
+  "claim": "MCPTox: 45 live servers; o1-mini ASR 72.8%; highest refusal <3%",
+  "key": "mcptox",
+  "status": "confirmed",
+  "source_quote": "arXiv 2508.14925: '45 live, real-world MCP servers and 353 authentic tools'; 'o1-mini, achieving an attack success rate of 72.8%'; 'highest refused rate (Claude-3.7-Sonnet) less than 3%'.",
+  "fix": ""
+ },
+ {
+  "claim": "ether0: 24B, RL on 640,730 problems",
+  "key": "ether0",
+  "status": "confirmed",
+  "source_quote": "arXiv 2506.17238 (NeurIPS 2025): 'ether0, a 24B parameter LLM (based on Mistral-Small-24B) ... trained with reinforcement learning on 640,730 experimentally-grounded chemistry problems across 375 tasks'.",
+  "fix": ""
+ },
+ {
+  "claim": "Intern-S1: 28B active / 241B total MoE",
+  "key": "interns1",
+  "status": "confirmed",
+  "source_quote": "arXiv 2508.15763: 'MoE model with 28 billion activated parameters and 241 billion total parameters'.",
+  "fix": ""
+ },
+ {
+  "claim": "Aviary: open agents match frontier at up to 100x lower cost",
+  "key": "aviary",
+  "status": "confirmed",
+  "source_quote": "arXiv 2412.21154: 'can match and exceed both frontier LLM agents and human experts on multiple tasks at up to 100x lower inference cost'.",
+  "fix": ""
+ },
+ {
+  "claim": "FIRST: 'billions of tokens daily on-premises'",
+  "key": "first",
+  "status": "confirmed",
+  "source_quote": "SC'25 Workshops abstract: 'allowing researchers to generate billions of tokens daily on-premises without relying on commercial cloud infrastructure'.",
+  "fix": ""
+ },
+ {
+  "claim": "Aletheia: one paper with no human intervention; four open Erdos problems solved autonomously",
+  "key": "feng2026aletheia",
+  "status": "confirmed",
+  "source_quote": "arXiv 2602.10177: '(a) a research paper (Feng26) generated by AI without any human intervention'; '(c) ... 700 open problems on Bloom's Erdos Conjectures database, including autonomous solutions to four open questions'.",
+  "fix": ""
+ },
+ {
+  "claim": "Aletheia solved 6 of 10 FirstProof problems",
+  "key": "feng2026firstproof",
+  "status": "confirmed",
+  "source_quote": "arXiv 2602.21201: 'autonomously solved 6 problems (2, 5, 7, 8, 9, 10) out of 10 according to majority expert assessments' (experts split on Problem 8).",
+  "fix": ""
+ },
+ {
+  "claim": "DeepScientist tested ~1,100 ideas over a month",
+  "key": "weng2026deepscientist",
+  "status": "confirmed",
+  "source_quote": "arXiv 2509.26603: 'month-long timelines'; 'generated about 5,000 unique scientific ideas and experimentally validated approximately 1100 of them'.",
+  "fix": ""
+ },
+ {
+  "claim": "38% of 24 runnable systems report novelty verification",
+  "key": "ding2026verificationgap",
+  "status": "confirmed",
+  "source_quote": "arXiv 2608.05179: 'In the 24 runnable systems ... 38 percent report any novelty-verification method'.",
+  "fix": ""
+ },
+ {
+  "claim": "Kosmos ~200 agent rollouts per run",
+  "key": "mitchener2025kosmos",
+  "status": "confirmed",
+  "source_quote": "arXiv 2511.02824: 'over 200 agent rollouts'; body: '166 data analysis agent rollouts and ... 36 literature review agent rollouts per run'.",
+  "fix": ""
+ },
+ {
+  "claim": "ChemCrow 18 tools; syntheses of an insect repellent and three organocatalysts",
+  "key": "bran2024chemcrow",
+  "status": "confirmed",
+  "source_quote": "NMI 2024 abstract: 'integrating 18 expert-designed tools'; 'planned and executed the syntheses of an insect repellent and three organocatalysts'.",
+  "fix": ""
+ }
+]

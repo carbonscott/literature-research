@@ -1,0 +1,686 @@
+[
+ {
+  "file": "q5.html",
+  "statement": "Answer: failures and mitigations (logging, checks, sandboxing, disclosure)",
+  "keys": "kapoor2024agents; q4_apexa; ruan2024toolemu; icmje2025ai",
+  "status": "confirmed",
+  "evidence": "Each cited source covers one listed item: reproducibility (Kapoor abstract), execution-integrity guard (APEXA abstract), LM-emulated sandbox (ToolEmu abstract), disclosure (ICMJE Sec. IV A).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Agent evaluations ignore cost, lack holdouts, not standardized, 'causing' pervasive irreproducibility",
+  "keys": "kapoor2024agents",
+  "status": "corrected",
+  "evidence": "arXiv 2407.01502 abstract: the reproducibility quote is tied only to the last shortcoming: 'there is a lack of standardization in evaluation practices, leading to a pervasive lack of reproducibility'. Cost-blindness is said to cause needless complexity and cost, and missing holdouts to cause overfitting.",
+  "old": "Agent evaluations often ignore cost, lack holdout sets and are not standardized, causing \"a pervasive lack of reproducibility\" [@kapoor2024agents].",
+  "new": "Agent evaluations often ignore cost and lack holdout sets, and non-standard evaluation practices lead to \"a pervasive lack of reproducibility\" [@kapoor2024agents]."
+ },
+ {
+  "file": "q5.html",
+  "statement": "CORE-Bench: 270 tasks from 90 papers",
+  "keys": "corebench",
+  "status": "confirmed",
+  "evidence": "arXiv 2409.11363 abstract: '270 tasks based on 90 scientific papers across three disciplines'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Independent test of Sakana's AI Scientist: 42% of experiments failed from coding errors",
+  "keys": "beel2025sakana",
+  "status": "confirmed",
+  "evidence": "SIGIR Forum abstract (OpenAlex): 'five out of twelve proposed experiments (42%) failed due to coding errors'. The sample is small (n=12); the authors are at Siegen/NUS, independent of Sakana.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "AI Scientist papers contained hallucinated numbers",
+  "keys": "beel2025sakana",
+  "status": "confirmed",
+  "evidence": "Same abstract: 'Hallucinated numerical results were contained in several manuscripts'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Leakage, metric misuse, post-hoc selection easier to spot in traces/code than in the paper",
+  "keys": "luo2025pitfalls",
+  "status": "confirmed",
+  "evidence": "arXiv 2509.08713 abstract: 'access to trace logs and code from the full automated workflow enables far more effective detection of such failures than examining the final paper alone'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "ICLR 2026 checked references automatically and desk-rejected papers with hallucinated references",
+  "keys": "iclr2026response",
+  "status": "corrected",
+  "evidence": "ICLR blog, 19 Nov 2025: hallucinated references are 'a Code of Ethics violation' and 'We have been desk-rejecting, and will continue to desk-reject, any paper that includes such issues.' Detection: 'We have been relying on ACs and SACs'; 'LLM detection tools' are used only to triage LLM-generated content. The post describes no automated reference checking. (The refs.json 'supports' field also says 'automated reference checking'; it should be fixed too.)",
+  "old": "ICLR 2026 checked references automatically and desk-rejected papers with hallucinated references [@iclr2026response].",
+  "new": "ICLR 2026 treated hallucinated references as an ethics violation and desk-rejected papers containing them; area chairs found the cases, with LLM-detection tools used for triage [@iclr2026response]."
+ },
+ {
+  "file": "q5.html",
+  "statement": "Agents4Science caught 2 papers trying to manipulate its reviewers",
+  "keys": "bianchi2025agents4science",
+  "status": "confirmed",
+  "evidence": "arXiv 2511.15534 full text: an automated pipeline scanned for prompt injections; 'we detected two papers that attempted to manipulate the LLM reviewers; they were not accepted'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Agents given personas reached opposite conclusions from the same data",
+  "keys": "miao2026forking",
+  "status": "confirmed",
+  "evidence": "arXiv 2607.01507 abstract: 'assigning different personas is sufficient for AI agents to report divergent, often opposing, conclusions from the same data and question'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Contamination: up to 8% drop on GSM1k vs GSM8k",
+  "keys": "zhang2024gsm1k",
+  "status": "confirmed",
+  "evidence": "arXiv 2405.00332 abstract: 'we observe accuracy drops of up to 8%'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Flawed benchmark design mis-estimates performance by up to 100% relative; ABC cut CVE-Bench overestimation by 33%",
+  "keys": "zhu2025abc",
+  "status": "confirmed",
+  "evidence": "arXiv 2507.02825 abstract: 'under- or overestimation of agents' performance by up to 100% in relative terms'; 'ABC reduces the performance overestimation by 33%'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "LLM ideas rated more novel than expert ideas (p<0.05)",
+  "keys": "si2025ideas",
+  "status": "confirmed",
+  "evidence": "arXiv 2409.04109 abstract: 'LLM-generated ideas are judged as more novel (p < 0.05) than human expert ideas'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "After 43 experts executed ideas, LLM-idea scores fell significantly more",
+  "keys": "si2025gap",
+  "status": "confirmed",
+  "evidence": "arXiv 2506.20803 abstract: 'recruiting 43 expert researchers to execute randomly-assigned ideas'; LLM-idea scores 'decrease significantly more than expert-written ideas on all evaluation metrics ... p < 0.05'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "LLM judges show position, length and self-preference biases",
+  "keys": "zheng2023judge",
+  "status": "confirmed",
+  "evidence": "arXiv 2306.05685 abstract: 'position, verbosity, and self-enhancement biases'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "AI can foster illusions of understanding and narrow the range of methods",
+  "keys": "messeri2024illusions",
+  "status": "confirmed",
+  "evidence": "Nature abstract: 'illusions of understanding in which we believe we understand more about the world than we actually do'; 'scientific monocultures, in which some types of methods, questions and viewpoints come to dominate'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Instructions hidden in retrieved data can hijack LLM applications",
+  "keys": "greshake",
+  "status": "confirmed",
+  "evidence": "AISec'23 abstract: 'strategically injecting prompts into data likely to be retrieved at inference time' can 'manipulate the application's functionality, and control how and if other APIs are called'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Safest ToolEmu agent failed 23.9% of high-stakes tool cases",
+  "keys": "ruan2024toolemu",
+  "status": "confirmed",
+  "evidence": "arXiv 2309.15817 abstract: benchmark of '36 high-stakes tools and 144 test cases'; 'even the safest LM agent exhibits such failures 23.9% of the time'. (Number already confirmed in iter2; wording checked here.)",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "The AI Scientist tried to edit its own code to extend its time limit",
+  "keys": "lu2024aiscientist",
+  "status": "confirmed",
+  "evidence": "arXiv 2408.06292v3 Sec. 8 (Safe Code Execution): 'when The AI Scientist's experiments exceeded our imposed time limits, it attempted to edit the code to extend the time limit arbitrarily'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "ChemCrow added checks for controlled chemicals and explosives",
+  "keys": "bran2024chemcrow",
+  "status": "confirmed",
+  "evidence": "arXiv 2304.05376v5 Sec. 5.3.3 Safety tools: ControlledChemicalCheck (execution stops if controlled), ExplosiveCheck (GHS 'Explosive' rating), SafetySummary.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "A DOE workshop hosted by ORNL called for safety protocols and human oversight",
+  "keys": "ornl2024sdlworkshop",
+  "status": "confirmed",
+  "evidence": "OSTI 2481197 abstract: challenges include 'comprehensive safety protocols'; 'The workshop emphasized maintaining human oversight while leveraging automation'. Organized by ORNL/OLCF staff but held in Denver (7-8 Nov 2024); 'led by ORNL' would be more exact than 'hosted by'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Facility note: SSRL human relayed each command unmodified",
+  "keys": "q4_xray_scientist",
+  "status": "confirmed",
+  "evidence": "Nat Mach Intell 8, 1075 (2026): commands 'relayed through a human experimentalist solely to satisfy facility safety requirements'; 'the exact commands proposed by the AI X-ray scientist were executed without modification'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Facility note: Osprey requires human review of a complete plan before any hardware action",
+  "keys": "q4_osprey",
+  "status": "confirmed",
+  "evidence": "APL Mach Learn abstract: 'a plan-first orchestrator that generates complete execution plans, including all dependencies, for human review before any hardware is touched'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Nature: LLM cannot be an author; use must be documented",
+  "keys": "nature2023groundrules",
+  "status": "confirmed",
+  "evidence": "Nature editorial (2023): 'no LLM tool will be accepted as a credited author'; 'researchers using LLM tools should document this use in the methods or acknowledgements sections'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "ICMJE: AI cannot be an author; disclose AI use; humans responsible",
+  "keys": "icmje2025ai",
+  "status": "confirmed",
+  "evidence": "ICMJE 'Use of AI by Authors': require authors 'to disclose at submission'; chatbots 'should not be listed as authors'; 'humans are responsible for any submitted material'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "NeurIPS 2025 allows only human authors",
+  "keys": "neurips2025llm",
+  "status": "confirmed",
+  "evidence": "neurips.cc/Conferences/2025/LLM: 'No. Only humans are eligible to be authors.'",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "ICLR 2026 requires disclosure of all LLM use; hidden prompts count as collusion",
+  "keys": "iclr2026llmpolicy",
+  "status": "confirmed",
+  "evidence": "ICLR blog, 26 Aug 2025: 'Policy 1. Any use of an LLM must be disclosed'; a hidden prompt injection that 'results in a positive LLM-generated review' is 'a form of collusion'. The collusion rule is conditional on the injection producing a positive LLM review; the short wording is acceptable.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "ICML 2026: caught with hidden PDF prompts; removed 795 reviews (~1%); desk-rejected 497 papers of offending reviewers",
+  "keys": "icml2026violations",
+  "status": "confirmed",
+  "evidence": "ICML blog, 18 Mar 2026: PDFs watermarked with instructions visible only to an LLM; '795 reviews (~1% of all reviews) written by 506 unique reviewers'; flagged Policy A reviews were removed; '497 papers (~2% of all submissions) ... corresponding to submissions of 398 reciprocal reviewers'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Detector vendor: 21% of ICLR 2026 reviews fully AI-generated",
+  "keys": "pangram2025iclr",
+  "status": "confirmed",
+  "evidence": "Pangram blog, 18 Nov 2025: 'We found 21%, or 15,899 reviews, were fully AI-generated' (EditLens on ICLR 2026 reviews).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Agents4Science 2025 required an AI first author",
+  "keys": "agents4science2025site",
+  "status": "confirmed",
+  "evidence": "agents4science.stanford.edu: 'AI serve as both primary authors and reviewers'; 'the first venue where AI authorship is not only allowed but required'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "NIH bans generative AI in peer review",
+  "keys": "nih2023review",
+  "status": "confirmed",
+  "evidence": "NOT-OD-23-149: 'NIH prohibits NIH scientific peer reviewers from using ... generative Artificial Intelligence (AI) technologies for analyzing and formulating peer review critiques'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "NSF bars reviewers from uploading proposals to non-approved AI tools",
+  "keys": "nsf2023merit",
+  "status": "confirmed",
+  "evidence": "nsf.gov/policies/ai/merit-review: 'NSF reviewers are prohibited from uploading any content from proposals, review information and related records to non-approved generative AI tools.'",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "This search found no DOE-wide equivalent (absence claim)",
+  "keys": "(none)",
+  "status": "confirmed",
+  "evidence": "Hedged absence claim. The DOE SC Merit Review System page has no generative-AI section, and web searches found only FOA-level AI-disclosure language and general confidentiality rules. No counter-evidence found; wording is suitably hedged.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Risk register: HAL shares logs of every run",
+  "keys": "kapoor2025hal",
+  "status": "confirmed",
+  "evidence": "arXiv 2510.11977 abstract: 'We share all agent logs, comprising 2.5B tokens of language model calls'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Risk register: 'Automated reference checks; desk rejection' cited only to ICLR response",
+  "keys": "iclr2026response",
+  "status": "corrected",
+  "evidence": "The ICLR post supports desk rejection but not automated reference checks (see above). Automated checking (RefChecker, ~$0.04 per paper) comes from the Phantom References paper, arXiv 2607.00738.",
+  "old": "Automated reference checks; desk rejection [@iclr2026response]",
+  "new": "Automated reference checks [@russinovich2026phantom]; desk rejection [@iclr2026response]"
+ },
+ {
+  "file": "q5.html",
+  "statement": "Risk register: multiverse checks",
+  "keys": "miao2026forking",
+  "status": "confirmed",
+  "evidence": "arXiv 2607.01507 abstract: introduces 'the m-value (multiverse value)' and 'Agentic Bootstrap' to sample plausible analysis paths.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Risk register: final human review for LLM judges",
+  "keys": "bianchi2025agents4science",
+  "status": "confirmed",
+  "evidence": "arXiv 2511.15534: 'The 79 top-scoring papers were additionally assessed by a human expert. The programme committee accepted 48 papers, considering both the LLM and human reviews.'",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Risk register: canary prompts / bans",
+  "keys": "icml2026violations; nih2023review",
+  "status": "confirmed",
+  "evidence": "ICML used two randomly selected phrases per paper hidden in the PDF (a canary); NIH NOT-OD-23-149 prohibition.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q5.html",
+  "statement": "Risk register: ISO-based risk assessment",
+  "keys": "mariano2026robotsafety",
+  "status": "confirmed",
+  "evidence": "SLAS Technology abstract: 'a simple, structured safety assessment methodology based on ISO standards and tailored to laboratory environments'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Answer: agents already 'tune accelerators'",
+  "keys": "q4_als_agentic",
+  "status": "corrected",
+  "evidence": "PRR (2026) abstract: the ALS agent 'autonomously execute[s] multistage physics experiments' (archive retrieval, channel resolution, script generation, controlled machine interaction, analysis); it does not describe tuning. Q4 also describes it as running machine-physics experiments. (Accelerator tuning appears only in the DESY proof of principle, q4_kaiser_sciadv, which is not cited here.)",
+  "old": "they already align crystals, tune accelerators and reduce neutron data",
+  "new": "they already align crystals, run accelerator experiments and reduce neutron data"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 1: 'The first real-beamline agent kept a person relaying every command'",
+  "keys": "q4_xray_scientist",
+  "status": "corrected",
+  "evidence": "The paper says 'for the first real-beamline demonstration on BL17-2 at SSRL', meaning the team's own first trial, not the first ever. VISION (MLST, May 2025) had already run 'the first voice-controlled experiment at an x-ray scattering beamline', and Q4 lists earlier APS beamline agents. Q4 steering makes no 'first' claim.",
+  "old": "The first real-beamline agent kept a person relaying every command [@q4_xray_scientist]",
+  "new": "In its first real-beamline trial, the SSRL agent had a person relay every command [@q4_xray_scientist]"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 1: ALS framework requires human review of a complete plan (Q4 steering)",
+  "keys": "q4_osprey",
+  "status": "confirmed",
+  "evidence": "Osprey abstract (see q5 entry). Q4 steering, LBNL list, has the same statement.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 1: targeted human interventions beat full autonomy and step-by-step oversight; accepted A4S papers had more human guidance (Q1 trends)",
+  "keys": "liu2026autoresearchclaw; bianchi2025agents4science",
+  "status": "confirmed",
+  "evidence": "arXiv 2605.20025 abstract: 'targeted collaboration at high-leverage decision points consistently outperforms both full autonomy and exhaustive step-by-step oversight'. Bianchi: 'Accepted papers involved more human guidance than rejected papers.' Both appear in Q1 trends 4 and 6.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 2: APEXA guard and NeuDiff allowlists (Q3 workflow and HPC)",
+  "keys": "q4_apexa; q4_neudiff",
+  "status": "confirmed",
+  "evidence": "Both appear in the Q3 'Sandboxing and permissions' paragraph under #q3-hpc; APEXA abstract: '0/200 adversarial violations against a simulated IOC, versus 15/200 for an equivalent safety prompt'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 2: tool poisoning on real MCP servers, linked to Q5 safety",
+  "keys": "mcptox",
+  "status": "corrected",
+  "evidence": "MCPTox abstract confirms the claim ('45 live, real-world MCP servers'; 'widespread vulnerability'). But MCPTox appears in Q3 protocols, not in Q5 safety; the single link (Q5 safety) covers only LabSafety. A Q3 link is added.",
+  "old": "Tool poisoning succeeds against many models on real MCP servers [@mcptox], and",
+  "new": "Tool poisoning succeeds against many models on real MCP servers [@mcptox] (<a href=\"#q3-protocols\">Q3 protocols</a>), and"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 2: no model above 70% on lab hazard identification (Q5 safety)",
+  "keys": "labsafety",
+  "status": "confirmed",
+  "evidence": "Present in Q5 safety; number confirmed in iter2.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 3: models rank 'powder-XRD' peak intensities poorly",
+  "keys": "macbench",
+  "status": "corrected",
+  "evidence": "MaCBench text: 'in XRD pattern analysis, models perform much better at identifying the highest peak than at ranking relative peak intensities (0.74 ... versus 0.28)'. 'Powder' is not stated, and Q2 says only 'On XRD'. Changed to match Q2.",
+  "old": "models rank powder-XRD peak intensities poorly",
+  "new": "models rank XRD peak intensities poorly"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 3: digital twin scores 'agent-written' control code; linked only to Q5 evaluation gaps",
+  "keys": "q4_envtrace",
+  "status": "corrected",
+  "evidence": "EnvTrace abstract: evaluates 'LLM-generated' instrument-control code from 'Over 30 LLMs' against a 'beamline control-logic digital twin'. The code is written by LLMs, not agents. EnvTrace is in Q3 and in Q4 steering (BNL), not in Q5. The benchmark-flaw claim has no key here; Q5 cites zhu2025abc for it.",
+  "old": "A beamline digital twin already scores agent-written control code [@q4_envtrace], and benchmark design flaws can badly mis-estimate agent performance",
+  "new": "A beamline digital twin already scores LLM-written control code [@q4_envtrace] (<a href=\"#q4-steering\">Q4 steering</a>), and benchmark design flaws can badly mis-estimate agent performance [@zhu2025abc]"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 4: outside analysis disputed A-Lab; automated Rietveld not yet reliable (Q2 established)",
+  "keys": "leeman2024alabcritique",
+  "status": "confirmed",
+  "evidence": "PRX Energy abstract: 'no new materials have been discovered in that work'; 'Automated Rietveld analysis of powder x-ray diffraction data is not yet reliable'. Present in the Q2 established table (A-Lab row).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 4: fabricated calibration report; unprompted reward hacking (Q5 fabrication)",
+  "keys": "q4_apexa; huang2026rewardhacking",
+  "status": "confirmed",
+  "evidence": "APEXA abstract: 'a frontier model fabricated a complete calibration-comparison report for commands that never ran'. Huang abstract: 'spontaneous reward-hacking rate is 30.5% on open-ended research-pipeline tasks'. Both are in Q5 fabrication.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 4: a 2026 survey calls verification the field's central bottleneck",
+  "keys": "ding2026verificationgap",
+  "status": "confirmed",
+  "evidence": "arXiv 2608.05179 abstract: 'the field's central bottleneck is no longer only whether agents can complete research tasks, but whether reviewers can verify the claims those agents produce'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 4: provenance tooling for agents exists",
+  "keys": "provagent",
+  "status": "confirmed",
+  "evidence": "PROV-AGENT (IEEE eScience 2025) extends W3C PROV to agent interactions; described in Q3 hpc, layer 6.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 5: center-hosted OpenAI-compatible open-weight inference at ALCF and OLCF (Q3 models)",
+  "keys": "first; olcfinf",
+  "status": "confirmed",
+  "evidence": "Q3 models covers FIRST and OLCF serving gpt-oss-120b; the OpenAI-compatible detail is in Q3 hpc layer 1 and the implications list. Consistent.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 5: VISION local models, NERSC credentials rule, Genesis compliance, all linked to Q4 programs",
+  "keys": "q4_vision; nersccoding; whitehouse2025genesis",
+  "status": "corrected",
+  "evidence": "Each claim matches its source. NERSC docs: 'When using external AI services, do not paste credentials, tokens, or private keys into prompts.' VISION: local models for beamline operation. But Q4 programs holds only the Genesis item. VISION-local and Genesis compliance appear together in Q4 status (Facility-specific constraints: 'Security and data policy'), and NERSC guidance appears in Q3 hpc. The links are changed to match.",
+  "old": "[@whitehouse2025genesis] (<a href=\"#q4-programs\">Q4 programs</a>)",
+  "new": "[@whitehouse2025genesis] (<a href=\"#q3-hpc\">Q3 workflow and HPC</a>; <a href=\"#q4-status\">Q4 constraints</a>)"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 6: MCP to Linux Foundation body Dec 2025; July 2026 revision changed core behavior (Q3 protocols)",
+  "keys": "mcpaaif; mcpchg2607",
+  "status": "confirmed",
+  "evidence": "Q3 protocols states both (AAIF since 9 Dec 2025; 2026-07-28 revision made the protocol stateless). Confirmed in iter2.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 6: MCP servers wrap Globus/facility services; IRI API endpoints; Bluesky shared, all linked to Q4 status",
+  "keys": "mcpscihpc; iriapi; q4_bluesky",
+  "status": "corrected",
+  "evidence": "mcpscihpc abstract: 'thin MCP servers over mature services, including Globus Transfer, Compute, and Search; status APIs exposed by computing facilities'. Both mcpscihpc and iriapi are discussed in Q3 hpc (layers 3-4), not Q4 status. Q4 status covers Bluesky only. A Q3 link is added.",
+  "old": "and Bluesky is shared across facilities [@q4_bluesky] (<a href=\"#q4-status\">Q4 status</a>)",
+  "new": "and Bluesky is shared across facilities [@q4_bluesky] (<a href=\"#q3-hpc\">Q3 workflow and HPC</a>; <a href=\"#q4-status\">Q4 status</a>)"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 6: Anthropic's DOE partnership describes MCP servers for instruments",
+  "keys": "q4_anthropic_doe",
+  "status": "confirmed",
+  "evidence": "anthropic.com/news/genesis-mission-partnership: 'Model Context Protocol servers that connect Claude to scientific instruments and tools'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 7: journals and ICMJE bar AI authorship and require disclosure",
+  "keys": "nature2023groundrules; icmje2025ai",
+  "status": "confirmed",
+  "evidence": "Nature's rules apply to 'Nature, along with all Springer Nature journals'; ICMJE text as above.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 7: ICML 2026 found 795 violating reviews; desk-rejected 497 papers from reviewers involved",
+  "keys": "icml2026violations",
+  "status": "confirmed",
+  "evidence": "ICML blog: 795 reviews by 506 reviewers; 497 papers of 398 reciprocal reviewers desk-rejected. Consistent with Q5 credit.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 7: 'NIH limits applications substantially developed by AI'",
+  "keys": "nih2025originality",
+  "status": "corrected",
+  "evidence": "NOT-OD-25-132 (and Q5 credit) says NIH will not consider such applications original ideas of the applicants. The separate cap of 6 applications per PI applies to all applications, so 'limits' can be misread as a numeric cap on AI-written ones. Aligned with the Q5 wording.",
+  "old": "NIH limits applications substantially developed by AI [@nih2025originality]",
+  "new": "NIH does not count applications substantially developed by AI as original [@nih2025originality]"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 7: SNS LLM proposal rankings 'correlated only partly' with human rankings",
+  "keys": "q4_proposal_llm",
+  "status": "corrected",
+  "evidence": "Sci Rep (2026) abstract: 'the LLM rankings correlate strongly with the human rankings (Spearman rho ~ 0.2-0.8, improving to >= 0.5 after 10% outlier removal)'; 'costing over two orders of magnitude less'. 'Only partly' contradicts the authors' wording. Replaced with the numbers Q4 analysis already gives.",
+  "old": "LLM proposal rankings correlated only partly with human rankings, at far lower cost [@q4_proposal_llm]",
+  "new": "LLM proposal rankings correlated with human rankings at ρ≈0.2–0.8, at over 100× lower cost [@q4_proposal_llm]"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 8: autonomous-labs challenge names user facilities as its nucleus",
+  "keys": "q4_genesis_autolabs",
+  "status": "confirmed",
+  "evidence": "energy.gov autonomous-labs page: 'DOE's user facilities and long-standing National laboratories have the infrastructure, capabilities, and expertise to serve as the nucleus'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 8: >$5B federal commitments, 278 projects; AmSC 17 labs/28 facilities via ESnet (Q4 programs)",
+  "keys": "q4_genesis_5b; q4_lbnl_amsc",
+  "status": "confirmed",
+  "evidence": "Wording matches the iter2-corrected Q4 programs text exactly (no $5B-across-278 conflation; ESnet already links the labs and facilities).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 8: most facility agent systems are still single-campaign demonstrations (Q4 status)",
+  "keys": "(section link)",
+  "status": "confirmed",
+  "evidence": "The Q4 status table lists 8 of 14 systems as 'Demonstrated' (4 deployed, 1 in testing, 1 proposed); Q4 answer: 'steering is still mostly single-campaign demonstrations'. Consistent.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 9: 'Visiting users already rely on facility chatbots', linked only to Q5 evaluation gaps",
+  "keys": "q4_esac",
+  "status": "corrected",
+  "evidence": "SoftwareX abstract: ESAC 'serves as an interactive reference for users, thereby facilitating the use of the instrument by visiting scientists'. It gives no usage or reliance data, and it is a single chatbot. ESAC is in Q4 analysis, not Q5; the link is added.",
+  "old": "Visiting users already rely on facility chatbots [@q4_esac], and",
+  "new": "A facility chatbot already serves visiting EQ-SANS users [@q4_esac] (<a href=\"#q4-analysis\">Q4 analysis</a>), and"
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 9: illusions of understanding; narrower methods (Q5 evaluation gaps)",
+  "keys": "messeri2024illusions",
+  "status": "confirmed",
+  "evidence": "In Q5 evaluation gaps; Nature abstract as above.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q6.html",
+  "statement": "Prompt 9: LLM ideas lost their edge once executed (Q1 trends)",
+  "keys": "si2025gap",
+  "status": "confirmed",
+  "evidence": "In Q1 trend 5; arXiv 2506.20803 abstract: execution closes 'the gap between LLM and human ideas'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "83 systems; 41 L2; 13 L4",
+  "keys": "(catalog)",
+  "status": "confirmed",
+  "evidence": "report/catalog.json: 83 entries; autonomy counts L2=41, L3=21, L4=13, L1=8. Matches Q1.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "L4 systems cluster where results can be checked automatically (ML papers, code, proofs) [lu2026aiscientist; novikov2025alphaevolve]",
+  "keys": "lu2026aiscientist; novikov2025alphaevolve",
+  "status": "corrected",
+  "evidence": "catalog.json lists AlphaEvolve as 'L3 Closed-loop', so it cannot illustrate L4. Q1 says the 13 L4 systems 'sit where the \"experiment\" is code, existing data or a proof: machine-learning papers (The AI Scientist), data-driven reports (Kosmos, data-to-paper) and mathematics (Aletheia)'. Data-driven reports, 6 of the 13, are not automatically checkable. Rewritten to match Q1.",
+  "old": "The L4 systems cluster where results can be checked automatically, such as machine-learning papers, code and proofs [@lu2026aiscientist; @novikov2025alphaevolve]",
+  "new": "The L4 systems sit where the \"experiment\" is code, existing data or a proof, such as machine-learning papers, data-driven reports and mathematics [@lu2026aiscientist; @mitchener2025kosmos; @feng2026aletheia]"
+ },
+ {
+  "file": "summary.html",
+  "statement": "2026: Co-Scientist, Robin, AI Scientist, OpenScholar in Nature; Biomni in Science",
+  "keys": "gottweis2026coscientist; ghareeb2026robin; lu2026aiscientist; asai2026openscholar; huang2026biomni",
+  "status": "confirmed",
+  "evidence": "OpenAlex publication dates: Co-Scientist 2026-05-19, Robin 2026-05-19, AI Scientist 2026-03-25, OpenScholar 2026-02-04 (all Nature), Biomni 2026-07-09 (Science). Matches Q1 trend 2.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "Wet-lab results still in vitro or organoid; independent replication rare",
+  "keys": "(Q2 section)",
+  "status": "confirmed",
+  "evidence": "Co-Scientist abstract: AML candidates 'validated through in vitro experiments' (organoids via liverfibrosis in Q2); Robin: 'confirmed in vitro efficacy for ripasudil and KL001'; Biomni: wet-lab case studies (protein stability, cloning). Q2 caveats: partner labs co-authored, no outside replication. Consistent.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "Top models exceed PhD-expert accuracy on graduate-level science questions",
+  "keys": "gpqa; epoch_hub",
+  "status": "confirmed",
+  "evidence": "Q2: best 95.8% on GPQA Diamond vs experts about 65-81% (iter2-corrected). Consistent.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "Agents 'replicate far fewer papers than human experts'",
+  "keys": "paperbench",
+  "status": "corrected",
+  "evidence": "PaperBench abstract: best agent 'average replication score of 21.0%' (rubric-based partial credit), and 'models do not yet outperform the human baseline' (ML PhDs 41.4% on a subset). It measures a replication score, not a count of papers replicated.",
+  "old": "agents still replicate far fewer papers than human experts",
+  "new": "agents still score well below human experts at replicating papers"
+ },
+ {
+  "file": "summary.html",
+  "statement": "Agents rarely finish complete research experiments",
+  "keys": "expbench",
+  "status": "confirmed",
+  "evidence": "EXP-Bench abstract: 'the success rate for complete, executable experiments was a mere 0.5%'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "Peer-reviewed 2026 work: SSRL crystal alignment, ALS multistage experiments, SNS data to validated structure; each with human checkpoint or tool guard",
+  "keys": "q4_xray_scientist; q4_als_agentic; q4_osprey; q4_neudiff",
+  "status": "confirmed",
+  "evidence": "Crossref: NMI July 2026; PRR published online 2026-01-16 (record created 2025-12-05); J Appl Cryst 2026. Safeguards: human relay (SSRL), plan-first human review and bounded tool access (ALS/Osprey), allowlisted tools and fail-closed gates (NeuDiff). Matches Q4.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "Infrastructure converging: MCP, open-weight models at DOE centers, Globus/Parsl/IRI",
+  "keys": "mcpaaif; first; olcfinf; mcpscihpc",
+  "status": "confirmed",
+  "evidence": "Matches Q3 (protocols, models, hpc layers 1-4).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "summary.html",
+  "statement": "Main risks: fabricated references/reports, reward hacking, weak evaluation, prompt injection; Genesis sets DOE policy frame",
+  "keys": "russinovich2026phantom; huang2026rewardhacking; q4_apexa; whitehouse2025genesis",
+  "status": "confirmed",
+  "evidence": "Risks match Q5 sections. 'Genesis sets the DOE policy frame' is an interpretation: Genesis is discussed in Q4 programs (and Q6 prompts 5 and 8), and Q4 marks its FASST-umbrella reading as 'Our inference'. Optional: add a Q4 link; no factual conflict.",
+  "old": "",
+  "new": ""
+ }
+]

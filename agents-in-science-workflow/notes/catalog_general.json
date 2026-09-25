@@ -1,0 +1,739 @@
+[
+ {
+  "name": "PaperQA2",
+  "organization": "FutureHouse",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Preprint",
+  "ref_key": "skarlinski2024paperqa2",
+  "one_line": "Literature-search agent that matched or exceeded subject experts on three literature tasks; found 2.34 contradictions per biology paper, 70% expert-validated."
+ },
+ {
+  "name": "OpenScholar",
+  "organization": "University of Washington / Ai2",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "asai2026openscholar",
+  "one_line": "Retrieval-augmented LM over 45M open-access papers; citation accuracy on par with experts; experts preferred OpenScholar-8B answers over expert-written ones 51% of the time."
+ },
+ {
+  "name": "STORM",
+  "organization": "Stanford University",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Writing & review"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "shao2024storm",
+  "one_line": "Researches a topic via multi-perspective question asking, then writes cited Wikipedia-like articles; 25% absolute gain in judged organization over a retrieval baseline."
+ },
+ {
+  "name": "Ai2 Scholar QA",
+  "organization": "Ai2",
+  "year": 2025,
+  "stage": "Literature & ideation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "singh2025scholarqa",
+  "one_line": "Free, open-source literature-synthesis app producing organized reports with attribution; outperformed competing systems on a recent scientific QA benchmark."
+ },
+ {
+  "name": "Ai2 Asta agents + AstaBench",
+  "organization": "Ai2",
+  "year": 2025,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "bragg2025astabench",
+  "one_line": "Science-agent ecosystem with a 2,400+ problem benchmark; evaluation of 57 agents concludes AI remains far from solving science research assistance."
+ },
+ {
+  "name": "FutureHouse Platform (Crow, Falcon, Owl, Phoenix)",
+  "organization": "FutureHouse",
+  "year": 2025,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Experiment design & self-driving labs"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Product/vendor report",
+  "ref_key": "futurehouse2025platform",
+  "one_line": "Web platform of literature agents plus a ChemCrow-based chemistry planner; vendor claims better precision than PhD-level researchers on literature search."
+ },
+ {
+  "name": "Gemini Deep Research",
+  "organization": "Google",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Product/vendor report",
+  "ref_key": "google2024deepresearch",
+  "one_line": "Consumer deep-research agent that browses the web on the user's behalf and returns a cited, exportable report; launched December 2024."
+ },
+ {
+  "name": "ResearchAgent",
+  "organization": "KAIST / Microsoft Research",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Hypothesis generation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "baek2025researchagent",
+  "one_line": "Proposes problems, methods and experiment designs from a core paper plus academic graph, iteratively refined by LLM reviewing agents."
+ },
+ {
+  "name": "LLM ideation agent vs. 100+ NLP researchers",
+  "organization": "Stanford University",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Hypothesis generation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "si2025ideas",
+  "one_line": "Blinded human study: agent ideas judged more novel (p<0.05) than experts' ideas but slightly weaker on feasibility."
+ },
+ {
+  "name": "Co-Scientist",
+  "organization": "Google",
+  "year": 2025,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed + independent validation",
+  "ref_key": "gottweis2026coscientist",
+  "one_line": "Gemini multi-agent generate-critique-refine tournament; AML drug-repurposing candidates validated in vitro; separately matched an external lab's unpublished gene-transfer mechanism."
+ },
+ {
+  "name": "SciAgents",
+  "organization": "MIT",
+  "year": 2024,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "ghafarollahi2024sciagents",
+  "one_line": "Multi-agent LLMs reason over ontological knowledge graphs to generate, critique and refine research hypotheses for bio-inspired materials."
+ },
+ {
+  "name": "MOOSE-Chem",
+  "organization": "Nanyang Technological University / Shanghai AI Laboratory",
+  "year": 2024,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "yang2025moosechem",
+  "one_line": "Inspiration-retrieval, composition and ranking agents rediscovered many hypotheses from 51 high-impact 2024 chemistry papers using a pre-2024 LLM."
+ },
+ {
+  "name": "POPPER",
+  "organization": "Stanford University",
+  "year": 2025,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "huang2025popper",
+  "one_line": "Agents design and run falsification tests with Type-I error control; matched human scientists validating biological hypotheses in one-tenth the time."
+ },
+ {
+  "name": "SciMON",
+  "organization": "UIUC / Ai2",
+  "year": 2023,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "wang2024scimon",
+  "one_line": "Retrieves literature inspirations and iteratively revises generated research ideas to increase novelty relative to prior work."
+ },
+ {
+  "name": "Robin",
+  "organization": "FutureHouse",
+  "year": 2025,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Literature & ideation",
+   "Experiment design & self-driving labs",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "ghareeb2026robin",
+  "one_line": "Lab-in-the-loop multi-agent system; proposed ripasudil for dry macular degeneration and analyzed follow-up RNA-seq; humans executed the wet-lab experiments."
+ },
+ {
+  "name": "FunSearch",
+  "organization": "Google DeepMind",
+  "year": 2023,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "romeraparedes2023funsearch",
+  "one_line": "LLM paired with an automated evaluator in an evolutionary program search; found cap-set constructions beyond the best known and better bin-packing heuristics."
+ },
+ {
+  "name": "Aletheia",
+  "organization": "Google DeepMind",
+  "year": 2026,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Writing & review"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Preprint",
+  "ref_key": "feng2026aletheia",
+  "one_line": "Gemini Deep Think math agent that generates, verifies and revises proofs; one paper produced without human intervention; four open Erdős problems solved autonomously."
+ },
+ {
+  "name": "DeepScientist",
+  "organization": "Westlake University",
+  "year": 2025,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "weng2026deepscientist",
+  "one_line": "Month-long hypothesize-verify-analyze loop; ~5,000 ideas, ~1,100 tested, beat human state of the art on three AI tasks (183.7%, 1.9%, 7.9%)."
+ },
+ {
+  "name": "InternAgent (NovelSeek)",
+  "organization": "Shanghai AI Laboratory",
+  "year": 2025,
+  "stage": "Hypothesis generation",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Preprint",
+  "ref_key": "internagent2025",
+  "one_line": "Closed-loop hypothesis-to-verification framework across 12 tasks; e.g., reaction-yield prediction improved from 27.6% to 35.4% in 12 hours."
+ },
+ {
+  "name": "Coscientist",
+  "organization": "Carnegie Mellon University",
+  "year": 2023,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "boiko2023coscientist",
+  "one_line": "GPT-4 agent with search, code and lab-automation tools that designed, planned and ran experiments, including optimizing palladium-catalysed cross-couplings."
+ },
+ {
+  "name": "ChemCrow",
+  "organization": "EPFL / University of Rochester / IBM Research",
+  "year": 2023,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "bran2024chemcrow",
+  "one_line": "GPT-4 agent with 18 expert-designed chemistry tools; autonomously planned and executed syntheses of an insect repellent and three organocatalysts."
+ },
+ {
+  "name": "A-Lab",
+  "organization": "Lawrence Berkeley National Laboratory",
+  "year": 2023,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "szymanski2023alab",
+  "one_line": "Robotic solid-state synthesis with computation, literature-trained recipe models and active learning; reported 41 of 58 targets in 17 days; 2026 correction confirms 36."
+ },
+ {
+  "name": "Mobile-robot synthesis lab",
+  "organization": "University of Liverpool",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "dai2024mobilerobots",
+  "one_line": "Mobile robots operate shared synthesis, UPLC-MS and benchtop NMR equipment; a heuristic decision-maker picks and re-checks hits in exploratory chemistry."
+ },
+ {
+  "name": "CRISPR-GPT",
+  "organization": "Stanford University / Princeton University",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "qu2025crisprgpt",
+  "one_line": "Gene-editing design and analysis agent; guided knockout of four genes (Cas12a) and activation of two genes (dCas9) in human cell lines."
+ },
+ {
+  "name": "ORGANA",
+  "organization": "University of Toronto",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "darvish2025organa",
+  "one_line": "LLM-interfaced robotic assistant for solubility, pH, recrystallization and electrochemistry; user study reported 80.3% average time saved."
+ },
+ {
+  "name": "BioDiscoveryAgent",
+  "organization": "Stanford University / Arc Institute",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Hypothesis generation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "roohani2025biodiscoveryagent",
+  "one_line": "Iterative design of genetic perturbation screens; 21% better hit prediction than Bayesian-optimization baselines across six datasets."
+ },
+ {
+  "name": "ChemAgents",
+  "organization": "University of Science and Technology of China",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Literature & ideation",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "song2025chemagents",
+  "one_line": "On-board Llama-3.1-70B hierarchical agents (literature, design, computation, robot) ran seven robotic chemistry tasks with minimal human intervention."
+ },
+ {
+  "name": "CRESt",
+  "organization": "MIT",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "zhang2025crest",
+  "one_line": "Multimodal-model-guided Bayesian optimization with robotics; 900+ chemistries and 3,500 tests in 3 months found a catalyst with 9.3-fold cost-specific gain."
+ },
+ {
+  "name": "k-agents",
+  "organization": "University of Oxford / University of Toronto",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "cao2025kagents",
+  "one_line": "LLM agents encoding lab knowledge ran a superconducting quantum processor for hours, producing entangled states at the level of human scientists."
+ },
+ {
+  "name": "AutoLabs",
+  "organization": "Pacific Northwest National Laboratory",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "panapitiya2026autolabs",
+  "one_line": "Self-correcting multi-agent system turning natural-language goals into liquid-handler protocols; F1 > 0.89 versus expert procedures on multi-plate syntheses."
+ },
+ {
+  "name": "MARS",
+  "organization": "Shenzhen Institute of Advanced Technology, CAS",
+  "year": 2026,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Literature & ideation",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "shi2026mars",
+  "one_line": "19 LLM agents and 16 domain tools coordinate robotic synthesis, characterization and analysis for perovskite nanocrystal materials."
+ },
+ {
+  "name": "Virtual Lab",
+  "organization": "Stanford University / Chan Zuckerberg Biohub",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Hypothesis generation",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "swanson2025virtuallab",
+  "one_line": "LLM 'PI' agent leads specialist agents to build a nanobody design pipeline; 92 designed, two with improved binding to recent SARS-CoV-2 variants."
+ },
+ {
+  "name": "Data Interpreter",
+  "organization": "DeepWisdom / MetaGPT",
+  "year": 2024,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "hong2025datainterpreter",
+  "one_line": "Hierarchical task-graph planning with verified code generation for end-to-end data science; InfiAgent-DABench accuracy rose from 75.9% to 94.9%."
+ },
+ {
+  "name": "DS-Agent",
+  "organization": "Jilin University",
+  "year": 2024,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "guo2024dsagent",
+  "one_line": "Case-based reasoning over Kaggle solutions to build and train ML models; 100% development-stage success with GPT-4 at about $1.60 per run."
+ },
+ {
+  "name": "MDCrow",
+  "organization": "FutureHouse / University of Rochester",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "campbell2026mdcrow",
+  "one_line": "Agent using 40+ expert-designed tools to set up, run and analyze molecular dynamics simulations; evaluated on 25 tasks of varying difficulty."
+ },
+ {
+  "name": "ChemGraph",
+  "organization": "Argonne National Laboratory",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "pham2026chemgraph",
+  "one_line": "Agentic computational-chemistry workflows from ML potentials to DFT; on 13 tasks, multi-agent decomposition let small LLMs match GPT-4o in some cases."
+ },
+ {
+  "name": "El Agente Q",
+  "organization": "University of Toronto",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "zou2025elagente",
+  "one_line": "Hierarchical-memory multi-agent system that writes, submits and debugs quantum-chemistry workflows from prompts; >87% average task success on course exercises."
+ },
+ {
+  "name": "LLaMP",
+  "organization": "UC Berkeley / Lawrence Berkeley National Laboratory",
+  "year": 2024,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "chiang2025llamp",
+  "one_line": "Hierarchical ReAct agents query Materials Project data and run atomistic simulations, reducing LLM errors on bulk moduli, band gaps and formation energies."
+ },
+ {
+  "name": "AtomAgents",
+  "organization": "MIT",
+  "year": 2024,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Hypothesis generation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "ghafarollahi2025atomagents",
+  "one_line": "Physics-aware multimodal multi-agent system that retrieves knowledge, runs atomistic simulations and analyzes results to design alloys."
+ },
+ {
+  "name": "AlphaEvolve",
+  "organization": "Google DeepMind",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Hypothesis generation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Preprint",
+  "ref_key": "novikov2025alphaevolve",
+  "one_line": "Evolutionary Gemini coding agent with automated evaluators; found 4x4 complex matrix multiplication using 48 scalar multiplications, first improvement in 56 years."
+ },
+ {
+  "name": "Empirical Research Assistance (ERA)",
+  "organization": "Google",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Preprint",
+  "ref_key": "aygun2025era",
+  "one_line": "LLM plus tree search writes score-maximizing scientific software; 40 single-cell methods beat top leaderboard entries; 14 COVID-19 models beat the CDC ensemble."
+ },
+ {
+  "name": "Kosmos",
+  "organization": "Edison Scientific (FutureHouse spinout)",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Literature & ideation",
+   "Hypothesis generation",
+   "Writing & review"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Preprint",
+  "ref_key": "mitchener2025kosmos",
+  "one_line": "Up to 12-hour runs of data-analysis and literature agents sharing a world model; independent scientists judged 79.4% of report statements accurate."
+ },
+ {
+  "name": "Biomni",
+  "organization": "Stanford University",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Experiment design & self-driving labs"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "huang2026biomni",
+  "one_line": "General biomedical agent whose tool environment is mined from thousands of papers across 25 domains; composes code workflows and wet-lab protocols."
+ },
+ {
+  "name": "Denario",
+  "organization": "Flatiron Institute / University of Cambridge et al.",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Literature & ideation",
+   "Hypothesis generation",
+   "Writing & review"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Preprint",
+  "ref_key": "villaescusanavarro2025denario",
+  "one_line": "Modular multi-agent research assistant from idea to drafted and reviewed paper; showcased expert-scored AI-generated papers across many disciplines, including astrophysics."
+ },
+ {
+  "name": "AutoResearchClaw",
+  "organization": "AIMING Lab, UNC Chapel Hill et al.",
+  "year": 2026,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Hypothesis generation",
+   "Writing & review"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Preprint",
+  "ref_key": "liu2026autoresearchclaw",
+  "one_line": "Multi-agent research pipeline with self-healing execution and seven human-intervention modes; targeted human input beat both full autonomy and step-by-step oversight."
+ },
+ {
+  "name": "Agent Laboratory",
+  "organization": "AMD / Johns Hopkins University",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Literature & ideation",
+   "Writing & review"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "schmidgall2025agentlab",
+  "one_line": "Takes a human idea through literature review, experiments and report writing; 84% cheaper than prior autonomous methods; human feedback improved quality."
+ },
+ {
+  "name": "The AI Scientist (v1, v2)",
+  "organization": "Sakana AI / University of Oxford / UBC",
+  "year": 2024,
+  "stage": "Writing & review",
+  "spans": [
+   "Literature & ideation",
+   "Hypothesis generation",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "lu2026aiscientist",
+  "one_line": "Generates ideas, code, experiments, full manuscript and self-review; one paper passed first-round review at an ICLR 2025 workshop (70% acceptance rate)."
+ },
+ {
+  "name": "AgentRxiv",
+  "organization": "Johns Hopkins University / ETH Zurich",
+  "year": 2025,
+  "stage": "Writing & review",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Preprint",
+  "ref_key": "schmidgall2025agentrxiv",
+  "one_line": "Shared preprint server where agent labs upload and build on each other's reports; collaborating labs gained 13.7% relative on MATH-500."
+ },
+ {
+  "name": "CycleResearcher / CycleReviewer",
+  "organization": "Westlake University",
+  "year": 2024,
+  "stage": "Writing & review",
+  "spans": [
+   "Hypothesis generation"
+  ],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "weng2025cycleresearcher",
+  "one_line": "Open LLMs trained with automated-reviewer feedback draft full papers whose experimental results are fabricated, not run; CycleReviewer cut score error 26.89% versus individual reviewers."
+ },
+ {
+  "name": "DeepReview",
+  "organization": "Westlake University",
+  "year": 2025,
+  "stage": "Writing & review",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "zhu2025deepreview",
+  "one_line": "Multi-stage reviewer with literature retrieval and evidence-based argumentation; DeepReviewer-14B outperforms CycleReviewer-70B while using fewer tokens."
+ },
+ {
+  "name": "AgentReview",
+  "organization": "Georgia Tech / William & Mary et al.",
+  "year": 2024,
+  "stage": "Writing & review",
+  "spans": [],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "jin2024agentreview",
+  "one_line": "LLM-agent simulation of reviewers, authors and area chairs; reviewer biases alone produced 37.1% variation in paper decisions."
+ },
+ {
+  "name": "GPT-4 paper feedback study",
+  "organization": "Stanford University",
+  "year": 2023,
+  "stage": "Writing & review",
+  "spans": [],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "liang2024feedback",
+  "one_line": "GPT-4 comments on full papers overlapped with human reviewers as much as reviewers overlap each other; 57.4% of 308 researchers found it helpful."
+ },
+ {
+  "name": "Review Feedback Agent (ICLR 2025)",
+  "organization": "Stanford University / ICLR",
+  "year": 2025,
+  "stage": "Writing & review",
+  "spans": [],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "thakkar2026reviewfeedback",
+  "one_line": "Randomized trial on 20,000+ ICLR 2025 reviews; 27% of reviewers given LLM feedback updated reviews, incorporating 12,000+ suggestions."
+ },
+ {
+  "name": "data-to-paper",
+  "organization": "Technion",
+  "year": 2024,
+  "stage": "Writing & review",
+  "spans": [
+   "Hypothesis generation",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "ifargan2025datatopaper",
+  "one_line": "Backward-traceable pipeline from annotated data to full paper; simple-goal autopilot runs recapitulated published findings in about 80-90% of cases."
+ },
+ {
+  "name": "Zochi",
+  "organization": "Intology",
+  "year": 2025,
+  "stage": "Writing & review",
+  "spans": [
+   "Hypothesis generation",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Product/vendor report",
+  "ref_key": "intology2025zochi",
+  "one_line": "Commercial autonomous research agent; vendor reports a Zochi-generated paper was accepted to the ACL 2025 main conference."
+ },
+ {
+  "name": "Stanford Agentic Reviewer",
+  "organization": "Stanford University",
+  "year": 2025,
+  "stage": "Writing & review",
+  "spans": [
+   "Literature & ideation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Lab/project page",
+  "ref_key": "stanford2025agenticreviewer",
+  "one_line": "Free web reviewer grounding feedback in arXiv searches; Spearman correlation with a human reviewer 0.42 versus 0.41 human-human on ICLR 2025 papers."
+ },
+ {
+  "name": "Prism",
+  "organization": "OpenAI",
+  "year": 2026,
+  "stage": "Writing & review",
+  "spans": [],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Product/vendor report",
+  "ref_key": "openai2026prism",
+  "one_line": "Free AI-native LaTeX writing and collaboration workspace with an OpenAI model working inside the document context; launched January 2026."
+ },
+ {
+  "name": "AI-Researcher",
+  "organization": "University of Hong Kong",
+  "year": 2025,
+  "stage": "Writing & review",
+  "spans": [
+   "Literature & ideation",
+   "Hypothesis generation",
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L4 End-to-end",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "tang2025airesearcher",
+  "one_line": "Pipeline from literature review and hypotheses to implementation and manuscript; introduces Scientist-Bench; authors report near-human paper quality."
+ }
+]

@@ -1,0 +1,125 @@
+<section class="question" id="q4">
+<h2>Q4 · Facilities: agents at DOE x-ray and neutron user facilities and national labs</h2>
+<p class="answer"><strong>Answer.</strong> LLM agents at DOE facilities have moved from documentation assistants and first instrument-control prototypes (2023–24) to supervised control of real beamlines, accelerators and microscopes, peer-reviewed in 2025–26, but steering is still mostly single-campaign demonstrations; deployed systems are mainly knowledge assistants, data-reduction agents and one accelerator control-room framework (Osprey, at the ALS) [@q4_xray_scientist; @q4_vision; @q4_osprey; @q4_apexa; @q4_aps_rag].</p>
+
+<h3 id="q4-steering">Beamline, instrument and accelerator steering</h3>
+<p>This subsection covers agents that steer beamlines, instruments or accelerators, grouped by lab. Most agents that reduce or analyze data, or answer staff and user questions, are listed under <a href="#q4-analysis">Facility data analysis and knowledge assistants</a>; that is where the SNS agents, and APEXA, APS-RAG and PEAR at the APS, appear.</p>
+
+<h4>SLAC</h4>
+<ul>
+<li><strong>SSRL.</strong> An LLM agent aligned a single crystal on the BL17-2 six-circle diffractometer. MCP tools wrap SPEC commands; the agent found reference reflections and the orientation matrix. It was developed on a virtual diffractometer, where Claude Sonnet 4 and Gemini 2.5 Flash were benchmarked; Claude Opus 4 ran on the real beamline. For safety, a human relayed each command without modification [@q4_xray_scientist].</li>
+<li><strong>LCLS.</strong> This survey found no public LLM-agent paper on LCLS experiment control. The LCLS items we found are physics-guided Bayesian optimization (not an LLM) that aligned a 12-parameter split-and-delay optic in wave-optics simulations checked against measured data [@q4_lcls_bo], and a computational cognitive model of how operators, analysts and managers interact during LCLS instrument operations, which stresses that LCLS beam time is "extremely valuable and limited" [@q4_lcls_cognitive].</li>
+<li><strong>Accelerator operations.</strong> ChatEED answers operator questions from electronic logbooks and wikis [@q4_chateed].</li>
+</ul>
+
+<h4>BNL (NSLS-II, CFN)</h4>
+<ul>
+<li>VISION turns voice or text into Bluesky code at the 11-BM CMS beamline. It ran the first voice-controlled x-ray scattering experiment. Beamline models run locally; cloud GPT-4o serves other functions [@q4_vision].</li>
+<li>EnvTrace scores control code from more than 30 LLMs against a beamline digital twin, so code can be checked before a live experiment [@q4_envtrace].</li>
+</ul>
+
+<h4>Argonne (APS, CNM)</h4>
+<ul>
+<li>CALMS combines retrieval over facility documentation with instrument tool calls [@q4_calms].</li>
+<li>Human-in-the-loop agents operate an x-ray nanoprobe beamline and a robotic materials station, and improve with feedback [@q4_learn_on_job].</li>
+<li>Vision-language agents (EAA) automate zone-plate focusing and feature search at an APS imaging beamline [@q4_eaa].</li>
+<li>On an MCP-compatible atomic layer deposition reactor, only recent models (o1, o3, GPT-5, Claude Opus 4) performed well on process-discovery tasks [@q4_ald_agent].</li>
+</ul>
+
+<h4>LBNL (ALS, Molecular Foundry, A-Lab)</h4>
+<ul>
+<li>An agent ran multistage machine-physics experiments on the ALS accelerator. It cut preparation time about 100× within operator safety constraints [@q4_als_agentic].</li>
+<li>Osprey, the framework behind it, requires human review of a complete plan before any hardware action. It runs in production across hundreds of thousands of ALS control channels [@q4_osprey].</li>
+<li>Semantic channel finding maps natural-language intent to control signals; proof-of-concepts ran at four facilities [@q4_channel_finding].</li>
+<li>Lightfall, a beamline control platform with a built-in agent, is in testing at COSMIC-Scattering (preprint) [@q4_lightfall].</li>
+<li>TEM Agent lets a commercial LLM control microscope subsystems, data management and HPC through MCP [@q4_tem_agent].</li>
+<li>In the air-free A-Lab, LLM agents proposed 263 of 352 syntheses; researchers designed the rest (preprint) [@q4_alab_gpss].</li>
+</ul>
+
+<h4>ORNL (CNMS, SNS)</h4>
+<ul>
+<li>At CNMS, GPT-4 wrote scanning-probe microscope code but struggled with in-depth experiment design [@q4_liu_spm].</li>
+<li>INTERSECT provides federated microservices for multi-facility autonomous experiments [@q4_intersect_toolkit].</li>
+</ul>
+
+<h4>Other accelerators and international facilities</h4>
+<ul>
+<li>Retrieval-augmented e-log search was demonstrated at Fermilab, JLab, LBNL and SLAC [@q4_elog_accel].</li>
+<li>At DESY, an LLM tuned a simulated accelerator subsystem (an ARES linac beam-tuning task) from an operator prompt, as a proof of principle [@q4_kaiser_sciadv].</li>
+<li>CSNS (China) runs a Rietveld refinement agent for external users [@q4_rongzai]. We found no comparable deployed system from ESRF, Diamond, European XFEL or PSI. European XFEL has reported two prototypes of an agent that retrieves facility knowledge and writes analysis code in its HPC environment, evaluated with facility experts [@q4_euxfel_agent].</li>
+</ul>
+
+<h3 id="q4-precursors">Pre-LLM autonomous-experiment precursors</h3>
+<p>These closed loops use Bayesian or machine-learning methods, not language models. Most predate the agents above.</p>
+<ol>
+<li>Gaussian-process autonomous x-ray scattering, the gpCAM lineage [@q4_kriging_2019].</li>
+<li>CAMEO: closed-loop Bayesian active learning at SSRL found a new Ge-Sb-Te phase-change material [@q4_cameo].</li>
+<li>ANDiE: autonomous neutron diffraction determined Néel temperatures 5-fold more efficiently [@q4_andie].</li>
+<li>Argonne FAST: autonomous scanning microscopy needed under 25% of the sample [@q4_kandel_fast].</li>
+<li>Bluesky-hosted agents coordinated multi-beamline measurements at NSLS-II [@q4_maffettone_multimodal; @q4_corrao_multibeamline].</li>
+<li>LCLS physics-guided Bayesian optimization of a 12-parameter split-and-delay optic, tested in simulation [@q4_lcls_bo]; ORNL edge-to-exascale steering at SNS, still a proof of concept [@q4_ornl_edge_exascale].</li>
+</ol>
+
+<h3 id="q4-analysis">Facility data analysis and knowledge assistants</h3>
+<ul>
+<li><strong>NeuDiff Agent (SNS TOPAZ)</strong> goes from raw data to a validated CIF (crystallographic information file). Its safeguards are allowlisted tools, fail-closed gates and full provenance. Processing time fell from 435 min (manual) to 86.5–94.4 min, with no level A or B checkCIF alerts (the most serious validation warnings) [@q4_neudiff].</li>
+<li><strong>ORNL neutron small-angle and diffraction tools.</strong> SasAgent drives SasView [@q4_sasagent]. EQSANS-CLI lets an external agent run reductions from Slack (preprint) [@q4_eqsans_cli]. VULCAN's reduction pipeline was written with an AI coding agent [@q4_vulcan_reduction].</li>
+<li><strong>APEXA (APS)</strong> is a deployed calibration and integration agent with 61 tools (preprint). A frontier model fabricated a calibration report for commands that never ran. Against a simulated IOC, motor-control violations were 0/200 with its deterministic guard and 15/200 with a safety prompt alone [@q4_apexa].</li>
+<li><strong>Other analysis agents.</strong> PEAR uses multiple agents for ptychography [@q4_pear]. Rongzai (CSNS) runs GSAS-II from a natural-language task to a report [@q4_rongzai].</li>
+<li><strong>Knowledge and user-program assistants.</strong> ESAC is a chatbot for visiting EQ-SANS users [@q4_esac]. APS-RAG, deployed for APS staff, reached 70.3% strict recall versus 63.8% for a BM25 baseline [@q4_aps_rag]. For SNS proposals, LLM rankings correlated with human rankings at ρ≈0.2–0.8, at over 100× lower cost [@q4_proposal_llm].</li>
+</ul>
+
+<h3 id="q4-programs">DOE programs and policy</h3>
+<ul>
+<li><strong>Genesis Mission.</strong> The executive order of Nov 24, 2025 creates a platform that explicitly includes "AI agents" and autonomous experimentation. It sets milestones at 60, 90, 120, 240 and 270 days; the 240-day step reviews robotic laboratories. It requires classification, cybersecurity and export-control compliance [@whitehouse2025genesis].</li>
+<li><strong>Genesis follow-up.</strong> DOE named 26 challenges, including "Enhancing Particle Accelerators for Discovery" and "Achieving AI-Driven Autonomous Laboratories" [@q4_genesis_challenges]. The autonomous-labs challenge names DOE user facilities and national laboratories as its "nucleus" [@q4_genesis_autolabs]. DOE signed agreements with 24 organizations, among them Anthropic, AWS, Google, NVIDIA and OpenAI [@q4_genesis_mous]. In July 2026 the White House announced more than $5B in federal commitments from more than 15 agencies, and DOE selected 278 projects [@q4_genesis_5b]. DOE also announced more than $800M from partners [@q4_genesis_800m]. An Office of Science advisory subcommittee's high-performance-magnets milestones include connecting autonomous labs to user facilities [@q4_scac_genesis].</li>
+<li><strong>American Science Cloud (AmSC).</strong> Public Law 119-21, Sec. 50404 ("Transformational artificial intelligence models") defines the American Science Cloud and appropriates $150M, through Sept 30, 2026, for curating DOE data and seeding science AI models to be shared through it [@q4_pl119_21]. An ASCR lab call builds on IRI and includes API access to user facilities and instruments [@q4_amsc_lab25_3555]. AmSC aims to unify access to the 17 DOE labs and 28 user facilities that ESnet already links, adding a common identity layer and shared service interfaces [@q4_lbnl_amsc]. The multi-lab SYNAPS-I project (LBNL-led, with Argonne, BNL, ORNL and SLAC) targets real-time analysis at light and neutron sources [@q4_lbnl_amsc; @q4_synaps_release].</li>
+<li><strong>Funding calls.</strong> A DOE package of more than $320M includes 14 robotics and autonomous-experiment projects [@q4_doe_ai_investments]. A robotics and automation testbed call is about $30M [@q4_lab26_3601].</li>
+<li><strong>FASST.</strong> DOE released a roadmap in 2024 for FASST (Frontiers in Artificial Intelligence for Science, Security and Technology) [@q4_fasst_roadmap]. Our inference, not a DOE statement: Genesis now plays FASST's umbrella role.</li>
+<li><strong>1,000 Scientist AI Jam (Feb 28, 2025).</strong> More than 1,400 scientists at nine labs took part; SLAC was not one of them [@q4_llnl_aijam].</li>
+<li><strong>Lab–company partnerships.</strong> OpenAI models run on LANL's Venado supercomputer [@q4_lanl_openai; @q4_nnsa_venado]. Anthropic's DOE partnership plans MCP servers that connect Claude to scientific instruments [@q4_anthropic_doe]. DOE announced NVIDIA-based Solstice and Equinox at Argonne [@q4_doe_nvidia_oracle] and AMD-based Lux and Discovery at ORNL [@q4_doe_amd_lux].</li>
+<li><strong>Integrated Research Infrastructure (IRI).</strong> A 2023 blueprint lays out how to link experimental facilities, computing and data [@q4_iri_aba].</li>
+</ul>
+
+<h3 id="q4-status">Status, integration points and facility constraints</h3>
+<h4>Facility agent systems</h4>
+<table class="data">
+<thead>
+<tr><th>System</th><th>Facility/lab</th><th>Technique</th><th>What the agent controls or analyzes</th><th>Status</th><th>Evidence</th></tr>
+</thead>
+<tbody>
+<tr><td>AI X-ray scientist</td><td>SLAC SSRL</td><td>Crystal diffraction</td><td>Diffractometer motors, detector</td><td>Demonstrated</td><td>Peer-reviewed [@q4_xray_scientist]</td></tr>
+<tr><td>VISION</td><td>BNL NSLS-II</td><td>X-ray scattering</td><td>Bluesky motors, detector</td><td>Demonstrated</td><td>Peer-reviewed [@q4_vision]</td></tr>
+<tr><td>Learn-on-the-job agents</td><td>Argonne APS/CNM</td><td>Nanoprobe, robotics</td><td>Multi-task workflows</td><td>Demonstrated</td><td>Peer-reviewed [@q4_learn_on_job]</td></tr>
+<tr><td>EAA</td><td>Argonne APS</td><td>X-ray imaging</td><td>Focusing, feature search</td><td>Demonstrated</td><td>Peer-reviewed [@q4_eaa]</td></tr>
+<tr><td>ALS machine-physics agent</td><td>LBNL ALS</td><td>Accelerator</td><td>Plans multistage machine-physics experiments; archive retrieval, control-channel resolution</td><td>Demonstrated</td><td>Peer-reviewed [@q4_als_agentic]</td></tr>
+<tr><td>Osprey framework</td><td>LBNL ALS</td><td>Accelerator control room</td><td>Plan-first orchestration of control channels, with human review before hardware actions</td><td>Deployed</td><td>Peer-reviewed [@q4_osprey]</td></tr>
+<tr><td>Lightfall</td><td>LBNL ALS</td><td>Coherent scattering</td><td>Devices, GP scans</td><td>In testing</td><td>Preprint [@q4_lightfall]</td></tr>
+<tr><td>TEM Agent</td><td>LBNL Molecular Foundry</td><td>TEM</td><td>Microscope, HPC</td><td>Demonstrated</td><td>Peer-reviewed [@q4_tem_agent]</td></tr>
+<tr><td>NeuDiff Agent</td><td>ORNL SNS</td><td>Neutron crystallography</td><td>Reduction to CIF</td><td>Demonstrated</td><td>Peer-reviewed [@q4_neudiff]</td></tr>
+<tr><td>SasAgent / EQSANS-CLI</td><td>ORNL; SNS EQ-SANS</td><td>SANS</td><td>Fitting, reduction</td><td>Demonstrated</td><td>Peer-reviewed; preprint [@q4_sasagent; @q4_eqsans_cli]</td></tr>
+<tr><td>APEXA</td><td>Argonne APS</td><td>Diffraction</td><td>Calibration, integration</td><td>Deployed</td><td>Preprint [@q4_apexa]</td></tr>
+<tr><td>APS-RAG</td><td>Argonne APS</td><td>Operations</td><td>Logbooks, control data</td><td>Deployed</td><td>Preprint [@q4_aps_rag]</td></tr>
+<tr><td>ChatEED</td><td>SLAC</td><td>Accelerator operations</td><td>E-log retrieval</td><td>Demonstrated</td><td>Peer-reviewed workshop [@q4_chateed]</td></tr>
+<tr><td>Rongzai</td><td>CSNS</td><td>Neutron powder diffraction</td><td>Rietveld refinement</td><td>Deployed</td><td>Preprint [@q4_rongzai]</td></tr>
+<tr><td>Genesis platform</td><td>DOE</td><td>All</td><td>Autonomous experimentation</td><td>In development</td><td>Executive order; White House release [@whitehouse2025genesis; @q4_genesis_5b]</td></tr>
+</tbody>
+</table>
+
+<h4>Integration points</h4>
+<ul>
+<li><strong>Instrument control.</strong> Agents reach hardware through SPEC [@q4_xray_scientist], Bluesky [@q4_vision; @q4_bluesky] and control-system channels [@q4_osprey].</li>
+<li><strong>Data and workflows.</strong> A Tiled, Prefect and gpCAM workflow ran at both ALS and PETRA III with minimal facility-specific changes [@q4_als_petra].</li>
+<li><strong>Tool layer.</strong> MCP is a common way to expose instruments and data to agents [@q4_xray_scientist; @q4_eaa; @q4_tem_agent; @q4_aps_rag].</li>
+<li><strong>Computing.</strong> Agents can be served on leadership-class HPC [@q4_agentic_hpc]; a planned AmSC API, built on the IRI framework, is to give code-level access to user facilities and instruments [@q4_amsc_lab25_3555].</li>
+</ul>
+
+<h4>Facility-specific constraints</h4>
+<ul>
+<li><strong>Beamtime.</strong> LCLS beam time is "extremely valuable and limited" [@q4_lcls_cognitive]. The SSRL team developed the workflow in simulation and deployed it on the beamline with only interface-level changes [@q4_xray_scientist].</li>
+<li><strong>Safety.</strong> Current safeguards sit outside the model: human relay [@q4_xray_scientist], plan review [@q4_osprey], allowlisted tools [@q4_neudiff], deterministic guards [@q4_apexa], or a digital-twin check before execution [@q4_envtrace].</li>
+<li><strong>User turnover.</strong> Visiting users need guidance [@q4_esac], and agents must work zero-shot, without long training periods [@q4_base_scale].</li>
+<li><strong>Security and data policy.</strong> Genesis mandates classification, cybersecurity and export-control compliance [@whitehouse2025genesis]. VISION runs its beamline-control models on a local GPU server and sends only chatbot and refinement tasks to cloud GPT-4o [@q4_vision].</li>
+<li><strong>Verification.</strong> Checking results, not generating ideas, is now the bottleneck [@q4_trust_roadmap].</li>
+</ul>
+</section>

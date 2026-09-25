@@ -1,0 +1,182 @@
+[
+  {
+    "file": "summary.html",
+    "old": "Of the 83 systems cataloged here, 41 are tool-using agents working inside one task (L2) and 13 run end to end (L4). The L4 systems cluster where results can be checked automatically, such as machine-learning papers, code and proofs [@lu2026aiscientist; @novikov2025alphaevolve]",
+    "new": "Of the 83 systems cataloged here, 41 are tool-using agents working inside one task (L2), 21 run closed loops against instruments, robots or code (L3), and 13 run end to end (L4). The strongest L3 and L4 results come where outputs can be checked automatically, such as machine-learning papers, code and proofs [@lu2026aiscientist; @novikov2025alphaevolve]",
+    "reason": "Accuracy to Q1: the summary skipped the L3 tier (21 systems, where all 6 closed-loop facility systems sit), which is the tier this audience cares most about. Also AlphaEvolve, cited here, is L3 in the catalog, so 'The L4 systems cluster...' misattributes; Q1 trend 4 says 'Strong L3 and L4 results appear where an automatic check exists'. Numbers are Q1's own."
+  },
+  {
+    "file": "summary.html",
+    "old": "<strong>2026 brought peer review to the \"AI scientist\" systems.</strong>",
+    "new": "<strong>In 2026 the flagship \"AI scientist\" systems passed journal peer review.</strong>",
+    "reason": "'Brought peer review to' reads as if AI started doing peer review (a separate topic, Q1 trend 6). The point is that the systems' papers appeared in Nature and Science."
+  },
+  {
+    "file": "summary.html",
+    "old": "<strong>Benchmarks: closed-form questions are saturated; open-ended research is not.</strong>",
+    "new": "<strong>Benchmarks: scores on closed-form questions are near the ceiling; on open-ended research they are low.</strong>",
+    "reason": "'Saturated' is benchmark jargon, defined only much later in Q2 ('saturated (near-ceiling)'). Plain wording for the first thing the audience reads."
+  },
+  {
+    "file": "summary.html",
+    "old": "Every one keeps a human checkpoint or a tool-level guard [@q4_xray_scientist; @q4_als_agentic; @q4_osprey; @q4_neudiff]",
+    "new": "Every one keeps a human checkpoint or a tool-level guard, and facility steering is still mostly single-campaign demonstrations [@q4_xray_scientist; @q4_als_agentic; @q4_osprey; @q4_neudiff]",
+    "reason": "Accuracy to Q4: the Q4 answer's main caveat ('steering is still mostly single-campaign demonstrations') was missing, so the bullet overstated maturity for facility managers."
+  },
+  {
+    "file": "summary.html",
+    "old": "Common pieces are MCP as the tool layer, open-weight models served from DOE computing centers, and Globus, Parsl and the IRI program for reaching HPC",
+    "new": "Common pieces are the Model Context Protocol (MCP), a standard way for agents to call tools; open-weight models served from DOE computing centers; and Globus, Parsl and DOE's Integrated Research Infrastructure (IRI) program for reaching HPC",
+    "reason": "MCP and IRI are used here for the first time on the page without definition (the non-AI audience will not know MCP)."
+  },
+  {
+    "file": "summary.html",
+    "old": "<li><strong>The main risks are unverified results.</strong> They include fabricated references and reports, reward hacking, weak evaluation and prompt injection. The Genesis Mission now sets the DOE policy frame [@russinovich2026phantom; @huang2026rewardhacking; @q4_apexa; @whitehouse2025genesis] (<a href=\"#q5\">Q5</a>, <a href=\"#q6\">Q6</a>).</li>",
+    "new": "<li><strong>The main risks are unverified results and unsafe tool actions.</strong> They include fabricated references and reports, reward hacking (an agent gaming its success check instead of doing the task), weak evaluation and prompt injection (hidden instructions that hijack an agent). The Genesis Mission, a November 2025 executive order, now sets the DOE policy frame [@russinovich2026phantom; @huang2026rewardhacking; @q4_apexa; @whitehouse2025genesis] (<a href=\"#q5\">Q5</a>; policy in <a href=\"#q4-programs\">Q4</a> and <a href=\"#q6\">Q6</a>).</li>",
+    "reason": "Prompt injection is a tool-safety risk, not an 'unverified result'; the Q5 answer lists 'unsafe or hijacked tool actions'. Defines reward hacking and prompt injection at first use, says what Genesis is, and links to Q4 programs, where Genesis is discussed (Q5 does not discuss it)."
+  },
+  {
+    "file": "q1.html",
+    "old": "closed-loop (L3) agents cluster in self-driving labs and at facility instruments, end-to-end (L4) autonomy appears mainly where the \"experiment\" is code, existing data or a proof, and independent verification lags",
+    "new": "closed-loop (L3) agents cluster in self-driving labs and at facility instruments; end-to-end (L4) autonomy appears mainly where the \"experiment\" is code, existing data or a proof; and independent verification lags",
+    "reason": "Comma splice in the one-line answer made its three clauses run together; semicolons separate the three takeaways."
+  },
+  {
+    "file": "q1.html",
+    "old": "At the Agents4Science conference, humans contributed more to hypotheses and design",
+    "new": "At Agents4Science 2025, a conference for papers with AI first authors, humans contributed more to hypotheses and design",
+    "reason": "First mention of Agents4Science; without knowing it required AI first authors (stated only later in Q5), the finding about human contributions makes no sense."
+  },
+  {
+    "file": "q2.html",
+    "old": "Peer-reviewed studies show real but narrow agent successes in labs and literature; top models score 95.8% on graduate science questions, but open-ended research and XRD analysis stay weak, and no public benchmark tests closed-loop x-ray or neutron beamtime. [@gottweis2026coscientist; @epoch_hub; @macbench]",
+    "new": "Peer-reviewed studies show real but narrow agent successes in labs and literature. Top models now score 95.8% on graduate science questions, above expert level, but open-ended research and XRD analysis stay weak, and no public benchmark tests closed-loop x-ray or neutron beamtime [@gottweis2026coscientist; @epoch_hub; @macbench].",
+    "reason": "Stray period before the citation (other answers cite before the period); split the 50-word sentence; '95.8%' alone gives the reader no reference point (Q2 table: experts 65-81%)."
+  },
+  {
+    "file": "q2.html",
+    "old": "<h3>Established: peer-reviewed or independently validated</h3>",
+    "new": "<h3>Established: peer-reviewed or machine-checkable</h3>",
+    "reason": "The heading contradicts the note directly beneath it ('\"Established\" means peer-reviewed or machine-checkable, not independently replicated'), and most rows say 'no outside replication' or 'authors' own demonstration'. AlphaEvolve (white paper) is included because it is machine-checkable."
+  },
+  {
+    "file": "q2.html",
+    "old": "<td>4× expert score at 2 h (2024-11)</td><td>Experts 2× agents at 32 h</td>",
+    "new": "<td>Agents 4× the expert score with a 2 h budget (2024-11)</td><td>Experts 2× the agent score with 32 h</td>",
+    "reason": "The RE-Bench cells were cryptic ('4× expert score at 2 h'); state who scores what under which time budget."
+  },
+  {
+    "file": "q2.html",
+    "old": "Experts score about 65–81% on GPQA Diamond [@gpqa], against a best reported 95.8% [@epoch_hub]; by FutureHouse's estimate about 29% of HLE's text-only chemistry and biology answers conflict with the literature (HLE's own expert re-review found about 18% of a subset problematic), and new HLE scores carry contamination flags (questions may be in training data) [@hle_errors; @hle_scale].",
+    "new": "Experts score about 65–81% on GPQA Diamond [@gpqa], against a best reported 95.8% [@epoch_hub]. HLE's answer key also has problems: by FutureHouse's estimate about 29% of its text-only chemistry and biology answers conflict with the literature, and HLE's own expert re-review found about 18% of a subset problematic. New HLE scores also carry contamination flags (the questions may be in training data) [@hle_errors; @hle_scale].",
+    "reason": "One 70-word sentence with a nested parenthesis covering two benchmarks and three issues; split into three sentences. Citation markers unchanged and kept in place."
+  },
+  {
+    "file": "q3.html",
+    "old": "Science agents are built from interchangeable parts (a vendor or center-hosted model, a general agent framework, MCP for tools, Globus Compute or Parsl for HPC), so a facility's main job is exposing Bluesky/EPICS, Tiled and IRI APIs as guarded, logged tools [@chemgraphrepo; @mcpscihpc; @first; @q4_apexa].",
+    "new": "Science agents are built from interchangeable parts: a vendor or center-hosted model, a general agent framework, the Model Context Protocol (MCP) for tools, and Globus Compute or Parsl for HPC. A facility's main job is therefore to expose the services it already runs (Bluesky/EPICS, Tiled, IRI APIs) as guarded, logged tools [@chemgraphrepo; @mcpscihpc; @first; @q4_apexa].",
+    "reason": "MCP is used in the answer before it is defined (in Q3 protocols); the single sentence packed a list inside parentheses plus a conclusion. Split, and made the takeaway ('wrap what you already run') explicit."
+  },
+  {
+    "file": "q3.html",
+    "old": "NNSA runs frontier AI models on the classified network of its Venado supercomputer [@q4_nnsa_venado].",
+    "new": "DOE's National Nuclear Security Administration (NNSA) runs frontier AI models on the classified network of its Venado supercomputer at Los Alamos [@q4_nnsa_venado].",
+    "reason": "NNSA is undefined; 'at Los Alamos' ties this to Q4's 'LANL's Venado supercomputer' so readers see it is the same machine."
+  },
+  {
+    "file": "q3.html",
+    "old": "NERSC recommends workspace-write mode and sandboxes for coding agents, and holds users responsible for agent actions [@nersccoding].",
+    "new": "NERSC recommends sandboxes and workspace-write mode (the agent may change files only inside its working directory) for coding agents, and holds users responsible for agent actions [@nersccoding].",
+    "reason": "'Workspace-write mode' is coding-agent jargon; one clause of definition makes the recommendation usable by facility staff."
+  },
+  {
+    "file": "q4.html",
+    "old": "and one accelerator control-room framework [@q4_xray_scientist;",
+    "new": "and one accelerator control-room framework (Osprey, at the ALS) [@q4_xray_scientist;",
+    "reason": "Readers asked 'which facility did what?' should not have to hunt for which framework the answer means."
+  },
+  {
+    "file": "q4.html",
+    "old": "<h3 id=\"q4-steering\">Beamline, instrument and accelerator steering</h3>",
+    "new": "<h3 id=\"q4-steering\">Beamline, instrument and accelerator steering</h3>\n<p>This subsection covers agents that steer beamlines, instruments or accelerators, grouped by lab. Most agents that reduce or analyze data, or answer staff and user questions, are listed under <a href=\"#q4-analysis\">Facility data analysis and knowledge assistants</a>; that is where the SNS agents, and APEXA, APS-RAG and PEAR at the APS, appear.</p>",
+    "reason": "Q4 groups steering by lab but analysis by function, so one facility's work is split across subsections. The ORNL (CNMS, SNS) heading lists no SNS system at all, which will puzzle ORNL attendees. A one-sentence road map fixes this without restructuring."
+  },
+  {
+    "file": "q4.html",
+    "old": "and a computational model of operator, analyst and manager roles that stresses that LCLS beam time is \"extremely valuable and limited\" [@q4_lcls_cognitive].",
+    "new": "and a computational cognitive model of how operators, analysts and managers interact during LCLS instrument operations, which stresses that LCLS beam time is \"extremely valuable and limited\" [@q4_lcls_cognitive].",
+    "reason": "'A computational model of operator, analyst and manager roles' does not say what was modeled; wording follows the cited title (cognitive interaction model of instrument operations at LCLS). This is the only LCLS agent-adjacent item, so SLAC readers will read it closely."
+  },
+  {
+    "file": "q4.html",
+    "old": "and DOE selected 278 projects [@q4_genesis_5b], and DOE announced more than $800M from partners [@q4_genesis_800m].",
+    "new": "and DOE selected 278 projects [@q4_genesis_5b]. DOE also announced more than $800M from partners [@q4_genesis_800m].",
+    "reason": "Run-on sentence ('..., and DOE selected ..., and DOE announced ...') mixing two announcements; split so the two funding figures are not read as one."
+  },
+  {
+    "file": "q4.html",
+    "old": "<strong>FASST.</strong> DOE released a FASST roadmap in 2024 [@q4_fasst_roadmap].",
+    "new": "<strong>FASST.</strong> DOE released a roadmap in 2024 for FASST (Frontiers in Artificial Intelligence for Science, Security and Technology) [@q4_fasst_roadmap].",
+    "reason": "FASST is never expanded anywhere on the page."
+  },
+  {
+    "file": "q4.html",
+    "old": "goes from raw data to a validated CIF. Its safeguards are allowlisted tools, fail-closed gates and full provenance. Time fell from 435 to 86.5–94.4 min, with no checkCIF A/B alerts [@q4_neudiff].",
+    "new": "goes from raw data to a validated CIF (crystallographic information file). Its safeguards are allowlisted tools, fail-closed gates and full provenance. Processing time fell from 435 min (manual) to 86.5–94.4 min, with no level A or B checkCIF alerts (the most serious validation warnings) [@q4_neudiff].",
+    "reason": "First use of CIF on the page; 'checkCIF A/B alerts' is opaque to non-crystallographers (detector, controls and university attendees); '435 to 86.5-94.4 min' did not say that 435 min is the manual baseline (per the cited source)."
+  },
+  {
+    "file": "q5.html",
+    "old": "<li>Reproducing papers from their own code and data is hard. The best agent scored 21% on the hardest CORE-Bench tier (270 tasks, 90 papers) [@corebench].</li>",
+    "new": "<li>Reproducing papers from their own code and data was hard for agents: when CORE-Bench was released, the best agent scored 21% on its hardest tier (270 tasks, 90 papers) [@corebench]. Newer agents now score far higher (<a href=\"#q2-benchmarks\">Q2</a>).</li>",
+    "reason": "Direct contradiction with Q2, which reports CORE-Bench Hard at 95.5% (with manual validation) and 'declared solved'. The 21% is the release-time figure (the reference entry says 'best agent 21% on hardest level at release'). Readers comparing sections would otherwise think one number is wrong."
+  },
+  {
+    "file": "q5.html",
+    "old": "<li>The best agent solved 32.4% of 102 ScienceAgentBench tasks drawn from 44 real papers; o1-preview with self-debugging reached 42.2% [@scienceagentbench]. Multi-agent systems show 14 failure modes, grouped into design, inter-agent misalignment and verification [@cemri2025mast].</li>",
+    "new": "<li>On 102 ScienceAgentBench tasks drawn from 44 real papers, the best of the main agents solved 32.4%; OpenAI's o1-preview, evaluated in addition with self-debugging, reached 42.2% [@scienceagentbench].</li>\n<li>Multi-agent systems show 14 failure modes, grouped into design, inter-agent misalignment and verification [@cemri2025mast].</li>",
+    "reason": "'The best agent solved 32.4% ... o1-preview reached 42.2%' reads as self-contradictory (the paper reports o1-preview as an additional evaluation). Also splits an unrelated multi-agent failure-mode finding into its own bullet."
+  },
+  {
+    "file": "q5.html",
+    "old": "ICMJE: AI cannot be an author",
+    "new": "ICMJE (International Committee of Medical Journal Editors): AI cannot be an author",
+    "reason": "ICMJE is undefined here and again in Q6 prompt 7."
+  },
+  {
+    "file": "q5.html",
+    "old": "ICML 2026 caught LLM use with hidden PDF prompts. It removed 795 reviews (~1%)",
+    "new": "ICML 2026 hid instructions in submission PDFs to catch reviewers who used LLMs against its policy. It removed 795 reviews (~1%)",
+    "reason": "'Caught LLM use with hidden PDF prompts' is ambiguous (it sounds like authors hid the prompts, as in the previous Q5 bullet on hidden review prompts). Per the cited ICML post, the conference planted the instructions to detect policy-breaking reviewers."
+  },
+  {
+    "file": "appendix.html",
+    "old": "<dt>Open-weight model</dt>",
+    "new": "<dt>Frontier model</dt><dd>One of the most capable current models from the leading AI companies (for example OpenAI, Anthropic and Google), usually used through a paid online API.</dd>\n<dt>Token</dt><dd>The unit of text a model reads and writes, roughly a word or part of a word. Model use, speed and cost are counted in tokens.</dd>\n<dt>Rollout</dt><dd>One complete attempt by an agent at a task, from its first step to its final answer.</dd>\n<dt>Open-weight model</dt>",
+    "reason": "Terms used repeatedly without definition: 'frontier model' (Q2, Q3, Q4, Q5, Q6), 'tokens' (Q3, FIRST 'billions of tokens daily'), 'rollouts' (Q1 Kosmos, Q5 HAL re-evaluation)."
+  },
+  {
+    "file": "appendix.html",
+    "old": "<dt>Bluesky / Ophyd</dt>",
+    "new": "<dt>Reward hacking</dt><dd>When an agent raises the score, or passes the check it is judged by, without doing the intended task: for example by editing tests, using leaked answers or reporting only favorable runs.</dd>\n<dt>Agent trace</dt><dd>The step-by-step record of an agent's run: its prompts, reasoning, tool calls and tool results. It shows what the agent actually did, which its final report may not.</dd>\n<dt>Allowlist</dt><dd>A fixed list of the tools or commands an agent may use; anything not on the list is refused.</dd>\n<dt>Fail-closed gate</dt><dd>A check that stops the workflow when it fails or cannot run, instead of letting the action go ahead.</dd>\n<dt>Deterministic guard</dt><dd>A rule written in ordinary code, outside the model, that checks each agent action or report (for example against motor limits, or against the record of commands actually run) and blocks it if the check fails. Unlike a safety instruction in the prompt, the model cannot argue its way past it.</dd>\n<dt>Digital twin</dt><dd>A simulation of an instrument or beamline detailed enough to run and score control code before it touches real hardware.</dd>\n<dt>Bluesky / Ophyd</dt>",
+    "reason": "The report's central safety message (guards in code, not prompts) rests on terms never defined: reward hacking (summary, Q5 x3, risk register), traces (Q5), allowlisted tools and fail-closed gates (Q3, Q4, Q5, Q6), deterministic guard (Q3, Q5, Q6), digital twin (Q3, Q4, Q6). Grouped with the other risk/safety terms, before the facility-software terms."
+  },
+  {
+    "file": "appendix.html",
+    "old": "<dt>Globus Compute</dt>",
+    "new": "<dt>SPEC</dt><dd>A long-established command-line program for diffractometer and beamline control, used at SSRL and many other synchrotrons.</dd>\n<dt>CIF / checkCIF</dt><dd>The crystallographic information file (CIF) is the standard text format for a crystal structure and its refinement. checkCIF is the International Union of Crystallography's validation service; its level A and B alerts flag the most serious problems.</dd>\n<dt>Globus Compute</dt>",
+    "reason": "SPEC (Q3, Q4) and CIF/checkCIF (summary, Q4, Q5) are familiar to beamline crystallographers but not to controls, data-systems or university attendees. Placed with the other facility-software terms."
+  },
+  {
+    "file": "appendix.html",
+    "old": "<dt>Integrated Research Infrastructure (IRI)</dt>",
+    "new": "<dt>Parsl</dt><dd>A Python library for parallel scripting: it runs many tasks as one workflow on laptops, clusters or HPC systems.</dd>\n<dt>Integrated Research Infrastructure (IRI)</dt>",
+    "reason": "Parsl appears in the summary, Q3 answer, Q3 layers and stack table with no definition; Globus Compute, its sibling, is already in the glossary."
+  },
+  {
+    "file": "appendix.html",
+    "old": "</dl>",
+    "new": "<dt>ALCF, OLCF, NERSC, ESnet</dt><dd>DOE Office of Science computing and network facilities: the Argonne and Oak Ridge Leadership Computing Facilities, the National Energy Research Scientific Computing Center at Berkeley Lab, and the Energy Sciences Network that links the labs and user facilities.</dd>\n<dt>Facilities named in this report</dt><dd>SLAC: SSRL (Stanford Synchrotron Radiation Lightsource) and LCLS (Linac Coherent Light Source, an x-ray free-electron laser). BNL: NSLS-II (National Synchrotron Light Source II) and CFN (Center for Functional Nanomaterials). Argonne: APS (Advanced Photon Source) and CNM (Center for Nanoscale Materials). LBNL: ALS (Advanced Light Source) and the Molecular Foundry. ORNL: SNS (Spallation Neutron Source) and CNMS (Center for Nanophase Materials Sciences). Outside DOE: CSNS (China Spallation Neutron Source) and DESY (Germany), which runs the PETRA III synchrotron.</dd>\n<dt>ICLR, ICML, NeurIPS, ACL</dt><dd>The leading machine-learning and natural-language-processing conferences. In these fields, peer-reviewed conference papers, not journal articles, are the main publications.</dd>\n<dt>Desk rejection</dt><dd>Rejection of a submitted paper by the editors or program chairs without full peer review, for example for breaking submission rules.</dd>\n</dl>",
+    "reason": "Acronyms never expanded on the page: ALCF, OLCF, NERSC, ESnet; the facility names (a SLAC reader may not know CNMS or CFN; university collaborators may not know most); the AI conferences whose review policies fill Q1, Q5 and Q6; and 'desk-rejected' (Q5 x2, Q6)."
+  }
+]

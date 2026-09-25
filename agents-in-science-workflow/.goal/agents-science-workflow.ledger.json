@@ -1,0 +1,126 @@
+{
+  "goal": "Map the current landscape of AI agents in scientific workflows for a discussion with DOE x-ray and neutron facility scientists, delivered as a self-contained HTML report with an appendix and verified references",
+  "slug": "agents-science-workflow",
+  "contract": "agents-in-science-workflow/.goal/agents-science-workflow.json",
+  "created": "2026-09-25T11:27:11-07:00",
+  "limits": {
+    "subagents_min": 3,
+    "subagents_max": 6,
+    "min_iterations": 2,
+    "max_turns": 9
+  },
+  "iterations": [
+    {
+      "n": 1,
+      "thought": "Bootstrap. The done_when proof runs on the network, so I first built a shared rate-limited lookup helper in the scratchpad (a file lock per service keeps arXiv at >=3.1 s between requests across all concurrent agents) and a python->python3.12 shim, because the host has no 'python' on PATH. Decomposed into five disjoint research lanes, one per question area Q1-Q5 (Q6 is a synthesis written later from their evidence), plus one tooling lane that builds the report generator and an independent checker, so the content and the proof machinery are built in parallel.",
+      "delegated": [
+        {
+          "agent": "research:q1-catalog",
+          "task": "Catalog >=38 general-science agent systems by stage x autonomy (L1-L4) with verified refs; taxonomy table, 2024-2026 trends, 'new in 2026'",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "research:q2-what-works",
+          "task": "Separate peer-reviewed / independently validated results from claims (with what would validate each); benchmark table with best scores, dates, human baselines",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "research:q3-infrastructure",
+          "task": "Models, agent frameworks, MCP/A2A protocols, and how agents connect to workflow/HPC systems (Globus Compute, Parsl, Academy, IRI, Bluesky/EPICS/Tiled)",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "research:q4-facilities",
+          "task": "Agents at DOE x-ray/neutron facilities and labs (steering, data analysis, knowledge assistants), DOE programs via OSTI and DOE pages; >=8 facility catalog rows",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "research:q5-risks",
+          "task": "Reproducibility, fabricated citations/results, evaluation gaps, safety and dual use, credit and authorship, with a risk register",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "build:tooling",
+          "task": "report/build_report.py + template.html (inline CSS) and independent check_report.py (HTML contract, Crossref/arXiv/URL resolution with title match, external-resource scan) plus a scratchpad fixture test",
+          "model": "claude-opus-5-5"
+        }
+      ],
+      "integrated": "All 6 returned. Re-ran the checker myself on the fixture: it flagged the wrong-title DOI ('telescope scheduling' vs fetched 'Augmenting large language models with chemistry tools') and counted an injected <img> as 'external resources loaded: 1'. Checked key sources myself through lookup.py: Crossref confirms 2026 Nature papers for Co-Scientist (10.1038/s41586-026-10644-y), Robin (10.1038/s41586-026-10652-y), AI Scientist (10.1038/s41586-026-10265-5) and OpenScholar (10.1038/s41586-025-10072-4), Biomni in Science (10.1126/science.adz4351), and facility papers SSRL X-ray scientist (10.1038/s42256-026-01261-5), SNS NeuDiff (10.1107/S1600576726004474), ALS accelerator agent (10.1103/jtqy-9jz1), Osprey (10.1063/5.0306302); arXiv API confirms 2609.28614, 2607.00738, 2609.24165; the ICML blog page states 795 reviews (~1%) and 497 desk-rejected papers (~2%); the Genesis EO and DOE autonomous-labs pages return 200. Wrote report/merge_notes.py and ran it: 349 lane refs -> 305 distinct works (96 arXiv, 107 DOI, 102 URL), 40 key aliases (incl. 2 preprint->published), 83 catalog rows (Lit 14, Hyp 10, Exp 26, Analysis 20, Writing 13; L1 8, L2 41, L3 21, L4 13).",
+      "new": "Merged evidence base report/refs.json (305 works) + report/catalog.json (83 rows) + key_aliases.json via report/merge_notes.py; report/build_report.py, template.html and check_report.py (HTML contract); five lane notes (notes/q1-q5 *.md); decision: L1-L4 autonomy scale and five stage labels, published DOI preferred over preprint, python run via scratchpad shim",
+      "remaining": "Write Q1-Q6 as HTML (Q1 taxonomy table of >=25 systems, Q2 established/claims/benchmarks split, Q6 6-10 prompts tied to Q1-Q5), assemble source.html with glossary + method notes, build findings.html, run check_report.py and fix every failure; adversarially fact-check the headline numbers (GPQA/HLE leaderboard model names, Kosmos, APEXA, Genesis figures) before they go in."
+    },
+    {
+      "n": 2,
+      "thought": "Write and harden. Sections are separable once refs and catalog are merged, so five writers turn the lane notes into HTML fragments under a strict contract (one p.answer, qN- subsection ids, canonical [@key] citations) while an adversarial fact-checker attacks ~80 headline numbers against primary sources in parallel. I keep the cross-cutting pieces (Q6 prompts linking to Q1-Q5 anchors, summary, appendix frame, taxonomy generator) so Q6 can only cite evidence that the sections actually contain.",
+      "delegated": [
+        {
+          "agent": "write:q1",
+          "task": "Q1 HTML fragment: answer, L1-L4 + stage definitions, <!--TAXONOMY--> placeholder, trends, new in 2026, caveats",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "write:q2",
+          "task": "Q2 HTML fragment with #q2-established / #q2-claims / #q2-benchmarks tables and benchmark reading incl. x-ray/neutron relevance",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "write:q3",
+          "task": "Q3 HTML fragment: models, frameworks, protocols, workflow/HPC, stack table, facility implications",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "write:q4",
+          "task": "Q4 HTML fragment: steering by facility, precursors, analysis/assistants, DOE programs, status table + constraints",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "write:q5",
+          "task": "Q5 HTML fragment: five risk themes with 'For facilities' lines and a risk register",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "audit:numbers",
+          "task": "Adversarially fact-check ~80 headline numbers/facts across Q1-Q5 against primary sources; write notes/audit_iter2.{json,md} with exact fixes",
+          "model": "claude-opus-5-5"
+        }
+      ],
+      "integrated": "All 6 returned. Wrote parts/q6.html (9 prompts, each linking a #q1-#q5 anchor and citing evidence), parts/summary.html, parts/appendix.html (catalog frame, 22-term glossary, method notes); added <!--TAXONOMY--> renderer + facility pill style to build_report.py, title de-markup, and report/assemble_source.py. Writer q2 exposed a merge bug (lane key 'coscientist' meant Boiko 2023 in q2 but Google Co-Scientist in q3; 'biomni' Science vs bioRxiv): I renamed the lane keys and made merge_notes.py fail on any future collision; no report text had cited the ambiguous keys. Audit: 79 claims -> 67 confirmed, 11 corrected, 1 unsupported; I applied all 13 edits (q2 6, q4 4, q6 2, summary 1), e.g. Genesis '$5B across 278 projects' -> '$5B federal commitments; DOE selected 278 projects', AmSC/PL 119-21 wording, A-Lab 41->36 confirmed per 2026 Author Correction, GPQA Diamond expert range 65-81%, MaCBench space-group score is from crystal-structure images. I re-read abstracts myself: arXiv 2609.24165 ('61 tools', fabricated calibration report, '0/200 ... versus 15/200'), arXiv 2609.28614 ('30.5%', '33/505 confirmed hacks (6.5%)'). Built findings.html; my online check runs: run 1 237/237 resolved PASS; run 2 hit a transient DNS failure on nsf.gov (curl also failed twice then 200), so I made the checker retry socket.gaierror; run 3 'references: 237 | resolved: 237 | failed: 0 | uncited: 0 | dangling: 0', 'external resources loaded: 0', OVERALL PASS. Email scan of the campaign folder: none.",
+      "new": "findings.html v1 (237 verified references, 83-system taxonomy, 9 discussion prompts) built from report/parts/*.html; notes/audit_iter2.{json,md} with 13 applied corrections; collision guards in merge_notes.py; DNS-retry fix in check_report.py",
+      "remaining": "Harden in iteration 3: sentence-level citation audit of claims the numeric audit did not cover (Q1, Q3, Q5, Q6 qualitative statements), catalog row audit (stage/autonomy/evidence labels vs source), a reader-level review for the facility audience (clarity, length, one-line answers), then final check_report.py run and the final proof printout."
+    },
+    {
+      "n": 3,
+      "thought": "Verify and harden with the surplus iteration. The iteration-2 audit covered headline numbers only, so the remaining risk is qualitative: sentences whose citation does not say what the text says, catalog labels that overstate autonomy, cross-section contradictions, and jargon this audience cannot parse. Split into three disjoint sentence-level citation audits (Q1+Q3, Q4 alone because the audience reads it most closely, Q5+Q6+summary incl. Q6 link targets), one catalog-label audit, and one reader review limited to wording; each returns exact old->new edits so integration is mechanical and order-controlled (facts first, wording last).",
+      "delegated": [
+        {
+          "agent": "audit:citations-q1q3",
+          "task": "Sentence-level check of qualitative claims in q1.html and q3.html against cited sources; exact old->new fixes",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "audit:citations-q4",
+          "task": "Sentence-level check of q4.html: facility/beamline attributions, what each agent controls, deployed/demonstrated status, program descriptions, 'none found' claims",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "audit:citations-q5q6",
+          "task": "Sentence-level check of q5.html, q6.html, summary.html incl. whether each Q6 link target holds the attributed evidence and summary consistency",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "audit:catalog",
+          "task": "Check all 83 catalog rows' stage, autonomy, evidence type, year, organization and one-line against sources; propose field changes",
+          "model": "claude-opus-5-5"
+        },
+        {
+          "agent": "review:reader",
+          "task": "Read the page as a facility scientist; <=30 wording-only edits, glossary additions, structural suggestions",
+          "model": "claude-opus-5-5"
+        }
+      ],
+      "integrated": "All 5 returned. Wrote report/apply_edits.py (applies an edit only if 'old' occurs exactly once; catalog change only if current value equals 'old') and applied in order: q5q6 audit 15/15 (76 checked; e.g. ICLR did not do automated reference checks, VISION predates SSRL so 'first real-beamline agent' removed, SNS proposal rankings 'correlate strongly' not 'partly', 5 Q6 links retargeted), q1q3 audit 5/5 (61 checked; ORNL MDF experiment was simulated; Edison announcement does not name Kosmos), q4 audit 16/16 (74 checked; LCLS split-and-delay BO and DESY LLM tuning were simulation-only; A-Lab agents proposed 263 of 352 samples; Genesis platform 'in development'), catalog 20/20 (NeuDiff L4->L2, Rongzai L4->L3, ALS agent L3->L2, CycleResearcher L4->L1, 11 facility first-release years, AstaBench -> peer-reviewed), reader edits 29/30 (1 skipped: superseded by my count fix, gloss carried over; 16 glossary terms added). Re-counted the catalog myself (L1 9, L2 43, L3 21, L4 10; 0 facility systems at L4) and fixed the 6 sentences quoting old counts plus the Q4 date ranges. Verified myself: A-Lab critique abstract via OpenAlex ('We discuss all 43 synthetic products', 'no new materials have been discovered') -> clarified Q5 41 vs 43; AstaBench arXiv comment 'Published as a conference paper at ICLR 2026'; European XFEL agent preprint arXiv 2607.16845 abstract -> added as a new reference in Q4. Split the ALS row (machine-physics agent: demonstrated; Osprey: deployed), added a Q6 running order, a fact-check method note and a campaign README.md. My checks: all 622 internal links resolve (0 missing); email scan clean; git shows only agents-in-science-workflow/ changed; final `python agents-in-science-workflow/check_report.py`: 'external resources loaded: 0', 'references: 238 | resolved: 238 | failed: 0 | uncited: 0 | dangling: 0', OVERALL: PASS, exit code 0.",
+      "new": "findings.html v2 after 72 sentence-level fixes + 20 catalog relabels (autonomy counts L1 9 / L2 43 / L3 21 / L4 10; no facility system at L4); report/apply_edits.py; notes/audit_iter3_{q1q3,q4,q5q6,catalog}.{json,md} and notes/review_iter3.{json,md}; new European XFEL reference; Q6 running order; campaign README.md",
+      "remaining": "None for done_when. Follow-ups outside scope (mention to user): per-lab Q4 table, moving the long benchmark table to the appendix, trimming repeated facility examples across sections, adding the campaign to the repo-level README/index.html (outside the allowed folder)."
+    }
+  ]
+}

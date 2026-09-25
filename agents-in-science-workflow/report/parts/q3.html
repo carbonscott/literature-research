@@ -1,0 +1,51 @@
+<section class="question" id="q3">
+<h2>Q3 · Infrastructure: models, frameworks, protocols and the path to HPC</h2>
+<p class="answer"><strong>Answer.</strong> Science agents are built from interchangeable parts: a vendor or center-hosted model, a general agent framework, the Model Context Protocol (MCP) for tools, and Globus Compute or Parsl for HPC. A facility's main job is therefore to expose the services it already runs (Bluesky/EPICS, Tiled, IRI APIs) as guarded, logged tools [@chemgraphrepo; @mcpscihpc; @first; @q4_apexa].</p>
+
+<h3 id="q3-models">Models</h3>
+<p>Frontier models such as GPT-5 [@gpt5card], called through vendor APIs, are still the default engine; Co-Scientist, for example, is built on Gemini, and Biomni's setup expects Claude [@gottweis2026coscientist; @biomnirepo]. But frameworks can usually swap them: ChemGraph accepts OpenAI, Anthropic, Google, Argonne's Argo gateway or a local Ollama server [@chemgraphrepo].</p>
+<p>Open-weight models, whose weights can be downloaded and run locally, make self-hosting practical. gpt-oss-120b is Apache-2.0 licensed and tuned for tool use [@gptoss]. OLCF's inference service offers it [@olcfinf]. Science-trained models also compete: ether0, a 24B chemistry reasoning model trained by reinforcement learning on 640,730 problems, beat frontier models and experts on molecular design [@ether0].</p>
+<p>Where the model runs is often a data-handling decision. ALCF built FIRST for private, secure inference; it lets researchers generate "billions of tokens daily on-premises" without commercial cloud [@first]. DOE's National Nuclear Security Administration (NNSA) runs frontier AI models on the classified network of its Venado supercomputer at Los Alamos [@q4_nnsa_venado].</p>
+
+<h3 id="q3-frameworks">Agent frameworks and science toolkits</h3>
+<p>Frameworks typically build on ReAct, the loop in which the model reasons, calls a tool (acts), reads the result (observes) and repeats [@react]. General orchestrators include LangGraph [@langgraph]; AutoGen is now in maintenance mode, with new users pointed to Microsoft Agent Framework [@autogenrepo]. Vendor SDKs package the same loop; the Claude Agent SDK, for example, adds hooks, subagents and permission controls [@claudesdk].</p>
+<p>A science toolkit is usually a thin layer over one of these orchestrators plus a registry of domain tools. ChemGraph combines LangGraph with ASE, RDKit and MCP, and runs jobs through Parsl or Globus Compute on Aurora and Polaris [@chemgraphrepo]. Academy runs stateful, asynchronous agents across HPC, experimental facilities and data repositories [@academy]. The value is in the tools, not the loop.</p>
+
+<h3 id="q3-protocols">Tool and agent protocols</h3>
+<p>The Model Context Protocol (MCP) is an open standard that lets an agent call tools and read data through one common interface. A2A (Agent2Agent) links agents to each other; its maintainers call MCP the "vertical" agent-to-tool layer and A2A the "horizontal" agent-to-agent layer [@a2aaaif]. Both now sit in the Linux Foundation's Agentic AI Foundation: MCP since 9 Dec 2025, A2A (v1.0) since Aug 2026 [@mcpaaif; @a2aaaif].</p>
+<p>MCP is still changing. Its 2026-07-28 revision made the protocol stateless, moved long-running "tasks" into an official extension, and deprecated Roots, Sampling and Logging [@mcpchg2607]. A lighter option is a "skill": a folder with a SKILL.md instruction file that the agent loads only when needed [@agentskills]. ALS staff write skills for the Lightfall beamline-control platform, and at the SNS one skill document lets a Slack bot run EQSANS reductions [@q4_lightfall; @q4_eqsans_cli].</p>
+<p>The tool layer is also an attack surface. In tool poisoning, hidden instructions in a tool's description redirect the agent. MCPTox tested 45 live MCP servers: o1-mini's attack success rate was 72.8%, and no model refused more than 3% of attacks [@mcptox]. On HPC systems, a "hijacked authorized agent" acts with a user's valid credentials [@hpcagentsec].</p>
+
+<h3 id="q3-hpc">Connecting to workflows, HPC and instruments</h3>
+<p>One request passes through six layers, mostly existing DOE software:</p>
+<ol>
+<li><strong>Model.</strong> A vendor API or a center-hosted open model. ALCF (FIRST, with Globus Auth) and OLCF (S3M tokens) serve models with vLLM, an open-source serving engine, behind OpenAI-compatible endpoints. These accept OpenAI-style requests, so code switches by changing an address and key [@first; @olcfinf].</li>
+<li><strong>Agent framework.</strong> An agent built with LangGraph, a vendor SDK or Academy reasons and picks the next tool [@react; @academy].</li>
+<li><strong>MCP server or skill.</strong> The call reaches a thin wrapper around an existing service, such as Globus Labs' MCP servers for Globus Transfer, Compute and Search and for facility status APIs [@mcpscihpc].</li>
+<li><strong>Execution fabric.</strong> Globus Compute (formerly funcX) or Parsl runs the work on HPC [@funcx; @parsl]. On Aurora, a gpt-oss-120b agent swarm had a planner split work among executors that shared one Parsl-backed MCP server [@aurora_mof]. The Integrated Research Infrastructure (IRI) Facility API standardizes status, account, compute/jobs, filesystem, storage and task endpoints, with instances at NERSC, ALCF and ESnet [@iriapi]; SLAC hosts a fork [@iriapislac].</li>
+<li><strong>Instrument and data.</strong> Bluesky and its Ophyd device layer, EPICS, and the Tiled data service are the plug points [@bluesky; @epics; @q4_tiled]. At SSRL, an agent with MCP tools wrote SPEC commands, relayed unmodified by a human, to align a single crystal [@q4_xray_scientist]. At NSLS-II, VISION ran a voice-controlled scattering experiment by sending generated code to Bluesky [@q4_vision]. ORNL agents steered an additive-manufacturing workflow linking OLCF with a simulated version of its Manufacturing Demonstration Facility [@ornlagents].</li>
+<li><strong>Provenance.</strong> Prompts, responses and decisions are logged with the workflow record, as PROV-AGENT does by extending W3C PROV [@provagent].</li>
+</ol>
+<p><strong>Sandboxing and permissions.</strong> Biomni runs LLM-generated code with full system privileges by default [@biomnirepo]. NERSC recommends sandboxes and workspace-write mode (the agent may change files only inside its working directory) for coding agents, and holds users responsible for agent actions [@nersccoding]. Facility projects put the limits in code, not prompts. APEXA's deterministic guard allowed 0/200 adversarial motor violations, against 15/200 for a safety prompt, and caught a fabricated calibration report [@q4_apexa]. NeuDiff, at the SNS TOPAZ instrument, uses allowlisted tools and fail-closed gates [@q4_neudiff]. EnvTrace checks agent-written control code against a beamline digital twin before it runs [@q4_envtrace].</p>
+
+<h3 id="q3-stack">Stack at a glance</h3>
+<table class="data">
+<thead><tr><th>Layer</th><th>Common choices</th><th>What facilities should watch</th></tr></thead>
+<tbody>
+<tr><td>Models</td><td>GPT-5 and other vendor APIs; self-hosted gpt-oss, DeepSeek-R1; science-tuned ether0 [@gptoss; @deepseekr1; @ether0]</td><td>Center-hosted OpenAI-compatible endpoints [@first; @olcfinf]; data-sensitivity rules [@q4_nnsa_venado]</td></tr>
+<tr><td>Frameworks</td><td>LangGraph, vendor SDKs, Academy, ChemGraph [@langgraph; @claudesdk; @academy]</td><td>AutoGen churn [@autogenrepo]; code-execution privileges [@biomnirepo]</td></tr>
+<tr><td>Protocols</td><td>MCP, A2A, skills [@mcpaaif; @a2aaaif; @agentskills]</td><td>Stateless MCP and tasks extension [@mcpchg2607]; tool poisoning [@mcptox]</td></tr>
+<tr><td>Workflow and HPC</td><td>Globus Compute, Parsl, IRI Facility API [@funcx; @parsl; @iriapi]</td><td>MCP-wrapped facility APIs [@mcpscihpc]; agents acting under user credentials [@hpcagentsec]</td></tr>
+<tr><td>Instruments and data</td><td>Bluesky/Ophyd, EPICS, SPEC, Tiled [@bluesky; @epics; @q4_xray_scientist; @q4_tiled]</td><td>Guards in code, not prompts [@q4_apexa; @q4_neudiff]; provenance [@provagent]</td></tr>
+</tbody>
+</table>
+
+<h3 id="q3-implications">Implications for facility deployments</h3>
+<ul>
+<li><strong>Wrap, do not rebuild.</strong> Put MCP servers or skill/CLI layers over existing services such as the IRI API, Bluesky and Tiled, as Globus Labs, ALS and SNS teams did for their own services [@mcpscihpc; @q4_lightfall; @q4_eqsans_cli].</li>
+<li><strong>Plan for model portability.</strong> Write agents against OpenAI-compatible interfaces; open-weight models behind such endpoints already run at ALCF and OLCF [@first; @olcfinf].</li>
+<li><strong>Enforce safety in the tool layer, not the prompt.</strong> Use allowlists, execution-integrity guards and fail-closed gates [@q4_apexa; @q4_neudiff].</li>
+<li><strong>Treat tool metadata, logs and shared files as untrusted input.</strong> Agents acting under user credentials are a new HPC threat class [@mcptox; @hpcagentsec].</li>
+<li><strong>Record agent provenance from day one</strong> [@provagent].</li>
+</ul>
+</section>

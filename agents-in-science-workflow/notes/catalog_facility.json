@@ -1,0 +1,305 @@
+[
+ {
+  "name": "AI X-ray scientist",
+  "organization": "SLAC (SSRL)",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_xray_scientist",
+  "one_line": "LLM agent with MCP tools and SPEC commands aligned a single crystal on SSRL BL17-2; developed in a virtual diffractometer; human relayed commands."
+ },
+ {
+  "name": "VISION",
+  "organization": "BNL (CFN, NSLS-II)",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_vision",
+  "one_line": "Modular LLM assistant turning voice/text into Bluesky code at NSLS-II 11-BM; first voice-controlled X-ray scattering experiment."
+ },
+ {
+  "name": "CALMS",
+  "organization": "Argonne (APS, CNM, ALCF)",
+  "year": 2023,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Experiment design & self-driving labs"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_calms",
+  "one_line": "Retrieval- and tool-augmented LLM answering facility-documentation questions and conversationally operating instruments."
+ },
+ {
+  "name": "Instrument agents that learn on the job",
+  "organization": "Argonne (APS, CNM)",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_learn_on_job",
+  "one_line": "Human-in-the-loop LLM agents orchestrating an X-ray nanoprobe beamline and an autonomous robotic materials station, improving through iterative feedback."
+ },
+ {
+  "name": "Experiment Automation Agents (EAA)",
+  "organization": "Argonne (APS)",
+  "year": 2026,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_eaa",
+  "one_line": "Vision-language agents with MCP tools automate zone-plate focusing and natural-language feature search at an APS imaging beamline."
+ },
+ {
+  "name": "ALD reactor agent",
+  "organization": "Argonne (Applied Materials Division)",
+  "year": 2026,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_ald_agent",
+  "one_line": "LLM agent converts user queries into JSON-encoded atomic layer deposition processes executed on a real reactor through an MCP-compatible interface."
+ },
+ {
+  "name": "ALS accelerator agentic AI",
+  "organization": "LBNL (ALS)",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_als_agentic",
+  "one_line": "Plan-first agent ran multistage machine-physics experiments on the ALS accelerator; preparation time cut ~100x under operator safety constraints."
+ },
+ {
+  "name": "Osprey",
+  "organization": "LBNL (ALS)",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_osprey",
+  "one_line": "Control-room agent framework with human plan review before hardware actions; production deployment across hundreds of thousands of ALS control channels."
+ },
+ {
+  "name": "Lightfall",
+  "organization": "LBNL (ALS)",
+  "year": 2026,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_lightfall",
+  "one_line": "API-first beamline control platform with embedded LLM agent and staff-authored skills; in testing at ALS COSMIC-Scattering."
+ },
+ {
+  "name": "TEM Agent",
+  "organization": "LBNL (Molecular Foundry)",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_tem_agent",
+  "one_line": "MCP tools let a commercial LLM control TEM subsystems, data management and HPC through text instructions, without extra training."
+ },
+ {
+  "name": "A-Lab GPSS agentic reasoning",
+  "organization": "LBNL (A-Lab)",
+  "year": 2026,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Hypothesis generation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_alab_gpss",
+  "one_line": "Agentic AI proposed 352 air-free solid-state syntheses of halide spinel conductors; success fraction rose from 1.33% to 5.33%."
+ },
+ {
+  "name": "LLM-assisted scanning probe microscopy",
+  "organization": "ORNL (CNMS)",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_liu_spm",
+  "one_line": "GPT-4 with instrument APIs converts experimental workflow ideas into microscope code; limited for in-depth experimental design."
+ },
+ {
+  "name": "NSLS-II multi-beamline AI agents",
+  "organization": "BNL (NSLS-II)",
+  "year": 2025,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [
+   "Data analysis & simulation"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_corrao_multibeamline",
+  "one_line": "Non-LLM agents inside Bluesky run on-the-fly reduction, GP modeling and Bayesian-optimized XRD/XAFS mapping across two beamlines."
+ },
+ {
+  "name": "NeuDiff Agent",
+  "organization": "ORNL (SNS TOPAZ)",
+  "year": 2026,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Writing & review"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_neudiff",
+  "one_line": "Governed agent takes single-crystal neutron data to validated CIF with allowlisted tools and fail-closed gates; 4.6-5.0x faster than manual."
+ },
+ {
+  "name": "SasAgent",
+  "organization": "ORNL (SNS)",
+  "year": 2025,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_sasagent",
+  "one_line": "Coordinator plus three specialist LLM agents use SasView tools for SLD calculation, synthetic data and small-angle scattering fitting."
+ },
+ {
+  "name": "EQSANS-CLI",
+  "organization": "ORNL (SNS)",
+  "year": 2026,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_eqsans_cli",
+  "one_line": "Agent-addressable SANS reduction tool; an external agent with one skill document drives complete reductions through a Slack bot."
+ },
+ {
+  "name": "APEXA",
+  "organization": "Argonne (APS)",
+  "year": 2026,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_apexa",
+  "one_line": "Deployed 61-tool multi-agent calibration and integration system; guard refuses results not backed by executed tool calls."
+ },
+ {
+  "name": "PEAR",
+  "organization": "Argonne (APS)",
+  "year": 2024,
+  "stage": "Data analysis & simulation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_pear",
+  "one_line": "Multiple LLM agents handle ptychography knowledge retrieval, code generation, parameter recommendation and image reasoning."
+ },
+ {
+  "name": "ESAC",
+  "organization": "ORNL (SNS EQ-SANS)",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Experiment design & self-driving labs"
+  ],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_esac",
+  "one_line": "Retrieval-augmented chatbot serving as an interactive instrument reference for visiting EQ-SANS users."
+ },
+ {
+  "name": "APS-RAG",
+  "organization": "Argonne (APS)",
+  "year": 2026,
+  "stage": "Literature & ideation",
+  "spans": [],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_aps_rag",
+  "one_line": "Deployed agentic GraphRAG over logbooks, documents, wikis and control data for APS staff; 70.3% vs 63.8% strict recall."
+ },
+ {
+  "name": "ChatEED",
+  "organization": "SLAC (accelerator operations)",
+  "year": 2025,
+  "stage": "Literature & ideation",
+  "spans": [],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_chateed",
+  "one_line": "Agentic retrieval assistant over electronic logbooks and wikis for accelerator operators."
+ },
+ {
+  "name": "LLM proposal ranking",
+  "organization": "ORNL (SNS)",
+  "year": 2025,
+  "stage": "Writing & review",
+  "spans": [],
+  "autonomy": "L1 Assistant",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_proposal_llm",
+  "one_line": "Pairwise LLM ranking of proposals from three SNS beamlines correlates with human rankings (Spearman 0.2-0.8) at over 100x lower cost."
+ },
+ {
+  "name": "LLM accelerator tuning",
+  "organization": "DESY",
+  "year": 2024,
+  "stage": "Experiment design & self-driving labs",
+  "spans": [],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Peer-reviewed",
+  "ref_key": "q4_kaiser_sciadv",
+  "one_line": "LLM tunes an accelerator subsystem from an operator's natural-language prompt, benchmarked against Bayesian optimization and RL-trained optimizers."
+ },
+ {
+  "name": "GAIA",
+  "organization": "DESY",
+  "year": 2024,
+  "stage": "Literature & ideation",
+  "spans": [
+   "Experiment design & self-driving labs"
+  ],
+  "autonomy": "L2 Tool-using agent",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_gaia",
+  "one_line": "ReAct-style LLM assistant combining logbook and document retrieval with control-script generation for accelerator operations."
+ },
+ {
+  "name": "Rongzai agent",
+  "organization": "CSNS (China)",
+  "year": 2026,
+  "stage": "Data analysis & simulation",
+  "spans": [
+   "Writing & review"
+  ],
+  "autonomy": "L3 Closed-loop",
+  "evidence_type": "Preprint",
+  "ref_key": "q4_rongzai",
+  "one_line": "LLM plus GSAS-II agent performs neutron Rietveld refinement from natural-language task to report; deployed at CSNS for external users."
+ }
+]

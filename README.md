@@ -10,6 +10,7 @@ Site: https://carbonscott.github.io/literature-research/
 | Folder | Report | Summary page |
 |---|---|---|
 | `quantum-materials/` | [findings.md](quantum-materials/findings.md) | [findings.html](https://carbonscott.github.io/literature-research/quantum-materials/findings.html) |
+| `agents-in-science-workflow/` | The summary page is the report; see [README.md](agents-in-science-workflow/README.md) | [findings.html](https://carbonscott.github.io/literature-research/agents-in-science-workflow/findings.html) |
 
 ## Layout of a topic folder (`quantum-materials/`)
 

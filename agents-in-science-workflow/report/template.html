@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI agents in scientific workflows · 2026-09-25</title>
+<meta name="description" content="A survey of AI agent systems across the scientific workflow, with a focus on 2024–2026 and on DOE x-ray and neutron user facilities.">
+<style>
+  /* ---- Color roles (light) ---------------------------------------------- */
+  :root {
+    color-scheme: light dark;
+    --page: #f9f9f7;
+    --surface-1: #fcfcfb;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11, 11, 11, 0.10);
+    --hover-wash: rgba(11, 11, 11, 0.04);
+    --link: #1c5cab;
+    --status-good: #0ca30c;
+    --status-warning: #fab219;
+    --status-serious: #ec835a;
+  }
+  /* ---- Color roles (dark): follows the OS setting ----------------------- */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0d0d0d;
+      --surface-1: #1a1a19;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted: #898781;
+      --grid: #2c2c2a;
+      --axis: #383835;
+      --border: rgba(255, 255, 255, 0.10);
+      --hover-wash: rgba(255, 255, 255, 0.05);
+      --link: #86b6ef;
+    }
+  }
+
+  /* ---- Page ------------------------------------------------------------- */
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  main { max-width: 1120px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; font-weight: 650; }
+  h2 { font-size: 20px; margin: 0 0 4px; font-weight: 650; }
+  h3 { font-size: 15px; margin: 20px 0 8px; font-weight: 600; }
+  h4 { font-size: 14px; margin: 16px 0 6px; font-weight: 600; color: var(--text-secondary); }
+  p, li, dd { max-width: 88ch; }
+  .subtitle { color: var(--text-secondary); margin: 0; }
+  .audience { color: var(--text-secondary); font-size: 13px; margin: 6px 0 0; }
+  .eyebrow { color: var(--text-muted); font-size: 13px; letter-spacing: 0.02em; margin: 0 0 2px; }
+  .caption { color: var(--text-secondary); font-size: 13px; margin: 10px 0 0; max-width: 90ch; }
+  .muted { color: var(--text-muted); }
+
+  /* ---- Table of contents ------------------------------------------------ */
+  nav.toc {
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 24px; margin-top: 20px; font-size: 14px;
+  }
+  nav.toc .toc-title { color: var(--text-muted); font-size: 13px; margin: 0 0 4px; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2 280px; column-gap: 32px; }
+  nav.toc li { margin: 2px 0; break-inside: avoid; }
+
+  /* ---- Sections --------------------------------------------------------- */
+  section#summary, section.question, section#appendix, section#references {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+  }
+  section#appendix > section { margin-top: 24px; }
+  p.answer {
+    margin: 10px 0 16px; padding: 10px 14px;
+    border-left: 3px solid var(--link); background: var(--hover-wash);
+    border-radius: 0 8px 8px 0; font-weight: 500;
+  }
+  #q2-established, #q2-claims, #q2-benchmarks {
+    border-left: 3px solid var(--grid); padding-left: 14px; margin: 18px 0;
+  }
+  #q2-established { border-left-color: var(--status-good); }
+  #q2-claims { border-left-color: var(--status-warning); }
+  #q2-established > h3:first-child, #q2-claims > h3:first-child, #q2-benchmarks > h3:first-child { margin-top: 0; }
+  ul.plain { margin: 8px 0 0; padding-left: 20px; }
+  ul.plain li { margin: 4px 0; }
+  .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+
+  /* ---- Citations -------------------------------------------------------- */
+  .cites { font-size: 0.85em; color: var(--text-secondary); white-space: normal; }
+  a.cite { text-decoration: none; }
+  a.cite:hover { text-decoration: underline; }
+
+  /* ---- Tables ----------------------------------------------------------- */
+  .table-scroll { overflow-x: auto; margin-top: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; vertical-align: top; padding: 7px 10px; border-bottom: 1px solid var(--grid); }
+  th { color: var(--text-secondary); font-weight: 600; white-space: nowrap; border-bottom-color: var(--axis); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tbody tr:hover { background: var(--hover-wash); }
+  caption { caption-side: bottom; text-align: left; color: var(--text-secondary); font-size: 13px; padding-top: 8px; }
+
+  /* Q1 taxonomy: each placed system is a small pill. */
+  span.sys {
+    display: inline-block; margin: 2px 4px 2px 0; padding: 1px 8px;
+    border: 1px solid var(--border); border-radius: 999px;
+    background: var(--page); font-size: 12.5px; white-space: nowrap;
+  }
+
+  span.sys.facility { border-color: var(--rising); font-weight: 600; }
+  #taxonomy td { min-width: 150px; }
+  #taxonomy th:first-child { white-space: normal; min-width: 130px; }
+
+  /* Appendix catalog: name with a one-line description under it. */
+  #catalog-table .system-name { font-weight: 600; }
+  #catalog-table .one-line, #catalog-table .spans {
+    display: block; color: var(--text-secondary); font-size: 12px; margin-top: 2px; min-width: 220px;
+  }
+  #catalog-table .spans { min-width: 0; color: var(--text-muted); }
+
+  /* ---- Discussion prompts, glossary, method notes ----------------------- */
+  ol#discussion-prompts { padding-left: 24px; }
+  ol#discussion-prompts li.prompt { margin: 12px 0; }
+  #glossary dl { margin: 8px 0 0; }
+  #glossary dt { font-weight: 600; margin-top: 10px; }
+  #glossary dd { margin: 2px 0 0 20px; color: var(--text-secondary); }
+
+  /* ---- References ------------------------------------------------------- */
+  ol.references { padding-left: 32px; font-size: 13.5px; }
+  ol.references li { margin: 6px 0; padding: 2px 6px; border-radius: 6px; }
+  ol.references li:target { background: var(--hover-wash); outline: 1px solid var(--border); }
+  .ref-title { font-weight: 500; }
+  .ref-venue { font-style: italic; }
+  .ref-evidence { color: var(--text-muted); font-size: 12px; }
+
+  footer { color: var(--text-muted); font-size: 13px; margin-top: 28px; }
+
+  /* ---- Print: light colors, no cards, repeat table headers -------------- */
+  @media print {
+    :root {
+      color-scheme: light;
+      --page: #ffffff;
+      --surface-1: #ffffff;
+      --text-primary: #000000;
+      --text-secondary: #333333;
+      --text-muted: #555555;
+      --grid: #cccccc;
+      --axis: #999999;
+      --border: #cccccc;
+      --hover-wash: transparent;
+      --link: #000000;
+    }
+    body { font-size: 10.5pt; }
+    main { max-width: none; padding: 0; }
+    nav.toc { display: none; }
+    section#summary, section.question, section#appendix, section#references { border: none; border-radius: 0; padding: 0; margin-top: 18pt; }
+    p.answer { border-left-color: #000000; }
+    h2, h3, h4 { break-after: avoid; }
+    tr, li, dt, dd { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .table-scroll { overflow: visible; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="page-header">
+    <p class="eyebrow"><a href="../index.html">Literature research</a> · Landscape survey · run date 2026-09-25</p>
+    <h1>AI agents in scientific workflows</h1>
+    <p class="subtitle">What AI agent systems do across the scientific workflow (literature and ideation, hypothesis generation, experiment design and self-driving labs, data analysis and simulation, writing and review), what has been shown to work, and what it means for DOE x-ray and neutron user facilities, focused on 2024–2026.</p>
+    <p class="audience">Prepared for DOE x-ray and neutron facility scientists (SLAC, ORNL, BNL) and university collaborators</p>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <p class="toc-title">Contents</p>
+    <ol>
+      <li><a href="#summary">At a glance</a></li>
+      <li><a href="#q1">Q1 Landscape</a></li>
+      <li><a href="#q2">Q2 What works</a></li>
+      <li><a href="#q3">Q3 Infrastructure</a></li>
+      <li><a href="#q4">Q4 Facilities</a></li>
+      <li><a href="#q5">Q5 Failure modes and risks</a></li>
+      <li><a href="#q6">Q6 Discussion</a></li>
+      <li><a href="#appendix">Appendix</a>: <a href="#catalog">system catalog</a>, <a href="#glossary">glossary</a>, <a href="#method-notes">method notes</a></li>
+      <li><a href="#references">References</a></li>
+    </ol>
+  </nav>
+
+{{BODY}}
+
+  <footer>
+    Built {{BUILD_DATE}} by report/build_report.py from report/source.html, refs.json and catalog.json.
+    References are checked by check_report.py. <a href="../index.html">All research topics</a>.
+  </footer>
+</main>
+</body>
+</html>

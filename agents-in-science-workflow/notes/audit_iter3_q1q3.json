@@ -1,0 +1,694 @@
+[
+ {
+  "file": "q1.html",
+  "statement": "LLaMP is an LBNL tool; ChemGraph is Argonne's",
+  "keys": [
+   "chiang2025llamp",
+   "pham2026chemgraph"
+  ],
+  "status": "confirmed",
+  "evidence": "LLaMP EMNLP 2025 PDF p.1 affiliations: UC Berkeley and Lawrence Berkeley National Laboratory; ChemGraph (Commun. Chem. 2026) authors all Argonne (OpenAlex); repo under argonne-lcf.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "PaperQA2, OpenScholar and Ai2's Asta are retrieve-read-cite literature agents",
+  "keys": [
+   "skarlinski2024paperqa2",
+   "asai2026openscholar",
+   "bragg2025astabench"
+  ],
+  "status": "confirmed",
+  "evidence": "PaperQA2 abstract: 'writes cited, Wikipedia-style summaries'; OpenScholar abstract: 'synthesizing citation-backed responses'; AstaBench abstract: 'deployed Asta agents', Ai2 blog 'AstaBench ... | Ai2'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Coscientist is Carnegie Mellon, 2023, distinct from Google's Co-Scientist",
+  "keys": [
+   "boiko2023coscientist"
+  ],
+  "status": "confirmed",
+  "evidence": "Nature 2023-12-20 (Crossref/OpenAlex); OpenAlex institution: Carnegie Mellon University; 'GPT-4 ... autonomously designs, plans and performs complex experiments'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "MARS is a closed-loop (L3) robotic materials system",
+  "keys": [
+   "shi2026mars"
+  ],
+  "status": "confirmed",
+  "evidence": "Matter 2026 (issued Feb 2026, online 2026-01-21); SIAT/CAS press and phys.org: 19 LLM agents + 16 tools 'achieving closed-loop autonomous materials discovery by integrating robotic experimentation'. Publisher page blocked (403); checked via press releases.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "SLAC's AI X-ray scientist aligned a crystal on an SSRL beamline while a human relayed its commands",
+  "keys": [
+   "q4_xray_scientist"
+  ],
+  "status": "confirmed",
+  "evidence": "NMI 2026 abstract: agent 'handled an experiment at a synchrotron X-ray source ... determined the orientation matrix'; relay-by-human confirmed in audit_iter2 (not redone).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "In wet labs humans still run or approve experiments (Robin, Virtual Lab)",
+  "keys": [
+   "ghareeb2026robin",
+   "swanson2025virtuallab"
+  ],
+  "status": "confirmed",
+  "evidence": "Robin arXiv 2505.13400 full text: ranked list 'can then be reviewed by human scientists, and top drug candidates can be tested in the lab'; Nature abstract calls it 'semi-autonomous'. Virtual Lab: 'with a human researcher providing high-level feedback'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "L4 systems: AI Scientist (ML papers), Kosmos and data-to-paper (data-driven), Aletheia (math)",
+  "keys": [
+   "lu2026aiscientist",
+   "mitchener2025kosmos",
+   "ifargan2025datatopaper",
+   "feng2026aletheia"
+  ],
+  "status": "confirmed",
+  "evidence": "Nature 2026 AI Scientist abstract 'from conception to publication'; Kosmos 'Given an open-ended objective and a dataset'; data-to-paper 'In autopilot mode, provided with annotated data alone'; Aletheia is a 'math research agent'. Catalog count 13 L4, none in experiment stage, verified against report/catalog.json.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Two L4 facility systems are crystallography agents, e.g. ORNL's NeuDiff Agent",
+  "keys": [
+   "q4_neudiff"
+  ],
+  "status": "confirmed",
+  "evidence": "NeuDiff J. Appl. Cryst. 2026 abstract: agent for 'TOPAZ at the Spallation Neutron Source' taking data 'to a validated crystal structure and a publication-ready CIF'; other L4 facility entry in catalog is the CSNS Rietveld agent (powder crystallography).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Five of 8 L1 systems are writing & review tools that inform human authors/reviewers",
+  "keys": [
+   "liang2024feedback",
+   "thakkar2026reviewfeedback"
+  ],
+  "status": "confirmed",
+  "evidence": "Catalog: 5 of 8 L1 in Writing & review. Liang: GPT-4 'comments on the full PDFs'; ICLR 2025 study (arXiv 2504.09737): system 'provided optional feedback' to reviewers.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Co-Scientist runs a generate-critique-refine tournament",
+  "keys": [
+   "gottweis2026coscientist"
+  ],
+  "status": "confirmed",
+  "evidence": "Nature 2026 abstract: 'agents continuously generating, critiquing and refining hypotheses' and 'a tournament evolution process for self-improving hypotheses generation'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Virtual Lab has a 'PI' agent directing specialists",
+  "keys": [
+   "swanson2025virtuallab"
+  ],
+  "status": "confirmed",
+  "evidence": "Nature 2025: 'an LLM Principal Investigator agent guiding a team of LLM scientist agents through a series of research meetings'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Kosmos (preprint) links ~200 rollouts via a shared world model",
+  "keys": [
+   "mitchener2025kosmos"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2511.02824 abstract: 'structured world model to share information between a data analysis agent and a literature search agent ... over 200 agent rollouts'. Preprint status correct (arXiv only).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "In 2026 Co-Scientist, Robin, AI Scientist, OpenScholar appeared in Nature; Biomni in Science",
+  "keys": [
+   "gottweis2026coscientist",
+   "ghareeb2026robin",
+   "lu2026aiscientist",
+   "asai2026openscholar",
+   "huang2026biomni"
+  ],
+  "status": "confirmed",
+  "evidence": "OpenAlex publication dates: Co-Scientist 2026-05-19, Robin 2026-05-19, AI Scientist 2026-03-25, OpenScholar 2026-02-04 (all Nature); Biomni Science 2026-07-09.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Google and Google DeepMind cover hypotheses, algorithms and mathematics (Co-Scientist, AlphaEvolve, Aletheia)",
+  "keys": [
+   "gottweis2026coscientist",
+   "novikov2025alphaevolve",
+   "feng2026aletheia"
+  ],
+  "status": "confirmed",
+  "evidence": "Co-Scientist 'built on Gemini'; AlphaEvolve white paper applied 'at Google'; Aletheia 'powered by ... Gemini Deep Think', outputs at github.com/google-deepmind.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "FutureHouse spun out Edison Scientific to commercialize Kosmos",
+  "keys": [
+   "futurehouse2025edison"
+  ],
+  "status": "corrected",
+  "evidence": "FutureHouse post (Nov 5, 2025) says Edison is 'a new commercial spinout that will focus on further developing and deploying our AI Scientist for commercial applications'; it never names Kosmos. The Kosmos preprint says each cycle 'launches several parallel instances of two general-purpose Edison Scientific agents'.",
+  "old": "FutureHouse spun out Edison Scientific to commercialize Kosmos [@futurehouse2025edison].",
+  "new": "FutureHouse spun out Edison Scientific to commercialize its AI Scientist; Kosmos is built from Edison Scientific agents [@futurehouse2025edison; @mitchener2025kosmos]."
+ },
+ {
+  "file": "q1.html",
+  "statement": "Intology says a Zochi-written paper was accepted at the ACL 2025 main conference",
+  "keys": [
+   "intology2025zochi"
+  ],
+  "status": "confirmed",
+  "evidence": "Intology blog (published 2025-05-27; JS bundle text): heading 'Zochi Achieves Main Conference Acceptance at ACL 2025'; 'accepted into the main proceedings of ACL'. Vendor claim, labeled as such.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "AlphaEvolve result comes from a white paper",
+  "keys": [
+   "novikov2025alphaevolve"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2506.13131 abstract opens 'In this white paper, we present AlphaEvolve'. Number (48 multiplications) confirmed in audit_iter2.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Strong L3/L4 results appear where an automatic check exists (AlphaEvolve evaluators; DeepScientist)",
+  "keys": [
+   "novikov2025alphaevolve",
+   "weng2026deepscientist"
+  ],
+  "status": "confirmed",
+  "evidence": "AlphaEvolve: 'continuously receiving feedback from one or more evaluators'; DeepScientist: 'hierarchical evaluation process ... hypothesize, verify, and analyze' on 'three frontier AI tasks'. DeepScientist is an ICLR 2026 poster (iclr.cc virtual 2026), so the Peer-reviewed label holds.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Agents4Science: humans contributed more to hypotheses/design; accepted papers had more human guidance",
+  "keys": [
+   "bianchi2025agents4science"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2511.15534 text: 'Human researchers tended to have more input in research design and hypothesis generation ... Accepted papers involved more human guidance than rejected papers.'",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "An academic lab, co-authoring with Google, found Co-Scientist's top hypothesis matched its unpublished result",
+  "keys": [
+   "penades2025cfpici"
+  ],
+  "status": "confirmed",
+  "evidence": "Cell 2025 abstract: 'the AI co-scientist's top-ranked hypothesis matched our experimentally confirmed mechanism' for a question that 'remained unpublished'; Crossref author list includes Google co-authors.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "LLM ideas rated more novel lost that edge once executed",
+  "keys": [
+   "si2025ideas",
+   "si2025gap"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2409.04109: LLM ideas 'judged as more novel (p < 0.05)'; arXiv 2506.20803: after execution LLM scores 'decrease significantly more ... closing the gap', with 'a flip in rankings' on many metrics.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "AstaBench concludes AI remains far from solving research assistance",
+  "keys": [
+   "bragg2025astabench"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2510.21652 abstract: 'AI remains far from solving the challenge of science research assistance'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "The AI Scientist's authors warn of 'taxing overwhelmed review systems'",
+  "keys": [
+   "lu2026aiscientist"
+  ],
+  "status": "confirmed",
+  "evidence": "Nature 2026 abstract (verbatim): 'important risks, including taxing overwhelmed review systems and adding noise to the scientific literature'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Targeted human interventions in AutoResearchClaw beat full autonomy and step-by-step oversight (preprint)",
+  "keys": [
+   "liu2026autoresearchclaw"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2605.20025 abstract: 'precise, targeted collaboration at high-leverage decision points consistently outperforms both full autonomy and exhaustive step-by-step oversight'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "MARS pushed closed-loop autonomy in robotic materials labs (2026)",
+  "keys": [
+   "shi2026mars"
+  ],
+  "status": "confirmed",
+  "evidence": "Matter online 2026-01-21; closed-loop robotic workflow per SIAT/CAS and phys.org coverage (see MARS entry above).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "OpenAI's Prism put an LLM inside LaTeX manuscript editing (2026)",
+  "keys": [
+   "openai2026prism"
+  ],
+  "status": "confirmed",
+  "evidence": "prism.openai.com page title 'Prism - AI LaTeX Editor'; TechCrunch/InfoQ (Jan 27, 2026): OpenAI launched a free LaTeX workspace with GPT-5.2 integrated into the editor.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Position paper: current agents are co-scientists, not built for autonomous discovery",
+  "keys": [
+   "bisht2026notbuilt"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2605.08956 abstract: 'This position paper argues that although they already function as co-scientists, agentic AI scientists are not built for autonomous scientific discovery.'",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Aletheia wrote one paper with no human intervention; four Erdős problems; FirstProof 6/10",
+  "keys": [
+   "feng2026aletheia",
+   "feng2026firstproof"
+  ],
+  "status": "confirmed",
+  "evidence": "Numbers confirmed in audit_iter2; wording re-checked: 'generated by AI without any human intervention'; 'autonomous solutions to four open questions'; FirstProof 'autonomously solved 6 ... out of 10 according to majority expert assessments' (both preprints, as stated).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q1.html",
+  "statement": "Catalog counts: 83 systems (58 general, 25 facility), 41 L2, 21 L3 (15 in experiment stage), 13 L4, 8 L1",
+  "keys": [],
+  "status": "confirmed",
+  "evidence": "Recomputed from report/catalog.json: lanes general 58 / facility 25; autonomy L2 41, L3 21, L4 13, L1 8; Literature 12 of 14 L2; experiment stage 26 (13 facility), 15 of 21 L3; 6 facility L3; only 6 general systems predate 2024.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Frontier models such as GPT-5 via vendor APIs are still the default engine",
+  "keys": [
+   "gpt5card"
+  ],
+  "status": "unsupported",
+  "evidence": "The GPT-5 system card (arXiv 2601.03267) describes GPT-5 itself; it says nothing about which engines science agents use. Examples that do support the claim: Co-Scientist is 'built on Gemini' (Nature 2026 abstract), and the Biomni README says 'Required: Anthropic API Key for Claude models'.",
+  "old": "Frontier models such as GPT-5, called through vendor APIs, are still the default engine [@gpt5card].",
+  "new": "Frontier models such as GPT-5 [@gpt5card], called through vendor APIs, are still the default engine; Co-Scientist, for example, is built on Gemini, and Biomni's setup expects Claude [@gottweis2026coscientist; @biomnirepo]."
+ },
+ {
+  "file": "q3.html",
+  "statement": "ChemGraph accepts OpenAI, Anthropic, Google, Argo or local Ollama",
+  "keys": [
+   "chemgraphrepo"
+  ],
+  "status": "confirmed",
+  "evidence": "ChemGraph README provider table: OpenAI, Anthropic, Google, Groq, 'Argo (Argonne)', ALCF inference endpoints, 'Ollama | Start Ollama locally'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "gpt-oss-120b is Apache-2.0 and tuned for tool use",
+  "keys": [
+   "gptoss"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2508.10925 abstract: 'strong agentic capabilities (deep research browsing, python tool use, and support for developer-provided functions)'; weights 'under an Apache 2.0 license'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "OLCF's inference service offers gpt-oss-120b; vLLM, OpenAI-compatible, S3M tokens",
+  "keys": [
+   "olcfinf"
+  ],
+  "status": "confirmed",
+  "evidence": "OLCF docs: 'LLMs running on a highly optimized vLLM runtime, offering OpenAI-compatible API endpoints'; tokens 'minted via S3M'; supported models list includes 'gpt-oss-120b'; 'Simply override the base URL and pass your token'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "ether0 beat frontier models and experts on molecular design",
+  "keys": [
+   "ether0"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2506.17238 abstract: 'Our model exceeds general-purpose chemistry models, frontier models, and human experts on molecular design tasks.'",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "ALCF built FIRST for private, secure inference",
+  "keys": [
+   "first"
+  ],
+  "status": "confirmed",
+  "evidence": "SC'25 Workshops abstract: parallel inference 'via an OpenAI-compliant API on private, secure environments'; all Argonne-affiliated authors except one (Crossref).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "FIRST 'generates billions of tokens daily on-premises'",
+  "keys": [
+   "first"
+  ],
+  "status": "corrected",
+  "evidence": "Abstract states a capability, not a measured throughput: 'allowing researchers to generate billions of tokens daily on-premises without relying on commercial cloud infrastructure'. (The number itself was checked in audit_iter2; only the verb is changed here.)",
+  "old": "it generates \"billions of tokens daily on-premises\" without commercial cloud [@first]",
+  "new": "it lets researchers generate \"billions of tokens daily on-premises\" without commercial cloud [@first]"
+ },
+ {
+  "file": "q3.html",
+  "statement": "NNSA runs frontier AI models on the classified network of Venado",
+  "keys": [
+   "q4_nnsa_venado"
+  ],
+  "status": "confirmed",
+  "evidence": "DOE/NNSA, Aug 28, 2025: 'After moving to a classified network earlier this year, the Venado supercomputer at LANL is now running OpenAI's latest o-series reasoning models'; Venado 'serves as a shared resource for ... NNSA laboratories'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Almost every framework implements ReAct",
+  "keys": [
+   "react"
+  ],
+  "status": "unsupported",
+  "evidence": "The ReAct paper (arXiv 2210.03629) introduces and tests the interleaved reason/act pattern; it cannot support a claim about how many current frameworks use it. The definition that follows the claim is supported.",
+  "old": "Almost every framework implements ReAct: the model reasons, calls a tool (acts), reads the result (observes) and repeats [@react].",
+  "new": "Frameworks typically build on ReAct, the loop in which the model reasons, calls a tool (acts), reads the result (observes) and repeats [@react]."
+ },
+ {
+  "file": "q3.html",
+  "statement": "AutoGen is in maintenance mode; new users pointed to Microsoft Agent Framework",
+  "keys": [
+   "autogenrepo"
+  ],
+  "status": "confirmed",
+  "evidence": "AutoGen README: 'AutoGen is now in maintenance mode ... New users should start with Microsoft Agent Framework'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Claude Agent SDK adds hooks, subagents and permission controls",
+  "keys": [
+   "claudesdk"
+  ],
+  "status": "confirmed",
+  "evidence": "Agent SDK overview: capability table lists 'Hooks', 'Subagents', 'MCP', 'Permissions: Control which tools run automatically, which need approval'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "ChemGraph = LangGraph + ASE + RDKit + MCP; runs via Parsl or Globus Compute on Aurora and Polaris",
+  "keys": [
+   "chemgraphrepo"
+  ],
+  "status": "confirmed",
+  "evidence": "README: 'tools built with LangGraph, ASE, RDKit, and the Model Context Protocol (MCP)'; 'distributed execution on systems such as ALCF Polaris and Aurora'; extras 'parsl', 'globus_compute'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Academy runs stateful, asynchronous agents across HPC, facilities and repositories",
+  "keys": [
+   "academy"
+  ],
+  "status": "confirmed",
+  "evidence": "IPDPS 2026 abstract: middleware 'to deploy autonomous agents across ... HPC systems, experimental facilities, and data repositories'; 'supports asynchronous execution'; 'abstractions for expressing stateful agents'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "A2A/MCP vertical-horizontal framing; both in AAIF (MCP 9 Dec 2025, A2A v1.0 Aug 2026)",
+  "keys": [
+   "a2aaaif",
+   "mcpaaif"
+  ],
+  "status": "confirmed",
+  "evidence": "Confirmed in audit_iter2 (not redone).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Skill = folder with SKILL.md loaded only when needed",
+  "keys": [
+   "agentskills"
+  ],
+  "status": "confirmed",
+  "evidence": "agentskills.io spec: 'A skill is a directory containing, at minimum, a SKILL.md file'; 'Agents load skills progressively, pulling in more detail only as a task calls for it' (only name/description loaded at startup).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "ALS staff write skills for the Lightfall platform",
+  "keys": [
+   "q4_lightfall"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2606.06711 abstract: 'beamline staff extend the interface during operation via skills'; 'in testing at the COSMIC-Scattering beamline at the Advanced Light Source'. Full text: Lightfall sits on Ophyd, Bluesky RunEngine, Tiled and EPICS IOCs, so 'skill layers over existing services' in the implications also holds.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "At SNS, one skill document lets a Slack bot run EQSANS reductions",
+  "keys": [
+   "q4_eqsans_cli"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2605.00651 abstract: 'A Slack bot demonstrates that the headless interface, together with a single skill document ... is sufficient to drive complete reductions by natural language'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Tool poisoning = hidden instructions in tool descriptions; MCPTox figures",
+  "keys": [
+   "mcptox"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2508.14925: 'malicious instructions are embedded within a tool's metadata'; figures already confirmed in audit_iter2.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "'Hijacked authorized agent' acts with a user's valid credentials; logs/tool descriptions/shared files as vectors",
+  "keys": [
+   "hpcagentsec"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2607.18485: agent 'acts under its user's credentials'; 'Adversarial instructions in a log, tool description, shared file, or peer-agent message may redirect the agent ... We refer to this as the hijacked authorized agent problem.' Note: it defines a threat model and plans a benchmark; it does not report benchmark results.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Globus Labs' thin MCP servers for Globus Transfer, Compute, Search and facility status APIs",
+  "keys": [
+   "mcpscihpc"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2508.18489: 'thin MCP servers over mature services, including Globus Transfer, Compute, and Search; status APIs exposed by computing facilities'; servers released at github.com/globus-labs/science-mcps; status endpoints at ALCF and NERSC.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Aurora gpt-oss-120b swarm: planner, executors, one Parsl-backed MCP server",
+  "keys": [
+   "aurora_mof"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2604.07681: 'central planning agent ... assign subtasks to a swarm of parallel executor agents. All executor agents interface with a shared MCP server that orchestrates tasks via the Parsl workflow engine'; 'open-weight gpt-oss-120b'; 'Aurora supercomputer'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "IRI Facility API endpoint groups; instances at NERSC, ALCF, ESnet; SLAC hosts a fork",
+  "keys": [
+   "iriapi",
+   "iriapislac"
+  ],
+  "status": "confirmed",
+  "evidence": "doe-iri README: 'NERSC instance', 'ALCF instance', 'ESnet instance'; app/routers dirs: account, compute, facility, filesystem, status, storage, task. GitHub API: slaclab/iri-facility-api-python fork=true, parent doe-iri/iri-facility-api-python.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Bluesky + Ophyd device layer, EPICS, Tiled data service",
+  "keys": [
+   "bluesky",
+   "epics",
+   "q4_tiled"
+  ],
+  "status": "confirmed",
+  "evidence": "blueskyproject.io: 'Ophyd — Hardware Abstraction Layer ... puts the control layer (e.g. EPICS ...) behind a high-level interface'; Tiled docs: 'a service that enables secure, structured access to scientific data'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "VISION ran a voice-controlled scattering experiment at NSLS-II by sending generated code to Bluesky",
+  "keys": [
+   "q4_vision"
+  ],
+  "status": "confirmed",
+  "evidence": "MLST 2025 abstract: 'first voice-controlled experiment at an x-ray scattering beamline'; arXiv 2412.18161 text: 'deployed VISION at the 11-BM CMS beamline at NSLS-II'; 'Upon confirmation, the generated code is sent to Bluesky' (a user confirms first).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "ORNL agents steered an additive-manufacturing experiment across MDF and OLCF",
+  "keys": [
+   "ornlagents"
+  ],
+  "status": "corrected",
+  "evidence": "SC'25 Workshops abstract: 'evaluated through a realistic end-to-end workflow that employs a simulated version of the manufacturing facility'; paper text: 'cross-facility experiment using the HPC facility and a simulated MDF environment'; 'We simulated the 3D printer and SCOPS service.'",
+  "old": "ORNL agents steered an additive-manufacturing experiment across its Manufacturing Demonstration Facility and OLCF [@ornlagents].",
+  "new": "ORNL agents steered an additive-manufacturing workflow linking OLCF with a simulated version of its Manufacturing Demonstration Facility [@ornlagents]."
+ },
+ {
+  "file": "q3.html",
+  "statement": "PROV-AGENT logs prompts, responses and decisions by extending W3C PROV",
+  "keys": [
+   "provagent"
+  ],
+  "status": "confirmed",
+  "evidence": "eScience 2025 abstract: 'a provenance model that extends W3C PROV and leverages the Model Context Protocol' to capture 'prompts, responses, and decisions'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Biomni runs LLM-generated code with full system privileges by default",
+  "keys": [
+   "biomnirepo"
+  ],
+  "status": "confirmed",
+  "evidence": "Biomni README: 'Security warning: Currently, Biomni executes LLM-generated code with full system privileges ... please use in isolated/sandboxed environments.'",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "NERSC recommends workspace-write mode and sandboxes; users responsible for agent actions",
+  "keys": [
+   "nersccoding"
+  ],
+  "status": "confirmed",
+  "evidence": "NERSC docs: 'we recommend using workspace-write mode for vibe coding on Perlmutter'; container-based sandbox for full-access mode; 'Users remain responsible for all prompts, commands ... performed by or through the agent'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "APEXA guard: 0/200 vs 15/200 and caught a fabricated calibration report",
+  "keys": [
+   "q4_apexa"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2609.24165: 'a frontier model fabricated a complete calibration-comparison report for commands that never ran, which the guard converts to an explicit non-result'; motor test was 'against a simulated IOC' (numbers already in audit_iter2).",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "NeuDiff at SNS TOPAZ uses allowlisted tools and fail-closed gates",
+  "keys": [
+   "q4_neudiff"
+  ],
+  "status": "confirmed",
+  "evidence": "J. Appl. Cryst. 2026 abstract: 'restricting actions to allowlisted tools, enforcing fail-closed verification gates'.",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "EnvTrace checks agent-written control code against a beamline digital twin before it runs",
+  "keys": [
+   "q4_envtrace"
+  ],
+  "status": "confirmed",
+  "evidence": "arXiv 2511.09964: 'demonstrated with a beamline control-logic digital twin ... the digital twin itself also enabling the pre-execution validation of live experiments'. (Mainly an evaluation method; wording acceptable.)",
+  "old": "",
+  "new": ""
+ },
+ {
+  "file": "q3.html",
+  "statement": "Models row: self-hosted gpt-oss and DeepSeek-R1 (open), science-tuned ether0",
+  "keys": [
+   "gptoss",
+   "deepseekr1",
+   "ether0"
+  ],
+  "status": "confirmed",
+  "evidence": "gpt-oss weights Apache 2.0; DeepSeek-R1 Nature 2025 open reasoning model; ether0 RL post-trained on chemistry.",
+  "old": "",
+  "new": ""
+ }
+]

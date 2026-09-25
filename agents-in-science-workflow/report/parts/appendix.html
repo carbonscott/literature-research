@@ -1,0 +1,69 @@
+<section id="appendix">
+<h2>Appendix</h2>
+<section id="catalog">
+<h3>System catalog</h3>
+<p>All 83 systems placed in the Q1 taxonomy, sorted by stage and then year. <em>Autonomy</em> uses the L1–L4 scale in the glossary. <em>Evidence type</em> describes the cited source: peer-reviewed, peer-reviewed with independent validation, preprint, workshop, product or vendor report, or lab or project page. The one-line description under each name summarizes what the cited source reports. Facility and national-lab systems (Q4) are included alongside general-science systems.</p>
+<!--CATALOG-->
+</section>
+<section id="glossary">
+<h3>Glossary</h3>
+<dl>
+<dt>AI agent</dt><dd>A system in which a language model chooses and calls tools (search, code, databases, simulators, instruments) in a loop, observes the results and decides the next step, rather than answering once.</dd>
+<dt>Autonomy level (L1–L4)</dt><dd>This report's four-step scale. L1 assistant: answers or drafts on request. L2 tool-using agent: plans and runs several tool calls inside one task. L3 closed-loop: repeats plan → act → observe against real instruments, robots, simulations or code over many cycles, with human checkpoints. L4 end-to-end: goes from a goal to experiments or analysis to a written paper or report with little human help.</dd>
+<dt>Self-driving laboratory (SDL)</dt><dd>A laboratory where robots or instruments run experiments chosen by an algorithm that learns from earlier results. Older SDLs use Bayesian optimization; newer ones add a language-model agent for planning and interfaces.</dd>
+<dt>Bayesian optimization / active learning</dt><dd>Methods that choose the next measurement from a statistical model of the results so far, trading off exploration and exploitation. They are used by most pre-LLM autonomous experiments at light and neutron sources.</dd>
+<dt>Retrieval-augmented generation (RAG)</dt><dd>Giving a model documents it retrieves at run time (papers, manuals, logbooks) so that its answers can point to sources.</dd>
+<dt>Deep research</dt><dd>Products and agents that run many web or literature searches, read the results and write a cited report.</dd>
+<dt>Multi-agent system</dt><dd>Several model instances with different roles (for example planner, critic, coder) that pass messages to each other.</dd>
+<dt>Tool calling / function calling</dt><dd>A model API feature: the model returns a structured request to run a named function with arguments, and the host program runs it.</dd>
+<dt>Model Context Protocol (MCP)</dt><dd>An open protocol, introduced in November 2024, for connecting models to tools, data sources and prompts through a standard client–server interface.</dd>
+<dt>Agent2Agent (A2A)</dt><dd>An open protocol for agents built by different vendors or teams to find and message each other.</dd>
+<dt>Reasoning model</dt><dd>A model trained to produce long intermediate reasoning before answering. These models do better on multi-step math, code and science tasks.</dd>
+<dt>Frontier model</dt><dd>One of the most capable current models from the leading AI companies (for example OpenAI, Anthropic and Google), usually used through a paid online API.</dd>
+<dt>Token</dt><dd>The unit of text a model reads and writes, roughly a word or part of a word. Model use, speed and cost are counted in tokens.</dd>
+<dt>Rollout</dt><dd>One complete attempt by an agent at a task, from its first step to its final answer.</dd>
+<dt>Open-weight model</dt><dd>A model whose weights are published, so it can run on site (for example on a laboratory cluster) without sending data to a vendor.</dd>
+<dt>Benchmark contamination</dt><dd>When test items, or close copies of them, appear in a model's training data, so that scores overstate real ability.</dd>
+<dt>LLM-as-judge</dt><dd>Using a language model to grade outputs such as ideas, papers or reviews. It is cheap but can be biased or easy to game.</dd>
+<dt>Hallucination / fabricated citation</dt><dd>Fluent output that is not true: invented references, numbers or results.</dd>
+<dt>Prompt injection</dt><dd>Hidden instructions in data an agent reads (a web page, a PDF, a tool result) that take over the agent's behavior.</dd>
+<dt>Human-in-the-loop</dt><dd>A design in which a person approves or edits key steps, for example before an agent moves a motor or submits a job.</dd>
+<dt>Reward hacking</dt><dd>When an agent raises the score, or passes the check it is judged by, without doing the intended task: for example by editing tests, using leaked answers or reporting only favorable runs.</dd>
+<dt>Agent trace</dt><dd>The step-by-step record of an agent's run: its prompts, reasoning, tool calls and tool results. It shows what the agent actually did, which its final report may not.</dd>
+<dt>Allowlist</dt><dd>A fixed list of the tools or commands an agent may use; anything not on the list is refused.</dd>
+<dt>Fail-closed gate</dt><dd>A check that stops the workflow when it fails or cannot run, instead of letting the action go ahead.</dd>
+<dt>Deterministic guard</dt><dd>A rule written in ordinary code, outside the model, that checks each agent action or report (for example against motor limits, or against the record of commands actually run) and blocks it if the check fails. Unlike a safety instruction in the prompt, the model cannot argue its way past it.</dd>
+<dt>Digital twin</dt><dd>A simulation of an instrument or beamline detailed enough to run and score control code before it touches real hardware.</dd>
+<dt>Bluesky / Ophyd</dt><dd>Python libraries for experiment orchestration (Bluesky) and hardware abstraction (Ophyd), used at NSLS-II and many other light sources.</dd>
+<dt>EPICS</dt><dd>The Experimental Physics and Industrial Control System: the control-system layer (process variables) under most DOE accelerators and beamlines.</dd>
+<dt>Tiled</dt><dd>A data-access service that serves array and table data (for example beamline data) over HTTP, with search and slicing.</dd>
+<dt>SPEC</dt><dd>A long-established command-line program for diffractometer and beamline control, used at SSRL and many other synchrotrons.</dd>
+<dt>CIF / checkCIF</dt><dd>The crystallographic information file (CIF) is the standard text format for a crystal structure and its refinement. checkCIF is the International Union of Crystallography's validation service; its level A and B alerts flag the most serious problems.</dd>
+<dt>Globus Compute</dt><dd>A federated function-as-a-service platform that runs Python functions on remote computers, including HPC systems, through a cloud-managed service.</dd>
+<dt>Parsl</dt><dd>A Python library for parallel scripting: it runs many tasks as one workflow on laptops, clusters or HPC systems.</dd>
+<dt>Integrated Research Infrastructure (IRI)</dt><dd>A DOE Office of Science program to connect experimental facilities, HPC centers and networks so that data can move between them and be analyzed as it is taken.</dd>
+<dt>ALCF, OLCF, NERSC, ESnet</dt><dd>DOE Office of Science computing and network facilities: the Argonne and Oak Ridge Leadership Computing Facilities, the National Energy Research Scientific Computing Center at Berkeley Lab, and the Energy Sciences Network that links the labs and user facilities.</dd>
+<dt>Facilities named in this report</dt><dd>SLAC: SSRL (Stanford Synchrotron Radiation Lightsource) and LCLS (Linac Coherent Light Source, an x-ray free-electron laser). BNL: NSLS-II (National Synchrotron Light Source II) and CFN (Center for Functional Nanomaterials). Argonne: APS (Advanced Photon Source) and CNM (Center for Nanoscale Materials). LBNL: ALS (Advanced Light Source) and the Molecular Foundry. ORNL: SNS (Spallation Neutron Source) and CNMS (Center for Nanophase Materials Sciences). Outside DOE: CSNS (China Spallation Neutron Source) and DESY (Germany), which runs the PETRA III synchrotron.</dd>
+<dt>ICLR, ICML, NeurIPS, ACL</dt><dd>The leading machine-learning and natural-language-processing conferences. In these fields, peer-reviewed conference papers, not journal articles, are the main publications.</dd>
+<dt>Desk rejection</dt><dd>Rejection of a submitted paper by the editors or program chairs without full peer review, for example for breaking submission rules.</dd>
+</dl>
+</section>
+<section id="method-notes">
+<h3>Method notes</h3>
+<ul>
+<li><strong>Run date and scope.</strong> The survey reflects sources available on 2026-09-25. It covers AI agents built on language models, plus the closely related autonomous-experiment systems they build on, across the research workflow. The focus is 2024–2026; a few landmark 2023 systems are included for context.</li>
+<li><strong>How the work was split.</strong> An orchestrating agent split the survey into parallel research lanes (Q1 catalog, Q2 evidence and benchmarks, Q3 infrastructure, Q4 facilities, Q5 risks) and a tooling lane (report builder and checker), then merged and cross-checked the results in later iterations. The iteration ledger and claims file are in <code>.goal/</code>.</li>
+<li><strong>Sources.</strong> Discovery used web search together with the arXiv API, Crossref, OpenAlex, Semantic Scholar and the OSTI.GOV API (for DOE-funded work). Primary sources (papers, preprints, specifications, lab and project pages) were preferred over press coverage. When a preprint has a peer-reviewed version, the published version is cited.</li>
+<li><strong>Evidence labels.</strong> <em>Peer-reviewed</em>: published in a refereed journal or archival proceedings. <em>Peer-reviewed + independent validation</em>: also checked by a group other than the developers. <em>Preprint</em>: not yet refereed. <em>Product/vendor report</em> and <em>Lab/project page</em>: self-reported. In Q2 the first two classes are kept apart from claims.</li>
+<li><strong>Autonomy scale.</strong> Systems are placed on the L1–L4 scale defined in the glossary, based on what the cited source shows the system doing, not on what it is said to be able to do in future.</li>
+<li><strong>Reference checks.</strong> <code>check_report.py</code> parses this file and confirms, in the same run: every DOI through Crossref (or doi.org for DataCite DOIs), with the fetched title matching the listed title; every arXiv ID through the arXiv API, with the title matching; every other URL by fetching it. It also checks that every reference is cited, that every citation points to a listed reference, and that the page loads no external resources.</li>
+<li><strong>Fact checks.</strong> Before publication, independent audit agents checked the text against primary sources in three passes: 79 headline numbers (12 corrected or re-attributed), 211 further statements across all six questions (36 corrected), and the labels of all 83 catalog rows (20 changes, mostly first-release years and four autonomy levels). The audit files are in <code>notes/</code>.</li>
+<li><strong>Limitations.</strong> The field moves quickly, and many results exist only as preprints or company announcements. Title checks confirm that a reference exists and is the one listed; they do not confirm every sentence attributed to it. Facility work that is internal or unpublished is not visible to this method. The audience is described only by institution and field.</li>
+</ul>
+</section>
+</section>
+<section id="references">
+<h2>References</h2>
+<p>Numbered in order of first citation. Each entry shows the evidence type in brackets. DOIs link through doi.org, preprints through arXiv, and other sources are linked directly.</p>
+<!--REFERENCES-->
+</section>
